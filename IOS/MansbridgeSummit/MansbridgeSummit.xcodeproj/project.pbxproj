@@ -7,9 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C69E4A541B46088800BD981C /* MSTwitterTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69E4A531B46088800BD981C /* MSTwitterTabController.swift */; };
+		C69E4A551B46088800BD981C /* MSTwitterTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69E4A531B46088800BD981C /* MSTwitterTabController.swift */; };
+		C69E4A561B46088800BD981C /* MSTwitterTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69E4A531B46088800BD981C /* MSTwitterTabController.swift */; };
+		C69E4A581B4608C500BD981C /* MSRegisterTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69E4A571B4608C500BD981C /* MSRegisterTabController.swift */; };
+		C69E4A591B4608C500BD981C /* MSRegisterTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69E4A571B4608C500BD981C /* MSRegisterTabController.swift */; };
+		C69E4A5A1B4608C500BD981C /* MSRegisterTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69E4A571B4608C500BD981C /* MSRegisterTabController.swift */; };
+		C69E4A5C1B46090E00BD981C /* MSAboutTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69E4A5B1B46090E00BD981C /* MSAboutTabController.swift */; };
+		C69E4A5D1B46090E00BD981C /* MSAboutTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69E4A5B1B46090E00BD981C /* MSAboutTabController.swift */; };
+		C69E4A5E1B46090E00BD981C /* MSAboutTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69E4A5B1B46090E00BD981C /* MSAboutTabController.swift */; };
+		C69E4A601B4609D700BD981C /* MSPrimaryTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69E4A5F1B4609D700BD981C /* MSPrimaryTabController.swift */; };
+		C69E4A611B4609D700BD981C /* MSPrimaryTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69E4A5F1B4609D700BD981C /* MSPrimaryTabController.swift */; };
+		C69E4A621B4609D700BD981C /* MSPrimaryTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69E4A5F1B4609D700BD981C /* MSPrimaryTabController.swift */; };
+		C69E4A641B460A3F00BD981C /* MSScheduleTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69E4A631B460A3F00BD981C /* MSScheduleTabController.swift */; };
+		C69E4A651B460A3F00BD981C /* MSScheduleTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69E4A631B460A3F00BD981C /* MSScheduleTabController.swift */; };
+		C69E4A661B460A3F00BD981C /* MSScheduleTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69E4A631B460A3F00BD981C /* MSScheduleTabController.swift */; };
+		C69E4A6E1B4612A600BD981C /* MSScheduleTabViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69E4A6D1B4612A600BD981C /* MSScheduleTabViewCell.swift */; };
+		C69E4A6F1B4612A600BD981C /* MSScheduleTabViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69E4A6D1B4612A600BD981C /* MSScheduleTabViewCell.swift */; };
+		C69E4A701B4612A600BD981C /* MSScheduleTabViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69E4A6D1B4612A600BD981C /* MSScheduleTabViewCell.swift */; };
+		C69E4A721B4620AC00BD981C /* MSScheduleTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69E4A711B4620AC00BD981C /* MSScheduleTableView.swift */; };
+		C69E4A731B4620AC00BD981C /* MSScheduleTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69E4A711B4620AC00BD981C /* MSScheduleTableView.swift */; };
+		C69E4A741B4620AC00BD981C /* MSScheduleTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69E4A711B4620AC00BD981C /* MSScheduleTableView.swift */; };
+		C6C00A6B1B45F3B300709992 /* MSTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C00A6A1B45F3B300709992 /* MSTabBarController.swift */; };
+		C6C00A6C1B45F3B300709992 /* MSTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C00A6A1B45F3B300709992 /* MSTabBarController.swift */; };
+		C6C00A6D1B45F3B300709992 /* MSTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C00A6A1B45F3B300709992 /* MSTabBarController.swift */; };
 		C6CFD0541B45EDA90067A6AD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6CFD0531B45EDA90067A6AD /* AppDelegate.swift */; };
-		C6CFD0561B45EDA90067A6AD /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6CFD0551B45EDA90067A6AD /* FirstViewController.swift */; };
-		C6CFD0581B45EDA90067A6AD /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6CFD0571B45EDA90067A6AD /* SecondViewController.swift */; };
 		C6CFD05B1B45EDA90067A6AD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6CFD0591B45EDA90067A6AD /* Main.storyboard */; };
 		C6CFD05D1B45EDA90067A6AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6CFD05C1B45EDA90067A6AD /* Assets.xcassets */; };
 		C6CFD0601B45EDA90067A6AD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6CFD05E1B45EDA90067A6AD /* LaunchScreen.storyboard */; };
@@ -35,10 +57,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C69E4A531B46088800BD981C /* MSTwitterTabController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSTwitterTabController.swift; sourceTree = "<group>"; };
+		C69E4A571B4608C500BD981C /* MSRegisterTabController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSRegisterTabController.swift; sourceTree = "<group>"; };
+		C69E4A5B1B46090E00BD981C /* MSAboutTabController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSAboutTabController.swift; sourceTree = "<group>"; };
+		C69E4A5F1B4609D700BD981C /* MSPrimaryTabController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSPrimaryTabController.swift; sourceTree = "<group>"; };
+		C69E4A631B460A3F00BD981C /* MSScheduleTabController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSScheduleTabController.swift; sourceTree = "<group>"; };
+		C69E4A6D1B4612A600BD981C /* MSScheduleTabViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSScheduleTabViewCell.swift; sourceTree = "<group>"; };
+		C69E4A711B4620AC00BD981C /* MSScheduleTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSScheduleTableView.swift; sourceTree = "<group>"; };
+		C6C00A6A1B45F3B300709992 /* MSTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSTabBarController.swift; sourceTree = "<group>"; };
 		C6CFD0501B45EDA90067A6AD /* MansbridgeSummit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MansbridgeSummit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6CFD0531B45EDA90067A6AD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C6CFD0551B45EDA90067A6AD /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		C6CFD0571B45EDA90067A6AD /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		C6CFD05A1B45EDA90067A6AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C6CFD05C1B45EDA90067A6AD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C6CFD05F1B45EDA90067A6AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -76,6 +104,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C69E4A671B460A5000BD981C /* Tabs */ = {
+			isa = PBXGroup;
+			children = (
+				C69E4A5F1B4609D700BD981C /* MSPrimaryTabController.swift */,
+				C69E4A571B4608C500BD981C /* MSRegisterTabController.swift */,
+				C69E4A6C1B46128900BD981C /* ScheduleTab */,
+				C69E4A531B46088800BD981C /* MSTwitterTabController.swift */,
+				C69E4A5B1B46090E00BD981C /* MSAboutTabController.swift */,
+			);
+			name = Tabs;
+			sourceTree = "<group>";
+		};
+		C69E4A6C1B46128900BD981C /* ScheduleTab */ = {
+			isa = PBXGroup;
+			children = (
+				C69E4A631B460A3F00BD981C /* MSScheduleTabController.swift */,
+				C69E4A711B4620AC00BD981C /* MSScheduleTableView.swift */,
+				C69E4A6D1B4612A600BD981C /* MSScheduleTabViewCell.swift */,
+			);
+			name = ScheduleTab;
+			sourceTree = "<group>";
+		};
 		C6CFD0471B45EDA90067A6AD = {
 			isa = PBXGroup;
 			children = (
@@ -99,11 +149,11 @@
 		C6CFD0521B45EDA90067A6AD /* MansbridgeSummit */ = {
 			isa = PBXGroup;
 			children = (
-				C6CFD0531B45EDA90067A6AD /* AppDelegate.swift */,
-				C6CFD0551B45EDA90067A6AD /* FirstViewController.swift */,
-				C6CFD0571B45EDA90067A6AD /* SecondViewController.swift */,
 				C6CFD0591B45EDA90067A6AD /* Main.storyboard */,
 				C6CFD05E1B45EDA90067A6AD /* LaunchScreen.storyboard */,
+				C6CFD0531B45EDA90067A6AD /* AppDelegate.swift */,
+				C6C00A6A1B45F3B300709992 /* MSTabBarController.swift */,
+				C69E4A671B460A5000BD981C /* Tabs */,
 				C6CFD05C1B45EDA90067A6AD /* Assets.xcassets */,
 				C6CFD0611B45EDA90067A6AD /* Info.plist */,
 			);
@@ -258,9 +308,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C6CFD0581B45EDA90067A6AD /* SecondViewController.swift in Sources */,
+				C69E4A601B4609D700BD981C /* MSPrimaryTabController.swift in Sources */,
 				C6CFD0541B45EDA90067A6AD /* AppDelegate.swift in Sources */,
-				C6CFD0561B45EDA90067A6AD /* FirstViewController.swift in Sources */,
+				C69E4A541B46088800BD981C /* MSTwitterTabController.swift in Sources */,
+				C69E4A721B4620AC00BD981C /* MSScheduleTableView.swift in Sources */,
+				C69E4A6E1B4612A600BD981C /* MSScheduleTabViewCell.swift in Sources */,
+				C69E4A5C1B46090E00BD981C /* MSAboutTabController.swift in Sources */,
+				C69E4A641B460A3F00BD981C /* MSScheduleTabController.swift in Sources */,
+				C6C00A6B1B45F3B300709992 /* MSTabBarController.swift in Sources */,
+				C69E4A581B4608C500BD981C /* MSRegisterTabController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,7 +324,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C69E4A611B4609D700BD981C /* MSPrimaryTabController.swift in Sources */,
 				C6CFD06B1B45EDA90067A6AD /* MansbridgeSummitTests.swift in Sources */,
+				C69E4A551B46088800BD981C /* MSTwitterTabController.swift in Sources */,
+				C69E4A731B4620AC00BD981C /* MSScheduleTableView.swift in Sources */,
+				C69E4A6F1B4612A600BD981C /* MSScheduleTabViewCell.swift in Sources */,
+				C69E4A5D1B46090E00BD981C /* MSAboutTabController.swift in Sources */,
+				C69E4A651B460A3F00BD981C /* MSScheduleTabController.swift in Sources */,
+				C6C00A6C1B45F3B300709992 /* MSTabBarController.swift in Sources */,
+				C69E4A591B4608C500BD981C /* MSRegisterTabController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,7 +340,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C69E4A621B4609D700BD981C /* MSPrimaryTabController.swift in Sources */,
 				C6CFD0761B45EDA90067A6AD /* MansbridgeSummitUITests.swift in Sources */,
+				C69E4A561B46088800BD981C /* MSTwitterTabController.swift in Sources */,
+				C69E4A741B4620AC00BD981C /* MSScheduleTableView.swift in Sources */,
+				C69E4A701B4612A600BD981C /* MSScheduleTabViewCell.swift in Sources */,
+				C69E4A5E1B46090E00BD981C /* MSAboutTabController.swift in Sources */,
+				C69E4A661B460A3F00BD981C /* MSScheduleTabController.swift in Sources */,
+				C6C00A6D1B45F3B300709992 /* MSTabBarController.swift in Sources */,
+				C69E4A5A1B4608C500BD981C /* MSRegisterTabController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -489,6 +561,7 @@
 				C6CFD07C1B45EDA90067A6AD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C6CFD07D1B45EDA90067A6AD /* Build configuration list for PBXNativeTarget "MansbridgeSummitTests" */ = {
 			isa = XCConfigurationList;
@@ -497,6 +570,7 @@
 				C6CFD07F1B45EDA90067A6AD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C6CFD0801B45EDA90067A6AD /* Build configuration list for PBXNativeTarget "MansbridgeSummitUITests" */ = {
 			isa = XCConfigurationList;
@@ -505,6 +579,7 @@
 				C6CFD0821B45EDA90067A6AD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
