@@ -53,5 +53,12 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>UIAppFonts</key>
+	<array>
+		<string>AppleGaramond.ttf</string>
+		<string>AppleGaramond-Bold.ttf</string>
+		<string>MyriadPro-Bold.otf</string>
+		<string>MyriadPro-Regular.otf</string>
+	</array>
 </dict>
 </plist>

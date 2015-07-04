@@ -6,6 +6,8 @@
 //  Copyright © 2015 Mansbridge Summit Dev Team. All rights reserved.
 //
 
+// This class defines what properties a cell should have
+
 import Foundation
 import UIKit
 
@@ -41,6 +43,7 @@ public class MSScheduleCellView : UITableViewCell {
         eventTimeLabel.text = eventTime;
         eventTimeLabel.frame = CGRect(x: 10, y: 10, width: 100, height: cellHeight)
         eventTimeLabel.adjustsFontSizeToFitWidth = true
+        eventTimeLabel.font = GlobalConstants.Font.myraidpro_bold_18
         
     }
 
@@ -49,9 +52,7 @@ public class MSScheduleCellView : UITableViewCell {
         let rect = CGRect(x: DELIMITER_X_POS, y: 0, width: DELIMITER_WIDTH, height: cellHeight)
         
         cellDelimiter = UIView(frame: rect)
-        
-        cellDelimiter.alpha = 0.75;
-        cellDelimiter.backgroundColor = UIColor.redColor()
+        cellDelimiter.backgroundColor = GlobalConstants.Color.red
         
     }
     
@@ -59,8 +60,9 @@ public class MSScheduleCellView : UITableViewCell {
         
         eventDescriptionLabel.text = eventDescription;
         eventDescriptionLabel.frame = CGRect(x: 150, y: 10, width: 300, height: cellHeight)
+        eventDescriptionLabel.font = GlobalConstants.Font.garamond_14
         eventDescriptionLabel.adjustsFontSizeToFitWidth = true
-        
+
     }
     
     required public init(coder aDecoder: NSCoder) {
