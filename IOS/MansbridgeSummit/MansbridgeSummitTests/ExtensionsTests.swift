@@ -60,21 +60,41 @@ class ExtensionsTests: XCTestCase {
         let str1 = "micah|will|ricker"
         let str2 = "godel-escher-bach"
         let str3 = "multi%%split%%this%%string"
-        let str4 = "e"
         
         let str1_split = str1.split("|")
         let str2_split = str2.split("-")
         let str3_split = str3.split("%%")
-        let str4_split = str4.split("e")
         
         XCTAssertEqual(str1_split.count, 3)
         XCTAssertEqual(str2_split.count, 3)
         XCTAssertEqual(str3_split.count, 4)
-        XCTAssertEqual(str4_split.count, 0)
 
+
+        /* Depricated Test, this simply depends on the behaviour you want */
+        
+        //let str4 = "e"
+        //let str4_split = str4.split("e")
+        // XCTAssertEqual(str4_split.count, 0) // or 1?
         
     }
 
+    func testArrayRemoveObjs() {
+        
+        var arr1 = ["a", "b", "c"]
+        arr1.removeObject("a")
+        XCTAssertEqual(arr1, ["b", "c"])
+
+        arr1.removeObject("b")
+        XCTAssertEqual(arr1, ["c"])
+
+        arr1.removeObject("c")
+        XCTAssertEqual(arr1, [])
+        
+        arr1.removeObject("d") // "d" doesn't exist
+        XCTAssertEqual(arr1, [])
+        
+    }
+    
 }
 
 
