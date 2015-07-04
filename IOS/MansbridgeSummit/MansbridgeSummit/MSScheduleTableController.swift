@@ -11,10 +11,12 @@ import UIKit
 
 // Delegate Here?
 
-public class MSScheduleTabController : UITableViewController{
+public class MSScheduleTableController : UITableViewController {
+    
+    let MS_TOTAL_DAYS = 3
     
     public override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        
+        // remove? or use when displaying data?
     }
     
     override init(style: UITableViewStyle) {
@@ -38,17 +40,19 @@ public class MSScheduleTabController : UITableViewController{
     
     /* Each Day Should be a 'section' in the table view. This number should be a constant. */
     public override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        return 2
+        return MS_TOTAL_DAYS
     }
     
     /* Each Day (section) has multiple events (rows). Given a day return the number of events in the day */
     public override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        if (section == 1) {
-            return 2
+        switch section {
+            case 0: return 1
+            case 1: return 3
+            case 2: return 2
+            default: return 0
         }
-        
-        return 3;
+
     }
 
     
@@ -56,12 +60,10 @@ public class MSScheduleTabController : UITableViewController{
     public override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
 
         // Extract the Section
-        let day = indexPath.section
+        // let day = indexPath.section
         
         // Extract the Row
-        let event = indexPath.row
-        
-        print("day: \(day), event: \(event)")
+        // let event = indexPath.row
         
         // Fetch required data in Data structure 
         
@@ -69,41 +71,44 @@ public class MSScheduleTabController : UITableViewController{
         // Create UITableViewCell with a resuable identifier.
         // The resueable idenfiier lets you save tons of memory by snagging a cell 
         // with the same identifier and copying it's properties.
+        
+        var eventCell = tableView.dequeueReusableCellWithIdentifier("Event")
 
-        // New Day Header
-        if (event == 0) {
-            
-            // Looks for an already created cell with the "Day" identifier
-            var dayCell = tableView.dequeueReusableCellWithIdentifier("Day")
-            
-            if (dayCell === nil) {
-                
-                // Create a MSScheduleTabCell Instead?
-                dayCell = UITableViewCell(style: .Default, reuseIdentifier: "Day")
-                dayCell?.textLabel?.text = "Day Header"
-                dayCell?.textLabel?.textColor = UIColor.redColor()
-            }
-            
-            return dayCell!
-            
-        } else {
-            
-            var eventCell = tableView.dequeueReusableCellWithIdentifier("Event")
+        if (eventCell === nil) {
 
-            if (eventCell === nil) {
-
-                // Create a MSScheduleTabCell Instead?
-                eventCell = UITableViewCell(style: .Default, reuseIdentifier: "Event")
-                eventCell?.textLabel?.text = "Event Text"
-            }
-            return eventCell!
+            // Create a MSScheduleTabCell Instead?
+            eventCell = MSScheduleCellView(eventTime: "Sat Oct 7", eventDescription: "A Merry Christmas", cellIdentifier: "Event Cell")
         }
+        return eventCell!
+
 
     }
     
+    public override func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        
+        switch section {
+            case 0: return "Sat Oct 4"
+            case 1: return "Sun Oct 5"
+            case 2: return "Mon Oct 6"
+            default: return "Invalid Date"
+        }
+        
+    }
+    
+    //public override func tableView(tableView: UITableView, titleForFooterInSection section: Int) -> String? {
+    //    return "Section Footer"
+    //}
     
     required public init(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
     
 }
+
+
+
+
+
+
+
+

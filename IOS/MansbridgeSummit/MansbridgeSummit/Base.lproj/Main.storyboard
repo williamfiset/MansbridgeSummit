@@ -22,10 +22,10 @@
             </objects>
             <point key="canvasLocation" x="-528" y="-150"/>
         </scene>
-        <!--Item 2-->
+        <!--Register-->
         <scene sceneID="EMI-hD-dDn">
             <objects>
-                <viewController id="6Px-ts-CRp" customClass="MSRegisterTabController" customModule="MansbridgeSummit" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="6Px-ts-CRp" userLabel="Register" customClass="MSRegisterTabController" customModule="MansbridgeSummit" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="sx3-lO-rtM"/>
                         <viewControllerLayoutGuide type="bottom" id="7L6-Xv-H6T"/>
@@ -42,10 +42,10 @@
             </objects>
             <point key="canvasLocation" x="1046" y="-956"/>
         </scene>
-        <!--Item-->
+        <!--Schedule-->
         <scene sceneID="p8n-8L-vy5">
             <objects>
-                <tableViewController id="M2Z-vZ-2uL" customClass="MSScheduleTabController" customModule="MansbridgeSummit" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="M2Z-vZ-2uL" userLabel="Schedule" customClass="MSScheduleTableController" customModule="MansbridgeSummit" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="ijc-jX-Yig" customClass="MSScheduleTableView" customModule="MansbridgeSummit" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -62,10 +62,10 @@
             </objects>
             <point key="canvasLocation" x="1046" y="-150"/>
         </scene>
-        <!--Item-->
+        <!--Twitter-->
         <scene sceneID="zd1-Px-EH1">
             <objects>
-                <viewController id="rVP-mB-YK6" customClass="MSScheduleTabController" customModule="MansbridgeSummit" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="rVP-mB-YK6" userLabel="Twitter" customClass="MSTwitterTabController" customModule="MansbridgeSummit" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="9if-Jh-VFF"/>
                         <viewControllerLayoutGuide type="bottom" id="UH2-Oj-0Jm"/>
@@ -82,10 +82,10 @@
             </objects>
             <point key="canvasLocation" x="1046" y="643"/>
         </scene>
-        <!--Item-->
+        <!--About-->
         <scene sceneID="nL2-M5-bpK">
             <objects>
-                <viewController id="oFB-8Q-MYl" customClass="MSAboutTabController" customModule="MansbridgeSummit" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="oFB-8Q-MYl" userLabel="About" customClass="MSAboutTabController" customModule="MansbridgeSummit" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="QHA-LA-TBR"/>
                         <viewControllerLayoutGuide type="bottom" id="y0X-Uo-NYo"/>
@@ -102,10 +102,10 @@
             </objects>
             <point key="canvasLocation" x="1046" y="1449"/>
         </scene>
-        <!--Item 1-->
+        <!--Primary-->
         <scene sceneID="AZM-bP-8Kf">
             <objects>
-                <viewController id="TLA-2H-73K" customClass="MSPrimaryTabController" customModule="MansbridgeSummit" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="TLA-2H-73K" userLabel="Primary" customClass="MSPrimaryTabController" customModule="MansbridgeSummit" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="koN-hR-aJ6"/>
                         <viewControllerLayoutGuide type="bottom" id="1La-HY-KyD"/>
