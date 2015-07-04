@@ -8,7 +8,7 @@
 
 import XCTest
 
-class MSScheduleCellView: XCTestCase {
+class MSScheduleCellViewTests : XCTestCase {
 
     override func setUp() {
         super.setUp()
@@ -22,11 +22,9 @@ class MSScheduleCellView: XCTestCase {
 
     func testInit() {
         
-        let cell1 = MSScheduleCellView(coder: NSCoder())
-        let cell2 = MSScheduleCellView(eventTime: "time", eventDescription: "description", cellIdentifier: "EventCell")
+        let cell1 = MSScheduleCellView(eventTime: "time", eventDescription: "description", cellIdentifier: "EventCell")
         
         XCTAssertNotNil(cell1)
-        XCTAssertNotNil(cell2)
         
     }
     

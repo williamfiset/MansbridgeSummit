@@ -25,12 +25,8 @@ class MSScheduleTableControllerTests: XCTestCase {
         let controller1 = MSScheduleTableController(style: UITableViewStyle.Plain)
         let controller2 = MSScheduleTableController(style: UITableViewStyle.Grouped)
         
-        let decoder = NSCoder()
-        let controller3 = MSScheduleTableController(coder: decoder)
-        
         XCTAssertNotNil(controller1)
         XCTAssertNotNil(controller2)
-        XCTAssertNotNil(controller3)
         
     }
     

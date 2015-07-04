@@ -59,7 +59,7 @@
 		C6D9E9941B477C3300249DA4 /* ConstantsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6D9E9931B477C3300249DA4 /* ConstantsTests.swift */; };
 		C6D9E9961B477D6E00249DA4 /* ExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6D9E9951B477D6E00249DA4 /* ExtensionsTests.swift */; };
 		C6E1632A1B48137900942749 /* MSScheduleTableControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6E163291B48137900942749 /* MSScheduleTableControllerTests.swift */; };
-		C6E1632C1B4814EC00942749 /* MSScheduleCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6E1632B1B4814EC00942749 /* MSScheduleCellView.swift */; };
+		C6E1632C1B4814EC00942749 /* MSScheduleCellView.Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6E1632B1B4814EC00942749 /* MSScheduleCellView.Tests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -108,7 +108,7 @@
 		C6D9E9931B477C3300249DA4 /* ConstantsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstantsTests.swift; sourceTree = "<group>"; };
 		C6D9E9951B477D6E00249DA4 /* ExtensionsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtensionsTests.swift; sourceTree = "<group>"; };
 		C6E163291B48137900942749 /* MSScheduleTableControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSScheduleTableControllerTests.swift; sourceTree = "<group>"; };
-		C6E1632B1B4814EC00942749 /* MSScheduleCellView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSScheduleCellView.swift; sourceTree = "<group>"; };
+		C6E1632B1B4814EC00942749 /* MSScheduleCellView.Tests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSScheduleCellView.Tests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -254,7 +254,7 @@
 			isa = PBXGroup;
 			children = (
 				C6E163291B48137900942749 /* MSScheduleTableControllerTests.swift */,
-				C6E1632B1B4814EC00942749 /* MSScheduleCellView.swift */,
+				C6E1632B1B4814EC00942749 /* MSScheduleCellView.Tests.swift */,
 			);
 			name = MSScheduleTests;
 			sourceTree = "<group>";
@@ -432,7 +432,7 @@
 				C69E4A5D1B46090E00BD981C /* MSAboutTabController.swift in Sources */,
 				C69E4A651B460A3F00BD981C /* MSScheduleTableController.swift in Sources */,
 				C6C00A6C1B45F3B300709992 /* MSTabBarController.swift in Sources */,
-				C6E1632C1B4814EC00942749 /* MSScheduleCellView.swift in Sources */,
+				C6E1632C1B4814EC00942749 /* MSScheduleCellView.Tests.swift in Sources */,
 				C69E4A591B4608C500BD981C /* MSRegisterTabController.swift in Sources */,
 				C6D9E9941B477C3300249DA4 /* ConstantsTests.swift in Sources */,
 			);
