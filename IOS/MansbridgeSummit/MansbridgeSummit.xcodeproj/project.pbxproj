@@ -57,6 +57,8 @@
 		C6D9E9901B4778A400249DA4 /* MyriadPro-Regular.OTF in Resources */ = {isa = PBXBuildFile; fileRef = C6D9E98C1B4778A400249DA4 /* MyriadPro-Regular.OTF */; };
 		C6D9E9911B4778A400249DA4 /* MyriadPro-Regular.OTF in Resources */ = {isa = PBXBuildFile; fileRef = C6D9E98C1B4778A400249DA4 /* MyriadPro-Regular.OTF */; };
 		C6D9E9921B4778A400249DA4 /* MyriadPro-Regular.OTF in Resources */ = {isa = PBXBuildFile; fileRef = C6D9E98C1B4778A400249DA4 /* MyriadPro-Regular.OTF */; };
+		C6D9E9941B477C3300249DA4 /* ConstantsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6D9E9931B477C3300249DA4 /* ConstantsTests.swift */; };
+		C6D9E9961B477D6E00249DA4 /* ExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6D9E9951B477D6E00249DA4 /* ExtensionsTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -103,6 +105,8 @@
 		C6D9E9761B4774CB00249DA4 /* AppleGaramond.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = AppleGaramond.ttf; sourceTree = "<group>"; };
 		C6D9E98B1B4778A400249DA4 /* MyriadPro-Bold.OTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MyriadPro-Bold.OTF"; sourceTree = "<group>"; };
 		C6D9E98C1B4778A400249DA4 /* MyriadPro-Regular.OTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MyriadPro-Regular.OTF"; sourceTree = "<group>"; };
+		C6D9E9931B477C3300249DA4 /* ConstantsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstantsTests.swift; sourceTree = "<group>"; };
+		C6D9E9951B477D6E00249DA4 /* ExtensionsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtensionsTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -192,6 +196,8 @@
 			isa = PBXGroup;
 			children = (
 				C6CFD06A1B45EDA90067A6AD /* MansbridgeSummitTests.swift */,
+				C6D9E9931B477C3300249DA4 /* ConstantsTests.swift */,
+				C6D9E9951B477D6E00249DA4 /* ExtensionsTests.swift */,
 				C6CFD06C1B45EDA90067A6AD /* Info.plist */,
 			);
 			path = MansbridgeSummitTests;
@@ -405,6 +411,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C69E4A611B4609D700BD981C /* MSPrimaryTabController.swift in Sources */,
+				C6D9E9961B477D6E00249DA4 /* ExtensionsTests.swift in Sources */,
 				C6D9E9691B475E2D00249DA4 /* Constants.swift in Sources */,
 				C6CFD06B1B45EDA90067A6AD /* MansbridgeSummitTests.swift in Sources */,
 				C69E4A551B46088800BD981C /* MSTwitterTabController.swift in Sources */,
@@ -415,6 +422,7 @@
 				C69E4A651B460A3F00BD981C /* MSScheduleTableController.swift in Sources */,
 				C6C00A6C1B45F3B300709992 /* MSTabBarController.swift in Sources */,
 				C69E4A591B4608C500BD981C /* MSRegisterTabController.swift in Sources */,
+				C6D9E9941B477C3300249DA4 /* ConstantsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
