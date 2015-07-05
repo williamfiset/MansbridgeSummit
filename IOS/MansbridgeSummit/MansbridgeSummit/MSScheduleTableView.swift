@@ -39,12 +39,10 @@ public class MSScheduleTableView : UITableView {
         let scheduleHeaderLabel = UILabel(frame: CGRect(x: 0, y: 0, width: tableWidth, height: 75))
         
         scheduleHeaderLabel.text = "Mansbridge Summit Schedule"
-        scheduleHeaderLabel.font = GlobalConstants.Font.garamond_bold_28
+        scheduleHeaderLabel.font = GlobalConstants.Font.garamond_24
         scheduleHeaderLabel.textColor = GlobalConstants.Color.white
-        scheduleHeaderLabel.adjustsFontSizeToFitWidth = true
         scheduleHeaderLabel.backgroundColor = GlobalConstants.Color.red
-        
-        scheduleHeaderLabel.textAlignment = NSTextAlignment.Center
+        scheduleHeaderLabel.textAlignment = .Center
         
         self.tableHeaderView = scheduleHeaderLabel
     }
@@ -54,6 +52,16 @@ public class MSScheduleTableView : UITableView {
         super.init(coder : aDecoder)
     }
     
-    
-    
 }
+
+
+
+
+
+
+
+
+
+
+
+

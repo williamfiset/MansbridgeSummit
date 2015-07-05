@@ -138,6 +138,10 @@ public class MSScheduleTableController : UITableViewController {
             dateLabel.textColor = GlobalConstants.Color.white
             dateLabel.backgroundColor = GlobalConstants.Color.gold
 
+            
+            
+            dateLabel.textAlignment = .Center
+            
             return dateLabel
             
         }
