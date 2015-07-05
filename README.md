@@ -1,2 +1,2 @@
 # MansbridgeSummit
-Application development for IOS and Android.
+Application development for IOS and Android
