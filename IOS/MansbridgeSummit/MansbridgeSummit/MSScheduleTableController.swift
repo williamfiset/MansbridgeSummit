@@ -13,13 +13,20 @@ import UIKit
 
 public class MSScheduleTableController : UITableViewController {
     
-    let MS_TOTAL_DAYS = 3
+    // Name given to cells which can be reused when creating a view
+    // (which is all event cells except the first)
+    let eventCellID = "EventCell"
+    
+    let schedule_file_name = "test_schedule"
+    var days : [MSDay] = []
     
     public override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         // remove? or use when displaying data?
     }
     
     override init(style: UITableViewStyle) {
+
+        
         super.init(style: .Plain) // .Grouped? Try this out
     }
 
@@ -35,22 +42,27 @@ public class MSScheduleTableController : UITableViewController {
         self.view = newTable
         self.tableView = newTable
         
+        if let reader = MSScheduleReader(fileName: schedule_file_name) {
+            days = reader.read()
+            print("days read. LEN: \(days.count)")
+        }
+        
     }
 
     
-    /* Each Day Should be a 'section' in the table view. This number should be a constant. */
+    /* Each Day is a 'section' in the table view, ∴ return the number of days */
     public override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        return MS_TOTAL_DAYS
+        return days.count
     }
     
     /* Each Day (section) has multiple events (rows). Given a day return the number of events in the day */
     public override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        switch section {
-            case 0: return 1
-            case 1: return 3
-            case 2: return 2
-            default: return 0
+        if section < days.count {
+            return days[section].events.count
+        } else {
+            assert(false)
+            return -1
         }
 
     }
@@ -60,41 +72,55 @@ public class MSScheduleTableController : UITableViewController {
     public override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
 
         // Extract the Section
-        // let day = indexPath.section
+        let dayIndex = indexPath.section
         
         // Extract the Row
-        // let event = indexPath.row
+        let eventIndex = indexPath.row
         
         // Fetch required data in Data structure 
         
-        
-        // Create UITableViewCell with a resuable identifier.
-        // The resueable idenfiier lets you save tons of memory by snagging a cell 
-        // with the same identifier and copying it's properties.
-        
-        var eventCell = tableView.dequeueReusableCellWithIdentifier("Event")
-
-        if (eventCell === nil) {
-
-            // Create a MSScheduleTabCell Instead?
-            eventCell = MSScheduleCellView(eventTime: "Sat Oct 7", eventDescription: "A Merry Christmas", cellIdentifier: "Event Cell")
+        if dayIndex < days.count {
+            let day = days[dayIndex]
+            if eventIndex < day.events.count {
+                
+                let event = day.events[eventIndex]
+                
+                // Create UITableViewCell with a resuable identifier.
+                // The resueable idenfiier lets you save tons of memory by snagging a cell
+                // with the same identifier and copying it's properties.
+                
+                var eventCell = tableView.dequeueReusableCellWithIdentifier(eventCellID)
+                
+                if (eventCell === nil) {
+                    eventCell = MSScheduleCellView(event: event, cellIdentifier: eventCellID)
+                }
+                
+                if (eventCell != nil) {
+                    return eventCell!
+                }
+                
+            }
         }
-        return eventCell!
+        
+        // Ohh no, where did our cell go?
+        assert(false)
+        return UITableViewCell()
 
 
     }
     
     public override func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         
-        switch section {
-            case 0: return "Sat Oct 4"
-            case 1: return "Sun Oct 5"
-            case 2: return "Mon Oct 6"
-            default: return "Invalid Date"
+        if section < days.count {
+            return days[section].date
+        } else {
+            assert(false)
+            return "Invalid Date"
         }
         
     }
     
+    // Adds a footer to each section
     //public override func tableView(tableView: UITableView, titleForFooterInSection section: Int) -> String? {
     //    return "Section Footer"
     //}

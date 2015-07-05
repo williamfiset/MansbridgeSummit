@@ -13,35 +13,76 @@ import UIKit
 
 public class MSScheduleCellView : UITableViewCell {
     
+    let event : MSEvent
+    
     var eventTimeLabel = UILabel()
     var cellDelimiter = UIView()
-    var eventDescriptionLabel = UILabel()
-    
-    let DELIMITER_X_POS = 125
-    let DELIMITER_WIDTH = 10
-    
-    var cellHeight : Int {
-        return Int(self.contentView.bounds.height)
+    var eventNameLabel = UILabel()
+
+    var cellHeight : CGFloat {
+        return self.contentView.bounds.height
     }
     
-    init( eventTime : String, eventDescription : String, cellIdentifier : String ) {
+    var cellWidth : CGFloat {
+        return self.contentView.bounds.width
+    }
+    
+    let DELIMITER_WIDTH : CGFloat = 5
+    let DELIMITER_SPACING : CGFloat = 10
+    
+    let TIME_LABEL_LEFT_SPACING : CGFloat = 10.0
+    
+    static var MAX_TIME_LABEL_LEN : CGFloat {
+        
+        var length : CGFloat = 0.0
+        
+        let tempLabel = UILabel(frame: CGRect(x: 0, y: 0, width: 100, height: 100))
+        tempLabel.font = GlobalConstants.Font.myraidpro_bold_18
+        
+        tempLabel.text = ":"
+        length += tempLabel.intrinsicContentSize().width
+        
+        var maxNumSize : CGFloat = 0.0
+        for n in 0...9 {
+            tempLabel.text = "\(n)"
+            if tempLabel.intrinsicContentSize().width * 4 > maxNumSize {
+                maxNumSize = tempLabel.intrinsicContentSize().width * 4
+            }
+        }
+        length += maxNumSize
+        
+        tempLabel.text = "am";
+        let amLen = tempLabel.intrinsicContentSize().width
+        tempLabel.text = "pm"
+        let pmLen = tempLabel.intrinsicContentSize().width
+        
+        length += amLen > pmLen ? amLen : pmLen
+        
+        return length
+        
+    }
+    
+    
+    init( event : MSEvent, cellIdentifier : String ) {
+
+        self.event = event
 
         super.init(style: .Default, reuseIdentifier: cellIdentifier)
-        
-        setTimeLabelProperties(eventTime)
+
+        setTimeLabelProperties(event.eventTime)
         setCellDelimiterProperties()
-        setEventDescriptionLabelProperties(eventDescription)
+        setEventNameLabelProperties(event.eventName)
         
         self.contentView.addSubview(eventTimeLabel)
         self.contentView.addSubview(cellDelimiter)
-        self.contentView.addSubview(eventDescriptionLabel)
+        self.contentView.addSubview(eventNameLabel)
   
     }
     
     private func setTimeLabelProperties( eventTime : String ) {
         
         eventTimeLabel.text = eventTime;
-        eventTimeLabel.frame = CGRect(x: 10, y: 10, width: 100, height: cellHeight)
+        eventTimeLabel.frame = CGRect(x: TIME_LABEL_LEFT_SPACING, y: 10.0, width: MSScheduleCellView.MAX_TIME_LABEL_LEN, height: cellHeight)
         eventTimeLabel.adjustsFontSizeToFitWidth = true
         eventTimeLabel.font = GlobalConstants.Font.myraidpro_bold_18
         
@@ -49,23 +90,43 @@ public class MSScheduleCellView : UITableViewCell {
 
     private func setCellDelimiterProperties() {
         
-        let rect = CGRect(x: DELIMITER_X_POS, y: 0, width: DELIMITER_WIDTH, height: cellHeight)
+        let xPos = MSScheduleCellView.MAX_TIME_LABEL_LEN + DELIMITER_SPACING + TIME_LABEL_LEFT_SPACING
+        let rect = CGRect(x: xPos, y: 0, width: DELIMITER_WIDTH, height: cellHeight)
         
         cellDelimiter = UIView(frame: rect)
         cellDelimiter.backgroundColor = GlobalConstants.Color.red
         
     }
     
-    private func setEventDescriptionLabelProperties( eventDescription : String ) {
+    private func setEventNameLabelProperties( eventDescription : String ) {
         
-        eventDescriptionLabel.text = eventDescription;
-        eventDescriptionLabel.frame = CGRect(x: 150, y: 10, width: 300, height: cellHeight)
-        eventDescriptionLabel.font = GlobalConstants.Font.garamond_14
-        eventDescriptionLabel.adjustsFontSizeToFitWidth = true
+        let xPos = MSScheduleCellView.MAX_TIME_LABEL_LEN + DELIMITER_SPACING*2 + DELIMITER_WIDTH + TIME_LABEL_LEFT_SPACING
+        
+        eventNameLabel.frame = CGRect(
+            x: xPos,
+            y: 10,
+            width: cellWidth - xPos,
+            height: cellHeight
+        )
+        
+        eventNameLabel.text = eventDescription;
+        eventNameLabel.font = GlobalConstants.Font.garamond_18
+        eventNameLabel.adjustsFontSizeToFitWidth = true
 
     }
+
     
     required public init(coder aDecoder: NSCoder) {
+        
+        // XCode forced me to create an invalid object... Cleanup somehow?
+        event = MSEvent (
+            eventName: "EventName",
+            eventTime: "eventTime",
+            eventLocation: "eventLocation",
+            eventDescription: "eventDescription",
+            eventSpeaker: "eventSpeaker"
+        )
+        
         super.init(coder: aDecoder)
     }
     
