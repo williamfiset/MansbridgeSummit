@@ -28,13 +28,17 @@ public class MSScheduleTableController : UITableViewController {
 
         super.init(style: style) // .Grouped? Try this out
     }
-
+    
+    
     // Doesn't this defeat the purpose of MVC? Because now the controller only work with
     // one table unless you subless it and override this method?
-    public override func loadView() {
-
+    public override func viewWillAppear(animated: Bool) {
+        
+        // Remove the navigation bar to provide more room for viewing
+        self.navigationController!.navigationBar.hidden = true
+        
         let newTable = MSScheduleTableView()
-
+        
         newTable.dataSource = self
         newTable.delegate = self
         
@@ -44,7 +48,6 @@ public class MSScheduleTableController : UITableViewController {
         if let reader = MSScheduleReader(fileName: schedule_file_name) {
             days = reader.read()
         }
-        
     }
     
     public override func prefersStatusBarHidden() -> Bool {
@@ -121,10 +124,28 @@ public class MSScheduleTableController : UITableViewController {
         
     }
     
-    // Adds a footer to each section
-    //public override func tableView(tableView: UITableView, titleForFooterInSection section: Int) -> String? {
-    //    return "Section Footer"
-    //}
+    
+    public override func tableView(tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        
+        if section < days.count {
+            
+            let msdate = days[section]
+            
+            let dateLabel = UILabel(frame: CGRect(x: 0.0, y: 0.0, width: tableView.bounds.width, height: 50))
+            
+            dateLabel.text = msdate.date
+            dateLabel.font = GlobalConstants.Font.myraidpro_bold_24
+            dateLabel.textColor = GlobalConstants.Color.white
+            dateLabel.backgroundColor = GlobalConstants.Color.gold
+
+            return dateLabel
+            
+        }
+        
+        assert(false)
+        
+        return UIView()
+    }
     
     required public init(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
