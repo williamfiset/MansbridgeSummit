@@ -35,7 +35,7 @@
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="xgf-JR-Un4"/>
+                    <tabBarItem key="tabBarItem" id="xgf-JR-Un4"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vrE-B9-sGa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -55,7 +55,7 @@
                             <outlet property="delegate" destination="M2Z-vZ-2uL" id="8lq-Fk-pv1"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Item" id="6ZR-g8-JzM"/>
+                    <tabBarItem key="tabBarItem" id="6ZR-g8-JzM"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KYm-3l-Q57" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -75,7 +75,7 @@
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="3ji-kz-mFk"/>
+                    <tabBarItem key="tabBarItem" id="3ji-kz-mFk"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JV3-bn-WoO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -95,7 +95,7 @@
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="hOZ-qo-J76"/>
+                    <tabBarItem key="tabBarItem" id="hOZ-qo-J76"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="H9k-2H-Scp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -115,7 +115,7 @@
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="Qzy-kM-0kx"/>
+                    <tabBarItem key="tabBarItem" id="Qzy-kM-0kx"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0Ia-58-4Mk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -127,7 +127,7 @@
                 <tabBarController id="LdM-6H-Yiw" customClass="MSTabBarController" customModule="MansbridgeSummit" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="huS-EU-Sjl"/>
                     <nil key="simulatedBottomBarMetrics"/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" id="kNs-mW-0r6">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="kNs-mW-0r6" customClass="MSTabBar" customModule="MansbridgeSummit" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <animations/>
@@ -137,8 +137,8 @@
                         <segue destination="TLA-2H-73K" kind="relationship" relationship="viewControllers" id="50Q-Pz-Ojt"/>
                         <segue destination="6Px-ts-CRp" kind="relationship" relationship="viewControllers" id="a6D-NY-skd"/>
                         <segue destination="rVP-mB-YK6" kind="relationship" relationship="viewControllers" id="L7i-FU-PNt"/>
-                        <segue destination="oFB-8Q-MYl" kind="relationship" relationship="viewControllers" id="bQN-y8-yxh"/>
                         <segue destination="M2Z-vZ-2uL" kind="relationship" relationship="viewControllers" id="xBM-gR-ffX"/>
+                        <segue destination="oFB-8Q-MYl" kind="relationship" relationship="viewControllers" id="bQN-y8-yxh"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZFT-kj-xIj" userLabel="First Responder" sceneMemberID="firstResponder"/>
