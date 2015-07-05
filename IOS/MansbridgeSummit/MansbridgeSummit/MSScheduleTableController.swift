@@ -24,12 +24,6 @@ public class MSScheduleTableController : UITableViewController {
         // remove? or use when displaying data?
     }
     
-    override init(style: UITableViewStyle) {
-
-        
-        super.init(style: .Plain) // .Grouped? Try this out
-    }
-
     // Doesn't this defeat the purpose of MVC? Because now the controller only work with
     // one table unless you subless it and override this method?
     public override func loadView() {
@@ -44,11 +38,13 @@ public class MSScheduleTableController : UITableViewController {
         
         if let reader = MSScheduleReader(fileName: schedule_file_name) {
             days = reader.read()
-            print("days read. LEN: \(days.count)")
         }
         
     }
-
+    
+    public override func prefersStatusBarHidden() -> Bool {
+        return true
+    }
     
     /* Each Day is a 'section' in the table view, ∴ return the number of days */
     public override func numberOfSectionsInTableView(tableView: UITableView) -> Int {

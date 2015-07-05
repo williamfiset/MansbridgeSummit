@@ -22,7 +22,14 @@ class MSScheduleCellViewTests : XCTestCase {
 
     func testInit() {
         
-        let cell1 = MSScheduleCellView(eventTime: "time", eventDescription: "description", cellIdentifier: "EventCell")
+        let event1 = MSEvent (
+            eventName: "eventName",
+            eventTime: "eventTime",
+            eventLocation: "eventLocation",
+            eventDescription: "eventDescription",
+            eventSpeaker: "eventSpeaker"
+        )
+        let cell1 = MSScheduleCellView(event: event1, cellIdentifier: "EventCell")
         
         XCTAssertNotNil(cell1)
         

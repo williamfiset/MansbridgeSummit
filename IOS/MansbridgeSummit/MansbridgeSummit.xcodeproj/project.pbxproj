@@ -94,6 +94,7 @@
 
 /* Begin PBXFileReference section */
 		C67219FC1B4941E700E7B050 /* MSEvent-iphone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = "MSEvent-iphone.xib"; path = "MansbridgeSummit/MSEvent-iphone.xib"; sourceTree = SOURCE_ROOT; };
+		C6721A001B49620200E7B050 /* MansbridgeSummit.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = MansbridgeSummit.entitlements; sourceTree = "<group>"; };
 		C69E4A531B46088800BD981C /* MSTwitterTabController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSTwitterTabController.swift; sourceTree = "<group>"; };
 		C69E4A571B4608C500BD981C /* MSRegisterTabController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSRegisterTabController.swift; sourceTree = "<group>"; };
 		C69E4A5B1B46090E00BD981C /* MSAboutTabController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSAboutTabController.swift; sourceTree = "<group>"; };
@@ -202,6 +203,7 @@
 		C6CFD0521B45EDA90067A6AD /* MansbridgeSummit */ = {
 			isa = PBXGroup;
 			children = (
+				C6721A001B49620200E7B050 /* MansbridgeSummit.entitlements */,
 				C6E163361B48292800942749 /* ThirdPartyFramework */,
 				C6CFD0591B45EDA90067A6AD /* Main.storyboard */,
 				C6CFD05E1B45EDA90067A6AD /* LaunchScreen.storyboard */,
@@ -375,6 +377,12 @@
 				TargetAttributes = {
 					C6CFD04F1B45EDA90067A6AD = {
 						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = 7KC276AP3U;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
 					};
 					C6CFD0651B45EDA90067A6AD = {
 						CreatedOnToolsVersion = 7.0;
@@ -640,8 +648,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = MansbridgeSummit/MansbridgeSummit.entitlements;
 				INFOPLIST_FILE = MansbridgeSummit/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mta.MansbridgeSummit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -652,8 +661,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = MansbridgeSummit/MansbridgeSummit.entitlements;
 				INFOPLIST_FILE = MansbridgeSummit/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mta.MansbridgeSummit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
