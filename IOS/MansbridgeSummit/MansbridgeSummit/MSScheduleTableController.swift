@@ -26,7 +26,7 @@ public class MSScheduleTableController : UITableViewController {
     
     override init(style: UITableViewStyle) {
 
-        super.init(style: .Plain) // .Grouped? Try this out
+        super.init(style: style) // .Grouped? Try this out
     }
 
     // Doesn't this defeat the purpose of MVC? Because now the controller only work with
