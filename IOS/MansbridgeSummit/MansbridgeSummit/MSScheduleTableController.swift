@@ -134,12 +134,10 @@ public class MSScheduleTableController : UITableViewController {
             let dateLabel = UILabel(frame: CGRect(x: 0.0, y: 0.0, width: tableView.bounds.width, height: 50))
             
             dateLabel.text = msdate.date
-            dateLabel.font = GlobalConstants.Font.myraidpro_bold_24
+            dateLabel.font = GlobalConstants.Font.garamond_22
             dateLabel.textColor = GlobalConstants.Color.white
             dateLabel.backgroundColor = GlobalConstants.Color.gold
-
-            
-            
+            dateLabel.adjustsFontSizeToFitWidth = true
             dateLabel.textAlignment = .Center
             
             return dateLabel

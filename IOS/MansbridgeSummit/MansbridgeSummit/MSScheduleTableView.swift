@@ -39,7 +39,8 @@ public class MSScheduleTableView : UITableView {
         let scheduleHeaderLabel = UILabel(frame: CGRect(x: 0, y: 0, width: tableWidth, height: 75))
         
         scheduleHeaderLabel.text = "Mansbridge Summit Schedule"
-        scheduleHeaderLabel.font = GlobalConstants.Font.garamond_24
+        scheduleHeaderLabel.font = GlobalConstants.Font.myraidpro_bold_26
+        scheduleHeaderLabel.adjustsFontSizeToFitWidth = true
         scheduleHeaderLabel.textColor = GlobalConstants.Color.white
         scheduleHeaderLabel.backgroundColor = GlobalConstants.Color.red
         scheduleHeaderLabel.textAlignment = .Center

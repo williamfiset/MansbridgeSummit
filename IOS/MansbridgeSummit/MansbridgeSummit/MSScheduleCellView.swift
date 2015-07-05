@@ -27,8 +27,21 @@ public class MSScheduleCellView : UITableViewCell {
         return self.contentView.bounds.width
     }
     
-    let DELIMITER_WIDTH : CGFloat = 5
-    let DELIMITER_SPACING : CGFloat = 10
+    var DELIMITER_WIDTH : CGFloat {
+        if GlobalConstants.DeviceType.iPhone {
+           return 5
+        } else {
+            return 10
+        }
+    }
+    
+    var DELIMITER_SPACING : CGFloat {
+        if GlobalConstants.DeviceType.iPhone {
+            return 3
+        } else {
+            return 10
+        }
+    }
     
     let TIME_LABEL_LEFT_SPACING : CGFloat = 10.0
     
