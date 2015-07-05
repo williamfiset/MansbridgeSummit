@@ -90,7 +90,7 @@ class ExtensionsTests: XCTestCase {
         arr1.removeObject("c")
         XCTAssertEqual(arr1, [])
         
-        arr1.removeObject("d") // "d" doesn't exist
+        arr1.removeObject("d")  // "d" doesn't exist
         XCTAssertEqual(arr1, [])
         
     }
