@@ -24,6 +24,11 @@ public class MSScheduleTableController : UITableViewController {
         // remove? or use when displaying data?
     }
     
+    override init(style: UITableViewStyle) {
+
+        super.init(style: .Plain) // .Grouped? Try this out
+    }
+
     // Doesn't this defeat the purpose of MVC? Because now the controller only work with
     // one table unless you subless it and override this method?
     public override func loadView() {
