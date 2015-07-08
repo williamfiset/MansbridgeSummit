@@ -19,21 +19,11 @@ public class MSScheduleTableController : UITableViewController {
     
     let schedule_file_name = "test_schedule"
     var days : [MSDay] = []
-    
-    public override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // remove? or use when displaying data?
-    }
-    
-    override init(style: UITableViewStyle) {
 
-        super.init(style: style) // .Grouped? Try this out
-    }
-    
-    
     // Doesn't this defeat the purpose of MVC? Because now the controller only work with
     // one table unless you subless it and override this method?
     public override func viewWillAppear(animated: Bool) {
-        
+
         // Remove the navigation bar to provide more room for viewing
         self.navigationController!.navigationBar.hidden = true
         
@@ -47,7 +37,27 @@ public class MSScheduleTableController : UITableViewController {
         
         if let reader = MSScheduleReader(fileName: schedule_file_name) {
             days = reader.read()
+        } else {
+            fatalError()
         }
+
+    }
+
+    public override func viewDidAppear(animated: Bool) {
+        
+        // Remove the navigation bar to provide more room for viewing
+        self.navigationController!.navigationBar.hidden = true
+        
+    }
+    
+    
+    public override func viewWillDisappear(animated: Bool) {
+    
+        // Unselect selected row when leaving this controller
+        if let indexPath = self.tableView.indexPathForSelectedRow {
+            self.tableView.deselectRowAtIndexPath(indexPath, animated: true);
+        }
+        
     }
     
     public override func prefersStatusBarHidden() -> Bool {
@@ -61,14 +71,12 @@ public class MSScheduleTableController : UITableViewController {
     
     /* Each Day (section) has multiple events (rows). Given a day return the number of events in the day */
     public override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        
-        if section < days.count {
-            return days[section].events.count
-        } else {
-            assert(false)
-            return -1
-        }
-
+        return days[section].events.count
+    }
+    
+    /* Return the header for each section (the date) */
+    public override func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return days[section].date
     }
 
     
@@ -82,72 +90,54 @@ public class MSScheduleTableController : UITableViewController {
         let eventIndex = indexPath.row
         
         // Fetch required data in Data structure 
+        let day = days[dayIndex]
+        let event = day.events[eventIndex]
         
-        if dayIndex < days.count {
-            let day = days[dayIndex]
-            if eventIndex < day.events.count {
-                
-                let event = day.events[eventIndex]
-                
-                // Create UITableViewCell with a resuable identifier.
-                // The resueable idenfiier lets you save tons of memory by snagging a cell
-                // with the same identifier and copying it's properties.
-                
-                var eventCell = tableView.dequeueReusableCellWithIdentifier(eventCellID)
-                
-                if (eventCell === nil) {
-                    eventCell = MSScheduleCellView(event: event, cellIdentifier: eventCellID)
-                }
-                
-                if (eventCell != nil) {
-                    return eventCell!
-                }
-                
-            }
-        }
+        // Create UITableViewCell with a resuable identifier.
+        // The resueable idenfiier lets you save tons of memory by snagging a cell
+        // with the same identifier and copying it's properties.
         
-        // Ohh no, where did our cell go?
-        assert(false)
-        return UITableViewCell()
-
-
-    }
-    
-    public override func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        
-        if section < days.count {
-            return days[section].date
+        if let eventCell = tableView.dequeueReusableCellWithIdentifier(eventCellID) {
+            return eventCell
         } else {
-            assert(false)
-            return "Invalid Date"
+            return MSScheduleCellView(event: event, cellIdentifier: eventCellID)
         }
         
     }
     
-    
+    /* Create a view (UILabel in this case) which will appear at the top of the UITableView (header) */
     public override func tableView(tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         
-        if section < days.count {
-            
-            let msdate = days[section]
-            
-            let dateLabel = UILabel(frame: CGRect(x: 0.0, y: 0.0, width: tableView.bounds.width, height: 50))
-            
-            dateLabel.text = msdate.date
-            dateLabel.font = GlobalConstants.Font.garamond_22
-            dateLabel.textColor = GlobalConstants.Color.white
-            dateLabel.backgroundColor = GlobalConstants.Color.gold
-            dateLabel.adjustsFontSizeToFitWidth = true
-            dateLabel.textAlignment = .Center
-            
-            return dateLabel
-            
-        }
+        let msdate = days[section]
         
-        assert(false)
+        let dateLabel = UILabel(frame: CGRect(x: 0.0, y: 0.0, width: tableView.bounds.width, height: 50))
         
-        return UIView()
+        dateLabel.text = msdate.date
+        dateLabel.font = GlobalConstants.Font.garamond_22
+        dateLabel.textColor = GlobalConstants.Color.white
+        dateLabel.backgroundColor = GlobalConstants.Color.gold
+        dateLabel.adjustsFontSizeToFitWidth = true
+        dateLabel.textAlignment = .Center
+        
+        return dateLabel
+        
     }
+    
+    /* Executes when user presses a cell */
+    public override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+
+        let section = indexPath.section;
+        let row = indexPath.row;
+        let event = days[section].events[row];
+        
+        let controller = MSEventPageController()
+        let eventPageView = MSEventPageView( frame: controller.view.frame, event: event )
+        controller.view = eventPageView
+        
+        self.navigationController!.pushViewController(controller, animated: true);
+        
+    }
+    
     
     required public init(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)

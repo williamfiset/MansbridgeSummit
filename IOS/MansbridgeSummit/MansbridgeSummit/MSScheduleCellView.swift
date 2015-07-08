@@ -79,7 +79,7 @@ public class MSScheduleCellView : UITableViewCell {
     init( event : MSEvent, cellIdentifier : String ) {
 
         self.event = event
-
+        
         super.init(style: .Default, reuseIdentifier: cellIdentifier)
 
         setTimeLabelProperties(event.eventTime)
