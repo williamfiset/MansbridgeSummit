@@ -22,8 +22,8 @@ class MSScheduleTableControllerTests: XCTestCase {
 
     func testInit() {
         
-        let controller1 = MSScheduleTableController(style: UITableViewStyle.Plain)
-        let controller2 = MSScheduleTableController(style: UITableViewStyle.Grouped)
+        let controller1 = MSScheduleTableController(style: .Grouped)
+        let controller2 = MSScheduleTableController(style: .Plain)
         
         XCTAssertNotNil(controller1)
         XCTAssertNotNil(controller2)

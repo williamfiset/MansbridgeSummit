@@ -42,12 +42,14 @@ public class MSScheduleTableController : UITableViewController {
         }
 
     }
+    
+    // Keep constructor (used in Test cases...)
+    override init(style: UITableViewStyle) {
+        super.init(style: style)
+    }
 
     public override func viewDidAppear(animated: Bool) {
-        
-        // Remove the navigation bar to provide more room for viewing
-        self.navigationController!.navigationBar.hidden = true
-        
+       
     }
     
     
@@ -129,10 +131,10 @@ public class MSScheduleTableController : UITableViewController {
         let section = indexPath.section;
         let row = indexPath.row;
         let event = days[section].events[row];
-        
+
+        // Find a neater way to set the view in the init method of MSEventPageController?
         let controller = MSEventPageController()
-        let eventPageView = MSEventPageView( frame: controller.view.frame, event: event )
-        controller.view = eventPageView
+        controller.view = MSEventPageView( frame: controller.view.frame, event: event )
         
         self.navigationController!.pushViewController(controller, animated: true);
         

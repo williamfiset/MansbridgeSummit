@@ -19,6 +19,7 @@ public class MSEventPageView : UIView {
     var eventDescriptionLabel = UILabel()
     var eventSpeakerLabel = UILabel()
 
+    var returnButton = UIButton();
     
     init(frame  : CGRect, event : MSEvent ) {
         
@@ -27,7 +28,8 @@ public class MSEventPageView : UIView {
         super.init(frame: frame)
         
         self.backgroundColor = UIColor.grayColor()
-        
+
+        createReturnButton();
         setupLabels()
         addViews();
 
@@ -53,6 +55,12 @@ public class MSEventPageView : UIView {
         
     }
 
+    private func createReturnButton() -> Void {
+        
+        returnButton = UIButton(frame: CGRect(x: bounds.width/2, y: frame.height-100, width: 250, height: 75))
+        returnButton.setTitle("Return", forState: UIControlState.Normal)
+        
+    }
     
     private func addViews() -> Void {
         
@@ -61,7 +69,8 @@ public class MSEventPageView : UIView {
         self.addSubview(eventLocationLabel)
         self.addSubview(eventDescriptionLabel)
         self.addSubview(eventSpeakerLabel)
-
+        
+        self.addSubview(returnButton)
     }
     
     public required init(coder aDecoder: NSCoder) {

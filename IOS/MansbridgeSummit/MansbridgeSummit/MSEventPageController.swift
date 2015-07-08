@@ -11,18 +11,17 @@ import UIKit
 
 
 public class MSEventPageController : UIViewController {
+    
+    var eventPageView : MSEventPageView!
 
-    
-    var returnButton = UIButton();
-    
     public override func viewWillAppear(animated: Bool) {
 
         super.viewWillAppear(animated);
         
         // Navigation bar is essential to go back, unless we make a back button
-        self.navigationController!.navigationBar.hidden = false
-        createReturnButton();
-        self.view.addSubview(returnButton)
+        
+        self.eventPageView = view as! MSEventPageView
+        eventPageView.returnButton.addTarget(self, action: "returnButtonClick", forControlEvents: .TouchUpInside)
         
     }
     
@@ -30,21 +29,12 @@ public class MSEventPageController : UIViewController {
         
         view.backgroundColor = UIColor.whiteColor()
         self.navigationController?.popToRootViewControllerAnimated(true);
-        
+
     }
     
-    
-    private func createReturnButton() -> Void {
-        
-        returnButton = UIButton(frame: CGRect(x: view.bounds.width/2, y: view.frame.height-100, width: 250, height: 75))
-        returnButton.setTitle("Return", forState: UIControlState.Normal)
-        
-        let actionMethod = Selector("returnButtonClick");
-        returnButton.addTarget(self, action: actionMethod, forControlEvents: UIControlEvents.TouchUpInside)
-        
-    }
     
     public func returnButtonClick() -> Void {
+    
         self.navigationController?.popToRootViewControllerAnimated(true);
         
     }
