@@ -10,6 +10,14 @@
 		C61C00641B4C7F1600AB4D6C /* MSEventPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C61C00631B4C7F1600AB4D6C /* MSEventPageController.swift */; };
 		C61C00651B4C7F1600AB4D6C /* MSEventPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C61C00631B4C7F1600AB4D6C /* MSEventPageController.swift */; };
 		C61C00661B4C7F1600AB4D6C /* MSEventPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C61C00631B4C7F1600AB4D6C /* MSEventPageController.swift */; };
+		C67926AA1B4DC36900EA86B4 /* MSScheduleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67926A91B4DC36900EA86B4 /* MSScheduleTests.swift */; };
+		C67926AB1B4DC91B00EA86B4 /* test_schedule.json in Resources */ = {isa = PBXBuildFile; fileRef = C6E163321B481C5000942749 /* test_schedule.json */; };
+		C67926AE1B4DC94100EA86B4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6CFD05E1B45EDA90067A6AD /* LaunchScreen.storyboard */; };
+		C67926AF1B4DC94100EA86B4 /* TabBarIcons.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6CFD05C1B45EDA90067A6AD /* TabBarIcons.xcassets */; };
+		C67926B21B4DC94B00EA86B4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6CFD05E1B45EDA90067A6AD /* LaunchScreen.storyboard */; };
+		C67926B31B4DC94B00EA86B4 /* TabBarIcons.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6CFD05C1B45EDA90067A6AD /* TabBarIcons.xcassets */; };
+		C67926B61B4DD0F800EA86B4 /* MSEventTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67926B51B4DD0F800EA86B4 /* MSEventTests.swift */; };
+		C67926BC1B4DD2A100EA86B4 /* MScheduleTableViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67926BB1B4DD2A100EA86B4 /* MScheduleTableViewTests.swift */; };
 		C69E4A541B46088800BD981C /* MSTwitterTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69E4A531B46088800BD981C /* MSTwitterTabController.swift */; };
 		C69E4A551B46088800BD981C /* MSTwitterTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69E4A531B46088800BD981C /* MSTwitterTabController.swift */; };
 		C69E4A561B46088800BD981C /* MSTwitterTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69E4A531B46088800BD981C /* MSTwitterTabController.swift */; };
@@ -71,7 +79,6 @@
 		C6E163301B481AE600942749 /* MSCellModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6E1632D1B481AE600942749 /* MSCellModels.swift */; };
 		C6E163331B481C5000942749 /* test_schedule.json in Resources */ = {isa = PBXBuildFile; fileRef = C6E163321B481C5000942749 /* test_schedule.json */; };
 		C6E163341B481C5000942749 /* test_schedule.json in Resources */ = {isa = PBXBuildFile; fileRef = C6E163321B481C5000942749 /* test_schedule.json */; };
-		C6E163351B481C5000942749 /* test_schedule.json in Resources */ = {isa = PBXBuildFile; fileRef = C6E163321B481C5000942749 /* test_schedule.json */; };
 		C6E163391B48296600942749 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6E163381B48296600942749 /* SwiftyJSON.swift */; };
 		C6E1633A1B48296600942749 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6E163381B48296600942749 /* SwiftyJSON.swift */; };
 		C6E1633B1B48296600942749 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6E163381B48296600942749 /* SwiftyJSON.swift */; };
@@ -101,6 +108,9 @@
 /* Begin PBXFileReference section */
 		C61C00631B4C7F1600AB4D6C /* MSEventPageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSEventPageController.swift; sourceTree = "<group>"; };
 		C6721A001B49620200E7B050 /* MansbridgeSummit.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = MansbridgeSummit.entitlements; sourceTree = "<group>"; };
+		C67926A91B4DC36900EA86B4 /* MSScheduleTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSScheduleTests.swift; sourceTree = "<group>"; };
+		C67926B51B4DD0F800EA86B4 /* MSEventTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSEventTests.swift; sourceTree = "<group>"; };
+		C67926BB1B4DD2A100EA86B4 /* MScheduleTableViewTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MScheduleTableViewTests.swift; sourceTree = "<group>"; };
 		C69E4A531B46088800BD981C /* MSTwitterTabController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSTwitterTabController.swift; sourceTree = "<group>"; };
 		C69E4A571B4608C500BD981C /* MSRegisterTabController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSRegisterTabController.swift; sourceTree = "<group>"; };
 		C69E4A5B1B46090E00BD981C /* MSAboutTabController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSAboutTabController.swift; sourceTree = "<group>"; };
@@ -164,6 +174,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C67926A61B4DC2F500EA86B4 /* MSEventPage */ = {
+			isa = PBXGroup;
+			children = (
+				C61C00631B4C7F1600AB4D6C /* MSEventPageController.swift */,
+				C6EB79891B4C903400F5E516 /* MSEventPageView.swift */,
+			);
+			name = MSEventPage;
+			sourceTree = "<group>";
+		};
+		C67926A81B4DC34200EA86B4 /* MSScheduleUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C67926A91B4DC36900EA86B4 /* MSScheduleTests.swift */,
+			);
+			name = MSScheduleUITests;
+			sourceTree = "<group>";
+		};
+		C67926B41B4DD0E300EA86B4 /* MSEvents */ = {
+			isa = PBXGroup;
+			children = (
+				C67926B51B4DD0F800EA86B4 /* MSEventTests.swift */,
+			);
+			name = MSEvents;
+			sourceTree = "<group>";
+		};
 		C69E4A671B460A5000BD981C /* Tabs */ = {
 			isa = PBXGroup;
 			children = (
@@ -179,12 +214,11 @@
 		C69E4A6C1B46128900BD981C /* ScheduleTab */ = {
 			isa = PBXGroup;
 			children = (
+				C67926A61B4DC2F500EA86B4 /* MSEventPage */,
 				C69E4A631B460A3F00BD981C /* MSScheduleTableController.swift */,
 				C69E4A711B4620AC00BD981C /* MSScheduleTableView.swift */,
 				C69E4A6D1B4612A600BD981C /* MSScheduleCellView.swift */,
 				C6E1632D1B481AE600942749 /* MSCellModels.swift */,
-				C61C00631B4C7F1600AB4D6C /* MSEventPageController.swift */,
-				C6EB79891B4C903400F5E516 /* MSEventPageView.swift */,
 			);
 			name = ScheduleTab;
 			sourceTree = "<group>";
@@ -243,6 +277,7 @@
 		C6CFD0741B45EDA90067A6AD /* MansbridgeSummitUITests */ = {
 			isa = PBXGroup;
 			children = (
+				C67926A81B4DC34200EA86B4 /* MSScheduleUITests */,
 				C6CFD0751B45EDA90067A6AD /* MansbridgeSummitUITests.swift */,
 				C6CFD0771B45EDA90067A6AD /* Info.plist */,
 			);
@@ -292,6 +327,8 @@
 				C6E163291B48137900942749 /* MSScheduleTableControllerTests.swift */,
 				C6E1632B1B4814EC00942749 /* MSScheduleCellView.Tests.swift */,
 				C6E1633C1B482A7200942749 /* MSScheduleJsonFileTests.swift */,
+				C67926BB1B4DD2A100EA86B4 /* MScheduleTableViewTests.swift */,
+				C67926B41B4DD0E300EA86B4 /* MSEvents */,
 			);
 			name = MSScheduleTests;
 			sourceTree = "<group>";
@@ -444,6 +481,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C67926AE1B4DC94100EA86B4 /* LaunchScreen.storyboard in Resources */,
+				C67926AF1B4DC94100EA86B4 /* TabBarIcons.xcassets in Resources */,
 				C6D9E9611B474F1000249DA4 /* Main.storyboard in Resources */,
 				C6D9E9781B4774CB00249DA4 /* AppleGaramond-Bold.ttf in Resources */,
 				C6E163341B481C5000942749 /* test_schedule.json in Resources */,
@@ -457,9 +496,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C67926B21B4DC94B00EA86B4 /* LaunchScreen.storyboard in Resources */,
+				C67926B31B4DC94B00EA86B4 /* TabBarIcons.xcassets in Resources */,
+				C67926AB1B4DC91B00EA86B4 /* test_schedule.json in Resources */,
 				C6D9E9621B474F1100249DA4 /* Main.storyboard in Resources */,
 				C6D9E9791B4774CB00249DA4 /* AppleGaramond-Bold.ttf in Resources */,
-				C6E163351B481C5000942749 /* test_schedule.json in Resources */,
 				C6D9E98F1B4778A400249DA4 /* MyriadPro-Bold.OTF in Resources */,
 				C6D9E9881B4774CB00249DA4 /* AppleGaramond.ttf in Resources */,
 				C6D9E9921B4778A400249DA4 /* MyriadPro-Regular.OTF in Resources */,
@@ -500,6 +541,7 @@
 				C6E1632A1B48137900942749 /* MSScheduleTableControllerTests.swift in Sources */,
 				C69E4A611B4609D700BD981C /* MSPrimaryTabController.swift in Sources */,
 				C61C00651B4C7F1600AB4D6C /* MSEventPageController.swift in Sources */,
+				C67926BC1B4DD2A100EA86B4 /* MScheduleTableViewTests.swift in Sources */,
 				C6D9E9961B477D6E00249DA4 /* ExtensionsTests.swift in Sources */,
 				C6E1633D1B482A7200942749 /* MSScheduleJsonFileTests.swift in Sources */,
 				C6D9E9691B475E2D00249DA4 /* Constants.swift in Sources */,
@@ -509,6 +551,7 @@
 				C6D9E9651B475BCD00249DA4 /* Extensions.swift in Sources */,
 				C69E4A5D1B46090E00BD981C /* MSAboutTabController.swift in Sources */,
 				C6CAB4331B498B770077D60B /* MSTabBar.swift in Sources */,
+				C67926B61B4DD0F800EA86B4 /* MSEventTests.swift in Sources */,
 				C69E4A651B460A3F00BD981C /* MSScheduleTableController.swift in Sources */,
 				C6E1633A1B48296600942749 /* SwiftyJSON.swift in Sources */,
 				C6C00A6C1B45F3B300709992 /* MSTabBarController.swift in Sources */,
@@ -525,6 +568,7 @@
 			files = (
 				C69E4A621B4609D700BD981C /* MSPrimaryTabController.swift in Sources */,
 				C6D9E96A1B475E2D00249DA4 /* Constants.swift in Sources */,
+				C67926AA1B4DC36900EA86B4 /* MSScheduleTests.swift in Sources */,
 				C61C00661B4C7F1600AB4D6C /* MSEventPageController.swift in Sources */,
 				C6CFD0761B45EDA90067A6AD /* MansbridgeSummitUITests.swift in Sources */,
 				C6CAB4341B498B770077D60B /* MSTabBar.swift in Sources */,
