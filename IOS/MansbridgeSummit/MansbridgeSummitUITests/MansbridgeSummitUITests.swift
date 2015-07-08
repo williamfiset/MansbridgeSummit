@@ -6,6 +6,7 @@
 //  Copyright © 2015 Mansbridge Summit Dev Team. All rights reserved.
 //
 
+/*
 import Foundation
 import XCTest
 
@@ -33,3 +34,4 @@ class MansbridgeSummitUITests: XCTestCase {
     }
     
 }
+*/
