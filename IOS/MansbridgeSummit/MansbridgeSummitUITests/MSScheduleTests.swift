@@ -26,7 +26,7 @@ class MSScheduleTests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
         super.tearDown()
     }
-    
+    /*
     func testOpeningEvents() {
 
         // For some unknown reason the UI Tests cannot find the test_schedule file...
@@ -47,7 +47,7 @@ class MSScheduleTests: XCTestCase {
 //            table.childrenMatchingType(.Cell).elementAtIndex(i).tap()
 //            returnButton.tap()
 //        }
-        
+
         table.childrenMatchingType(.Cell).elementAtIndex(0).tap()
         returnButton.tap()
         table.childrenMatchingType(.Cell).elementAtIndex(1).tap()
@@ -79,10 +79,10 @@ class MSScheduleTests: XCTestCase {
         
         
     }
-
-}
 */
+}
 
+*/
 
 
 

@@ -129,7 +129,7 @@ public class MSScheduleCellView : UITableViewCell {
     }
 
     
-    required public init(coder aDecoder: NSCoder) {
+    required public init!(coder aDecoder: NSCoder) {
         
         // XCode forced me to create an invalid object... Cleanup somehow?
         event = MSEvent (
