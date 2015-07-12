@@ -23,7 +23,9 @@ public class MSScheduleTableController : UITableViewController {
     // Doesn't this defeat the purpose of MVC? Because now the controller only work with
     // one table unless you subless it and override this method?
     public override func viewWillAppear(animated: Bool) {
-
+        
+        super.viewWillAppear(animated)
+        
         // Remove the navigation bar to provide more room for viewing
         self.navigationController!.navigationBar.hidden = true
         
@@ -49,9 +51,20 @@ public class MSScheduleTableController : UITableViewController {
     }
 
     public override func viewDidAppear(animated: Bool) {
-       
+        
+        super.viewDidAppear(animated)
+        //adjustTableHeight()
+
     }
     
+    public func adjustTableHeight() -> Void {
+        
+        if let tabBar = self.tabBarController?.tabBar {
+            let newFrame = CGRect(x: 0, y: 0, width: self.tableView.frame.width, height: self.tableView.frame.height - tabBar.frame.height)
+            self.tableView.frame = newFrame
+        }
+
+    }
     
     public override func viewWillDisappear(animated: Bool) {
     
