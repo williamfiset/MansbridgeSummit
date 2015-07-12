@@ -20,11 +20,15 @@ public class MSScheduleTableController : UITableViewController {
     let schedule_file_name = "test_schedule"
     var days : [MSDay] = []
 
-    // Doesn't this defeat the purpose of MVC? Because now the controller only work with
-    // one table unless you subless it and override this method?
+    var adjustedTableHeight : Bool = false
+    
+    // viewWillAppear is called when the schedule tab button is pressed
+    // but not when comming back from an MSEventPage. This means this method
+    // acts as a constructor, in a sense.
     public override func viewWillAppear(animated: Bool) {
         
         super.viewWillAppear(animated)
+        adjustedTableHeight = false
         
         // Remove the navigation bar to provide more room for viewing
         self.navigationController!.navigationBar.hidden = true
@@ -42,7 +46,7 @@ public class MSScheduleTableController : UITableViewController {
         } else {
             fatalError()
         }
-
+        
     }
     
     // Keep constructor (used in Test cases...)
@@ -58,10 +62,13 @@ public class MSScheduleTableController : UITableViewController {
     }
     
     public func adjustTableHeight() -> Void {
-        
-        if let tabBar = self.tabBarController?.tabBar {
-            let newFrame = CGRect(x: 0, y: 0, width: self.tableView.frame.width, height: self.tableView.frame.height - tabBar.frame.height)
-            self.tableView.frame = newFrame
+
+        if !adjustedTableHeight {
+            if let tabBar = self.tabBarController?.tabBar {
+                let newFrame = CGRect(x: 0, y: 0, width: self.tableView.frame.width, height: self.tableView.frame.height - tabBar.frame.height)
+                self.tableView.frame = newFrame
+            }
+            adjustedTableHeight = true
         }
 
     }
