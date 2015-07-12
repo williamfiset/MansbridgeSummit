@@ -53,7 +53,7 @@ public class MSScheduleTableController : UITableViewController {
     public override func viewDidAppear(animated: Bool) {
         
         super.viewDidAppear(animated)
-        //adjustTableHeight()
+        adjustTableHeight()
 
     }
     
