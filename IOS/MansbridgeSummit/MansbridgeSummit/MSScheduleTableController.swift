@@ -64,10 +64,10 @@ public class MSScheduleTableController : UITableViewController {
     public func adjustTableHeight() -> Void {
 
         if !adjustedTableHeight {
-            if let tabBar = self.tabBarController?.tabBar {
-                let newFrame = CGRect(x: 0, y: 0, width: self.tableView.frame.width, height: self.tableView.frame.height - tabBar.frame.height)
-                self.tableView.frame = newFrame
-            }
+
+            let newFrame = CGRect(x: 0, y: 0, width: self.tableView.frame.width, height: self.tableView.frame.height - GlobalConstants.tabBarHeight)
+            self.tableView.frame = newFrame
+
             adjustedTableHeight = true
         }
 

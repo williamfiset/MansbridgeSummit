@@ -13,7 +13,7 @@ import UIKit
 
 public class MSScheduleCellView : UITableViewCell {
     
-    let event : MSEvent
+    let event : MSEvent!
     
     var eventTimeLabel = UILabel()
     var cellDelimiter = UIView()
@@ -128,19 +128,12 @@ public class MSScheduleCellView : UITableViewCell {
 
     }
 
-    
+    // Not planning on using this init method
     required public init!(coder aDecoder: NSCoder) {
         
-        // XCode forced me to create an invalid object... Cleanup somehow?
-        event = MSEvent (
-            eventName: "EventName",
-            eventTime: "eventTime",
-            eventLocation: "eventLocation",
-            eventDescription: "eventDescription",
-            eventSpeaker: "eventSpeaker"
-        )
-        
+        event = nil
         super.init(coder: aDecoder)
+        
     }
     
 }

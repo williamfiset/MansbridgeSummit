@@ -18,6 +18,12 @@
 		C67926B31B4DC94B00EA86B4 /* TabBarIcons.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6CFD05C1B45EDA90067A6AD /* TabBarIcons.xcassets */; };
 		C67926B61B4DD0F800EA86B4 /* MSEventTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67926B51B4DD0F800EA86B4 /* MSEventTests.swift */; };
 		C67926BC1B4DD2A100EA86B4 /* MScheduleTableViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67926BB1B4DD2A100EA86B4 /* MScheduleTableViewTests.swift */; };
+		C68956361B52AFBB006D188F /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C68956351B52AFBB006D188F /* Media.xcassets */; };
+		C68956371B52AFBB006D188F /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C68956351B52AFBB006D188F /* Media.xcassets */; };
+		C68956381B52AFBB006D188F /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C68956351B52AFBB006D188F /* Media.xcassets */; };
+		C689563B1B52B399006D188F /* MSScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C689563A1B52B399006D188F /* MSScrollView.swift */; };
+		C689563C1B52B399006D188F /* MSScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C689563A1B52B399006D188F /* MSScrollView.swift */; };
+		C689563D1B52B399006D188F /* MSScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C689563A1B52B399006D188F /* MSScrollView.swift */; };
 		C69E4A541B46088800BD981C /* MSTwitterTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69E4A531B46088800BD981C /* MSTwitterTabController.swift */; };
 		C69E4A551B46088800BD981C /* MSTwitterTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69E4A531B46088800BD981C /* MSTwitterTabController.swift */; };
 		C69E4A561B46088800BD981C /* MSTwitterTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69E4A531B46088800BD981C /* MSTwitterTabController.swift */; };
@@ -111,6 +117,8 @@
 		C67926A91B4DC36900EA86B4 /* MSScheduleTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSScheduleTests.swift; sourceTree = "<group>"; };
 		C67926B51B4DD0F800EA86B4 /* MSEventTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSEventTests.swift; sourceTree = "<group>"; };
 		C67926BB1B4DD2A100EA86B4 /* MScheduleTableViewTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MScheduleTableViewTests.swift; sourceTree = "<group>"; };
+		C68956351B52AFBB006D188F /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
+		C689563A1B52B399006D188F /* MSScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSScrollView.swift; sourceTree = "<group>"; };
 		C69E4A531B46088800BD981C /* MSTwitterTabController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSTwitterTabController.swift; sourceTree = "<group>"; };
 		C69E4A571B4608C500BD981C /* MSRegisterTabController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSRegisterTabController.swift; sourceTree = "<group>"; };
 		C69E4A5B1B46090E00BD981C /* MSAboutTabController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSAboutTabController.swift; sourceTree = "<group>"; };
@@ -199,10 +207,19 @@
 			name = MSEvents;
 			sourceTree = "<group>";
 		};
-		C69E4A671B460A5000BD981C /* Tabs */ = {
+		C68956391B52B2EF006D188F /* FirstTab */ = {
 			isa = PBXGroup;
 			children = (
 				C69E4A5F1B4609D700BD981C /* MSPrimaryTabController.swift */,
+				C689563A1B52B399006D188F /* MSScrollView.swift */,
+			);
+			name = FirstTab;
+			sourceTree = "<group>";
+		};
+		C69E4A671B460A5000BD981C /* Tabs */ = {
+			isa = PBXGroup;
+			children = (
+				C68956391B52B2EF006D188F /* FirstTab */,
 				C69E4A571B4608C500BD981C /* MSRegisterTabController.swift */,
 				C69E4A6C1B46128900BD981C /* ScheduleTab */,
 				C69E4A531B46088800BD981C /* MSTwitterTabController.swift */,
@@ -290,6 +307,7 @@
 				C6E163311B481BFF00942749 /* Schedule */,
 				C6D9E9891B47785000249DA4 /* Fonts */,
 				C6CFD05C1B45EDA90067A6AD /* TabBarIcons.xcassets */,
+				C68956351B52AFBB006D188F /* Media.xcassets */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -473,6 +491,7 @@
 				C6D9E9901B4778A400249DA4 /* MyriadPro-Regular.OTF in Resources */,
 				C6CFD05B1B45EDA90067A6AD /* Main.storyboard in Resources */,
 				C6D9E98D1B4778A400249DA4 /* MyriadPro-Bold.OTF in Resources */,
+				C68956361B52AFBB006D188F /* Media.xcassets in Resources */,
 				C6D9E9771B4774CB00249DA4 /* AppleGaramond-Bold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -488,6 +507,7 @@
 				C6E163341B481C5000942749 /* test_schedule.json in Resources */,
 				C6D9E98E1B4778A400249DA4 /* MyriadPro-Bold.OTF in Resources */,
 				C6D9E9871B4774CB00249DA4 /* AppleGaramond.ttf in Resources */,
+				C68956371B52AFBB006D188F /* Media.xcassets in Resources */,
 				C6D9E9911B4778A400249DA4 /* MyriadPro-Regular.OTF in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -503,6 +523,7 @@
 				C6D9E9791B4774CB00249DA4 /* AppleGaramond-Bold.ttf in Resources */,
 				C6D9E98F1B4778A400249DA4 /* MyriadPro-Bold.OTF in Resources */,
 				C6D9E9881B4774CB00249DA4 /* AppleGaramond.ttf in Resources */,
+				C68956381B52AFBB006D188F /* Media.xcassets in Resources */,
 				C6D9E9921B4778A400249DA4 /* MyriadPro-Regular.OTF in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -525,6 +546,7 @@
 				C6D9E9641B475BCD00249DA4 /* Extensions.swift in Sources */,
 				C69E4A5C1B46090E00BD981C /* MSAboutTabController.swift in Sources */,
 				C6EB798A1B4C903400F5E516 /* MSEventPageView.swift in Sources */,
+				C689563B1B52B399006D188F /* MSScrollView.swift in Sources */,
 				C69E4A641B460A3F00BD981C /* MSScheduleTableController.swift in Sources */,
 				C6E1632E1B481AE600942749 /* MSCellModels.swift in Sources */,
 				C6C00A6B1B45F3B300709992 /* MSTabBarController.swift in Sources */,
@@ -551,6 +573,7 @@
 				C6D9E9651B475BCD00249DA4 /* Extensions.swift in Sources */,
 				C69E4A5D1B46090E00BD981C /* MSAboutTabController.swift in Sources */,
 				C6CAB4331B498B770077D60B /* MSTabBar.swift in Sources */,
+				C689563C1B52B399006D188F /* MSScrollView.swift in Sources */,
 				C67926B61B4DD0F800EA86B4 /* MSEventTests.swift in Sources */,
 				C69E4A651B460A3F00BD981C /* MSScheduleTableController.swift in Sources */,
 				C6E1633A1B48296600942749 /* SwiftyJSON.swift in Sources */,
@@ -583,6 +606,7 @@
 				C6C00A6D1B45F3B300709992 /* MSTabBarController.swift in Sources */,
 				C6E1633B1B48296600942749 /* SwiftyJSON.swift in Sources */,
 				C69E4A5A1B4608C500BD981C /* MSRegisterTabController.swift in Sources */,
+				C689563D1B52B399006D188F /* MSScrollView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

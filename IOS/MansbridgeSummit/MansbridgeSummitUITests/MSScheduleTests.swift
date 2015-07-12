@@ -5,7 +5,7 @@
 //  Created by William Fiset on 2015-07-08.
 //  Copyright © 2015 Mansbridge Summit Dev Team. All rights reserved.
 //
-/*
+
 import Foundation
 import XCTest
 
@@ -26,7 +26,7 @@ class MSScheduleTests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
         super.tearDown()
     }
-    /*
+    
     func testOpeningEvents() {
 
         // For some unknown reason the UI Tests cannot find the test_schedule file...
@@ -34,7 +34,7 @@ class MSScheduleTests: XCTestCase {
 //        XCTAssertNotNil(reader)
 //        let _ = reader!.read().count
         
-        
+               /* 
         let app = XCUIApplication()
         
         app.windows.tabBars.buttons["Schedule"].tap()
@@ -74,15 +74,15 @@ class MSScheduleTests: XCTestCase {
         returnButton.tap()
         
         // I think it fails becasue you actually can't reach it.
-        //table.childrenMatchingType(.Cell).elementAtIndex(12).tap()
-        //returnButton.tap()
-        
+        table.childrenMatchingType(.Cell).elementAtIndex(12).tap()
+        returnButton.tap()
+        */
         
     }
-*/
+
 }
 
-*/
+
 
 
 
