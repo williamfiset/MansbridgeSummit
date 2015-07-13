@@ -30,6 +30,15 @@ class MSScheduleTableControllerTests: XCTestCase {
         
     }
     
+    func testViewDidLoad() {
+        let controller1 = MSScheduleTableController(style: .Grouped)
+        controller1.viewDidLoad()
+    }
+    
+    func testViewDidAppear() {
+        let controller1 = MSScheduleTableController(style: .Grouped)
+        controller1.viewDidAppear(true)
+    }
     
 
 }
