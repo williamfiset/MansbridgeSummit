@@ -29,16 +29,13 @@ public class MSScrollView : UIScrollView {
         
         let label1 = UILabel(frame: CGRect(x: 0, y: 400, width: 300, height: 78))
         let label2 = UILabel(frame: CGRect(x: 0, y: 900, width: 300, height: 78))
-        let label3 = UILabel(frame: CGRect(x: 0, y: self.contentSize.height, width: 300, height: 78))
         
         label1.text = "Hello"
         label2.text = "World"
-        label3.text = "Wooo"
-        label3.backgroundColor = UIColor.blueColor()
         
         addSubview(label1)
         addSubview(label2)
-        addSubview(label3)
+        
     }
     
     public required init?(coder aDecoder: NSCoder) {
