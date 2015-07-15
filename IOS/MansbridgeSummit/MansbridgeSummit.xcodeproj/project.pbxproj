@@ -10,6 +10,9 @@
 		C61C00641B4C7F1600AB4D6C /* MSEventPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C61C00631B4C7F1600AB4D6C /* MSEventPageController.swift */; };
 		C61C00651B4C7F1600AB4D6C /* MSEventPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C61C00631B4C7F1600AB4D6C /* MSEventPageController.swift */; };
 		C61C00661B4C7F1600AB4D6C /* MSEventPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C61C00631B4C7F1600AB4D6C /* MSEventPageController.swift */; };
+		C664DE731B57254800CFB209 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = C664DE721B57254800CFB209 /* Reachability.m */; };
+		C664DE741B57254800CFB209 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = C664DE721B57254800CFB209 /* Reachability.m */; };
+		C664DE751B57254800CFB209 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = C664DE721B57254800CFB209 /* Reachability.m */; };
 		C67926AA1B4DC36900EA86B4 /* MSScheduleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67926A91B4DC36900EA86B4 /* MSScheduleTests.swift */; };
 		C67926AB1B4DC91B00EA86B4 /* test_schedule.json in Resources */ = {isa = PBXBuildFile; fileRef = C6E163321B481C5000942749 /* test_schedule.json */; };
 		C67926AE1B4DC94100EA86B4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6CFD05E1B45EDA90067A6AD /* LaunchScreen.storyboard */; };
@@ -116,6 +119,11 @@
 
 /* Begin PBXFileReference section */
 		C61C00631B4C7F1600AB4D6C /* MSEventPageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSEventPageController.swift; sourceTree = "<group>"; };
+		C664DE6E1B57254700CFB209 /* MansbridgeSummit-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MansbridgeSummit-Bridging-Header.h"; sourceTree = "<group>"; };
+		C664DE6F1B57254700CFB209 /* MansbridgeSummitTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MansbridgeSummitTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		C664DE701B57254700CFB209 /* MansbridgeSummitUITests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MansbridgeSummitUITests-Bridging-Header.h"; sourceTree = "<group>"; };
+		C664DE711B57254800CFB209 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		C664DE721B57254800CFB209 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		C6721A001B49620200E7B050 /* MansbridgeSummit.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = MansbridgeSummit.entitlements; sourceTree = "<group>"; };
 		C67926A91B4DC36900EA86B4 /* MSScheduleTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSScheduleTests.swift; sourceTree = "<group>"; };
 		C67926B51B4DD0F800EA86B4 /* MSEventTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSEventTests.swift; sourceTree = "<group>"; };
@@ -186,6 +194,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C664DE691B5723F700CFB209 /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				C664DE711B57254800CFB209 /* Reachability.h */,
+				C664DE721B57254800CFB209 /* Reachability.m */,
+				C664DE6E1B57254700CFB209 /* MansbridgeSummit-Bridging-Header.h */,
+				C664DE6F1B57254700CFB209 /* MansbridgeSummitTests-Bridging-Header.h */,
+				C664DE701B57254700CFB209 /* MansbridgeSummitUITests-Bridging-Header.h */,
+			);
+			name = Reachability;
+			sourceTree = "<group>";
+		};
 		C67926A61B4DC2F500EA86B4 /* MSEventPage */ = {
 			isa = PBXGroup;
 			children = (
@@ -375,6 +395,7 @@
 		C6E163361B48292800942749 /* ThirdPartyFramework */ = {
 			isa = PBXGroup;
 			children = (
+				C664DE691B5723F700CFB209 /* Reachability */,
 				C6E163371B48295100942749 /* SwiftyJSON */,
 			);
 			name = ThirdPartyFramework;
@@ -450,6 +471,7 @@
 		C6CFD0481B45EDA90067A6AD /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Mansbridge Summit Dev Team";
 				TargetAttributes = {
@@ -558,6 +580,7 @@
 				C69E4A6E1B4612A600BD981C /* MSScheduleCellView.swift in Sources */,
 				C6D9E9641B475BCD00249DA4 /* Extensions.swift in Sources */,
 				C69E4A5C1B46090E00BD981C /* MSAboutTabController.swift in Sources */,
+				C664DE731B57254800CFB209 /* Reachability.m in Sources */,
 				C6EB798A1B4C903400F5E516 /* MSEventPageView.swift in Sources */,
 				C689563B1B52B399006D188F /* MSScrollView.swift in Sources */,
 				C69E4A641B460A3F00BD981C /* MSScheduleTableController.swift in Sources */,
@@ -577,6 +600,7 @@
 				C6E1632A1B48137900942749 /* MSScheduleTableControllerTests.swift in Sources */,
 				C69E4A611B4609D700BD981C /* MSPrimaryTabController.swift in Sources */,
 				C61C00651B4C7F1600AB4D6C /* MSEventPageController.swift in Sources */,
+				C664DE741B57254800CFB209 /* Reachability.m in Sources */,
 				C67926BC1B4DD2A100EA86B4 /* MScheduleTableViewTests.swift in Sources */,
 				C6D9E9961B477D6E00249DA4 /* ExtensionsTests.swift in Sources */,
 				C6E1633D1B482A7200942749 /* MSScheduleJsonFileTests.swift in Sources */,
@@ -618,6 +642,7 @@
 				C6EB798C1B4C903400F5E516 /* MSEventPageView.swift in Sources */,
 				C679E2141B55FD9F004AEBE9 /* MSRegisterModel.swift in Sources */,
 				C69E4A661B460A3F00BD981C /* MSScheduleTableController.swift in Sources */,
+				C664DE751B57254800CFB209 /* Reachability.m in Sources */,
 				C6E163301B481AE600942749 /* MSCellModels.swift in Sources */,
 				C6C00A6D1B45F3B300709992 /* MSTabBarController.swift in Sources */,
 				C6E1633B1B48296600942749 /* SwiftyJSON.swift in Sources */,
@@ -748,11 +773,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = MansbridgeSummit/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mta.MansbridgeSummit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MansbridgeSummit/MansbridgeSummit-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -760,11 +788,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = MansbridgeSummit/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mta.MansbridgeSummit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MansbridgeSummit/MansbridgeSummit-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -772,10 +802,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = MansbridgeSummitTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mta.MansbridgeSummitTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MansbridgeSummit/MansbridgeSummitTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MansbridgeSummit.app/MansbridgeSummit";
 			};
 			name = Debug;
@@ -784,10 +817,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = MansbridgeSummitTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mta.MansbridgeSummitTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MansbridgeSummit/MansbridgeSummitTests-Bridging-Header.h";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MansbridgeSummit.app/MansbridgeSummit";
 			};
 			name = Release;
@@ -795,10 +830,13 @@
 		C6CFD0811B45EDA90067A6AD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = MansbridgeSummitUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mta.MansbridgeSummitUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MansbridgeSummit/MansbridgeSummitUITests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TEST_TARGET_NAME = MansbridgeSummit;
 				USES_XCTRUNNER = YES;
 			};
@@ -807,10 +845,12 @@
 		C6CFD0821B45EDA90067A6AD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = MansbridgeSummitUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mta.MansbridgeSummitUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MansbridgeSummit/MansbridgeSummitUITests-Bridging-Header.h";
 				TEST_TARGET_NAME = MansbridgeSummit;
 				USES_XCTRUNNER = YES;
 			};

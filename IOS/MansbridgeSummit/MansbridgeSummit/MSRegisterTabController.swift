@@ -12,5 +12,14 @@ import UIKit
 
 public class MSRegisterTabController : UIViewController {
     
+    public override func viewDidLoad() {
+        
+    }
     
+    
+    public override func viewWillAppear(animated: Bool) {
+        
+
+
+    }
 }

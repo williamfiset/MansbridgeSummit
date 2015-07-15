@@ -19,7 +19,7 @@ var postParameters = [
     
     // User input fields
     "Name" : "",
-    "E-mail" : "elmo10@gmail.com",
+    "E-mail" : "",
     "Gender" : "",
     "Major_minor" : "",
     "Grad_year" : "",
@@ -71,7 +71,7 @@ func populatePostParameters ( let nth_InputBox : Int, var value : String, inout 
     case 7:  postParameters["EktFormId"] = value
     case 8:  postParameters["EktFormTitle"] = value
     case 9:  postParameters["EktFormDescription"] = value
-    case 10:  postParameters["EktFormLang"] = value
+    case 10: postParameters["EktFormLang"] = value
     case 11: postParameters["EktFormPublishDate"] = value
         
     default: break;
