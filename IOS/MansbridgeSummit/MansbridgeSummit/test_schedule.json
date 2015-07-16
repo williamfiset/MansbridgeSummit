@@ -1,6 +1,6 @@
 
 {
-    "date1" : "Sat Nov 2",
+    "date1" : "Saturday November 2nd",
     "events1" : {
         
         "event1" : {
@@ -32,7 +32,7 @@
         }
     },
     
-    "date2" : "Sun Nov 3",
+    "date2" : "Sunday November 3rd",
     "events2" : {
         
         "event1" : {
@@ -55,7 +55,7 @@
         
     },
     
-    "date3" : "Mon Nov 4",
+    "date3" : "Monday November 4th",
     "events3" : {
         
         "event1" : {
@@ -71,6 +71,43 @@
             "eventName" : "The meaning of life",
             "eventLocation" : "Barclay",
             "eventDescription" : "Video of Plato on the meaning of life and our position within"
+        },
+        
+        "event3" : {
+            "eventTime" : "3:30pm",
+            "eventName" : "Speed cubing",
+            "eventLocation" : "James Dunn the Wu centre",
+            "eventDescription" : "Mastering speed cubing the ulmimate guide",
+            "eventSpeaker" : "Micah Stairs"
+        },
+        
+        "event4" : {
+            "eventTime" : "6:00pm",
+            "eventName" : "Quantum electro-dynamics",
+            "eventLocation" : "Crabtree 1st floor M14",
+            "eventDescription" : "An inner view into Quantum electro-dynamics and the hidden world",
+            "eventSpeaker" : "Richard Feynman"
+        }
+        
+    },
+    
+    "date4" : "Tuesday November 5th",
+    "events4" : {
+        
+        "event1" : {
+            "eventTime" : "9:45am",
+            "eventName" : "Walking on water",
+            "eventLocation" : "South of Nazareth",
+            "eventDescription" : "Learn the secret behind walking on water with the son of god in just under half an hour!",
+            "eventSpeaker" : "Jesus"
+        },
+        
+        "event2" : {
+            "eventTime" : "11:00am",
+            "eventName" : "How to create radio waves",
+            "eventLocation" : "James Dunn",
+            "eventDescription" : "Create your very own radio with homebrew materials",
+            "eventSpeaker" : "Nikola Tesla"
         },
         
         "event3" : {

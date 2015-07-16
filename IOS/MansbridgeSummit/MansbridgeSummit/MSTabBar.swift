@@ -9,11 +9,9 @@
 import Foundation
 import UIKit
 
+// Delete class eventually if it never gts used
 
 public class MSTabBar : UITabBar {
-    
-    
-    let name = "pepper"
     
     
 }

@@ -50,5 +50,9 @@ class Constants: XCTestCase {
         XCTAssertNotNil( GlobalConstants.Color.gold )
         
     }
+    
+    func testTabBarHeight () {
+        XCTAssertGreaterThan( GlobalConstants.tabBarHeight, 0)
+    }
 
 }

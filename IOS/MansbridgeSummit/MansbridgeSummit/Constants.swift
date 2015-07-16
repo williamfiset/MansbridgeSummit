@@ -70,4 +70,29 @@ struct GlobalConstants {
         
     }
     
+    struct DeviceType {
+        static let iPhone : Bool = UIDevice.currentDevice().userInterfaceIdiom == .Phone
+        static let iPad   : Bool = UIDevice.currentDevice().userInterfaceIdiom == .Pad
+    }
+    
+    
+    static let tabBarHeight = MSTabBarController().tabBar.frame.height
+    
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

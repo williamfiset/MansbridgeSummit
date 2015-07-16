@@ -9,7 +9,7 @@
 import Foundation
 
 extension String {
-
+    
     /* Returns the length of a String */
     var length : Int {
         get {
@@ -36,13 +36,22 @@ extension String {
         return self.componentsSeparatedByString(delimiter)
     }
     
+    func stringByAddingPercentEscapesForQueryValue() -> String? {
+        
+        let characterSet = NSMutableCharacterSet.alphanumericCharacterSet()
+        characterSet.addCharactersInString("-._~")
+        return stringByAddingPercentEncodingWithAllowedCharacters(characterSet)
+        
+    }
+    
+    
 }
 
 /* Allows you to remove items from an array by value */
 extension Array {
     
     mutating func removeObject<U: Equatable>(object: U) {
-    
+        
         var index: Int?
         
         for (idx, objectToCompare) in self.enumerate() {
@@ -61,15 +70,38 @@ extension Array {
 }
 
 
+extension Dictionary {
+    
+    func getQueryString() -> String {
+        
+        var queryString = ""
+        let numKeys = self.keys.count
+        
+        for (i, (key, value)) in self.enumerate() {
+            queryString += "\(key)=\(value)"
+            if i != numKeys - 1 {
+                queryString += "&"
+            }
+        }
+        
+        return queryString
+    }
+    
+}
 
 
-
-
-
-
-
-
-
+extension NSMutableURLRequest {
+    
+    // Sets the POST request body given key value pairs
+    func setBodyContent(contentMap: [String : String]) {
+        
+        let parameters = contentMap.map { (key, value) -> String in
+            return "\(key)=\(value.stringByAddingPercentEscapesForQueryValue()!)"
+        }
+        HTTPBody = "&".join(parameters).dataUsingEncoding(NSUTF8StringEncoding)
+    }
+    
+}
 
 
 

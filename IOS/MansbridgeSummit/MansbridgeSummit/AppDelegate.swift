@@ -6,6 +6,7 @@
 //  Copyright © 2015 Mansbridge Summit Dev Team. All rights reserved.
 //
 
+import Foundation
 import UIKit
 
 @UIApplicationMain
@@ -41,7 +42,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
-
-
+    
 }
 
