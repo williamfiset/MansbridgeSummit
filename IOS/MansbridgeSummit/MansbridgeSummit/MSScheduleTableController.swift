@@ -43,6 +43,7 @@ public class MSScheduleTableController : UITableViewController {
         
         if let reader = MSScheduleReader(fileName: schedule_file_name) {
             days = reader.read()
+
         } else {
             fatalError()
         }

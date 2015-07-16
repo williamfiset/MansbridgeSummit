@@ -69,13 +69,13 @@ class MSScheduleTableControllerTests: XCTestCase {
         controller1.viewDidLoad()
         
         var rows = controller1.tableView(table, numberOfRowsInSection: 0)
-        XCTAssertEqual(rows, 4);
+        XCTAssertEqual(rows, 3);
         
         rows = controller1.tableView(table, numberOfRowsInSection: 1)
         XCTAssertEqual(rows, 2);
         
         rows = controller1.tableView(table, numberOfRowsInSection: 2)
-        XCTAssertEqual(rows, 3);
+        XCTAssertEqual(rows, 4);
         
         rows = controller1.tableView(table, numberOfRowsInSection: 3)
         XCTAssertEqual(rows, 4);
