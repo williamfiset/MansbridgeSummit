@@ -59,22 +59,22 @@ func populatePostParameters ( let nth_InputBox : Int, var value : String, inout 
     switch nth_InputBox {
         
         // The first input box does not contain a field for the POST request
-    case 0: break;
-        
+        case 0: break;
+            
         // Ektron hidden inputs
-    case 1:  postParameters["EktronClientManager"] = value
-    case 2:  postParameters["__VIEWSTATE"] = value
-    case 3:  postParameters["__VIEWSTATEGENERATOR"] = value
-    case 4:  postParameters["__ekFormId_ctl00_PageContent_FormBlock1"] = value
-    case 5:  postParameters["__ekFormState_ctl00_PageContent_FormBlock1"] = "in" // Fails POST request if value happens to be "out" for some unknown reason
-    case 6:  postParameters["ApplicationAPI4156"] = value
-    case 7:  postParameters["EktFormId"] = value
-    case 8:  postParameters["EktFormTitle"] = value
-    case 9:  postParameters["EktFormDescription"] = value
-    case 10: postParameters["EktFormLang"] = value
-    case 11: postParameters["EktFormPublishDate"] = value
-        
-    default: break;
+        case 1:  postParameters["EktronClientManager"] = value
+        case 2:  postParameters["__VIEWSTATE"] = value
+        case 3:  postParameters["__VIEWSTATEGENERATOR"] = value
+        case 4:  postParameters["__ekFormId_ctl00_PageContent_FormBlock1"] = value
+        case 5:  postParameters["__ekFormState_ctl00_PageContent_FormBlock1"] = "in" // Fails POST request if value happens to be "out" for some unknown reason
+        case 6:  postParameters["ApplicationAPI4156"] = value
+        case 7:  postParameters["EktFormId"] = value
+        case 8:  postParameters["EktFormTitle"] = value
+        case 9:  postParameters["EktFormDescription"] = value
+        case 10: postParameters["EktFormLang"] = value
+        case 11: postParameters["EktFormPublishDate"] = value
+            
+        default: break;
         
     }
     
@@ -124,7 +124,7 @@ func postRequest(
     
     link : String,
     postData : Dictionary<String, String>,
-    closure : ( NSData?, NSURLResponse?,  NSError?, (err : NSError?) -> Void, ()->Void  ) -> Void,
+    closure : ( NSData?, NSError?, (err : NSError?) -> Void, ()->Void  ) -> Void,
     failureClosure : (err : NSError?) -> Void,
     successClosure : () -> Void  ) {
         
@@ -136,7 +136,7 @@ func postRequest(
         request.setBodyContent(postData)
         
         let task = NSURLSession.sharedSession().dataTaskWithRequest(request) {
-            data, response, error in closure(data, response, error, failureClosure, successClosure );
+            data, response, error in closure(data, error, failureClosure, successClosure );
         }
         
         if task != nil {
@@ -148,11 +148,11 @@ func postRequest(
 }
 
 // Analyse the reponse given by the post request
-func postRequestCompletion(data : NSData?, response : NSURLResponse?,  err : NSError?, failureClosure : (err : NSError?) -> Void, successClosure : () -> Void ) -> Void {
+func postRequestCompletion(data : NSData?, err : NSError?, failureClosure : (err : NSError?) -> Void, successClosure : () -> Void ) -> Void {
     
     if err == nil {
-        if let data = data {
-            if let responseString = NSString(data: data, encoding: NSUTF8StringEncoding) {
+        if data != nil {
+            if let responseString = NSString(data: data!, encoding: NSUTF8StringEncoding) {
                 
                 // If this string in present in the response the response was successful
                 if responseString.containsString("Thank you </strong>for filling out the Mansbridge Summit application form") {

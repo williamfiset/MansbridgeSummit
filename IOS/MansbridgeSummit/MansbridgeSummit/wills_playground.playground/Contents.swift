@@ -89,46 +89,48 @@ if let path : String = NSBundle.mainBundle().pathForResource("test_schedule", of
         var msdays : [MSDay] = []
         let json = JSON(data: data)
         
-        for key in json.dictionary!.keys.array {
-            
-            if (key.rangeOfString("date") != nil) {
-                
-                let date = json[key].stringValue
-                let i = key[key.length-1]
-                
-                var msevents : [MSEvent] = []
-                
-                if let events = json["events\(i)"].dictionary {
+        if let events = json["events"].array {
+            for eventBlock in events {
+                for key in eventBlock.dictionary!.keys.array {
                     
-                    for (_, eventDictionary) in events {
+                    if (key.rangeOfString("date") != nil) {
                         
-                        let eventName = eventDictionary["eventEvent"].stringValue
-                        let eventTime = eventDictionary["eventTime"].stringValue
-                        let eventLocation = eventDictionary["eventLocation"].stringValue
-                        let eventDescription = eventDictionary["eventDescription"].stringValue
-                        let eventSpeaker = eventDictionary["eventSpeaker"].string
+                        let date = eventBlock[key].stringValue
+                        let i = key[key.length-1]
                         
-                        let msevent = MSEvent (
-                            eventName: eventName,
-                            eventTime: eventTime,
-                            eventLocation: eventLocation,
-                            eventDescription: eventDescription,
-                            eventSpeaker: eventSpeaker
-                        )
+                        var msevents : [MSEvent] = []
                         
-                        msevents.append( msevent )
+                        if let events = eventBlock["events\(i)"].dictionary {
+                            
+                            for (_, eventDictionary) in events {
+                                
+                                let eventName = eventDictionary["eventName"].stringValue
+                                let eventTime = eventDictionary["eventTime"].stringValue
+                                let eventLocation = eventDictionary["eventLocation"].stringValue
+                                let eventDescription = eventDictionary["eventDescription"].stringValue
+                                let eventSpeaker = eventDictionary["eventSpeaker"].string
+                                
+                                let msevent = MSEvent (
+                                    eventName: eventName,
+                                    eventTime: eventTime,
+                                    eventLocation: eventLocation,
+                                    eventDescription: eventDescription,
+                                    eventSpeaker: eventSpeaker
+                                )
+                                
+                                msevents.append( msevent )
+                            }
+                        }
+                        
+                        msdays.append( MSDay(date: date, events: msevents) )
+                        
                     }
+                    
                 }
-                
-                msdays.append( MSDay(date: date, events: msevents) )
-                
             }
-
-            
         }
-        
-
     }
+    
 }
 
 

@@ -1,110 +1,144 @@
-
 {
-    "date1" : "Thursday, January 15th",
-    "events1" : {
-        
-        "event1" : {
-            "eventTime" : "7:00pm",
-            "eventName" : "Registration and orientation",
-            "eventLocation" : "Brunton Auditorium",
-            "eventDescription" : "Participants meet other group members and panelists.",
-            "eventSpeaker" : "N/A"
-        },
-        
-    },
     
-    "date2" : "Friday, Janurary 16th",
-    "events2" : {
-        
-        "event1" : {
-            "eventTime" : "8:30am",
-            "eventName" : "Breakfast",
-            "eventLocation" : "Jennings Hall",
-            "eventDescription" : "N/A",
-            "eventSpeaker" : "N/A"
-        },
-        
-        "event2" : {
-            
-            "eventTime" : "9:45am-12:00pm",
-            "eventName" : "Working sessions with panelists",
-            "eventLocation" : "Subgroup #1 — Purdy Crawford Centre for the Arts 103, Subgroup #2 — Centennial Hall 112, Subgroup #3 — Dunn 111",
-            "eventDescription" : "Group interactive brainstorming session. ",
-            "eventSpeaker" : "N/A"
-            
-        },
-        
-        "event3" : {
-            
-            "eventTime" : "12:25pm",
-            "eventName" : "Lunch",
-            "eventLocation" : "Jennings Hall",
-            "eventDescription" : "N/A",
-            "eventSpeaker" : "N/A"
-            
-        },
-        
-        "event4" : {
-            
-            "eventTime" : "1:30pm",
-            "eventName" : "Meetings with Chancellor (Subgroup #1)",
-            "eventLocation" : "N/A",
-            "eventDescription" : "N/A",
-            "eventSpeaker" : "N/A"
-            
-        },
-        
-        "event5" : {
-            
-            "eventTime" : "2:30pm",
-            "eventName" : "Meetings with Chancellor (Subgroup #2)",
-            "eventLocation" : "N/A",
-            "eventDescription" : "N/A",
-            "eventSpeaker" : "N/A"
-            
-        },
-        
-        "event6" : {
-            
-            "eventTime" : "3:30pm",
-            "eventName" : "Meetings with Chancellor (Subgroup #3)",
-            "eventLocation" : "N/A",
-            "eventDescription" : "N/A",
-            "eventSpeaker" : "N/A"
-            
-        },
-        
-        "event7" : {
-            
-            "eventTime" : "4:30pm",
-            "eventName" : "Meetings with Chancellor (Group Leaders)",
-            "eventLocation" : "N/A",
-            "eventDescription" : "N/A",
-            "eventSpeaker" : "N/A"
-            
-        },
-        
-        "event8" : {
-            
-            "eventTime" : "7:00-8:30pm",
-            "eventName" : "Wrap Up",
-            "eventLocation" : "Brunton Auditorium (open to the public)",
-            "eventDescription" : "Panel discussion and wrap up of Summit, group photo of all participants and panelists",
-            "eventSpeaker" : "N/A"
-            
-        },
-        
-        "event9" : {
-            
-            "eventTime" : "9:00pm",
-            "eventName" : "Mansbridge Summit Reception",
-            "eventLocation" : "Gracie's Café",
-            "eventDescription" : "N/A",
-            "eventSpeaker" : "N/A"
-            
-        }
-
-        
-    }
+    "events" : [
+                
+                {
+                "date1" : "Saturday November 2nd",
+                "events1" : {
+                
+                "event1" : {
+                "eventTime" : "11:00am",
+                "eventName" : "Rat disection",
+                "eventLocation" : "Crabtree 2nd floor room 415c",
+                "eventDescription" : "Students will learn how to disect rats infected with Gastroenteritis disease",
+                "eventSpeaker" : "Isaac Newton"
+                },
+                
+                "event2" : {
+                
+                "eventTime" : "2:30pm",
+                "eventName" : "Moral values with Henry VIII",
+                "eventLocation" : "Dunn first floor in room 108",
+                "eventDescription" : "Henry VIII lecturing on family values and the importance of respecting your wife.",
+                "eventSpeaker" : "Henry VIII"
+                
+                },
+                
+                "event3" : {
+                
+                "eventTime" : "10:00pm",
+                "eventName" : "The Copernican System",
+                "eventLocation" : "Mount Allison Observatory southwest of James Dunn building",
+                "eventDescription" : "Indulge in observing the planets with Copernicus and his new model of the solar system",
+                "eventSpeaker" : "Nicolaus Copernicus"
+                
+                }
+                }
+                },
+                {
+                
+                "date2" : "Sunday November 3rd",
+                "events2" : {
+                
+                "event1" : {
+                "eventTime" : "8:30am",
+                "eventName" : "A taste of evolution",
+                "eventLocation" : "Hart Hall top floor conference room",
+                "eventDescription" : "Lecture on evolution sponsered by Peter Mansbridge. Topics covered will include: Natural selection, the trip of the Beagle voyage, Speciation and a brief overview of our ansectors",
+                "eventSpeaker" : "Charles Darwin"
+                },
+                
+                "event2" : {
+                
+                "eventTime" : "11:15pm",
+                "eventName" : "Mathemtical modelling",
+                "eventLocation" : "Flemmington building large auditorium",
+                "eventDescription" : "Hands on engineering and mathmetical modeling with geometric shapes",
+                "eventSpeaker" : "Archimedes"
+                
+                }
+                
+                }
+                },
+                {
+                
+                "date3" : "Monday November 4th",
+                "events3" : {
+                
+                "event1" : {
+                "eventTime" : "4:30am",
+                "eventName" : "Painting a Starry Night",
+                "eventLocation" : "Spawn pond",
+                "eventDescription" : "Learning how to paint the Starry Night with Oil paints at Dawn",
+                "eventSpeaker" : "Vincent Van Gogh"
+                },
+                
+                "event2" : {
+                "eventTime" : "9:00am",
+                "eventName" : "The meaning of life",
+                "eventLocation" : "Barclay",
+                "eventDescription" : "Video of Plato on the meaning of life and our position within"
+                },
+                
+                "event3" : {
+                "eventTime" : "3:30pm",
+                "eventName" : "Speed cubing",
+                "eventLocation" : "James Dunn the Wu centre",
+                "eventDescription" : "Mastering speed cubing the ulmimate guide",
+                "eventSpeaker" : "Micah Stairs"
+                },
+                
+                "event4" : {
+                "eventTime" : "6:00pm",
+                "eventName" : "Quantum electro-dynamics",
+                "eventLocation" : "Crabtree 1st floor M14",
+                "eventDescription" : "An inner view into Quantum electro-dynamics and the hidden world",
+                "eventSpeaker" : "Richard Feynman"
+                }
+                
+                }
+                
+                },
+                {
+                "date4" : "Tuesday November 5th",
+                "events4" : {
+                
+                "event1" : {
+                "eventTime" : "9:45am",
+                "eventName" : "Walking on water",
+                "eventLocation" : "South of Nazareth",
+                "eventDescription" : "Learn the secret behind walking on water with the son of god in just under half an hour!",
+                "eventSpeaker" : "Jesus"
+                },
+                
+                "event2" : {
+                "eventTime" : "11:00am",
+                "eventName" : "How to create radio waves",
+                "eventLocation" : "James Dunn",
+                "eventDescription" : "Create your very own radio with homebrew materials",
+                "eventSpeaker" : "Nikola Tesla"
+                },
+                
+                "event3" : {
+                "eventTime" : "3:30pm",
+                "eventName" : "Speed cubing",
+                "eventLocation" : "James Dunn the Wu centre",
+                "eventDescription" : "Mastering speed cubing the ulmimate guide",
+                "eventSpeaker" : "Micah Stairs"
+                },
+                
+                "event4" : {
+                "eventTime" : "6:00pm",
+                "eventName" : "Quantum electro-dynamics",
+                "eventLocation" : "Crabtree 1st floor M14",
+                "eventDescription" : "An inner view into Quantum electro-dynamics and the hidden world",
+                "eventSpeaker" : "Richard Feynman"
+                }
+                
+                }
+                }
+                
+                ]
+    
     
 }

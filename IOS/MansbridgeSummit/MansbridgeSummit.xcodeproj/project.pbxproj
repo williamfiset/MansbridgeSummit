@@ -21,9 +21,9 @@
 		C67926B31B4DC94B00EA86B4 /* TabBarIcons.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6CFD05C1B45EDA90067A6AD /* TabBarIcons.xcassets */; };
 		C67926B61B4DD0F800EA86B4 /* MSEventTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67926B51B4DD0F800EA86B4 /* MSEventTests.swift */; };
 		C67926BC1B4DD2A100EA86B4 /* MScheduleTableViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67926BB1B4DD2A100EA86B4 /* MScheduleTableViewTests.swift */; };
-		C679E2121B55FD9F004AEBE9 /* MSRegisterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C679E2111B55FD9F004AEBE9 /* MSRegisterModel.swift */; };
 		C679E2131B55FD9F004AEBE9 /* MSRegisterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C679E2111B55FD9F004AEBE9 /* MSRegisterModel.swift */; };
 		C679E2141B55FD9F004AEBE9 /* MSRegisterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C679E2111B55FD9F004AEBE9 /* MSRegisterModel.swift */; };
+		C68441DC1B588D480091F357 /* MSRegisterModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C68441DB1B588D480091F357 /* MSRegisterModelTest.swift */; };
 		C68956361B52AFBB006D188F /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C68956351B52AFBB006D188F /* Media.xcassets */; };
 		C68956371B52AFBB006D188F /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C68956351B52AFBB006D188F /* Media.xcassets */; };
 		C68956381B52AFBB006D188F /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C68956351B52AFBB006D188F /* Media.xcassets */; };
@@ -143,6 +143,7 @@
 		C67926B51B4DD0F800EA86B4 /* MSEventTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSEventTests.swift; sourceTree = "<group>"; };
 		C67926BB1B4DD2A100EA86B4 /* MScheduleTableViewTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MScheduleTableViewTests.swift; sourceTree = "<group>"; };
 		C679E2111B55FD9F004AEBE9 /* MSRegisterModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSRegisterModel.swift; sourceTree = "<group>"; };
+		C68441DB1B588D480091F357 /* MSRegisterModelTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSRegisterModelTest.swift; sourceTree = "<group>"; };
 		C68956351B52AFBB006D188F /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 		C689563A1B52B399006D188F /* MSScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSScrollView.swift; sourceTree = "<group>"; };
 		C69E4A531B46088800BD981C /* MSTwitterTabController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSTwitterTabController.swift; sourceTree = "<group>"; };
@@ -238,6 +239,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C63FA1CD1B5889EB00B3D238 /* MSRegisterTests */ = {
+			isa = PBXGroup;
+			children = (
+				C68441DB1B588D480091F357 /* MSRegisterModelTest.swift */,
+			);
+			name = MSRegisterTests;
+			sourceTree = "<group>";
+		};
 		C664DE691B5723F700CFB209 /* Reachability */ = {
 			isa = PBXGroup;
 			children = (
@@ -363,6 +372,7 @@
 		C6CFD0691B45EDA90067A6AD /* MansbridgeSummitTests */ = {
 			isa = PBXGroup;
 			children = (
+				C63FA1CD1B5889EB00B3D238 /* MSRegisterTests */,
 				C6E163281B48135100942749 /* MSScheduleTests */,
 				C6D9E9931B477C3300249DA4 /* ConstantsTests.swift */,
 				C6D9E9951B477D6E00249DA4 /* ExtensionsTests.swift */,
@@ -682,7 +692,6 @@
 				C69E4A641B460A3F00BD981C /* MSScheduleTableController.swift in Sources */,
 				F74C1A191B5967B000F09002 /* STTwitterAPI.m in Sources */,
 				C6E1632E1B481AE600942749 /* MSCellModels.swift in Sources */,
-				C679E2121B55FD9F004AEBE9 /* MSRegisterModel.swift in Sources */,
 				C6C00A6B1B45F3B300709992 /* MSTabBarController.swift in Sources */,
 				C6E163391B48296600942749 /* SwiftyJSON.swift in Sources */,
 				F74C1A161B5967B000F09002 /* NSDateFormatter+STTwitter.m in Sources */,
@@ -698,6 +707,7 @@
 				C6E1632A1B48137900942749 /* MSScheduleTableControllerTests.swift in Sources */,
 				C69E4A611B4609D700BD981C /* MSPrimaryTabController.swift in Sources */,
 				C61C00651B4C7F1600AB4D6C /* MSEventPageController.swift in Sources */,
+				C68441DC1B588D480091F357 /* MSRegisterModelTest.swift in Sources */,
 				C664DE741B57254800CFB209 /* Reachability.m in Sources */,
 				C67926BC1B4DD2A100EA86B4 /* MScheduleTableViewTests.swift in Sources */,
 				C6D9E9961B477D6E00249DA4 /* ExtensionsTests.swift in Sources */,
