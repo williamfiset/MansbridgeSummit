@@ -151,8 +151,8 @@ func postRequest(
 func postRequestCompletion(data : NSData?, err : NSError?, failureClosure : (err : NSError?) -> Void, successClosure : () -> Void ) -> Void {
     
     if err == nil {
-        if let data = data {
-            if let responseString = NSString(data: data, encoding: NSUTF8StringEncoding) {
+        if data != nil {
+            if let responseString = NSString(data: data!, encoding: NSUTF8StringEncoding) {
                 
                 // If this string in present in the response the response was successful
                 if responseString.containsString("Thank you </strong>for filling out the Mansbridge Summit application form") {
