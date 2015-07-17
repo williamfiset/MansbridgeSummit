@@ -1,0 +1,84 @@
+{  
+   "events":[  
+      {  
+         "date1":"Thursday, January 15th",
+         "events1":{  
+            "event1":{  
+               "eventTime":"7:00pm",
+               "eventName":"Registration and orientation",
+               "eventLocation":"Brunton Auditorium",
+               "eventDescription":"Participants meet other group members and panelists.",
+               "eventSpeaker":"N/A"
+            }
+         }
+      },
+      {  
+         "date2":"Friday, Janurary 16th",
+         "events2":{  
+            "event1":{  
+               "eventTime":"8:30am",
+               "eventName":"Breakfast",
+               "eventLocation":"Jennings Hall",
+               "eventDescription":"N/A",
+               "eventSpeaker":"N/A"
+            },
+            "event2":{  
+               "eventTime":"9:45am-12:00pm",
+               "eventName":"Working sessions with panelists",
+               "eventLocation":"Subgroup #1 — Purdy Crawford Centre for the Arts 103, Subgroup #2 — Centennial Hall 112, Subgroup #3 — Dunn 111",
+               "eventDescription":"Group interactive brainstorming session. ",
+               "eventSpeaker":"N/A"
+            },
+            "event3":{  
+               "eventTime":"12:25pm",
+               "eventName":"Lunch",
+               "eventLocation":"Jennings Hall",
+               "eventDescription":"N/A",
+               "eventSpeaker":"N/A"
+            },
+            "event4":{  
+               "eventTime":"1:30pm",
+               "eventName":"Meetings with Chancellor (Subgroup #1)",
+               "eventLocation":"N/A",
+               "eventDescription":"N/A",
+               "eventSpeaker":"N/A"
+            },
+            "event5":{  
+               "eventTime":"2:30pm",
+               "eventName":"Meetings with Chancellor (Subgroup #2)",
+               "eventLocation":"N/A",
+               "eventDescription":"N/A",
+               "eventSpeaker":"N/A"
+            },
+            "event6":{  
+               "eventTime":"3:30pm",
+               "eventName":"Meetings with Chancellor (Subgroup #3)",
+               "eventLocation":"N/A",
+               "eventDescription":"N/A",
+               "eventSpeaker":"N/A"
+            },
+            "event7":{  
+               "eventTime":"4:30pm",
+               "eventName":"Meetings with Chancellor (Group Leaders)",
+               "eventLocation":"N/A",
+               "eventDescription":"N/A",
+               "eventSpeaker":"N/A"
+            },
+            "event8":{  
+               "eventTime":"7:00-8:30pm",
+               "eventName":"Wrap Up",
+               "eventLocation":"Brunton Auditorium (open to the public)",
+               "eventDescription":"Panel discussion and wrap up of Summit, group photo of all participants and panelists",
+               "eventSpeaker":"N/A"
+            },
+            "event9":{  
+               "eventTime":"9:00pm",
+               "eventName":"Mansbridge Summit Reception",
+               "eventLocation":"Gracie's Café",
+               "eventDescription":"N/A",
+               "eventSpeaker":"N/A"
+            }
+         }
+      }
+   ]
+}
