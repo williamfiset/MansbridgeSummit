@@ -41,6 +41,7 @@ class MSRegisterModelTest: XCTestCase {
             XCTAssert(true)
         }
         func onFailure(err : NSError?) {
+
             XCTAssert(false)
         }
         
