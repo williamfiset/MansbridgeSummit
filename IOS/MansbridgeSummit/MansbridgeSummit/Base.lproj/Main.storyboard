@@ -62,17 +62,17 @@
             </objects>
             <point key="canvasLocation" x="1046" y="-150"/>
         </scene>
-        <!--Item-->
+        <!--Twitter Timeline Controller-->
         <scene sceneID="bXN-qb-Q2A">
             <objects>
-                <tableViewController id="OPW-JE-odA" customClass="MSTwitterTabController" customModule="MansbridgeSummit" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="OPW-JE-odA" customClass="MSTwitterTimelineController" customModule="MansbridgeSummit" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="9Uj-FK-XF1">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="Lls-3o-1ok">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TweetCell" id="Lls-3o-1ok">
                                 <rect key="frame" x="0.0" y="86" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Lls-3o-1ok" id="ws5-4w-ngy">
@@ -88,11 +88,11 @@
                             <outlet property="delegate" destination="OPW-JE-odA" id="0JI-AX-tKH"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Item" id="dpJ-kR-3PM"/>
+                    <navigationItem key="navigationItem" id="cKn-rg-gS1"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xsI-HE-soM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1056" y="564"/>
+            <point key="canvasLocation" x="1868" y="564"/>
         </scene>
         <!--About-->
         <scene sceneID="nL2-M5-bpK">
@@ -149,7 +149,7 @@
                     <connections>
                         <segue destination="TLA-2H-73K" kind="relationship" relationship="viewControllers" id="50Q-Pz-Ojt"/>
                         <segue destination="6Px-ts-CRp" kind="relationship" relationship="viewControllers" id="a6D-NY-skd"/>
-                        <segue destination="OPW-JE-odA" kind="relationship" relationship="viewControllers" id="AUV-0Z-FdV"/>
+                        <segue destination="tw5-r1-TfF" kind="relationship" relationship="viewControllers" id="AUV-0Z-FdV"/>
                         <segue destination="M2Z-vZ-2uL" kind="relationship" relationship="viewControllers" id="xBM-gR-ffX"/>
                         <segue destination="oFB-8Q-MYl" kind="relationship" relationship="viewControllers" id="bQN-y8-yxh"/>
                     </connections>
@@ -157,6 +157,26 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZFT-kj-xIj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="231" y="-150"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="2ci-m8-1eF">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="tw5-r1-TfF" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="dpJ-kR-3PM"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="9zC-cv-De3">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="OPW-JE-odA" kind="relationship" relationship="rootViewController" id="PiP-VQ-0U2"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="S4u-ls-fbs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1056" y="564"/>
         </scene>
     </scenes>
 </document>
