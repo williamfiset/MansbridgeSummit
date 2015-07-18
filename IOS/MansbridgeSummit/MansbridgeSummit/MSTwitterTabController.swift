@@ -14,24 +14,24 @@ public class MSTwitterTabController : UIViewController {
     required public init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
+
+    @IBOutlet weak var tableView: UITableView!
     
-    var tableView : UITableView? = nil
-    var twitterFeed  = [] // : NSMutableArray
+    var twitterFeed = []
     
     public override func viewDidLoad() {
         
         super.viewDidLoad()
        
-        var twitter: STTwitterAPI = STTwitterAPI(OAuthConsumerKey: "xz9ew8UZ6rz8TW3QBSDYg", consumerSecret: "rm8grg0aIPCUnTpgC5H1NMt4uWYUVXKPqH8brIqD4o")
+        var twitter: STTwitterAPI = STTwitterAPI(OAuthConsumerKey: "1QaB3nlI2dXah3vJiIIbtDBaP", consumerSecret: "V2qExJfJtPR81Gtn1cl6DjFuzWJ3HcGqJLPpIXd5kwp6zt4Ctz", oauthToken: "109002432-FT1GsSfJDpVtkYPgzPoK7fuPfwrpdXnfPeaVKp6s", oauthTokenSecret: "sgLBqasL56lJQXKhlxAuBBAqFSfjfH06ap1O9iVBmrEb3")
         
-        func success( str : String!) {
+        func success(str : String!) {
             
-            twitter.getUserTimelineWithScreenName("veasoftware", successBlock: {
+            twitter.getUserTimelineWithScreenName("mtasummit", successBlock: {
                 (statuses: [AnyObject]!) in
                 
                     self.twitterFeed = statuses as NSArray
-                    self.tableView!.reloadData()
-                
+                    self.tableView.reloadData()
                 
                 }, errorBlock: {
                 (err : NSError!) in
@@ -61,8 +61,8 @@ public class MSTwitterTabController : UIViewController {
         if cell == nil {
             cell = UITableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: cellID)
         }
-        let idx: Int = indexPath.row
-        var t: [NSObject: AnyObject] = self.twitterFeed[idx] as! [NSObject : AnyObject]
+        let index: Int = indexPath.row
+        var t: [NSObject: AnyObject] = self.twitterFeed[index] as! [NSObject : AnyObject]
         cell!.textLabel!.text = t["text"] as? String
         return cell!
     }

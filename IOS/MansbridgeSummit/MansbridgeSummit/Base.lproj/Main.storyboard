@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8152.3" systemVersion="15A178w" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="HsC-Ow-kxc">
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8124.4"/>
     </dependencies>
     <scenes>
@@ -72,10 +73,52 @@
                     <view key="view" contentMode="scaleToFill" id="oTV-9J-K18">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="K8I-Gy-UHk">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="TwitterCell" textLabel="kpU-k2-Utp" style="IBUITableViewCellStyleDefault" id="6ot-cK-Ik7">
+                                        <rect key="frame" x="0.0" y="86" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="6ot-cK-Ik7" id="e4s-3k-tUB">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="kpU-k2-Utp">
+                                                    <rect key="frame" x="15" y="0.0" width="570" height="43"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <animations/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <animations/>
+                                        </tableViewCellContentView>
+                                        <animations/>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="rVP-mB-YK6" id="mUj-O6-Gud"/>
+                                    <outlet property="delegate" destination="rVP-mB-YK6" id="7x3-6g-54r"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="K8I-Gy-UHk" firstAttribute="leading" secondItem="oTV-9J-K18" secondAttribute="leading" id="0W3-N1-VcD"/>
+                            <constraint firstAttribute="trailing" secondItem="K8I-Gy-UHk" secondAttribute="trailing" id="BWe-Gk-j7c"/>
+                            <constraint firstItem="K8I-Gy-UHk" firstAttribute="top" secondItem="oTV-9J-K18" secondAttribute="top" id="GdG-ya-Fh6"/>
+                            <constraint firstItem="K8I-Gy-UHk" firstAttribute="bottom" secondItem="UH2-Oj-0Jm" secondAttribute="top" id="xoj-mg-Lav"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" id="3ji-kz-mFk"/>
+                    <connections>
+                        <outlet property="tableView" destination="K8I-Gy-UHk" id="z6K-x6-VGf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JV3-bn-WoO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
