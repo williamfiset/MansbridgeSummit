@@ -10,9 +10,21 @@
 import Foundation
 import UIKit
 
+
 public class MSPrimaryTabController : UIViewController, UIScrollViewDelegate {
     
     var scrollView : MSScrollView!
+
+    // TEMPORARY
+    public override func viewDidLoad() {
+        super.viewDidLoad()
+//        Twitter.sharedInstance().logInGuestWithCompletion { (session, error) in
+//            Twitter.sharedInstance().APIClient.loadTweetWithID("223214234") { (tweet, error) in
+//                self.view.addSubview(TWTRTweetView(tweet: tweet))
+//            }
+//        }
+
+    }
     
     public override func viewWillAppear(animated: Bool) {
         
