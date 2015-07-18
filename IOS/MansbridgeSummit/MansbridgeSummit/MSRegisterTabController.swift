@@ -12,34 +12,53 @@ import UIKit
 
 public class MSRegisterTabController : UIViewController {
     
+    // Buttons
+    var prevButton : UIButton!
+    var nextButton : UIButton!
+    
     // Text Area
     var textField : UITextField!
-    
+   
     // Question
     var questionText : String?
     var questionLabel : UILabel!
     
-    // Buttons
-    var prevButton : UIButton!
-    var nextButton : UIButton!
-    let prevButtonSize = CGRect(x: 80, y: 300, width: 125, height: 80)
-    let nextButtonSize = CGRect(x: 30, y: 30, width: 100, height: 100)
+    var questionIndex = 0;
+    
+    let questions = [
+        "Enter your name",
+        "Please supply your email address",
+//        Gender radio buttons
+//        "Intended Major/Minor",
+//        "Expected year of graduation",
+        "Hometown",
+        "Dietary restrictions",
+        //  I hereby give my permission for pictures and recordings of myself to be published. 
+        // Application Questions
+        "Does Canada need a public broadcaster? Why or why not?",
+        "What is your favourite show that you watched as a kid on public television?"
+    ]
+    
+    func nextQuestion() -> String? {
+        
+        if questionIndex < questions.count {
+            let questionText = questions[questionIndex]
+            questionIndex++
+            return questionText
+        }
+        return nil
+        
+    }
     
     public override func viewDidLoad() {
         
-//        textField = UITextField(frame: smallTextArea)
-//        prevButton = UIButton(frame: prevButtonSize)
-//        nextButton = UIButton(frame: nextButtonSize)
-//        
-//        self.view.addSubview(textField)
-//        self.view.addSubview(prevButton)
-//        self.view.addSubview(nextButton)
         
     }
     
     
     public override func viewWillAppear(animated: Bool) {
         
+        createQuestionLabel()
         createTextField()
         createButtons()
         
@@ -47,6 +66,10 @@ public class MSRegisterTabController : UIViewController {
         self.view.addSubview(prevButton)
         self.view.addSubview(nextButton)
 
+    }
+    
+    private func createQuestionLabel() -> Void {
+        
     }
     
     private func createTextField() -> Void {
@@ -58,7 +81,7 @@ public class MSRegisterTabController : UIViewController {
         
         textField = UITextField(frame: CGRect(x: x, y: y, width: boxWidth, height: boxHeight))
         textField.backgroundColor = GC.Color.gold
-       
+
     }
     
     private func createButtons() -> Void {
@@ -66,14 +89,14 @@ public class MSRegisterTabController : UIViewController {
         let space = (textField.frame.width * 0.3) / 3
         
         let prevButtonX : CGFloat = textField.frame.origin.x + space
-        let prevButtonY : CGFloat = textField.frame.origin.y + (textField.frame.width * 0.2)
+        let prevButtonY : CGFloat = textField.frame.origin.y + textField.frame.height + (textField.frame.height * 0.1)
         let prevButtonWidth : CGFloat = (textField.frame.width - space*3) / 2
-        let prevButtonHeight : CGFloat = 50
+        let prevButtonHeight : CGFloat = (textField.frame.height * 0.2)
         
         let nextButtonX : CGFloat = prevButtonX + prevButtonWidth + space
         let nextButtonY : CGFloat = prevButtonY
         let nextButtonWidth : CGFloat = prevButtonWidth
-        let nextButtonHeight: CGFloat  = 50
+        let nextButtonHeight: CGFloat  = prevButtonHeight
 
         let prevButtonFrame = CGRect(x: prevButtonX, y: prevButtonY, width: prevButtonWidth, height: prevButtonHeight)
         let nextButtonFrame = CGRect(x: nextButtonX, y: nextButtonY, width: nextButtonWidth, height: nextButtonHeight)
