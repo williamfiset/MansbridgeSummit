@@ -78,7 +78,7 @@ class MSScheduleTests: XCTestCase {
         table.childrenMatchingType(.Cell).elementAtIndex(11).tap()
         returnButton.tap()
         
-        // I think it fails becasue you actually can't reach it.
+        // I think it fails because you actually can't reach it.
         table.childrenMatchingType(.Cell).elementAtIndex(12).tap()
         returnButton.tap()
         */
