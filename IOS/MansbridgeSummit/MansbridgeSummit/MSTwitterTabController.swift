@@ -28,10 +28,19 @@ public class MSTwitterTabController : UIViewController {
             
             twitter.getUserTimelineWithScreenName("veasoftware", successBlock: {
                 (statuses: [AnyObject]!) in
-                self.twitterFeed = statuses as NSArray
-                self.tableView!.reloadData()
-            }, errorBlock: nil)
-
+                
+                    self.twitterFeed = statuses as NSArray
+                    self.tableView!.reloadData()
+                
+                
+                }, errorBlock: {
+                (err : NSError!) in
+                    
+                    if err != nil {
+                        print(err.description)
+                    }
+            })
+            
         }
         
         twitter.verifyCredentialsWithSuccessBlock(success, errorBlock: nil)

@@ -16,17 +16,13 @@
 		C664DE731B57254800CFB209 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = C664DE721B57254800CFB209 /* Reachability.m */; };
 		C664DE741B57254800CFB209 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = C664DE721B57254800CFB209 /* Reachability.m */; };
 		C664DE751B57254800CFB209 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = C664DE721B57254800CFB209 /* Reachability.m */; };
-		C67926AA1B4DC36900EA86B4 /* MSScheduleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67926A91B4DC36900EA86B4 /* MSScheduleTests.swift */; };
 		C67926AB1B4DC91B00EA86B4 /* test_schedule.json in Resources */ = {isa = PBXBuildFile; fileRef = C6E163321B481C5000942749 /* test_schedule.json */; };
 		C67926AE1B4DC94100EA86B4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6CFD05E1B45EDA90067A6AD /* LaunchScreen.storyboard */; };
 		C67926AF1B4DC94100EA86B4 /* TabBarIcons.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6CFD05C1B45EDA90067A6AD /* TabBarIcons.xcassets */; };
 		C67926B21B4DC94B00EA86B4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6CFD05E1B45EDA90067A6AD /* LaunchScreen.storyboard */; };
 		C67926B31B4DC94B00EA86B4 /* TabBarIcons.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6CFD05C1B45EDA90067A6AD /* TabBarIcons.xcassets */; };
-		C67926B61B4DD0F800EA86B4 /* MSEventTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67926B51B4DD0F800EA86B4 /* MSEventTests.swift */; };
-		C67926BC1B4DD2A100EA86B4 /* MScheduleTableViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67926BB1B4DD2A100EA86B4 /* MScheduleTableViewTests.swift */; };
 		C679E2131B55FD9F004AEBE9 /* MSRegisterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C679E2111B55FD9F004AEBE9 /* MSRegisterModel.swift */; };
 		C679E2141B55FD9F004AEBE9 /* MSRegisterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C679E2111B55FD9F004AEBE9 /* MSRegisterModel.swift */; };
-		C68441DC1B588D480091F357 /* MSRegisterModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C68441DB1B588D480091F357 /* MSRegisterModelTest.swift */; };
 		C68956361B52AFBB006D188F /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C68956351B52AFBB006D188F /* Media.xcassets */; };
 		C68956371B52AFBB006D188F /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C68956351B52AFBB006D188F /* Media.xcassets */; };
 		C68956381B52AFBB006D188F /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C68956351B52AFBB006D188F /* Media.xcassets */; };
@@ -54,6 +50,37 @@
 		C69E4A721B4620AC00BD981C /* MSScheduleTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69E4A711B4620AC00BD981C /* MSScheduleTableView.swift */; };
 		C69E4A731B4620AC00BD981C /* MSScheduleTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69E4A711B4620AC00BD981C /* MSScheduleTableView.swift */; };
 		C69E4A741B4620AC00BD981C /* MSScheduleTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69E4A711B4620AC00BD981C /* MSScheduleTableView.swift */; };
+		C6A0D9661B59FCCC00C8172D /* NSDateFormatter+STTwitter.m in Sources */ = {isa = PBXBuildFile; fileRef = F74C19FE1B5967B000F09002 /* NSDateFormatter+STTwitter.m */; };
+		C6A0D9671B59FCCC00C8172D /* NSString+STTwitter.m in Sources */ = {isa = PBXBuildFile; fileRef = F74C1A001B5967B000F09002 /* NSString+STTwitter.m */; };
+		C6A0D9681B59FCCC00C8172D /* STHTTPRequest+STTwitter.m in Sources */ = {isa = PBXBuildFile; fileRef = F74C1A021B5967B000F09002 /* STHTTPRequest+STTwitter.m */; };
+		C6A0D9691B59FCCC00C8172D /* STTwitterAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = F74C1A051B5967B000F09002 /* STTwitterAPI.m */; };
+		C6A0D96A1B59FCCC00C8172D /* STTwitterAppOnly.m in Sources */ = {isa = PBXBuildFile; fileRef = F74C1A071B5967B000F09002 /* STTwitterAppOnly.m */; };
+		C6A0D96B1B59FCCC00C8172D /* STTwitterHTML.m in Sources */ = {isa = PBXBuildFile; fileRef = F74C1A091B5967B000F09002 /* STTwitterHTML.m */; };
+		C6A0D96C1B59FCCC00C8172D /* STTwitterOAuth.m in Sources */ = {isa = PBXBuildFile; fileRef = F74C1A0B1B5967B000F09002 /* STTwitterOAuth.m */; };
+		C6A0D96D1B59FCCC00C8172D /* STTwitterOS.m in Sources */ = {isa = PBXBuildFile; fileRef = F74C1A0D1B5967B000F09002 /* STTwitterOS.m */; };
+		C6A0D96E1B59FCCC00C8172D /* BAVPlistNode.m in Sources */ = {isa = PBXBuildFile; fileRef = F74C1A111B5967B000F09002 /* BAVPlistNode.m */; };
+		C6A0D96F1B59FCCC00C8172D /* JSONSyntaxHighlight.m in Sources */ = {isa = PBXBuildFile; fileRef = F74C1A131B5967B000F09002 /* JSONSyntaxHighlight.m */; };
+		C6A0D9701B59FCCC00C8172D /* STHTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = F74C1A151B5967B000F09002 /* STHTTPRequest.m */; };
+		C6A0D9711B59FCF000C8172D /* NSDateFormatter+STTwitter.m in Sources */ = {isa = PBXBuildFile; fileRef = F74C19FE1B5967B000F09002 /* NSDateFormatter+STTwitter.m */; };
+		C6A0D9721B59FCF000C8172D /* NSString+STTwitter.m in Sources */ = {isa = PBXBuildFile; fileRef = F74C1A001B5967B000F09002 /* NSString+STTwitter.m */; };
+		C6A0D9731B59FCF000C8172D /* STHTTPRequest+STTwitter.m in Sources */ = {isa = PBXBuildFile; fileRef = F74C1A021B5967B000F09002 /* STHTTPRequest+STTwitter.m */; };
+		C6A0D9741B59FCF000C8172D /* STTwitterAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = F74C1A051B5967B000F09002 /* STTwitterAPI.m */; };
+		C6A0D9751B59FCF000C8172D /* STTwitterAppOnly.m in Sources */ = {isa = PBXBuildFile; fileRef = F74C1A071B5967B000F09002 /* STTwitterAppOnly.m */; };
+		C6A0D9761B59FCF000C8172D /* STTwitterHTML.m in Sources */ = {isa = PBXBuildFile; fileRef = F74C1A091B5967B000F09002 /* STTwitterHTML.m */; };
+		C6A0D9771B59FCF000C8172D /* STTwitterOAuth.m in Sources */ = {isa = PBXBuildFile; fileRef = F74C1A0B1B5967B000F09002 /* STTwitterOAuth.m */; };
+		C6A0D9781B59FCF000C8172D /* STTwitterOS.m in Sources */ = {isa = PBXBuildFile; fileRef = F74C1A0D1B5967B000F09002 /* STTwitterOS.m */; };
+		C6A0D9791B59FCF000C8172D /* BAVPlistNode.m in Sources */ = {isa = PBXBuildFile; fileRef = F74C1A111B5967B000F09002 /* BAVPlistNode.m */; };
+		C6A0D97A1B59FCF000C8172D /* JSONSyntaxHighlight.m in Sources */ = {isa = PBXBuildFile; fileRef = F74C1A131B5967B000F09002 /* JSONSyntaxHighlight.m */; };
+		C6A0D97B1B59FCF000C8172D /* STHTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = F74C1A151B5967B000F09002 /* STHTTPRequest.m */; };
+		C6A0D97C1B59FD9200C8172D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6CFD0531B45EDA90067A6AD /* AppDelegate.swift */; };
+		C6A0D9851B59FD9A00C8172D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6CFD0531B45EDA90067A6AD /* AppDelegate.swift */; };
+		C6A0D9861B59FE7C00C8172D /* MSRegisterModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C68441DB1B588D480091F357 /* MSRegisterModelTest.swift */; };
+		C6A0D9871B59FE7C00C8172D /* MScheduleTableViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67926BB1B4DD2A100EA86B4 /* MScheduleTableViewTests.swift */; };
+		C6A0D9881B59FE7C00C8172D /* MSEventTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67926B51B4DD0F800EA86B4 /* MSEventTests.swift */; };
+		C6A0D9891B59FE7C00C8172D /* ExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6D9E9951B477D6E00249DA4 /* ExtensionsTests.swift */; };
+		C6A0D98E1B59FF0400C8172D /* MSScheduleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67926A91B4DC36900EA86B4 /* MSScheduleTests.swift */; };
+		C6A0D98F1B59FF0400C8172D /* MansbridgeSummitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6CFD0751B45EDA90067A6AD /* MansbridgeSummitUITests.swift */; };
+		C6A0D9901B59FF4B00C8172D /* MSRegisterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C679E2111B55FD9F004AEBE9 /* MSRegisterModel.swift */; };
 		C6C00A6B1B45F3B300709992 /* MSTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C00A6A1B45F3B300709992 /* MSTabBarController.swift */; };
 		C6C00A6C1B45F3B300709992 /* MSTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C00A6A1B45F3B300709992 /* MSTabBarController.swift */; };
 		C6C00A6D1B45F3B300709992 /* MSTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C00A6A1B45F3B300709992 /* MSTabBarController.swift */; };
@@ -64,7 +91,6 @@
 		C6CFD05B1B45EDA90067A6AD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6CFD0591B45EDA90067A6AD /* Main.storyboard */; };
 		C6CFD05D1B45EDA90067A6AD /* TabBarIcons.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6CFD05C1B45EDA90067A6AD /* TabBarIcons.xcassets */; };
 		C6CFD0601B45EDA90067A6AD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6CFD05E1B45EDA90067A6AD /* LaunchScreen.storyboard */; };
-		C6CFD0761B45EDA90067A6AD /* MansbridgeSummitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6CFD0751B45EDA90067A6AD /* MansbridgeSummitUITests.swift */; };
 		C6D9E9611B474F1000249DA4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6CFD0591B45EDA90067A6AD /* Main.storyboard */; };
 		C6D9E9621B474F1100249DA4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6CFD0591B45EDA90067A6AD /* Main.storyboard */; };
 		C6D9E9641B475BCD00249DA4 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6D9E9631B475BCD00249DA4 /* Extensions.swift */; };
@@ -86,7 +112,6 @@
 		C6D9E9911B4778A400249DA4 /* MyriadPro-Regular.OTF in Resources */ = {isa = PBXBuildFile; fileRef = C6D9E98C1B4778A400249DA4 /* MyriadPro-Regular.OTF */; };
 		C6D9E9921B4778A400249DA4 /* MyriadPro-Regular.OTF in Resources */ = {isa = PBXBuildFile; fileRef = C6D9E98C1B4778A400249DA4 /* MyriadPro-Regular.OTF */; };
 		C6D9E9941B477C3300249DA4 /* ConstantsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6D9E9931B477C3300249DA4 /* ConstantsTests.swift */; };
-		C6D9E9961B477D6E00249DA4 /* ExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6D9E9951B477D6E00249DA4 /* ExtensionsTests.swift */; };
 		C6E1632A1B48137900942749 /* MSScheduleTableControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6E163291B48137900942749 /* MSScheduleTableControllerTests.swift */; };
 		C6E1632C1B4814EC00942749 /* MSScheduleCellView.Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6E1632B1B4814EC00942749 /* MSScheduleCellView.Tests.swift */; };
 		C6E1632E1B481AE600942749 /* MSCellModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6E1632D1B481AE600942749 /* MSCellModels.swift */; };
@@ -272,9 +297,6 @@
 			children = (
 				C664DE711B57254800CFB209 /* Reachability.h */,
 				C664DE721B57254800CFB209 /* Reachability.m */,
-				C664DE6E1B57254700CFB209 /* MansbridgeSummit-Bridging-Header.h */,
-				C664DE6F1B57254700CFB209 /* MansbridgeSummitTests-Bridging-Header.h */,
-				C664DE701B57254700CFB209 /* MansbridgeSummitUITests-Bridging-Header.h */,
 			);
 			name = Reachability;
 			sourceTree = "<group>";
@@ -473,6 +495,9 @@
 		C6E163361B48292800942749 /* ThirdPartyFramework */ = {
 			isa = PBXGroup;
 			children = (
+				C664DE6E1B57254700CFB209 /* MansbridgeSummit-Bridging-Header.h */,
+				C664DE6F1B57254700CFB209 /* MansbridgeSummitTests-Bridging-Header.h */,
+				C664DE701B57254700CFB209 /* MansbridgeSummitUITests-Bridging-Header.h */,
 				F74C19FC1B5967B000F09002 /* STTwitter */,
 				C664DE691B5723F700CFB209 /* Reachability */,
 				C6E163371B48295100942749 /* SwiftyJSON */,
@@ -691,6 +716,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6A0D9901B59FF4B00C8172D /* MSRegisterModel.swift in Sources */,
 				F74C1A171B5967B000F09002 /* NSString+STTwitter.m in Sources */,
 				C69E4A601B4609D700BD981C /* MSPrimaryTabController.swift in Sources */,
 				C6D9E9681B475E2D00249DA4 /* Constants.swift in Sources */,
@@ -727,14 +753,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6A0D9861B59FE7C00C8172D /* MSRegisterModelTest.swift in Sources */,
+				C6A0D9871B59FE7C00C8172D /* MScheduleTableViewTests.swift in Sources */,
+				C6A0D9881B59FE7C00C8172D /* MSEventTests.swift in Sources */,
+				C6A0D9891B59FE7C00C8172D /* ExtensionsTests.swift in Sources */,
+				C6A0D9851B59FD9A00C8172D /* AppDelegate.swift in Sources */,
+				C6A0D9661B59FCCC00C8172D /* NSDateFormatter+STTwitter.m in Sources */,
+				C6A0D9671B59FCCC00C8172D /* NSString+STTwitter.m in Sources */,
+				C6A0D9681B59FCCC00C8172D /* STHTTPRequest+STTwitter.m in Sources */,
+				C6A0D9691B59FCCC00C8172D /* STTwitterAPI.m in Sources */,
+				C6A0D96A1B59FCCC00C8172D /* STTwitterAppOnly.m in Sources */,
+				C6A0D96B1B59FCCC00C8172D /* STTwitterHTML.m in Sources */,
+				C6A0D96C1B59FCCC00C8172D /* STTwitterOAuth.m in Sources */,
+				C6A0D96D1B59FCCC00C8172D /* STTwitterOS.m in Sources */,
+				C6A0D96E1B59FCCC00C8172D /* BAVPlistNode.m in Sources */,
+				C6A0D96F1B59FCCC00C8172D /* JSONSyntaxHighlight.m in Sources */,
+				C6A0D9701B59FCCC00C8172D /* STHTTPRequest.m in Sources */,
 				C6E1632F1B481AE600942749 /* MSCellModels.swift in Sources */,
 				C6E1632A1B48137900942749 /* MSScheduleTableControllerTests.swift in Sources */,
 				C69E4A611B4609D700BD981C /* MSPrimaryTabController.swift in Sources */,
 				C61C00651B4C7F1600AB4D6C /* MSEventPageController.swift in Sources */,
-				C68441DC1B588D480091F357 /* MSRegisterModelTest.swift in Sources */,
 				C664DE741B57254800CFB209 /* Reachability.m in Sources */,
-				C67926BC1B4DD2A100EA86B4 /* MScheduleTableViewTests.swift in Sources */,
-				C6D9E9961B477D6E00249DA4 /* ExtensionsTests.swift in Sources */,
 				C6E1633D1B482A7200942749 /* MSScheduleJsonFileTests.swift in Sources */,
 				C6D9E9691B475E2D00249DA4 /* Constants.swift in Sources */,
 				C69E4A551B46088800BD981C /* MSTwitterTabController.swift in Sources */,
@@ -745,7 +784,6 @@
 				C6CAB4331B498B770077D60B /* MSTabBar.swift in Sources */,
 				C679E2131B55FD9F004AEBE9 /* MSRegisterModel.swift in Sources */,
 				C689563C1B52B399006D188F /* MSScrollView.swift in Sources */,
-				C67926B61B4DD0F800EA86B4 /* MSEventTests.swift in Sources */,
 				C69E4A651B460A3F00BD981C /* MSScheduleTableController.swift in Sources */,
 				C6E1633A1B48296600942749 /* SwiftyJSON.swift in Sources */,
 				C6C00A6C1B45F3B300709992 /* MSTabBarController.swift in Sources */,
@@ -760,11 +798,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6A0D98E1B59FF0400C8172D /* MSScheduleTests.swift in Sources */,
+				C6A0D98F1B59FF0400C8172D /* MansbridgeSummitUITests.swift in Sources */,
+				C6A0D97C1B59FD9200C8172D /* AppDelegate.swift in Sources */,
+				C6A0D9711B59FCF000C8172D /* NSDateFormatter+STTwitter.m in Sources */,
+				C6A0D9721B59FCF000C8172D /* NSString+STTwitter.m in Sources */,
+				C6A0D9731B59FCF000C8172D /* STHTTPRequest+STTwitter.m in Sources */,
+				C6A0D9741B59FCF000C8172D /* STTwitterAPI.m in Sources */,
+				C6A0D9751B59FCF000C8172D /* STTwitterAppOnly.m in Sources */,
+				C6A0D9761B59FCF000C8172D /* STTwitterHTML.m in Sources */,
+				C6A0D9771B59FCF000C8172D /* STTwitterOAuth.m in Sources */,
+				C6A0D9781B59FCF000C8172D /* STTwitterOS.m in Sources */,
+				C6A0D9791B59FCF000C8172D /* BAVPlistNode.m in Sources */,
+				C6A0D97A1B59FCF000C8172D /* JSONSyntaxHighlight.m in Sources */,
+				C6A0D97B1B59FCF000C8172D /* STHTTPRequest.m in Sources */,
 				C69E4A621B4609D700BD981C /* MSPrimaryTabController.swift in Sources */,
 				C6D9E96A1B475E2D00249DA4 /* Constants.swift in Sources */,
-				C67926AA1B4DC36900EA86B4 /* MSScheduleTests.swift in Sources */,
 				C61C00661B4C7F1600AB4D6C /* MSEventPageController.swift in Sources */,
-				C6CFD0761B45EDA90067A6AD /* MansbridgeSummitUITests.swift in Sources */,
 				C6CAB4341B498B770077D60B /* MSTabBar.swift in Sources */,
 				C69E4A561B46088800BD981C /* MSTwitterTabController.swift in Sources */,
 				C69E4A741B4620AC00BD981C /* MSScheduleTableView.swift in Sources */,
@@ -854,7 +904,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -893,7 +943,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";

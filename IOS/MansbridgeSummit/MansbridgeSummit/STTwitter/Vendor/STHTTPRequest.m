@@ -834,7 +834,7 @@ static NSMutableArray *localCookiesStorage = nil;
         self.responseHeaders = [r allHeaderFields];
         self.responseStatus = [r statusCode];
         self.responseStringEncodingName = [r textEncodingName];
-        self.responseExpectedContentLength = [r expectedContentLength];
+        self.responseExpectedContentLength = (int)[r expectedContentLength];
     }
     
     [_responseData setLength:0];

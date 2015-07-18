@@ -616,6 +616,7 @@ downloadProgressBlock:(void(^)(id r, id json))downloadProgressBlock
         NSArray *kv = [s componentsSeparatedByString:@"="];
         NSAssert([kv count] == 2, @"-- bad length");
         if([kv count] != 2) continue;
+//        NSString *value = [kv[1] stringByRemovingPercentEncoding ]; //
         NSString *value = [kv[1] stringByReplacingPercentEscapesUsingEncoding:NSUTF8StringEncoding]; // use raw parameters for signing
         [ma addObject:@{kv[0] : value}];
     }
