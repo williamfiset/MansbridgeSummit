@@ -20,10 +20,8 @@ public class MSRegisterTabController : UIViewController {
     var textField : UITextField!
    
     // Question
-    var questionText : String?
     var questionLabel : UILabel!
-    
-    var questionIndex = 0;
+    private var questionIndex = 0;
     
     let questions = [
         "Enter your name",
@@ -58,13 +56,25 @@ public class MSRegisterTabController : UIViewController {
     
     public override func viewWillAppear(animated: Bool) {
         
-        createQuestionLabel()
-        createTextField()
-        createButtons()
+        let connection = Reachability(hostName: "www.mta.ca")
+        if connection.isReachable() {
+            
+            // Load storyboard, otherwise 
+            
+        } else {
+            let warningLabel = UILabel(frame: CGRect(x: 0, y: 0, width: GC.SCREEN_WIDTH, height: GC.SCREEN_HEIGHT))
+            warningLabel.text = "Please make sure you are connected to the network."
+            
+            self.view.addSubview(warningLabel)
+        }
         
-        self.view.addSubview(textField)
-        self.view.addSubview(prevButton)
-        self.view.addSubview(nextButton)
+//        createQuestionLabel()
+//        createTextField()
+//        createButtons()
+//        
+//        self.view.addSubview(textField)
+//        self.view.addSubview(prevButton)
+//        self.view.addSubview(nextButton)
 
     }
     
