@@ -9,6 +9,7 @@
 import Foundation
 import XCTest
 
+@available(iOS 9.0, *)
 class MSScheduleTests: XCTestCase {
     
     override func setUp() {
@@ -20,11 +21,9 @@ class MSScheduleTests: XCTestCase {
         continueAfterFailure = false
         
         // UI tests must launch the application that they test. Doing this in setup will make sure it happens for each test method.
-        if #available(iOS 9.0, *) {
-            XCUIApplication().launch()
-        } else {
-            // Fallback on earlier versions
-        }
+
+        XCUIApplication().launch()
+        
     }
     
     override func tearDown() {
@@ -39,7 +38,7 @@ class MSScheduleTests: XCTestCase {
 //        XCTAssertNotNil(reader)
 //        let _ = reader!.read().count
         
-               /* 
+        
         let app = XCUIApplication()
         
         app.windows.tabBars.buttons["Schedule"].tap()
@@ -77,11 +76,9 @@ class MSScheduleTests: XCTestCase {
         returnButton.tap()
         table.childrenMatchingType(.Cell).elementAtIndex(11).tap()
         returnButton.tap()
-        
-        // I think it fails becasue you actually can't reach it.
         table.childrenMatchingType(.Cell).elementAtIndex(12).tap()
         returnButton.tap()
-        */
+
         
     }
 
