@@ -23,8 +23,8 @@ public class MSScheduleTableView : UITableView {
         
         super.init(frame: frame, style: style)
         
-        self.sectionIndexBackgroundColor = GlobalConstants.Color.gold
-        self.sectionIndexColor = GlobalConstants.Color.gold
+        self.sectionIndexBackgroundColor = GC.Color.gold
+        self.sectionIndexColor = GC.Color.gold
         
         setTableHeaderView()
         
@@ -39,10 +39,10 @@ public class MSScheduleTableView : UITableView {
         let scheduleHeaderLabel = UILabel(frame: CGRect(x: 0, y: 0, width: tableWidth, height: 75))
         
         scheduleHeaderLabel.text = "Mansbridge Summit Schedule"
-        scheduleHeaderLabel.font = GlobalConstants.Font.myraidpro_bold_26
+        scheduleHeaderLabel.font = GC.Font.myraidpro_bold_26
         scheduleHeaderLabel.adjustsFontSizeToFitWidth = true
-        scheduleHeaderLabel.textColor = GlobalConstants.Color.white
-        scheduleHeaderLabel.backgroundColor = GlobalConstants.Color.red
+        scheduleHeaderLabel.textColor = GC.Color.white
+        scheduleHeaderLabel.backgroundColor = GC.Color.red
         scheduleHeaderLabel.textAlignment = .Center
         
         self.tableHeaderView = scheduleHeaderLabel

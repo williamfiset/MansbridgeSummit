@@ -10,6 +10,9 @@
 		C61C00641B4C7F1600AB4D6C /* MSEventPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C61C00631B4C7F1600AB4D6C /* MSEventPageController.swift */; };
 		C61C00651B4C7F1600AB4D6C /* MSEventPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C61C00631B4C7F1600AB4D6C /* MSEventPageController.swift */; };
 		C61C00661B4C7F1600AB4D6C /* MSEventPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C61C00631B4C7F1600AB4D6C /* MSEventPageController.swift */; };
+		C64FD5C71B59A61A00AE8EA6 /* test_schedule2.json in Resources */ = {isa = PBXBuildFile; fileRef = C64FD5C61B59A61A00AE8EA6 /* test_schedule2.json */; };
+		C64FD5C81B59A61A00AE8EA6 /* test_schedule2.json in Resources */ = {isa = PBXBuildFile; fileRef = C64FD5C61B59A61A00AE8EA6 /* test_schedule2.json */; };
+		C64FD5C91B59A61A00AE8EA6 /* test_schedule2.json in Resources */ = {isa = PBXBuildFile; fileRef = C64FD5C61B59A61A00AE8EA6 /* test_schedule2.json */; };
 		C664DE731B57254800CFB209 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = C664DE721B57254800CFB209 /* Reachability.m */; };
 		C664DE741B57254800CFB209 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = C664DE721B57254800CFB209 /* Reachability.m */; };
 		C664DE751B57254800CFB209 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = C664DE721B57254800CFB209 /* Reachability.m */; };
@@ -133,6 +136,7 @@
 
 /* Begin PBXFileReference section */
 		C61C00631B4C7F1600AB4D6C /* MSEventPageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSEventPageController.swift; sourceTree = "<group>"; };
+		C64FD5C61B59A61A00AE8EA6 /* test_schedule2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = test_schedule2.json; sourceTree = "<group>"; };
 		C664DE6E1B57254700CFB209 /* MansbridgeSummit-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MansbridgeSummit-Bridging-Header.h"; sourceTree = "<group>"; };
 		C664DE6F1B57254700CFB209 /* MansbridgeSummitTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MansbridgeSummitTests-Bridging-Header.h"; sourceTree = "<group>"; };
 		C664DE701B57254700CFB209 /* MansbridgeSummitUITests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MansbridgeSummitUITests-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -247,6 +251,22 @@
 			name = MSRegisterTests;
 			sourceTree = "<group>";
 		};
+		C64FD5CA1B59C28A00AE8EA6 /* TwitterTab */ = {
+			isa = PBXGroup;
+			children = (
+				C69E4A531B46088800BD981C /* MSTwitterTabController.swift */,
+			);
+			name = TwitterTab;
+			sourceTree = "<group>";
+		};
+		C64FD5CB1B59C29200AE8EA6 /* AboutTab */ = {
+			isa = PBXGroup;
+			children = (
+				C69E4A5B1B46090E00BD981C /* MSAboutTabController.swift */,
+			);
+			name = AboutTab;
+			sourceTree = "<group>";
+		};
 		C664DE691B5723F700CFB209 /* Reachability */ = {
 			isa = PBXGroup;
 			children = (
@@ -308,8 +328,8 @@
 				C68956391B52B2EF006D188F /* FirstTab */,
 				C679E2101B55FCFE004AEBE9 /* RegisterTab */,
 				C69E4A6C1B46128900BD981C /* ScheduleTab */,
-				C69E4A531B46088800BD981C /* MSTwitterTabController.swift */,
-				C69E4A5B1B46090E00BD981C /* MSAboutTabController.swift */,
+				C64FD5CA1B59C28A00AE8EA6 /* TwitterTab */,
+				C64FD5CB1B59C29200AE8EA6 /* AboutTab */,
 			);
 			name = Tabs;
 			sourceTree = "<group>";
@@ -445,6 +465,7 @@
 			isa = PBXGroup;
 			children = (
 				C6E163321B481C5000942749 /* test_schedule.json */,
+				C64FD5C61B59A61A00AE8EA6 /* test_schedule2.json */,
 			);
 			name = Schedule;
 			sourceTree = "<group>";
@@ -621,6 +642,7 @@
 				C6E163331B481C5000942749 /* test_schedule.json in Resources */,
 				C6D9E9861B4774CB00249DA4 /* AppleGaramond.ttf in Resources */,
 				C6D9E9901B4778A400249DA4 /* MyriadPro-Regular.OTF in Resources */,
+				C64FD5C71B59A61A00AE8EA6 /* test_schedule2.json in Resources */,
 				C6CFD05B1B45EDA90067A6AD /* Main.storyboard in Resources */,
 				C6D9E98D1B4778A400249DA4 /* MyriadPro-Bold.OTF in Resources */,
 				C68956361B52AFBB006D188F /* Media.xcassets in Resources */,
@@ -637,6 +659,7 @@
 				C6D9E9611B474F1000249DA4 /* Main.storyboard in Resources */,
 				C6D9E9781B4774CB00249DA4 /* AppleGaramond-Bold.ttf in Resources */,
 				C6E163341B481C5000942749 /* test_schedule.json in Resources */,
+				C64FD5C81B59A61A00AE8EA6 /* test_schedule2.json in Resources */,
 				C6D9E98E1B4778A400249DA4 /* MyriadPro-Bold.OTF in Resources */,
 				C6D9E9871B4774CB00249DA4 /* AppleGaramond.ttf in Resources */,
 				C68956371B52AFBB006D188F /* Media.xcassets in Resources */,
@@ -653,6 +676,7 @@
 				C67926AB1B4DC91B00EA86B4 /* test_schedule.json in Resources */,
 				C6D9E9621B474F1100249DA4 /* Main.storyboard in Resources */,
 				C6D9E9791B4774CB00249DA4 /* AppleGaramond-Bold.ttf in Resources */,
+				C64FD5C91B59A61A00AE8EA6 /* test_schedule2.json in Resources */,
 				C6D9E98F1B4778A400249DA4 /* MyriadPro-Bold.OTF in Resources */,
 				C6D9E9881B4774CB00249DA4 /* AppleGaramond.ttf in Resources */,
 				C68956381B52AFBB006D188F /* Media.xcassets in Resources */,

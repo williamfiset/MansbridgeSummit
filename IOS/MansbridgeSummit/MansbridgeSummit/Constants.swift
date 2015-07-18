@@ -9,7 +9,22 @@
 import Foundation
 import UIKit
 
-struct GlobalConstants {
+
+
+// GC <=> GlobalConstant
+public struct GC {
+    
+    private static let screenRect = UIScreen.mainScreen().bounds
+
+    static let SCREEN_WIDTH : CGFloat = screenRect.size.width
+    static let SCREEN_HEIGHT : CGFloat = screenRect.size.height
+
+    static let TAB_BAR_HEIGHT = MSTabBarController().tabBar.frame.height
+    
+    struct DeviceType {
+        static let iPhone : Bool = UIDevice.currentDevice().userInterfaceIdiom == .Phone
+        static let iPad   : Bool = UIDevice.currentDevice().userInterfaceIdiom == .Pad
+    }
     
     struct Color {
         static let gold  = UIColor(red: 175.0/255.0, green: 137.0/255.0, blue: 0, alpha: 1)
@@ -69,14 +84,7 @@ struct GlobalConstants {
         static let myraidpro_bold_32 = UIFont(name: "MyriadPro-Bold", size: 32.0)
         
     }
-    
-    struct DeviceType {
-        static let iPhone : Bool = UIDevice.currentDevice().userInterfaceIdiom == .Phone
-        static let iPad   : Bool = UIDevice.currentDevice().userInterfaceIdiom == .Pad
-    }
-    
-    
-    static let tabBarHeight = MSTabBarController().tabBar.frame.height
+
     
 }
 

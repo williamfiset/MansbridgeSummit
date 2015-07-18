@@ -22,37 +22,37 @@ class Constants: XCTestCase {
 
     func testFontsAreNotNil() {
         
-        XCTAssertNotNil( GlobalConstants.Font.garamond_12 )
-        XCTAssertNotNil( GlobalConstants.Font.garamond_14 )
-        XCTAssertNotNil( GlobalConstants.Font.garamond_16 )
-        XCTAssertNotNil( GlobalConstants.Font.garamond_18 )
+        XCTAssertNotNil( GC.Font.garamond_12 )
+        XCTAssertNotNil( GC.Font.garamond_14 )
+        XCTAssertNotNil( GC.Font.garamond_16 )
+        XCTAssertNotNil( GC.Font.garamond_18 )
         
-        XCTAssertNotNil( GlobalConstants.Font.garamond_bold_12 )
-        XCTAssertNotNil( GlobalConstants.Font.garamond_bold_14 )
-        XCTAssertNotNil( GlobalConstants.Font.garamond_bold_16 )
-        XCTAssertNotNil( GlobalConstants.Font.garamond_bold_18 )
+        XCTAssertNotNil( GC.Font.garamond_bold_12 )
+        XCTAssertNotNil( GC.Font.garamond_bold_14 )
+        XCTAssertNotNil( GC.Font.garamond_bold_16 )
+        XCTAssertNotNil( GC.Font.garamond_bold_18 )
         
-        XCTAssertNotNil( GlobalConstants.Font.myraidpro_12 )
-        XCTAssertNotNil( GlobalConstants.Font.myraidpro_14 )
-        XCTAssertNotNil( GlobalConstants.Font.myraidpro_16 )
-        XCTAssertNotNil( GlobalConstants.Font.myraidpro_18 )
+        XCTAssertNotNil( GC.Font.myraidpro_12 )
+        XCTAssertNotNil( GC.Font.myraidpro_14 )
+        XCTAssertNotNil( GC.Font.myraidpro_16 )
+        XCTAssertNotNil( GC.Font.myraidpro_18 )
         
-        XCTAssertNotNil( GlobalConstants.Font.myraidpro_bold_12 )
-        XCTAssertNotNil( GlobalConstants.Font.myraidpro_bold_14 )
-        XCTAssertNotNil( GlobalConstants.Font.myraidpro_bold_16 )
-        XCTAssertNotNil( GlobalConstants.Font.myraidpro_bold_18 )
+        XCTAssertNotNil( GC.Font.myraidpro_bold_12 )
+        XCTAssertNotNil( GC.Font.myraidpro_bold_14 )
+        XCTAssertNotNil( GC.Font.myraidpro_bold_16 )
+        XCTAssertNotNil( GC.Font.myraidpro_bold_18 )
         
     }
 
     func testColorsAreNotNil() {
         
-        XCTAssertNotNil( GlobalConstants.Color.red )
-        XCTAssertNotNil( GlobalConstants.Color.gold )
+        XCTAssertNotNil( GC.Color.red )
+        XCTAssertNotNil( GC.Color.gold )
         
     }
     
     func testTabBarHeight () {
-        XCTAssertGreaterThan( GlobalConstants.tabBarHeight, 0)
+        XCTAssertGreaterThan( GC.tabBarHeight, 0)
     }
 
 }

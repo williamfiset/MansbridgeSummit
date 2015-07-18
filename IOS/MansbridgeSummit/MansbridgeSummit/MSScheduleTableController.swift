@@ -66,7 +66,7 @@ public class MSScheduleTableController : UITableViewController {
 
         if !adjustedTableHeight {
 
-            let newFrame = CGRect(x: 0, y: 0, width: self.tableView.frame.width, height: self.tableView.frame.height - GlobalConstants.tabBarHeight)
+            let newFrame = CGRect(x: 0, y: 0, width: self.tableView.frame.width, height: self.tableView.frame.height - GC.TAB_BAR_HEIGHT)
             self.tableView.frame = newFrame
 
             adjustedTableHeight = true
@@ -136,9 +136,9 @@ public class MSScheduleTableController : UITableViewController {
         let dateLabel = UILabel(frame: CGRect(x: 0.0, y: 0.0, width: tableView.bounds.width, height: 50))
         
         dateLabel.text = msdate.date
-        dateLabel.font = GlobalConstants.Font.garamond_22
-        dateLabel.textColor = GlobalConstants.Color.white
-        dateLabel.backgroundColor = GlobalConstants.Color.gold
+        dateLabel.font = GC.Font.garamond_22
+        dateLabel.textColor = GC.Color.white
+        dateLabel.backgroundColor = GC.Color.gold
         dateLabel.adjustsFontSizeToFitWidth = true
         dateLabel.textAlignment = .Center
         

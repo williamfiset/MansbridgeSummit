@@ -28,7 +28,7 @@ public class MSScheduleCellView : UITableViewCell {
     }
     
     var DELIMITER_WIDTH : CGFloat {
-        if GlobalConstants.DeviceType.iPhone {
+        if GC.DeviceType.iPhone {
            return 5
         } else {
             return 10
@@ -36,7 +36,7 @@ public class MSScheduleCellView : UITableViewCell {
     }
     
     var DELIMITER_SPACING : CGFloat {
-        if GlobalConstants.DeviceType.iPhone {
+        if GC.DeviceType.iPhone {
             return 3
         } else {
             return 10
@@ -50,7 +50,7 @@ public class MSScheduleCellView : UITableViewCell {
         var length : CGFloat = 0.0
         
         let tempLabel = UILabel(frame: CGRect(x: 0, y: 0, width: 100, height: 100))
-        tempLabel.font = GlobalConstants.Font.myraidpro_bold_18
+        tempLabel.font = GC.Font.myraidpro_bold_18
         
         tempLabel.text = ":"
         length += tempLabel.intrinsicContentSize().width
@@ -97,7 +97,7 @@ public class MSScheduleCellView : UITableViewCell {
         eventTimeLabel.text = eventTime;
         eventTimeLabel.frame = CGRect(x: TIME_LABEL_LEFT_SPACING, y: 10.0, width: MSScheduleCellView.MAX_TIME_LABEL_LEN, height: cellHeight)
         eventTimeLabel.adjustsFontSizeToFitWidth = true
-        eventTimeLabel.font = GlobalConstants.Font.myraidpro_bold_18
+        eventTimeLabel.font = GC.Font.myraidpro_bold_18
         
     }
 
@@ -107,7 +107,7 @@ public class MSScheduleCellView : UITableViewCell {
         let rect = CGRect(x: xPos, y: 0, width: DELIMITER_WIDTH, height: cellHeight)
         
         cellDelimiter = UIView(frame: rect)
-        cellDelimiter.backgroundColor = GlobalConstants.Color.red
+        cellDelimiter.backgroundColor = GC.Color.red
         
     }
     
@@ -123,7 +123,7 @@ public class MSScheduleCellView : UITableViewCell {
         )
         
         eventNameLabel.text = eventDescription;
-        eventNameLabel.font = GlobalConstants.Font.garamond_18
+        eventNameLabel.font = GC.Font.garamond_18
         eventNameLabel.adjustsFontSizeToFitWidth = true
 
     }

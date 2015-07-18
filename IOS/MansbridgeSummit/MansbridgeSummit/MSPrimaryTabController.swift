@@ -22,7 +22,7 @@ public class MSPrimaryTabController : UIViewController, UIScrollViewDelegate {
     
     public override func viewDidAppear(animated: Bool) {
         
-        let scollViewFrame = CGRect(x: 0, y: 0, width: view.frame.width, height: view.frame.height - GlobalConstants.tabBarHeight)
+        let scollViewFrame = CGRect(x: 0, y: 0, width: view.frame.width, height: view.frame.height - GC.TAB_BAR_HEIGHT)
         scrollView = MSScrollView(frame: scollViewFrame)
         self.view.addSubview(scrollView)
 

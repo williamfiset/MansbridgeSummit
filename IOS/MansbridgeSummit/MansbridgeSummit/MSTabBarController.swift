@@ -22,9 +22,9 @@ public class MSTabBarController : UITabBarController {
     public override func viewWillAppear(animated: Bool) {
 
         //self.tabBar.alpha = 1.0
-        self.tabBar.backgroundColor = GlobalConstants.Color.red
-        self.tabBar.barTintColor = GlobalConstants.Color.red
-        self.tabBar.tintColor = GlobalConstants.Color.white
+        self.tabBar.backgroundColor = GC.Color.red
+        self.tabBar.barTintColor = GC.Color.red
+        self.tabBar.tintColor = GC.Color.white
         
         UIApplication.sharedApplication().keyWindow?.tintColor = UIColor.blueColor()
         

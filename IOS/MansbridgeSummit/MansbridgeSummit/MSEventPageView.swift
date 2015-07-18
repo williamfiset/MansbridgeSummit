@@ -42,8 +42,8 @@ public class MSEventPageView : UIView {
 
         for(var i = 0; i < labels.count; i++) {
             labels[i].frame = labelSize
-            labels[i].font = GlobalConstants.Font.garamond_24;
-            labels[i].textColor = GlobalConstants.Color.white
+            labels[i].font = GC.Font.garamond_24;
+            labels[i].textColor = GC.Color.white
             labelSize.origin.y += 75.0
         }
         

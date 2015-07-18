@@ -15,7 +15,7 @@ public class MSScrollView : UIScrollView {
         
         super.init(frame: frame)
         
-        self.backgroundColor = GlobalConstants.Color.white
+        self.backgroundColor = GC.Color.white
         self.showsVerticalScrollIndicator = true
         self.scrollEnabled = true;
         self.userInteractionEnabled = true;
