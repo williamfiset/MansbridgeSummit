@@ -31,7 +31,7 @@ extension String {
         return self[range]
     }
     
-    /* returns an array of string devided a delimiter */
+    /* Returns an array of strings divided by a delimiter */
     func split (delimiter : String) -> [String] {
         return self.componentsSeparatedByString(delimiter)
     }
@@ -42,6 +42,58 @@ extension String {
         characterSet.addCharactersInString("-._~")
         return stringByAddingPercentEncodingWithAllowedCharacters(characterSet)
         
+    }
+    
+    func startAt(start : String) -> String? {
+        
+        let range = self.rangeOfString(start)
+        
+        if (range != nil) {
+            return self.substringFromIndex(range!.endIndex)
+        }
+        
+        return nil;
+        
+    }
+    
+    func endAt(end : String) -> String? {
+        
+        let range = self.rangeOfString(end)
+        
+        if (range != nil) {
+            return self.substringToIndex(range!.startIndex)
+        }
+        
+        return nil;
+        
+    }
+    
+    mutating func replace(string: String, replacement : String) {
+        
+        let range = self.rangeOfString(string)
+        
+        if (range != nil) {
+            self.replaceRange(range!, with: replacement)
+        }
+        
+    }
+    
+    mutating func replaceAll(string: String, replacement : String) {
+        
+        var range = self.rangeOfString(string)
+        
+        while (range != nil) {
+            self.replaceRange(range!, with: replacement)
+            range = self.rangeOfString(string)
+        }
+        
+    }
+    
+    mutating func removeSubstringIfExists(string : String) {
+        let range = self.rangeOfString(string)
+        if (range != nil) {
+            self.removeRange(range!)
+        }
     }
     
     

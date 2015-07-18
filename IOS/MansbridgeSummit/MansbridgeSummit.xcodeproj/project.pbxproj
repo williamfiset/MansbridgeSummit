@@ -161,6 +161,7 @@
 		F7CF77BD1B5AACAF00013CF0 /* MSTwitterTimelineController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7CF77BC1B5AACAF00013CF0 /* MSTwitterTimelineController.swift */; };
 		F7CF77BE1B5AAD5E00013CF0 /* MSTwitterTimelineController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7CF77BC1B5AACAF00013CF0 /* MSTwitterTimelineController.swift */; };
 		F7CF77BF1B5AAD5F00013CF0 /* MSTwitterTimelineController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7CF77BC1B5AACAF00013CF0 /* MSTwitterTimelineController.swift */; };
+		F7CF77C11B5B18C800013CF0 /* FormatHTML.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7CF77C01B5B18C800013CF0 /* FormatHTML.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -264,6 +265,7 @@
 		F79184F91B5A839600EFF287 /* TwitterKitResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = TwitterKitResources.bundle; path = TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle; sourceTree = "<group>"; };
 		F79184FA1B5A839600EFF287 /* TwitterCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterCore.framework; sourceTree = "<group>"; };
 		F7CF77BC1B5AACAF00013CF0 /* MSTwitterTimelineController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSTwitterTimelineController.swift; sourceTree = "<group>"; };
+		F7CF77C01B5B18C800013CF0 /* FormatHTML.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormatHTML.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -373,6 +375,7 @@
 			children = (
 				C69E4A571B4608C500BD981C /* MSRegisterTabController.swift */,
 				C679E2111B55FD9F004AEBE9 /* MSRegisterModel.swift */,
+				F7CF77C01B5B18C800013CF0 /* FormatHTML.swift */,
 			);
 			name = RegisterTab;
 			sourceTree = "<group>";
@@ -791,6 +794,7 @@
 				F74C1A1E1B5967B000F09002 /* BAVPlistNode.m in Sources */,
 				C6CFD0541B45EDA90067A6AD /* AppDelegate.swift in Sources */,
 				C6CAB4321B498B770077D60B /* MSTabBar.swift in Sources */,
+				F7CF77C11B5B18C800013CF0 /* FormatHTML.swift in Sources */,
 				C69E4A541B46088800BD981C /* MSTwitterTabController.swift in Sources */,
 				F74C1A1B1B5967B000F09002 /* STTwitterHTML.m in Sources */,
 				C69E4A721B4620AC00BD981C /* MSScheduleTableView.swift in Sources */,
