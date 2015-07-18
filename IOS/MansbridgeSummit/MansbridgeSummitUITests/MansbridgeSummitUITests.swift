@@ -10,6 +10,7 @@
 import Foundation
 import XCTest
 
+@available(iOS 9.0, *)
 class MansbridgeSummitUITests: XCTestCase {
         
     override func setUp() {
@@ -19,12 +20,10 @@ class MansbridgeSummitUITests: XCTestCase {
 
         // In UI tests it is usually best to stop immediately when a failure occurs.
         self.continueAfterFailure = false
+        
         // UI tests must launch the application that they test. Doing this in setup will make sure it happens for each test method.
-        if #available(iOS 9.0, *) {
-            XCUIApplication().launch()
-        } else {
-            // Fallback on earlier versions
-        }
+        XCUIApplication().launch()
+
     }
     
     override func tearDown() {
@@ -32,9 +31,14 @@ class MansbridgeSummitUITests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
-        // Use recording to get started writing UI tests.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func testChangingTabs() {
+        
+        let tabBarsQuery = XCUIApplication().tabBars
+        tabBarsQuery.buttons["Register"].tap()
+        tabBarsQuery.buttons["Twitter"].tap()
+        tabBarsQuery.buttons["Schedule"].tap()
+        tabBarsQuery.buttons["About"].tap()
+        
     }
     
 }
