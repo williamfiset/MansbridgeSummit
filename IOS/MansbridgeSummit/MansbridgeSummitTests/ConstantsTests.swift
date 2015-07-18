@@ -52,7 +52,7 @@ class Constants: XCTestCase {
     }
     
     func testTabBarHeight () {
-        XCTAssertGreaterThan( GC.tabBarHeight, 0)
+        XCTAssertGreaterThan( GC.TAB_BAR_HEIGHT, 0)
     }
 
 }
