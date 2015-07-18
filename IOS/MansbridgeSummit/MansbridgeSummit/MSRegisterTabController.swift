@@ -48,6 +48,26 @@ public class MSRegisterTabController : UIViewController, UIWebViewDelegate {
         self.view.addSubview(activityIndicator)
         activityIndicator.startAnimating()
         
+        let connection = Reachability(hostName: "www.mta.ca")
+        if connection.isReachable() {
+            
+            // Load storyboard, otherwise 
+            
+        } else {
+            let warningLabel = UILabel(frame: CGRect(x: 0, y: 0, width: GC.SCREEN_WIDTH, height: GC.SCREEN_HEIGHT))
+            warningLabel.text = "Please make sure you are connected to the network."
+            
+            self.view.addSubview(warningLabel)
+        }
+        
+//        createQuestionLabel()
+//        createTextField()
+//        createButtons()
+//        
+//        self.view.addSubview(textField)
+//        self.view.addSubview(prevButton)
+//        self.view.addSubview(nextButton)
+
     }
     
     public func webViewDidFinishLoad(webView: UIWebView) {

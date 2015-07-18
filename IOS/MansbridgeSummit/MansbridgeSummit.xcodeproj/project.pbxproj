@@ -10,6 +10,7 @@
 		C61C00641B4C7F1600AB4D6C /* MSEventPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C61C00631B4C7F1600AB4D6C /* MSEventPageController.swift */; };
 		C61C00651B4C7F1600AB4D6C /* MSEventPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C61C00631B4C7F1600AB4D6C /* MSEventPageController.swift */; };
 		C61C00661B4C7F1600AB4D6C /* MSEventPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C61C00631B4C7F1600AB4D6C /* MSEventPageController.swift */; };
+		C6415BA51B5AAA9400ED8DE4 /* ConnectionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6415BA41B5AAA9400ED8DE4 /* ConnectionTests.swift */; };
 		C64FD5C71B59A61A00AE8EA6 /* test_schedule2.json in Resources */ = {isa = PBXBuildFile; fileRef = C64FD5C61B59A61A00AE8EA6 /* test_schedule2.json */; };
 		C64FD5C81B59A61A00AE8EA6 /* test_schedule2.json in Resources */ = {isa = PBXBuildFile; fileRef = C64FD5C61B59A61A00AE8EA6 /* test_schedule2.json */; };
 		C64FD5C91B59A61A00AE8EA6 /* test_schedule2.json in Resources */ = {isa = PBXBuildFile; fileRef = C64FD5C61B59A61A00AE8EA6 /* test_schedule2.json */; };
@@ -183,6 +184,7 @@
 
 /* Begin PBXFileReference section */
 		C61C00631B4C7F1600AB4D6C /* MSEventPageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSEventPageController.swift; sourceTree = "<group>"; };
+		C6415BA41B5AAA9400ED8DE4 /* ConnectionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectionTests.swift; sourceTree = "<group>"; };
 		C64FD5C61B59A61A00AE8EA6 /* test_schedule2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = test_schedule2.json; sourceTree = "<group>"; };
 		C664DE6E1B57254700CFB209 /* MansbridgeSummit-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MansbridgeSummit-Bridging-Header.h"; sourceTree = "<group>"; };
 		C664DE6F1B57254700CFB209 /* MansbridgeSummitTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MansbridgeSummitTests-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -317,6 +319,14 @@
 				C68441DB1B588D480091F357 /* MSRegisterModelTest.swift */,
 			);
 			name = MSRegisterTests;
+			sourceTree = "<group>";
+		};
+		C6415BA31B5AAA7200ED8DE4 /* ReachabilityTests */ = {
+			isa = PBXGroup;
+			children = (
+				C6415BA41B5AAA9400ED8DE4 /* ConnectionTests.swift */,
+			);
+			name = ReachabilityTests;
 			sourceTree = "<group>";
 		};
 		C64FD5CA1B59C28A00AE8EA6 /* TwitterTab */ = {
@@ -463,6 +473,7 @@
 		C6CFD0691B45EDA90067A6AD /* MansbridgeSummitTests */ = {
 			isa = PBXGroup;
 			children = (
+				C6415BA31B5AAA7200ED8DE4 /* ReachabilityTests */,
 				C63FA1CD1B5889EB00B3D238 /* MSRegisterTests */,
 				C6E163281B48135100942749 /* MSScheduleTests */,
 				C6D9E9931B477C3300249DA4 /* ConstantsTests.swift */,
@@ -856,6 +867,7 @@
 				C679E2131B55FD9F004AEBE9 /* MSRegisterModel.swift in Sources */,
 				C689563C1B52B399006D188F /* MSScrollView.swift in Sources */,
 				C69E4A651B460A3F00BD981C /* MSScheduleTableController.swift in Sources */,
+				C6415BA51B5AAA9400ED8DE4 /* ConnectionTests.swift in Sources */,
 				C6E1633A1B48296600942749 /* SwiftyJSON.swift in Sources */,
 				F7CF77BE1B5AAD5E00013CF0 /* MSTwitterTimelineController.swift in Sources */,
 				C6C00A6C1B45F3B300709992 /* MSTabBarController.swift in Sources */,
