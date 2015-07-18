@@ -159,6 +159,9 @@
 		F79185041B5A839600EFF287 /* TwitterCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F79184FA1B5A839600EFF287 /* TwitterCore.framework */; };
 		F79185051B5A839600EFF287 /* TwitterCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F79184FA1B5A839600EFF287 /* TwitterCore.framework */; };
 		F79185061B5A839600EFF287 /* TwitterCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F79184FA1B5A839600EFF287 /* TwitterCore.framework */; };
+		F7CF77BD1B5AACAF00013CF0 /* MSTwitterTimelineController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7CF77BC1B5AACAF00013CF0 /* MSTwitterTimelineController.swift */; };
+		F7CF77BE1B5AAD5E00013CF0 /* MSTwitterTimelineController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7CF77BC1B5AACAF00013CF0 /* MSTwitterTimelineController.swift */; };
+		F7CF77BF1B5AAD5F00013CF0 /* MSTwitterTimelineController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7CF77BC1B5AACAF00013CF0 /* MSTwitterTimelineController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -262,6 +265,7 @@
 		F79184F81B5A839600EFF287 /* TwitterKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterKit.framework; sourceTree = "<group>"; };
 		F79184F91B5A839600EFF287 /* TwitterKitResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = TwitterKitResources.bundle; path = TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle; sourceTree = "<group>"; };
 		F79184FA1B5A839600EFF287 /* TwitterCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterCore.framework; sourceTree = "<group>"; };
+		F7CF77BC1B5AACAF00013CF0 /* MSTwitterTimelineController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSTwitterTimelineController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -326,6 +330,7 @@
 		C64FD5CA1B59C28A00AE8EA6 /* TwitterTab */ = {
 			isa = PBXGroup;
 			children = (
+				F7CF77BC1B5AACAF00013CF0 /* MSTwitterTimelineController.swift */,
 				C69E4A531B46088800BD981C /* MSTwitterTabController.swift */,
 			);
 			name = TwitterTab;
@@ -792,6 +797,7 @@
 				F74C1A171B5967B000F09002 /* NSString+STTwitter.m in Sources */,
 				C69E4A601B4609D700BD981C /* MSPrimaryTabController.swift in Sources */,
 				C6D9E9681B475E2D00249DA4 /* Constants.swift in Sources */,
+				F7CF77BD1B5AACAF00013CF0 /* MSTwitterTimelineController.swift in Sources */,
 				C61C00641B4C7F1600AB4D6C /* MSEventPageController.swift in Sources */,
 				F74C1A1E1B5967B000F09002 /* BAVPlistNode.m in Sources */,
 				C6CFD0541B45EDA90067A6AD /* AppDelegate.swift in Sources */,
@@ -859,6 +865,7 @@
 				C69E4A651B460A3F00BD981C /* MSScheduleTableController.swift in Sources */,
 				C6415BA51B5AAA9400ED8DE4 /* ConnectionTests.swift in Sources */,
 				C6E1633A1B48296600942749 /* SwiftyJSON.swift in Sources */,
+				F7CF77BE1B5AAD5E00013CF0 /* MSTwitterTimelineController.swift in Sources */,
 				C6C00A6C1B45F3B300709992 /* MSTabBarController.swift in Sources */,
 				C6E1632C1B4814EC00942749 /* MSScheduleCellView.Tests.swift in Sources */,
 				C69E4A591B4608C500BD981C /* MSRegisterTabController.swift in Sources */,
@@ -874,6 +881,7 @@
 				C6A0D98E1B59FF0400C8172D /* MSScheduleTests.swift in Sources */,
 				C6A0D98F1B59FF0400C8172D /* MansbridgeSummitUITests.swift in Sources */,
 				C6A0D97C1B59FD9200C8172D /* AppDelegate.swift in Sources */,
+				F7CF77BF1B5AAD5F00013CF0 /* MSTwitterTimelineController.swift in Sources */,
 				C6A0D9711B59FCF000C8172D /* NSDateFormatter+STTwitter.m in Sources */,
 				C6A0D9721B59FCF000C8172D /* NSString+STTwitter.m in Sources */,
 				C6A0D9731B59FCF000C8172D /* STHTTPRequest+STTwitter.m in Sources */,
