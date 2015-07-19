@@ -17,6 +17,8 @@ public class MSRegisterTabController : UIViewController, UIWebViewDelegate {
     let website = "http://www.mta.ca/Community/Campus_life/Campus_events/Mansbridge_Summit/Application/Mansbridge_Summit_application_form/"
     let webviewFrame = CGRectMake(0, 0, GC.SCREEN_WIDTH, GC.SCREEN_HEIGHT - GC.TAB_BAR_HEIGHT )
     
+    weak var networkErrorView : UIView? = nil
+    
     override public func viewDidLoad() {
         
         super.viewDidLoad()
@@ -59,10 +61,20 @@ public class MSRegisterTabController : UIViewController, UIWebViewDelegate {
             webView.removeFromSuperview()
         }
         
-        // Load XIB File
-        if let networkErrorView = UIView.loadFromNibNamed("NetworkErrorXIB") {
-//            self.view = networkErrorView
-            self.view.addSubview(networkErrorView)
+        // Load XIB File only if the error page does not exist
+        if networkErrorView == nil {
+            if let _networkErrorView = UIView.loadFromNibNamed("NetworkErrorXIB") {
+                networkErrorView = _networkErrorView
+                self.view.addSubview(_networkErrorView)
+            }
+        }
+        
+    }
+    
+    private func removeNetworkConnectionErrorPage() -> Void {
+        
+        if networkErrorView != nil {
+           networkErrorView!.removeFromSuperview()
         }
         
     }
