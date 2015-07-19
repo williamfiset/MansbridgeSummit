@@ -35,7 +35,7 @@ public class MSRegisterTabController : UIViewController, UIWebViewDelegate {
         
         webView = UIWebView(frame: CGRectMake(0, 0, UIScreen.mainScreen().bounds.width, UIScreen.mainScreen().bounds.height))
         webView!.scrollView.minimumZoomScale = 0.1;
-        webView!.loadHTMLString(returnedText!, baseURL: nil)
+        webView!.loadHTMLString(returnedText!, baseURL: NSURL(string: "http://www.mta.ca/Community/Campus_life/Campus_events/Mansbridge_Summit/Application/Mansbridge_Summit_application_form/"))
         
         webView!.delegate = self;
         self.view.addSubview(webView!)
