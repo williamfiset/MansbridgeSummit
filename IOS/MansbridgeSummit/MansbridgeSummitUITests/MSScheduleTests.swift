@@ -33,12 +33,6 @@ class MSScheduleTests: XCTestCase {
     
     func testOpeningEvents() {
 
-        // For some unknown reason the UI Tests cannot find the test_schedule file...
-//        let reader = MSScheduleReader(fileName: "test_schedule")
-//        XCTAssertNotNil(reader)
-//        let _ = reader!.read().count
-        
-        
         let app = XCUIApplication()
         
         app.windows.tabBars.buttons["Schedule"].tap()
@@ -46,39 +40,12 @@ class MSScheduleTests: XCTestCase {
         let table = app.tables
         let returnButton = app.buttons["Return"]
         
-        // Seems to throw an error, at least for now
-//        for(var i = 0; i < entryCount; i++) {
-//            table.childrenMatchingType(.Cell).elementAtIndex(i).tap()
-//            returnButton.tap()
-//        }
-
-        table.childrenMatchingType(.Cell).elementAtIndex(0).tap()
-        returnButton.tap()
-        table.childrenMatchingType(.Cell).elementAtIndex(1).tap()
-        returnButton.tap()
-        table.childrenMatchingType(.Cell).elementAtIndex(2).tap()
-        returnButton.tap()
-        table.childrenMatchingType(.Cell).elementAtIndex(3).tap()
-        returnButton.tap()
-        table.childrenMatchingType(.Cell).elementAtIndex(4).tap()
-        returnButton.tap()
-        table.childrenMatchingType(.Cell).elementAtIndex(5).tap()
-        returnButton.tap()
-        table.childrenMatchingType(.Cell).elementAtIndex(6).tap()
-        returnButton.tap()
-        table.childrenMatchingType(.Cell).elementAtIndex(7).tap()
-        returnButton.tap()
-        table.childrenMatchingType(.Cell).elementAtIndex(8).tap()
-        returnButton.tap()
-        table.childrenMatchingType(.Cell).elementAtIndex(9).tap()
-        returnButton.tap()
-        table.childrenMatchingType(.Cell).elementAtIndex(10).tap()
-        returnButton.tap()
-        table.childrenMatchingType(.Cell).elementAtIndex(11).tap()
-        returnButton.tap()
-        table.childrenMatchingType(.Cell).elementAtIndex(12).tap()
-        returnButton.tap()
-
+        let entryCount = table.childrenMatchingType(.Cell).count
+        
+        for(var i: UInt = 0; i < entryCount; i++) {
+            table.childrenMatchingType(.Cell).elementAtIndex(i).tap()
+            returnButton.tap()
+        }
         
     }
 

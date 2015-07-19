@@ -17,18 +17,18 @@ public class MSTabBarController : UITabBarController {
     /*public override func viewDidLoad() {
         setTabBarImages()
     }*/
-/*
+
     public override func viewWillAppear(animated: Bool) {
 
         //self.tabBar.alpha = 1.0
-        self.tabBar.backgroundColor = GC.Color.red
-        self.tabBar.barTintColor = GC.Color.red
-        self.tabBar.tintColor = GC.Color.white
+//        self.tabBar.backgroundColor = GC.Color.red
+//        self.tabBar.barTintColor = GC.Color.red
+        self.tabBar.tintColor = GC.Color.red
         
-        UIApplication.sharedApplication().keyWindow?.tintColor = UIColor.blueColor()
+//        UIApplication.sharedApplication().keyWindow?.tintColor = UIColor.blueColor()
         
     }
-  */
+
     /*
     func setTabBarImages() -> Void {
         

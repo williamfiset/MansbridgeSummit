@@ -17,10 +17,15 @@ public class MSScheduleTableController : UITableViewController {
     // (which is all event cells except the first)
     let eventCellID = "EventCell"
     
-    let schedule_file_name = "test_schedule2"
+    var schedule_file_name = "test_schedule2"
     var days : [MSDay] = []
 
     var adjustedTableHeight : Bool = false
+    
+    override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle?) {
+        super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
+    }
+    
     
     // viewWillAppear is called when the schedule tab button is pressed
     // but not when comming back from an MSEventPage. This means this method

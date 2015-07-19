@@ -110,9 +110,9 @@ class FormatHTML : NSObject {
         let text = String(NSString(data: self.data!, encoding: NSUTF8StringEncoding)!)
         
         let chunk1 = text.endAt("<header class=\"page-header\">")
-        let str = text.startAt("<div class=\"content\">")
-        var chunk2 = str!.endAt("<!-- page-footer -->")
-        var chunk3 = str!.startAt("<!-- /.page-footer -->")
+        let str: String = text.startAt("<div class=\"content\">")!
+        let chunk2 = str.endAt("<!-- page-footer -->")
+        let chunk3 = str.startAt("<!-- /.page-footer -->")
         
 //        if (text.rangeOfString("<div class=\"content\">") != nil) {
 //            text = "<!DOCTYPE html><html><body>" + text.startAt("<div class=\"content\">")!
