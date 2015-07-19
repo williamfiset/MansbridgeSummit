@@ -2,15 +2,17 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "tabBarScheduleIcon.png",
+      "filename" : "Calendar-25.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
+      "filename" : "Calendar-50.png",
       "scale" : "2x"
     },
     {
       "idiom" : "universal",
+      "filename" : "Calendar-75.png",
       "scale" : "3x"
     }
   ],
