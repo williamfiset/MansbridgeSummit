@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-public class MSRegisterTabController : UIViewController, UIWebViewDelegate {
+public class MSRegisterTabController : UIViewController, UIWebViewDelegate, NetworkFailureRecovery {
     
     var webView : UIWebView!
     var activityIndicator : UIActivityIndicatorView!
@@ -17,7 +17,7 @@ public class MSRegisterTabController : UIViewController, UIWebViewDelegate {
     let website = "http://www.mta.ca/Community/Campus_life/Campus_events/Mansbridge_Summit/Application/Mansbridge_Summit_application_form/"
     let webviewFrame = CGRectMake(0, 0, GC.SCREEN_WIDTH, GC.SCREEN_HEIGHT - GC.TAB_BAR_HEIGHT )
     
-    weak var networkErrorView : UIView? = nil
+    weak var networkErrorView : UIView?
     
     override public func viewDidLoad() {
         
@@ -28,7 +28,6 @@ public class MSRegisterTabController : UIViewController, UIWebViewDelegate {
         if connection.isReachable() {
         
             webView = UIWebView(frame: webviewFrame)
-
             webView.delegate = self;
             webView.scrollView.minimumZoomScale = 0.1;
             webView.loadRequest(NSURLRequest(URL: NSURL(string: website)!))
@@ -36,11 +35,11 @@ public class MSRegisterTabController : UIViewController, UIWebViewDelegate {
             displayLoadingAnimation()
        
         } else {
-            displayNetworkConnectionErrorPage()
+            displayNetworkConnectionErrorView()
         }
 
     }
-
+    
     /* Add loading animation */
     private func displayLoadingAnimation() -> Void {
         
@@ -54,7 +53,7 @@ public class MSRegisterTabController : UIViewController, UIWebViewDelegate {
         
     }
     
-    private func displayNetworkConnectionErrorPage() -> Void {
+    func displayNetworkConnectionErrorView() -> Void {
         
         // Remove webview
         if webView != nil {
@@ -71,7 +70,7 @@ public class MSRegisterTabController : UIViewController, UIWebViewDelegate {
         
     }
     
-    private func removeNetworkConnectionErrorPage() -> Void {
+    func removeNetworkConnectionErrorView() -> Void {
         
         if networkErrorView != nil {
            networkErrorView!.removeFromSuperview()
@@ -87,7 +86,7 @@ public class MSRegisterTabController : UIViewController, UIWebViewDelegate {
         if let _error = error {
             print(_error.description)
         }
-        displayNetworkConnectionErrorPage()
+        displayNetworkConnectionErrorView()
     }
     
     public func webViewDidFinishLoad(webView: UIWebView) {
@@ -100,6 +99,13 @@ public class MSRegisterTabController : UIViewController, UIWebViewDelegate {
         webView.stringByEvaluatingJavaScriptFromString("document.getElementsByClassName(\"page-footer\")[0].style.display = 'none';")
         webView.stringByEvaluatingJavaScriptFromString("document.getElementById(\"breadcrumb-container\").style.display = 'none';")
         
+        
+//        webView.scrollView.frame = webviewFrame
+//        webView.scrollView.contentSize = CGSize(width: GC.SCREEN_WIDTH, height: GC.SCREEN_HEIGHT * 2)
+//        webView.scrollView.bounds = webviewFrame
+//        
+//        webView.setNeedsDisplayInRect(webviewFrame)
+        
     }
-    
+
 }

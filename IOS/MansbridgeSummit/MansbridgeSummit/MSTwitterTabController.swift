@@ -11,7 +11,9 @@ import UIKit
 
 import TwitterKit
 
-public class MSTwitterTabController : UITableViewController, TWTRTweetViewDelegate {
+public class MSTwitterTabController : UITableViewController, TWTRTweetViewDelegate, NetworkFailureRecovery {
+    
+    weak var networkErrorView : UIView?
     
     let tweetTableReuseIdentifier = "TweetCell"
     // Hold all the loaded Tweets
@@ -33,30 +35,38 @@ public class MSTwitterTabController : UITableViewController, TWTRTweetViewDelega
 //    var twitterFeed = []
     
     public override func viewDidLoad() {
-        
+
 //        super.viewDidLoad()
-        
-        // Setup the table view
-        tableView.estimatedRowHeight = 150
-        tableView.rowHeight = UITableViewAutomaticDimension // Explicitly set on iOS 8 if using automatic row height calculation
-        tableView.allowsSelection = false
-        tableView.registerClass(TWTRTweetTableViewCell.self, forCellReuseIdentifier: tweetTableReuseIdentifier)
-        
-        Twitter.sharedInstance().logInGuestWithCompletion { guestSession, error in
-            if (guestSession != nil) {
-                // make API calls that do not require user auth
-            } else {
-                print("error: \(error.localizedDescription)");
+//        self.tableView.hidden = true
+        let connection = Reachability(hostName: "www.twitter.com")
+        if false { // connection.isReachable() {
+            
+            // Setup the table view
+            tableView.estimatedRowHeight = 150
+            tableView.rowHeight = UITableViewAutomaticDimension // Explicitly set on iOS 8 if using automatic row height calculation
+            tableView.allowsSelection = false
+            tableView.registerClass(TWTRTweetTableViewCell.self, forCellReuseIdentifier: tweetTableReuseIdentifier)
+            
+            Twitter.sharedInstance().logInGuestWithCompletion { guestSession, error in
+                if (guestSession != nil) {
+                    // make API calls that do not require user auth
+                } else {
+                    print("error: \(error.localizedDescription)");
+                }
             }
-        }
-        // Load Tweets
-        Twitter.sharedInstance().APIClient.loadTweetsWithIDs(tweetIDs) { tweets, error in
-            if let ts = tweets as? [TWTRTweet] {
-                self.tweets = ts
-            } else {
-                print("Failed to load tweets: \(error!.localizedDescription)")
+            // Load Tweets
+            Twitter.sharedInstance().APIClient.loadTweetsWithIDs(tweetIDs) { tweets, error in
+                if let ts = tweets as? [TWTRTweet] {
+                    self.tweets = ts
+                } else {
+                    print("Failed to load tweets: \(error!.localizedDescription)")
+                }
             }
+            
+        } else {
+            displayNetworkConnectionErrorView()
         }
+        
        
 //        var twitter: STTwitterAPI = STTwitterAPI(OAuthConsumerKey: "1QaB3nlI2dXah3vJiIIbtDBaP", consumerSecret: "V2qExJfJtPR81Gtn1cl6DjFuzWJ3HcGqJLPpIXd5kwp6zt4Ctz", oauthToken: "109002432-FT1GsSfJDpVtkYPgzPoK7fuPfwrpdXnfPeaVKp6s", oauthTokenSecret: "sgLBqasL56lJQXKhlxAuBBAqFSfjfH06ap1O9iVBmrEb3")
 //        
@@ -81,7 +91,31 @@ public class MSTwitterTabController : UITableViewController, TWTRTweetViewDelega
 //        twitter.verifyCredentialsWithSuccessBlock(success, errorBlock: nil)
         
     }
-    
+
+    func displayNetworkConnectionErrorView() -> Void {
+        
+        // Remove webview
+        if self.tableView != nil {
+            
+            self.tableView.removeFromSuperview()
+        }
+        
+        // Load XIB File only if the error page does not exist
+        if networkErrorView == nil {
+            if let _networkErrorView = UIView.loadFromNibNamed("NetworkErrorXIB") {
+                networkErrorView = _networkErrorView
+                self.view.addSubview(_networkErrorView)
+            }
+        }
+        
+    }
+   
+    func removeNetworkConnectionErrorView() -> Void {
+        if networkErrorView != nil {
+            networkErrorView!.removeFromSuperview()
+        }
+    }
+   
     override public func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
