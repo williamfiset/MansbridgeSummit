@@ -31,9 +31,10 @@ public class MSRegisterTabController : UIViewController, UIWebViewDelegate, Netw
             webView.delegate = self;
             webView.scrollView.minimumZoomScale = 0.1;
             webView.loadRequest(NSURLRequest(URL: NSURL(string: website)!))
+            
             self.view.addSubview(webView)
             displayLoadingAnimation()
-       
+            
         } else {
             displayNetworkConnectionErrorView()
         }
@@ -48,7 +49,7 @@ public class MSRegisterTabController : UIViewController, UIWebViewDelegate, Netw
         activityIndicator.activityIndicatorViewStyle = .Gray
         
         self.view.addSubview(activityIndicator)
-        
+
         activityIndicator.startAnimating()
         
     }
@@ -99,12 +100,10 @@ public class MSRegisterTabController : UIViewController, UIWebViewDelegate, Netw
         webView.stringByEvaluatingJavaScriptFromString("document.getElementsByClassName(\"page-footer\")[0].style.display = 'none';")
         webView.stringByEvaluatingJavaScriptFromString("document.getElementById(\"breadcrumb-container\").style.display = 'none';")
         
-        
-//        webView.scrollView.frame = webviewFrame
-//        webView.scrollView.contentSize = CGSize(width: GC.SCREEN_WIDTH, height: GC.SCREEN_HEIGHT * 2)
-//        webView.scrollView.bounds = webviewFrame
-//        
-//        webView.setNeedsDisplayInRect(webviewFrame)
+        if GC.DeviceType.iPad {
+            webView.stringByEvaluatingJavaScriptFromString("document.getElementById(\"Question1\").style.width = '\(GC.SCREEN_WIDTH - 100)px';")
+            webView.stringByEvaluatingJavaScriptFromString("document.getElementById(\"Question2\").style.width = '\(GC.SCREEN_WIDTH - 100)px';")
+        }
         
     }
 

@@ -37,10 +37,7 @@ public class MSTwitterTabController : UITableViewController, TWTRTweetViewDelega
     public override func viewDidLoad() {
 
 //        super.viewDidLoad()
-//        self.tableView.hidden = true
-        let connection = Reachability(hostName: "www.twitter.com")
-        if false { // connection.isReachable() {
-            
+        
             // Setup the table view
             tableView.estimatedRowHeight = 150
             tableView.rowHeight = UITableViewAutomaticDimension // Explicitly set on iOS 8 if using automatic row height calculation
@@ -62,10 +59,7 @@ public class MSTwitterTabController : UITableViewController, TWTRTweetViewDelega
                     print("Failed to load tweets: \(error!.localizedDescription)")
                 }
             }
-            
-        } else {
-            displayNetworkConnectionErrorView()
-        }
+
         
        
 //        var twitter: STTwitterAPI = STTwitterAPI(OAuthConsumerKey: "1QaB3nlI2dXah3vJiIIbtDBaP", consumerSecret: "V2qExJfJtPR81Gtn1cl6DjFuzWJ3HcGqJLPpIXd5kwp6zt4Ctz", oauthToken: "109002432-FT1GsSfJDpVtkYPgzPoK7fuPfwrpdXnfPeaVKp6s", oauthTokenSecret: "sgLBqasL56lJQXKhlxAuBBAqFSfjfH06ap1O9iVBmrEb3")

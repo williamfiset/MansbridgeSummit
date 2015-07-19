@@ -929,8 +929,8 @@ downloadProgressBlock:nil
     NSParameterAssert(urlString);
     
     if(align) {
-        NSArray *validValues = @[@"left", @"right", @"center", @"none"];
-        NSAssert([validValues containsObject: align], @"");
+        //NSArray *validValues = @[@"left", @"right", @"center", @"none"];
+     //   NSAssert([validValues containsObject: align], @"");
     }
     
     NSMutableDictionary *md = [NSMutableDictionary dictionary];

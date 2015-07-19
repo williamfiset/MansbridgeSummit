@@ -62,10 +62,11 @@ class MSTwitterTimelineController: TWTRTimelineViewController, NetworkFailureRec
             }
         }
         
+       
     }
     
     func displayNetworkConnectionErrorView() -> Void {
-
+        
         // Remove webview
         if self.tableView != nil {
             self.tableView.removeFromSuperview()
