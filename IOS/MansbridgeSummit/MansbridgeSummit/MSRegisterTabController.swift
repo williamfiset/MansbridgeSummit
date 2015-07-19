@@ -9,14 +9,10 @@
 import Foundation
 import UIKit
 
-
 public class MSRegisterTabController : UIViewController, UIWebViewDelegate {
     
     var webView : UIWebView!
-    var activityIndicator: UIActivityIndicatorView!
-    
-    // Variables used by FormatHTML
-    var returnedText : String?
+    var activityIndicator : UIActivityIndicatorView!
     
     let website = "http://www.mta.ca/Community/Campus_life/Campus_events/Mansbridge_Summit/Application/Mansbridge_Summit_application_form/"
     let webviewFrame = CGRectMake(0, 0, GC.SCREEN_WIDTH, GC.SCREEN_HEIGHT - GC.TAB_BAR_HEIGHT )
@@ -29,8 +25,11 @@ public class MSRegisterTabController : UIViewController, UIWebViewDelegate {
         
         if connection.isReachable() {
         
-            loadWebpageHTML()
-            displayWebview()
+            webView = UIWebView(frame: webviewFrame)
+            webView.delegate = self;
+            webView.scrollView.minimumZoomScale = 0.1;
+            webView.loadRequest(NSURLRequest(URL: NSURL(string: website)!))
+            self.view.addSubview(webView)
             displayLoadingAnimation()
        
         } else {
@@ -42,38 +41,13 @@ public class MSRegisterTabController : UIViewController, UIWebViewDelegate {
     /* Add loading animation */
     private func displayLoadingAnimation() -> Void {
         
-        let ai_frame = CGRect(x: 0, y: 0, width: 50, height: 50)
-        
-        activityIndicator = UIActivityIndicatorView(frame: ai_frame)
+        activityIndicator = UIActivityIndicatorView(frame: CGRect(x: 0, y: 0, width: 50, height: 50))
         activityIndicator.center = self.view.center
         activityIndicator.activityIndicatorViewStyle = .Gray
         
         self.view.addSubview(activityIndicator)
+        
         activityIndicator.startAnimating()
-        
-    }
-    
-    /* Display web view */
-    private func displayWebview () -> Void {
-        
-        webView = UIWebView(frame: webviewFrame )
-        webView.loadHTMLString(returnedText!, baseURL: NSURL(string: website))
-        webView.scrollView.minimumZoomScale = 0.1;
-       
-        webView.delegate = self;
-        
-        self.view.addSubview(webView)
-        
-    }
-    
-    private func loadWebpageHTML() -> Void {
-        
-        var wait: Bool = true
-        FormatHTML.get(self, url: website, done: {
-            (error: NSError?, data: NSData?, text: NSString?) -> () in
-            wait = false
-        })
-        waitFor(&wait)
         
     }
     
@@ -100,39 +74,15 @@ public class MSRegisterTabController : UIViewController, UIWebViewDelegate {
     }
     
     public func webViewDidFinishLoad(webView: UIWebView) {
+        
+        // Turn off loading indicator
         activityIndicator.stopAnimating()
-    }
-    
-    private func waitFor (inout wait: Bool) {
-        while (wait) {
-            NSRunLoop.currentRunLoop().runMode(NSDefaultRunLoopMode, beforeDate: NSDate(timeIntervalSinceNow: 0.1))
-        }
+        
+        // Inject JavaScript into the page to hide the stuff we do not want to see
+        webView.stringByEvaluatingJavaScriptFromString("document.getElementsByClassName(\"page-header\")[0].style.display = 'none';")
+        webView.stringByEvaluatingJavaScriptFromString("document.getElementsByClassName(\"page-footer\")[0].style.display = 'none';")
+        webView.stringByEvaluatingJavaScriptFromString("document.getElementById(\"breadcrumb-container\").style.display = 'none';")
+        
     }
     
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

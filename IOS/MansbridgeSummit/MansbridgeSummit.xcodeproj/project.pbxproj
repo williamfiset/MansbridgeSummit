@@ -164,9 +164,6 @@
 		F7CF77BD1B5AACAF00013CF0 /* MSTwitterTimelineController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7CF77BC1B5AACAF00013CF0 /* MSTwitterTimelineController.swift */; };
 		F7CF77BE1B5AAD5E00013CF0 /* MSTwitterTimelineController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7CF77BC1B5AACAF00013CF0 /* MSTwitterTimelineController.swift */; };
 		F7CF77BF1B5AAD5F00013CF0 /* MSTwitterTimelineController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7CF77BC1B5AACAF00013CF0 /* MSTwitterTimelineController.swift */; };
-		F7CF77C11B5B18C800013CF0 /* FormatHTML.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7CF77C01B5B18C800013CF0 /* FormatHTML.swift */; };
-		F7CF77C21B5B217B00013CF0 /* FormatHTML.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7CF77C01B5B18C800013CF0 /* FormatHTML.swift */; };
-		F7CF77C31B5B217B00013CF0 /* FormatHTML.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7CF77C01B5B18C800013CF0 /* FormatHTML.swift */; };
 		F7CF77D41B5B2F5900013CF0 /* About-25.png in Resources */ = {isa = PBXBuildFile; fileRef = F7CF77C51B5B2F5900013CF0 /* About-25.png */; };
 		F7CF77D51B5B2F5900013CF0 /* About-50.png in Resources */ = {isa = PBXBuildFile; fileRef = F7CF77C61B5B2F5900013CF0 /* About-50.png */; };
 		F7CF77D61B5B2F5900013CF0 /* About-75.png in Resources */ = {isa = PBXBuildFile; fileRef = F7CF77C71B5B2F5900013CF0 /* About-75.png */; };
@@ -288,7 +285,6 @@
 		F79184F91B5A839600EFF287 /* TwitterKitResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = TwitterKitResources.bundle; path = TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle; sourceTree = "<group>"; };
 		F79184FA1B5A839600EFF287 /* TwitterCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterCore.framework; sourceTree = "<group>"; };
 		F7CF77BC1B5AACAF00013CF0 /* MSTwitterTimelineController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSTwitterTimelineController.swift; sourceTree = "<group>"; };
-		F7CF77C01B5B18C800013CF0 /* FormatHTML.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormatHTML.swift; sourceTree = "<group>"; };
 		F7CF77C51B5B2F5900013CF0 /* About-25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "About-25.png"; sourceTree = "<group>"; };
 		F7CF77C61B5B2F5900013CF0 /* About-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "About-50.png"; sourceTree = "<group>"; };
 		F7CF77C71B5B2F5900013CF0 /* About-75.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "About-75.png"; sourceTree = "<group>"; };
@@ -419,7 +415,6 @@
 			isa = PBXGroup;
 			children = (
 				C69E4A571B4608C500BD981C /* MSRegisterTabController.swift */,
-				F7CF77C01B5B18C800013CF0 /* FormatHTML.swift */,
 			);
 			name = RegisterTab;
 			sourceTree = "<group>";
@@ -886,7 +881,6 @@
 				F74C1A1E1B5967B000F09002 /* BAVPlistNode.m in Sources */,
 				C6CFD0541B45EDA90067A6AD /* AppDelegate.swift in Sources */,
 				C6CAB4321B498B770077D60B /* MSTabBar.swift in Sources */,
-				F7CF77C11B5B18C800013CF0 /* FormatHTML.swift in Sources */,
 				C69E4A541B46088800BD981C /* MSTwitterTabController.swift in Sources */,
 				F74C1A1B1B5967B000F09002 /* STTwitterHTML.m in Sources */,
 				C69E4A721B4620AC00BD981C /* MSScheduleTableView.swift in Sources */,
@@ -945,7 +939,6 @@
 				C69E4A5D1B46090E00BD981C /* MSAboutTabController.swift in Sources */,
 				C6CAB4331B498B770077D60B /* MSTabBar.swift in Sources */,
 				C689563C1B52B399006D188F /* MSScrollView.swift in Sources */,
-				F7CF77C21B5B217B00013CF0 /* FormatHTML.swift in Sources */,
 				C69E4A651B460A3F00BD981C /* MSScheduleTableController.swift in Sources */,
 				C6415BA51B5AAA9400ED8DE4 /* ConnectionTests.swift in Sources */,
 				C6E1633A1B48296600942749 /* SwiftyJSON.swift in Sources */,
@@ -969,7 +962,6 @@
 				C6A0D9711B59FCF000C8172D /* NSDateFormatter+STTwitter.m in Sources */,
 				C6A0D9721B59FCF000C8172D /* NSString+STTwitter.m in Sources */,
 				C6A0D9731B59FCF000C8172D /* STHTTPRequest+STTwitter.m in Sources */,
-				F7CF77C31B5B217B00013CF0 /* FormatHTML.swift in Sources */,
 				C6A0D9741B59FCF000C8172D /* STTwitterAPI.m in Sources */,
 				C6A0D9751B59FCF000C8172D /* STTwitterAppOnly.m in Sources */,
 				C6A0D9761B59FCF000C8172D /* STTwitterHTML.m in Sources */,
