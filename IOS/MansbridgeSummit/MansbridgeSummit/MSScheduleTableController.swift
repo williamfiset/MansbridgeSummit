@@ -17,7 +17,7 @@ public class MSScheduleTableController : UITableViewController {
     // (which is all event cells except the first)
     let eventCellID = "EventCell"
     
-    let schedule_file_name = "test_schedule"
+    let schedule_file_name = "test_schedule2"
     var days : [MSDay] = []
 
     var adjustedTableHeight : Bool = false
