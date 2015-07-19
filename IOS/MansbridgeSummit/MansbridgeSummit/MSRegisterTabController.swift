@@ -26,6 +26,7 @@ public class MSRegisterTabController : UIViewController, UIWebViewDelegate {
         if connection.isReachable() {
         
             webView = UIWebView(frame: webviewFrame)
+
             webView.delegate = self;
             webView.scrollView.minimumZoomScale = 0.1;
             webView.loadRequest(NSURLRequest(URL: NSURL(string: website)!))
@@ -59,6 +60,10 @@ public class MSRegisterTabController : UIViewController, UIWebViewDelegate {
         }
         
         // Load XIB File
+        if let networkErrorView = UIView.loadFromNibNamed("NetworkErrorXIB") {
+//            self.view = networkErrorView
+            self.view.addSubview(networkErrorView)
+        }
         
     }
     

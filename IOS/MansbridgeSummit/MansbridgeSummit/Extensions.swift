@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 
 extension String {
     
@@ -34,14 +35,6 @@ extension String {
     /* Returns an array of strings divided by a delimiter */
     func split (delimiter : String) -> [String] {
         return self.componentsSeparatedByString(delimiter)
-    }
-    
-    func stringByAddingPercentEscapesForQueryValue() -> String? {
-        
-        let characterSet = NSMutableCharacterSet.alphanumericCharacterSet()
-        characterSet.addCharactersInString("-._~")
-        return stringByAddingPercentEncodingWithAllowedCharacters(characterSet)
-        
     }
     
     func startAt(start : String) -> String? {
@@ -121,40 +114,17 @@ extension Array {
     }
 }
 
-
-extension Dictionary {
+extension UIView {
     
-    func getQueryString() -> String {
-        
-        var queryString = ""
-        let numKeys = self.keys.count
-        
-        for (i, (key, value)) in self.enumerate() {
-            queryString += "\(key)=\(value)"
-            if i != numKeys - 1 {
-                queryString += "&"
-            }
-        }
-        
-        return queryString
+    // Loads a NIB/XIB file
+    class func loadFromNibNamed(nibNamed: String, bundle : NSBundle? = nil) -> UIView? {
+        return UINib(
+            nibName: nibNamed,
+            bundle: bundle
+        ).instantiateWithOwner(nil, options: nil)[0] as? UIView
     }
     
 }
-
-
-extension NSMutableURLRequest {
-    
-    // Sets the POST request body given key value pairs
-    func setBodyContent(contentMap: [String : String]) {
-        
-        let parameters = contentMap.map { (key, value) -> String in
-            return "\(key)=\(value.stringByAddingPercentEscapesForQueryValue()!)"
-        }
-        HTTPBody = "&".join(parameters).dataUsingEncoding(NSUTF8StringEncoding)
-    }
-    
-}
-
 
 
 
