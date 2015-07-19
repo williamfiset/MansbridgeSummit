@@ -96,7 +96,6 @@ public class MSTwitterTabController : UITableViewController, TWTRTweetViewDelega
         
         // Remove webview
         if self.tableView != nil {
-            
             self.tableView.removeFromSuperview()
         }
         
