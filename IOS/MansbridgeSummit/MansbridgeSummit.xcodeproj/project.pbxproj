@@ -28,6 +28,9 @@
 		C689563B1B52B399006D188F /* MSScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C689563A1B52B399006D188F /* MSScrollView.swift */; };
 		C689563C1B52B399006D188F /* MSScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C689563A1B52B399006D188F /* MSScrollView.swift */; };
 		C689563D1B52B399006D188F /* MSScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C689563A1B52B399006D188F /* MSScrollView.swift */; };
+		C68A13841B5B4957003CE324 /* NetworkErrorViewXIB.xib in Resources */ = {isa = PBXBuildFile; fileRef = C68A13831B5B4957003CE324 /* NetworkErrorViewXIB.xib */; };
+		C68A13851B5B4957003CE324 /* NetworkErrorViewXIB.xib in Resources */ = {isa = PBXBuildFile; fileRef = C68A13831B5B4957003CE324 /* NetworkErrorViewXIB.xib */; };
+		C68A13861B5B4957003CE324 /* NetworkErrorViewXIB.xib in Resources */ = {isa = PBXBuildFile; fileRef = C68A13831B5B4957003CE324 /* NetworkErrorViewXIB.xib */; };
 		C69E4A541B46088800BD981C /* MSTwitterTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69E4A531B46088800BD981C /* MSTwitterTabController.swift */; };
 		C69E4A551B46088800BD981C /* MSTwitterTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69E4A531B46088800BD981C /* MSTwitterTabController.swift */; };
 		C69E4A561B46088800BD981C /* MSTwitterTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69E4A531B46088800BD981C /* MSTwitterTabController.swift */; };
@@ -213,6 +216,7 @@
 		C67926BB1B4DD2A100EA86B4 /* MScheduleTableViewTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MScheduleTableViewTests.swift; sourceTree = "<group>"; };
 		C68956351B52AFBB006D188F /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 		C689563A1B52B399006D188F /* MSScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSScrollView.swift; sourceTree = "<group>"; };
+		C68A13831B5B4957003CE324 /* NetworkErrorViewXIB.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NetworkErrorViewXIB.xib; sourceTree = "<group>"; };
 		C69E4A531B46088800BD981C /* MSTwitterTabController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSTwitterTabController.swift; sourceTree = "<group>"; };
 		C69E4A571B4608C500BD981C /* MSRegisterTabController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSRegisterTabController.swift; sourceTree = "<group>"; };
 		C69E4A5B1B46090E00BD981C /* MSAboutTabController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSAboutTabController.swift; sourceTree = "<group>"; };
@@ -496,6 +500,7 @@
 				C69E4A671B460A5000BD981C /* Tabs */,
 				C6D9E96B1B47747700249DA4 /* Resources */,
 				C6E1633E1B483E7E00942749 /* wills_playground.playground */,
+				C68A13831B5B4957003CE324 /* NetworkErrorViewXIB.xib */,
 			);
 			path = MansbridgeSummit;
 			sourceTree = "<group>";
@@ -783,6 +788,7 @@
 				F7CF77DF1B5B2F5900013CF0 /* Pencil-75.png in Resources */,
 				C6CFD0601B45EDA90067A6AD /* LaunchScreen.storyboard in Resources */,
 				F7CF77DB1B5B2F5900013CF0 /* Home-50.png in Resources */,
+				C68A13841B5B4957003CE324 /* NetworkErrorViewXIB.xib in Resources */,
 				C6CFD05D1B45EDA90067A6AD /* TabBarIcons.xcassets in Resources */,
 				C6E163331B481C5000942749 /* test_schedule.json in Resources */,
 				F7CF77DA1B5B2F5900013CF0 /* Home-25.png in Resources */,
@@ -825,6 +831,7 @@
 				C6D9E9871B4774CB00249DA4 /* AppleGaramond.ttf in Resources */,
 				F79185021B5A839600EFF287 /* TwitterKitResources.bundle in Resources */,
 				C68956371B52AFBB006D188F /* Media.xcassets in Resources */,
+				C68A13851B5B4957003CE324 /* NetworkErrorViewXIB.xib in Resources */,
 				C6D9E9911B4778A400249DA4 /* MyriadPro-Regular.OTF in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -843,6 +850,7 @@
 				C6D9E9881B4774CB00249DA4 /* AppleGaramond.ttf in Resources */,
 				F79185031B5A839600EFF287 /* TwitterKitResources.bundle in Resources */,
 				C68956381B52AFBB006D188F /* Media.xcassets in Resources */,
+				C68A13861B5B4957003CE324 /* NetworkErrorViewXIB.xib in Resources */,
 				C6D9E9921B4778A400249DA4 /* MyriadPro-Regular.OTF in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
