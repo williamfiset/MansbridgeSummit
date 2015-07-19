@@ -22,8 +22,6 @@
 		C67926AF1B4DC94100EA86B4 /* TabBarIcons.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6CFD05C1B45EDA90067A6AD /* TabBarIcons.xcassets */; };
 		C67926B21B4DC94B00EA86B4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6CFD05E1B45EDA90067A6AD /* LaunchScreen.storyboard */; };
 		C67926B31B4DC94B00EA86B4 /* TabBarIcons.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6CFD05C1B45EDA90067A6AD /* TabBarIcons.xcassets */; };
-		C679E2131B55FD9F004AEBE9 /* MSRegisterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C679E2111B55FD9F004AEBE9 /* MSRegisterModel.swift */; };
-		C679E2141B55FD9F004AEBE9 /* MSRegisterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C679E2111B55FD9F004AEBE9 /* MSRegisterModel.swift */; };
 		C68956361B52AFBB006D188F /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C68956351B52AFBB006D188F /* Media.xcassets */; };
 		C68956371B52AFBB006D188F /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C68956351B52AFBB006D188F /* Media.xcassets */; };
 		C68956381B52AFBB006D188F /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C68956351B52AFBB006D188F /* Media.xcassets */; };
@@ -75,13 +73,11 @@
 		C6A0D97B1B59FCF000C8172D /* STHTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = F74C1A151B5967B000F09002 /* STHTTPRequest.m */; };
 		C6A0D97C1B59FD9200C8172D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6CFD0531B45EDA90067A6AD /* AppDelegate.swift */; };
 		C6A0D9851B59FD9A00C8172D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6CFD0531B45EDA90067A6AD /* AppDelegate.swift */; };
-		C6A0D9861B59FE7C00C8172D /* MSRegisterModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C68441DB1B588D480091F357 /* MSRegisterModelTest.swift */; };
 		C6A0D9871B59FE7C00C8172D /* MScheduleTableViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67926BB1B4DD2A100EA86B4 /* MScheduleTableViewTests.swift */; };
 		C6A0D9881B59FE7C00C8172D /* MSEventTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67926B51B4DD0F800EA86B4 /* MSEventTests.swift */; };
 		C6A0D9891B59FE7C00C8172D /* ExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6D9E9951B477D6E00249DA4 /* ExtensionsTests.swift */; };
 		C6A0D98E1B59FF0400C8172D /* MSScheduleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67926A91B4DC36900EA86B4 /* MSScheduleTests.swift */; };
 		C6A0D98F1B59FF0400C8172D /* MansbridgeSummitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6CFD0751B45EDA90067A6AD /* MansbridgeSummitUITests.swift */; };
-		C6A0D9901B59FF4B00C8172D /* MSRegisterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C679E2111B55FD9F004AEBE9 /* MSRegisterModel.swift */; };
 		C6C00A6B1B45F3B300709992 /* MSTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C00A6A1B45F3B300709992 /* MSTabBarController.swift */; };
 		C6C00A6C1B45F3B300709992 /* MSTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C00A6A1B45F3B300709992 /* MSTabBarController.swift */; };
 		C6C00A6D1B45F3B300709992 /* MSTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C00A6A1B45F3B300709992 /* MSTabBarController.swift */; };
@@ -197,8 +193,6 @@
 		C67926A91B4DC36900EA86B4 /* MSScheduleTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSScheduleTests.swift; sourceTree = "<group>"; };
 		C67926B51B4DD0F800EA86B4 /* MSEventTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSEventTests.swift; sourceTree = "<group>"; };
 		C67926BB1B4DD2A100EA86B4 /* MScheduleTableViewTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MScheduleTableViewTests.swift; sourceTree = "<group>"; };
-		C679E2111B55FD9F004AEBE9 /* MSRegisterModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSRegisterModel.swift; sourceTree = "<group>"; };
-		C68441DB1B588D480091F357 /* MSRegisterModelTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSRegisterModelTest.swift; sourceTree = "<group>"; };
 		C68956351B52AFBB006D188F /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 		C689563A1B52B399006D188F /* MSScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSScrollView.swift; sourceTree = "<group>"; };
 		C69E4A531B46088800BD981C /* MSTwitterTabController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSTwitterTabController.swift; sourceTree = "<group>"; };
@@ -318,7 +312,6 @@
 		C63FA1CD1B5889EB00B3D238 /* MSRegisterTests */ = {
 			isa = PBXGroup;
 			children = (
-				C68441DB1B588D480091F357 /* MSRegisterModelTest.swift */,
 			);
 			name = MSRegisterTests;
 			sourceTree = "<group>";
@@ -386,7 +379,6 @@
 			isa = PBXGroup;
 			children = (
 				C69E4A571B4608C500BD981C /* MSRegisterTabController.swift */,
-				C679E2111B55FD9F004AEBE9 /* MSRegisterModel.swift */,
 				F7CF77C01B5B18C800013CF0 /* FormatHTML.swift */,
 			);
 			name = RegisterTab;
@@ -798,7 +790,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C6A0D9901B59FF4B00C8172D /* MSRegisterModel.swift in Sources */,
 				F74C1A171B5967B000F09002 /* NSString+STTwitter.m in Sources */,
 				C69E4A601B4609D700BD981C /* MSPrimaryTabController.swift in Sources */,
 				C6D9E9681B475E2D00249DA4 /* Constants.swift in Sources */,
@@ -837,7 +828,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C6A0D9861B59FE7C00C8172D /* MSRegisterModelTest.swift in Sources */,
 				C6A0D9871B59FE7C00C8172D /* MScheduleTableViewTests.swift in Sources */,
 				C6A0D9881B59FE7C00C8172D /* MSEventTests.swift in Sources */,
 				C6A0D9891B59FE7C00C8172D /* ExtensionsTests.swift in Sources */,
@@ -866,7 +856,6 @@
 				C6D9E9651B475BCD00249DA4 /* Extensions.swift in Sources */,
 				C69E4A5D1B46090E00BD981C /* MSAboutTabController.swift in Sources */,
 				C6CAB4331B498B770077D60B /* MSTabBar.swift in Sources */,
-				C679E2131B55FD9F004AEBE9 /* MSRegisterModel.swift in Sources */,
 				C689563C1B52B399006D188F /* MSScrollView.swift in Sources */,
 				F7CF77C21B5B217B00013CF0 /* FormatHTML.swift in Sources */,
 				C69E4A651B460A3F00BD981C /* MSScheduleTableController.swift in Sources */,
@@ -911,7 +900,6 @@
 				C6D9E9661B475BCD00249DA4 /* Extensions.swift in Sources */,
 				C69E4A5E1B46090E00BD981C /* MSAboutTabController.swift in Sources */,
 				C6EB798C1B4C903400F5E516 /* MSEventPageView.swift in Sources */,
-				C679E2141B55FD9F004AEBE9 /* MSRegisterModel.swift in Sources */,
 				C69E4A661B460A3F00BD981C /* MSScheduleTableController.swift in Sources */,
 				C664DE751B57254800CFB209 /* Reachability.m in Sources */,
 				C6E163301B481AE600942749 /* MSCellModels.swift in Sources */,
