@@ -107,20 +107,23 @@ class FormatHTML : NSObject {
         
         /* Setup */
         
-        var text = String(NSString(data: self.data!, encoding: NSUTF8StringEncoding)!)
+        let text = String(NSString(data: self.data!, encoding: NSUTF8StringEncoding)!)
         
-        /* Trim starting chunk */
+        let chunk1 = text.endAt("<header class=\"page-header\">")
+        let str = text.startAt("<div class=\"content\">")
+        var chunk2 = str!.endAt("<!-- page-footer -->")
+        var chunk3 = str!.startAt("<!-- /.page-footer -->")
         
-        if (text.rangeOfString("<div class=\"content\">") != nil) {
-            text = "<!DOCTYPE html><html><body>" + text.startAt("<div class=\"content\">")!
-        }
+//        if (text.rangeOfString("<div class=\"content\">") != nil) {
+//            text = "<!DOCTYPE html><html><body>" + text.startAt("<div class=\"content\">")!
+//        }
+//        
+//        /* Trim ending chunk */
+//        
+//        if (text.rangeOfString("<footer class=\"page-footer\">") != nil) {
+//            text = text.endAt("<footer class=\"page-footer\">")! + "</body></html>"
+//        }
         
-        /* Trim ending chunk */
-        
-        if (text.rangeOfString("<footer class=\"page-footer\">") != nil) {
-            text = text.endAt("<footer class=\"page-footer\">")! + "</body></html>"
-        }
-            
        //
 //        /* Removes the version display */
 //        
@@ -145,7 +148,7 @@ class FormatHTML : NSObject {
         
         /* Save text */
         
-        controller.returnedText = text
+        controller.returnedText = chunk1! + chunk2! + chunk3!
         self.done(nil, self.data!, text)
         
     }
