@@ -212,14 +212,12 @@ public class YouTubePlayerView: UIView, UIWebViewDelegate {
     private func htmlStringWithFilePath(path: String) -> String? {
 
         // Get HTML string from path
-        var htmlString: NSString?
         do {
-            htmlString = try NSString(contentsOfFile: path, encoding: NSUTF8StringEncoding)
+            return try NSString(contentsOfFile: path, encoding: NSUTF8StringEncoding) as String
         } catch _ {
-            htmlString = nil
+            return nil
         }
 
-        return htmlString as! String
     }
 
 

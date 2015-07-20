@@ -32,6 +32,12 @@
 		C68A138A1B5BF1A2003CE324 /* MSProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = C68A13891B5BF1A2003CE324 /* MSProtocols.swift */; };
 		C68A138B1B5BF1A2003CE324 /* MSProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = C68A13891B5BF1A2003CE324 /* MSProtocols.swift */; };
 		C68A138C1B5BF1A2003CE324 /* MSProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = C68A13891B5BF1A2003CE324 /* MSProtocols.swift */; };
+		C69808E71B5D05D900164BC6 /* YouTubePlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69808E51B5D05D900164BC6 /* YouTubePlayer.swift */; };
+		C69808E81B5D05D900164BC6 /* YouTubePlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69808E51B5D05D900164BC6 /* YouTubePlayer.swift */; };
+		C69808E91B5D05D900164BC6 /* YouTubePlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69808E51B5D05D900164BC6 /* YouTubePlayer.swift */; };
+		C69808EA1B5D05D900164BC6 /* YTPlayer.html in Resources */ = {isa = PBXBuildFile; fileRef = C69808E61B5D05D900164BC6 /* YTPlayer.html */; };
+		C69808EB1B5D05D900164BC6 /* YTPlayer.html in Resources */ = {isa = PBXBuildFile; fileRef = C69808E61B5D05D900164BC6 /* YTPlayer.html */; };
+		C69808EC1B5D05D900164BC6 /* YTPlayer.html in Resources */ = {isa = PBXBuildFile; fileRef = C69808E61B5D05D900164BC6 /* YTPlayer.html */; };
 		C69E4A541B46088800BD981C /* MSTwitterTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69E4A531B46088800BD981C /* MSTwitterTabController.swift */; };
 		C69E4A551B46088800BD981C /* MSTwitterTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69E4A531B46088800BD981C /* MSTwitterTabController.swift */; };
 		C69E4A561B46088800BD981C /* MSTwitterTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69E4A531B46088800BD981C /* MSTwitterTabController.swift */; };
@@ -159,8 +165,6 @@
 		F79185041B5A839600EFF287 /* TwitterCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F79184FA1B5A839600EFF287 /* TwitterCore.framework */; };
 		F79185051B5A839600EFF287 /* TwitterCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F79184FA1B5A839600EFF287 /* TwitterCore.framework */; };
 		F79185061B5A839600EFF287 /* TwitterCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F79184FA1B5A839600EFF287 /* TwitterCore.framework */; };
-		F799BA0E1B5C153F00595F24 /* YouTubePlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F799BA0C1B5C153F00595F24 /* YouTubePlayer.swift */; };
-		F799BA0F1B5C153F00595F24 /* YTPlayer.html in Resources */ = {isa = PBXBuildFile; fileRef = F799BA0D1B5C153F00595F24 /* YTPlayer.html */; };
 		F7CF77BD1B5AACAF00013CF0 /* MSTwitterTimelineController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7CF77BC1B5AACAF00013CF0 /* MSTwitterTimelineController.swift */; };
 		F7CF77BE1B5AAD5E00013CF0 /* MSTwitterTimelineController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7CF77BC1B5AACAF00013CF0 /* MSTwitterTimelineController.swift */; };
 		F7CF77BF1B5AAD5F00013CF0 /* MSTwitterTimelineController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7CF77BC1B5AACAF00013CF0 /* MSTwitterTimelineController.swift */; };
@@ -221,6 +225,8 @@
 		C689563A1B52B399006D188F /* MSScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSScrollView.swift; sourceTree = "<group>"; };
 		C68A13871B5BCE7B003CE324 /* NetworkErrorXIB.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NetworkErrorXIB.xib; sourceTree = "<group>"; };
 		C68A13891B5BF1A2003CE324 /* MSProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSProtocols.swift; sourceTree = "<group>"; };
+		C69808E51B5D05D900164BC6 /* YouTubePlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YouTubePlayer.swift; sourceTree = "<group>"; };
+		C69808E61B5D05D900164BC6 /* YTPlayer.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = YTPlayer.html; sourceTree = "<group>"; };
 		C69E4A531B46088800BD981C /* MSTwitterTabController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSTwitterTabController.swift; sourceTree = "<group>"; };
 		C69E4A571B4608C500BD981C /* MSRegisterTabController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSRegisterTabController.swift; sourceTree = "<group>"; };
 		C69E4A5B1B46090E00BD981C /* MSAboutTabController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSAboutTabController.swift; sourceTree = "<group>"; };
@@ -288,8 +294,6 @@
 		F79184F81B5A839600EFF287 /* TwitterKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterKit.framework; sourceTree = "<group>"; };
 		F79184F91B5A839600EFF287 /* TwitterKitResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = TwitterKitResources.bundle; path = TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle; sourceTree = "<group>"; };
 		F79184FA1B5A839600EFF287 /* TwitterCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterCore.framework; sourceTree = "<group>"; };
-		F799BA0C1B5C153F00595F24 /* YouTubePlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = YouTubePlayer.swift; path = ../YouTubePlayer.swift; sourceTree = "<group>"; };
-		F799BA0D1B5C153F00595F24 /* YTPlayer.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = YTPlayer.html; path = ../YTPlayer.html; sourceTree = "<group>"; };
 		F7CF77BC1B5AACAF00013CF0 /* MSTwitterTimelineController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSTwitterTimelineController.swift; sourceTree = "<group>"; };
 		F7CF77C51B5B2F5900013CF0 /* About-25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "About-25.png"; sourceTree = "<group>"; };
 		F7CF77C61B5B2F5900013CF0 /* About-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "About-50.png"; sourceTree = "<group>"; };
@@ -432,8 +436,8 @@
 			children = (
 				C69E4A5F1B4609D700BD981C /* MSPrimaryTabController.swift */,
 				C689563A1B52B399006D188F /* MSScrollView.swift */,
-				F799BA0C1B5C153F00595F24 /* YouTubePlayer.swift */,
-				F799BA0D1B5C153F00595F24 /* YTPlayer.html */,
+				C69808E51B5D05D900164BC6 /* YouTubePlayer.swift */,
+				C69808E61B5D05D900164BC6 /* YTPlayer.html */,
 			);
 			name = FirstTab;
 			sourceTree = "<group>";
@@ -791,6 +795,7 @@
 			files = (
 				F7CF77DC1B5B2F5900013CF0 /* Home-75.png in Resources */,
 				F7CF77DF1B5B2F5900013CF0 /* Pencil-75.png in Resources */,
+				C69808EA1B5D05D900164BC6 /* YTPlayer.html in Resources */,
 				F7D1B8601B5C8E0900D34341 /* RegistrationSuccessXIB.xib in Resources */,
 				C6CFD0601B45EDA90067A6AD /* LaunchScreen.storyboard in Resources */,
 				F7CF77DB1B5B2F5900013CF0 /* Home-50.png in Resources */,
@@ -816,7 +821,6 @@
 				F7CF77E11B5B2F5900013CF0 /* Twitter-50.png in Resources */,
 				C6D9E9771B4774CB00249DA4 /* AppleGaramond-Bold.ttf in Resources */,
 				F7CF77D71B5B2F5900013CF0 /* Calendar-25.png in Resources */,
-				F799BA0F1B5C153F00595F24 /* YTPlayer.html in Resources */,
 				F7CF77D81B5B2F5900013CF0 /* Calendar-50.png in Resources */,
 				F7CF77D61B5B2F5900013CF0 /* About-75.png in Resources */,
 			);
@@ -830,6 +834,7 @@
 				C67926AF1B4DC94100EA86B4 /* TabBarIcons.xcassets in Resources */,
 				C6D9E9611B474F1000249DA4 /* Main.storyboard in Resources */,
 				F7D1B8611B5C8E1600D34341 /* NetworkErrorXIB.xib in Resources */,
+				C69808EB1B5D05D900164BC6 /* YTPlayer.html in Resources */,
 				F7D1B8631B5C8E1A00D34341 /* RegistrationSuccessXIB.xib in Resources */,
 				C6D9E9781B4774CB00249DA4 /* AppleGaramond-Bold.ttf in Resources */,
 				C6E163341B481C5000942749 /* test_schedule.json in Resources */,
@@ -850,6 +855,7 @@
 				C67926B31B4DC94B00EA86B4 /* TabBarIcons.xcassets in Resources */,
 				C67926AB1B4DC91B00EA86B4 /* test_schedule.json in Resources */,
 				F7D1B8621B5C8E1600D34341 /* NetworkErrorXIB.xib in Resources */,
+				C69808EC1B5D05D900164BC6 /* YTPlayer.html in Resources */,
 				F7D1B8641B5C8E1A00D34341 /* RegistrationSuccessXIB.xib in Resources */,
 				C6D9E9621B474F1100249DA4 /* Main.storyboard in Resources */,
 				C6D9E9791B4774CB00249DA4 /* AppleGaramond-Bold.ttf in Resources */,
@@ -893,7 +899,7 @@
 				F74C1A1E1B5967B000F09002 /* BAVPlistNode.m in Sources */,
 				C6CFD0541B45EDA90067A6AD /* AppDelegate.swift in Sources */,
 				C6CAB4321B498B770077D60B /* MSTabBar.swift in Sources */,
-				F799BA0E1B5C153F00595F24 /* YouTubePlayer.swift in Sources */,
+				C69808E71B5D05D900164BC6 /* YouTubePlayer.swift in Sources */,
 				C69E4A541B46088800BD981C /* MSTwitterTabController.swift in Sources */,
 				F74C1A1B1B5967B000F09002 /* STTwitterHTML.m in Sources */,
 				C69E4A721B4620AC00BD981C /* MSScheduleTableView.swift in Sources */,
@@ -940,6 +946,7 @@
 				C6A0D96F1B59FCCC00C8172D /* JSONSyntaxHighlight.m in Sources */,
 				C6A0D9701B59FCCC00C8172D /* STHTTPRequest.m in Sources */,
 				C6E1632F1B481AE600942749 /* MSCellModels.swift in Sources */,
+				C69808E81B5D05D900164BC6 /* YouTubePlayer.swift in Sources */,
 				C6E1632A1B48137900942749 /* MSScheduleTableControllerTests.swift in Sources */,
 				C69E4A611B4609D700BD981C /* MSPrimaryTabController.swift in Sources */,
 				C61C00651B4C7F1600AB4D6C /* MSEventPageController.swift in Sources */,
@@ -1000,6 +1007,7 @@
 				C6E163301B481AE600942749 /* MSCellModels.swift in Sources */,
 				C6C00A6D1B45F3B300709992 /* MSTabBarController.swift in Sources */,
 				C6E1633B1B48296600942749 /* SwiftyJSON.swift in Sources */,
+				C69808E91B5D05D900164BC6 /* YouTubePlayer.swift in Sources */,
 				C69E4A5A1B4608C500BD981C /* MSRegisterTabController.swift in Sources */,
 				C68A138C1B5BF1A2003CE324 /* MSProtocols.swift in Sources */,
 				C689563D1B52B399006D188F /* MSScrollView.swift in Sources */,
