@@ -9,142 +9,102 @@
 import Foundation
 import UIKit
 
-
-public class MSRegisterTabController : UIViewController {
+public class MSRegisterTabController : UIViewController, UIWebViewDelegate, NetworkFailureRecovery {
     
-    // Buttons
-    var prevButton : UIButton!
-    var nextButton : UIButton!
+    var webView : UIWebView!
+    var activityIndicator : UIActivityIndicatorView!
     
-    // Text Area
-    var textField : UITextField!
-   
-    // Question
-    var questionLabel : UILabel!
-    private var questionIndex = 0;
+    let website = "http://www.mta.ca/Community/Campus_life/Campus_events/Mansbridge_Summit/Application/Mansbridge_Summit_application_form/"
+    let webviewFrame = CGRectMake(0, 0, GC.SCREEN_WIDTH, GC.SCREEN_HEIGHT - GC.TAB_BAR_HEIGHT )
     
-    let questions = [
-        "Enter your name",
-        "Please supply your email address",
-//        Gender radio buttons
-//        "Intended Major/Minor",
-//        "Expected year of graduation",
-        "Hometown",
-        "Dietary restrictions",
-        //  I hereby give my permission for pictures and recordings of myself to be published. 
-        // Application Questions
-        "Does Canada need a public broadcaster? Why or why not?",
-        "What is your favourite show that you watched as a kid on public television?"
-    ]
+    weak var networkErrorView : UIView?
     
-    func nextQuestion() -> String? {
+    override public func viewDidLoad() {
         
-        if questionIndex < questions.count {
-            let questionText = questions[questionIndex]
-            questionIndex++
-            return questionText
-        }
-        return nil
-        
-    }
-    
-    public override func viewDidLoad() {
-        
-        
-    }
-    
-    
-    public override func viewWillAppear(animated: Bool) {
+        super.viewDidLoad()
         
         let connection = Reachability(hostName: "www.mta.ca")
+        
         if connection.isReachable() {
+        
+            webView = UIWebView(frame: webviewFrame)
+            webView.delegate = self;
+            webView.scrollView.minimumZoomScale = 0.1;
+            webView.loadRequest(NSURLRequest(URL: NSURL(string: website)!))
             
-            // Load storyboard, otherwise 
+            self.view.addSubview(webView)
+            displayLoadingAnimation()
             
         } else {
-            let warningLabel = UILabel(frame: CGRect(x: 0, y: 0, width: GC.SCREEN_WIDTH, height: GC.SCREEN_HEIGHT))
-            warningLabel.text = "Please make sure you are connected to the network."
-            
-            self.view.addSubview(warningLabel)
+            displayNetworkConnectionErrorView()
+        }
+
+    }
+    
+    /* Add loading animation */
+    private func displayLoadingAnimation() -> Void {
+        
+        activityIndicator = UIActivityIndicatorView(frame: CGRect(x: 0, y: 0, width: 50, height: 50))
+        activityIndicator.center = self.view.center
+        activityIndicator.activityIndicatorViewStyle = .Gray
+        
+        self.view.addSubview(activityIndicator)
+
+        activityIndicator.startAnimating()
+        
+    }
+    
+    func displayNetworkConnectionErrorView() -> Void {
+        
+        // Remove webview
+        if webView != nil {
+            webView.removeFromSuperview()
         }
         
-//        createQuestionLabel()
-//        createTextField()
-//        createButtons()
-//        
-//        self.view.addSubview(textField)
-//        self.view.addSubview(prevButton)
-//        self.view.addSubview(nextButton)
+        // Load XIB File only if the error page does not exist
+        if networkErrorView == nil {
+            if let _networkErrorView = UIView.loadFromNibNamed("NetworkErrorXIB") {
+                networkErrorView = _networkErrorView
+                self.view.addSubview(_networkErrorView)
+            }
+        }
+        
+    }
+    
+    func removeNetworkConnectionErrorView() -> Void {
+        
+        if networkErrorView != nil {
+           networkErrorView!.removeFromSuperview()
+        }
+        
+    }
+    
+    public func webViewDidStartLoad(webView: UIWebView) {
+        
+    }
+    
+    public func webView(webView: UIWebView, didFailLoadWithError error: NSError?) {
+        if let _error = error {
+            print(_error.description)
+        }
+        displayNetworkConnectionErrorView()
+    }
+    
+    public func webViewDidFinishLoad(webView: UIWebView) {
+        
+        // Turn off loading indicator
+        activityIndicator.stopAnimating()
+        
+        // Inject JavaScript into the page to hide the stuff we do not want to see
+        webView.stringByEvaluatingJavaScriptFromString("document.getElementsByClassName(\"page-header\")[0].style.display = 'none';")
+        webView.stringByEvaluatingJavaScriptFromString("document.getElementsByClassName(\"page-footer\")[0].style.display = 'none';")
+        webView.stringByEvaluatingJavaScriptFromString("document.getElementById(\"breadcrumb-container\").style.display = 'none';")
+        
+        if GC.DeviceType.iPad {
+            webView.stringByEvaluatingJavaScriptFromString("document.getElementById(\"Question1\").style.width = '\(GC.SCREEN_WIDTH - 100)px';")
+            webView.stringByEvaluatingJavaScriptFromString("document.getElementById(\"Question2\").style.width = '\(GC.SCREEN_WIDTH - 100)px';")
+        }
+        
+    }
 
-    }
-    
-    private func createQuestionLabel() -> Void {
-        
-    }
-    
-    private func createTextField() -> Void {
-        
-        let boxWidth  = GC.SCREEN_WIDTH * 0.75
-        let boxHeight = GC.SCREEN_HEIGHT * 0.3
-        let x = (GC.SCREEN_WIDTH - boxWidth) / 2
-        let y = x
-        
-        textField = UITextField(frame: CGRect(x: x, y: y, width: boxWidth, height: boxHeight))
-        textField.backgroundColor = GC.Color.gold
-
-    }
-    
-    private func createButtons() -> Void {
-        
-        let space = (textField.frame.width * 0.3) / 3
-        
-        let prevButtonX : CGFloat = textField.frame.origin.x + space
-        let prevButtonY : CGFloat = textField.frame.origin.y + textField.frame.height + (textField.frame.height * 0.1)
-        let prevButtonWidth : CGFloat = (textField.frame.width - space*3) / 2
-        let prevButtonHeight : CGFloat = (textField.frame.height * 0.2)
-        
-        let nextButtonX : CGFloat = prevButtonX + prevButtonWidth + space
-        let nextButtonY : CGFloat = prevButtonY
-        let nextButtonWidth : CGFloat = prevButtonWidth
-        let nextButtonHeight: CGFloat  = prevButtonHeight
-
-        let prevButtonFrame = CGRect(x: prevButtonX, y: prevButtonY, width: prevButtonWidth, height: prevButtonHeight)
-        let nextButtonFrame = CGRect(x: nextButtonX, y: nextButtonY, width: nextButtonWidth, height: nextButtonHeight)
-        
-        prevButton = UIButton(frame: prevButtonFrame)
-        prevButton.backgroundColor = GC.Color.red
-        prevButton.setTitle("Prev", forState: UIControlState.Normal)
-        
-        nextButton = UIButton(frame: nextButtonFrame)
-        nextButton.setTitle("Next", forState: UIControlState.Normal)
-        nextButton.backgroundColor = GC.Color.red
-        
-    }
-    
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

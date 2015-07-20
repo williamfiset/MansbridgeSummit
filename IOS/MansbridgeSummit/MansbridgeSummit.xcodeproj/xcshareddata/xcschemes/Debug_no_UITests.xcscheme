@@ -9,14 +9,28 @@
          <BuildActionEntry
             buildForTesting = "YES"
             buildForRunning = "YES"
-            buildForProfiling = "YES"
-            buildForArchiving = "YES"
-            buildForAnalyzing = "YES">
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "C6CFD04F1B45EDA90067A6AD"
                BuildableName = "MansbridgeSummit.app"
                BlueprintName = "MansbridgeSummit"
+               ReferencedContainer = "container:MansbridgeSummit.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "NO"
+            buildForRunning = "NO"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "C6CFD0701B45EDA90067A6AD"
+               BuildableName = "MansbridgeSummitUITests.xctest"
+               BlueprintName = "MansbridgeSummitUITests"
                ReferencedContainer = "container:MansbridgeSummit.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -36,16 +50,6 @@
                BlueprintIdentifier = "C6CFD0651B45EDA90067A6AD"
                BuildableName = "MansbridgeSummitTests.xctest"
                BlueprintName = "MansbridgeSummitTests"
-               ReferencedContainer = "container:MansbridgeSummit.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "C6CFD0701B45EDA90067A6AD"
-               BuildableName = "MansbridgeSummitUITests.xctest"
-               BlueprintName = "MansbridgeSummitUITests"
                ReferencedContainer = "container:MansbridgeSummit.xcodeproj">
             </BuildableReference>
          </TestableReference>
@@ -88,13 +92,12 @@
       </AdditionalOptions>
    </LaunchAction>
    <ProfileAction
-      buildConfiguration = "Release"
+      buildConfiguration = "Debug"
       shouldUseLaunchSchemeArgsEnv = "YES"
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "C6CFD04F1B45EDA90067A6AD"
@@ -102,13 +105,13 @@
             BlueprintName = "MansbridgeSummit"
             ReferencedContainer = "container:MansbridgeSummit.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">
    </AnalyzeAction>
    <ArchiveAction
-      buildConfiguration = "Release"
+      buildConfiguration = "Debug"
       revealArchiveInOrganizer = "YES">
    </ArchiveAction>
 </Scheme>

@@ -36,7 +36,7 @@
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" id="xgf-JR-Un4"/>
+                    <tabBarItem key="tabBarItem" title="Register" image="tabBarRegisterIcon" id="xgf-JR-Un4"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vrE-B9-sGa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -56,7 +56,7 @@
                             <outlet property="delegate" destination="M2Z-vZ-2uL" id="8lq-Fk-pv1"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" id="6ZR-g8-JzM"/>
+                    <tabBarItem key="tabBarItem" title="Schedule" image="tabBarScheduleIcon" id="6ZR-g8-JzM"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KYm-3l-Q57" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -108,7 +108,7 @@
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" id="hOZ-qo-J76"/>
+                    <tabBarItem key="tabBarItem" title="About" image="tabBarAboutIcon" id="hOZ-qo-J76"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="H9k-2H-Scp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -128,7 +128,7 @@
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" id="Qzy-kM-0kx"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="tabBarHomeIcon" id="Qzy-kM-0kx"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0Ia-58-4Mk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -158,11 +158,11 @@
             </objects>
             <point key="canvasLocation" x="231" y="-150"/>
         </scene>
-        <!--Item-->
+        <!--Twitter-->
         <scene sceneID="2ci-m8-1eF">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="tw5-r1-TfF" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="dpJ-kR-3PM"/>
+                    <tabBarItem key="tabBarItem" title="Twitter" image="tabBarTwitterIcon" id="dpJ-kR-3PM"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="9zC-cv-De3">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -179,4 +179,11 @@
             <point key="canvasLocation" x="1056" y="564"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="tabBarAboutIcon" width="25" height="25"/>
+        <image name="tabBarHomeIcon" width="25" height="25"/>
+        <image name="tabBarRegisterIcon" width="25" height="25"/>
+        <image name="tabBarScheduleIcon" width="25" height="25"/>
+        <image name="tabBarTwitterIcon" width="25" height="25"/>
+    </resources>
 </document>

@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 
 extension String {
     
@@ -31,17 +32,61 @@ extension String {
         return self[range]
     }
     
-    /* returns an array of string devided a delimiter */
+    /* Returns an array of strings divided by a delimiter */
     func split (delimiter : String) -> [String] {
         return self.componentsSeparatedByString(delimiter)
     }
     
-    func stringByAddingPercentEscapesForQueryValue() -> String? {
+    func startAt(start : String) -> String? {
         
-        let characterSet = NSMutableCharacterSet.alphanumericCharacterSet()
-        characterSet.addCharactersInString("-._~")
-        return stringByAddingPercentEncodingWithAllowedCharacters(characterSet)
+        let range = self.rangeOfString(start)
         
+        if (range != nil) {
+            return self.substringFromIndex(range!.endIndex)
+        }
+        
+        return nil;
+        
+    }
+    
+    func endAt(end : String) -> String? {
+        
+        let range = self.rangeOfString(end)
+        
+        if (range != nil) {
+            return self.substringToIndex(range!.startIndex)
+        }
+        
+        return nil;
+        
+    }
+    
+    mutating func replace(string: String, replacement : String) {
+        
+        let range = self.rangeOfString(string)
+        
+        if (range != nil) {
+            self.replaceRange(range!, with: replacement)
+        }
+        
+    }
+    
+    mutating func replaceAll(string: String, replacement : String) {
+        
+        var range = self.rangeOfString(string)
+        
+        while (range != nil) {
+            self.replaceRange(range!, with: replacement)
+            range = self.rangeOfString(string)
+        }
+        
+    }
+    
+    mutating func removeSubstringIfExists(string : String) {
+        let range = self.rangeOfString(string)
+        if (range != nil) {
+            self.removeRange(range!)
+        }
     }
     
     
@@ -69,40 +114,17 @@ extension Array {
     }
 }
 
-
-extension Dictionary {
+extension UIView {
     
-    func getQueryString() -> String {
-        
-        var queryString = ""
-        let numKeys = self.keys.count
-        
-        for (i, (key, value)) in self.enumerate() {
-            queryString += "\(key)=\(value)"
-            if i != numKeys - 1 {
-                queryString += "&"
-            }
-        }
-        
-        return queryString
+    // Loads a NIB/XIB file
+    class func loadFromNibNamed(nibNamed: String, bundle : NSBundle? = nil) -> UIView? {
+        return UINib(
+            nibName: nibNamed,
+            bundle: bundle
+        ).instantiateWithOwner(nil, options: nil)[0] as? UIView
     }
     
 }
-
-
-extension NSMutableURLRequest {
-    
-    // Sets the POST request body given key value pairs
-    func setBodyContent(contentMap: [String : String]) {
-        
-        let parameters = contentMap.map { (key, value) -> String in
-            return "\(key)=\(value.stringByAddingPercentEscapesForQueryValue()!)"
-        }
-        HTTPBody = "&".join(parameters).dataUsingEncoding(NSUTF8StringEncoding)
-    }
-    
-}
-
 
 
 

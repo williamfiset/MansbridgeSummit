@@ -12,24 +12,24 @@ import UIKit
 
 public class MSTabBarController : UITabBarController {
 
-    static let tabBarItemNames = ["Home", "Register", "Twitter", "Schedule", "About"]
-    static let tabBarItemImageNames = ["tabBarHomeIcon", "tabBarRegisterIcon", "tabBarTwitterIcon", "tabBarScheduleIcon", "tabBarAboutIcon"]
-
-    public override func viewDidLoad() {
+    // static let tabBarItemNames = ["Home", "Register", "Twitter", "Schedule", "About"]
+    
+    /*public override func viewDidLoad() {
         setTabBarImages()
-    }
+    }*/
 
     public override func viewWillAppear(animated: Bool) {
 
         //self.tabBar.alpha = 1.0
-        self.tabBar.backgroundColor = GC.Color.red
-        self.tabBar.barTintColor = GC.Color.red
-        self.tabBar.tintColor = GC.Color.white
+//        self.tabBar.backgroundColor = GC.Color.red
+//        self.tabBar.barTintColor = GC.Color.red
+        self.tabBar.tintColor = GC.Color.red
         
-        UIApplication.sharedApplication().keyWindow?.tintColor = UIColor.blueColor()
+//        UIApplication.sharedApplication().keyWindow?.tintColor = UIColor.blueColor()
         
     }
-    
+
+    /*
     func setTabBarImages() -> Void {
         
         if let tabBarItems = self.tabBar.items {
@@ -52,7 +52,7 @@ public class MSTabBarController : UITabBarController {
         }
                 
     }
-    
+    */
 
 }
 

@@ -31,6 +31,8 @@ class ConnectionTests: XCTestCase {
         
     }
     
+    // Reactive once we can set a baseline
+    /*
     func testConnectionSpeed() {
         
         let connection = Reachability(hostName: "www.mta.ca")
@@ -42,5 +44,6 @@ class ConnectionTests: XCTestCase {
             }
         }
     }
+    */
     
 }

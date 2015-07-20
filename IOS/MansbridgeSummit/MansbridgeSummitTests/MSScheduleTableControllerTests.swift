@@ -64,6 +64,7 @@ class MSScheduleTableControllerTests: XCTestCase {
         let table = MSScheduleTableView(frame: CGRect(x: 0, y: 0, width: 300, height: 900))
         
         let controller1 = MSScheduleTableController(style: .Grouped)
+        controller1.schedule_file_name = "test_schedule"
         
         controller1.viewWillAppear(true)
         controller1.viewDidLoad()

@@ -9,7 +9,9 @@
 import UIKit
 import TwitterKit
 
-class MSTwitterTimelineController: TWTRTimelineViewController/*, TWTRTweetViewDelegate */{
+class MSTwitterTimelineController: TWTRTimelineViewController, NetworkFailureRecovery /*, TWTRTweetViewDelegate */{
+    
+    weak var networkErrorView : UIView?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,20 +37,58 @@ class MSTwitterTimelineController: TWTRTimelineViewController/*, TWTRTweetViewDe
 //                print("error: \(error.localizedDescription)");
 //            }
 //        }
+        
+        let connection = Reachability(hostName: "www.twitter.com")
+        
+        if connection.isReachable() {
+            loadTwitterFeed()
+        } else {
+            displayNetworkConnectionErrorView()
+        }
+        
+    }
     
+    func loadTwitterFeed() -> Void {
+        
         Twitter.sharedInstance().logInGuestWithCompletion { session, error in
             if let _ = session {
                 let client = Twitter.sharedInstance().APIClient
                 self.dataSource = TWTRUserTimelineDataSource(screenName: "mtasummit", APIClient: client)
-//                self.dataSource = TWTRSearchTimelineDataSource(searchQuery: "#MansbridgeSummit OR @mtasummit", APIClient: client)
-            
+                //                self.dataSource = TWTRSearchTimelineDataSource(searchQuery: "#MansbridgeSummit OR @mtasummit", APIClient: client)
+                
                 print("here! \(self.dataSource)")
             } else {
                 print("error: \(error.localizedDescription)")
             }
         }
+        
+       
     }
-
+    
+    func displayNetworkConnectionErrorView() -> Void {
+        
+        // Remove webview
+        if self.tableView != nil {
+            self.tableView.removeFromSuperview()
+        }
+        
+        // Load XIB File only if the error page does not exist
+        if networkErrorView == nil {
+            if let _networkErrorView = UIView.loadFromNibNamed("NetworkErrorXIB") {
+                networkErrorView = _networkErrorView
+                self.view.addSubview(_networkErrorView)
+            }
+        }
+        
+    }
+    
+    func removeNetworkConnectionErrorView() -> Void {
+        if networkErrorView != nil {
+            networkErrorView!.removeFromSuperview()
+        }
+    }
+    
+    
 //    func tweetView(tweetView: TWTRTweetView, didSelectTweet tweet: TWTRTweet) {
 //        let kTweetOriginX: CGFloat = 0.0
 //        let kTweetOriginY: CGFloat = 0.0
