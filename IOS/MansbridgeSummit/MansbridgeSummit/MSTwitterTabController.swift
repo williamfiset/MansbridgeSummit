@@ -59,8 +59,6 @@ public class MSTwitterTabController : UITableViewController, TWTRTweetViewDelega
                     print("Failed to load tweets: \(error!.localizedDescription)")
                 }
             }
-
-        
        
 //        var twitter: STTwitterAPI = STTwitterAPI(OAuthConsumerKey: "1QaB3nlI2dXah3vJiIIbtDBaP", consumerSecret: "V2qExJfJtPR81Gtn1cl6DjFuzWJ3HcGqJLPpIXd5kwp6zt4Ctz", oauthToken: "109002432-FT1GsSfJDpVtkYPgzPoK7fuPfwrpdXnfPeaVKp6s", oauthTokenSecret: "sgLBqasL56lJQXKhlxAuBBAqFSfjfH06ap1O9iVBmrEb3")
 //        

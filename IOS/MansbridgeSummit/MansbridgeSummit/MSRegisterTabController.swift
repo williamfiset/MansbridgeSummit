@@ -13,31 +13,22 @@ public class MSRegisterTabController : UIViewController, UIWebViewDelegate, Netw
     
     var webView : UIWebView!
     var activityIndicator : UIActivityIndicatorView!
-    
-    let website = "http://www.mta.ca/Community/Campus_life/Campus_events/Mansbridge_Summit/Application/Mansbridge_Summit_application_form/"
-    let webviewFrame = CGRectMake(0, 0, GC.SCREEN_WIDTH, GC.SCREEN_HEIGHT - GC.TAB_BAR_HEIGHT )
-    
     weak var networkErrorView : UIView?
     
+    let website = "http://www.mta.ca/Community/Campus_life/Campus_events/Mansbridge_Summit/Application/Mansbridge_Summit_application_form/"
+    
+    /* Set up the tab */
     override public func viewDidLoad() {
         
         super.viewDidLoad()
         
-        let connection = Reachability(hostName: "www.mta.ca")
-        
-        if connection.isReachable() {
-        
-            webView = UIWebView(frame: webviewFrame)
-            webView.delegate = self;
-            webView.scrollView.minimumZoomScale = 0.1;
-            webView.loadRequest(NSURLRequest(URL: NSURL(string: website)!))
-            self.view.addSubview(webView)
-            displayLoadingAnimation()
-            
-        } else {
-            displayNetworkConnectionErrorView()
-        }
-
+        webView = UIWebView(frame: self.view.frame)
+        webView.delegate = self;
+        webView.scrollView.minimumZoomScale = 0.1;
+        webView.loadRequest(NSURLRequest(URL: NSURL(string: website)!))
+        self.view.addSubview(webView)
+        displayLoadingAnimation()
+    
     }
     
     /* Add an indicator that the webpage is loading */
@@ -87,10 +78,33 @@ public class MSRegisterTabController : UIViewController, UIWebViewDelegate, Netw
     
     /* Catch any errors when trying to load webpage */
     public func webView(webView: UIWebView, didFailLoadWithError error: NSError?) {
+        
         if let _error = error {
             print(_error.description)
         }
+        
         displayNetworkConnectionErrorView()
+        
+    }
+    
+    /* Intercept URL requests and display an error screen if there is no Internet connection */
+    public func webView(webView: UIWebView, shouldStartLoadWithRequest request: NSURLRequest, navigationType: UIWebViewNavigationType) -> Bool {
+        
+        let connection = Reachability(hostName: "www.mta.ca")
+        
+        if connection.isReachable() {
+            
+            return true
+            
+        } else {
+            
+            displayNetworkConnectionErrorView()
+            
+            return false
+            
+        }
+
+        
     }
     
     /* Execute once the webpage has finished loading */
@@ -98,6 +112,16 @@ public class MSRegisterTabController : UIViewController, UIWebViewDelegate, Netw
         
         // Turn off loading indicator
         activityIndicator.stopAnimating()
+        
+        // Display success screen if the application was accepted by the website
+        let html : String? = webView.stringByEvaluatingJavaScriptFromString("document.documentElement.outerHTML")
+        if html != nil && html!.rangeOfString("for filling out the Mansbridge Summit application form") != nil {
+            if let registrationSuccessView = UIView.loadFromNibNamed("RegistrationSuccessXIB") {
+                registrationSuccessView.frame = self.view.frame
+                self.view.addSubview(registrationSuccessView)
+                webView.removeFromSuperview()
+            }
+        }
         
         // Inject JavaScript into the page to hide the stuff we do not want to see
         webView.stringByEvaluatingJavaScriptFromString("document.getElementsByClassName(\"page-header\")[0].style.display = 'none';")

@@ -76,6 +76,7 @@ class MSTwitterTimelineController: TWTRTimelineViewController, NetworkFailureRec
         if networkErrorView == nil {
             if let _networkErrorView = UIView.loadFromNibNamed("NetworkErrorXIB") {
                 networkErrorView = _networkErrorView
+                _networkErrorView.frame = self.view.frame
                 self.view.addSubview(_networkErrorView)
             }
         }

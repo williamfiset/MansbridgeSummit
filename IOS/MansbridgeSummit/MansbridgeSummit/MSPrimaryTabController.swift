@@ -12,9 +12,9 @@ import UIKit
 
 public class MSPrimaryTabController : UIViewController, UIScrollViewDelegate {
     
-    var scrollView : MSScrollView!
+//    var scrollView : MSScrollView!
     
-//   var videoPlayer: YouTubePlayerView!
+   var videoPlayer: YouTubePlayerView!
     
     public override func viewWillAppear(animated: Bool) {
         
@@ -24,13 +24,13 @@ public class MSPrimaryTabController : UIViewController, UIScrollViewDelegate {
     
     public override func viewDidAppear(animated: Bool) {
 
-//        videoPlayer = YouTubePlayerView(frame: self.view.frame)
-//        videoPlayer.loadVideoID("DBXZWB_dNsw")
-//        self.view.addSubview(videoPlayer)
+        videoPlayer = YouTubePlayerView(frame: self.view.frame)
+        videoPlayer.loadVideoID("DBXZWB_dNsw")
+        self.view.addSubview(videoPlayer)
         
-        let scollViewFrame = CGRect(x: 0, y: 0, width: view.frame.width, height: view.frame.height - GC.TAB_BAR_HEIGHT)
-        scrollView = MSScrollView(frame: scollViewFrame)
-        self.view.addSubview(scrollView)
+//        let scollViewFrame = CGRect(x: 0, y: 0, width: view.frame.width, height: view.frame.height - GC.TAB_BAR_HEIGHT)
+//        scrollView = MSScrollView(frame: scollViewFrame)
+//        self.view.addSubview(scrollView)
 
     }
     

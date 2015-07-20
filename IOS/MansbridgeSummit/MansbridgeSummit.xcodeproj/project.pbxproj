@@ -127,9 +127,6 @@
 		C6EB798A1B4C903400F5E516 /* MSEventPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6EB79891B4C903400F5E516 /* MSEventPageView.swift */; };
 		C6EB798B1B4C903400F5E516 /* MSEventPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6EB79891B4C903400F5E516 /* MSEventPageView.swift */; };
 		C6EB798C1B4C903400F5E516 /* MSEventPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6EB79891B4C903400F5E516 /* MSEventPageView.swift */; };
-		F7016C251B5B339C0018682B /* Ball Point Pen-25.png in Resources */ = {isa = PBXBuildFile; fileRef = F7016C221B5B339C0018682B /* Ball Point Pen-25.png */; };
-		F7016C261B5B339C0018682B /* Ball Point Pen-50.png in Resources */ = {isa = PBXBuildFile; fileRef = F7016C231B5B339C0018682B /* Ball Point Pen-50.png */; };
-		F7016C271B5B339C0018682B /* Ball Point Pen-75.png in Resources */ = {isa = PBXBuildFile; fileRef = F7016C241B5B339C0018682B /* Ball Point Pen-75.png */; };
 		F74C1A161B5967B000F09002 /* NSDateFormatter+STTwitter.m in Sources */ = {isa = PBXBuildFile; fileRef = F74C19FE1B5967B000F09002 /* NSDateFormatter+STTwitter.m */; };
 		F74C1A171B5967B000F09002 /* NSString+STTwitter.m in Sources */ = {isa = PBXBuildFile; fileRef = F74C1A001B5967B000F09002 /* NSString+STTwitter.m */; };
 		F74C1A181B5967B000F09002 /* STHTTPRequest+STTwitter.m in Sources */ = {isa = PBXBuildFile; fileRef = F74C1A021B5967B000F09002 /* STHTTPRequest+STTwitter.m */; };
@@ -182,6 +179,12 @@
 		F7CF77E01B5B2F5900013CF0 /* Twitter-25.png in Resources */ = {isa = PBXBuildFile; fileRef = F7CF77D11B5B2F5900013CF0 /* Twitter-25.png */; };
 		F7CF77E11B5B2F5900013CF0 /* Twitter-50.png in Resources */ = {isa = PBXBuildFile; fileRef = F7CF77D21B5B2F5900013CF0 /* Twitter-50.png */; };
 		F7CF77E21B5B2F5900013CF0 /* Twitter-75.png in Resources */ = {isa = PBXBuildFile; fileRef = F7CF77D31B5B2F5900013CF0 /* Twitter-75.png */; };
+		F7D1B8601B5C8E0900D34341 /* RegistrationSuccessXIB.xib in Resources */ = {isa = PBXBuildFile; fileRef = F7D1B85F1B5C8E0900D34341 /* RegistrationSuccessXIB.xib */; };
+		F7D1B8611B5C8E1600D34341 /* NetworkErrorXIB.xib in Resources */ = {isa = PBXBuildFile; fileRef = C68A13871B5BCE7B003CE324 /* NetworkErrorXIB.xib */; };
+		F7D1B8621B5C8E1600D34341 /* NetworkErrorXIB.xib in Resources */ = {isa = PBXBuildFile; fileRef = C68A13871B5BCE7B003CE324 /* NetworkErrorXIB.xib */; };
+		F7D1B8631B5C8E1A00D34341 /* RegistrationSuccessXIB.xib in Resources */ = {isa = PBXBuildFile; fileRef = F7D1B85F1B5C8E0900D34341 /* RegistrationSuccessXIB.xib */; };
+		F7D1B8641B5C8E1A00D34341 /* RegistrationSuccessXIB.xib in Resources */ = {isa = PBXBuildFile; fileRef = F7D1B85F1B5C8E0900D34341 /* RegistrationSuccessXIB.xib */; };
+		F7D1B8661B5C8ED900D34341 /* checkmark.png in Resources */ = {isa = PBXBuildFile; fileRef = F7D1B8651B5C8ED900D34341 /* checkmark.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -254,9 +257,6 @@
 		C6E1633C1B482A7200942749 /* MSScheduleJsonFileTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSScheduleJsonFileTests.swift; sourceTree = "<group>"; };
 		C6E1633E1B483E7E00942749 /* wills_playground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = wills_playground.playground; sourceTree = "<group>"; };
 		C6EB79891B4C903400F5E516 /* MSEventPageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSEventPageView.swift; sourceTree = "<group>"; };
-		F7016C221B5B339C0018682B /* Ball Point Pen-25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Ball Point Pen-25.png"; sourceTree = "<group>"; };
-		F7016C231B5B339C0018682B /* Ball Point Pen-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Ball Point Pen-50.png"; sourceTree = "<group>"; };
-		F7016C241B5B339C0018682B /* Ball Point Pen-75.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Ball Point Pen-75.png"; sourceTree = "<group>"; };
 		F74C19FD1B5967B000F09002 /* NSDateFormatter+STTwitter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDateFormatter+STTwitter.h"; sourceTree = "<group>"; };
 		F74C19FE1B5967B000F09002 /* NSDateFormatter+STTwitter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDateFormatter+STTwitter.m"; sourceTree = "<group>"; };
 		F74C19FF1B5967B000F09002 /* NSString+STTwitter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+STTwitter.h"; sourceTree = "<group>"; };
@@ -306,6 +306,8 @@
 		F7CF77D11B5B2F5900013CF0 /* Twitter-25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Twitter-25.png"; sourceTree = "<group>"; };
 		F7CF77D21B5B2F5900013CF0 /* Twitter-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Twitter-50.png"; sourceTree = "<group>"; };
 		F7CF77D31B5B2F5900013CF0 /* Twitter-75.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Twitter-75.png"; sourceTree = "<group>"; };
+		F7D1B85F1B5C8E0900D34341 /* RegistrationSuccessXIB.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RegistrationSuccessXIB.xib; sourceTree = "<group>"; };
+		F7D1B8651B5C8ED900D34341 /* checkmark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = checkmark.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -535,6 +537,8 @@
 			isa = PBXGroup;
 			children = (
 				C68A13871B5BCE7B003CE324 /* NetworkErrorXIB.xib */,
+				F7D1B85F1B5C8E0900D34341 /* RegistrationSuccessXIB.xib */,
+				F7D1B8651B5C8ED900D34341 /* checkmark.png */,
 				F7CF77C41B5B2F2400013CF0 /* Tab Icons */,
 				C6E163311B481BFF00942749 /* Schedule */,
 				C6D9E9891B47785000249DA4 /* Fonts */,
@@ -655,9 +659,6 @@
 		F7CF77C41B5B2F2400013CF0 /* Tab Icons */ = {
 			isa = PBXGroup;
 			children = (
-				F7016C221B5B339C0018682B /* Ball Point Pen-25.png */,
-				F7016C231B5B339C0018682B /* Ball Point Pen-50.png */,
-				F7016C241B5B339C0018682B /* Ball Point Pen-75.png */,
 				F7CF77C51B5B2F5900013CF0 /* About-25.png */,
 				F7CF77C61B5B2F5900013CF0 /* About-50.png */,
 				F7CF77C71B5B2F5900013CF0 /* About-75.png */,
@@ -790,15 +791,16 @@
 			files = (
 				F7CF77DC1B5B2F5900013CF0 /* Home-75.png in Resources */,
 				F7CF77DF1B5B2F5900013CF0 /* Pencil-75.png in Resources */,
+				F7D1B8601B5C8E0900D34341 /* RegistrationSuccessXIB.xib in Resources */,
 				C6CFD0601B45EDA90067A6AD /* LaunchScreen.storyboard in Resources */,
 				F7CF77DB1B5B2F5900013CF0 /* Home-50.png in Resources */,
 				C6CFD05D1B45EDA90067A6AD /* TabBarIcons.xcassets in Resources */,
 				C6E163331B481C5000942749 /* test_schedule.json in Resources */,
 				F7CF77DA1B5B2F5900013CF0 /* Home-25.png in Resources */,
+				F7D1B8661B5C8ED900D34341 /* checkmark.png in Resources */,
 				C6D9E9861B4774CB00249DA4 /* AppleGaramond.ttf in Resources */,
 				F7CF77DE1B5B2F5900013CF0 /* Pencil-50.png in Resources */,
 				C6D9E9901B4778A400249DA4 /* MyriadPro-Regular.OTF in Resources */,
-				F7016C261B5B339C0018682B /* Ball Point Pen-50.png in Resources */,
 				F7CF77D51B5B2F5900013CF0 /* About-50.png in Resources */,
 				C68A13881B5BCE7B003CE324 /* NetworkErrorXIB.xib in Resources */,
 				C64FD5C71B59A61A00AE8EA6 /* test_schedule2.json in Resources */,
@@ -813,12 +815,10 @@
 				C68956361B52AFBB006D188F /* Media.xcassets in Resources */,
 				F7CF77E11B5B2F5900013CF0 /* Twitter-50.png in Resources */,
 				C6D9E9771B4774CB00249DA4 /* AppleGaramond-Bold.ttf in Resources */,
-				F7016C271B5B339C0018682B /* Ball Point Pen-75.png in Resources */,
 				F7CF77D71B5B2F5900013CF0 /* Calendar-25.png in Resources */,
 				F799BA0F1B5C153F00595F24 /* YTPlayer.html in Resources */,
 				F7CF77D81B5B2F5900013CF0 /* Calendar-50.png in Resources */,
 				F7CF77D61B5B2F5900013CF0 /* About-75.png in Resources */,
-				F7016C251B5B339C0018682B /* Ball Point Pen-25.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -829,6 +829,8 @@
 				C67926AE1B4DC94100EA86B4 /* LaunchScreen.storyboard in Resources */,
 				C67926AF1B4DC94100EA86B4 /* TabBarIcons.xcassets in Resources */,
 				C6D9E9611B474F1000249DA4 /* Main.storyboard in Resources */,
+				F7D1B8611B5C8E1600D34341 /* NetworkErrorXIB.xib in Resources */,
+				F7D1B8631B5C8E1A00D34341 /* RegistrationSuccessXIB.xib in Resources */,
 				C6D9E9781B4774CB00249DA4 /* AppleGaramond-Bold.ttf in Resources */,
 				C6E163341B481C5000942749 /* test_schedule.json in Resources */,
 				C64FD5C81B59A61A00AE8EA6 /* test_schedule2.json in Resources */,
@@ -847,6 +849,8 @@
 				C67926B21B4DC94B00EA86B4 /* LaunchScreen.storyboard in Resources */,
 				C67926B31B4DC94B00EA86B4 /* TabBarIcons.xcassets in Resources */,
 				C67926AB1B4DC91B00EA86B4 /* test_schedule.json in Resources */,
+				F7D1B8621B5C8E1600D34341 /* NetworkErrorXIB.xib in Resources */,
+				F7D1B8641B5C8E1A00D34341 /* RegistrationSuccessXIB.xib in Resources */,
 				C6D9E9621B474F1100249DA4 /* Main.storyboard in Resources */,
 				C6D9E9791B4774CB00249DA4 /* AppleGaramond-Bold.ttf in Resources */,
 				C64FD5C91B59A61A00AE8EA6 /* test_schedule2.json in Resources */,
