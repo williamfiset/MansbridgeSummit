@@ -10,21 +10,11 @@
 import Foundation
 import UIKit
 
-
 public class MSPrimaryTabController : UIViewController, UIScrollViewDelegate {
     
     var scrollView : MSScrollView!
-
-    // TEMPORARY
-    public override func viewDidLoad() {
-        super.viewDidLoad()
-//        Twitter.sharedInstance().logInGuestWithCompletion { (session, error) in
-//            Twitter.sharedInstance().APIClient.loadTweetWithID("223214234") { (tweet, error) in
-//                self.view.addSubview(TWTRTweetView(tweet: tweet))
-//            }
-//        }
-
-    }
+    
+//   var videoPlayer: YouTubePlayerView!
     
     public override func viewWillAppear(animated: Bool) {
         
@@ -33,6 +23,10 @@ public class MSPrimaryTabController : UIViewController, UIScrollViewDelegate {
     }
     
     public override func viewDidAppear(animated: Bool) {
+
+//        videoPlayer = YouTubePlayerView(frame: self.view.frame)
+//        videoPlayer.loadVideoID("DBXZWB_dNsw")
+//        self.view.addSubview(videoPlayer)
         
         let scollViewFrame = CGRect(x: 0, y: 0, width: view.frame.width, height: view.frame.height - GC.TAB_BAR_HEIGHT)
         scrollView = MSScrollView(frame: scollViewFrame)

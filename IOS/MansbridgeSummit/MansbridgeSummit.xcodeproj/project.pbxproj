@@ -162,6 +162,8 @@
 		F79185041B5A839600EFF287 /* TwitterCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F79184FA1B5A839600EFF287 /* TwitterCore.framework */; };
 		F79185051B5A839600EFF287 /* TwitterCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F79184FA1B5A839600EFF287 /* TwitterCore.framework */; };
 		F79185061B5A839600EFF287 /* TwitterCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F79184FA1B5A839600EFF287 /* TwitterCore.framework */; };
+		F799BA0E1B5C153F00595F24 /* YouTubePlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F799BA0C1B5C153F00595F24 /* YouTubePlayer.swift */; };
+		F799BA0F1B5C153F00595F24 /* YTPlayer.html in Resources */ = {isa = PBXBuildFile; fileRef = F799BA0D1B5C153F00595F24 /* YTPlayer.html */; };
 		F7CF77BD1B5AACAF00013CF0 /* MSTwitterTimelineController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7CF77BC1B5AACAF00013CF0 /* MSTwitterTimelineController.swift */; };
 		F7CF77BE1B5AAD5E00013CF0 /* MSTwitterTimelineController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7CF77BC1B5AACAF00013CF0 /* MSTwitterTimelineController.swift */; };
 		F7CF77BF1B5AAD5F00013CF0 /* MSTwitterTimelineController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7CF77BC1B5AACAF00013CF0 /* MSTwitterTimelineController.swift */; };
@@ -286,6 +288,8 @@
 		F79184F81B5A839600EFF287 /* TwitterKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterKit.framework; sourceTree = "<group>"; };
 		F79184F91B5A839600EFF287 /* TwitterKitResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = TwitterKitResources.bundle; path = TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle; sourceTree = "<group>"; };
 		F79184FA1B5A839600EFF287 /* TwitterCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterCore.framework; sourceTree = "<group>"; };
+		F799BA0C1B5C153F00595F24 /* YouTubePlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = YouTubePlayer.swift; path = ../YouTubePlayer.swift; sourceTree = "<group>"; };
+		F799BA0D1B5C153F00595F24 /* YTPlayer.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = YTPlayer.html; path = ../YTPlayer.html; sourceTree = "<group>"; };
 		F7CF77BC1B5AACAF00013CF0 /* MSTwitterTimelineController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSTwitterTimelineController.swift; sourceTree = "<group>"; };
 		F7CF77C51B5B2F5900013CF0 /* About-25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "About-25.png"; sourceTree = "<group>"; };
 		F7CF77C61B5B2F5900013CF0 /* About-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "About-50.png"; sourceTree = "<group>"; };
@@ -426,6 +430,8 @@
 			children = (
 				C69E4A5F1B4609D700BD981C /* MSPrimaryTabController.swift */,
 				C689563A1B52B399006D188F /* MSScrollView.swift */,
+				F799BA0C1B5C153F00595F24 /* YouTubePlayer.swift */,
+				F799BA0D1B5C153F00595F24 /* YTPlayer.html */,
 			);
 			name = FirstTab;
 			sourceTree = "<group>";
@@ -809,6 +815,7 @@
 				C6D9E9771B4774CB00249DA4 /* AppleGaramond-Bold.ttf in Resources */,
 				F7016C271B5B339C0018682B /* Ball Point Pen-75.png in Resources */,
 				F7CF77D71B5B2F5900013CF0 /* Calendar-25.png in Resources */,
+				F799BA0F1B5C153F00595F24 /* YTPlayer.html in Resources */,
 				F7CF77D81B5B2F5900013CF0 /* Calendar-50.png in Resources */,
 				F7CF77D61B5B2F5900013CF0 /* About-75.png in Resources */,
 				F7016C251B5B339C0018682B /* Ball Point Pen-25.png in Resources */,
@@ -882,6 +889,7 @@
 				F74C1A1E1B5967B000F09002 /* BAVPlistNode.m in Sources */,
 				C6CFD0541B45EDA90067A6AD /* AppDelegate.swift in Sources */,
 				C6CAB4321B498B770077D60B /* MSTabBar.swift in Sources */,
+				F799BA0E1B5C153F00595F24 /* YouTubePlayer.swift in Sources */,
 				C69E4A541B46088800BD981C /* MSTwitterTabController.swift in Sources */,
 				F74C1A1B1B5967B000F09002 /* STTwitterHTML.m in Sources */,
 				C69E4A721B4620AC00BD981C /* MSScheduleTableView.swift in Sources */,
