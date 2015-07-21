@@ -123,16 +123,18 @@
                         <viewControllerLayoutGuide type="bottom" id="1La-HY-KyD"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="axv-S3-bAX">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="684" height="684"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Home" image="tabBarHomeIcon" id="Qzy-kM-0kx"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="684" height="684"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0Ia-58-4Mk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1046" y="-1812"/>
+            <point key="canvasLocation" x="1056" y="-1845"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="EaI-dH-ZuS">

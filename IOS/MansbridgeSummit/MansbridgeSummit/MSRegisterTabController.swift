@@ -135,6 +135,9 @@ public class MSRegisterTabController : UIViewController, UIWebViewDelegate, Netw
             webView.stringByEvaluatingJavaScriptFromString("document.getElementById(\"Question2\").style.width = '\(GC.SCREEN_WIDTH - 100)px';")
         }
         
+        // Center the content (which makes the submit button look better)
+        webView.stringByEvaluatingJavaScriptFromString("document.getElementById(\"ctl00_PageContent_FormBlock1_content\").setAttribute(\"align\", \"center\");")
+        
     }
 
 }
