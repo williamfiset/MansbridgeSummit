@@ -16,19 +16,28 @@ public class MSRegisterTabController : UIViewController, UIWebViewDelegate, Netw
     weak var networkErrorView : UIView?
     
     let website = "http://www.mta.ca/Community/Campus_life/Campus_events/Mansbridge_Summit/Application/Mansbridge_Summit_application_form/"
+    let connection = Reachability(hostName: "www.mta.ca")
     
     /* Set up the tab */
     override public func viewDidLoad() {
         
         super.viewDidLoad()
         
-        webView = UIWebView(frame: self.view.frame)
+        webView = UIWebView(frame: CGRect(x: 0, y: 0, width: GC.SCREEN_WIDTH, height: GC.SCREEN_HEIGHT - GC.TAB_BAR_HEIGHT))
         webView.delegate = self;
         webView.scrollView.minimumZoomScale = 0.1;
         webView.loadRequest(NSURLRequest(URL: NSURL(string: website)!))
         self.view.addSubview(webView)
         displayLoadingAnimation()
     
+    }
+    
+    public override func viewDidAppear(animated: Bool) {
+        self.navigationController?.navigationBar.hidden = true
+    }
+    
+    public override func prefersStatusBarHidden() -> Bool {
+        return true
     }
     
     /* Add an indicator that the webpage is loading */
@@ -90,20 +99,12 @@ public class MSRegisterTabController : UIViewController, UIWebViewDelegate, Netw
     /* Intercept URL requests and display an error screen if there is no Internet connection */
     public func webView(webView: UIWebView, shouldStartLoadWithRequest request: NSURLRequest, navigationType: UIWebViewNavigationType) -> Bool {
         
-        let connection = Reachability(hostName: "www.mta.ca")
-        
         if connection.isReachable() {
-            
             return true
-            
         } else {
-            
             displayNetworkConnectionErrorView()
-            
             return false
-            
         }
-
         
     }
     
@@ -137,6 +138,8 @@ public class MSRegisterTabController : UIViewController, UIWebViewDelegate, Netw
         
         // Center the content (which makes the submit button look better)
         webView.stringByEvaluatingJavaScriptFromString("document.getElementById(\"ctl00_PageContent_FormBlock1_content\").setAttribute(\"align\", \"center\");")
+        
+        // webView.stringByEvaluatingJavaScriptFromString("document.getElementById(\"ctl00_PageContent_Label1\").style.textAlign = 'center';")
         
     }
 
