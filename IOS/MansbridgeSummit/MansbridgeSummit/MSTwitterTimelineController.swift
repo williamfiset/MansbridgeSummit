@@ -55,7 +55,7 @@ class MSTwitterTimelineController: TWTRTimelineViewController, NetworkFailureRec
                 let client = Twitter.sharedInstance().APIClient
                 self.dataSource = TWTRUserTimelineDataSource(screenName: "mtasummit", APIClient: client)
                 //                self.dataSource = TWTRSearchTimelineDataSource(searchQuery: "#MansbridgeSummit OR @mtasummit", APIClient: client)
-                
+
                 print("here! \(self.dataSource)")
             } else {
                 print("error: \(error.localizedDescription)")

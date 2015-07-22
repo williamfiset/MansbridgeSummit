@@ -18,7 +18,7 @@ public class MSRegisterTabController : UIViewController, UIWebViewDelegate, Netw
     let website = "http://www.mta.ca/Community/Campus_life/Campus_events/Mansbridge_Summit/Application/Mansbridge_Summit_application_form/"
     var connection = Reachability(hostName: "www.mta.ca")
     
-    var ignoreNotification : Bool = false
+    var errorPageIsShowing = false
     
     /* Set up the tab */
     override public func viewDidLoad() {
@@ -33,11 +33,19 @@ public class MSRegisterTabController : UIViewController, UIWebViewDelegate, Netw
     }
     
     private func addWebView() -> Void {
+        
+        if networkErrorView != nil && connection.isReachable() {
+           networkErrorView!.removeFromSuperview()
+        }
+        
         webView = UIWebView(frame: CGRect(x: 0, y: 0, width: GC.SCREEN_WIDTH, height: GC.SCREEN_HEIGHT - GC.TAB_BAR_HEIGHT))
         webView.delegate = self;
         webView.scrollView.minimumZoomScale = 0.1;
         webView.loadRequest(NSURLRequest(URL: NSURL(string: website)!))
         self.view.addSubview(webView)
+
+        errorPageIsShowing = false
+        
     }
     
     public override func viewDidAppear(animated: Bool) {
@@ -46,7 +54,8 @@ public class MSRegisterTabController : UIViewController, UIWebViewDelegate, Netw
         
         addWebView()
         displayLoadingAnimation()
-
+        networkStatusDidChange()
+        
     }
     
     public override func prefersStatusBarHidden() -> Bool {
@@ -54,12 +63,16 @@ public class MSRegisterTabController : UIViewController, UIWebViewDelegate, Netw
     }
     
     public func networkStatusDidChange() -> Void {
-    
-        if !ignoreNotification {
-            print( connection.isReachable() )
-        }
+        
+        print( "connected: \(connection.isReachable()) - Error Page Showing: \(errorPageIsShowing)" )
 
-        ignoreNotification = !ignoreNotification
+        if connection.isReachable() {
+            print("reachable")
+            if errorPageIsShowing {
+                addWebView()
+            }
+            
+        }
         
     }
     
@@ -85,11 +98,12 @@ public class MSRegisterTabController : UIViewController, UIWebViewDelegate, Netw
         }
         
         // Load XIB File only if the error page does not exist
-        if networkErrorView == nil {
+        if errorPageIsShowing != true && networkErrorView == nil {
             if let _networkErrorView = UIView.loadFromNibNamed("NetworkErrorXIB") {
                 networkErrorView = _networkErrorView
                 _networkErrorView.frame = self.view.frame
                 self.view.addSubview(_networkErrorView)
+                errorPageIsShowing = true
             }
         }
         
