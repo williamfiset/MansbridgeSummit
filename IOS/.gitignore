@@ -10,7 +10,6 @@ build/
 *.perspectivev3
 !default.perspectivev3
 *.xcworkspace
-*.xcuserstate
 !default.xcworkspace
 xcuserdata
 profile
