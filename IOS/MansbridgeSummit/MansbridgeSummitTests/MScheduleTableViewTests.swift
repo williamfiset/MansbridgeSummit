@@ -27,7 +27,7 @@ class MScheduleTableViewTests: XCTestCase {
     }
     
     // Reactive once we can set a baseline
-    /*
+    
     func testPerformanceExample() {
         // This is an example of a performance test case.
         self.measureBlock() {
@@ -36,5 +36,5 @@ class MScheduleTableViewTests: XCTestCase {
             }
         }
     }
-    */
+    
 }
