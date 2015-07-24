@@ -55,7 +55,7 @@ public class MSQRCodeTabController : UIViewController, AVCaptureMetadataOutputOb
         videoPreviewLayer?.videoGravity = AVLayerVideoGravityResizeAspectFill
         videoPreviewLayer?.frame = view.layer.bounds
         view.layer.addSublayer(videoPreviewLayer!)
-
+        
         // Start video capture.
         captureSession?.startRunning()
         
