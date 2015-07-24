@@ -36,7 +36,7 @@ public class MSRegisterTabController : UIViewController, UIWebViewDelegate, Netw
     
     private func addWebView() -> Void {
         
-        if networkErrorView != nil && connection.isReachable() {
+        if networkErrorView != nil  {
            networkErrorView!.removeFromSuperview()
         }
         
@@ -79,13 +79,9 @@ public class MSRegisterTabController : UIViewController, UIWebViewDelegate, Netw
     func networkStatusDidChange() -> Void {
         
         if Connection.isNetworkAvailable() {
-
             if errorPageIsShowing {
                 addWebView()
             }
-            
-        } else {
-            
         }
             
         networkStatusCalled = false
@@ -151,8 +147,8 @@ public class MSRegisterTabController : UIViewController, UIWebViewDelegate, Netw
     
     /* Intercept URL requests and display an error screen if there is no Internet connection */
     public func webView(webView: UIWebView, shouldStartLoadWithRequest request: NSURLRequest, navigationType: UIWebViewNavigationType) -> Bool {
-       
-        if connection.isReachable() {
+        
+        if Connection.isNetworkAvailable() {
             return true
         } else {
             displayNetworkConnectionErrorView()
