@@ -46,6 +46,7 @@ public struct GC {
         static let garamond_28 = UIFont(name: "AppleGaramond", size: 28.0)
         static let garamond_30 = UIFont(name: "AppleGaramond", size: 30.0)
         static let garamond_32 = UIFont(name: "AppleGaramond", size: 32.0)
+        static let garamond_50 = UIFont(name: "AppleGaramond", size: 50.0)
         
         static let garamond_bold_12 = UIFont(name: "AppleGaramond-Bold", size: 12.0)
         static let garamond_bold_14 = UIFont(name: "AppleGaramond-Bold", size: 14.0)
@@ -58,6 +59,7 @@ public struct GC {
         static let garamond_bold_28 = UIFont(name: "AppleGaramond-Bold", size: 28.0)
         static let garamond_bold_30 = UIFont(name: "AppleGaramond-Bold", size: 30.0)
         static let garamond_bold_32 = UIFont(name: "AppleGaramond-Bold", size: 32.0)
+        static let garamond_bold_50 = UIFont(name: "AppleGaramond-Bold", size: 50.0)
         
         static let myraidpro_12 = UIFont(name: "MyriadPro-Regular", size: 12.0)
         static let myraidpro_14 = UIFont(name: "MyriadPro-Regular", size: 14.0)
@@ -70,6 +72,7 @@ public struct GC {
         static let myraidpro_28 = UIFont(name: "MyriadPro-Regular", size: 28.0)
         static let myraidpro_30 = UIFont(name: "MyriadPro-Regular", size: 30.0)
         static let myraidpro_32 = UIFont(name: "MyriadPro-Regular", size: 32.0)
+        static let myraidpro_50 = UIFont(name: "MyriadPro-Regular", size: 50.0)
         
         static let myraidpro_bold_12 = UIFont(name: "MyriadPro-Bold", size: 12.0)
         static let myraidpro_bold_14 = UIFont(name: "MyriadPro-Bold", size: 14.0)
@@ -82,6 +85,7 @@ public struct GC {
         static let myraidpro_bold_28 = UIFont(name: "MyriadPro-Bold", size: 28.0)
         static let myraidpro_bold_30 = UIFont(name: "MyriadPro-Bold", size: 30.0)
         static let myraidpro_bold_32 = UIFont(name: "MyriadPro-Bold", size: 32.0)
+        static let myraidpro_bold_50 = UIFont(name: "MyriadPro-Bold", size: 50.0)
         
     }
 

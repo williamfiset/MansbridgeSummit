@@ -43,6 +43,14 @@ public class MSScheduleCellView : UITableViewCell {
         }
     }
     
+    var FONT_SIZE : UIFont {
+        if GC.DeviceType.iPhone {
+            return GC.Font.myraidpro_bold_18!
+        } else {
+            return GC.Font.myraidpro_bold_24!
+        }
+    }
+    
     let TIME_LABEL_LEFT_SPACING : CGFloat = 10.0
     
     static var MAX_TIME_LABEL_LEN : CGFloat {
@@ -50,7 +58,12 @@ public class MSScheduleCellView : UITableViewCell {
         var length : CGFloat = 0.0
         
         let tempLabel = UILabel(frame: CGRect(x: 0, y: 0, width: 100, height: 100))
-        tempLabel.font = GC.Font.myraidpro_bold_18
+        
+        if GC.DeviceType.iPhone {
+            tempLabel.font = GC.Font.myraidpro_bold_18!
+        } else {
+            tempLabel.font = GC.Font.myraidpro_bold_24!
+        }
         
         tempLabel.text = ":"
         length += tempLabel.intrinsicContentSize().width
@@ -58,18 +71,12 @@ public class MSScheduleCellView : UITableViewCell {
         var maxNumSize : CGFloat = 0.0
         for n in 0...9 {
             tempLabel.text = "\(n)"
-            if tempLabel.intrinsicContentSize().width * 4 > maxNumSize {
-                maxNumSize = tempLabel.intrinsicContentSize().width * 4
+            if tempLabel.intrinsicContentSize().width > maxNumSize {
+                maxNumSize = tempLabel.intrinsicContentSize().width
             }
         }
-        length += maxNumSize
-        
-        tempLabel.text = "am";
-        let amLen = tempLabel.intrinsicContentSize().width
-        tempLabel.text = "pm"
-        let pmLen = tempLabel.intrinsicContentSize().width
-        
-        length += amLen > pmLen ? amLen : pmLen
+
+        length = maxNumSize * ( CGFloat("9:45am-12:00pm".length))
         
         return length
         
@@ -93,12 +100,12 @@ public class MSScheduleCellView : UITableViewCell {
     }
     
     private func setTimeLabelProperties( eventTime : String ) {
-        
         eventTimeLabel.text = eventTime;
-        eventTimeLabel.frame = CGRect(x: TIME_LABEL_LEFT_SPACING, y: 10.0, width: MSScheduleCellView.MAX_TIME_LABEL_LEN, height: cellHeight)
-        eventTimeLabel.adjustsFontSizeToFitWidth = true
-        eventTimeLabel.font = GC.Font.myraidpro_bold_18
-        
+        eventTimeLabel.frame = CGRect(x: 0, y: 0, width: MSScheduleCellView.MAX_TIME_LABEL_LEN , height: cellHeight)
+        //eventTimeLabel.adjustsFontSizeToFitWidth = true
+        eventTimeLabel.font = FONT_SIZE
+        eventTimeLabel.backgroundColor = UIColor.blueColor()
+        eventTimeLabel.textAlignment = .Center
     }
 
     private func setCellDelimiterProperties() {
@@ -117,15 +124,16 @@ public class MSScheduleCellView : UITableViewCell {
         
         eventNameLabel.frame = CGRect(
             x: xPos,
-            y: 10,
-            width: cellWidth - xPos,
+            y: 0,
+            width: GC.SCREEN_WIDTH - xPos,
             height: cellHeight
         )
         
         eventNameLabel.text = eventDescription;
-        eventNameLabel.font = GC.Font.garamond_18
+        eventNameLabel.font = FONT_SIZE
         eventNameLabel.adjustsFontSizeToFitWidth = true
-
+        eventNameLabel.backgroundColor = UIColor.greenColor()
+        eventNameLabel.textAlignment = .Center
     }
 
     // Not planning on using this init method
