@@ -37,7 +37,7 @@ class MansbridgeSummitUITests: XCTestCase {
         tabBarsQuery.buttons["Register"].tap()
         tabBarsQuery.buttons["Twitter"].tap()
         tabBarsQuery.buttons["Schedule"].tap()
-        tabBarsQuery.buttons["About"].tap()
+        tabBarsQuery.buttons["QR Codes"].tap()
         
     }
     

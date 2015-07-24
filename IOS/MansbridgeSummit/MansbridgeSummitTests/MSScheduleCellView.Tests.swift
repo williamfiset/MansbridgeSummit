@@ -35,7 +35,7 @@ class MSScheduleCellViewTests : XCTestCase {
         
     }
     
-    func testCellConsistancy() {
+    func testCellConsistency() {
         
         // let tableController = MSScheduleTableController(style: .Plain)
         // Loop through json file creating cells
