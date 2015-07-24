@@ -114,6 +114,12 @@ extension Array {
     }
 }
 
+extension Boolean : BooleanType {
+    public var boolValue : Bool {
+        return self != 0
+    }
+}
+
 extension UIView {
     
     // Loads a NIB/XIB file

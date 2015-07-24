@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+import SystemConfiguration
 
 public class MSRegisterTabController : UIViewController, UIWebViewDelegate, NetworkFailureRecovery {
     
@@ -19,6 +20,7 @@ public class MSRegisterTabController : UIViewController, UIWebViewDelegate, Netw
     var connection = Reachability(hostName: "www.mta.ca")
     
     var errorPageIsShowing = false
+    var networkStatusCalled = false
     
     /* Set up the tab */
     override public func viewDidLoad() {
@@ -27,7 +29,7 @@ public class MSRegisterTabController : UIViewController, UIWebViewDelegate, Netw
         self.navigationController?.navigationBar.hidden = true
         
         // subscribe to knowing the network status
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: "networkStatusDidChange", name: kReachabilityChangedNotification, object: nil)
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: "_networkStatusDidChange", name: kReachabilityChangedNotification, object: nil)
         connection.startNotifier()
 
     }
@@ -54,7 +56,6 @@ public class MSRegisterTabController : UIViewController, UIWebViewDelegate, Netw
         
         addWebView()
         displayLoadingAnimation()
-        networkStatusDidChange()
         
     }
     
@@ -62,18 +63,33 @@ public class MSRegisterTabController : UIViewController, UIWebViewDelegate, Netw
         return true
     }
     
-    public func networkStatusDidChange() -> Void {
+    public func _networkStatusDidChange() -> Void {
         
-        print( "connected: \(connection.isReachable()) - Error Page Showing: \(errorPageIsShowing)" )
+        if !networkStatusCalled {
+            
+            networkStatusCalled = true
+        
+            // Creates a timer which will call networkStatusDidChange in 1/2s.
+            // This is done to avoid a false network status connection
+            NSTimer.scheduledTimerWithTimeInterval(0.5, target: self, selector: Selector("networkStatusDidChange"), userInfo: nil, repeats: false)
+            
+        }
+    }
+    
+    func networkStatusDidChange() -> Void {
+        
+        if Connection.isNetworkAvailable() {
 
-        if connection.isReachable() {
-            print("reachable")
             if errorPageIsShowing {
                 addWebView()
             }
             
+        } else {
+            
         }
-        
+            
+        networkStatusCalled = false
+
     }
     
     /* Add an indicator that the webpage is loading */
