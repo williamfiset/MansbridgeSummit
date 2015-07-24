@@ -148,6 +148,15 @@
 		F74C1A221B5967C500F09002 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F74C1A211B5967C500F09002 /* Accounts.framework */; };
 		F74C1A241B5967CA00F09002 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F74C1A231B5967CA00F09002 /* Social.framework */; };
 		F74C1A261B5967CF00F09002 /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F74C1A251B5967CF00F09002 /* Twitter.framework */; };
+		F76F3BD51B61E0D90068C41C /* QR Code-25.png in Resources */ = {isa = PBXBuildFile; fileRef = F76F3BD21B61E0D90068C41C /* QR Code-25.png */; };
+		F76F3BD61B61E0D90068C41C /* QR Code-25.png in Resources */ = {isa = PBXBuildFile; fileRef = F76F3BD21B61E0D90068C41C /* QR Code-25.png */; };
+		F76F3BD71B61E0D90068C41C /* QR Code-25.png in Resources */ = {isa = PBXBuildFile; fileRef = F76F3BD21B61E0D90068C41C /* QR Code-25.png */; };
+		F76F3BD81B61E0D90068C41C /* QR Code-50.png in Resources */ = {isa = PBXBuildFile; fileRef = F76F3BD31B61E0D90068C41C /* QR Code-50.png */; };
+		F76F3BD91B61E0D90068C41C /* QR Code-50.png in Resources */ = {isa = PBXBuildFile; fileRef = F76F3BD31B61E0D90068C41C /* QR Code-50.png */; };
+		F76F3BDA1B61E0D90068C41C /* QR Code-50.png in Resources */ = {isa = PBXBuildFile; fileRef = F76F3BD31B61E0D90068C41C /* QR Code-50.png */; };
+		F76F3BDB1B61E0D90068C41C /* QR Code-75.png in Resources */ = {isa = PBXBuildFile; fileRef = F76F3BD41B61E0D90068C41C /* QR Code-75.png */; };
+		F76F3BDC1B61E0D90068C41C /* QR Code-75.png in Resources */ = {isa = PBXBuildFile; fileRef = F76F3BD41B61E0D90068C41C /* QR Code-75.png */; };
+		F76F3BDD1B61E0D90068C41C /* QR Code-75.png in Resources */ = {isa = PBXBuildFile; fileRef = F76F3BD41B61E0D90068C41C /* QR Code-75.png */; };
 		F79184C61B5A7DF300EFF287 /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F74C1A251B5967CF00F09002 /* Twitter.framework */; };
 		F79184C71B5A7DF300EFF287 /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F74C1A251B5967CF00F09002 /* Twitter.framework */; };
 		F79184C81B5A7DF600EFF287 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F74C1A231B5967CA00F09002 /* Social.framework */; };
@@ -169,9 +178,6 @@
 		F7CF77BD1B5AACAF00013CF0 /* MSTwitterTimelineController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7CF77BC1B5AACAF00013CF0 /* MSTwitterTimelineController.swift */; };
 		F7CF77BE1B5AAD5E00013CF0 /* MSTwitterTimelineController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7CF77BC1B5AACAF00013CF0 /* MSTwitterTimelineController.swift */; };
 		F7CF77BF1B5AAD5F00013CF0 /* MSTwitterTimelineController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7CF77BC1B5AACAF00013CF0 /* MSTwitterTimelineController.swift */; };
-		F7CF77D41B5B2F5900013CF0 /* About-25.png in Resources */ = {isa = PBXBuildFile; fileRef = F7CF77C51B5B2F5900013CF0 /* About-25.png */; };
-		F7CF77D51B5B2F5900013CF0 /* About-50.png in Resources */ = {isa = PBXBuildFile; fileRef = F7CF77C61B5B2F5900013CF0 /* About-50.png */; };
-		F7CF77D61B5B2F5900013CF0 /* About-75.png in Resources */ = {isa = PBXBuildFile; fileRef = F7CF77C71B5B2F5900013CF0 /* About-75.png */; };
 		F7CF77D71B5B2F5900013CF0 /* Calendar-25.png in Resources */ = {isa = PBXBuildFile; fileRef = F7CF77C81B5B2F5900013CF0 /* Calendar-25.png */; };
 		F7CF77D81B5B2F5900013CF0 /* Calendar-50.png in Resources */ = {isa = PBXBuildFile; fileRef = F7CF77C91B5B2F5900013CF0 /* Calendar-50.png */; };
 		F7CF77D91B5B2F5900013CF0 /* Calendar-75.png in Resources */ = {isa = PBXBuildFile; fileRef = F7CF77CA1B5B2F5900013CF0 /* Calendar-75.png */; };
@@ -293,14 +299,14 @@
 		F74C1A211B5967C500F09002 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 		F74C1A231B5967CA00F09002 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		F74C1A251B5967CF00F09002 /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = System/Library/Frameworks/Twitter.framework; sourceTree = SDKROOT; };
+		F76F3BD21B61E0D90068C41C /* QR Code-25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "QR Code-25.png"; sourceTree = "<group>"; };
+		F76F3BD31B61E0D90068C41C /* QR Code-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "QR Code-50.png"; sourceTree = "<group>"; };
+		F76F3BD41B61E0D90068C41C /* QR Code-75.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "QR Code-75.png"; sourceTree = "<group>"; };
 		F79184F71B5A839600EFF287 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
 		F79184F81B5A839600EFF287 /* TwitterKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterKit.framework; sourceTree = "<group>"; };
 		F79184F91B5A839600EFF287 /* TwitterKitResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = TwitterKitResources.bundle; path = TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle; sourceTree = "<group>"; };
 		F79184FA1B5A839600EFF287 /* TwitterCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterCore.framework; sourceTree = "<group>"; };
 		F7CF77BC1B5AACAF00013CF0 /* MSTwitterTimelineController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSTwitterTimelineController.swift; sourceTree = "<group>"; };
-		F7CF77C51B5B2F5900013CF0 /* About-25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "About-25.png"; sourceTree = "<group>"; };
-		F7CF77C61B5B2F5900013CF0 /* About-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "About-50.png"; sourceTree = "<group>"; };
-		F7CF77C71B5B2F5900013CF0 /* About-75.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "About-75.png"; sourceTree = "<group>"; };
 		F7CF77C81B5B2F5900013CF0 /* Calendar-25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Calendar-25.png"; sourceTree = "<group>"; };
 		F7CF77C91B5B2F5900013CF0 /* Calendar-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Calendar-50.png"; sourceTree = "<group>"; };
 		F7CF77CA1B5B2F5900013CF0 /* Calendar-75.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Calendar-75.png"; sourceTree = "<group>"; };
@@ -661,9 +667,9 @@
 		F7CF77C41B5B2F2400013CF0 /* Tab Icons */ = {
 			isa = PBXGroup;
 			children = (
-				F7CF77C51B5B2F5900013CF0 /* About-25.png */,
-				F7CF77C61B5B2F5900013CF0 /* About-50.png */,
-				F7CF77C71B5B2F5900013CF0 /* About-75.png */,
+				F76F3BD21B61E0D90068C41C /* QR Code-25.png */,
+				F76F3BD31B61E0D90068C41C /* QR Code-50.png */,
+				F76F3BD41B61E0D90068C41C /* QR Code-75.png */,
 				F7CF77C81B5B2F5900013CF0 /* Calendar-25.png */,
 				F7CF77C91B5B2F5900013CF0 /* Calendar-50.png */,
 				F7CF77CA1B5B2F5900013CF0 /* Calendar-75.png */,
@@ -749,7 +755,7 @@
 				TargetAttributes = {
 					C6CFD04F1B45EDA90067A6AD = {
 						CreatedOnToolsVersion = 7.0;
-						DevelopmentTeam = 7KC276AP3U;
+						DevelopmentTeam = V4J8E6789D;
 						SystemCapabilities = {
 							com.apple.Keychain = {
 								enabled = 0;
@@ -800,19 +806,20 @@
 				C6CFD05D1B45EDA90067A6AD /* TabBarIcons.xcassets in Resources */,
 				C6E163331B481C5000942749 /* test_schedule.json in Resources */,
 				F7CF77DA1B5B2F5900013CF0 /* Home-25.png in Resources */,
+				F76F3BDB1B61E0D90068C41C /* QR Code-75.png in Resources */,
 				F7D1B8661B5C8ED900D34341 /* checkmark.png in Resources */,
 				C6D9E9861B4774CB00249DA4 /* AppleGaramond.ttf in Resources */,
 				F7CF77DE1B5B2F5900013CF0 /* Pencil-50.png in Resources */,
 				C6D9E9901B4778A400249DA4 /* MyriadPro-Regular.OTF in Resources */,
-				F7CF77D51B5B2F5900013CF0 /* About-50.png in Resources */,
 				C68A13881B5BCE7B003CE324 /* NetworkErrorXIB.xib in Resources */,
 				C64FD5C71B59A61A00AE8EA6 /* test_schedule2.json in Resources */,
-				F7CF77D41B5B2F5900013CF0 /* About-25.png in Resources */,
+				F76F3BD81B61E0D90068C41C /* QR Code-50.png in Resources */,
 				F7CF77DD1B5B2F5900013CF0 /* Pencil-25.png in Resources */,
 				C6CFD05B1B45EDA90067A6AD /* Main.storyboard in Resources */,
 				C6D9E98D1B4778A400249DA4 /* MyriadPro-Bold.OTF in Resources */,
 				F7CF77E01B5B2F5900013CF0 /* Twitter-25.png in Resources */,
 				F7CF77E21B5B2F5900013CF0 /* Twitter-75.png in Resources */,
+				F76F3BD51B61E0D90068C41C /* QR Code-25.png in Resources */,
 				F7CF77D91B5B2F5900013CF0 /* Calendar-75.png in Resources */,
 				F79185011B5A839600EFF287 /* TwitterKitResources.bundle in Resources */,
 				C68956361B52AFBB006D188F /* Media.xcassets in Resources */,
@@ -820,7 +827,6 @@
 				C6D9E9771B4774CB00249DA4 /* AppleGaramond-Bold.ttf in Resources */,
 				F7CF77D71B5B2F5900013CF0 /* Calendar-25.png in Resources */,
 				F7CF77D81B5B2F5900013CF0 /* Calendar-50.png in Resources */,
-				F7CF77D61B5B2F5900013CF0 /* About-75.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -829,9 +835,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				C67926AE1B4DC94100EA86B4 /* LaunchScreen.storyboard in Resources */,
+				F76F3BD91B61E0D90068C41C /* QR Code-50.png in Resources */,
 				C67926AF1B4DC94100EA86B4 /* TabBarIcons.xcassets in Resources */,
 				C6D9E9611B474F1000249DA4 /* Main.storyboard in Resources */,
 				F7D1B8611B5C8E1600D34341 /* NetworkErrorXIB.xib in Resources */,
+				F76F3BD61B61E0D90068C41C /* QR Code-25.png in Resources */,
 				C69808EB1B5D05D900164BC6 /* YTPlayer.html in Resources */,
 				F7D1B8631B5C8E1A00D34341 /* RegistrationSuccessXIB.xib in Resources */,
 				C6D9E9781B4774CB00249DA4 /* AppleGaramond-Bold.ttf in Resources */,
@@ -840,6 +848,7 @@
 				C6D9E98E1B4778A400249DA4 /* MyriadPro-Bold.OTF in Resources */,
 				C6D9E9871B4774CB00249DA4 /* AppleGaramond.ttf in Resources */,
 				F79185021B5A839600EFF287 /* TwitterKitResources.bundle in Resources */,
+				F76F3BDC1B61E0D90068C41C /* QR Code-75.png in Resources */,
 				C68956371B52AFBB006D188F /* Media.xcassets in Resources */,
 				C6D9E9911B4778A400249DA4 /* MyriadPro-Regular.OTF in Resources */,
 			);
@@ -850,9 +859,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				C67926B21B4DC94B00EA86B4 /* LaunchScreen.storyboard in Resources */,
+				F76F3BDA1B61E0D90068C41C /* QR Code-50.png in Resources */,
 				C67926B31B4DC94B00EA86B4 /* TabBarIcons.xcassets in Resources */,
 				C67926AB1B4DC91B00EA86B4 /* test_schedule.json in Resources */,
 				F7D1B8621B5C8E1600D34341 /* NetworkErrorXIB.xib in Resources */,
+				F76F3BD71B61E0D90068C41C /* QR Code-25.png in Resources */,
 				C69808EC1B5D05D900164BC6 /* YTPlayer.html in Resources */,
 				F7D1B8641B5C8E1A00D34341 /* RegistrationSuccessXIB.xib in Resources */,
 				C6D9E9621B474F1100249DA4 /* Main.storyboard in Resources */,
@@ -861,6 +872,7 @@
 				C6D9E98F1B4778A400249DA4 /* MyriadPro-Bold.OTF in Resources */,
 				C6D9E9881B4774CB00249DA4 /* AppleGaramond.ttf in Resources */,
 				F79185031B5A839600EFF287 /* TwitterKitResources.bundle in Resources */,
+				F76F3BDD1B61E0D90068C41C /* QR Code-75.png in Resources */,
 				C68956381B52AFBB006D188F /* Media.xcassets in Resources */,
 				C6D9E9921B4778A400249DA4 /* MyriadPro-Regular.OTF in Resources */,
 			);
@@ -1142,6 +1154,8 @@
 				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				ENABLE_BITCODE = NO;
 				"HEADER_SEARCH_PATHS[arch=*]" = "$(SRCROOT)/**";
 				INFOPLIST_FILE = MansbridgeSummit/Info.plist;
@@ -1149,6 +1163,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mta.MansbridgeSummit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "MansbridgeSummit/MansbridgeSummit-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				"USER_HEADER_SEARCH_PATHS[arch=*]" = "$(SRCROOT)/**";
@@ -1161,6 +1176,8 @@
 				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				ENABLE_BITCODE = NO;
 				"HEADER_SEARCH_PATHS[arch=*]" = "$(SRCROOT)/**";
 				INFOPLIST_FILE = MansbridgeSummit/Info.plist;
@@ -1168,6 +1185,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mta.MansbridgeSummit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "MansbridgeSummit/MansbridgeSummit-Bridging-Header.h";
 				"USER_HEADER_SEARCH_PATHS[arch=*]" = "$(SRCROOT)/**";
 			};
