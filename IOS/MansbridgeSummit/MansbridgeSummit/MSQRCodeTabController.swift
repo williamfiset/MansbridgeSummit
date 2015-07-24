@@ -11,7 +11,7 @@ import UIKit
 
 import AVFoundation
 
-public class MSAboutTabController : UIViewController, AVCaptureMetadataOutputObjectsDelegate {
+public class MSQRCodeTabController : UIViewController, AVCaptureMetadataOutputObjectsDelegate {
     
     var messageLabel : UILabel?
     
@@ -19,7 +19,11 @@ public class MSAboutTabController : UIViewController, AVCaptureMetadataOutputObj
     var videoPreviewLayer:AVCaptureVideoPreviewLayer?
     var qrCodeFrameView:UIView?
     
+    
     public override func viewDidLoad() {
+        
+        // Hide status bar, gives more room for the camera
+        self.navigationController?.navigationBar.hidden = true
         
         // Get an instance of the AVCaptureDevice class to initialize a device object and provide the video
         // as the media type parameter.
@@ -51,7 +55,7 @@ public class MSAboutTabController : UIViewController, AVCaptureMetadataOutputObj
         videoPreviewLayer?.videoGravity = AVLayerVideoGravityResizeAspectFill
         videoPreviewLayer?.frame = view.layer.bounds
         view.layer.addSublayer(videoPreviewLayer!)
-        
+
         // Start video capture.
         captureSession?.startRunning()
         
@@ -66,7 +70,9 @@ public class MSAboutTabController : UIViewController, AVCaptureMetadataOutputObj
         qrCodeFrameView?.layer.borderWidth = 2
         view.addSubview(qrCodeFrameView!)
         view.bringSubviewToFront(qrCodeFrameView!)
+        
     }
+
     
     public func captureOutput(captureOutput: AVCaptureOutput!, didOutputMetadataObjects metadataObjects: [AnyObject]!, fromConnection connection: AVCaptureConnection!) {
         

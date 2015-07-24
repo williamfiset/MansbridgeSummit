@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8164.2" systemVersion="15A178w" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="HsC-Ow-kxc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8164.2" systemVersion="15A226f" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="HsC-Ow-kxc">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8135.1"/>
@@ -94,10 +94,10 @@
             </objects>
             <point key="canvasLocation" x="1868" y="564"/>
         </scene>
-        <!--About-->
+        <!--QR Code-->
         <scene sceneID="nL2-M5-bpK">
             <objects>
-                <viewController id="oFB-8Q-MYl" userLabel="About" customClass="MSAboutTabController" customModule="MansbridgeSummit" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="oFB-8Q-MYl" userLabel="QR Code" customClass="MSQRCodeTabController" customModule="MansbridgeSummit" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="QHA-LA-TBR"/>
                         <viewControllerLayoutGuide type="bottom" id="y0X-Uo-NYo"/>
