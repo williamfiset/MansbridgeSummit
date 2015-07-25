@@ -149,6 +149,8 @@
 		F74C1A221B5967C500F09002 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F74C1A211B5967C500F09002 /* Accounts.framework */; };
 		F74C1A241B5967CA00F09002 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F74C1A231B5967CA00F09002 /* Social.framework */; };
 		F74C1A261B5967CF00F09002 /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F74C1A251B5967CF00F09002 /* Twitter.framework */; };
+		F7581FB61B63218900406498 /* PageContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7581FB41B63218900406498 /* PageContentViewController.swift */; };
+		F7581FB71B63218900406498 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7581FB51B63218900406498 /* ViewController.swift */; };
 		F76F3BD51B61E0D90068C41C /* QR Code-25.png in Resources */ = {isa = PBXBuildFile; fileRef = F76F3BD21B61E0D90068C41C /* QR Code-25.png */; };
 		F76F3BD61B61E0D90068C41C /* QR Code-25.png in Resources */ = {isa = PBXBuildFile; fileRef = F76F3BD21B61E0D90068C41C /* QR Code-25.png */; };
 		F76F3BD71B61E0D90068C41C /* QR Code-25.png in Resources */ = {isa = PBXBuildFile; fileRef = F76F3BD21B61E0D90068C41C /* QR Code-25.png */; };
@@ -301,6 +303,8 @@
 		F74C1A211B5967C500F09002 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 		F74C1A231B5967CA00F09002 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		F74C1A251B5967CF00F09002 /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = System/Library/Frameworks/Twitter.framework; sourceTree = SDKROOT; };
+		F7581FB41B63218900406498 /* PageContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageContentViewController.swift; sourceTree = "<group>"; };
+		F7581FB51B63218900406498 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F76F3BD21B61E0D90068C41C /* QR Code-25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "QR Code-25.png"; sourceTree = "<group>"; };
 		F76F3BD31B61E0D90068C41C /* QR Code-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "QR Code-50.png"; sourceTree = "<group>"; };
 		F76F3BD41B61E0D90068C41C /* QR Code-75.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "QR Code-75.png"; sourceTree = "<group>"; };
@@ -440,6 +444,8 @@
 		C68956391B52B2EF006D188F /* FirstTab */ = {
 			isa = PBXGroup;
 			children = (
+				F7581FB41B63218900406498 /* PageContentViewController.swift */,
+				F7581FB51B63218900406498 /* ViewController.swift */,
 				C69E4A5F1B4609D700BD981C /* MSPrimaryTabController.swift */,
 				C689563A1B52B399006D188F /* MSScrollView.swift */,
 				C69808E51B5D05D900164BC6 /* YouTubePlayer.swift */,
@@ -934,7 +940,9 @@
 				C60B695B1B61C6F200190140 /* Connection.m in Sources */,
 				C689563B1B52B399006D188F /* MSScrollView.swift in Sources */,
 				C69E4A641B460A3F00BD981C /* MSScheduleTableController.swift in Sources */,
+				F7581FB71B63218900406498 /* ViewController.swift in Sources */,
 				F74C1A191B5967B000F09002 /* STTwitterAPI.m in Sources */,
+				F7581FB61B63218900406498 /* PageContentViewController.swift in Sources */,
 				C6E1632E1B481AE600942749 /* MSScheduleModels.swift in Sources */,
 				C6C00A6B1B45F3B300709992 /* MSTabBarController.swift in Sources */,
 				C6E163391B48296600942749 /* SwiftyJSON.swift in Sources */,

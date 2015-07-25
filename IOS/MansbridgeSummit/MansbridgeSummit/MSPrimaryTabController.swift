@@ -10,11 +10,11 @@
 import Foundation
 import UIKit
 
-public class MSPrimaryTabController : UIViewController, UIScrollViewDelegate {
+public class MSPrimaryTabController : UIViewController /*, UIPageViewControllerDataSource, UIPageViewControllerDelegate*/ /*, UIScrollViewDelegate*/ {
     
     var scrollView : MSScrollView!
     
-   var videoPlayer: YouTubePlayerView!
+//   var videoPlayer: YouTubePlayerView!
     
 //    public override func viewWillAppear(animated: Bool) {
 //        
@@ -34,12 +34,12 @@ public class MSPrimaryTabController : UIViewController, UIScrollViewDelegate {
 
     }
     
-    public func scrollViewWillBeginDragging(scrollView: UIScrollView) {
-        
-    }
-    
-    public func scrollViewDidScroll(scrollView: UIScrollView) {
-        print("Scrolling")
-    }
+//    public func scrollViewWillBeginDragging(scrollView: UIScrollView) {
+//        
+//    }
+//    
+//    public func scrollViewDidScroll(scrollView: UIScrollView) {
+//        print("Scrolling")
+//    }
     
 }

@@ -117,17 +117,18 @@
         <!--Primary-->
         <scene sceneID="AZM-bP-8Kf">
             <objects>
-                <viewController id="TLA-2H-73K" userLabel="Primary" customClass="MSPrimaryTabController" customModule="MansbridgeSummit" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="TLA-2H-73K" userLabel="Primary" customClass="ViewController" customModule="MansbridgeSummit" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="koN-hR-aJ6"/>
                         <viewControllerLayoutGuide type="bottom" id="1La-HY-KyD"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="axv-S3-bAX">
-                        <rect key="frame" x="0.0" y="0.0" width="684" height="684"/>
+                        <rect key="frame" x="0.0" y="0.0" width="684" height="635"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <extendedEdge key="edgesForExtendedLayout" top="YES"/>
                     <tabBarItem key="tabBarItem" title="Home" image="tabBarHomeIcon" id="Qzy-kM-0kx"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="684" height="684"/>
