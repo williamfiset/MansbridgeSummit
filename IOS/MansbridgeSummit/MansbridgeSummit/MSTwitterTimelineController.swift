@@ -20,8 +20,12 @@ class MSTwitterTimelineController: TWTRTimelineViewController, NetworkFailureRec
         
         super.viewDidLoad()
         
+        let insets = UIEdgeInsets(top: 44, left: 0, bottom: 0, right: 0)
+        self.tableView.contentInset = insets
+        self.tableView.scrollIndicatorInsets = insets
+        
         // Create the navigation bar
-        let navigationBar = UINavigationBar(frame: CGRectMake(0, 20, self.view.frame.size.width, 44)) // Offset by 20 pixels vertically to take the status bar into account
+        let navigationBar = UINavigationBar(frame: CGRectMake(0, -44, self.view.frame.size.width, 44))
         navigationBar.backgroundColor = UIColor.whiteColor()
         navigationBar.delegate = self;
         

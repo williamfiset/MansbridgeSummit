@@ -45,9 +45,6 @@
 		C69808EA1B5D05D900164BC6 /* YTPlayer.html in Resources */ = {isa = PBXBuildFile; fileRef = C69808E61B5D05D900164BC6 /* YTPlayer.html */; };
 		C69808EB1B5D05D900164BC6 /* YTPlayer.html in Resources */ = {isa = PBXBuildFile; fileRef = C69808E61B5D05D900164BC6 /* YTPlayer.html */; };
 		C69808EC1B5D05D900164BC6 /* YTPlayer.html in Resources */ = {isa = PBXBuildFile; fileRef = C69808E61B5D05D900164BC6 /* YTPlayer.html */; };
-		C69E4A541B46088800BD981C /* MSTwitterTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69E4A531B46088800BD981C /* MSTwitterTabController.swift */; };
-		C69E4A551B46088800BD981C /* MSTwitterTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69E4A531B46088800BD981C /* MSTwitterTabController.swift */; };
-		C69E4A561B46088800BD981C /* MSTwitterTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69E4A531B46088800BD981C /* MSTwitterTabController.swift */; };
 		C69E4A581B4608C500BD981C /* MSRegisterTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69E4A571B4608C500BD981C /* MSRegisterTabController.swift */; };
 		C69E4A591B4608C500BD981C /* MSRegisterTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69E4A571B4608C500BD981C /* MSRegisterTabController.swift */; };
 		C69E4A5A1B4608C500BD981C /* MSRegisterTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69E4A571B4608C500BD981C /* MSRegisterTabController.swift */; };
@@ -242,7 +239,6 @@
 		C68A13891B5BF1A2003CE324 /* MSProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSProtocols.swift; sourceTree = "<group>"; };
 		C69808E51B5D05D900164BC6 /* YouTubePlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YouTubePlayer.swift; sourceTree = "<group>"; };
 		C69808E61B5D05D900164BC6 /* YTPlayer.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = YTPlayer.html; sourceTree = "<group>"; };
-		C69E4A531B46088800BD981C /* MSTwitterTabController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSTwitterTabController.swift; sourceTree = "<group>"; };
 		C69E4A571B4608C500BD981C /* MSRegisterTabController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSRegisterTabController.swift; sourceTree = "<group>"; };
 		C69E4A5B1B46090E00BD981C /* MSQRCodeTabController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSQRCodeTabController.swift; sourceTree = "<group>"; };
 		C69E4A631B460A3F00BD981C /* MSScheduleTableController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSScheduleTableController.swift; sourceTree = "<group>"; };
@@ -387,7 +383,6 @@
 			isa = PBXGroup;
 			children = (
 				F7CF77BC1B5AACAF00013CF0 /* MSTwitterTimelineController.swift */,
-				C69E4A531B46088800BD981C /* MSTwitterTabController.swift */,
 				C65BE8E21B631FE4008C064D /* TwitterController.h */,
 				C65BE8E31B631FE4008C064D /* TwitterController.m */,
 			);
@@ -923,7 +918,6 @@
 				F74C1A1E1B5967B000F09002 /* BAVPlistNode.m in Sources */,
 				C6CFD0541B45EDA90067A6AD /* AppDelegate.swift in Sources */,
 				C69808E71B5D05D900164BC6 /* YouTubePlayer.swift in Sources */,
-				C69E4A541B46088800BD981C /* MSTwitterTabController.swift in Sources */,
 				F74C1A1B1B5967B000F09002 /* STTwitterHTML.m in Sources */,
 				C69E4A721B4620AC00BD981C /* MSScheduleTableView.swift in Sources */,
 				C65BE8E41B631FE4008C064D /* TwitterController.m in Sources */,
@@ -980,7 +974,6 @@
 				C664DE741B57254800CFB209 /* Reachability.m in Sources */,
 				C6E1633D1B482A7200942749 /* MSScheduleJsonFileTests.swift in Sources */,
 				C6D9E9691B475E2D00249DA4 /* Constants.swift in Sources */,
-				C69E4A551B46088800BD981C /* MSTwitterTabController.swift in Sources */,
 				C69E4A731B4620AC00BD981C /* MSScheduleTableView.swift in Sources */,
 				C69E4A6F1B4612A600BD981C /* MSScheduleCellView.swift in Sources */,
 				C6D9E9651B475BCD00249DA4 /* Extensions.swift in Sources */,
@@ -1022,7 +1015,6 @@
 				C6A0D97B1B59FCF000C8172D /* STHTTPRequest.m in Sources */,
 				C6D9E96A1B475E2D00249DA4 /* Constants.swift in Sources */,
 				C61C00661B4C7F1600AB4D6C /* MSEventPageController.swift in Sources */,
-				C69E4A561B46088800BD981C /* MSTwitterTabController.swift in Sources */,
 				C69E4A741B4620AC00BD981C /* MSScheduleTableView.swift in Sources */,
 				C69E4A701B4612A600BD981C /* MSScheduleCellView.swift in Sources */,
 				C6D9E9661B475BCD00249DA4 /* Extensions.swift in Sources */,

@@ -24,11 +24,8 @@ public class MSRegisterTabController : UIViewController, UIWebViewDelegate, Netw
     
     /* Set up the tab */
     override public func viewDidLoad() {
-
-        // Hide status bar
-        self.navigationController?.navigationBar.hidden = true
         
-        // subscribe to knowing the network status
+        // Subscribe to knowing the network status
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "_networkStatusDidChange", name: kReachabilityChangedNotification, object: nil)
         connection.startNotifier()
 

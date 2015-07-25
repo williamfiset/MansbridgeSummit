@@ -9,6 +9,7 @@
         <scene sceneID="a4M-O1-Hdk">
             <objects>
                 <navigationController navigationBarHidden="YES" id="HsC-Ow-kxc" sceneMemberID="viewController">
+                    <nil key="simulatedStatusBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="sLT-Hk-hqC">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -89,6 +90,7 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="cKn-rg-gS1"/>
+                    <nil key="simulatedStatusBarMetrics"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xsI-HE-soM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -167,6 +169,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="tw5-r1-TfF" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Twitter" image="tabBarTwitterIcon" id="dpJ-kR-3PM"/>
                     <toolbarItems/>
+                    <nil key="simulatedStatusBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="9zC-cv-De3">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
