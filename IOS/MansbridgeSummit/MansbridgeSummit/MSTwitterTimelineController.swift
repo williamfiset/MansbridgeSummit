@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CloudKit
 import TwitterKit
 
 class MSTwitterTimelineController: TWTRTimelineViewController, NetworkFailureRecovery /*, TWTRTweetViewDelegate */{
@@ -50,20 +51,51 @@ class MSTwitterTimelineController: TWTRTimelineViewController, NetworkFailureRec
     
     func loadTwitterFeed() -> Void {
         
+        getQueryStringAndExecFunc(twitterStuff)
+       
+    }
+    
+    func twitterStuff ( queryString : String ) {
+
         Twitter.sharedInstance().logInGuestWithCompletion { session, error in
             if let _ = session {
                 let client = Twitter.sharedInstance().APIClient
-                self.dataSource = TWTRUserTimelineDataSource(screenName: "mtasummit", APIClient: client)
-                //                self.dataSource = TWTRSearchTimelineDataSource(searchQuery: "#MansbridgeSummit OR @mtasummit", APIClient: client)
-
+                self.dataSource = TWTRUserTimelineDataSource(screenName: queryString, APIClient: client)
+                
                 print("here! \(self.dataSource)")
             } else {
                 print("error: \(error.localizedDescription)")
             }
         }
-        
-       
     }
+    
+    func getQueryStringAndExecFunc ( closure : (query : String) -> Void ) -> Void {
+        
+        let queryPredicate = NSPredicate(value: true)
+        
+        let publicDB = CKContainer.defaultContainer().publicCloudDatabase
+        let query = CKQuery(recordType: "TwitterRecord", predicate: queryPredicate)
+        
+        publicDB.performQuery(query, inZoneWithID: nil, completionHandler: {
+            records, err in
+            
+            if err == nil && records != nil {
+                
+                let record = (records as [CKRecord]!)[0]
+                let twitterQuery = record["twitterQueryString"]!
+                
+                dispatch_async(dispatch_get_main_queue()) {
+                    closure(query: twitterQuery as! String)
+                }
+                
+            } else {
+                print(err!.description)
+                closure(query: "#MansbridgeSummit OR from:mtasummit")
+            }
+            
+        })
+    }
+    
     
     func displayNetworkConnectionErrorView() -> Void {
         
