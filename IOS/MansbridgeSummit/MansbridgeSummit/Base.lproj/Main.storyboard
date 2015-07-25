@@ -8,7 +8,7 @@
         <!--Navigation Controller-->
         <scene sceneID="a4M-O1-Hdk">
             <objects>
-                <navigationController id="HsC-Ow-kxc" sceneMemberID="viewController">
+                <navigationController navigationBarHidden="YES" id="HsC-Ow-kxc" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="sLT-Hk-hqC">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -31,7 +31,7 @@
                         <viewControllerLayoutGuide type="bottom" id="7L6-Xv-H6T"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="qPk-5m-GTf">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -47,7 +47,7 @@
             <objects>
                 <tableViewController title="Mansbridge Summit Schedule" id="M2Z-vZ-2uL" userLabel="Schedule" customClass="MSScheduleTableController" customModule="MansbridgeSummit" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="ijc-jX-Yig" customClass="MSScheduleTableView" customModule="MansbridgeSummit" customModuleProvider="target">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -67,7 +67,7 @@
             <objects>
                 <tableViewController id="OPW-JE-odA" customClass="MSTwitterTimelineController" customModule="MansbridgeSummit" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="9Uj-FK-XF1">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -103,7 +103,7 @@
                         <viewControllerLayoutGuide type="bottom" id="y0X-Uo-NYo"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="3jY-tj-tZy">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -142,8 +142,8 @@
             <objects>
                 <tabBarController id="LdM-6H-Yiw" customClass="MSTabBarController" customModule="MansbridgeSummit" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="huS-EU-Sjl"/>
-                    <nil key="simulatedBottomBarMetrics"/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" id="kNs-mW-0r6" customClass="MSTabBar" customModule="MansbridgeSummit" customModuleProvider="target">
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics" translucent="NO"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" translucent="NO" id="kNs-mW-0r6" customClass="MSTabBar" customModule="MansbridgeSummit" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <animations/>

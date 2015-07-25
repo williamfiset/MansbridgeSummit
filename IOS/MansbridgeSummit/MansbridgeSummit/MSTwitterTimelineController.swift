@@ -17,59 +17,68 @@ class MSTwitterTimelineController: TWTRTimelineViewController, NetworkFailureRec
     override func viewDidLoad() {
         super.viewDidLoad()
         
-//        let logInButton = TWTRLogInButton(logInCompletion: { session, error in
-//            if (session != nil) {
-//                print("signed in as \(session.userName)");
-//            } else {
-//                print("error: \(error.localizedDescription)");
-//            }
-//        })
-//        logInButton.center = self.view.center
-//        self.view.addSubview(logInButton)
-//        
-//        Twitter.sharedInstance().logInWithCompletion { session, error in
-//            if (session != nil) {
-//                logInButton.removeFromSuperview()
-//                print("signed in as \(session.userName)");
-//                let client = Twitter.sharedInstance().APIClient
-//                self.dataSource = TWTRUserTimelineDataSource(screenName: "mtasummit", APIClient: client)
-//            } else {
-//                logInButton.removeFromSuperview()
-//                print("error: \(error.localizedDescription)");
-//            }
-//        }
+        let logInButton = TWTRLogInButton(logInCompletion: { session, error in
+            if (session != nil) {
+                print("signed in as \(session.userName)");
+            } else {
+                print("error: \(error.localizedDescription)");
+            }
+        })
+        self.view.addSubview(logInButton)
         
         let connection = Reachability(hostName: "www.twitter.com")
         
         if connection.isReachable() {
-            loadTwitterFeed()
+            
+            loadTwitterFeedAsGuest()
+            
         } else {
             displayNetworkConnectionErrorView()
         }
         
     }
     
-    func loadTwitterFeed() -> Void {
+    func loadTwitterFeedAsGuest() -> Void {
         
-        getQueryStringAndExecFunc(twitterStuff)
-       
+        getQueryStringAndExecFunc(loadTweetsAsGuest)
+        
     }
     
-    func twitterStuff ( queryString : String ) {
-
+    func loadTweetsAsGuest(queryString : String) {
+        
         Twitter.sharedInstance().logInGuestWithCompletion { session, error in
             if let _ = session {
-                let client = Twitter.sharedInstance().APIClient
-                self.dataSource = TWTRUserTimelineDataSource(screenName: queryString, APIClient: client)
-                
-                print("here! \(self.dataSource)")
+                self.dataSource = TWTRSearchTimelineDataSource(searchQuery: queryString, APIClient: Twitter.sharedInstance().APIClient)
             } else {
                 print("error: \(error.localizedDescription)")
             }
         }
+        
+        print(self.tableView.numberOfRowsInSection(0))
+        
     }
     
-    func getQueryStringAndExecFunc ( closure : (query : String) -> Void ) -> Void {
+    
+    func loadTwitterFeedAsUser() -> Void {
+        
+        getQueryStringAndExecFunc(loadTweetsAsUser)
+        
+    }
+    
+    func loadTweetsAsUser(queryString : String) {
+        
+        Twitter.sharedInstance().logInWithCompletion { session, error in
+            if (session != nil) {
+                print("signed in as \(session.userName)");
+                self.dataSource = TWTRSearchTimelineDataSource(searchQuery: queryString, APIClient: Twitter.sharedInstance().APIClient)
+            } else {
+                print("error: \(error.localizedDescription)");
+            }
+        }
+        
+    }
+    
+    func getQueryStringAndExecFunc (closure : (query : String) -> Void) -> Void {
         
         let queryPredicate = NSPredicate(value: true)
         
@@ -90,7 +99,8 @@ class MSTwitterTimelineController: TWTRTimelineViewController, NetworkFailureRec
                 
             } else {
                 print(err!.description)
-                closure(query: "#MansbridgeSummit OR from:mtasummit")
+                // closure(query: "#MansbridgeSummit OR from:mtasummit")
+                closure(query: "#MansbridgeSummit OR from:mtasummit OR cats") // TEMPORARY!!!
             }
             
         })
@@ -121,33 +131,4 @@ class MSTwitterTimelineController: TWTRTimelineViewController, NetworkFailureRec
         }
     }
     
-    
-//    func tweetView(tweetView: TWTRTweetView, didSelectTweet tweet: TWTRTweet) {
-//        let kTweetOriginX: CGFloat = 0.0
-//        let kTweetOriginY: CGFloat = 0.0
-//        let kTweetWidth: CGFloat = 300.0
-//        let kTweetHeightAdjustment: CGFloat = 100.0
-//        
-////        print(self.navigationController)
-////        print(self.navigationController!)
-//        let kTweetHeight: CGFloat = self.view.frame.size.height /* - self.navigationController!.navigationBar.frame.size.height */ - kTweetHeightAdjustment
-//        let tweetViewController: UIViewController = UIViewController()
-//        let customView: TWTRTweetView = TWTRTweetView(tweet: tweet, style: .Regular)
-//        customView.showBorder = false
-//        if customView.frame.size.height > self.view.frame.size.height {
-//            customView.frame = CGRectMake(kTweetOriginX, kTweetOriginY, kTweetWidth, kTweetHeight)
-//        }
-////        var backgroundImage: UIImageView = UIImageView(image: UIImage(named: "Background.png"))
-////        tweetViewController.view = backgroundImage
-//        tweetViewController.view.contentMode = .ScaleAspectFit
-//        tweetViewController.view.userInteractionEnabled = true
-//        tweetViewController.view.addSubview(customView)
-//        customView.center = self.view.center
-////        print(self.navigationController)
-////        print(self.navigationController!)
-//        
-//        self.presentViewController(tweetViewController, animated: true, completion: nil)
-//        
-////        self.navigationController!.pushViewController(tweetViewController, animated: true)
-//    }
 }
