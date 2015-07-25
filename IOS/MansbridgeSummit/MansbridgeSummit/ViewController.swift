@@ -9,19 +9,16 @@
 import UIKit
 
 class ViewController: UIViewController, UIPageViewControllerDataSource, UIPageViewControllerDelegate {
-    
-    
+
     let N_PAGES = 5
     var pageUpdateTimer : NSTimer?
-//    var currentIndex = 0
     
     var pageViewController : UIPageViewController!
     
     func reset() {
         
         /* Getting the page View controller */
-        let dict = Dictionary<String, AnyObject>()
-        pageViewController = UIPageViewController(transitionStyle: .Scroll, navigationOrientation: .Horizontal, options: dict)
+        pageViewController = UIPageViewController(transitionStyle: .Scroll, navigationOrientation: .Horizontal, options: Dictionary<String, AnyObject>())
         self.pageViewController.dataSource = self
         
         let pageContentViewController = self.viewControllerAtIndex(0)
@@ -32,7 +29,8 @@ class ViewController: UIViewController, UIPageViewControllerDataSource, UIPageVi
         self.view.addSubview(pageViewController.view)
         self.pageViewController.didMoveToParentViewController(self)
         
-        pageUpdateTimer = NSTimer.scheduledTimerWithTimeInterval(5, target: self, selector: "switchPages", userInfo: nil, repeats: true)
+        pageUpdateTimer = NSTimer.scheduledTimerWithTimeInterval(10, target: self, selector: "switchPages", userInfo: nil, repeats: true)
+    
     }
     
     func switchPages() {
@@ -48,8 +46,10 @@ class ViewController: UIViewController, UIPageViewControllerDataSource, UIPageVi
     }
     
     override func viewDidLoad() {
+        
         super.viewDidLoad()
         reset()
+
     }
     
     override func didReceiveMemoryWarning() {
@@ -104,6 +104,12 @@ class ViewController: UIViewController, UIPageViewControllerDataSource, UIPageVi
             
         }
         
+        
+    }
+    
+    func pageViewController(pageViewController: UIPageViewController, finished: Bool, previousViewControllers: [UIViewController], completed: Bool) {
+     
+        print("WHY ISN'T THIS BEING CALLED??!!! We could invalidate the timer in this method if it was..")
         
     }
     

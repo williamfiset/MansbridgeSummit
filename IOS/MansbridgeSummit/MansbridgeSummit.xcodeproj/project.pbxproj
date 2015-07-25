@@ -54,9 +54,6 @@
 		C69E4A5C1B46090E00BD981C /* MSQRCodeTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69E4A5B1B46090E00BD981C /* MSQRCodeTabController.swift */; };
 		C69E4A5D1B46090E00BD981C /* MSQRCodeTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69E4A5B1B46090E00BD981C /* MSQRCodeTabController.swift */; };
 		C69E4A5E1B46090E00BD981C /* MSQRCodeTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69E4A5B1B46090E00BD981C /* MSQRCodeTabController.swift */; };
-		C69E4A601B4609D700BD981C /* MSPrimaryTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69E4A5F1B4609D700BD981C /* MSPrimaryTabController.swift */; };
-		C69E4A611B4609D700BD981C /* MSPrimaryTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69E4A5F1B4609D700BD981C /* MSPrimaryTabController.swift */; };
-		C69E4A621B4609D700BD981C /* MSPrimaryTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69E4A5F1B4609D700BD981C /* MSPrimaryTabController.swift */; };
 		C69E4A641B460A3F00BD981C /* MSScheduleTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69E4A631B460A3F00BD981C /* MSScheduleTableController.swift */; };
 		C69E4A651B460A3F00BD981C /* MSScheduleTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69E4A631B460A3F00BD981C /* MSScheduleTableController.swift */; };
 		C69E4A661B460A3F00BD981C /* MSScheduleTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69E4A631B460A3F00BD981C /* MSScheduleTableController.swift */; };
@@ -248,7 +245,6 @@
 		C69E4A531B46088800BD981C /* MSTwitterTabController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSTwitterTabController.swift; sourceTree = "<group>"; };
 		C69E4A571B4608C500BD981C /* MSRegisterTabController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSRegisterTabController.swift; sourceTree = "<group>"; };
 		C69E4A5B1B46090E00BD981C /* MSQRCodeTabController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSQRCodeTabController.swift; sourceTree = "<group>"; };
-		C69E4A5F1B4609D700BD981C /* MSPrimaryTabController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSPrimaryTabController.swift; sourceTree = "<group>"; };
 		C69E4A631B460A3F00BD981C /* MSScheduleTableController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSScheduleTableController.swift; sourceTree = "<group>"; };
 		C69E4A6D1B4612A600BD981C /* MSScheduleCellView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSScheduleCellView.swift; sourceTree = "<group>"; };
 		C69E4A711B4620AC00BD981C /* MSScheduleTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSScheduleTableView.swift; sourceTree = "<group>"; };
@@ -453,7 +449,6 @@
 			children = (
 				F7581FB41B63218900406498 /* PageContentViewController.swift */,
 				F7581FB51B63218900406498 /* ViewController.swift */,
-				C69E4A5F1B4609D700BD981C /* MSPrimaryTabController.swift */,
 				C689563A1B52B399006D188F /* MSScrollView.swift */,
 				C69808E51B5D05D900164BC6 /* YouTubePlayer.swift */,
 				C69808E61B5D05D900164BC6 /* YTPlayer.html */,
@@ -922,7 +917,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				F74C1A171B5967B000F09002 /* NSString+STTwitter.m in Sources */,
-				C69E4A601B4609D700BD981C /* MSPrimaryTabController.swift in Sources */,
 				C6D9E9681B475E2D00249DA4 /* Constants.swift in Sources */,
 				F7CF77BD1B5AACAF00013CF0 /* MSTwitterTimelineController.swift in Sources */,
 				C61C00641B4C7F1600AB4D6C /* MSEventPageController.swift in Sources */,
@@ -982,7 +976,6 @@
 				C69808E81B5D05D900164BC6 /* YouTubePlayer.swift in Sources */,
 				C65BE8E51B631FE4008C064D /* TwitterController.m in Sources */,
 				C6E1632A1B48137900942749 /* MSScheduleTableControllerTests.swift in Sources */,
-				C69E4A611B4609D700BD981C /* MSPrimaryTabController.swift in Sources */,
 				C61C00651B4C7F1600AB4D6C /* MSEventPageController.swift in Sources */,
 				C664DE741B57254800CFB209 /* Reachability.m in Sources */,
 				C6E1633D1B482A7200942749 /* MSScheduleJsonFileTests.swift in Sources */,
@@ -1027,7 +1020,6 @@
 				C6A0D9791B59FCF000C8172D /* BAVPlistNode.m in Sources */,
 				C6A0D97A1B59FCF000C8172D /* JSONSyntaxHighlight.m in Sources */,
 				C6A0D97B1B59FCF000C8172D /* STHTTPRequest.m in Sources */,
-				C69E4A621B4609D700BD981C /* MSPrimaryTabController.swift in Sources */,
 				C6D9E96A1B475E2D00249DA4 /* Constants.swift in Sources */,
 				C61C00661B4C7F1600AB4D6C /* MSEventPageController.swift in Sources */,
 				C69E4A561B46088800BD981C /* MSTwitterTabController.swift in Sources */,
