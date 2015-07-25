@@ -73,7 +73,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TweetCell" id="Lls-3o-1ok">
-                                <rect key="frame" x="0.0" y="86" width="600" height="44"/>
+                                <rect key="frame" x="0.0" y="22" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Lls-3o-1ok" id="ws5-4w-ngy">
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
@@ -142,7 +142,7 @@
             <objects>
                 <tabBarController id="LdM-6H-Yiw" customClass="MSTabBarController" customModule="MansbridgeSummit" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="huS-EU-Sjl"/>
-                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics" translucent="NO"/>
+                    <nil key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" translucent="NO" id="kNs-mW-0r6" customClass="MSTabBar" customModule="MansbridgeSummit" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -164,7 +164,7 @@
         <!--Twitter-->
         <scene sceneID="2ci-m8-1eF">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="tw5-r1-TfF" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="tw5-r1-TfF" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Twitter" image="tabBarTwitterIcon" id="dpJ-kR-3PM"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="9zC-cv-De3">

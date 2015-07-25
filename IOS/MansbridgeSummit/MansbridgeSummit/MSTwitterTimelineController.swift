@@ -10,80 +10,99 @@ import UIKit
 import CloudKit
 import TwitterKit
 
-class MSTwitterTimelineController: TWTRTimelineViewController, NetworkFailureRecovery /*, TWTRTweetViewDelegate */{
+class MSTwitterTimelineController: TWTRTimelineViewController, NetworkFailureRecovery, UINavigationBarDelegate /*, TWTRTweetViewDelegate */{
     
     weak var networkErrorView : UIView?
     
+    var twitterNavigationItem : UINavigationItem!
+    
     override func viewDidLoad() {
+        
         super.viewDidLoad()
         
-        let logInButton = TWTRLogInButton(logInCompletion: { session, error in
-            if (session != nil) {
-                print("signed in as \(session.userName)");
-            } else {
-                print("error: \(error.localizedDescription)");
-            }
-        })
-        self.view.addSubview(logInButton)
+        // Create the navigation bar
+        let navigationBar = UINavigationBar(frame: CGRectMake(0, 20, self.view.frame.size.width, 44)) // Offset by 20 pixels vertically to take the status bar into account
+        navigationBar.backgroundColor = UIColor.whiteColor()
+        navigationBar.delegate = self;
         
+        // Create a navigation items
+        self.twitterNavigationItem = UINavigationItem()
+        self.twitterNavigationItem.title = "Twitter Feed"
+        self.twitterNavigationItem.rightBarButtonItem = UIBarButtonItem(title: "Post", style: UIBarButtonItemStyle.Plain, target: self, action: "postTweet")
+        
+        // Assign the navigation item to the navigation bar
+        navigationBar.items = [twitterNavigationItem]
+        
+        // Make the navigation bar a subview of the current view controller
+        self.view.addSubview(navigationBar)
+        
+        // Load the Twitter feed if there is an Internet connection
         let connection = Reachability(hostName: "www.twitter.com")
-        
         if connection.isReachable() {
-            
-            loadTwitterFeedAsGuest()
-            
+            loadTweets()
         } else {
             displayNetworkConnectionErrorView()
         }
         
     }
     
-    func loadTwitterFeedAsGuest() -> Void {
+    func positionForBar(bar: UIBarPositioning) -> UIBarPosition {
+        return UIBarPosition.TopAttached
+    }
+    
+    func loadTweets() -> Void {
         
-        getQueryStringAndExecFunc(loadTweetsAsGuest)
+        getQueryStringAndExecFunc(loadTweetsHelper)
         
     }
     
-    func loadTweetsAsGuest(queryString : String) {
+    func loadTweetsHelper(queryString : String) {
+        
+        print("QUERY:")
+        print(queryString)
         
         Twitter.sharedInstance().logInGuestWithCompletion { session, error in
             if let _ = session {
+                
                 self.dataSource = TWTRSearchTimelineDataSource(searchQuery: queryString, APIClient: Twitter.sharedInstance().APIClient)
             } else {
                 print("error: \(error.localizedDescription)")
             }
         }
         
-        print(self.tableView.numberOfRowsInSection(0))
+    }
+    
+    func postTweet() -> Void {
+        
+        getDefaultStatusAndExecFunc(postTweetHelper)
         
     }
     
-    
-    func loadTwitterFeedAsUser() -> Void {
+    func postTweetHelper(defaultStatus : String) -> Void {
         
-        getQueryStringAndExecFunc(loadTweetsAsUser)
+        let composer = TWTRComposer()
         
-    }
-    
-    func loadTweetsAsUser(queryString : String) {
+        composer.setText(defaultStatus)
         
-        Twitter.sharedInstance().logInWithCompletion { session, error in
-            if (session != nil) {
-                print("signed in as \(session.userName)");
-                self.dataSource = TWTRSearchTimelineDataSource(searchQuery: queryString, APIClient: Twitter.sharedInstance().APIClient)
+        composer.showFromViewController(self) { result in
+            if (result == TWTRComposerResult.Cancelled) {
+                
             } else {
-                print("error: \(error.localizedDescription)");
+                let alertController = UIAlertController(title: "Success", message:
+                    "Your tweet has been sent!", preferredStyle: UIAlertControllerStyle.Alert)
+                alertController.addAction(UIAlertAction(title: "Dismiss", style: UIAlertActionStyle.Default,handler: nil))
+                self.presentViewController(alertController, animated: true, completion: nil)
             }
         }
         
     }
     
-    func getQueryStringAndExecFunc (closure : (query : String) -> Void) -> Void {
+    func getQueryStringAndExecFunc(closure : (query : String) -> Void) -> Void {
         
         let queryPredicate = NSPredicate(value: true)
         
         let publicDB = CKContainer.defaultContainer().publicCloudDatabase
-        let query = CKQuery(recordType: "TwitterRecord", predicate: queryPredicate)
+        let query = CKQuery(recordType: "MansbridgeData", predicate: queryPredicate)
         
         publicDB.performQuery(query, inZoneWithID: nil, completionHandler: {
             records, err in
@@ -91,7 +110,7 @@ class MSTwitterTimelineController: TWTRTimelineViewController, NetworkFailureRec
             if err == nil && records != nil {
                 
                 let record = (records as [CKRecord]!)[0]
-                let twitterQuery = record["twitterQueryString"]!
+                let twitterQuery = record["Value"]!
                 
                 dispatch_async(dispatch_get_main_queue()) {
                     closure(query: twitterQuery as! String)
@@ -99,8 +118,35 @@ class MSTwitterTimelineController: TWTRTimelineViewController, NetworkFailureRec
                 
             } else {
                 print(err!.description)
-                // closure(query: "#MansbridgeSummit OR from:mtasummit")
-                closure(query: "#MansbridgeSummit OR from:mtasummit OR cats") // TEMPORARY!!!
+                closure(query: "#MansbridgeSummit OR from:mtasummit OR cats") // TEMPORARY!!
+                print("failed!!")
+            }
+            
+        })
+    }
+    
+    func getDefaultStatusAndExecFunc(closure : (query : String) -> Void) -> Void {
+        
+        let queryPredicate = NSPredicate(value: true)
+        
+        let publicDB = CKContainer.defaultContainer().publicCloudDatabase
+        let query = CKQuery(recordType: "MansbridgeData", predicate: queryPredicate)
+        
+        publicDB.performQuery(query, inZoneWithID: nil, completionHandler: {
+            records, err in
+            
+            if err == nil && records != nil {
+                
+                let record = (records as [CKRecord]!)[0]
+                let twitterQuery = record["Value"]!
+                
+                dispatch_async(dispatch_get_main_queue()) {
+                    closure(query: twitterQuery as! String)
+                }
+                
+            } else {
+                print(err!.description)
+                closure(query: "#MansbridgeSummit")
             }
             
         })
