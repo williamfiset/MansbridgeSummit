@@ -7,6 +7,7 @@
 //
 
 #import "TwitterController.h"
+#import "MansbridgeSummit-Swift.h"
 
 @implementation TwitterController
 
