@@ -14,6 +14,7 @@ public class MSTabBarController : UITabBarController {
 
     public override func viewWillAppear(animated: Bool) {
         self.tabBar.tintColor = GC.Color.red
+        self.tabBar.translucent = false
     }
 
 }
