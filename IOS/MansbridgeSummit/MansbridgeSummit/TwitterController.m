@@ -6,9 +6,14 @@
 //  Copyright © 2015 Mansbridge Summit Dev Team. All rights reserved.
 //
 
+// This helps when dealing with blocks: http://fuckingblocksyntax.com/
+
+#import <CloudKit/CloudKit.h>
 #import "TwitterController.h"
 #import "MansbridgeSummit-Swift.h"
 #import "Connection.h"
+
+#define COLLECTION_ID @"625072681285758976"
 
 @implementation TwitterController
 
@@ -65,12 +70,12 @@
         if (guestSession != NULL) {
             
             TWTRCollectionTimelineDataSource *dataSource = [[TWTRCollectionTimelineDataSource init]
-                                                            initWithCollectionID: @"625072681285758976"
+                                                            initWithCollectionID: COLLECTION_ID
                                                             APIClient: [TwitterKit APIClient] ];
             [self setDataSource: dataSource];
             
         } else {
-            // NSLog(@"%@", [error localizedDescription]);
+            NSLog(@"%@", [error localizedDescription]);
         }
         
     }];
@@ -79,6 +84,48 @@
 
 
 - (void) postTweets {
+    
+}
+
+/*
+ *
+ * Talking with Micah we agreed that CloudKits Key-Value solution was much
+ * more appropriate than pulling out all the records from the DB and simply
+ * grabbing the first one.
+ *
+ */
+- (void) getDefaultStatusAndExecFunc:(void (^)(NSString *))closure {
+    
+    // Currently Matches all values in the
+    NSPredicate *queryPredicate = [NSPredicate predicateWithValue: YES];
+    
+    CKDatabase *publicDB = [[CKContainer defaultContainer] publicCloudDatabase];
+    CKQuery *query = [[CKQuery init] initWithRecordType: @"MansbridgeData" predicate:queryPredicate];
+    
+    // Query the DB for records (read comment above)
+    [publicDB performQuery: query inZoneWithID:nil completionHandler:
+     ^(NSArray <CKRecord *> *_Nullable records, NSError * _Nullable error) {
+        
+         if (error == NULL && records != NULL) {
+             
+             CKRecord *record = [records objectAtIndex: 0];
+             if (record != NULL) {
+                 NSString *defaultStatus = [record valueForKey: @"Value"];
+                 
+                 dispatch_async(dispatch_get_main_queue(), ^ (void){
+                     closure(defaultStatus);
+                 });
+                
+             }
+             
+         } else {
+             
+             NSLog(@"%@", [error description]);
+             closure(@"#MansbridgeSummit");
+             
+         }
+         
+    }];
     
 }
 
