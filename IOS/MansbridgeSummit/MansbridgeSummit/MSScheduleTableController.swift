@@ -35,9 +35,6 @@ public class MSScheduleTableController : UITableViewController {
         super.viewWillAppear(animated)
         adjustedTableHeight = false
         
-        // Remove the navigation bar to provide more room for viewing
-        self.navigationController?.navigationBar.hidden = true
-        
         let newTable = MSScheduleTableView()
         
         newTable.dataSource = self

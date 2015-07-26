@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8152.3" systemVersion="15A216g" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="HsC-Ow-kxc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8164.2" systemVersion="15A178w" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="HsC-Ow-kxc">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8124.4"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8135.1"/>
     </dependencies>
     <scenes>
         <!--Navigation Controller-->
         <scene sceneID="a4M-O1-Hdk">
             <objects>
-                <navigationController id="HsC-Ow-kxc" sceneMemberID="viewController">
+                <navigationController navigationBarHidden="YES" id="HsC-Ow-kxc" sceneMemberID="viewController">
+                    <nil key="simulatedStatusBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="sLT-Hk-hqC">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -31,7 +32,7 @@
                         <viewControllerLayoutGuide type="bottom" id="7L6-Xv-H6T"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="qPk-5m-GTf">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -47,7 +48,7 @@
             <objects>
                 <tableViewController title="Mansbridge Summit Schedule" id="M2Z-vZ-2uL" userLabel="Schedule" customClass="MSScheduleTableController" customModule="MansbridgeSummit" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="ijc-jX-Yig" customClass="MSScheduleTableView" customModule="MansbridgeSummit" customModuleProvider="target">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -62,18 +63,18 @@
             </objects>
             <point key="canvasLocation" x="1046" y="-150"/>
         </scene>
-        <!--Twitter Timeline Controller-->
+        <!--Twitter Feed-->
         <scene sceneID="bXN-qb-Q2A">
             <objects>
-                <tableViewController id="OPW-JE-odA" customClass="MSTwitterTimelineController" customModule="MansbridgeSummit" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="OPW-JE-odA" customClass="TwitterController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="9Uj-FK-XF1">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TweetCell" id="Lls-3o-1ok">
-                                <rect key="frame" x="0.0" y="86" width="600" height="44"/>
+                                <rect key="frame" x="0.0" y="66" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Lls-3o-1ok" id="ws5-4w-ngy">
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
@@ -88,27 +89,34 @@
                             <outlet property="delegate" destination="OPW-JE-odA" id="0JI-AX-tKH"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="cKn-rg-gS1"/>
+                    <navigationItem key="navigationItem" title="Twitter Feed" id="PmK-yJ-aeX">
+                        <barButtonItem key="rightBarButtonItem" systemItem="compose" id="EMz-bN-E8p">
+                            <connections>
+                                <action selector="composeTweet:" destination="OPW-JE-odA" id="bLp-aD-8Y6"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <nil key="simulatedStatusBarMetrics"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xsI-HE-soM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1868" y="564"/>
         </scene>
-        <!--About-->
+        <!--QR Code-->
         <scene sceneID="nL2-M5-bpK">
             <objects>
-                <viewController id="oFB-8Q-MYl" userLabel="About" customClass="MSAboutTabController" customModule="MansbridgeSummit" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="oFB-8Q-MYl" userLabel="QR Code" customClass="MSQRCodeTabController" customModule="MansbridgeSummit" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="QHA-LA-TBR"/>
                         <viewControllerLayoutGuide type="bottom" id="y0X-Uo-NYo"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="3jY-tj-tZy">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="About" image="tabBarAboutIcon" id="hOZ-qo-J76"/>
+                    <tabBarItem key="tabBarItem" title="QR Codes" image="tabBarQRCodeIcon" id="hOZ-qo-J76"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="H9k-2H-Scp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -117,22 +125,25 @@
         <!--Primary-->
         <scene sceneID="AZM-bP-8Kf">
             <objects>
-                <viewController id="TLA-2H-73K" userLabel="Primary" customClass="MSPrimaryTabController" customModule="MansbridgeSummit" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="TLA-2H-73K" userLabel="Primary" customClass="ViewController" customModule="MansbridgeSummit" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="koN-hR-aJ6"/>
                         <viewControllerLayoutGuide type="bottom" id="1La-HY-KyD"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="axv-S3-bAX">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="684" height="635"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <extendedEdge key="edgesForExtendedLayout" top="YES"/>
                     <tabBarItem key="tabBarItem" title="Home" image="tabBarHomeIcon" id="Qzy-kM-0kx"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="684" height="684"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0Ia-58-4Mk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1046" y="-1812"/>
+            <point key="canvasLocation" x="1056" y="-1845"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="EaI-dH-ZuS">
@@ -140,7 +151,7 @@
                 <tabBarController id="LdM-6H-Yiw" customClass="MSTabBarController" customModule="MansbridgeSummit" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="huS-EU-Sjl"/>
                     <nil key="simulatedBottomBarMetrics"/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" id="kNs-mW-0r6" customClass="MSTabBar" customModule="MansbridgeSummit" customModuleProvider="target">
+                    <tabBar key="tabBar" contentMode="scaleToFill" translucent="NO" id="kNs-mW-0r6" customClass="MSTabBar" customModule="MansbridgeSummit" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <animations/>
@@ -164,6 +175,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="tw5-r1-TfF" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Twitter" image="tabBarTwitterIcon" id="dpJ-kR-3PM"/>
                     <toolbarItems/>
+                    <nil key="simulatedStatusBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="9zC-cv-De3">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -180,8 +192,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="tabBarAboutIcon" width="25" height="25"/>
         <image name="tabBarHomeIcon" width="25" height="25"/>
+        <image name="tabBarQRCodeIcon" width="25" height="25"/>
         <image name="tabBarRegisterIcon" width="25" height="25"/>
         <image name="tabBarScheduleIcon" width="25" height="25"/>
         <image name="tabBarTwitterIcon" width="25" height="25"/>

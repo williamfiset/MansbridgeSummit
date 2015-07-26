@@ -9,8 +9,7 @@
 import Foundation
 import UIKit
 
-
-protocol NetworkFailureRecovery {
+@objc protocol NetworkFailureRecovery {
     
     weak var networkErrorView : UIView? {get set}
     func displayNetworkConnectionErrorView() -> Void
