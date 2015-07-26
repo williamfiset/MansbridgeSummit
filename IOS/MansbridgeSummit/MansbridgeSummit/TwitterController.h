@@ -22,7 +22,5 @@
 - (void) loadTweets;
 - (void) postTweets;
 
-- (void) getDefaultStatusAndExecFunc; //:(void (^)(NSString *))closure;
-
 
 @end

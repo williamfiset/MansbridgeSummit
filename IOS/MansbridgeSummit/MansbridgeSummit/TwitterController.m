@@ -45,14 +45,14 @@
     
     // Create the navigation bar
     CGRect frame = CGRectMake(0, -44, self.view.frame.size.width, 44);
-    UINavigationBar *navBar = [[UINavigationBar init] initWithFrame:frame style: UITableViewStyleGrouped];
+    UINavigationBar *navBar = [[[UINavigationBar alloc] init] initWithFrame:frame];
     navBar.backgroundColor = [[UIColor class] whiteColor];
     [navBar setDelegate:self];
     
     // Create a navigation items
-    _twitterNavigationItem = [UINavigationItem init];
+    _twitterNavigationItem = [[UINavigationItem alloc] init];
     _twitterNavigationItem.title = @"Twitter Feed";
-    _twitterNavigationItem.rightBarButtonItem = [[UIBarButtonItem init] initWithBarButtonSystemItem: UIBarButtonSystemItemAction target: self action: NSSelectorFromString(@"methodName")];
+    _twitterNavigationItem.rightBarButtonItem = [[[UIBarButtonItem alloc] init] initWithBarButtonSystemItem: UIBarButtonSystemItemAction target: self action: NSSelectorFromString(@"methodName")];
     
     // Assign the navigation item to the navigation bar
     [navBar setItems: @[ _twitterNavigationItem ]];
@@ -68,8 +68,8 @@
     [TwitterKit logInGuestWithCompletion: ^ (TWTRGuestSession *guestSession, NSError *error) {
         
         if (guestSession != NULL) {
-            
-            TWTRCollectionTimelineDataSource *dataSource = [[TWTRCollectionTimelineDataSource init]
+
+            TWTRCollectionTimelineDataSource *dataSource = [[TWTRCollectionTimelineDataSource alloc]
                                                             initWithCollectionID: COLLECTION_ID
                                                             APIClient: [TwitterKit APIClient] ];
             [self setDataSource: dataSource];
@@ -91,8 +91,8 @@
 }
 
 - (void) postTweetHelper: (NSString*) defaultStatus {
-    
-    TWTRComposer *composer = [TWTRComposer init];
+
+    TWTRComposer *composer = [[TWTRComposer alloc] init];
     [composer setText: defaultStatus];
     [composer showFromViewController: self completion: ^ (TWTRComposerResult result) {
         
@@ -115,7 +115,7 @@
     NSPredicate *queryPredicate = [NSPredicate predicateWithValue: YES];
     
     CKDatabase *publicDB = [[CKContainer defaultContainer] publicCloudDatabase];
-    CKQuery *query = [[CKQuery init] initWithRecordType: @"MansbridgeData" predicate:queryPredicate];
+    CKQuery *query = [[CKQuery alloc] initWithRecordType: @"MansbridgeData" predicate:queryPredicate];
     
     // Query the DB for records (read comment above)
     [publicDB performQuery: query inZoneWithID:nil completionHandler:
