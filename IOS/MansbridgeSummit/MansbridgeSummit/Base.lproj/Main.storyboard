@@ -63,7 +63,7 @@
             </objects>
             <point key="canvasLocation" x="1046" y="-150"/>
         </scene>
-        <!--Twitter Controller-->
+        <!--Twitter Feed-->
         <scene sceneID="bXN-qb-Q2A">
             <objects>
                 <tableViewController id="OPW-JE-odA" customClass="TwitterController" sceneMemberID="viewController">
@@ -89,7 +89,13 @@
                             <outlet property="delegate" destination="OPW-JE-odA" id="0JI-AX-tKH"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="cKn-rg-gS1"/>
+                    <navigationItem key="navigationItem" title="Twitter Feed" id="PmK-yJ-aeX">
+                        <barButtonItem key="rightBarButtonItem" systemItem="compose" id="EMz-bN-E8p">
+                            <connections>
+                                <action selector="composeTweet:" destination="OPW-JE-odA" id="bLp-aD-8Y6"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <nil key="simulatedStatusBarMetrics"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xsI-HE-soM" userLabel="First Responder" sceneMemberID="firstResponder"/>
