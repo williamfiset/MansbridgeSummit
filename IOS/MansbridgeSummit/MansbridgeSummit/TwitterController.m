@@ -17,8 +17,11 @@
 
 @implementation TwitterController
 
-@synthesize networkErrorView = _networkErrorView;
+// Generates the getters and setters for these instance variables
+@synthesize networkErrorView;
+@synthesize twitterNavigationItem;
 
+// Shouldn't this code be in viewWillLoad?
 - (void) viewDidLoad {
     
     [super viewDidLoad];
@@ -45,20 +48,24 @@
     
     // Create the navigation bar
     CGRect frame = CGRectMake(0, -44, self.view.frame.size.width, 44);
-    UINavigationBar *navBar = [[[UINavigationBar alloc] init] initWithFrame:frame];
-    navBar.backgroundColor = [[UIColor class] whiteColor];
-    [navBar setDelegate:self];
+    UINavigationBar *navigationBar = [[[UINavigationBar alloc] init] initWithFrame:frame];
+    navigationBar.backgroundColor = [UIColor whiteColor];
+    [navigationBar setDelegate:self];
     
     // Create a navigation items
-    _twitterNavigationItem = [[UINavigationItem alloc] init];
-    _twitterNavigationItem.title = @"Twitter Feed";
-    _twitterNavigationItem.rightBarButtonItem = [[[UIBarButtonItem alloc] init] initWithBarButtonSystemItem: UIBarButtonSystemItemAction target: self action: NSSelectorFromString(@"methodName")];
+    twitterNavigationItem = [[UINavigationItem alloc] init];
+    twitterNavigationItem.title = @"Twitter Feed";
+    twitterNavigationItem.rightBarButtonItem = [[UIBarButtonItem alloc]
+                                                 initWithTitle: @"Post"
+                                                 style:  UIBarButtonItemStylePlain
+                                                 target: self
+                                                 action: @selector(postTweet)];
     
     // Assign the navigation item to the navigation bar
-    [navBar setItems: @[ _twitterNavigationItem ]];
+    [navigationBar setItems: @[ twitterNavigationItem ]];
     
     // Make the navigation bar a subview of the current view controller
-    [[self view] addSubview: navBar];
+    [self.view addSubview: navigationBar];
     
 }
 
@@ -149,7 +156,7 @@
         [self.tableView removeFromSuperview];
     }
     
-    if (self.networkErrorView != NULL) {
+    if (self.networkErrorView == NULL) {
         UIView * __networkErrorView = [UIView loadFromNibNamed:@"NetworkErrorXIB" bundle: [NSBundle mainBundle] ];
         if ( __networkErrorView != NULL) {
             

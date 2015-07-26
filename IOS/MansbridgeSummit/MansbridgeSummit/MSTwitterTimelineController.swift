@@ -32,7 +32,11 @@ class MSTwitterTimelineController: TWTRTimelineViewController, NetworkFailureRec
         // Create a navigation items
         self.twitterNavigationItem = UINavigationItem()
         self.twitterNavigationItem.title = "Twitter Feed"
-        self.twitterNavigationItem.rightBarButtonItem = UIBarButtonItem(title: "Post", style: UIBarButtonItemStyle.Plain, target: self, action: "postTweet")
+        self.twitterNavigationItem.rightBarButtonItem = UIBarButtonItem(
+            title: "Post",
+            style: .Plain,
+            target: self,
+            action: "postTweet")
         
         // Assign the navigation item to the navigation bar
         navigationBar.items = [twitterNavigationItem]
