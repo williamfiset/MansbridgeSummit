@@ -12,9 +12,14 @@
 #import <UIKit/UIKit.h>
 
 
-@interface TwitterController : TWTRTimelineViewController < NetworkFailureRecovery > {
+@interface TwitterController : TWTRTimelineViewController < NetworkFailureRecovery, UINavigationBarDelegate > {
     
 }
+
 @property (nonatomic, assign) UIView *networkErrorView;
+@property (nonatomic, strong) UINavigationItem *twitterNavigationItem;
+
+- (void) loadTweets;
+- (void) postTweets;
 
 @end
