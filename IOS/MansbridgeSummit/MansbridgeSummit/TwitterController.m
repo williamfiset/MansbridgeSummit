@@ -71,7 +71,7 @@
                                    initWithTitle:@"Post"
                                    style:UIBarButtonItemStylePlain
                                    target:self
-                                   action:@selector(postTweets:)];
+                                   action:@selector(postTweets)];
     self.navigationItem.rightBarButtonItem = postButton;
     
 }
