@@ -85,6 +85,21 @@
 
 - (void) postTweets {
     
+    SEL closure =  @selector(postTweetHelper:);
+    [self getDefaultStatusAndExecFunc: closure];
+    
+}
+
+- (void) postTweetHelper: (NSString*) defaultStatus {
+    
+    TWTRComposer *composer = [TWTRComposer init];
+    [composer setText: defaultStatus];
+    [composer showFromViewController: self completion: ^ (TWTRComposerResult result) {
+        
+        // closure code
+        
+    }];
+    
 }
 
 /*
@@ -94,7 +109,7 @@
  * grabbing the first one.
  *
  */
-- (void) getDefaultStatusAndExecFunc:(void (^)(NSString *))closure {
+- (void) getDefaultStatusAndExecFunc: (SEL) closure { // :(void (^)(NSString *))closure
     
     // Currently Matches all values in the
     NSPredicate *queryPredicate = [NSPredicate predicateWithValue: YES];
@@ -113,7 +128,7 @@
                  NSString *defaultStatus = [record valueForKey: @"Value"];
                  
                  dispatch_async(dispatch_get_main_queue(), ^ (void){
-                     closure(defaultStatus);
+                     [self performSelector:closure withObject:defaultStatus];
                  });
                 
              }
@@ -121,10 +136,9 @@
          } else {
              
              NSLog(@"%@", [error description]);
-             closure(@"#MansbridgeSummit");
+             [self performSelector:closure withObject: @"#MansbridgeSummit"];
              
          }
-         
     }];
     
 }
