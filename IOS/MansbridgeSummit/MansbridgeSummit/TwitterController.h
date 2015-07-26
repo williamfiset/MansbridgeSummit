@@ -15,6 +15,11 @@
 @interface TwitterController : TWTRTimelineViewController < NetworkFailureRecovery > {
     
 }
+
 @property (nonatomic, assign) UIView *networkErrorView;
+
+- (void) loadTweets;
+- (IBAction) composeTweet:(id)sender;
+
 
 @end
