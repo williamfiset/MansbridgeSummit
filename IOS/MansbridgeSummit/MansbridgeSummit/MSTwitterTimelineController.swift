@@ -56,19 +56,9 @@ class MSTwitterTimelineController: TWTRTimelineViewController, NetworkFailureRec
     
     func loadTweets() -> Void {
         
-        getQueryStringAndExecFunc(loadTweetsHelper)
-        
-    }
-    
-    func loadTweetsHelper(queryString : String) {
-        
-        print("QUERY:")
-        print(queryString)
-        
         Twitter.sharedInstance().logInGuestWithCompletion { session, error in
             if let _ = session {
-                
-                self.dataSource = TWTRSearchTimelineDataSource(searchQuery: queryString, APIClient: Twitter.sharedInstance().APIClient)
+                self.dataSource = TWTRCollectionTimelineDataSource(collectionID: "625072681285758976", APIClient: Twitter.sharedInstance().APIClient)
             } else {
                 print("error: \(error.localizedDescription)")
             }
@@ -89,44 +79,16 @@ class MSTwitterTimelineController: TWTRTimelineViewController, NetworkFailureRec
         composer.setText(defaultStatus)
         
         composer.showFromViewController(self) { result in
-            if (result == TWTRComposerResult.Cancelled) {
-                
-            } else {
-                let alertController = UIAlertController(title: "Success", message:
-                    "Your tweet has been sent!", preferredStyle: UIAlertControllerStyle.Alert)
-                alertController.addAction(UIAlertAction(title: "Dismiss", style: UIAlertActionStyle.Default,handler: nil))
-                self.presentViewController(alertController, animated: true, completion: nil)
-            }
+//            if (result == TWTRComposerResult.Cancelled) {
+//                
+//            } else {
+//                let alertController = UIAlertController(title: "Success", message:
+//                    "Your tweet has been sent!", preferredStyle: UIAlertControllerStyle.Alert)
+//                alertController.addAction(UIAlertAction(title: "Dismiss", style: UIAlertActionStyle.Default,handler: nil))
+//                self.presentViewController(alertController, animated: true, completion: nil)
+//            }
         }
         
-    }
-    
-    func getQueryStringAndExecFunc(closure : (query : String) -> Void) -> Void {
-        
-        let queryPredicate = NSPredicate(value: true)
-        
-        let publicDB = CKContainer.defaultContainer().publicCloudDatabase
-        let query = CKQuery(recordType: "MansbridgeData", predicate: queryPredicate)
-        
-        publicDB.performQuery(query, inZoneWithID: nil, completionHandler: {
-            records, err in
-            
-            if err == nil && records != nil {
-                
-                let record = (records as [CKRecord]!)[0]
-                let twitterQuery = record["Value"]!
-                
-                dispatch_async(dispatch_get_main_queue()) {
-                    closure(query: twitterQuery as! String)
-                }
-                
-            } else {
-                print(err!.description)
-                closure(query: "#MansbridgeSummit OR from:mtasummit OR cats") // TEMPORARY!!
-                print("failed!!")
-            }
-            
-        })
     }
     
     func getDefaultStatusAndExecFunc(closure : (query : String) -> Void) -> Void {
@@ -142,10 +104,10 @@ class MSTwitterTimelineController: TWTRTimelineViewController, NetworkFailureRec
             if err == nil && records != nil {
                 
                 let record = (records as [CKRecord]!)[0]
-                let twitterQuery = record["Value"]!
+                let defaultStatus = record["Value"]!
                 
                 dispatch_async(dispatch_get_main_queue()) {
-                    closure(query: twitterQuery as! String)
+                    closure(query: defaultStatus as! String)
                 }
                 
             } else {
