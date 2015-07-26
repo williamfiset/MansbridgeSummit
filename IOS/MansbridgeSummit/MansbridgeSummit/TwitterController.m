@@ -47,25 +47,32 @@
 - (void) displayNavigationBar {
     
     // Create the navigation bar
-    CGRect frame = CGRectMake(0, -44, self.view.frame.size.width, 44);
-    UINavigationBar *navigationBar = [[[UINavigationBar alloc] init] initWithFrame:frame];
-    navigationBar.backgroundColor = [UIColor whiteColor];
-    [navigationBar setDelegate:self];
+//    CGRect frame = CGRectMake(0, -44, self.view.frame.size.width, 44);
+//    UINavigationBar *navigationBar = [[[UINavigationBar alloc] init] initWithFrame:frame];
+//    navigationBar.backgroundColor = [UIColor whiteColor];
+//    [navigationBar setDelegate:self];
+//    
+//    // Create a navigation items
+//    twitterNavigationItem = [[UINavigationItem alloc] init];
+//    twitterNavigationItem.title = @"Twitter Feed";
+//    twitterNavigationItem.rightBarButtonItem = [[UIBarButtonItem alloc]
+//                                                 initWithTitle: @"Post"
+//                                                 style:  UIBarButtonItemStylePlain
+//                                                 target: self
+//                                                 action: @selector(postTweet)];
+//    
+//    // Assign the navigation item to the navigation bar
+//    [navigationBar setItems: @[ twitterNavigationItem ]];
+//    
+//    // Make the navigation bar a subview of the current view controller
+//    [self.view addSubview: navigationBar];
     
-    // Create a navigation items
-    twitterNavigationItem = [[UINavigationItem alloc] init];
-    twitterNavigationItem.title = @"Twitter Feed";
-    twitterNavigationItem.rightBarButtonItem = [[UIBarButtonItem alloc]
-                                                 initWithTitle: @"Post"
-                                                 style:  UIBarButtonItemStylePlain
-                                                 target: self
-                                                 action: @selector(postTweet)];
-    
-    // Assign the navigation item to the navigation bar
-    [navigationBar setItems: @[ twitterNavigationItem ]];
-    
-    // Make the navigation bar a subview of the current view controller
-    [self.view addSubview: navigationBar];
+    UIBarButtonItem *postButton = [[UIBarButtonItem alloc]
+                                   initWithTitle:@"Post"
+                                   style:UIBarButtonItemStylePlain
+                                   target:self
+                                   action:@selector(postTweets:)];
+    self.navigationItem.rightBarButtonItem = postButton;
     
 }
 
