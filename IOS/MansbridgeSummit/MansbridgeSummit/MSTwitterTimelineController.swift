@@ -19,7 +19,7 @@ class MSTwitterTimelineController: TWTRTimelineViewController, NetworkFailureRec
     override func viewDidLoad() {
         
         super.viewDidLoad()
-        
+                
         let insets = UIEdgeInsets(top: 44, left: 0, bottom: 0, right: 0)
         self.tableView.contentInset = insets
         self.tableView.scrollIndicatorInsets = insets
@@ -129,6 +129,7 @@ class MSTwitterTimelineController: TWTRTimelineViewController, NetworkFailureRec
         // Load XIB File only if the error page does not exist
         if networkErrorView == nil {
             if let _networkErrorView = UIView.loadFromNibNamed("NetworkErrorXIB") {
+                self.tableView.separatorStyle = .None;
                 networkErrorView = _networkErrorView
                 _networkErrorView.frame = self.view.frame
                 self.view.addSubview(_networkErrorView)

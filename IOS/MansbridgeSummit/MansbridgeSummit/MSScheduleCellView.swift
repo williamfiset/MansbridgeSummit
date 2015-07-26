@@ -60,9 +60,9 @@ public class MSScheduleCellView : UITableViewCell {
         let tempLabel = UILabel(frame: CGRect(x: 0, y: 0, width: 100, height: 100))
         
         if GC.DeviceType.iPhone {
-            tempLabel.font = GC.Font.myraidpro_bold_18!
+            tempLabel.font = GC.Font.myraidpro_bold_18
         } else {
-            tempLabel.font = GC.Font.myraidpro_bold_24!
+            tempLabel.font = GC.Font.myraidpro_bold_24
         }
         
         tempLabel.text = ":"
