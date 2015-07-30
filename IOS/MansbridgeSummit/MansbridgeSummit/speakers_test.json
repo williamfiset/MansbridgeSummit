@@ -1,0 +1,45 @@
+{
+
+	"panelists" : [
+
+		{
+			"name" : "David Myles",
+			"profession" : "Songwriter",
+			"short_description" : "Somewhere on the spectrum between James Taylor and Justin Timberlake, David Myles has truly forged his own path by embracing modern and vintage pop, folk, and soul music. ",
+			"videos" : [
+				"vRi-xMCcTjw",
+				"nRNL5GupHzE",
+				"_FrOQC-zEog"
+			]
+		}, 
+		{
+			"name" : "Marshall Button",
+			"profession" : "Actor, playwright, director",
+			"short_description" : "Born and raised in Dalhousie, NB, actor, playwright, director Marshall Button resides in Moncton, NB where he occupies the post of artist-in-residence at The Capitol Theatre. ",
+			"videos" : [
+				"BcL---4xQYA",
+				"IXdNnw99-Ic"
+			]
+		},
+		{
+			"name" : "Lydia Miljan",
+			"profession" : "Political science professor",
+			"short_description" : "Lydia Miljan is an associate professor of political science and chair of the Arts and Science program at the University of Windsor. ",
+			"videos" : [
+				"xb-Nacm-pKc",
+				"tH2w6Oxx0kQ",
+				"n4RjJKxsamQ"
+			]
+		},
+		{
+			"name" : "Leslie Stojsic",
+			"profession" : "Producer with CBC News",
+			"short_description" : "Leslie Stojsic has been a producer with CBC News since 2001. She worked with Peter Mansbridge for more than a decade, producing panels on The National, as well as interviews for Mansbridge One on One.",
+			"videos" : [
+				"Es4kfcY5lc0"
+			]
+		}
+
+	]
+
+}
