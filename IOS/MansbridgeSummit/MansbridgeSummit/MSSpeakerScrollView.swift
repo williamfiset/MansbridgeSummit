@@ -13,31 +13,37 @@ import UIKit
 class MSSpeakerScrollView : UIScrollView {
     
     let TOP_Y : CGFloat = 50
-    let PADDING : CGFloat = 20
+    let PADDING : CGFloat = GC.SCREEN_WIDTH * 0.025
     
-    var videoPlayer1: YouTubePlayerView!
-    var videoPlayer2: YouTubePlayerView!
-    var videoPlayer3: YouTubePlayerView!
-    
-    init(frame: CGRect, withVideos videos : [String]) {
+    init(frame: CGRect, inout withSpeaker speaker : MSSpeaker? ) {
         
         super.init(frame: frame)
+        
+        if speaker != nil {
+            positionSpeakerText(&speaker!)
+            positionVideos(&speaker!)
+        }
+
+        
+    }
+    
+    private func positionSpeakerText( inout speaker : MSSpeaker ) -> Void {
+        
+    }
+    
+    private func positionVideos( inout speaker : MSSpeaker ) -> Void {
         
         let videoWidth = GC.SCREEN_WIDTH - (PADDING * 2)
         let videoHeight = videoWidth / 2
         
-        videoPlayer1 = YouTubePlayerView(frame: CGRect(x: PADDING, y: TOP_Y + PADDING, width: videoWidth, height: videoHeight))
-        videoPlayer1.loadVideoID("DBXZWB_dNsw")
-        self.addSubview(videoPlayer1)
-        
-        videoPlayer2 = YouTubePlayerView(frame: CGRect(x: PADDING, y: TOP_Y + (2 * PADDING) + videoHeight, width: videoWidth, height: videoHeight))
-        videoPlayer2.loadVideoID("0r3cEKZiLmg")
-        self.addSubview(videoPlayer2)
-        
-        videoPlayer3 = YouTubePlayerView(frame: CGRect(x: PADDING, y: TOP_Y + (3 * PADDING) + (videoHeight * 2), width: videoWidth, height: videoHeight))
-        videoPlayer3.loadVideoID("yBX8GFqt6GA")
-        self.addSubview(videoPlayer3)
-        
+        for ( var i : CGFloat = 0; Int(i) < speaker.videos.count; i++) {
+            
+            let frame = CGRectMake( PADDING, TOP_Y + (i+1)*PADDING + i*videoHeight , videoWidth, videoHeight)
+            let videoPlayer = YouTubePlayerView(frame: frame)
+            videoPlayer.loadVideoID( speaker.videos[Int(i)] )
+            self.addSubview(videoPlayer)
+            
+        }
         
     }
 

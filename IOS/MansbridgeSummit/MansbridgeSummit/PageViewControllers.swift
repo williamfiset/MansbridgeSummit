@@ -53,9 +53,9 @@ class MSSpeakerController : UIViewController {
     override func viewDidLoad() {
         
         super.viewDidLoad()
-        let videos = getSpeakerVideos()
-        print(videos)
-        self.scrollView = MSSpeakerScrollView(frame: frame, withVideos: videos)
+
+        var speaker = getPageSpeaker()
+        self.scrollView = MSSpeakerScrollView(frame: frame, withSpeaker: &speaker)
         self.view.addSubview(scrollView)
         
     }
@@ -71,10 +71,10 @@ class MSSpeakerController : UIViewController {
                 if let panelists = json["panelists"].array {
                     for panelist in panelists {
                         
-                        let speaker_name = panelist["name"].stringValue ?? ""
-                        let speaker_profession = panelist["profession"].stringValue ?? ""
-                        let speaker_short_description = panelist["description"].stringValue ?? ""
-                        let speaker_videos = panelist["videos"].arrayObject as? [String] ?? []
+                        let speaker_name = panelist["name"].string ?? ""
+                        let speaker_profession = panelist["profession"].string ?? ""
+                        let speaker_short_description = panelist["description"].string ?? ""
+                        let speaker_videos = (panelist["videos"].arrayObject ?? []) as! [String]
 
                         let speaker = MSSpeaker(
                             name : speaker_name,
@@ -92,11 +92,11 @@ class MSSpeakerController : UIViewController {
         
     }
     
-    func getSpeakerVideos() -> [String] {
+    func getPageSpeaker() -> MSSpeaker? {
         if speakerID < MSSpeakerController.speakers.count  {
-            return MSSpeakerController.speakers[ speakerID ].videos
+            return MSSpeakerController.speakers[ speakerID ]
         } else {
-            return []
+            return nil
         }
     }
     
