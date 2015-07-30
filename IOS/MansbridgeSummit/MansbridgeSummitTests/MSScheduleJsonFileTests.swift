@@ -23,20 +23,22 @@ class MSScheduleJSONTests: XCTestCase {
     // Make sure file exists and that hte data can be accessed
     func testScheduleFileExists() {
         
-        let reader = MSScheduleReader(fileName: "test_schedule")
-        let reader2 = MSScheduleReader(fileName: "this filename does not exists")
+        let dataloader = DataLoader(fileName: "test_schedule", fileType: "json")
+        let dataloader2 = DataLoader(fileName: "this filename does not exists", fileType: "json")
         
-        XCTAssertNotNil(reader)
-        XCTAssertNil(reader2)
+        XCTAssertNotNil(dataloader)
+        XCTAssertNil(dataloader2)
         
     }
     
     // Make sure the test schedule could be parsed properly
     func testScheduleFileContent() {
         
-        let reader = MSScheduleReader(fileName: "test_schedule")
-        if let days = reader?.read() {
-            
+        let dataloader = DataLoader(fileName: "test_schedule", fileType: "json")
+        
+        if let json = dataloader?.getJSONContent() {
+
+            let days = readSchedule( json )
             XCTAssertNotEqual(days.count, 0)
             
             for day in days {
@@ -66,17 +68,19 @@ class MSScheduleJSONTests: XCTestCase {
                 }
             }
             
-        } else {
-            XCTFail()
         }
-        
+
     }
     
     // Make sure the schedule from the last Mansbridge Summit is displayed in the correct order
     func testScheduleOrder() {
         
-        let reader = MSScheduleReader(fileName: "test_schedule2")
-        if let days = reader?.read() {
+        
+        let dataloader = DataLoader(fileName: "test_schedule2", fileType: "json")
+        
+        if let json = dataloader?.getJSONContent() {
+            
+            let days = readSchedule(json)
             
             XCTAssertEqual(days.count, 2)
             
@@ -96,50 +100,50 @@ class MSScheduleJSONTests: XCTestCase {
                         if (e == 0 ) {
                             XCTAssertEqual(event.eventTime, "7:00pm")
                         }
-                    
-                    // Check the second day
+                        
+                        // Check the second day
                     } else if (d == 1) {
                         
                         switch (e) {
                             
-                            case 0:
-                                XCTAssertEqual(event.eventTime, "8:30am")
-                                break
+                        case 0:
+                            XCTAssertEqual(event.eventTime, "8:30am")
+                            break
                             
-                            case 1:
-                                XCTAssertEqual(event.eventTime, "9:45am-12:00pm")
-                                break
+                        case 1:
+                            XCTAssertEqual(event.eventTime, "9:45am-12:00pm")
+                            break
                             
-                            case 2:
-                                XCTAssertEqual(event.eventTime, "12:25pm")
-                                break
+                        case 2:
+                            XCTAssertEqual(event.eventTime, "12:25pm")
+                            break
                             
-                            case 3:
-                                XCTAssertEqual(event.eventTime, "1:30pm")
-                                break
+                        case 3:
+                            XCTAssertEqual(event.eventTime, "1:30pm")
+                            break
                             
-                            case 4:
-                                XCTAssertEqual(event.eventTime, "2:30pm")
-                                break
-                                
-                            case 5:
-                                XCTAssertEqual(event.eventTime, "3:30pm")
-                                break
-                                
-                            case 6:
-                                XCTAssertEqual(event.eventTime, "4:30pm")
-                                break
+                        case 4:
+                            XCTAssertEqual(event.eventTime, "2:30pm")
+                            break
                             
-                            case 7:
-                                XCTAssertEqual(event.eventTime, "7:00-8:30pm")
-                                break
-                                
-                            case 8:
-                                XCTAssertEqual(event.eventTime, "9:00pm")
-                                break
+                        case 5:
+                            XCTAssertEqual(event.eventTime, "3:30pm")
+                            break
                             
-                            default:
-                                break
+                        case 6:
+                            XCTAssertEqual(event.eventTime, "4:30pm")
+                            break
+                            
+                        case 7:
+                            XCTAssertEqual(event.eventTime, "7:00-8:30pm")
+                            break
+                            
+                        case 8:
+                            XCTAssertEqual(event.eventTime, "9:00pm")
+                            break
+                            
+                        default:
+                            break
                             
                         }
                         
@@ -147,11 +151,10 @@ class MSScheduleJSONTests: XCTestCase {
                     
                 }
             }
-            
-        } else {
-            XCTFail()
         }
         
+
+
     }
 
 }

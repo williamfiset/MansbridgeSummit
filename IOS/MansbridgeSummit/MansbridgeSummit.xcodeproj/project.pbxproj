@@ -194,9 +194,6 @@
 		F79185041B5A839600EFF287 /* TwitterCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F79184FA1B5A839600EFF287 /* TwitterCore.framework */; };
 		F79185051B5A839600EFF287 /* TwitterCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F79184FA1B5A839600EFF287 /* TwitterCore.framework */; };
 		F79185061B5A839600EFF287 /* TwitterCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F79184FA1B5A839600EFF287 /* TwitterCore.framework */; };
-		F7CF77BD1B5AACAF00013CF0 /* MSTwitterTimelineController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7CF77BC1B5AACAF00013CF0 /* MSTwitterTimelineController.swift */; };
-		F7CF77BE1B5AAD5E00013CF0 /* MSTwitterTimelineController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7CF77BC1B5AACAF00013CF0 /* MSTwitterTimelineController.swift */; };
-		F7CF77BF1B5AAD5F00013CF0 /* MSTwitterTimelineController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7CF77BC1B5AACAF00013CF0 /* MSTwitterTimelineController.swift */; };
 		F7CF77D71B5B2F5900013CF0 /* Calendar-25.png in Resources */ = {isa = PBXBuildFile; fileRef = F7CF77C81B5B2F5900013CF0 /* Calendar-25.png */; };
 		F7CF77D81B5B2F5900013CF0 /* Calendar-50.png in Resources */ = {isa = PBXBuildFile; fileRef = F7CF77C91B5B2F5900013CF0 /* Calendar-50.png */; };
 		F7CF77D91B5B2F5900013CF0 /* Calendar-75.png in Resources */ = {isa = PBXBuildFile; fileRef = F7CF77CA1B5B2F5900013CF0 /* Calendar-75.png */; };
@@ -333,7 +330,6 @@
 		F79184F81B5A839600EFF287 /* TwitterKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterKit.framework; sourceTree = "<group>"; };
 		F79184F91B5A839600EFF287 /* TwitterKitResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = TwitterKitResources.bundle; path = TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle; sourceTree = "<group>"; };
 		F79184FA1B5A839600EFF287 /* TwitterCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterCore.framework; sourceTree = "<group>"; };
-		F7CF77BC1B5AACAF00013CF0 /* MSTwitterTimelineController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSTwitterTimelineController.swift; sourceTree = "<group>"; };
 		F7CF77C81B5B2F5900013CF0 /* Calendar-25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Calendar-25.png"; sourceTree = "<group>"; };
 		F7CF77C91B5B2F5900013CF0 /* Calendar-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Calendar-50.png"; sourceTree = "<group>"; };
 		F7CF77CA1B5B2F5900013CF0 /* Calendar-75.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Calendar-75.png"; sourceTree = "<group>"; };
@@ -406,7 +402,6 @@
 		C64FD5CA1B59C28A00AE8EA6 /* TwitterTab */ = {
 			isa = PBXGroup;
 			children = (
-				F7CF77BC1B5AACAF00013CF0 /* MSTwitterTimelineController.swift */,
 				C65BE8E21B631FE4008C064D /* TwitterController.h */,
 				C65BE8E31B631FE4008C064D /* TwitterController.m */,
 			);
@@ -542,19 +537,17 @@
 		C6CFD0521B45EDA90067A6AD /* MansbridgeSummit */ = {
 			isa = PBXGroup;
 			children = (
+				C6F477631B6AE459001E79DA /* Miscellaneous */,
 				C6E163361B48292800942749 /* ThirdPartyFramework */,
-				C6CFD0611B45EDA90067A6AD /* Info.plist */,
-				C6721A001B49620200E7B050 /* MansbridgeSummit.entitlements */,
 				C6CFD0591B45EDA90067A6AD /* Main.storyboard */,
-				C6CFD05E1B45EDA90067A6AD /* LaunchScreen.storyboard */,
+				C6CFD0531B45EDA90067A6AD /* AppDelegate.swift */,
+				C6D9E9671B475E2D00249DA4 /* Constants.swift */,
 				C6D9E9631B475BCD00249DA4 /* Extensions.swift */,
 				C68A13891B5BF1A2003CE324 /* MSProtocols.swift */,
-				C6D9E9671B475E2D00249DA4 /* Constants.swift */,
-				C6CFD0531B45EDA90067A6AD /* AppDelegate.swift */,
-				C6C00A6A1B45F3B300709992 /* MSTabBarController.swift */,
 				C60B69591B61C6F200190140 /* Connection.h */,
 				C60B695A1B61C6F200190140 /* Connection.m */,
 				C67F0DCE1B69B6130020B18C /* DataLoader.swift */,
+				C6C00A6A1B45F3B300709992 /* MSTabBarController.swift */,
 				C69E4A671B460A5000BD981C /* Tabs */,
 				C6D9E96B1B47747700249DA4 /* Resources */,
 				C6E1633E1B483E7E00942749 /* wills_playground.playground */,
@@ -651,9 +644,6 @@
 		C6E163361B48292800942749 /* ThirdPartyFramework */ = {
 			isa = PBXGroup;
 			children = (
-				C664DE6E1B57254700CFB209 /* MansbridgeSummit-Bridging-Header.h */,
-				C664DE6F1B57254700CFB209 /* MansbridgeSummitTests-Bridging-Header.h */,
-				C664DE701B57254700CFB209 /* MansbridgeSummitUITests-Bridging-Header.h */,
 				F74C19FC1B5967B000F09002 /* STTwitter */,
 				C664DE691B5723F700CFB209 /* Reachability */,
 				C6E163371B48295100942749 /* SwiftyJSON */,
@@ -667,6 +657,19 @@
 				C6E163381B48296600942749 /* SwiftyJSON.swift */,
 			);
 			name = SwiftyJSON;
+			sourceTree = "<group>";
+		};
+		C6F477631B6AE459001E79DA /* Miscellaneous */ = {
+			isa = PBXGroup;
+			children = (
+				C6CFD05E1B45EDA90067A6AD /* LaunchScreen.storyboard */,
+				C6CFD0611B45EDA90067A6AD /* Info.plist */,
+				C6721A001B49620200E7B050 /* MansbridgeSummit.entitlements */,
+				C664DE6E1B57254700CFB209 /* MansbridgeSummit-Bridging-Header.h */,
+				C664DE6F1B57254700CFB209 /* MansbridgeSummitTests-Bridging-Header.h */,
+				C664DE701B57254700CFB209 /* MansbridgeSummitUITests-Bridging-Header.h */,
+			);
+			name = Miscellaneous;
 			sourceTree = "<group>";
 		};
 		F74C19FC1B5967B000F09002 /* STTwitter */ = {
@@ -953,7 +956,6 @@
 			files = (
 				F74C1A171B5967B000F09002 /* NSString+STTwitter.m in Sources */,
 				C6D9E9681B475E2D00249DA4 /* Constants.swift in Sources */,
-				F7CF77BD1B5AACAF00013CF0 /* MSTwitterTimelineController.swift in Sources */,
 				C61C00641B4C7F1600AB4D6C /* MSEventPageController.swift in Sources */,
 				F74C1A1E1B5967B000F09002 /* BAVPlistNode.m in Sources */,
 				C6CFD0541B45EDA90067A6AD /* AppDelegate.swift in Sources */,
@@ -1031,7 +1033,6 @@
 				C689563C1B52B399006D188F /* MSFrontPageScrollView.swift in Sources */,
 				C69E4A651B460A3F00BD981C /* MSScheduleTableController.swift in Sources */,
 				C6E1633A1B48296600942749 /* SwiftyJSON.swift in Sources */,
-				F7CF77BE1B5AAD5E00013CF0 /* MSTwitterTimelineController.swift in Sources */,
 				C6C00A6C1B45F3B300709992 /* MSTabBarController.swift in Sources */,
 				C68A138B1B5BF1A2003CE324 /* MSProtocols.swift in Sources */,
 				C6E1632C1B4814EC00942749 /* MSScheduleCellView.Tests.swift in Sources */,
@@ -1053,7 +1054,6 @@
 				C6A0D98F1B59FF0400C8172D /* MansbridgeSummitUITests.swift in Sources */,
 				C65BE8E61B631FE4008C064D /* TwitterController.m in Sources */,
 				C6A0D97C1B59FD9200C8172D /* AppDelegate.swift in Sources */,
-				F7CF77BF1B5AAD5F00013CF0 /* MSTwitterTimelineController.swift in Sources */,
 				C67F0DD11B69B6130020B18C /* DataLoader.swift in Sources */,
 				C6A0D9711B59FCF000C8172D /* NSDateFormatter+STTwitter.m in Sources */,
 				C6A0D9721B59FCF000C8172D /* NSString+STTwitter.m in Sources */,

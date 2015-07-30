@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 
-class MSSpeakerScrollView : UIScrollView {
+class MSSpeakerScrollView : UIScrollView { // UIScrollViewDelegate
     
     let TOP_Y : CGFloat = 50
     let PADDING : CGFloat = GC.SCREEN_WIDTH * 0.025
@@ -19,10 +19,19 @@ class MSSpeakerScrollView : UIScrollView {
         
         super.init(frame: frame)
         
+        self.backgroundColor = GC.Color.white
+        self.showsVerticalScrollIndicator = true
+        self.scrollEnabled = true;
+        self.userInteractionEnabled = true;
+        self.indicatorStyle = UIScrollViewIndicatorStyle.Black
+        
         if speaker != nil {
             positionSpeakerText(&speaker!)
             positionVideos(&speaker!)
         }
+        
+        // Compute minimum height and set content size
+        self.contentSize = CGSize(width: frame.width, height: frame.height*3)
 
         
     }
