@@ -6,15 +6,25 @@
 //  Copyright © 2015 Mansbridge Summit Dev Team. All rights reserved.
 //
 
+import Foundation
 import UIKit
 
-class PageContentViewController: UIViewController {
-    
-    var pageIndex: Int?
 
+class MSFrontPageController : UIViewController {
+
+    var scrollView : MSFrontPageScrollView!
+    
+    override func viewDidLoad() {
+        
+        super.viewDidLoad()
+        self.scrollView = MSFrontPageScrollView(frame: CGRectMake(0, 0, GC.SCREEN_WIDTH, GC.SCREEN_HEIGHT - GC.TAB_BAR_HEIGHT))
+        self.view.addSubview(scrollView)
+        
+    }
+    
 }
 
-class SpeakerViewController: PageContentViewController {
+class MSSpeakerController : UIViewController {
     
     var videoPlayer1: YouTubePlayerView!
     var videoPlayer2: YouTubePlayerView!
@@ -24,12 +34,6 @@ class SpeakerViewController: PageContentViewController {
         
         super.viewDidLoad()
         
-        let image = UIImage(named: "Speaker\(pageIndex!)")
-        let imageView = UIImageView(image: image)
-        imageView.frame = self.view.frame
-        self.view.addSubview(imageView)
-        
-
         let topY = 50
         let padding = 20
         let width = Int(self.view.frame.width)
@@ -48,19 +52,9 @@ class SpeakerViewController: PageContentViewController {
         videoPlayer3.loadVideoID("yBX8GFqt6GA")
         self.view.addSubview(videoPlayer3)
         
-    
+        
     }
+    
 }
 
-class HomeViewController: PageContentViewController {
-    
-    override func viewDidLoad() {
-        
-        super.viewDidLoad()
-        
-        let scollViewFrame = CGRect(x: 0, y: 0, width: view.frame.width, height: view.frame.height - GC.TAB_BAR_HEIGHT)
-        let scrollView = MSScrollView(frame: scollViewFrame)
-        self.view.addSubview(scrollView)
-        
-    }
-}
+

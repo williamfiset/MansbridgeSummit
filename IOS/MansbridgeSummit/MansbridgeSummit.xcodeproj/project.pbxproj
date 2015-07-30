@@ -29,12 +29,18 @@
 		C67926B21B4DC94B00EA86B4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6CFD05E1B45EDA90067A6AD /* LaunchScreen.storyboard */; };
 		C67926B31B4DC94B00EA86B4 /* TabBarIcons.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6CFD05C1B45EDA90067A6AD /* TabBarIcons.xcassets */; };
 		C67BD26D1B5F1597006356C2 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C67BD26C1B5F1597006356C2 /* SystemConfiguration.framework */; };
+		C67F0DB21B6977C20020B18C /* MSHomeModelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67F0DB11B6977C20020B18C /* MSHomeModelController.swift */; };
+		C67F0DB31B6977C20020B18C /* MSHomeModelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67F0DB11B6977C20020B18C /* MSHomeModelController.swift */; };
+		C67F0DB41B6977C20020B18C /* MSHomeModelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67F0DB11B6977C20020B18C /* MSHomeModelController.swift */; };
+		C67F0DBE1B699D7B0020B18C /* MSSpeakerScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67F0DBD1B699D7B0020B18C /* MSSpeakerScrollView.swift */; };
+		C67F0DBF1B699D7B0020B18C /* MSSpeakerScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67F0DBD1B699D7B0020B18C /* MSSpeakerScrollView.swift */; };
+		C67F0DC01B699D7B0020B18C /* MSSpeakerScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67F0DBD1B699D7B0020B18C /* MSSpeakerScrollView.swift */; };
 		C68956361B52AFBB006D188F /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C68956351B52AFBB006D188F /* Media.xcassets */; };
 		C68956371B52AFBB006D188F /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C68956351B52AFBB006D188F /* Media.xcassets */; };
 		C68956381B52AFBB006D188F /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C68956351B52AFBB006D188F /* Media.xcassets */; };
-		C689563B1B52B399006D188F /* MSScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C689563A1B52B399006D188F /* MSScrollView.swift */; };
-		C689563C1B52B399006D188F /* MSScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C689563A1B52B399006D188F /* MSScrollView.swift */; };
-		C689563D1B52B399006D188F /* MSScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C689563A1B52B399006D188F /* MSScrollView.swift */; };
+		C689563B1B52B399006D188F /* MSFrontPageScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C689563A1B52B399006D188F /* MSFrontPageScrollView.swift */; };
+		C689563C1B52B399006D188F /* MSFrontPageScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C689563A1B52B399006D188F /* MSFrontPageScrollView.swift */; };
+		C689563D1B52B399006D188F /* MSFrontPageScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C689563A1B52B399006D188F /* MSFrontPageScrollView.swift */; };
 		C68A13881B5BCE7B003CE324 /* NetworkErrorXIB.xib in Resources */ = {isa = PBXBuildFile; fileRef = C68A13871B5BCE7B003CE324 /* NetworkErrorXIB.xib */; };
 		C68A138A1B5BF1A2003CE324 /* MSProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = C68A13891B5BF1A2003CE324 /* MSProtocols.swift */; };
 		C68A138B1B5BF1A2003CE324 /* MSProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = C68A13891B5BF1A2003CE324 /* MSProtocols.swift */; };
@@ -146,8 +152,8 @@
 		F74C1A221B5967C500F09002 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F74C1A211B5967C500F09002 /* Accounts.framework */; };
 		F74C1A241B5967CA00F09002 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F74C1A231B5967CA00F09002 /* Social.framework */; };
 		F74C1A261B5967CF00F09002 /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F74C1A251B5967CF00F09002 /* Twitter.framework */; };
-		F7581FB61B63218900406498 /* PageContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7581FB41B63218900406498 /* PageContentViewController.swift */; };
-		F7581FB71B63218900406498 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7581FB51B63218900406498 /* ViewController.swift */; };
+		F7581FB61B63218900406498 /* PageViewControllers.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7581FB41B63218900406498 /* PageViewControllers.swift */; };
+		F7581FB71B63218900406498 /* MSHomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7581FB51B63218900406498 /* MSHomeController.swift */; };
 		F76F3BD51B61E0D90068C41C /* QR Code-25.png in Resources */ = {isa = PBXBuildFile; fileRef = F76F3BD21B61E0D90068C41C /* QR Code-25.png */; };
 		F76F3BD61B61E0D90068C41C /* QR Code-25.png in Resources */ = {isa = PBXBuildFile; fileRef = F76F3BD21B61E0D90068C41C /* QR Code-25.png */; };
 		F76F3BD71B61E0D90068C41C /* QR Code-25.png in Resources */ = {isa = PBXBuildFile; fileRef = F76F3BD21B61E0D90068C41C /* QR Code-25.png */; };
@@ -233,8 +239,10 @@
 		C67926B51B4DD0F800EA86B4 /* MSEventTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSEventTests.swift; sourceTree = "<group>"; };
 		C67926BB1B4DD2A100EA86B4 /* MScheduleTableViewTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MScheduleTableViewTests.swift; sourceTree = "<group>"; };
 		C67BD26C1B5F1597006356C2 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		C67F0DB11B6977C20020B18C /* MSHomeModelController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSHomeModelController.swift; sourceTree = "<group>"; };
+		C67F0DBD1B699D7B0020B18C /* MSSpeakerScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSSpeakerScrollView.swift; sourceTree = "<group>"; };
 		C68956351B52AFBB006D188F /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
-		C689563A1B52B399006D188F /* MSScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSScrollView.swift; sourceTree = "<group>"; };
+		C689563A1B52B399006D188F /* MSFrontPageScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSFrontPageScrollView.swift; sourceTree = "<group>"; };
 		C68A13871B5BCE7B003CE324 /* NetworkErrorXIB.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NetworkErrorXIB.xib; sourceTree = "<group>"; };
 		C68A13891B5BF1A2003CE324 /* MSProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSProtocols.swift; sourceTree = "<group>"; };
 		C69808E51B5D05D900164BC6 /* YouTubePlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YouTubePlayer.swift; sourceTree = "<group>"; };
@@ -300,8 +308,8 @@
 		F74C1A211B5967C500F09002 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 		F74C1A231B5967CA00F09002 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		F74C1A251B5967CF00F09002 /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = System/Library/Frameworks/Twitter.framework; sourceTree = SDKROOT; };
-		F7581FB41B63218900406498 /* PageContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageContentViewController.swift; sourceTree = "<group>"; };
-		F7581FB51B63218900406498 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F7581FB41B63218900406498 /* PageViewControllers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageViewControllers.swift; sourceTree = "<group>"; };
+		F7581FB51B63218900406498 /* MSHomeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSHomeController.swift; sourceTree = "<group>"; };
 		F76F3BD21B61E0D90068C41C /* QR Code-25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "QR Code-25.png"; sourceTree = "<group>"; };
 		F76F3BD31B61E0D90068C41C /* QR Code-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "QR Code-50.png"; sourceTree = "<group>"; };
 		F76F3BD41B61E0D90068C41C /* QR Code-75.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "QR Code-75.png"; sourceTree = "<group>"; };
@@ -442,9 +450,11 @@
 		C68956391B52B2EF006D188F /* FirstTab */ = {
 			isa = PBXGroup;
 			children = (
-				F7581FB41B63218900406498 /* PageContentViewController.swift */,
-				F7581FB51B63218900406498 /* ViewController.swift */,
-				C689563A1B52B399006D188F /* MSScrollView.swift */,
+				F7581FB51B63218900406498 /* MSHomeController.swift */,
+				C67F0DB11B6977C20020B18C /* MSHomeModelController.swift */,
+				F7581FB41B63218900406498 /* PageViewControllers.swift */,
+				C689563A1B52B399006D188F /* MSFrontPageScrollView.swift */,
+				C67F0DBD1B699D7B0020B18C /* MSSpeakerScrollView.swift */,
 				C69808E51B5D05D900164BC6 /* YouTubePlayer.swift */,
 				C69808E61B5D05D900164BC6 /* YTPlayer.html */,
 			);
@@ -927,6 +937,7 @@
 				C69E4A6E1B4612A600BD981C /* MSScheduleCellView.swift in Sources */,
 				F74C1A1C1B5967B000F09002 /* STTwitterOAuth.m in Sources */,
 				C6D9E9641B475BCD00249DA4 /* Extensions.swift in Sources */,
+				C67F0DB21B6977C20020B18C /* MSHomeModelController.swift in Sources */,
 				F74C1A1A1B5967B000F09002 /* STTwitterAppOnly.m in Sources */,
 				C69E4A5C1B46090E00BD981C /* MSQRCodeTabController.swift in Sources */,
 				F74C1A181B5967B000F09002 /* STHTTPRequest+STTwitter.m in Sources */,
@@ -934,11 +945,12 @@
 				C664DE731B57254800CFB209 /* Reachability.m in Sources */,
 				C6EB798A1B4C903400F5E516 /* MSEventPageView.swift in Sources */,
 				C60B695B1B61C6F200190140 /* Connection.m in Sources */,
-				C689563B1B52B399006D188F /* MSScrollView.swift in Sources */,
+				C689563B1B52B399006D188F /* MSFrontPageScrollView.swift in Sources */,
 				C69E4A641B460A3F00BD981C /* MSScheduleTableController.swift in Sources */,
-				F7581FB71B63218900406498 /* ViewController.swift in Sources */,
+				F7581FB71B63218900406498 /* MSHomeController.swift in Sources */,
+				C67F0DBE1B699D7B0020B18C /* MSSpeakerScrollView.swift in Sources */,
 				F74C1A191B5967B000F09002 /* STTwitterAPI.m in Sources */,
-				F7581FB61B63218900406498 /* PageContentViewController.swift in Sources */,
+				F7581FB61B63218900406498 /* PageViewControllers.swift in Sources */,
 				C6E1632E1B481AE600942749 /* MSScheduleModels.swift in Sources */,
 				C6C00A6B1B45F3B300709992 /* MSTabBarController.swift in Sources */,
 				C6E163391B48296600942749 /* SwiftyJSON.swift in Sources */,
@@ -957,10 +969,12 @@
 				C6A0D9851B59FD9A00C8172D /* AppDelegate.swift in Sources */,
 				C6A0D9661B59FCCC00C8172D /* NSDateFormatter+STTwitter.m in Sources */,
 				C6A0D9671B59FCCC00C8172D /* NSString+STTwitter.m in Sources */,
+				C67F0DBF1B699D7B0020B18C /* MSSpeakerScrollView.swift in Sources */,
 				C6A0D9681B59FCCC00C8172D /* STHTTPRequest+STTwitter.m in Sources */,
 				C6A0D9691B59FCCC00C8172D /* STTwitterAPI.m in Sources */,
 				C6A0D96A1B59FCCC00C8172D /* STTwitterAppOnly.m in Sources */,
 				C6A0D96B1B59FCCC00C8172D /* STTwitterHTML.m in Sources */,
+				C67F0DB31B6977C20020B18C /* MSHomeModelController.swift in Sources */,
 				C6A0D96C1B59FCCC00C8172D /* STTwitterOAuth.m in Sources */,
 				C6A0D96D1B59FCCC00C8172D /* STTwitterOS.m in Sources */,
 				C6A0D96E1B59FCCC00C8172D /* BAVPlistNode.m in Sources */,
@@ -978,7 +992,7 @@
 				C69E4A6F1B4612A600BD981C /* MSScheduleCellView.swift in Sources */,
 				C6D9E9651B475BCD00249DA4 /* Extensions.swift in Sources */,
 				C69E4A5D1B46090E00BD981C /* MSQRCodeTabController.swift in Sources */,
-				C689563C1B52B399006D188F /* MSScrollView.swift in Sources */,
+				C689563C1B52B399006D188F /* MSFrontPageScrollView.swift in Sources */,
 				C69E4A651B460A3F00BD981C /* MSScheduleTableController.swift in Sources */,
 				C6E1633A1B48296600942749 /* SwiftyJSON.swift in Sources */,
 				F7CF77BE1B5AAD5E00013CF0 /* MSTwitterTimelineController.swift in Sources */,
@@ -1013,6 +1027,7 @@
 				C6A0D9791B59FCF000C8172D /* BAVPlistNode.m in Sources */,
 				C6A0D97A1B59FCF000C8172D /* JSONSyntaxHighlight.m in Sources */,
 				C6A0D97B1B59FCF000C8172D /* STHTTPRequest.m in Sources */,
+				C67F0DB41B6977C20020B18C /* MSHomeModelController.swift in Sources */,
 				C6D9E96A1B475E2D00249DA4 /* Constants.swift in Sources */,
 				C61C00661B4C7F1600AB4D6C /* MSEventPageController.swift in Sources */,
 				C69E4A741B4620AC00BD981C /* MSScheduleTableView.swift in Sources */,
@@ -1023,13 +1038,14 @@
 				C69E4A661B460A3F00BD981C /* MSScheduleTableController.swift in Sources */,
 				C664DE751B57254800CFB209 /* Reachability.m in Sources */,
 				C6E163301B481AE600942749 /* MSScheduleModels.swift in Sources */,
+				C67F0DC01B699D7B0020B18C /* MSSpeakerScrollView.swift in Sources */,
 				C6C00A6D1B45F3B300709992 /* MSTabBarController.swift in Sources */,
 				C6E1633B1B48296600942749 /* SwiftyJSON.swift in Sources */,
 				C69808E91B5D05D900164BC6 /* YouTubePlayer.swift in Sources */,
 				C69E4A5A1B4608C500BD981C /* MSRegisterTabController.swift in Sources */,
 				C60B695D1B61C6F200190140 /* Connection.m in Sources */,
 				C68A138C1B5BF1A2003CE324 /* MSProtocols.swift in Sources */,
-				C689563D1B52B399006D188F /* MSScrollView.swift in Sources */,
+				C689563D1B52B399006D188F /* MSFrontPageScrollView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-public class MSScrollView : UIScrollView {
+public class MSFrontPageScrollView : UIScrollView {
 
     override init(frame: CGRect) {
         
