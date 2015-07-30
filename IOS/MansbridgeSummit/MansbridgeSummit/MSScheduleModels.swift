@@ -32,67 +32,43 @@ public struct MSEvent : CustomStringConvertible {
     
 }
 
-
-public class MSScheduleReader {
+// Should this function belong in this file?
+public func readSchedule( json : JSON ) -> [MSDay] {
     
-    let fileName : String
-    var scheduleData : JSON? = nil
+    var msdays : [MSDay] = []
     
-    init? (fileName : String) {
+    if let schedule = json["schedule"].array {
         
-        self.fileName = fileName
-        
-        if let path : String = NSBundle.mainBundle().pathForResource(fileName, ofType: "json") {
-            if let data = NSData(contentsOfFile: path) {
-                scheduleData =  JSON(data: data)
-            } else {
-                return nil
-            }
-        } else {
-            return nil
-        }
-
-    }
-    
-    public func read() -> [MSDay] {
-        
-        var msdays : [MSDay] = []
-        
-        if let json = scheduleData {
-           
-            if let schedule = json["schedule"].array {
+        for day in schedule {
+            
+            let date   = day["date"].stringValue
+            let events = day["events"].arrayValue
+            var msevents : [MSEvent] = []
+            
+            for event in events {
                 
-                for day in schedule {
-                    
-                    let date   = day["date"].stringValue
-                    let events = day["events"].arrayValue
-                    var msevents : [MSEvent] = []
-                    
-                    for event in events {
-                        
-                        let eventName = event["eventName"].stringValue
-                        let eventTime = event["eventTime"].stringValue
-                        let eventLocation = event["eventLocation"].stringValue
-                        let eventDescription = event["eventDescription"].stringValue
-                        let eventSpeaker = event["eventSpeaker"].string
-                        
-                        let msevent = MSEvent (
-                            eventName: eventName,
-                            eventTime: eventTime,
-                            eventLocation: eventLocation,
-                            eventDescription: eventDescription,
-                            eventSpeaker: eventSpeaker
-                        )
-                        
-                        msevents.append( msevent )
-                    }
-                    msdays.append( MSDay(date: date, events: msevents) )
-                }
+                let eventName = event["eventName"].stringValue
+                let eventTime = event["eventTime"].stringValue
+                let eventLocation = event["eventLocation"].stringValue
+                let eventDescription = event["eventDescription"].stringValue
+                let eventSpeaker = event["eventSpeaker"].string
+                
+                let msevent = MSEvent (
+                    eventName: eventName,
+                    eventTime: eventTime,
+                    eventLocation: eventLocation,
+                    eventDescription: eventDescription,
+                    eventSpeaker: eventSpeaker
+                )
+                
+                msevents.append( msevent )
             }
+            msdays.append( MSDay(date: date, events: msevents) )
         }
-        
-        return msdays
     }
     
     
+    return msdays
 }
+
+

@@ -43,9 +43,12 @@ public class MSScheduleTableController : UITableViewController {
         self.view = newTable
         self.tableView = newTable
         
-        if let reader = MSScheduleReader(fileName: schedule_file_name) {
-            days = reader.read()
-
+        if let reader = DataLoader(fileName: schedule_file_name, fileType: "json") {
+            if let jsonData = reader.getJSONContent() {
+                days = readSchedule( jsonData )
+            } else {
+                fatalError()
+            }
         } else {
             fatalError()
         }
