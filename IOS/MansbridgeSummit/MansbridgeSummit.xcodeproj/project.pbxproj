@@ -35,6 +35,13 @@
 		C67F0DBE1B699D7B0020B18C /* MSSpeakerScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67F0DBD1B699D7B0020B18C /* MSSpeakerScrollView.swift */; };
 		C67F0DBF1B699D7B0020B18C /* MSSpeakerScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67F0DBD1B699D7B0020B18C /* MSSpeakerScrollView.swift */; };
 		C67F0DC01B699D7B0020B18C /* MSSpeakerScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67F0DBD1B699D7B0020B18C /* MSSpeakerScrollView.swift */; };
+		C67F0DC11B69A4640020B18C /* MSHomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7581FB51B63218900406498 /* MSHomeController.swift */; };
+		C67F0DC21B69A4640020B18C /* PageViewControllers.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7581FB41B63218900406498 /* PageViewControllers.swift */; };
+		C67F0DC31B69A46D0020B18C /* MSHomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7581FB51B63218900406498 /* MSHomeController.swift */; };
+		C67F0DC41B69A46D0020B18C /* PageViewControllers.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7581FB41B63218900406498 /* PageViewControllers.swift */; };
+		C67F0DC71B69A65D0020B18C /* speakers_test.json in Resources */ = {isa = PBXBuildFile; fileRef = C67F0DC61B69A65D0020B18C /* speakers_test.json */; };
+		C67F0DC81B69A65D0020B18C /* speakers_test.json in Resources */ = {isa = PBXBuildFile; fileRef = C67F0DC61B69A65D0020B18C /* speakers_test.json */; };
+		C67F0DC91B69A65D0020B18C /* speakers_test.json in Resources */ = {isa = PBXBuildFile; fileRef = C67F0DC61B69A65D0020B18C /* speakers_test.json */; };
 		C68956361B52AFBB006D188F /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C68956351B52AFBB006D188F /* Media.xcassets */; };
 		C68956371B52AFBB006D188F /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C68956351B52AFBB006D188F /* Media.xcassets */; };
 		C68956381B52AFBB006D188F /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C68956351B52AFBB006D188F /* Media.xcassets */; };
@@ -241,6 +248,7 @@
 		C67BD26C1B5F1597006356C2 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		C67F0DB11B6977C20020B18C /* MSHomeModelController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSHomeModelController.swift; sourceTree = "<group>"; };
 		C67F0DBD1B699D7B0020B18C /* MSSpeakerScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSSpeakerScrollView.swift; sourceTree = "<group>"; };
+		C67F0DC61B69A65D0020B18C /* speakers_test.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = speakers_test.json; path = ../../../../../speakers_test.json; sourceTree = "<group>"; };
 		C68956351B52AFBB006D188F /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 		C689563A1B52B399006D188F /* MSFrontPageScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSFrontPageScrollView.swift; sourceTree = "<group>"; };
 		C68A13871B5BCE7B003CE324 /* NetworkErrorXIB.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NetworkErrorXIB.xib; sourceTree = "<group>"; };
@@ -447,6 +455,14 @@
 			name = RegisterTab;
 			sourceTree = "<group>";
 		};
+		C67F0DC51B69A64E0020B18C /* Speakers */ = {
+			isa = PBXGroup;
+			children = (
+				C67F0DC61B69A65D0020B18C /* speakers_test.json */,
+			);
+			name = Speakers;
+			sourceTree = "<group>";
+		};
 		C68956391B52B2EF006D188F /* FirstTab */ = {
 			isa = PBXGroup;
 			children = (
@@ -561,6 +577,7 @@
 		C6D9E96B1B47747700249DA4 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				C67F0DC51B69A64E0020B18C /* Speakers */,
 				C68A13871B5BCE7B003CE324 /* NetworkErrorXIB.xib */,
 				F7D1B85F1B5C8E0900D34341 /* RegistrationSuccessXIB.xib */,
 				F7D1B8651B5C8ED900D34341 /* checkmark.png */,
@@ -824,6 +841,7 @@
 				C6CFD0601B45EDA90067A6AD /* LaunchScreen.storyboard in Resources */,
 				F7CF77DB1B5B2F5900013CF0 /* Home-50.png in Resources */,
 				C6CFD05D1B45EDA90067A6AD /* TabBarIcons.xcassets in Resources */,
+				C67F0DC71B69A65D0020B18C /* speakers_test.json in Resources */,
 				C6E163331B481C5000942749 /* test_schedule.json in Resources */,
 				F7CF77DA1B5B2F5900013CF0 /* Home-25.png in Resources */,
 				F76F3BDB1B61E0D90068C41C /* QR Code-75.png in Resources */,
@@ -857,6 +875,7 @@
 				C67926AE1B4DC94100EA86B4 /* LaunchScreen.storyboard in Resources */,
 				F76F3BD91B61E0D90068C41C /* QR Code-50.png in Resources */,
 				C67926AF1B4DC94100EA86B4 /* TabBarIcons.xcassets in Resources */,
+				C67F0DC81B69A65D0020B18C /* speakers_test.json in Resources */,
 				C6D9E9611B474F1000249DA4 /* Main.storyboard in Resources */,
 				F7D1B8611B5C8E1600D34341 /* NetworkErrorXIB.xib in Resources */,
 				F76F3BD61B61E0D90068C41C /* QR Code-25.png in Resources */,
@@ -881,6 +900,7 @@
 				C67926B21B4DC94B00EA86B4 /* LaunchScreen.storyboard in Resources */,
 				F76F3BDA1B61E0D90068C41C /* QR Code-50.png in Resources */,
 				C67926B31B4DC94B00EA86B4 /* TabBarIcons.xcassets in Resources */,
+				C67F0DC91B69A65D0020B18C /* speakers_test.json in Resources */,
 				C67926AB1B4DC91B00EA86B4 /* test_schedule.json in Resources */,
 				F7D1B8621B5C8E1600D34341 /* NetworkErrorXIB.xib in Resources */,
 				F76F3BD71B61E0D90068C41C /* QR Code-25.png in Resources */,
@@ -963,6 +983,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C67F0DC11B69A4640020B18C /* MSHomeController.swift in Sources */,
+				C67F0DC21B69A4640020B18C /* PageViewControllers.swift in Sources */,
 				C6A0D9871B59FE7C00C8172D /* MScheduleTableViewTests.swift in Sources */,
 				C6A0D9881B59FE7C00C8172D /* MSEventTests.swift in Sources */,
 				C6A0D9891B59FE7C00C8172D /* ExtensionsTests.swift in Sources */,
@@ -1011,6 +1033,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C67F0DC31B69A46D0020B18C /* MSHomeController.swift in Sources */,
+				C67F0DC41B69A46D0020B18C /* PageViewControllers.swift in Sources */,
 				C6A0D98E1B59FF0400C8172D /* MSScheduleTests.swift in Sources */,
 				C6A0D98F1B59FF0400C8172D /* MansbridgeSummitUITests.swift in Sources */,
 				C65BE8E61B631FE4008C064D /* TwitterController.m in Sources */,
