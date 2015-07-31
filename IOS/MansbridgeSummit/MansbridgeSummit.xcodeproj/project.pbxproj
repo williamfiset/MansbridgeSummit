@@ -13,6 +13,8 @@
 		C61C00641B4C7F1600AB4D6C /* MSEventPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C61C00631B4C7F1600AB4D6C /* MSEventPageController.swift */; };
 		C61C00651B4C7F1600AB4D6C /* MSEventPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C61C00631B4C7F1600AB4D6C /* MSEventPageController.swift */; };
 		C61C00661B4C7F1600AB4D6C /* MSEventPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C61C00631B4C7F1600AB4D6C /* MSEventPageController.swift */; };
+		C61EEFC91B6AF6D30012DA3D /* MSHomePageViewTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C61EEFC81B6AF6D30012DA3D /* MSHomePageViewTest.swift */; };
+		C61EEFCE1B6AF9F00012DA3D /* MSTwitterTabTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C61EEFCD1B6AF9F00012DA3D /* MSTwitterTabTests.m */; };
 		C64FD5C71B59A61A00AE8EA6 /* test_schedule2.json in Resources */ = {isa = PBXBuildFile; fileRef = C64FD5C61B59A61A00AE8EA6 /* test_schedule2.json */; };
 		C64FD5C81B59A61A00AE8EA6 /* test_schedule2.json in Resources */ = {isa = PBXBuildFile; fileRef = C64FD5C61B59A61A00AE8EA6 /* test_schedule2.json */; };
 		C64FD5C91B59A61A00AE8EA6 /* test_schedule2.json in Resources */ = {isa = PBXBuildFile; fileRef = C64FD5C61B59A61A00AE8EA6 /* test_schedule2.json */; };
@@ -64,6 +66,7 @@
 		C69808EA1B5D05D900164BC6 /* YTPlayer.html in Resources */ = {isa = PBXBuildFile; fileRef = C69808E61B5D05D900164BC6 /* YTPlayer.html */; };
 		C69808EB1B5D05D900164BC6 /* YTPlayer.html in Resources */ = {isa = PBXBuildFile; fileRef = C69808E61B5D05D900164BC6 /* YTPlayer.html */; };
 		C69808EC1B5D05D900164BC6 /* YTPlayer.html in Resources */ = {isa = PBXBuildFile; fileRef = C69808E61B5D05D900164BC6 /* YTPlayer.html */; };
+		C69BCCD01B6AEE0E0027ACE7 /* MSHomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69BCCCF1B6AEE0E0027ACE7 /* MSHomePage.swift */; };
 		C69E4A581B4608C500BD981C /* MSRegisterTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69E4A571B4608C500BD981C /* MSRegisterTabController.swift */; };
 		C69E4A591B4608C500BD981C /* MSRegisterTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69E4A571B4608C500BD981C /* MSRegisterTabController.swift */; };
 		C69E4A5A1B4608C500BD981C /* MSRegisterTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69E4A571B4608C500BD981C /* MSRegisterTabController.swift */; };
@@ -108,6 +111,10 @@
 		C6A0D9891B59FE7C00C8172D /* ExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6D9E9951B477D6E00249DA4 /* ExtensionsTests.swift */; };
 		C6A0D98E1B59FF0400C8172D /* MSScheduleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67926A91B4DC36900EA86B4 /* MSScheduleTests.swift */; };
 		C6A0D98F1B59FF0400C8172D /* MansbridgeSummitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6CFD0751B45EDA90067A6AD /* MansbridgeSummitUITests.swift */; };
+		C6B0A6C51B6B00760048518E /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C67BD26C1B5F1597006356C2 /* SystemConfiguration.framework */; };
+		C6B0A6C61B6B00800048518E /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C65BE8E01B631DE3008C064D /* CloudKit.framework */; };
+		C6B0A6C71B6B00880048518E /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C65BE8E01B631DE3008C064D /* CloudKit.framework */; };
+		C6B0A6C81B6B00930048518E /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C67BD26C1B5F1597006356C2 /* SystemConfiguration.framework */; };
 		C6C00A6B1B45F3B300709992 /* MSTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C00A6A1B45F3B300709992 /* MSTabBarController.swift */; };
 		C6C00A6C1B45F3B300709992 /* MSTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C00A6A1B45F3B300709992 /* MSTabBarController.swift */; };
 		C6C00A6D1B45F3B300709992 /* MSTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C00A6A1B45F3B300709992 /* MSTabBarController.swift */; };
@@ -235,6 +242,8 @@
 		C60B69591B61C6F200190140 /* Connection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Connection.h; sourceTree = "<group>"; };
 		C60B695A1B61C6F200190140 /* Connection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Connection.m; sourceTree = "<group>"; };
 		C61C00631B4C7F1600AB4D6C /* MSEventPageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSEventPageController.swift; sourceTree = "<group>"; };
+		C61EEFC81B6AF6D30012DA3D /* MSHomePageViewTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSHomePageViewTest.swift; sourceTree = "<group>"; };
+		C61EEFCD1B6AF9F00012DA3D /* MSTwitterTabTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSTwitterTabTests.m; sourceTree = "<group>"; };
 		C64FD5C61B59A61A00AE8EA6 /* test_schedule2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = test_schedule2.json; sourceTree = "<group>"; };
 		C65BE8E01B631DE3008C064D /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		C65BE8E21B631FE4008C064D /* TwitterController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwitterController.h; sourceTree = "<group>"; };
@@ -260,6 +269,7 @@
 		C68A13891B5BF1A2003CE324 /* MSProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSProtocols.swift; sourceTree = "<group>"; };
 		C69808E51B5D05D900164BC6 /* YouTubePlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YouTubePlayer.swift; sourceTree = "<group>"; };
 		C69808E61B5D05D900164BC6 /* YTPlayer.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = YTPlayer.html; sourceTree = "<group>"; };
+		C69BCCCF1B6AEE0E0027ACE7 /* MSHomePage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSHomePage.swift; sourceTree = "<group>"; };
 		C69E4A571B4608C500BD981C /* MSRegisterTabController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSRegisterTabController.swift; sourceTree = "<group>"; };
 		C69E4A5B1B46090E00BD981C /* MSQRCodeTabController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSQRCodeTabController.swift; sourceTree = "<group>"; };
 		C69E4A631B460A3F00BD981C /* MSScheduleTableController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSScheduleTableController.swift; sourceTree = "<group>"; };
@@ -366,6 +376,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6B0A6C61B6B00800048518E /* CloudKit.framework in Frameworks */,
+				C6B0A6C51B6B00760048518E /* SystemConfiguration.framework in Frameworks */,
 				F79184C61B5A7DF300EFF287 /* Twitter.framework in Frameworks */,
 				F79185051B5A839600EFF287 /* TwitterCore.framework in Frameworks */,
 				F79184FF1B5A839600EFF287 /* TwitterKit.framework in Frameworks */,
@@ -379,6 +391,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6B0A6C81B6B00930048518E /* SystemConfiguration.framework in Frameworks */,
+				C6B0A6C71B6B00880048518E /* CloudKit.framework in Frameworks */,
 				F79184C71B5A7DF300EFF287 /* Twitter.framework in Frameworks */,
 				F79185061B5A839600EFF287 /* TwitterCore.framework in Frameworks */,
 				F79185001B5A839600EFF287 /* TwitterKit.framework in Frameworks */,
@@ -391,6 +405,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C61EEFCA1B6AF94E0012DA3D /* MSTwitterTests */ = {
+			isa = PBXGroup;
+			children = (
+				C61EEFCD1B6AF9F00012DA3D /* MSTwitterTabTests.m */,
+			);
+			name = MSTwitterTests;
+			sourceTree = "<group>";
+		};
 		C63FA1CD1B5889EB00B3D238 /* MSRegisterTests */ = {
 			isa = PBXGroup;
 			children = (
@@ -481,6 +503,15 @@
 			name = FirstTab;
 			sourceTree = "<group>";
 		};
+		C69BCCCE1B6AEDF40027ACE7 /* MSHomePageTests */ = {
+			isa = PBXGroup;
+			children = (
+				C69BCCCF1B6AEE0E0027ACE7 /* MSHomePage.swift */,
+				C61EEFC81B6AF6D30012DA3D /* MSHomePageViewTest.swift */,
+			);
+			name = MSHomePageTests;
+			sourceTree = "<group>";
+		};
 		C69E4A671B460A5000BD981C /* Tabs */ = {
 			isa = PBXGroup;
 			children = (
@@ -558,6 +589,8 @@
 		C6CFD0691B45EDA90067A6AD /* MansbridgeSummitTests */ = {
 			isa = PBXGroup;
 			children = (
+				C69BCCCE1B6AEDF40027ACE7 /* MSHomePageTests */,
+				C61EEFCA1B6AF94E0012DA3D /* MSTwitterTests */,
 				C63FA1CD1B5889EB00B3D238 /* MSRegisterTests */,
 				C6E163281B48135100942749 /* MSScheduleTests */,
 				C6D9E9931B477C3300249DA4 /* ConstantsTests.swift */,
@@ -997,6 +1030,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C61EEFC91B6AF6D30012DA3D /* MSHomePageViewTest.swift in Sources */,
 				C67F0DC11B69A4640020B18C /* MSHomeController.swift in Sources */,
 				C67F0DC21B69A4640020B18C /* PageViewControllers.swift in Sources */,
 				C6A0D9871B59FE7C00C8172D /* MScheduleTableViewTests.swift in Sources */,
@@ -1005,6 +1039,7 @@
 				C6A0D9851B59FD9A00C8172D /* AppDelegate.swift in Sources */,
 				C6A0D9661B59FCCC00C8172D /* NSDateFormatter+STTwitter.m in Sources */,
 				C6A0D9671B59FCCC00C8172D /* NSString+STTwitter.m in Sources */,
+				C69BCCD01B6AEE0E0027ACE7 /* MSHomePage.swift in Sources */,
 				C67F0DBF1B699D7B0020B18C /* MSSpeakerScrollView.swift in Sources */,
 				C6A0D9681B59FCCC00C8172D /* STHTTPRequest+STTwitter.m in Sources */,
 				C6A0D9691B59FCCC00C8172D /* STTwitterAPI.m in Sources */,
@@ -1021,6 +1056,7 @@
 				C67F0DD01B69B6130020B18C /* DataLoader.swift in Sources */,
 				C65BE8E51B631FE4008C064D /* TwitterController.m in Sources */,
 				C6E1632A1B48137900942749 /* MSScheduleTableControllerTests.swift in Sources */,
+				C61EEFCE1B6AF9F00012DA3D /* MSTwitterTabTests.m in Sources */,
 				C61C00651B4C7F1600AB4D6C /* MSEventPageController.swift in Sources */,
 				C664DE741B57254800CFB209 /* Reachability.m in Sources */,
 				C6E1633D1B482A7200942749 /* MSScheduleJsonFileTests.swift in Sources */,

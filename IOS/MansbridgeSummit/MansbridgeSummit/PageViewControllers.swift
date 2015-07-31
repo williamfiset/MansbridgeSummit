@@ -30,12 +30,12 @@ class MSSpeakerController : UIViewController {
     static var speakers : [MSSpeaker] = []
     
     let SPEAKER_FILE_NAME = ""
-    var speakerID : Int!
     
-    // Ask speakers are created this variable increments. 
+    // As speakers are created this variable increments.
     // Meaning the way you instantiate speakers will determine which 
     // speaker has which videos
     static var speakerIndex : Int = 0
+    var speakerIndex : Int!
     
     let frame = CGRectMake(0, 0, GC.SCREEN_WIDTH, GC.SCREEN_HEIGHT - GC.TAB_BAR_HEIGHT)
     var scrollView : MSSpeakerScrollView!
@@ -45,7 +45,7 @@ class MSSpeakerController : UIViewController {
         super.init(nibName: nil, bundle: nil)
         loadSpeakerData()
         
-        self.speakerID = MSSpeakerController.speakerIndex
+        self.speakerIndex = MSSpeakerController.speakerIndex
         MSSpeakerController.speakerIndex++
 
     }
@@ -93,8 +93,8 @@ class MSSpeakerController : UIViewController {
     }
     
     func getPageSpeaker() -> MSSpeaker? {
-        if speakerID < MSSpeakerController.speakers.count  {
-            return MSSpeakerController.speakers[ speakerID ]
+        if speakerIndex < MSSpeakerController.speakers.count  {
+            return MSSpeakerController.speakers[ speakerIndex ]
         } else {
             return nil
         }
