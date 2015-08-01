@@ -18,6 +18,9 @@
   * QR Codes tab:
     * This tab hasn't been explored yet, but there are frameworks we can use. 
 
+**Icon specifications:**
+http://iconhandbook.co.uk/reference/chart/android/
+
 **Life cycle of an Android Application:**
 
 ![](http://i.stack.imgur.com/tcjUx.png)
