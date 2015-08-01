@@ -1,9 +1,11 @@
 <resources>
-    <string name="app_name">MansbridgeSummit</string>
+    <string name="app_name">Mansbridge Summit</string>
 
-    <string name="title_section1">Section 1</string>
-    <string name="title_section2">Section 2</string>
-    <string name="title_section3">Section 3</string>
+    <string name="title_home">Home</string>
+    <string name="title_registration">Registration</string>
+    <string name="title_twitter">Twitter</string>
+    <string name="title_schedule">Schedule</string>
+    <string name="title_qr_codes">QR Codes</string>
 
     <string name="hello_world">Hello world!</string>
 
