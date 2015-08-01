@@ -14,6 +14,7 @@
     * We will be using the TwitterKit framework for this app as well. I haven't looked into this yet, but it should be quite easy to do at this point since we've done it for iOS already.
   * Schedule tab:
     * We will likely want to use a ListView with a custom XML layout file. This is an easy and clean solution. I haven't looked into expanding tabs yet. (NOTE: A relevant example is contained in a project called ListExample on Micah's computer)
+    * I have figured how to have the equivalent of Push Notifications in Android. I have a working example that submits a notification to be displayed at some arbitrary time in the future (so we can automatically notify the user about an event say 5 minutes before it happens). (NOTE: A relevant example is contained in a project called Notification on Micah's computer)
   * QR Codes tab:
     * This tab hasn't been explored yet, but there are frameworks we can use. 
 
