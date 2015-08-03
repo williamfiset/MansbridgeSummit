@@ -2,6 +2,9 @@ package com.app.micahstairs.mansbridgesummit;
 
 import com.twitter.sdk.android.Twitter;
 import com.twitter.sdk.android.core.TwitterAuthConfig;
+import com.twitter.sdk.android.tweetui.*;
+import com.twitter.sdk.android.tweetui.TweetTimelineListAdapter;
+
 import io.fabric.sdk.android.Fabric;
 import java.util.Locale;
 
@@ -13,13 +16,8 @@ import android.support.v4.app.FragmentTransaction;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.os.Bundle;
 import android.support.v4.view.ViewPager;
-import android.view.Gravity;
-import android.view.LayoutInflater;
-import android.view.Menu;
-import android.view.MenuItem;
-import android.view.View;
-import android.view.ViewGroup;
-import android.widget.TextView;
+import android.view.*;
+import android.widget.*;
 
 
 public class MainActivity extends ActionBarActivity implements ActionBar.TabListener {
@@ -189,13 +187,23 @@ public class MainActivity extends ActionBarActivity implements ActionBar.TabList
             return fragment;
         }
 
-        public PlaceholderFragment() {
-        }
+        public PlaceholderFragment() { }
 
         @Override
         public View onCreateView(LayoutInflater inflater, ViewGroup container,
                                  Bundle savedInstanceState) {
             View rootView = inflater.inflate(R.layout.fragment_main, container, false);
+
+            ListView listView = (ListView) rootView.findViewById(R.id.listView);
+//            final CollectionTimeline timeline = new CollectionTimeline.Builder()
+//                    .id(625072681285758976L)
+//                    .build();
+            final UserTimeline timeline = new UserTimeline.Builder()
+                    .screenName("fabric")
+                    .build();
+            final TweetTimelineListAdapter adapter = new TweetTimelineListAdapter(listView.getContext(), timeline);
+            listView.setAdapter(adapter);
+
             return rootView;
         }
     }
