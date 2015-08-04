@@ -134,15 +134,29 @@ public class MainActivity extends ActionBarActivity implements ActionBar.TabList
 
         @Override
         public Fragment getItem(int position) {
-            // getItem is called to instantiate the fragment for the given page.
-            // Return a PlaceholderFragment (defined as a static inner class below).
-            return PlaceholderFragment.newInstance(position + 1);
+            // getItem is called to initially instantiate the fragment for the given page.
+            
+            switch (position) {
+                case 0:
+                    return PlaceholderFragment.newInstance(position + 1);
+                case 1:
+                    return PlaceholderFragment.newInstance(position + 1);
+                case 2:
+                    return TwitterTab.newInstance(position + 1);
+                case 3:
+                    return PlaceholderFragment.newInstance(position + 1);
+                case 4:
+                    return PlaceholderFragment.newInstance(position + 1);
+            }
+
+            return null;
+
         }
 
         @Override
         public int getCount() {
-            // Show 3 total pages.
-            return 3;
+            // Show 5 total pages.
+            return 5;
         }
 
         @Override
@@ -193,17 +207,6 @@ public class MainActivity extends ActionBarActivity implements ActionBar.TabList
         public View onCreateView(LayoutInflater inflater, ViewGroup container,
                                  Bundle savedInstanceState) {
             View rootView = inflater.inflate(R.layout.fragment_main, container, false);
-
-            ListView listView = (ListView) rootView.findViewById(R.id.listView);
-//            final CollectionTimeline timeline = new CollectionTimeline.Builder()
-//                    .id(625072681285758976L)
-//                    .build();
-            final UserTimeline timeline = new UserTimeline.Builder()
-                    .screenName("fabric")
-                    .build();
-            final TweetTimelineListAdapter adapter = new TweetTimelineListAdapter(listView.getContext(), timeline);
-            listView.setAdapter(adapter);
-
             return rootView;
         }
     }
