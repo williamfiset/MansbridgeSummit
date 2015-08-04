@@ -8,6 +8,7 @@ import com.twitter.sdk.android.tweetui.TweetTimelineListAdapter;
 import io.fabric.sdk.android.Fabric;
 import java.util.Locale;
 
+import android.graphics.drawable.Drawable;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.ActionBar;
 import android.support.v4.app.Fragment;
@@ -53,7 +54,7 @@ public class MainActivity extends ActionBarActivity implements ActionBar.TabList
         final ActionBar actionBar = getSupportActionBar();
         actionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_TABS);
 
-        // Create the adapter that will return a fragment for each of the three
+        // Create the adapter that will return a fragment for each of the five
         // primary sections of the activity.
         mSectionsPagerAdapter = new SectionsPagerAdapter(getSupportFragmentManager());
 
@@ -79,6 +80,7 @@ public class MainActivity extends ActionBarActivity implements ActionBar.TabList
             // this tab is selected.
             actionBar.addTab(
                     actionBar.newTab()
+//                            .setIcon(mSectionsPagerAdapter.getIcon(i))
                             .setText(mSectionsPagerAdapter.getPageTitle(i))
                             .setTabListener(this));
         }
@@ -140,7 +142,7 @@ public class MainActivity extends ActionBarActivity implements ActionBar.TabList
                 case 0:
                     return PlaceholderFragment.newInstance(position + 1);
                 case 1:
-                    return PlaceholderFragment.newInstance(position + 1);
+                    return RegistrationTab.newInstance(position + 1);
                 case 2:
                     return TwitterTab.newInstance(position + 1);
                 case 3:
@@ -177,6 +179,23 @@ public class MainActivity extends ActionBarActivity implements ActionBar.TabList
             }
             return null;
         }
+
+//        public Drawable getIcon(int position) {
+//
+//            switch (position) {
+//                case 0:
+//                    return getResources().getDrawable(R.drawable.home);
+//                case 1:
+//                    return getResources().getDrawable(R.drawable.home);
+//                case 2:
+//                    return getResources().getDrawable(R.drawable.home);
+//                case 3:
+//                    return getResources().getDrawable(R.drawable.home);
+//                case 4:
+//                    return getResources().getDrawable(R.drawable.home);
+//            }
+//            return null;
+//        }
     }
 
     /**
@@ -206,7 +225,7 @@ public class MainActivity extends ActionBarActivity implements ActionBar.TabList
         @Override
         public View onCreateView(LayoutInflater inflater, ViewGroup container,
                                  Bundle savedInstanceState) {
-            View rootView = inflater.inflate(R.layout.fragment_main, container, false);
+            View rootView = inflater.inflate(R.layout.fragment_placeholder_tab, container, false);
             return rootView;
         }
     }

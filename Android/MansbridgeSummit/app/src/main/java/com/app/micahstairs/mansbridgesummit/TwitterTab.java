@@ -14,9 +14,6 @@ import android.widget.ListView;
 import com.twitter.sdk.android.tweetui.TweetTimelineListAdapter;
 import com.twitter.sdk.android.tweetui.UserTimeline;
 
-/**
- * A placeholder fragment containing a simple view.
- */
 public class TwitterTab extends Fragment {
     /**
      * The fragment argument representing the section number for this
@@ -41,7 +38,7 @@ public class TwitterTab extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View rootView = inflater.inflate(R.layout.fragment_main, container, false);
+        View rootView = inflater.inflate(R.layout.fragment_twitter_tab, container, false);
 
         ListView listView = (ListView) rootView.findViewById(R.id.listView);
 //            final CollectionTimeline timeline = new CollectionTimeline.Builder()
