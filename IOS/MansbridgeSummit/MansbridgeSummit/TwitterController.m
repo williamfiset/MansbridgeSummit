@@ -6,7 +6,7 @@
 //  Copyright © 2015 Mansbridge Summit Dev Team. All rights reserved.
 //
 
-// This helps when dealing with blocks: http://fuckingblocksyntax.com/
+// This helps when dealing with blocks: http://goshdarnblocksyntax.com
 
 #import <CloudKit/CloudKit.h>
 #import "TwitterController.h"
