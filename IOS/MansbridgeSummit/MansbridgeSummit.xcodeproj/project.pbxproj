@@ -186,6 +186,10 @@
 		F7D1B8631B5C8E1A00D34341 /* RegistrationSuccessXIB.xib in Resources */ = {isa = PBXBuildFile; fileRef = F7D1B85F1B5C8E0900D34341 /* RegistrationSuccessXIB.xib */; };
 		F7D1B8641B5C8E1A00D34341 /* RegistrationSuccessXIB.xib in Resources */ = {isa = PBXBuildFile; fileRef = F7D1B85F1B5C8E0900D34341 /* RegistrationSuccessXIB.xib */; };
 		F7D1B8661B5C8ED900D34341 /* checkmark.png in Resources */ = {isa = PBXBuildFile; fileRef = F7D1B8651B5C8ED900D34341 /* checkmark.png */; };
+		F7E000481B72EA6000BF0839 /* icon76.png in Resources */ = {isa = PBXBuildFile; fileRef = F7E000441B72EA6000BF0839 /* icon76.png */; };
+		F7E000491B72EA6000BF0839 /* icon120.png in Resources */ = {isa = PBXBuildFile; fileRef = F7E000451B72EA6000BF0839 /* icon120.png */; };
+		F7E0004A1B72EA6000BF0839 /* icon152.png in Resources */ = {isa = PBXBuildFile; fileRef = F7E000461B72EA6000BF0839 /* icon152.png */; };
+		F7E0004B1B72EA6000BF0839 /* icon180.png in Resources */ = {isa = PBXBuildFile; fileRef = F7E000471B72EA6000BF0839 /* icon180.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -301,6 +305,10 @@
 		F7CF77D31B5B2F5900013CF0 /* Twitter-75.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Twitter-75.png"; sourceTree = "<group>"; };
 		F7D1B85F1B5C8E0900D34341 /* RegistrationSuccessXIB.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RegistrationSuccessXIB.xib; sourceTree = "<group>"; };
 		F7D1B8651B5C8ED900D34341 /* checkmark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = checkmark.png; sourceTree = "<group>"; };
+		F7E000441B72EA6000BF0839 /* icon76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon76.png; sourceTree = "<group>"; };
+		F7E000451B72EA6000BF0839 /* icon120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon120.png; sourceTree = "<group>"; };
+		F7E000461B72EA6000BF0839 /* icon152.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon152.png; sourceTree = "<group>"; };
+		F7E000471B72EA6000BF0839 /* icon180.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon180.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -580,6 +588,7 @@
 		C6D9E96B1B47747700249DA4 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				F7E000431B72EA4B00BF0839 /* App Icons */,
 				C67F0DC51B69A64E0020B18C /* Speakers */,
 				C68A13871B5BCE7B003CE324 /* NetworkErrorXIB.xib */,
 				F7D1B85F1B5C8E0900D34341 /* RegistrationSuccessXIB.xib */,
@@ -691,6 +700,17 @@
 				F7CF77D31B5B2F5900013CF0 /* Twitter-75.png */,
 			);
 			name = "Tab Icons";
+			sourceTree = "<group>";
+		};
+		F7E000431B72EA4B00BF0839 /* App Icons */ = {
+			isa = PBXGroup;
+			children = (
+				F7E000441B72EA6000BF0839 /* icon76.png */,
+				F7E000451B72EA6000BF0839 /* icon120.png */,
+				F7E000461B72EA6000BF0839 /* icon152.png */,
+				F7E000471B72EA6000BF0839 /* icon180.png */,
+			);
+			name = "App Icons";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -816,6 +836,7 @@
 				C6CFD05D1B45EDA90067A6AD /* TabBarIcons.xcassets in Resources */,
 				C67F0DCB1B69A85A0020B18C /* speakers_test.json in Resources */,
 				C6E163331B481C5000942749 /* test_schedule.json in Resources */,
+				F7E0004B1B72EA6000BF0839 /* icon180.png in Resources */,
 				F7CF77DA1B5B2F5900013CF0 /* Home-25.png in Resources */,
 				F76F3BDB1B61E0D90068C41C /* QR Code-75.png in Resources */,
 				F7D1B8661B5C8ED900D34341 /* checkmark.png in Resources */,
@@ -826,6 +847,7 @@
 				C64FD5C71B59A61A00AE8EA6 /* test_schedule2.json in Resources */,
 				F76F3BD81B61E0D90068C41C /* QR Code-50.png in Resources */,
 				F7CF77DD1B5B2F5900013CF0 /* Pencil-25.png in Resources */,
+				F7E000481B72EA6000BF0839 /* icon76.png in Resources */,
 				C6CFD05B1B45EDA90067A6AD /* Main.storyboard in Resources */,
 				C6D9E98D1B4778A400249DA4 /* MyriadPro-Bold.OTF in Resources */,
 				F7CF77E01B5B2F5900013CF0 /* Twitter-25.png in Resources */,
@@ -835,7 +857,9 @@
 				F79185011B5A839600EFF287 /* TwitterKitResources.bundle in Resources */,
 				C68956361B52AFBB006D188F /* Media.xcassets in Resources */,
 				F7CF77E11B5B2F5900013CF0 /* Twitter-50.png in Resources */,
+				F7E000491B72EA6000BF0839 /* icon120.png in Resources */,
 				C6D9E9771B4774CB00249DA4 /* AppleGaramond-Bold.ttf in Resources */,
+				F7E0004A1B72EA6000BF0839 /* icon152.png in Resources */,
 				F7CF77D71B5B2F5900013CF0 /* Calendar-25.png in Resources */,
 				F7CF77D81B5B2F5900013CF0 /* Calendar-50.png in Resources */,
 			);
