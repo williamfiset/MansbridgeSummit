@@ -20,6 +20,7 @@ import android.support.v4.view.ViewPager;
 import android.view.*;
 import android.widget.*;
 
+// App icons created here: http://romannurik.github.io/AndroidAssetStudio/icons-launcher.html
 
 public class MainActivity extends ActionBarActivity implements ActionBar.TabListener {
 
@@ -146,7 +147,7 @@ public class MainActivity extends ActionBarActivity implements ActionBar.TabList
                 case 2:
                     return TwitterTab.newInstance(position + 1);
                 case 3:
-                    return PlaceholderFragment.newInstance(position + 1);
+                    return ScheduleTab.newInstance(position + 1);
                 case 4:
                     return PlaceholderFragment.newInstance(position + 1);
             }
