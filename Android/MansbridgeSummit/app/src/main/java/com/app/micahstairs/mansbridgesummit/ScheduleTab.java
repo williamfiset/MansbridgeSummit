@@ -2,8 +2,18 @@ package com.app.micahstairs.mansbridgesummit;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.util.Log;
 import android.view.*;
 import android.widget.*;
+
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.io.IOException;
+import java.io.InputStream;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created by micahstairs on 2015-08-06.
@@ -14,6 +24,8 @@ public class ScheduleTab extends Fragment {
      * fragment.
      */
     private static final String ARG_SECTION_NUMBER = "section_number";
+
+    private View rootView;
 
     /**
      * Returns a new instance of this fragment for the given section
@@ -30,30 +42,97 @@ public class ScheduleTab extends Fragment {
     public ScheduleTab() { }
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+    public View onCreateView(final LayoutInflater inflater, final ViewGroup container,
                              Bundle savedInstanceState) {
-        View rootView = inflater.inflate(R.layout.fragment_schedule_tab, container, false);
+        rootView = inflater.inflate(R.layout.fragment_schedule_tab, container, false);
 
-        Event[] events = {
-                new Event("Event1", "This is description #1"),
-                new Event("Event2", "This is description #2"),
-                new Event("Event3", "This is description #3"),
-                new Event("Event4", "This is description #4"),
+        Event[] events = getEventsFromFile();
+        Log.e("DEBUG", "" + events.length);
 
-        };
-        ListAdapter adapter = new ScheduleArrayAdapter(rootView.getContext(), events);
-
-        ListView list = (ListView) rootView.findViewById(R.id.listView);
+        final ScheduleArrayAdapter adapter = new ScheduleArrayAdapter(rootView.getContext(), events);
+        final ListView list = (ListView) rootView.findViewById(R.id.listView);
         list.setAdapter(adapter);
 
         list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Event event = (Event) parent.getItemAtPosition(position);
-                // do something
+
+                if (event.isEvent) {
+                    event.isSelected = !event.isSelected;
+                    adapter.notifyDataSetChanged();
+                }
             }
+
         });
 
         return rootView;
+    }
+
+    private Event[] getEventsFromFile() {
+
+        try {
+
+            JSONObject jsonObject = loadJSONFromAsset();
+            if (jsonObject == null)
+                return new Event[0];
+
+            JSONArray schedule = jsonObject.getJSONArray("schedule");
+
+            List<Event> eventObjects = new ArrayList<Event>();
+
+            for (int i = 0; i < schedule.length(); i++) {
+
+                JSONObject day = schedule.getJSONObject(i);
+
+                // This "event" actually represents a divider
+                eventObjects.add(new Event(day.getString("date"), null, null, null, false));
+
+                // Add the actual events to the list
+                JSONArray events = day.getJSONArray("events");
+                for (int j = 0; j < events.length(); j++) {
+                    JSONObject event = events.getJSONObject(j);
+                    eventObjects.add(new Event(
+                            event.getString("eventName"),
+                            event.getString("eventDescription"),
+                            event.getString("eventTime"),
+                            event.getString("eventLocation"),
+                            true
+                    ));
+                }
+
+            }
+
+            return eventObjects.toArray(new Event[eventObjects.size()]);
+
+        } catch (JSONException e) {
+            return new Event[0];
+        }
+
+    }
+
+    public JSONObject loadJSONFromAsset() throws JSONException {
+
+        String json = null;
+
+        try {
+
+            InputStream is =  getResources().openRawResource(R.raw.schedule_data);
+
+            int size = is.available();
+            byte[] buffer = new byte[size];
+
+            is.read(buffer);
+            is.close();
+
+            json = new String(buffer, "UTF-8");
+
+
+        } catch (IOException e) {
+            return null;
+        }
+
+        return new JSONObject(json);
+
     }
 }

@@ -5,12 +5,21 @@ package com.app.micahstairs.mansbridgesummit;
  */
 public class Event {
 
-    String name, description;
+    public String name, description, time, location;
+    public boolean isEvent;
 
-    public Event(String name, String description) {
+    public boolean isSelected = false;
 
-        this.name = name;
+    /**
+     * @param isEvent       If true, this is a normal event. If false, then this represents a title for a new date
+     */
+    public Event(String name, String description, String time, String location, boolean isEvent) {
+
+        this.name        = name;
         this.description = description;
+        this.time        = time;
+        this.location    = location;
+        this.isEvent     = isEvent;
 
     }
 

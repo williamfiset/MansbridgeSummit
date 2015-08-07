@@ -18,14 +18,55 @@ public class ScheduleArrayAdapter extends ArrayAdapter<Event> {
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
 
-        LayoutInflater inflater = LayoutInflater.from(getContext());
-        View customView = inflater.inflate(R.layout.schedule_event, parent, false);
+        Event event = getItem(position);
 
-        Event item = getItem(position);
-        TextView textView = (TextView) customView.findViewById(R.id.textView);
-        TextView textView2 = (TextView) customView.findViewById(R.id.textView2);
-        textView.setText(item.name);
-        textView2.setText(item.description);
+        LayoutInflater inflater = LayoutInflater.from(getContext());
+        View customView;
+
+            /* Create different layouts depending on whether this is an event or a header */
+
+        if (event.isEvent) {
+
+            if (event.isSelected) {
+                customView = inflater.inflate(R.layout.schedule_event_selected, parent, false);
+
+                TextView eventTime = (TextView) customView.findViewById(R.id.eventTime);
+                eventTime.setText(event.time);
+
+                TextView eventName = (TextView) customView.findViewById(R.id.eventName);
+                eventName.setText(event.name);
+
+                TextView eventLocation = (TextView) customView.findViewById(R.id.eventLocation);
+                eventLocation.setText(event.location);
+
+                TextView eventDescription = (TextView) customView.findViewById(R.id.eventDescription);
+                eventDescription.setText(event.description);
+
+
+
+            } else {
+
+                customView = inflater.inflate(R.layout.schedule_event, parent, false);
+
+                TextView eventTime = (TextView) customView.findViewById(R.id.eventTime);
+                eventTime.setText(event.time);
+
+                TextView eventName = (TextView) customView.findViewById(R.id.eventName);
+                eventName.setText(event.name);
+
+                TextView eventLocation = (TextView) customView.findViewById(R.id.eventLocation);
+                eventLocation.setText(event.location);
+
+            }
+
+        } else {
+
+            customView = inflater.inflate(R.layout.schedule_day_header, parent, false);
+
+            TextView text = (TextView) customView.findViewById(R.id.text);
+            text.setText(event.name);
+
+        }
 
         return customView;
 
