@@ -33,6 +33,7 @@ public class MSRegisterTabController : UIViewController, UIWebViewDelegate, Netw
     
     private func addWebView() -> Void {
         
+        // Should you not check for a network connection?
         if networkErrorView != nil  {
            networkErrorView!.removeFromSuperview()
         }

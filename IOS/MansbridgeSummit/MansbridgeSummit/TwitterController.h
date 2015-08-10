@@ -10,16 +10,19 @@
 #import <Foundation/Foundation.h>
 #import <TwitterKit/TwitterKit.h>
 #import <UIKit/UIKit.h>
-
+#import "Reachability.h"
 
 @interface TwitterController : TWTRTimelineViewController < NetworkFailureRecovery > {
     
 }
 
-@property (nonatomic, assign) UIView *networkErrorView;
+@property (nonatomic, retain) UIView *networkErrorView;
 
 - (void) loadTweets;
 - (IBAction) composeTweet:(id)sender;
 
+// Need to be declared public for accessiblity with selector?
+- (void) _networkStatusDidChange;
+- (void) networkStatusDidChange;
 
 @end

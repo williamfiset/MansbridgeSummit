@@ -15,21 +15,73 @@
 
 #define COLLECTION_ID @"625072681285758976"
 
-@implementation TwitterController
+@implementation TwitterController {
+    
+    Reachability *connection;
+    BOOL networkStatusCalled;
+    
+}
 
 // Generates the getter and setter for this instance variable
 @synthesize networkErrorView;
 
-// Shouldn't this code be in viewWillLoad?
 - (void) viewDidLoad {
     
     [super viewDidLoad];
+
+    self->connection = [Reachability reachabilityWithHostName: @"www.mta.ca"];
+    self->networkStatusCalled = NO;
+    self.networkErrorView = NULL;
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(_networkStatusDidChange)
+                                                 name:kReachabilityChangedNotification
+                                               object:NULL];
+    [connection startNotifier];
     
     UIEdgeInsets insets = UIEdgeInsetsMake(44, 0, 0, 0);
     self.tableView.contentInset = insets;
     self.tableView.scrollIndicatorInsets = insets;
     
+}
+
+-(void) viewDidAppear:(BOOL)animated {
+   
     if ([Connection isNetworkAvailable]) {
+        [self removeNetworkConnectionErrorView];
+        [self loadTweets];
+    } else {
+        [self displayNetworkConnectionErrorView];
+    }
+    
+}
+
+
+- (void) _networkStatusDidChange {
+    
+    if (!self->networkStatusCalled) {
+        
+        NSLog(@"----------------- _networkStatusDidChange ----------------------\n");
+        self->networkStatusCalled = YES;
+        
+        // Creates a timer which will call networkStatusDidChange in 1/2s.
+        // This is done to avoid a false network status connection
+        [NSTimer scheduledTimerWithTimeInterval:0.5
+                                         target:self
+                                       selector:@selector(networkStatusDidChange)
+                                       userInfo:NULL
+                                        repeats:NO];
+    }
+    
+}
+
+- (void) networkStatusDidChange {
+    
+    NSLog(@"----------------- [Connection isNetworkAvailable] ----------%d-------\n", [Connection isNetworkAvailable]);
+    networkStatusCalled = NO;
+    
+    if ([Connection isNetworkAvailable]) {
+        [self removeNetworkConnectionErrorView];
         [self loadTweets];
     } else {
         [self displayNetworkConnectionErrorView];
@@ -118,9 +170,9 @@
 
 - (void)displayNetworkConnectionErrorView {
     
-    if ( [self tableView] != NULL ) {
-        [self.tableView removeFromSuperview];
-    }
+//    if ( [self tableView] != NULL ) {
+//        [self.tableView removeFromSuperview];
+//    }
     
     if (self.networkErrorView == NULL) {
         UIView * __networkErrorView = [UIView loadFromNibNamed:@"NetworkErrorXIB" bundle: [NSBundle mainBundle] ];
@@ -137,9 +189,9 @@
 }
 
 - (void)removeNetworkConnectionErrorView {
-    
-    if (self.networkErrorView != NULL) {
-        [self.networkErrorView removeFromSuperview];
+
+    if ([self networkErrorView] != NULL) {
+        [[self networkErrorView] removeFromSuperview];
     }
     
 }

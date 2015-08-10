@@ -11,7 +11,7 @@ import UIKit
 
 @objc protocol NetworkFailureRecovery {
     
-    weak var networkErrorView : UIView? {get set}
+    var networkErrorView : UIView? {get set}
     func displayNetworkConnectionErrorView() -> Void
     func removeNetworkConnectionErrorView() -> Void
     
