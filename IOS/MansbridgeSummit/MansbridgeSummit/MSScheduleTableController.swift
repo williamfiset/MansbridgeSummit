@@ -19,21 +19,18 @@ public class MSScheduleTableController : UITableViewController {
     
     var schedule_file_name = "test_schedule2"
     var days : [MSDay] = []
-
-    var adjustedTableHeight : Bool = false
     
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
     }
     
-    
     // viewWillAppear is called when the schedule tab button is pressed
     // but not when comming back from an MSEventPage. This means this method
     // acts as a constructor, in a sense.
+    // NOTE: Shouldn't this code be in the view loading method? I don't see why we need to re-load the entire table each time..
     public override func viewWillAppear(animated: Bool) {
         
         super.viewWillAppear(animated)
-        adjustedTableHeight = false
         
         let newTable = MSScheduleTableView()
         
@@ -61,22 +58,7 @@ public class MSScheduleTableController : UITableViewController {
     }
 
     public override func viewDidAppear(animated: Bool) {
-        
         super.viewDidAppear(animated)
-        adjustTableHeight()
-
-    }
-    
-    public func adjustTableHeight() -> Void {
-
-        if !adjustedTableHeight {
-
-            let newFrame = CGRect(x: 0, y: 0, width: self.tableView.frame.width, height: self.tableView.frame.height - GC.TAB_BAR_HEIGHT)
-            self.tableView.frame = newFrame
-
-            adjustedTableHeight = true
-        }
-
     }
     
     public override func viewWillDisappear(animated: Bool) {
@@ -123,7 +105,7 @@ public class MSScheduleTableController : UITableViewController {
         
         // Create UITableViewCell with a resuable identifier.
         // The resueable idenfiier lets you save tons of memory by snagging a cell
-        // with the same identifier and copying it's properties.
+        // with the same identifier and copying its properties.
         
         if let eventCell = tableView.dequeueReusableCellWithIdentifier(eventCellID) {
             return eventCell
@@ -163,9 +145,8 @@ public class MSScheduleTableController : UITableViewController {
         controller.view = MSEventPageView( frame: controller.view.frame, event: event )
         
         self.navigationController?.pushViewController(controller, animated: true);
-        
+
     }
-    
     
     required public init!(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
