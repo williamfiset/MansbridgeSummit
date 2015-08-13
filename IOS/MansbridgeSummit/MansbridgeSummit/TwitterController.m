@@ -91,6 +91,18 @@
 
 - (void) loadTweets {
     
+    [TwitterKit logInWithCompletion: ^ (TWTRSession *session, NSError *error) {
+        if (session != nil) {
+            
+            TWTRCollectionTimelineDataSource *dataSource = [[TWTRCollectionTimelineDataSource alloc]
+                                                            initWithCollectionID: COLLECTION_ID
+                                                            APIClient: [TwitterKit APIClient] ];
+            [self setDataSource: dataSource];
+            
+        }
+    }];
+
+    /*
     // TwitterKit is defined as [Twitter sharedInstance]
     [TwitterKit logInGuestWithCompletion: ^ (TWTRGuestSession *guestSession, NSError *error) {
         
@@ -106,7 +118,7 @@
         }
         
     }];
-
+*/
 }
 
 - (IBAction)composeTweet:(id)sender {
