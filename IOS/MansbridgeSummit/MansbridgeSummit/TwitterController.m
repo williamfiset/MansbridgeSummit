@@ -78,6 +78,7 @@
 - (void) networkStatusDidChange {
     
     NSLog(@"----------------- [Connection isNetworkAvailable] ----------%d-------\n", [Connection isNetworkAvailable]);
+    
     networkStatusCalled = NO;
     
     if ([Connection isNetworkAvailable]) {
@@ -91,26 +92,16 @@
 
 - (void) loadTweets {
     
-    [TwitterKit logInWithCompletion: ^ (TWTRSession *session, NSError *error) {
-        if (session != nil) {
-            
-            TWTRCollectionTimelineDataSource *dataSource = [[TWTRCollectionTimelineDataSource alloc]
-                                                            initWithCollectionID: COLLECTION_ID
-                                                            APIClient: [TwitterKit APIClient] ];
-            [self setDataSource: dataSource];
-            
-        }
-    }];
-
-    /*
+    
     // TwitterKit is defined as [Twitter sharedInstance]
+    
     [TwitterKit logInGuestWithCompletion: ^ (TWTRGuestSession *guestSession, NSError *error) {
         
         if (guestSession != NULL) {
 
             TWTRCollectionTimelineDataSource *dataSource = [[TWTRCollectionTimelineDataSource alloc]
                                                             initWithCollectionID: COLLECTION_ID
-                                                            APIClient: [TwitterKit APIClient] ];
+                   	                                         APIClient: [TwitterKit APIClient] ];
             [self setDataSource: dataSource];
             
         } else {
@@ -118,7 +109,7 @@
         }
         
     }];
-*/
+
 }
 
 - (IBAction)composeTweet:(id)sender {

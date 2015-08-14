@@ -190,6 +190,7 @@
 		F7E000491B72EA6000BF0839 /* icon120.png in Resources */ = {isa = PBXBuildFile; fileRef = F7E000451B72EA6000BF0839 /* icon120.png */; };
 		F7E0004A1B72EA6000BF0839 /* icon152.png in Resources */ = {isa = PBXBuildFile; fileRef = F7E000461B72EA6000BF0839 /* icon152.png */; };
 		F7E0004B1B72EA6000BF0839 /* icon180.png in Resources */ = {isa = PBXBuildFile; fileRef = F7E000471B72EA6000BF0839 /* icon180.png */; };
+		F7E33DBC1B7D6B9000450A22 /* MSTwitterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E33DBB1B7D6B9000450A22 /* MSTwitterUITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -309,6 +310,7 @@
 		F7E000451B72EA6000BF0839 /* icon120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon120.png; sourceTree = "<group>"; };
 		F7E000461B72EA6000BF0839 /* icon152.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon152.png; sourceTree = "<group>"; };
 		F7E000471B72EA6000BF0839 /* icon180.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon180.png; sourceTree = "<group>"; };
+		F7E33DBB1B7D6B9000450A22 /* MSTwitterUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSTwitterUITests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -581,6 +583,7 @@
 				C67926A81B4DC34200EA86B4 /* MSScheduleUITests */,
 				C6CFD0751B45EDA90067A6AD /* MansbridgeSummitUITests.swift */,
 				C6CFD0771B45EDA90067A6AD /* Info.plist */,
+				F7E33DBB1B7D6B9000450A22 /* MSTwitterUITests.swift */,
 			);
 			path = MansbridgeSummitUITests;
 			sourceTree = "<group>";
@@ -1026,6 +1029,7 @@
 				C61C00661B4C7F1600AB4D6C /* MSEventPageController.swift in Sources */,
 				C69E4A741B4620AC00BD981C /* MSScheduleTableView.swift in Sources */,
 				C69E4A701B4612A600BD981C /* MSScheduleCellView.swift in Sources */,
+				F7E33DBC1B7D6B9000450A22 /* MSTwitterUITests.swift in Sources */,
 				C6D9E9661B475BCD00249DA4 /* Extensions.swift in Sources */,
 				C69E4A5E1B46090E00BD981C /* MSQRCodeTabController.swift in Sources */,
 				C6EB798C1B4C903400F5E516 /* MSEventPageView.swift in Sources */,
