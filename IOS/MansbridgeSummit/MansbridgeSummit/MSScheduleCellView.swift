@@ -76,7 +76,7 @@ public class MSScheduleCellView : UITableViewCell {
             }
         }
 
-        length = maxNumSize * ( CGFloat("9:45am-12:00pm".length))
+        length = maxNumSize * (CGFloat("9:45am-12:00pm".length))
         
         return length
         
