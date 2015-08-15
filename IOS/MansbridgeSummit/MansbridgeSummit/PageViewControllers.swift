@@ -11,14 +11,55 @@ import UIKit
 
 class MSFrontPageController : UIViewController {
     
-    var scrollView : MSFrontPageScrollView!
+    var frontPageView : MSFrontPageScrollView!
     let frame = CGRectMake(0, 0, GC.SCREEN_WIDTH, GC.SCREEN_HEIGHT - GC.TAB_BAR_HEIGHT)
     
     override func viewDidLoad() {
         
         super.viewDidLoad()
-        self.scrollView = MSFrontPageScrollView(frame: frame)
-        self.view.addSubview(scrollView)
+        
+        self.frontPageView = MSFrontPageScrollView(frame: frame)
+        self.view.addSubview(frontPageView)
+        
+        addSpeakerTouchEvents()
+        
+        
+    }
+    
+    private func addSpeakerTouchEvents() {
+        
+        for speakerButton in frontPageView.speakerButtons {
+            speakerButton.addTarget(self, action: "pressedSpeaker:", forControlEvents: UIControlEvents.TouchDown)
+        }
+       
+    }
+    
+    func pressedSpeaker(speakerButton : UIButton) {
+    
+        let speakerIndex = speakerButton.tag
+        
+        if let parentController = self.parentViewController as? UIPageViewController {
+            if let viewControllerModel = parentController.dataSource as? MSHomeModelController {
+
+                let nextViewController = viewControllerModel.viewControllerAtIndex( speakerIndex+1 )
+                parentController.setViewControllers( [nextViewController], direction: .Forward, animated: true, completion: {done in})
+
+                
+                // Animates swiping through all the pages
+                //                func progessiveAnimate( currIndex : Int, finalIndex : Int ) {
+                //                    let nextViewController = viewControllerModel.viewControllerAtIndex( currIndex )
+                //                    parentController.setViewControllers( [nextViewController], direction: .Forward, animated: true, completion: {done in
+                //                        if (currIndex != finalIndex) {
+                //                            progessiveAnimate (currIndex+1, finalIndex: finalIndex)
+                //                        }
+                //                    })
+                //                }
+                //                
+                //                progessiveAnimate(1, finalIndex: speakerIndex+1)
+
+                
+            }
+        }
         
     }
     

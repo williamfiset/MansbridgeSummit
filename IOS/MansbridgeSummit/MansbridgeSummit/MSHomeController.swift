@@ -17,7 +17,6 @@ class MSHomeController: UIViewController, UIPageViewControllerDelegate {
         
         super.viewDidLoad()
         
-        // Configure the page view controller and add it as a child view controller.
         self.pageViewController = UIPageViewController(transitionStyle: .Scroll, navigationOrientation: .Horizontal, options: nil)
         self.pageViewController.delegate = self
         self.pageViewController.dataSource = self.modelController
@@ -28,10 +27,7 @@ class MSHomeController: UIViewController, UIPageViewControllerDelegate {
         self.view.addSubview(self.pageViewController.view)
         
         self.pageViewController.didMoveToParentViewController(self)
-        
-        // Add the page view controller's gesture recognizers to the book view controller's view so that the gestures are started more easily.
-        self.view.gestureRecognizers = self.pageViewController.gestureRecognizers
-        
+       
     }
     
     func setInitialViewController () {
@@ -41,7 +37,7 @@ class MSHomeController: UIViewController, UIPageViewControllerDelegate {
         self.pageViewController.setViewControllers(viewControllers, direction: .Forward, animated: false, completion: {done in })
         
     }
-    
+   
 }
 
 
