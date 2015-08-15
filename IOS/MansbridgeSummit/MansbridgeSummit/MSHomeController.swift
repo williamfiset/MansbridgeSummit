@@ -29,22 +29,26 @@ class MSHomeController: UIViewController, UIPageViewControllerDelegate {
         self.view.addSubview(self.pageViewController.view)
         
         self.pageViewController.didMoveToParentViewController(self)
-        setDots()
+        createDotController()
+        setDots(self.modelController.currentController.view)
+        
     }
     
-    func setDots () -> Void {
-        
+    private func createDotController() {
         
         let horizontalFlowLayout = UICollectionViewFlowLayout()
         horizontalFlowLayout.scrollDirection = .Horizontal
-        // horizontalFlowLayout.itemSize = CGSize(width: GC.SCREEN_WIDTH, height: GC.TAB_BAR_HEIGHT*2)
-
+        
         dotController = DotController(collectionViewLayout: horizontalFlowLayout)
+    }
+    
+    func setDots ( newView : UIView ) -> Void {
         
-        if let currentController = modelController.currentController {
-            currentController.view.addSubview(dotController.collectionView!)
+        // If not been added b4
+        if (true) {
+            newView.addSubview(dotController.collectionView!)
         }
-        
+       
     }
     
     func setInitialViewController () {
@@ -59,6 +63,7 @@ class MSHomeController: UIViewController, UIPageViewControllerDelegate {
     func pageViewController(currentPageViewController: UIPageViewController, willTransitionToViewControllers pendingViewControllers: [UIViewController]) {
         
         self.modelController.currentController = currentPageViewController
+        setDots(self.modelController.currentController.view)
         
     }
     
