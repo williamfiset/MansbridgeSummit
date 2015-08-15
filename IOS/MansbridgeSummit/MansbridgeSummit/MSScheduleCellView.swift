@@ -57,17 +57,19 @@ public class MSScheduleCellView : UITableViewCell {
         
         var length : CGFloat = 0.0
         
+        // Setup
         let tempLabel = UILabel(frame: CGRect(x: 0, y: 0, width: 100, height: 100))
-        
         if GC.DeviceType.iPhone {
             tempLabel.font = GC.Font.myraidpro_bold_18
         } else {
             tempLabel.font = GC.Font.myraidpro_bold_24
         }
         
+        // Calculate the space needed for the colon
         tempLabel.text = ":"
         length += tempLabel.intrinsicContentSize().width
         
+        // Calculate the space needed for the 4 digits
         var maxNumSize : CGFloat = 0.0
         for n in 0...9 {
             tempLabel.text = "\(n)"
@@ -75,8 +77,20 @@ public class MSScheduleCellView : UITableViewCell {
                 maxNumSize = tempLabel.intrinsicContentSize().width
             }
         }
+        length += maxNumSize * (CGFloat(4))
+        
+        // Calculate the maximum amount of space needed for "am" or "pm"
+        var maxTextSize : CGFloat = 0.0
+        tempLabel.text = "am"
+        if tempLabel.intrinsicContentSize().width > maxTextSize {
+            maxTextSize = tempLabel.intrinsicContentSize().width
+        }
+        tempLabel.text = "pm"
+        if tempLabel.intrinsicContentSize().width > maxTextSize {
+            maxTextSize = tempLabel.intrinsicContentSize().width
+        }
+        length += maxTextSize
 
-        length = maxNumSize * (CGFloat("9:45am-12:00pm".length))
         
         return length
         
