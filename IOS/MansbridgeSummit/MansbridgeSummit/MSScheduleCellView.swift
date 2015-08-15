@@ -15,9 +15,11 @@ public class MSScheduleCellView : UITableViewCell {
     
     let event : MSEvent!
     
+//    @IBOutlet weak var eventNameLabel = UILabel()
+//    @IBOutlet weak var eventTimeLabel = UILabel()
+    var eventNameLabel = UILabel()
     var eventTimeLabel = UILabel()
     var cellDelimiter = UIView()
-    var eventNameLabel = UILabel()
 
     var cellHeight : CGFloat {
         return self.contentView.bounds.height
