@@ -28,23 +28,23 @@ class MSTwitterUITests: XCTestCase {
         super.tearDown()
     }
 
-    func testExample() {
-        // Use recording to get started writing UI tests.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-        
-        let app = XCUIApplication()
-        
-        
-        var counter = 0;
-        
-        while (true) {
-            
-            app.tabBars.buttons["Twitter"].tap()
-            print(counter++)
-            app.tabBars.buttons["Home"].tap()
-            
-        }
-        
-    }
+//    func testExample() {
+//        // Use recording to get started writing UI tests.
+//        // Use XCTAssert and related functions to verify your tests produce the correct results.
+//        
+//        let app = XCUIApplication()
+//        
+//        
+//        var counter = 0;
+//        
+//        while (true) {
+//            
+//            app.tabBars.buttons["Twitter"].tap()
+//            print(counter++)
+//            app.tabBars.buttons["Home"].tap()
+//            
+//        }
+//        
+//    }
 
 }

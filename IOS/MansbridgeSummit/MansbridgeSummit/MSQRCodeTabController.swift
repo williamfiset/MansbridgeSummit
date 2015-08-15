@@ -13,12 +13,9 @@ import AVFoundation
 
 public class MSQRCodeTabController : UIViewController, AVCaptureMetadataOutputObjectsDelegate {
     
-    var messageLabel : UILabel?
-    
     var captureSession:AVCaptureSession?
     var videoPreviewLayer:AVCaptureVideoPreviewLayer?
-    var qrCodeFrameView:UIView?
-    
+//    var qrCodeFrameView:UIView?
     
     public override func viewDidLoad() {
         
@@ -59,17 +56,17 @@ public class MSQRCodeTabController : UIViewController, AVCaptureMetadataOutputOb
         // Start video capture.
         captureSession?.startRunning()
         
-        // Create message label
-        messageLabel = UILabel(frame: CGRect(x: 0, y: 0, width: self.view.frame.width, height: 100))
-        view.addSubview(messageLabel!)
-        view.bringSubviewToFront(messageLabel!)
+//        // Create message label
+//        messageLabel = UILabel(frame: CGRect(x: 0, y: 0, width: self.view.frame.width, height: 100))
+//        view.addSubview(messageLabel!)
+//        view.bringSubviewToFront(messageLabel!)
         
         // Initialize QR Code Frame to highlight the QR code
-        qrCodeFrameView = UIView()
-        qrCodeFrameView?.layer.borderColor = UIColor.greenColor().CGColor
-        qrCodeFrameView?.layer.borderWidth = 2
-        view.addSubview(qrCodeFrameView!)
-        view.bringSubviewToFront(qrCodeFrameView!)
+//        qrCodeFrameView = UIView()
+//        qrCodeFrameView?.layer.borderColor = UIColor.greenColor().CGColor
+//        qrCodeFrameView?.layer.borderWidth = 2
+//        view.addSubview(qrCodeFrameView!)
+//        view.bringSubviewToFront(qrCodeFrameView!)
         
     }
 
@@ -78,8 +75,8 @@ public class MSQRCodeTabController : UIViewController, AVCaptureMetadataOutputOb
         
         // Check if the metadataObjects array is not nil and it contains at least one object.
         if metadataObjects == nil || metadataObjects.count == 0 {
-            qrCodeFrameView?.frame = CGRectZero
-            messageLabel!.text = "No QR code is detected"
+//            qrCodeFrameView?.frame = CGRectZero
+//            messageLabel!.text = "No QR code is detected"
             return
         }
         
@@ -88,11 +85,12 @@ public class MSQRCodeTabController : UIViewController, AVCaptureMetadataOutputOb
         
         if metadataObj.type == AVMetadataObjectTypeQRCode {
             // If the found metadata is equal to the QR code metadata then update the status label's text and set the bounds
-            let barCodeObject = videoPreviewLayer?.transformedMetadataObjectForMetadataObject(metadataObj as AVMetadataMachineReadableCodeObject) as! AVMetadataMachineReadableCodeObject
-            qrCodeFrameView?.frame = barCodeObject.bounds;
+//            let barCodeObject = videoPreviewLayer?.transformedMetadataObjectForMetadataObject(metadataObj as AVMetadataMachineReadableCodeObject) as! AVMetadataMachineReadableCodeObject
+//            qrCodeFrameView?.frame = barCodeObject.bounds;
             
             if metadataObj.stringValue != nil {
-                messageLabel!.text = metadataObj.stringValue
+//                qrCodeFrameView?.frame = CGRectZero
+                UIApplication.sharedApplication().openURL(NSURL(string: metadataObj.stringValue!)!)
             }
         }
     }

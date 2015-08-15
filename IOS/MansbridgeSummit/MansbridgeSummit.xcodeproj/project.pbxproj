@@ -387,12 +387,12 @@
 			name = TwitterTab;
 			sourceTree = "<group>";
 		};
-		C64FD5CB1B59C29200AE8EA6 /* AboutTab */ = {
+		C64FD5CB1B59C29200AE8EA6 /* QRCodesTab */ = {
 			isa = PBXGroup;
 			children = (
 				C69E4A5B1B46090E00BD981C /* MSQRCodeTabController.swift */,
 			);
-			name = AboutTab;
+			name = QRCodesTab;
 			sourceTree = "<group>";
 		};
 		C664DE691B5723F700CFB209 /* Reachability */ = {
@@ -494,7 +494,7 @@
 				C679E2101B55FCFE004AEBE9 /* RegisterTab */,
 				C64FD5CA1B59C28A00AE8EA6 /* TwitterTab */,
 				C69E4A6C1B46128900BD981C /* ScheduleTab */,
-				C64FD5CB1B59C29200AE8EA6 /* AboutTab */,
+				C64FD5CB1B59C29200AE8EA6 /* QRCodesTab */,
 			);
 			name = Tabs;
 			sourceTree = "<group>";
