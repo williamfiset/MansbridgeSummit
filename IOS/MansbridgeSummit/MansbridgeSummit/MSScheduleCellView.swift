@@ -104,7 +104,7 @@ public class MSScheduleCellView : UITableViewCell {
         eventTimeLabel.frame = CGRect(x: 0, y: 0, width: MSScheduleCellView.MAX_TIME_LABEL_LEN , height: cellHeight)
         //eventTimeLabel.adjustsFontSizeToFitWidth = true
         eventTimeLabel.font = FONT_SIZE
-        eventTimeLabel.backgroundColor = UIColor.blueColor()
+        //eventTimeLabel.backgroundColor = UIColor.blueColor()
         eventTimeLabel.textAlignment = .Center
     }
 
@@ -132,7 +132,7 @@ public class MSScheduleCellView : UITableViewCell {
         eventNameLabel.text = eventDescription;
         eventNameLabel.font = FONT_SIZE
         eventNameLabel.adjustsFontSizeToFitWidth = true
-        eventNameLabel.backgroundColor = UIColor.greenColor()
+        //eventNameLabel.backgroundColor = UIColor.greenColor()
         eventNameLabel.textAlignment = .Center
     }
 

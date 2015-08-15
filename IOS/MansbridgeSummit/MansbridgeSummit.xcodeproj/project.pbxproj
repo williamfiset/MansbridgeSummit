@@ -114,12 +114,12 @@
 		C6D9E9861B4774CB00249DA4 /* AppleGaramond.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C6D9E9761B4774CB00249DA4 /* AppleGaramond.ttf */; };
 		C6D9E9871B4774CB00249DA4 /* AppleGaramond.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C6D9E9761B4774CB00249DA4 /* AppleGaramond.ttf */; };
 		C6D9E9881B4774CB00249DA4 /* AppleGaramond.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C6D9E9761B4774CB00249DA4 /* AppleGaramond.ttf */; };
-		C6D9E98D1B4778A400249DA4 /* MyriadPro-Bold.OTF in Resources */ = {isa = PBXBuildFile; fileRef = C6D9E98B1B4778A400249DA4 /* MyriadPro-Bold.OTF */; };
-		C6D9E98E1B4778A400249DA4 /* MyriadPro-Bold.OTF in Resources */ = {isa = PBXBuildFile; fileRef = C6D9E98B1B4778A400249DA4 /* MyriadPro-Bold.OTF */; };
-		C6D9E98F1B4778A400249DA4 /* MyriadPro-Bold.OTF in Resources */ = {isa = PBXBuildFile; fileRef = C6D9E98B1B4778A400249DA4 /* MyriadPro-Bold.OTF */; };
-		C6D9E9901B4778A400249DA4 /* MyriadPro-Regular.OTF in Resources */ = {isa = PBXBuildFile; fileRef = C6D9E98C1B4778A400249DA4 /* MyriadPro-Regular.OTF */; };
-		C6D9E9911B4778A400249DA4 /* MyriadPro-Regular.OTF in Resources */ = {isa = PBXBuildFile; fileRef = C6D9E98C1B4778A400249DA4 /* MyriadPro-Regular.OTF */; };
-		C6D9E9921B4778A400249DA4 /* MyriadPro-Regular.OTF in Resources */ = {isa = PBXBuildFile; fileRef = C6D9E98C1B4778A400249DA4 /* MyriadPro-Regular.OTF */; };
+		C6D9E98D1B4778A400249DA4 /* MyriadPro-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = C6D9E98B1B4778A400249DA4 /* MyriadPro-Bold.otf */; };
+		C6D9E98E1B4778A400249DA4 /* MyriadPro-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = C6D9E98B1B4778A400249DA4 /* MyriadPro-Bold.otf */; };
+		C6D9E98F1B4778A400249DA4 /* MyriadPro-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = C6D9E98B1B4778A400249DA4 /* MyriadPro-Bold.otf */; };
+		C6D9E9901B4778A400249DA4 /* MyriadPro-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = C6D9E98C1B4778A400249DA4 /* MyriadPro-Regular.otf */; };
+		C6D9E9911B4778A400249DA4 /* MyriadPro-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = C6D9E98C1B4778A400249DA4 /* MyriadPro-Regular.otf */; };
+		C6D9E9921B4778A400249DA4 /* MyriadPro-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = C6D9E98C1B4778A400249DA4 /* MyriadPro-Regular.otf */; };
 		C6D9E9941B477C3300249DA4 /* ConstantsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6D9E9931B477C3300249DA4 /* ConstantsTests.swift */; };
 		C6E1632A1B48137900942749 /* MSScheduleTableControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6E163291B48137900942749 /* MSScheduleTableControllerTests.swift */; };
 		C6E1632C1B4814EC00942749 /* MSScheduleCellView.Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6E1632B1B4814EC00942749 /* MSScheduleCellView.Tests.swift */; };
@@ -267,8 +267,8 @@
 		C6D9E9671B475E2D00249DA4 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		C6D9E9711B4774CB00249DA4 /* AppleGaramond-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AppleGaramond-Bold.ttf"; sourceTree = "<group>"; };
 		C6D9E9761B4774CB00249DA4 /* AppleGaramond.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = AppleGaramond.ttf; sourceTree = "<group>"; };
-		C6D9E98B1B4778A400249DA4 /* MyriadPro-Bold.OTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MyriadPro-Bold.OTF"; sourceTree = "<group>"; };
-		C6D9E98C1B4778A400249DA4 /* MyriadPro-Regular.OTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MyriadPro-Regular.OTF"; sourceTree = "<group>"; };
+		C6D9E98B1B4778A400249DA4 /* MyriadPro-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MyriadPro-Bold.otf"; sourceTree = "<group>"; };
+		C6D9E98C1B4778A400249DA4 /* MyriadPro-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MyriadPro-Regular.otf"; sourceTree = "<group>"; };
 		C6D9E9931B477C3300249DA4 /* ConstantsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstantsTests.swift; sourceTree = "<group>"; };
 		C6D9E9951B477D6E00249DA4 /* ExtensionsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtensionsTests.swift; sourceTree = "<group>"; };
 		C6E163291B48137900942749 /* MSScheduleTableControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSScheduleTableControllerTests.swift; sourceTree = "<group>"; };
@@ -626,8 +626,8 @@
 		C6D9E98A1B47785900249DA4 /* Myraid_pro */ = {
 			isa = PBXGroup;
 			children = (
-				C6D9E98B1B4778A400249DA4 /* MyriadPro-Bold.OTF */,
-				C6D9E98C1B4778A400249DA4 /* MyriadPro-Regular.OTF */,
+				C6D9E98B1B4778A400249DA4 /* MyriadPro-Bold.otf */,
+				C6D9E98C1B4778A400249DA4 /* MyriadPro-Regular.otf */,
 			);
 			name = Myraid_pro;
 			sourceTree = "<group>";
@@ -845,14 +845,14 @@
 				F7D1B8661B5C8ED900D34341 /* checkmark.png in Resources */,
 				C6D9E9861B4774CB00249DA4 /* AppleGaramond.ttf in Resources */,
 				F7CF77DE1B5B2F5900013CF0 /* Pencil-50.png in Resources */,
-				C6D9E9901B4778A400249DA4 /* MyriadPro-Regular.OTF in Resources */,
+				C6D9E9901B4778A400249DA4 /* MyriadPro-Regular.otf in Resources */,
 				C68A13881B5BCE7B003CE324 /* NetworkErrorXIB.xib in Resources */,
 				C64FD5C71B59A61A00AE8EA6 /* test_schedule2.json in Resources */,
 				F76F3BD81B61E0D90068C41C /* QR Code-50.png in Resources */,
 				F7CF77DD1B5B2F5900013CF0 /* Pencil-25.png in Resources */,
 				F7E000481B72EA6000BF0839 /* icon76.png in Resources */,
 				C6CFD05B1B45EDA90067A6AD /* Main.storyboard in Resources */,
-				C6D9E98D1B4778A400249DA4 /* MyriadPro-Bold.OTF in Resources */,
+				C6D9E98D1B4778A400249DA4 /* MyriadPro-Bold.otf in Resources */,
 				F7CF77E01B5B2F5900013CF0 /* Twitter-25.png in Resources */,
 				F7CF77E21B5B2F5900013CF0 /* Twitter-75.png in Resources */,
 				F76F3BD51B61E0D90068C41C /* QR Code-25.png in Resources */,
@@ -884,12 +884,12 @@
 				C6D9E9781B4774CB00249DA4 /* AppleGaramond-Bold.ttf in Resources */,
 				C6E163341B481C5000942749 /* test_schedule.json in Resources */,
 				C64FD5C81B59A61A00AE8EA6 /* test_schedule2.json in Resources */,
-				C6D9E98E1B4778A400249DA4 /* MyriadPro-Bold.OTF in Resources */,
+				C6D9E98E1B4778A400249DA4 /* MyriadPro-Bold.otf in Resources */,
 				C6D9E9871B4774CB00249DA4 /* AppleGaramond.ttf in Resources */,
 				F79185021B5A839600EFF287 /* TwitterKitResources.bundle in Resources */,
 				F76F3BDC1B61E0D90068C41C /* QR Code-75.png in Resources */,
 				C68956371B52AFBB006D188F /* Media.xcassets in Resources */,
-				C6D9E9911B4778A400249DA4 /* MyriadPro-Regular.OTF in Resources */,
+				C6D9E9911B4778A400249DA4 /* MyriadPro-Regular.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -909,12 +909,12 @@
 				C6D9E9621B474F1100249DA4 /* Main.storyboard in Resources */,
 				C6D9E9791B4774CB00249DA4 /* AppleGaramond-Bold.ttf in Resources */,
 				C64FD5C91B59A61A00AE8EA6 /* test_schedule2.json in Resources */,
-				C6D9E98F1B4778A400249DA4 /* MyriadPro-Bold.OTF in Resources */,
+				C6D9E98F1B4778A400249DA4 /* MyriadPro-Bold.otf in Resources */,
 				C6D9E9881B4774CB00249DA4 /* AppleGaramond.ttf in Resources */,
 				F79185031B5A839600EFF287 /* TwitterKitResources.bundle in Resources */,
 				F76F3BDD1B61E0D90068C41C /* QR Code-75.png in Resources */,
 				C68956381B52AFBB006D188F /* Media.xcassets in Resources */,
-				C6D9E9921B4778A400249DA4 /* MyriadPro-Regular.OTF in Resources */,
+				C6D9E9921B4778A400249DA4 /* MyriadPro-Regular.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
