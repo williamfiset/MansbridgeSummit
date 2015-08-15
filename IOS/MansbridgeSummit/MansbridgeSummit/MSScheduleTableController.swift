@@ -22,6 +22,10 @@ public class MSScheduleTableController : UITableViewController {
     
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
+        
+        tableView.estimatedRowHeight = 44.0
+        tableView.rowHeight = UITableViewAutomaticDimension
+        
     }
     
     // viewWillAppear is called when the schedule tab button is pressed
