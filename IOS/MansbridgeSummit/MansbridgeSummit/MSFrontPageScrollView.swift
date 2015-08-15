@@ -29,7 +29,7 @@ public class MSFrontPageScrollView : UIView {
         addHeaderImage()
         addYoutubeThumbnail()
         addStreamLink()
-        addBottomImages()
+        //addBottomImages()
         
     }
     

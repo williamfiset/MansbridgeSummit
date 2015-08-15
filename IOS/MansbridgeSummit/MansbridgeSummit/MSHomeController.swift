@@ -9,9 +9,11 @@
 import UIKit
 
 class MSHomeController: UIViewController, UIPageViewControllerDelegate {
+
     
     var pageViewController: UIPageViewController!
     var modelController = MSHomeModelController()
+    var dotController: DotController!
     
     override func viewDidLoad() {
         
@@ -27,17 +29,39 @@ class MSHomeController: UIViewController, UIPageViewControllerDelegate {
         self.view.addSubview(self.pageViewController.view)
         
         self.pageViewController.didMoveToParentViewController(self)
-       
+        setDots()
+    }
+    
+    func setDots () -> Void {
+        
+        
+        let horizontalFlowLayout = UICollectionViewFlowLayout()
+        horizontalFlowLayout.scrollDirection = .Horizontal
+        // horizontalFlowLayout.itemSize = CGSize(width: GC.SCREEN_WIDTH, height: GC.TAB_BAR_HEIGHT*2)
+
+        dotController = DotController(collectionViewLayout: horizontalFlowLayout)
+        
+        if let currentController = modelController.currentController {
+            currentController.view.addSubview(dotController.collectionView!)
+        }
+        
     }
     
     func setInitialViewController () {
         
         let firstController = self.modelController.pageControllers[0]
+        self.modelController.currentController = firstController
         let viewControllers = [firstController]
         self.pageViewController.setViewControllers(viewControllers, direction: .Forward, animated: false, completion: {done in })
         
     }
    
+    func pageViewController(currentPageViewController: UIPageViewController, willTransitionToViewControllers pendingViewControllers: [UIViewController]) {
+        
+        self.modelController.currentController = currentPageViewController
+        
+    }
+    
 }
 
 

@@ -11,8 +11,9 @@ import UIKit
 
 class MSHomeModelController : NSObject, UIPageViewControllerDataSource {
     
+    var pageControllers : [UIViewController]  = []
+    var currentController : UIViewController!
     
-    var pageControllers : [UIViewController] = []
     var MAX_PAGES : Int {
         return pageControllers.count
     };
@@ -60,7 +61,7 @@ class MSHomeModelController : NSObject, UIPageViewControllerDataSource {
         }
         
     }
-    
+
     func pageViewController(pageViewController: UIPageViewController, viewControllerAfterViewController viewController: UIViewController) -> UIViewController? {
         
         let index = self.indexOfViewController(viewController)
@@ -71,6 +72,8 @@ class MSHomeModelController : NSObject, UIPageViewControllerDataSource {
         return nil
         
     }
+
+
 
     
 }
