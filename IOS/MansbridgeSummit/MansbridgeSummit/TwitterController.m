@@ -39,10 +39,16 @@
                                                object:NULL];
     [connection startNotifier];
     
-    UIEdgeInsets insets = UIEdgeInsetsMake(44, 0, 0, 0);
-    self.tableView.contentInset = insets;
-    self.tableView.scrollIndicatorInsets = insets;
+//    self.navigationItem.title = @"title";
     
+}
+
+-(void) viewWillAppear:(BOOL)animated {
+//    
+//    self.navigationController.title = @"Title";
+//    
+//    [self.navigationController setNavigationBarHidden:NO animated:NO];
+//    [super viewWillAppear:animated];
 }
 
 -(void) viewDidAppear:(BOOL)animated {
