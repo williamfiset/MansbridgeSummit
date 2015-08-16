@@ -29,6 +29,17 @@ class MSScheduleUITableViewController: UITableViewController {
         } else {
             fatalError()
         }
+        
+        let scheduleHeaderLabel = UILabel(frame: CGRect(x: 0, y: 0, width: self.tableView.bounds.width, height: 75))
+        
+        scheduleHeaderLabel.text = "Mansbridge Summit Schedule"
+        scheduleHeaderLabel.font = GC.Font.myraidpro_bold_26
+        scheduleHeaderLabel.adjustsFontSizeToFitWidth = true
+        scheduleHeaderLabel.textColor = GC.Color.white
+        scheduleHeaderLabel.backgroundColor = GC.Color.red
+        scheduleHeaderLabel.textAlignment = .Center
+
+        self.tableView.tableHeaderView = scheduleHeaderLabel
 
     }
 
