@@ -150,7 +150,7 @@ class Dot : UICollectionViewCell {
     static var DEFAULT_BG_COLOR = GC.Color.red
 
     static let initials = [
-        "MS", "WF", "TR", "KK", "JF", "QR"
+        "MS", "RM", "IN", "RF", "ATG"
     ]
     
     override init(frame: CGRect) {

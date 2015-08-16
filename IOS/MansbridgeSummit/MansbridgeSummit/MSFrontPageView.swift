@@ -73,7 +73,6 @@ public class MSFrontPageView : UIView {
         streamButton.layer.borderWidth = 2.0
         streamButton.layer.borderColor = UIColor.grayColor().CGColor
         streamButton.layer.masksToBounds = true
-
         
         self.addSubview(streamButton)
         
