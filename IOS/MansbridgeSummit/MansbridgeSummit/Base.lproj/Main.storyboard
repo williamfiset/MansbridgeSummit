@@ -3,7 +3,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8135.1"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Navigation Controller-->
@@ -47,49 +46,64 @@
         <!--Schedule-->
         <scene sceneID="p8n-8L-vy5">
             <objects>
-                <tableViewController title="Mansbridge Summit Schedule" id="M2Z-vZ-2uL" userLabel="Schedule" customClass="MSScheduleTableController" customModule="MansbridgeSummit" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController title="Mansbridge Summit Schedule" id="M2Z-vZ-2uL" userLabel="Schedule" customClass="MSScheduleUITableViewController" customModule="MansbridgeSummit" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="ijc-jX-Yig" customClass="MSScheduleTableView" customModule="MansbridgeSummit" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="EventCell" rowHeight="60" id="oCn-Ep-ruP" customClass="MSScheduleCellView" customModule="MansbridgeSummit" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="22" width="600" height="60"/>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="EventCell" rowHeight="68" id="IG9-eW-SKZ" customClass="MSScheduleUITableViewCell" customModule="MansbridgeSummit" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="22" width="600" height="68"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="oCn-Ep-ruP" id="sDz-M5-NMb">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="59"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="IG9-eW-SKZ" id="bpk-Xb-gHY">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="67"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Name" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NSY-S3-fBq">
-                                            <rect key="frame" x="15" y="37" width="88" height="21"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="Name" textAlignment="right" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g5o-Ax-sZT">
+                                            <rect key="frame" x="62" y="7" width="531" height="19"/>
                                             <animations/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="19" id="urs-Co-cju"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" misplaced="YES" text="Time" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5oX-vQ-Gx5">
-                                            <rect key="frame" x="15" y="19" width="570" height="21"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Description" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e8j-aW-Kn5">
+                                            <rect key="frame" x="62" y="33" width="531" height="27"/>
                                             <animations/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="Time" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E9W-Ii-0yZ">
+                                            <rect key="frame" x="7" y="7" width="48" height="24"/>
+                                            <animations/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
                                     <animations/>
                                     <constraints>
-                                        <constraint firstItem="5oX-vQ-Gx5" firstAttribute="top" secondItem="sDz-M5-NMb" secondAttribute="topMargin" constant="7" id="LjH-Jg-4cj"/>
-                                        <constraint firstItem="NSY-S3-fBq" firstAttribute="leading" secondItem="sDz-M5-NMb" secondAttribute="leadingMargin" constant="7" id="NMF-1J-8KX"/>
-                                        <constraint firstItem="NSY-S3-fBq" firstAttribute="bottom" secondItem="sDz-M5-NMb" secondAttribute="bottomMargin" constant="7" id="hp4-Ex-oYg"/>
-                                        <constraint firstAttribute="trailingMargin" secondItem="5oX-vQ-Gx5" secondAttribute="trailing" constant="7" id="oPw-Sx-pzl"/>
-                                        <constraint firstItem="5oX-vQ-Gx5" firstAttribute="leading" secondItem="sDz-M5-NMb" secondAttribute="leadingMargin" constant="7" id="s7T-yl-Kaf"/>
-                                        <constraint firstItem="NSY-S3-fBq" firstAttribute="top" secondItem="5oX-vQ-Gx5" secondAttribute="bottom" constant="3.5" id="vTm-60-oyY"/>
+                                        <constraint firstItem="e8j-aW-Kn5" firstAttribute="top" secondItem="g5o-Ax-sZT" secondAttribute="bottom" constant="7" id="104-fB-VXE"/>
+                                        <constraint firstItem="E9W-Ii-0yZ" firstAttribute="leading" secondItem="bpk-Xb-gHY" secondAttribute="leading" constant="7" id="8Qi-Cg-S7W"/>
+                                        <constraint firstItem="e8j-aW-Kn5" firstAttribute="leading" secondItem="E9W-Ii-0yZ" secondAttribute="trailing" constant="7" id="8i8-Jg-SaF"/>
+                                        <constraint firstItem="E9W-Ii-0yZ" firstAttribute="top" secondItem="bpk-Xb-gHY" secondAttribute="top" constant="7" id="LP5-Ip-nb5"/>
+                                        <constraint firstItem="g5o-Ax-sZT" firstAttribute="leading" secondItem="E9W-Ii-0yZ" secondAttribute="trailing" constant="7" id="PCX-Cx-seX"/>
+                                        <constraint firstAttribute="bottom" secondItem="e8j-aW-Kn5" secondAttribute="bottom" constant="7" id="WhE-Fw-Kpy"/>
+                                        <constraint firstItem="e8j-aW-Kn5" firstAttribute="top" secondItem="g5o-Ax-sZT" secondAttribute="bottom" constant="7" id="e82-mu-CQm"/>
+                                        <constraint firstItem="g5o-Ax-sZT" firstAttribute="top" secondItem="bpk-Xb-gHY" secondAttribute="top" constant="7" id="fa6-0T-jez"/>
+                                        <constraint firstAttribute="trailing" secondItem="e8j-aW-Kn5" secondAttribute="trailing" constant="7" id="mPt-ar-Cpj"/>
+                                        <constraint firstAttribute="trailing" secondItem="g5o-Ax-sZT" secondAttribute="trailing" constant="7" id="ycY-xl-QqW"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <animations/>
                                 <connections>
-                                    <outlet property="eventNameLabel" destination="NSY-S3-fBq" id="sbp-3k-snz"/>
-                                    <outlet property="eventTimeLabel" destination="5oX-vQ-Gx5" id="ddd-1L-6OZ"/>
+                                    <outlet property="descriptionLabel" destination="e8j-aW-Kn5" id="tAn-sb-l4k"/>
+                                    <outlet property="nameLabel" destination="g5o-Ax-sZT" id="kW3-3d-DwO"/>
+                                    <outlet property="timeLabel" destination="E9W-Ii-0yZ" id="TnI-eQ-jbw"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
