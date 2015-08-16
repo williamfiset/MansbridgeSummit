@@ -62,16 +62,20 @@ public class MSFrontPageView : UIView {
         let y = videoPlayerView.frame.origin.y + videoPlayerView.frame.height + PADDING
         let w = GC.SCREEN_WIDTH - x*2
         let h = GC.SCREEN_HEIGHT * 0.2
-                
+        
         let btnFrame = CGRectMake( x, y, w, h)
         streamButton = UIButton(frame: btnFrame)
         
-        // Set Button text, Use imageview instead?
-        let attributedString = NSAttributedString(string: "Click to view live stream")
-        streamButton.setAttributedTitle(attributedString, forState: UIControlState.Normal)
-        streamButton.setTitleColor(UIColor.grayColor(), forState: UIControlState.Selected)
-        streamButton.backgroundColor = UIColor.purpleColor()
+        let mtaLiveStreamImg = UIImage(named: "MTALiveLogo")
+        let liveStreamView = UIImageView(image: mtaLiveStreamImg)
         
+        streamButton.addSubview(liveStreamView)
+        
+        // Set Button text, Use imageview instead?
+//        let attributedString = NSAttributedString(string: "Click to view live stream")
+//        streamButton.setAttributedTitle(attributedString, forState: UIControlState.Normal)
+//        streamButton.setTitleColor(UIColor.grayColor(), forState: UIControlState.Selected)
+        streamButton.backgroundColor = UIColor.clearColor()
         self.addSubview(streamButton)
         
     }
