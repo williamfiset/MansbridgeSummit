@@ -10,28 +10,31 @@ import UIKit
 
 class MSHomeController: UIViewController, UIPageViewControllerDelegate {
 
-    
     var pageViewController: UIPageViewController!
     var modelController = MSHomeModelController()
+
     var dotController: DotController!
+    
+    var currentControllerIndex = 0
     
     override func viewDidLoad() {
         
         super.viewDidLoad()
         
-        self.pageViewController = UIPageViewController(transitionStyle: .Scroll, navigationOrientation: .Horizontal, options: nil)
-        self.pageViewController.delegate = self
-        self.pageViewController.dataSource = self.modelController
-        
-        createDotController()
+        createPageViewController()
         setInitialViewController()
         
-        self.addChildViewController(self.pageViewController)
-        self.view.addSubview(self.pageViewController.view)
+        createDotController()
+        setDots()
         
-        self.pageViewController.didMoveToParentViewController(self)
+    }
+    
+    // Initailize Page Controller
+    private func createPageViewController() {
         
-        setDots(self.modelController.currentController.view)
+        self.pageViewController = UIPageViewController(transitionStyle: .Scroll, navigationOrientation: .Horizontal, options: nil)
+        self.pageViewController.dataSource = self.modelController
+        self.pageViewController.delegate = self
         
     }
     
@@ -41,32 +44,51 @@ class MSHomeController: UIViewController, UIPageViewControllerDelegate {
         horizontalFlowLayout.scrollDirection = .Horizontal
         
         dotController = DotController(collectionViewLayout: horizontalFlowLayout)
+        self.addChildViewController(self.dotController)
+        
     }
     
-    func setDots ( newView : UIView ) -> Void {
+    func setDots ( ) -> Void {
         
-        // If not been added b4
-        if (true) {
-            newView.addSubview(dotController.collectionView!)
-        }
-       
+        // Places Speakers above the page view controller content
+        self.view.addSubview(dotController.collectionView!)
+        
     }
     
     func setInitialViewController () {
         
+        // Get the first view controller
         let firstController = self.modelController.pageControllers[0]
         self.modelController.currentController = firstController
+        
+        // Actually change the page
         let viewControllers = [firstController]
         self.pageViewController.setViewControllers(viewControllers, direction: .Forward, animated: false, completion: {done in })
         
+        // House keeping stuffz
+        self.addChildViewController(self.pageViewController)
+        self.view.addSubview(self.pageViewController.view)
+        self.pageViewController.didMoveToParentViewController(self)
+        
     }
    
+    
+        /* PAGE VIEW CONTROLLER DELEGATE METHODS */
+    
+    
+    // Transitioning to another view controller
     func pageViewController(currentPageViewController: UIPageViewController, willTransitionToViewControllers pendingViewControllers: [UIViewController]) {
-        
-        self.modelController.currentController = currentPageViewController
-        setDots(self.modelController.currentController.view)
+
+        if let controllerIndex = self.modelController.pageControllers.indexOf(currentPageViewController) {
+            self.currentControllerIndex = controllerIndex
+        }
         
     }
+    
+    func pageViewController(pageViewController: UIPageViewController, didFinishAnimating finished: Bool, previousViewControllers: [UIViewController], transitionCompleted completed: Bool) {
+        
+    }
+    
     
 }
 

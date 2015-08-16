@@ -48,7 +48,20 @@ class DotController : UICollectionViewController, UICollectionViewDelegateFlowLa
     // Detect click events on the items in the collection
     override func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
         
-        print(indexPath.section, indexPath.row)
+        if let parentController = self.parentViewController as? MSHomeController {
+            
+            let currentIndex = parentController.currentControllerIndex
+            let destinationIndex = indexPath.row
+            
+            let nextViewController = parentController.modelController.viewControllerAtIndex(destinationIndex)
+            
+            if (currentIndex < destinationIndex) {
+                parentController.pageViewController.setViewControllers( [nextViewController], direction: .Forward, animated: true, completion: {done in})
+            } else if (currentIndex > destinationIndex) {
+                parentController.pageViewController.setViewControllers( [nextViewController], direction: .Reverse, animated: true, completion: {done in})
+            }
+
+        }
         
     }
     
