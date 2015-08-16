@@ -20,10 +20,12 @@ class MSHomeModelController : NSObject, UIPageViewControllerDataSource {
     override init() {
         super.init()
         createViewControllers()
+        
+        
     }
     
     func createViewControllers() -> Void {
-        
+
         pageControllers.append( MSFrontPageController() )
         pageControllers.append( MSSpeakerController() )
         pageControllers.append( MSSpeakerController() )

@@ -15,6 +15,9 @@
 		C61C00661B4C7F1600AB4D6C /* MSEventPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C61C00631B4C7F1600AB4D6C /* MSEventPageController.swift */; };
 		C61EEFC91B6AF6D30012DA3D /* MSHomePageViewTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C61EEFC81B6AF6D30012DA3D /* MSHomePageViewTest.swift */; };
 		C61EEFCE1B6AF9F00012DA3D /* MSTwitterTabTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C61EEFCD1B6AF9F00012DA3D /* MSTwitterTabTests.m */; };
+		C62B04161B7FA85C00613EA9 /* MansbrideSummitpresents.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C62B04151B7FA85C00613EA9 /* MansbrideSummitpresents.jpg */; };
+		C62B04171B7FA85C00613EA9 /* MansbrideSummitpresents.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C62B04151B7FA85C00613EA9 /* MansbrideSummitpresents.jpg */; };
+		C62B04181B7FA85C00613EA9 /* MansbrideSummitpresents.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C62B04151B7FA85C00613EA9 /* MansbrideSummitpresents.jpg */; };
 		C64FD5C71B59A61A00AE8EA6 /* test_schedule2.json in Resources */ = {isa = PBXBuildFile; fileRef = C64FD5C61B59A61A00AE8EA6 /* test_schedule2.json */; };
 		C64FD5C81B59A61A00AE8EA6 /* test_schedule2.json in Resources */ = {isa = PBXBuildFile; fileRef = C64FD5C61B59A61A00AE8EA6 /* test_schedule2.json */; };
 		C64FD5C91B59A61A00AE8EA6 /* test_schedule2.json in Resources */ = {isa = PBXBuildFile; fileRef = C64FD5C61B59A61A00AE8EA6 /* test_schedule2.json */; };
@@ -218,6 +221,7 @@
 		C61C00631B4C7F1600AB4D6C /* MSEventPageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSEventPageController.swift; sourceTree = "<group>"; };
 		C61EEFC81B6AF6D30012DA3D /* MSHomePageViewTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSHomePageViewTest.swift; sourceTree = "<group>"; };
 		C61EEFCD1B6AF9F00012DA3D /* MSTwitterTabTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSTwitterTabTests.m; sourceTree = "<group>"; };
+		C62B04151B7FA85C00613EA9 /* MansbrideSummitpresents.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = MansbrideSummitpresents.jpg; sourceTree = "<group>"; };
 		C64FD5C61B59A61A00AE8EA6 /* test_schedule2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = test_schedule2.json; sourceTree = "<group>"; };
 		C65BE8E01B631DE3008C064D /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		C65BE8E21B631FE4008C064D /* TwitterController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwitterController.h; sourceTree = "<group>"; };
@@ -372,6 +376,14 @@
 				C61EEFCD1B6AF9F00012DA3D /* MSTwitterTabTests.m */,
 			);
 			name = MSTwitterTests;
+			sourceTree = "<group>";
+		};
+		C62B04141B7FA84A00613EA9 /* HomePageImgs */ = {
+			isa = PBXGroup;
+			children = (
+				C62B04151B7FA85C00613EA9 /* MansbrideSummitpresents.jpg */,
+			);
+			name = HomePageImgs;
 			sourceTree = "<group>";
 		};
 		C63FA1CD1B5889EB00B3D238 /* MSRegisterTests */ = {
@@ -592,6 +604,7 @@
 		C6D9E96B1B47747700249DA4 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				C62B04141B7FA84A00613EA9 /* HomePageImgs */,
 				F7E000431B72EA4B00BF0839 /* App Icons */,
 				C67F0DC51B69A64E0020B18C /* Speakers */,
 				C68A13871B5BCE7B003CE324 /* NetworkErrorXIB.xib */,
@@ -846,6 +859,7 @@
 			files = (
 				F7CF77DC1B5B2F5900013CF0 /* Home-75.png in Resources */,
 				F7CF77DF1B5B2F5900013CF0 /* Pencil-75.png in Resources */,
+				C62B04161B7FA85C00613EA9 /* MansbrideSummitpresents.jpg in Resources */,
 				C69808EA1B5D05D900164BC6 /* YTPlayer.html in Resources */,
 				F7D1B8601B5C8E0900D34341 /* RegistrationSuccessXIB.xib in Resources */,
 				C6CFD0601B45EDA90067A6AD /* LaunchScreen.storyboard in Resources */,
@@ -890,6 +904,7 @@
 				F76F3BD91B61E0D90068C41C /* QR Code-50.png in Resources */,
 				C67926AF1B4DC94100EA86B4 /* TabBarIcons.xcassets in Resources */,
 				C67F0DCC1B69A85A0020B18C /* speakers_test.json in Resources */,
+				C62B04171B7FA85C00613EA9 /* MansbrideSummitpresents.jpg in Resources */,
 				C6D9E9611B474F1000249DA4 /* Main.storyboard in Resources */,
 				F7D1B8611B5C8E1600D34341 /* NetworkErrorXIB.xib in Resources */,
 				F76F3BD61B61E0D90068C41C /* QR Code-25.png in Resources */,
@@ -915,6 +930,7 @@
 				F76F3BDA1B61E0D90068C41C /* QR Code-50.png in Resources */,
 				C67926B31B4DC94B00EA86B4 /* TabBarIcons.xcassets in Resources */,
 				C67F0DCD1B69A85A0020B18C /* speakers_test.json in Resources */,
+				C62B04181B7FA85C00613EA9 /* MansbrideSummitpresents.jpg in Resources */,
 				C67926AB1B4DC91B00EA86B4 /* test_schedule.json in Resources */,
 				F7D1B8621B5C8E1600D34341 /* NetworkErrorXIB.xib in Resources */,
 				F76F3BD71B61E0D90068C41C /* QR Code-25.png in Resources */,
