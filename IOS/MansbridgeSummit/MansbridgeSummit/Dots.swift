@@ -53,13 +53,15 @@ class DotController : UICollectionViewController, UICollectionViewDelegateFlowLa
             let currentIndex = parentController.currentControllerIndex
             let destinationIndex = indexPath.row
             
-            let nextViewController = parentController.modelController.viewControllerAtIndex(destinationIndex)
+            let nextViewController = parentController.modelController.viewControllerAtIndex(destinationIndex)!
             
             if (currentIndex < destinationIndex) {
                 parentController.pageViewController.setViewControllers( [nextViewController], direction: .Forward, animated: true, completion: {done in})
             } else if (currentIndex > destinationIndex) {
                 parentController.pageViewController.setViewControllers( [nextViewController], direction: .Reverse, animated: true, completion: {done in})
             }
+            
+            parentController.pageViewController(parentController.pageViewController, willTransitionToViewControllers: [nextViewController])
 
         }
         

@@ -76,11 +76,14 @@ class MSHomeController: UIViewController, UIPageViewControllerDelegate {
         /* PAGE VIEW CONTROLLER DELEGATE METHODS */
     
     
-    // Transitioning to another view controller
+    // Called when transitioning to another view controller
     func pageViewController(currentPageViewController: UIPageViewController, willTransitionToViewControllers pendingViewControllers: [UIViewController]) {
 
-        if let controllerIndex = self.modelController.pageControllers.indexOf(currentPageViewController) {
-            self.currentControllerIndex = controllerIndex
+        if pendingViewControllers.count > 0 {
+            let nextController = pendingViewControllers[0]
+            if let controllerIndex = self.modelController.pageControllers.indexOf( nextController ) {
+                self.currentControllerIndex = controllerIndex
+            }
         }
         
     }
