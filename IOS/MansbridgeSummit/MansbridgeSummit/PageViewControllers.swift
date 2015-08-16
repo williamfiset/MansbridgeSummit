@@ -11,16 +11,29 @@ import UIKit
 
 class MSFrontPageController : UIViewController {
     
-    var frontPageView : MSFrontPageScrollView!
+    var frontPageView : MSFrontPageView!
     let frame = CGRectMake(0, 0, GC.SCREEN_WIDTH, GC.SCREEN_HEIGHT - GC.TAB_BAR_HEIGHT)
+    
+    let streamLink = "http://www.ginglelive.com/mtalive"
     
     override func viewDidLoad() {
         
         super.viewDidLoad()
+       
+        self.frontPageView = MSFrontPageView(frame: frame)
+        addStreamButtonClickEvent()
         
-        self.frontPageView = MSFrontPageScrollView(frame: frame)
         self.view.addSubview(frontPageView)
         
+    }
+    
+    // Added stream button click event here and not in the view to conform to MVC
+    private func addStreamButtonClickEvent() {
+        self.frontPageView.streamButton.addTarget(self, action: "clickedStream", forControlEvents: .TouchDown)
+    }
+    
+    func clickedStream () {
+        UIApplication.sharedApplication().openURL(NSURL(string: streamLink)!)
     }
     
 }

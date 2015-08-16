@@ -9,14 +9,14 @@
 import Foundation
 import UIKit
 
-public class MSFrontPageScrollView : UIView {
+public class MSFrontPageView : UIView {
 
     let homePageVideo = "ZhnhnKV56mA"
     
     var headerImageView : UIImageView!
     var videoPlayerView : YouTubePlayerView!
     
-    var speakerButtons : [UIButton] = []
+    var streamButton : UIButton!
     
     let PADDING : CGFloat = 15;
     
@@ -43,10 +43,13 @@ public class MSFrontPageScrollView : UIView {
 
     
     private func addYoutubeThumbnail() {
-
-        let y = headerImageView.frame.origin.y + headerImageView.frame.height + PADDING
         
-        let frame = CGRectMake( PADDING, y ,  GC.SCREEN_WIDTH - 2*PADDING, GC.SCREEN_HEIGHT * 0.25)
+        let x = PADDING
+        let y = headerImageView.frame.origin.y + headerImageView.frame.height
+        let w = GC.SCREEN_WIDTH - 2*x
+        let h = GC.SCREEN_HEIGHT * 0.25
+        
+        let frame = CGRectMake( x, y, w, h)
         videoPlayerView = YouTubePlayerView(frame: frame)
         videoPlayerView.loadVideoID( homePageVideo )
         self.addSubview(videoPlayerView)
@@ -55,7 +58,21 @@ public class MSFrontPageScrollView : UIView {
     
     private func addStreamLink(  ) -> Void {
         
-        // Not usre what this should be. A button? A label? A sexy animation?
+        let x = PADDING
+        let y = videoPlayerView.frame.origin.y + videoPlayerView.frame.height + PADDING
+        let w = GC.SCREEN_WIDTH - x*2
+        let h = GC.SCREEN_HEIGHT * 0.2
+                
+        let btnFrame = CGRectMake( x, y, w, h)
+        streamButton = UIButton(frame: btnFrame)
+        
+        // Set Button text, Use imageview instead?
+        let attributedString = NSAttributedString(string: "Click to view live stream")
+        streamButton.setAttributedTitle(attributedString, forState: UIControlState.Normal)
+        streamButton.setTitleColor(UIColor.grayColor(), forState: UIControlState.Selected)
+        streamButton.backgroundColor = UIColor.purpleColor()
+        
+        self.addSubview(streamButton)
         
     }
     

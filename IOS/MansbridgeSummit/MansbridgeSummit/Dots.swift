@@ -12,16 +12,23 @@ import UIKit
 class DotController : UICollectionViewController, UICollectionViewDelegateFlowLayout {
     
     let cell_identifier = "custom_cell_identifier"
-    let cellSize : CGFloat = 50.0
     let NUM_DOTS = 5
+    let PADDING = CGFloat(15)
     
     var lastDotIndexPath : NSIndexPath!
     
-    let frame = CGRect(x: 0, y: GC.SCREEN_HEIGHT - 150, width: GC.SCREEN_WIDTH, height: 150)
+    var frame : CGRect!
     
     override init(collectionViewLayout layout: UICollectionViewLayout) {
         
         super.init(collectionViewLayout: layout)
+        
+        let x = CGFloat(0)
+        let y = GC.SCREEN_HEIGHT - GC.TAB_BAR_HEIGHT - Dot.DIAMETER - PADDING
+        let w = GC.SCREEN_WIDTH
+        let h = Dot.DIAMETER * 2 + PADDING
+        self.frame = CGRectMake( x, y, w, h)
+        
         collectionView = UICollectionView(frame: self.frame, collectionViewLayout: layout)
         setCollectionViewProperties()
         
@@ -32,7 +39,7 @@ class DotController : UICollectionViewController, UICollectionViewDelegateFlowLa
         collectionView!.registerClass( Dot.classForCoder(), forCellWithReuseIdentifier: cell_identifier)
         
         collectionView!.bounds = self.frame
-        collectionView!.contentSize = CGSize(width: self.frame.width, height: self.frame.height)
+        collectionView!.contentSize = CGSizeMake(self.frame.width, self.frame.height)
         collectionView!.dataSource = self
         collectionView!.delegate = self
         collectionView!.backgroundColor = UIColor.clearColor()
@@ -94,7 +101,7 @@ class DotController : UICollectionViewController, UICollectionViewDelegateFlowLa
     }
     
     func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
-        return CGSize(width: cellSize, height: cellSize)
+        return CGSizeMake(Dot.DIAMETER, Dot.DIAMETER)
     }
     
     override func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -115,7 +122,7 @@ class DotController : UICollectionViewController, UICollectionViewDelegateFlowLa
     func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAtIndex section: Int) -> UIEdgeInsets {
         
         let cellPadding = collectionView.layoutMargins.left
-        let leftInset = (GC.SCREEN_WIDTH - ((cellSize + cellPadding) * CGFloat(NUM_DOTS) )) / 2
+        let leftInset = (GC.SCREEN_WIDTH - ((Dot.DIAMETER + cellPadding) * CGFloat(NUM_DOTS) )) / 2
         
         return UIEdgeInsetsMake(0, leftInset, 0, 0);
         
@@ -131,7 +138,8 @@ class Dot : UICollectionViewCell {
     
     // Change Radius depending on screen Width?
     // An IPad could use bigger dots
-    static let RADIUS : CGFloat = 50.0
+    static let RADIUS   : CGFloat = 25.0
+    static let DIAMETER : CGFloat = RADIUS * 2
     
     static var createdDots = 0
     
@@ -158,7 +166,7 @@ class Dot : UICollectionViewCell {
     private func setDefaultProperties() {
         
         self.backgroundColor = Dot.DEFAULT_BG_COLOR
-        self.layer.cornerRadius = Dot.RADIUS / 2
+        self.layer.cornerRadius = Dot.RADIUS
         self.alpha = 0.7
         
         Dot.DEFAULT_SHADOW_COLOR  = self.layer.shadowColor
@@ -169,9 +177,9 @@ class Dot : UICollectionViewCell {
     }
     
     private func setDotInitals () {
-        
+
         let initialLabelText = Dot.initials[Dot.createdDots]
-        let initialLabel = UILabel(frame: CGRect(x: 0, y: 0, width: Dot.RADIUS, height: Dot.RADIUS))
+        let initialLabel = UILabel(frame: CGRectMake(0, 0, Dot.DIAMETER, Dot.DIAMETER))
         
         initialLabel.text = initialLabelText
         initialLabel.textColor = GC.Color.white
@@ -185,7 +193,7 @@ class Dot : UICollectionViewCell {
     func glow() -> Void {
         
         self.layer.shadowColor = GC.Color.gold.CGColor
-        self.layer.shadowRadius = 15;
+        self.layer.shadowRadius = 7;
         self.layer.shadowOffset = CGSizeZero;
         self.layer.shadowOpacity = 4.0;
         self.backgroundColor = GC.Color.gold

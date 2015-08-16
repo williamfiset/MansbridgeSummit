@@ -31,8 +31,8 @@ class MSHomeController: UIViewController, UIPageViewControllerDelegate {
     
     // Select the first dot right before the view is about to appear
     override func viewWillAppear(animated: Bool) {
+
         super.viewWillAppear(animated)
-        
         dotController.updateDots(NSIndexPath(forRow: 0, inSection: 0))
         
     }
