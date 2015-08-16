@@ -47,7 +47,7 @@
         <scene sceneID="p8n-8L-vy5">
             <objects>
                 <tableViewController title="Mansbridge Summit Schedule" id="M2Z-vZ-2uL" userLabel="Schedule" customClass="MSScheduleUITableViewController" customModule="MansbridgeSummit" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="ijc-jX-Yig" customClass="MSScheduleTableView" customModule="MansbridgeSummit" customModuleProvider="target">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="ijc-jX-Yig">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <animations/>
@@ -207,7 +207,7 @@
                 <tabBarController id="LdM-6H-Yiw" customClass="MSTabBarController" customModule="MansbridgeSummit" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="huS-EU-Sjl"/>
                     <nil key="simulatedBottomBarMetrics"/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" translucent="NO" id="kNs-mW-0r6" customClass="MSTabBar" customModule="MansbridgeSummit" customModuleProvider="target">
+                    <tabBar key="tabBar" contentMode="scaleToFill" translucent="NO" id="kNs-mW-0r6">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <animations/>

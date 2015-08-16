@@ -125,8 +125,16 @@ class MSScheduleUITableViewController: UITableViewController {
             cell.descriptionLabel.text = event.eventLocation
         }
         
+//        let contentOffset = self.tableView.contentOffset;
+//        print("1: \(self.tableView.contentOffset)")
+//        tableView.reloadData()
         tableView.beginUpdates()
+//        print("2: \(self.tableView.contentOffset)")
         tableView.endUpdates()
+//        print("3: \(self.tableView.contentOffset)")
+//        self.tableView.setContentOffset(contentOffset, animated: false)
+//        print("4: \(self.tableView.contentOffset)")
+        
     }
     
 }

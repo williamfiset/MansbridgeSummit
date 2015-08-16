@@ -87,7 +87,6 @@
 		C6B0A6C61B6B00800048518E /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C65BE8E01B631DE3008C064D /* CloudKit.framework */; };
 		C6B0A6C71B6B00880048518E /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C65BE8E01B631DE3008C064D /* CloudKit.framework */; };
 		C6B0A6C81B6B00930048518E /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C67BD26C1B5F1597006356C2 /* SystemConfiguration.framework */; };
-		C6C00A6B1B45F3B300709992 /* MSTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C00A6A1B45F3B300709992 /* MSTabBarController.swift */; };
 		C6C00A6C1B45F3B300709992 /* MSTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C00A6A1B45F3B300709992 /* MSTabBarController.swift */; };
 		C6C00A6D1B45F3B300709992 /* MSTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C00A6A1B45F3B300709992 /* MSTabBarController.swift */; };
 		C6CFD0541B45EDA90067A6AD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6CFD0531B45EDA90067A6AD /* AppDelegate.swift */; };
@@ -184,6 +183,7 @@
 		F7E33DBC1B7D6B9000450A22 /* MSTwitterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E33DBB1B7D6B9000450A22 /* MSTwitterUITests.swift */; };
 		F7E33DBF1B8003CA00450A22 /* MSScheduleUITableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E33DBD1B8003CA00450A22 /* MSScheduleUITableViewCell.swift */; };
 		F7E33DC01B8003CA00450A22 /* MSScheduleUITableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E33DBE1B8003CA00450A22 /* MSScheduleUITableViewController.swift */; };
+		F7E33DC21B80F34D00450A22 /* MSTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C00A6A1B45F3B300709992 /* MSTabBarController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -954,7 +954,7 @@
 				F7581FB61B63218900406498 /* PageViewControllers.swift in Sources */,
 				F7E33DC01B8003CA00450A22 /* MSScheduleUITableViewController.swift in Sources */,
 				C6E1632E1B481AE600942749 /* MSScheduleModels.swift in Sources */,
-				C6C00A6B1B45F3B300709992 /* MSTabBarController.swift in Sources */,
+				F7E33DC21B80F34D00450A22 /* MSTabBarController.swift in Sources */,
 				C67F0DD31B69BC240020B18C /* MSSpeakerModel.swift in Sources */,
 				C6E163391B48296600942749 /* SwiftyJSON.swift in Sources */,
 				C69E4A581B4608C500BD981C /* MSRegisterTabController.swift in Sources */,
