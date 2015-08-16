@@ -29,7 +29,15 @@ class MSHomeController: UIViewController, UIPageViewControllerDelegate {
         
     }
     
-    // Initailize Page Controller
+    // Select the first dot right before the view is about to appear
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        dotController.updateDots(NSIndexPath(forRow: 0, inSection: 0))
+        
+    }
+    
+    // Initialize Page Controller
     private func createPageViewController() {
         
         self.pageViewController = UIPageViewController(transitionStyle: .Scroll, navigationOrientation: .Horizontal, options: nil)
@@ -48,9 +56,9 @@ class MSHomeController: UIViewController, UIPageViewControllerDelegate {
         
     }
     
-    func setDots ( ) -> Void {
+    func setDots() -> Void {
         
-        // Places Speakers above the page view controller content
+        // Places speakers above the page view controller content
         self.view.addSubview(dotController.collectionView!)
         
     }
@@ -65,7 +73,7 @@ class MSHomeController: UIViewController, UIPageViewControllerDelegate {
         let viewControllers = [firstController]
         self.pageViewController.setViewControllers(viewControllers, direction: .Forward, animated: false, completion: {done in })
         
-        // House keeping stuffz
+        // House-keeping stuff
         self.addChildViewController(self.pageViewController)
         self.view.addSubview(self.pageViewController.view)
         self.pageViewController.didMoveToParentViewController(self)
@@ -78,17 +86,25 @@ class MSHomeController: UIViewController, UIPageViewControllerDelegate {
     
     // Called when transitioning to another view controller
     func pageViewController(currentPageViewController: UIPageViewController, willTransitionToViewControllers pendingViewControllers: [UIViewController]) {
-
+        
         if pendingViewControllers.count > 0 {
             let nextController = pendingViewControllers[0]
-            if let controllerIndex = self.modelController.pageControllers.indexOf( nextController ) {
+            if let controllerIndex = self.modelController.pageControllers.indexOf(nextController) {
                 self.currentControllerIndex = controllerIndex
+                dotController.updateDots(NSIndexPath(forRow: controllerIndex, inSection: 0))
             }
         }
         
     }
     
+    // Called when the transition is finished
+    // NOTE: This method is necessary, otherwise we can get a weird bug where if the user starts to swipe to another page, but then stops, the dot won't be updated properly
     func pageViewController(pageViewController: UIPageViewController, didFinishAnimating finished: Bool, previousViewControllers: [UIViewController], transitionCompleted completed: Bool) {
+        
+        if let controllerIndex = self.modelController.pageControllers.indexOf(pageViewController.viewControllers![0]) {
+            self.currentControllerIndex = controllerIndex
+            dotController.updateDots(NSIndexPath(forRow: controllerIndex, inSection: 0))
+        }
         
     }
     

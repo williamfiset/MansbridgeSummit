@@ -481,7 +481,7 @@
 			name = ThirdParty;
 			sourceTree = "<group>";
 		};
-		C68956391B52B2EF006D188F /* FirstTab */ = {
+		C68956391B52B2EF006D188F /* HomeTab */ = {
 			isa = PBXGroup;
 			children = (
 				F7581FB51B63218900406498 /* MSHomeController.swift */,
@@ -494,7 +494,7 @@
 				C63580E51B7FE8D000BDE559 /* Dots.swift */,
 				C69808E61B5D05D900164BC6 /* YTPlayer.html */,
 			);
-			name = FirstTab;
+			name = HomeTab;
 			sourceTree = "<group>";
 		};
 		C69BCCCE1B6AEDF40027ACE7 /* MSHomePageTests */ = {
@@ -509,7 +509,7 @@
 		C69E4A671B460A5000BD981C /* Tabs */ = {
 			isa = PBXGroup;
 			children = (
-				C68956391B52B2EF006D188F /* FirstTab */,
+				C68956391B52B2EF006D188F /* HomeTab */,
 				C679E2101B55FCFE004AEBE9 /* RegisterTab */,
 				C64FD5CA1B59C28A00AE8EA6 /* TwitterTab */,
 				C69E4A6C1B46128900BD981C /* ScheduleTab */,

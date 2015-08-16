@@ -39,29 +39,32 @@ class DotController : UICollectionViewController, UICollectionViewDelegateFlowLa
         collectionView!.backgroundView = UIView(frame: CGRectZero)
         collectionView!.frame = self.frame
         
-        // DEBUGGIN
+        // DEBUGGING
 //        let bg = UIView(frame: frame)
 //        bg.backgroundColor = UIColor.redColor()
 //        collectionView!.backgroundColor = UIColor.redColor()
 //        collectionView!.backgroundView = bg
         
     }
-
     
     // Detect click events on the items in the collection
     override func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
         
+        updateDots(indexPath)
+    }
+    
+    func updateDots(indexPath: NSIndexPath) {
         
         defer {
             lastDotIndexPath = indexPath
         }
-       
+        
         if lastDotIndexPath != nil {
-            let lastDot = collectionView.cellForItemAtIndexPath(lastDotIndexPath) as! Dot
+            let lastDot = collectionView!.cellForItemAtIndexPath(lastDotIndexPath) as! Dot
             lastDot.removeGlow()
         }
         
-        if let dot = collectionView.cellForItemAtIndexPath(indexPath) as? Dot {
+        if let dot = collectionView!.cellForItemAtIndexPath(indexPath) as? Dot {
             dot.glow()
         }
         
@@ -78,13 +81,15 @@ class DotController : UICollectionViewController, UICollectionViewDelegateFlowLa
                     parentController.pageViewController.setViewControllers( [nextViewController], direction: .Forward, animated: true, completion: {done in})
                 } else if (currentIndex > destinationIndex) {
                     parentController.pageViewController.setViewControllers( [nextViewController], direction: .Reverse, animated: true, completion: {done in})
+                } else {
+                    // Abort if the destination index is already being shown already
+                    return
                 }
                 
                 parentController.pageViewController(parentController.pageViewController, willTransitionToViewControllers: [nextViewController])
                 
             }
         }
-        
 
     }
     
@@ -121,15 +126,6 @@ class DotController : UICollectionViewController, UICollectionViewDelegateFlowLa
     }
     
 }
-
-
-
-/*
-
-Change dot size when clicked?
-Add a Label?
-Change dot on swipe
-*/
 
 class Dot : UICollectionViewCell {
     
@@ -186,7 +182,7 @@ class Dot : UICollectionViewCell {
         
     }
     
-    func glow( ) -> Void {
+    func glow() -> Void {
         
         self.layer.shadowColor = GC.Color.gold.CGColor
         self.layer.shadowRadius = 15;
