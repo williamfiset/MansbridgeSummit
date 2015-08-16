@@ -19,9 +19,9 @@ class MSHomeModelController : NSObject, UIPageViewControllerDataSource {
     };
     
     override init() {
+        
         super.init()
         createViewControllers()
-        
         
     }
     
