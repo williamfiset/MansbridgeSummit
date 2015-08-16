@@ -28,6 +28,24 @@
 		C664DE731B57254800CFB209 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = C664DE721B57254800CFB209 /* Reachability.m */; };
 		C664DE741B57254800CFB209 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = C664DE721B57254800CFB209 /* Reachability.m */; };
 		C664DE751B57254800CFB209 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = C664DE721B57254800CFB209 /* Reachability.m */; };
+		C677E7A31B80FE27001DF097 /* MTALiveLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = C677E7A21B80FE27001DF097 /* MTALiveLogo.png */; };
+		C677E7A41B80FE27001DF097 /* MTALiveLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = C677E7A21B80FE27001DF097 /* MTALiveLogo.png */; };
+		C677E7A51B80FE27001DF097 /* MTALiveLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = C677E7A21B80FE27001DF097 /* MTALiveLogo.png */; };
+		C677E7A71B8102BC001DF097 /* speakers_test.json in Resources */ = {isa = PBXBuildFile; fileRef = C677E7A61B8102BC001DF097 /* speakers_test.json */; };
+		C677E7A81B8102BC001DF097 /* speakers_test.json in Resources */ = {isa = PBXBuildFile; fileRef = C677E7A61B8102BC001DF097 /* speakers_test.json */; };
+		C677E7A91B8102BC001DF097 /* speakers_test.json in Resources */ = {isa = PBXBuildFile; fileRef = C677E7A61B8102BC001DF097 /* speakers_test.json */; };
+		C677E7AF1B8109AF001DF097 /* feynman.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C677E7AB1B8109AF001DF097 /* feynman.jpg */; };
+		C677E7B01B8109AF001DF097 /* feynman.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C677E7AB1B8109AF001DF097 /* feynman.jpg */; };
+		C677E7B11B8109AF001DF097 /* feynman.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C677E7AB1B8109AF001DF097 /* feynman.jpg */; };
+		C677E7B21B8109AF001DF097 /* newton.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C677E7AC1B8109AF001DF097 /* newton.jpg */; };
+		C677E7B31B8109AF001DF097 /* newton.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C677E7AC1B8109AF001DF097 /* newton.jpg */; };
+		C677E7B41B8109AF001DF097 /* newton.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C677E7AC1B8109AF001DF097 /* newton.jpg */; };
+		C677E7B51B8109AF001DF097 /* alexander.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C677E7AD1B8109AF001DF097 /* alexander.jpg */; };
+		C677E7B61B8109AF001DF097 /* alexander.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C677E7AD1B8109AF001DF097 /* alexander.jpg */; };
+		C677E7B71B8109AF001DF097 /* alexander.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C677E7AD1B8109AF001DF097 /* alexander.jpg */; };
+		C677E7B81B8109AF001DF097 /* rhonda.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C677E7AE1B8109AF001DF097 /* rhonda.jpg */; };
+		C677E7B91B8109AF001DF097 /* rhonda.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C677E7AE1B8109AF001DF097 /* rhonda.jpg */; };
+		C677E7BA1B8109AF001DF097 /* rhonda.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C677E7AE1B8109AF001DF097 /* rhonda.jpg */; };
 		C67926AB1B4DC91B00EA86B4 /* test_schedule.json in Resources */ = {isa = PBXBuildFile; fileRef = C6E163321B481C5000942749 /* test_schedule.json */; };
 		C67926AE1B4DC94100EA86B4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6CFD05E1B45EDA90067A6AD /* LaunchScreen.storyboard */; };
 		C67926AF1B4DC94100EA86B4 /* TabBarIcons.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6CFD05C1B45EDA90067A6AD /* TabBarIcons.xcassets */; };
@@ -44,9 +62,6 @@
 		C67F0DC21B69A4640020B18C /* PageViewControllers.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7581FB41B63218900406498 /* PageViewControllers.swift */; };
 		C67F0DC31B69A46D0020B18C /* MSHomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7581FB51B63218900406498 /* MSHomeController.swift */; };
 		C67F0DC41B69A46D0020B18C /* PageViewControllers.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7581FB41B63218900406498 /* PageViewControllers.swift */; };
-		C67F0DCB1B69A85A0020B18C /* speakers_test.json in Resources */ = {isa = PBXBuildFile; fileRef = C67F0DCA1B69A85A0020B18C /* speakers_test.json */; };
-		C67F0DCC1B69A85A0020B18C /* speakers_test.json in Resources */ = {isa = PBXBuildFile; fileRef = C67F0DCA1B69A85A0020B18C /* speakers_test.json */; };
-		C67F0DCD1B69A85A0020B18C /* speakers_test.json in Resources */ = {isa = PBXBuildFile; fileRef = C67F0DCA1B69A85A0020B18C /* speakers_test.json */; };
 		C67F0DCF1B69B6130020B18C /* DataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67F0DCE1B69B6130020B18C /* DataLoader.swift */; };
 		C67F0DD01B69B6130020B18C /* DataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67F0DCE1B69B6130020B18C /* DataLoader.swift */; };
 		C67F0DD11B69B6130020B18C /* DataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67F0DCE1B69B6130020B18C /* DataLoader.swift */; };
@@ -220,13 +235,18 @@
 		C664DE711B57254800CFB209 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
 		C664DE721B57254800CFB209 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		C6721A001B49620200E7B050 /* MansbridgeSummit.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = MansbridgeSummit.entitlements; sourceTree = "<group>"; };
+		C677E7A21B80FE27001DF097 /* MTALiveLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MTALiveLogo.png; sourceTree = "<group>"; };
+		C677E7A61B8102BC001DF097 /* speakers_test.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = speakers_test.json; sourceTree = "<group>"; };
+		C677E7AB1B8109AF001DF097 /* feynman.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = feynman.jpg; sourceTree = "<group>"; };
+		C677E7AC1B8109AF001DF097 /* newton.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = newton.jpg; sourceTree = "<group>"; };
+		C677E7AD1B8109AF001DF097 /* alexander.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = alexander.jpg; sourceTree = "<group>"; };
+		C677E7AE1B8109AF001DF097 /* rhonda.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = rhonda.jpg; sourceTree = "<group>"; };
 		C67926A91B4DC36900EA86B4 /* MSScheduleTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSScheduleTests.swift; sourceTree = "<group>"; };
 		C67926B51B4DD0F800EA86B4 /* MSEventTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSEventTests.swift; sourceTree = "<group>"; };
 		C67926BB1B4DD2A100EA86B4 /* MScheduleTableViewTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MScheduleTableViewTests.swift; sourceTree = "<group>"; };
 		C67BD26C1B5F1597006356C2 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		C67F0DB11B6977C20020B18C /* MSHomeModelController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSHomeModelController.swift; sourceTree = "<group>"; };
 		C67F0DBD1B699D7B0020B18C /* MSSpeakerScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSSpeakerScrollView.swift; sourceTree = "<group>"; };
-		C67F0DCA1B69A85A0020B18C /* speakers_test.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = speakers_test.json; sourceTree = "<group>"; };
 		C67F0DCE1B69B6130020B18C /* DataLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataLoader.swift; sourceTree = "<group>"; };
 		C67F0DD21B69BC240020B18C /* MSSpeakerModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSSpeakerModel.swift; sourceTree = "<group>"; };
 		C687DE811B6C17A70049BD84 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
@@ -366,6 +386,7 @@
 			isa = PBXGroup;
 			children = (
 				C62B04151B7FA85C00613EA9 /* MansbrideSummitpresents.jpg */,
+				C677E7A21B80FE27001DF097 /* MTALiveLogo.png */,
 			);
 			name = HomePageImgs;
 			sourceTree = "<group>";
@@ -404,6 +425,17 @@
 			name = Reachability;
 			sourceTree = "<group>";
 		};
+		C677E7AA1B8109A5001DF097 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				C677E7AB1B8109AF001DF097 /* feynman.jpg */,
+				C677E7AC1B8109AF001DF097 /* newton.jpg */,
+				C677E7AD1B8109AF001DF097 /* alexander.jpg */,
+				C677E7AE1B8109AF001DF097 /* rhonda.jpg */,
+			);
+			name = images;
+			sourceTree = "<group>";
+		};
 		C67926A81B4DC34200EA86B4 /* MSScheduleUITests */ = {
 			isa = PBXGroup;
 			children = (
@@ -431,7 +463,8 @@
 		C67F0DC51B69A64E0020B18C /* Speakers */ = {
 			isa = PBXGroup;
 			children = (
-				C67F0DCA1B69A85A0020B18C /* speakers_test.json */,
+				C677E7AA1B8109A5001DF097 /* images */,
+				C677E7A61B8102BC001DF097 /* speakers_test.json */,
 			);
 			name = Speakers;
 			sourceTree = "<group>";
@@ -581,12 +614,12 @@
 		C6D9E96B1B47747700249DA4 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				C62B04141B7FA84A00613EA9 /* HomePageImgs */,
-				F7E000431B72EA4B00BF0839 /* App Icons */,
-				C67F0DC51B69A64E0020B18C /* Speakers */,
 				C68A13871B5BCE7B003CE324 /* NetworkErrorXIB.xib */,
 				F7D1B85F1B5C8E0900D34341 /* RegistrationSuccessXIB.xib */,
 				F7D1B8651B5C8ED900D34341 /* checkmark.png */,
+				C62B04141B7FA84A00613EA9 /* HomePageImgs */,
+				F7E000431B72EA4B00BF0839 /* App Icons */,
+				C67F0DC51B69A64E0020B18C /* Speakers */,
 				F7CF77C41B5B2F2400013CF0 /* Tab Icons */,
 				C6E163311B481BFF00942749 /* Schedule */,
 				C6D9E9891B47785000249DA4 /* Fonts */,
@@ -822,6 +855,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F7CF77DC1B5B2F5900013CF0 /* Home-75.png in Resources */,
+				C677E7AF1B8109AF001DF097 /* feynman.jpg in Resources */,
 				F7CF77DF1B5B2F5900013CF0 /* Pencil-75.png in Resources */,
 				C62B04161B7FA85C00613EA9 /* MansbrideSummitpresents.jpg in Resources */,
 				C69808EA1B5D05D900164BC6 /* YTPlayer.html in Resources */,
@@ -829,7 +863,6 @@
 				C6CFD0601B45EDA90067A6AD /* LaunchScreen.storyboard in Resources */,
 				F7CF77DB1B5B2F5900013CF0 /* Home-50.png in Resources */,
 				C6CFD05D1B45EDA90067A6AD /* TabBarIcons.xcassets in Resources */,
-				C67F0DCB1B69A85A0020B18C /* speakers_test.json in Resources */,
 				C6E163331B481C5000942749 /* test_schedule.json in Resources */,
 				F7E0004B1B72EA6000BF0839 /* icon180.png in Resources */,
 				F7CF77DA1B5B2F5900013CF0 /* Home-25.png in Resources */,
@@ -840,6 +873,7 @@
 				C6D9E9901B4778A400249DA4 /* MyriadPro-Regular.otf in Resources */,
 				C68A13881B5BCE7B003CE324 /* NetworkErrorXIB.xib in Resources */,
 				C64FD5C71B59A61A00AE8EA6 /* test_schedule2.json in Resources */,
+				C677E7B21B8109AF001DF097 /* newton.jpg in Resources */,
 				F76F3BD81B61E0D90068C41C /* QR Code-50.png in Resources */,
 				F7CF77DD1B5B2F5900013CF0 /* Pencil-25.png in Resources */,
 				F7E000481B72EA6000BF0839 /* icon76.png in Resources */,
@@ -848,10 +882,14 @@
 				F7CF77E01B5B2F5900013CF0 /* Twitter-25.png in Resources */,
 				F7CF77E21B5B2F5900013CF0 /* Twitter-75.png in Resources */,
 				F76F3BD51B61E0D90068C41C /* QR Code-25.png in Resources */,
+				C677E7B51B8109AF001DF097 /* alexander.jpg in Resources */,
 				F7CF77D91B5B2F5900013CF0 /* Calendar-75.png in Resources */,
 				F79185011B5A839600EFF287 /* TwitterKitResources.bundle in Resources */,
 				C68956361B52AFBB006D188F /* Media.xcassets in Resources */,
 				F7CF77E11B5B2F5900013CF0 /* Twitter-50.png in Resources */,
+				C677E7A71B8102BC001DF097 /* speakers_test.json in Resources */,
+				C677E7B81B8109AF001DF097 /* rhonda.jpg in Resources */,
+				C677E7A31B80FE27001DF097 /* MTALiveLogo.png in Resources */,
 				F7E000491B72EA6000BF0839 /* icon120.png in Resources */,
 				C6D9E9771B4774CB00249DA4 /* AppleGaramond-Bold.ttf in Resources */,
 				F7E0004A1B72EA6000BF0839 /* icon152.png in Resources */,
@@ -866,17 +904,22 @@
 			files = (
 				C67926AE1B4DC94100EA86B4 /* LaunchScreen.storyboard in Resources */,
 				F76F3BD91B61E0D90068C41C /* QR Code-50.png in Resources */,
+				C677E7B01B8109AF001DF097 /* feynman.jpg in Resources */,
 				C67926AF1B4DC94100EA86B4 /* TabBarIcons.xcassets in Resources */,
-				C67F0DCC1B69A85A0020B18C /* speakers_test.json in Resources */,
 				C62B04171B7FA85C00613EA9 /* MansbrideSummitpresents.jpg in Resources */,
 				C6D9E9611B474F1000249DA4 /* Main.storyboard in Resources */,
 				F7D1B8611B5C8E1600D34341 /* NetworkErrorXIB.xib in Resources */,
+				C677E7B61B8109AF001DF097 /* alexander.jpg in Resources */,
+				C677E7A81B8102BC001DF097 /* speakers_test.json in Resources */,
+				C677E7B91B8109AF001DF097 /* rhonda.jpg in Resources */,
 				F76F3BD61B61E0D90068C41C /* QR Code-25.png in Resources */,
 				C69808EB1B5D05D900164BC6 /* YTPlayer.html in Resources */,
 				F7D1B8631B5C8E1A00D34341 /* RegistrationSuccessXIB.xib in Resources */,
 				C6D9E9781B4774CB00249DA4 /* AppleGaramond-Bold.ttf in Resources */,
+				C677E7B31B8109AF001DF097 /* newton.jpg in Resources */,
 				C6E163341B481C5000942749 /* test_schedule.json in Resources */,
 				C64FD5C81B59A61A00AE8EA6 /* test_schedule2.json in Resources */,
+				C677E7A41B80FE27001DF097 /* MTALiveLogo.png in Resources */,
 				C6D9E98E1B4778A400249DA4 /* MyriadPro-Bold.otf in Resources */,
 				C6D9E9871B4774CB00249DA4 /* AppleGaramond.ttf in Resources */,
 				F79185021B5A839600EFF287 /* TwitterKitResources.bundle in Resources */,
@@ -892,17 +935,22 @@
 			files = (
 				C67926B21B4DC94B00EA86B4 /* LaunchScreen.storyboard in Resources */,
 				F76F3BDA1B61E0D90068C41C /* QR Code-50.png in Resources */,
+				C677E7B11B8109AF001DF097 /* feynman.jpg in Resources */,
 				C67926B31B4DC94B00EA86B4 /* TabBarIcons.xcassets in Resources */,
-				C67F0DCD1B69A85A0020B18C /* speakers_test.json in Resources */,
 				C62B04181B7FA85C00613EA9 /* MansbrideSummitpresents.jpg in Resources */,
 				C67926AB1B4DC91B00EA86B4 /* test_schedule.json in Resources */,
 				F7D1B8621B5C8E1600D34341 /* NetworkErrorXIB.xib in Resources */,
+				C677E7B71B8109AF001DF097 /* alexander.jpg in Resources */,
+				C677E7A91B8102BC001DF097 /* speakers_test.json in Resources */,
+				C677E7BA1B8109AF001DF097 /* rhonda.jpg in Resources */,
 				F76F3BD71B61E0D90068C41C /* QR Code-25.png in Resources */,
 				C69808EC1B5D05D900164BC6 /* YTPlayer.html in Resources */,
 				F7D1B8641B5C8E1A00D34341 /* RegistrationSuccessXIB.xib in Resources */,
 				C6D9E9621B474F1100249DA4 /* Main.storyboard in Resources */,
+				C677E7B41B8109AF001DF097 /* newton.jpg in Resources */,
 				C6D9E9791B4774CB00249DA4 /* AppleGaramond-Bold.ttf in Resources */,
 				C64FD5C91B59A61A00AE8EA6 /* test_schedule2.json in Resources */,
+				C677E7A51B80FE27001DF097 /* MTALiveLogo.png in Resources */,
 				C6D9E98F1B4778A400249DA4 /* MyriadPro-Bold.otf in Resources */,
 				C6D9E9881B4774CB00249DA4 /* AppleGaramond.ttf in Resources */,
 				F79185031B5A839600EFF287 /* TwitterKitResources.bundle in Resources */,
