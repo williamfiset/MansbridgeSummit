@@ -43,7 +43,7 @@ class MSSpeakerController : UIViewController {
     static var speakerJSONData : JSON?
     static var speakers : [MSSpeaker] = []
     
-    let SPEAKER_FILE_NAME = ""
+    let SPEAKER_FILE_NAME = "speakers_test"
     
     // As speakers are created this variable increments.
     // Meaning the way you instantiate speakers will determine which 
@@ -87,12 +87,14 @@ class MSSpeakerController : UIViewController {
                         
                         let speaker_name = panelist["name"].string ?? ""
                         let speaker_profession = panelist["profession"].string ?? ""
+                        let speaker_image_name = panelist["image"].string ?? ""
                         let speaker_short_description = panelist["description"].string ?? ""
                         let speaker_videos = (panelist["videos"].arrayObject ?? []) as! [String]
 
                         let speaker = MSSpeaker(
                             name : speaker_name,
                             profession : speaker_profession,
+                            image_name : speaker_image_name,
                             short_description : speaker_short_description,
                             videos : speaker_videos
                         )

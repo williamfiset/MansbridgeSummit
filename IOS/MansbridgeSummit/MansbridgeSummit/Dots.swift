@@ -149,9 +149,7 @@ class Dot : UICollectionViewCell {
     static var DEFAULT_OPACITY : Float!
     static var DEFAULT_BG_COLOR = GC.Color.red
 
-    static let initials = [
-        "MS", "RM", "IN", "RF", "ATG"
-    ]
+    static let initials = [ "MS", "RM", "IN", "RF", "ATG" ]
     
     override init(frame: CGRect) {
         

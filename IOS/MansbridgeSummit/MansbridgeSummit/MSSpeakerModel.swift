@@ -13,6 +13,7 @@ public struct MSSpeaker : CustomStringConvertible {
     
     let name : String
     let profession : String
+    let image_name : String
     let short_description : String
     let videos : [String]
     
