@@ -20,29 +20,20 @@ public class MSScheduleTableController : UITableViewController {
     var schedule_file_name = "test_schedule2"
     var days : [MSDay] = []
     
-    override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle?) {
-        super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
+//    override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle?) {
+//        super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
+//        
+//        tableView.estimatedRowHeight = 44.0
+//        tableView.rowHeight = UITableViewAutomaticDimension
+//        
+//    }
+    
+    override public func viewDidLoad() {
+        super.viewDidLoad()
         
+        // Do any additional setup after loading the view, typically from a nib.
         tableView.estimatedRowHeight = 44.0
         tableView.rowHeight = UITableViewAutomaticDimension
-        
-    }
-    
-    // viewWillAppear is called when the schedule tab button is pressed
-    // but not when comming back from an MSEventPage. This means this method
-    // acts as a constructor, in a sense.
-    // NOTE: Shouldn't this code be in the view loading method? I don't see why we need to re-load the entire table each time..
-    public override func viewWillAppear(animated: Bool) {
-        
-        super.viewWillAppear(animated)
-        
-        let newTable = MSScheduleTableView()
-        
-        newTable.dataSource = self
-        newTable.delegate = self
-        
-        self.view = newTable
-        self.tableView = newTable
         
         if let reader = DataLoader(fileName: schedule_file_name, fileType: "json") {
             if let jsonData = reader.getJSONContent() {
@@ -55,12 +46,31 @@ public class MSScheduleTableController : UITableViewController {
         }
         
     }
+
+    
+    // viewWillAppear is called when the schedule tab button is pressed
+    // but not when comming back from an MSEventPage. This means this method
+    // acts as a constructor, in a sense.
+    // NOTE: Shouldn't this code be in the view loading method? I don't see why we need to re-load the entire table each time..
+//    public override func viewWillAppear(animated: Bool) {
+//        
+//        super.viewWillAppear(animated)
+//        
+//        let newTable = MSScheduleTableView()
+//        
+//        newTable.dataSource = self
+//        newTable.delegate = self
+//        
+//        self.view = newTable
+//        self.tableView = newTable
+//        
+//    }
     
     // Keep constructor (used in Test cases...)
-    override init(style: UITableViewStyle) {
-        super.init(style: style)
-    }
-
+//    override init(style: UITableViewStyle) {
+//        super.init(style: style)
+//    }
+//
     public override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
     }
@@ -112,8 +122,14 @@ public class MSScheduleTableController : UITableViewController {
         // with the same identifier and copying its properties.
         
         if let eventCell = tableView.dequeueReusableCellWithIdentifier(eventCellID) {
+            print("here")
+            let _eventCell = eventCell as! MSScheduleCellView
+            _eventCell.timeLabel.text = event.eventTime
+            _eventCell.nameLabel.text = event.eventName
+            _eventCell.descriptionLabel.text = event.eventLocation
             return eventCell
         } else {
+            print("huh..")
             return MSScheduleCellView(event: event, cellIdentifier: eventCellID)
         }
         
@@ -138,23 +154,23 @@ public class MSScheduleTableController : UITableViewController {
     }
     
     /* Executes when user presses a cell */
-    public override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-
-        let section = indexPath.section;
-        let row = indexPath.row;
-        let event = days[section].events[row];
-
-        // Find a neater way to set the view in the init method of MSEventPageController?
-        let controller = MSEventPageController()
-        controller.view = MSEventPageView( frame: controller.view.frame, event: event )
-        
-        self.navigationController?.pushViewController(controller, animated: true);
-
-    }
-    
-    required public init!(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
-    }
+//    public override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+//
+//        let section = indexPath.section;
+//        let row = indexPath.row;
+//        let event = days[section].events[row];
+//
+//        // Find a neater way to set the view in the init method of MSEventPageController?
+//        let controller = MSEventPageController()
+//        controller.view = MSEventPageView( frame: controller.view.frame, event: event )
+//        
+//        self.navigationController?.pushViewController(controller, animated: true);
+//
+//    }
+//    
+//    required public init!(coder aDecoder: NSCoder) {
+//        super.init(coder: aDecoder)
+//    }
     
 }
 

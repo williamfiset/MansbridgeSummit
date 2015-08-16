@@ -197,6 +197,8 @@
 		F7E0004A1B72EA6000BF0839 /* icon152.png in Resources */ = {isa = PBXBuildFile; fileRef = F7E000461B72EA6000BF0839 /* icon152.png */; };
 		F7E0004B1B72EA6000BF0839 /* icon180.png in Resources */ = {isa = PBXBuildFile; fileRef = F7E000471B72EA6000BF0839 /* icon180.png */; };
 		F7E33DBC1B7D6B9000450A22 /* MSTwitterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E33DBB1B7D6B9000450A22 /* MSTwitterUITests.swift */; };
+		F7E33DBF1B8003CA00450A22 /* MSScheduleUITableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E33DBD1B8003CA00450A22 /* MSScheduleUITableViewCell.swift */; };
+		F7E33DC01B8003CA00450A22 /* MSScheduleUITableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E33DBE1B8003CA00450A22 /* MSScheduleUITableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -319,6 +321,8 @@
 		F7E000461B72EA6000BF0839 /* icon152.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon152.png; sourceTree = "<group>"; };
 		F7E000471B72EA6000BF0839 /* icon180.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon180.png; sourceTree = "<group>"; };
 		F7E33DBB1B7D6B9000450A22 /* MSTwitterUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSTwitterUITests.swift; sourceTree = "<group>"; };
+		F7E33DBD1B8003CA00450A22 /* MSScheduleUITableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSScheduleUITableViewCell.swift; sourceTree = "<group>"; };
+		F7E33DBE1B8003CA00450A22 /* MSScheduleUITableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSScheduleUITableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -423,8 +427,6 @@
 		C67926A61B4DC2F500EA86B4 /* MSEventPage */ = {
 			isa = PBXGroup;
 			children = (
-				C61C00631B4C7F1600AB4D6C /* MSEventPageController.swift */,
-				C6EB79891B4C903400F5E516 /* MSEventPageView.swift */,
 			);
 			name = MSEventPage;
 			sourceTree = "<group>";
@@ -519,10 +521,9 @@
 		C69E4A6C1B46128900BD981C /* ScheduleTab */ = {
 			isa = PBXGroup;
 			children = (
-				C67926A61B4DC2F500EA86B4 /* MSEventPage */,
-				C69E4A631B460A3F00BD981C /* MSScheduleTableController.swift */,
-				C69E4A711B4620AC00BD981C /* MSScheduleTableView.swift */,
-				C69E4A6D1B4612A600BD981C /* MSScheduleCellView.swift */,
+				F7E33DC11B800A6200450A22 /* Old */,
+				F7E33DBD1B8003CA00450A22 /* MSScheduleUITableViewCell.swift */,
+				F7E33DBE1B8003CA00450A22 /* MSScheduleUITableViewController.swift */,
 				C6E1632D1B481AE600942749 /* MSScheduleModels.swift */,
 			);
 			name = ScheduleTab;
@@ -732,6 +733,19 @@
 				F7E000471B72EA6000BF0839 /* icon180.png */,
 			);
 			name = "App Icons";
+			sourceTree = "<group>";
+		};
+		F7E33DC11B800A6200450A22 /* Old */ = {
+			isa = PBXGroup;
+			children = (
+				C67926A61B4DC2F500EA86B4 /* MSEventPage */,
+				C61C00631B4C7F1600AB4D6C /* MSEventPageController.swift */,
+				C6EB79891B4C903400F5E516 /* MSEventPageView.swift */,
+				C69E4A631B460A3F00BD981C /* MSScheduleTableController.swift */,
+				C69E4A711B4620AC00BD981C /* MSScheduleTableView.swift */,
+				C69E4A6D1B4612A600BD981C /* MSScheduleCellView.swift */,
+			);
+			name = Old;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -975,6 +989,7 @@
 				C67F0DB21B6977C20020B18C /* MSHomeModelController.swift in Sources */,
 				C69E4A5C1B46090E00BD981C /* MSQRCodeTabController.swift in Sources */,
 				C664DE731B57254800CFB209 /* Reachability.m in Sources */,
+				F7E33DBF1B8003CA00450A22 /* MSScheduleUITableViewCell.swift in Sources */,
 				C6EB798A1B4C903400F5E516 /* MSEventPageView.swift in Sources */,
 				C60B695B1B61C6F200190140 /* Connection.m in Sources */,
 				C689563B1B52B399006D188F /* MSFrontPageScrollView.swift in Sources */,
@@ -983,6 +998,7 @@
 				F7581FB71B63218900406498 /* MSHomeController.swift in Sources */,
 				C67F0DBE1B699D7B0020B18C /* MSSpeakerScrollView.swift in Sources */,
 				F7581FB61B63218900406498 /* PageViewControllers.swift in Sources */,
+				F7E33DC01B8003CA00450A22 /* MSScheduleUITableViewController.swift in Sources */,
 				C6E1632E1B481AE600942749 /* MSScheduleModels.swift in Sources */,
 				C6C00A6B1B45F3B300709992 /* MSTabBarController.swift in Sources */,
 				C67F0DD31B69BC240020B18C /* MSSpeakerModel.swift in Sources */,

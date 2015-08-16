@@ -5,7 +5,7 @@
                 "events": [
                            {
                            "eventTime":"7:00pm",
-                           "eventName":"Registration and orientation",
+                           "eventName":"Registration and Orientation",
                            "eventLocation":"Brunton Auditorium",
                            "eventDescription":"Participants meet other group members and panelists.",
                            "eventSpeaker":"N/A"
@@ -17,16 +17,16 @@
                 "events" : [
                             {
                             "eventTime":"8:30am",
-                            "eventName":"       Breakfast      ",
+                            "eventName":"Breakfast",
                             "eventLocation":"Jennings Hall",
                             "eventDescription":"N/A",
                             "eventSpeaker":"N/A"
                             },
                             {
                             "eventTime":"9:45am",
-                            "eventName":"Working sessions with panelists",
-                            "eventLocation":"Subgroup #1 — Purdy Crawford Centre for the Arts 103, Subgroup #2 — Centennial Hall 112, Subgroup #3 — Dunn 111",
-                            "eventDescription":"Group interactive brainstorming session. ",
+                            "eventName":"Working Sessions",
+                            "eventLocation":"3 different locations",
+                            "eventDescription":"Subgroup #1 — Purdy Crawford Centre for the Arts 103, Subgroup #2 — Centennial Hall 112, Subgroup #3 — Dunn 111, Group interactive brainstorming session with panelists. ",
                             "eventSpeaker":"N/A"
                             },
                             {
@@ -38,36 +38,36 @@
                             },
                             {
                             "eventTime":"1:30pm",
-                            "eventName":"Meetings with Chancellor (Subgroup #1)",
-                            "eventLocation":"N/A",
+                            "eventName":"Meetings with Chancellor",
+                            "eventLocation":"Subgroup #1",
                             "eventDescription":"N/A",
                             "eventSpeaker":"N/A"
                             },
                             {
                             "eventTime":"2:30pm",
-                            "eventName":"Meetings with Chancellor (Subgroup #2)",
-                            "eventLocation":"N/A",
+                            "eventName":"Meetings with Chancellor",
+                            "eventLocation":"Subgroup #2",
                             "eventDescription":"N/A",
                             "eventSpeaker":"N/A"
                             },
                             {
                             "eventTime":"3:30pm",
-                            "eventName":"Meetings with Chancellor (Subgroup #3)",
-                            "eventLocation":"N/A",
+                            "eventName":"Meetings with Chancellor",
+                            "eventLocation":"Subgroup #3",
                             "eventDescription":"N/A",
                             "eventSpeaker":"N/A"
                             },
                             {
                             "eventTime":"4:30pm",
-                            "eventName":"Meetings with Chancellor (Group Leaders)",
-                            "eventLocation":"N/A",
+                            "eventName":"Meetings with Chancellor",
+                            "eventLocation":"Group Leaders",
                             "eventDescription":"N/A",
                             "eventSpeaker":"N/A"
                             },
                             {  
                             "eventTime":"7:00pm",
                             "eventName":"Wrap Up",
-                            "eventLocation":"Brunton Auditorium (open to the public)",
+                            "eventLocation":"Brunton Auditorium",
                             "eventDescription":"Panel discussion and wrap up of Summit, group photo of all participants and panelists",
                             "eventSpeaker":"N/A"
                             },
