@@ -23,13 +23,14 @@ class MSHomeController: UIViewController, UIPageViewControllerDelegate {
         self.pageViewController.delegate = self
         self.pageViewController.dataSource = self.modelController
         
+        createDotController()
         setInitialViewController()
         
         self.addChildViewController(self.pageViewController)
         self.view.addSubview(self.pageViewController.view)
         
         self.pageViewController.didMoveToParentViewController(self)
-        createDotController()
+        
         setDots(self.modelController.currentController.view)
         
     }
