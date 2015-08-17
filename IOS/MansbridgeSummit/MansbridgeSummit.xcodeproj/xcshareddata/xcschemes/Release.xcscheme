@@ -15,8 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "C6CFD04F1B45EDA90067A6AD"
-               BuildableName = "MansbridgeSummit.app"
-               BlueprintName = "MansbridgeSummit"
+               BuildableName = "MTA Summit.app"
+               BlueprintName = "MTA Summit"
                ReferencedContainer = "container:MansbridgeSummit.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -54,8 +54,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "C6CFD04F1B45EDA90067A6AD"
-            BuildableName = "MansbridgeSummit.app"
-            BlueprintName = "MansbridgeSummit"
+            BuildableName = "MTA Summit.app"
+            BlueprintName = "MTA Summit"
             ReferencedContainer = "container:MansbridgeSummit.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -79,8 +79,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "C6CFD04F1B45EDA90067A6AD"
-            BuildableName = "MansbridgeSummit.app"
-            BlueprintName = "MansbridgeSummit"
+            BuildableName = "MTA Summit.app"
+            BlueprintName = "MTA Summit"
             ReferencedContainer = "container:MansbridgeSummit.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -98,8 +98,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "C6CFD04F1B45EDA90067A6AD"
-            BuildableName = "MansbridgeSummit.app"
-            BlueprintName = "MansbridgeSummit"
+            BuildableName = "MTA Summit.app"
+            BlueprintName = "MTA Summit"
             ReferencedContainer = "container:MansbridgeSummit.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>

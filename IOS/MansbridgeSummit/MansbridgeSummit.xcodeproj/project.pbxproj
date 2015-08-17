@@ -267,7 +267,7 @@
 		C69E4A571B4608C500BD981C /* MSRegisterTabController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSRegisterTabController.swift; sourceTree = "<group>"; };
 		C69E4A5B1B46090E00BD981C /* MSQRCodeTabController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSQRCodeTabController.swift; sourceTree = "<group>"; };
 		C6C00A6A1B45F3B300709992 /* MSTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSTabBarController.swift; sourceTree = "<group>"; };
-		C6CFD0501B45EDA90067A6AD /* MansbridgeSummit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MansbridgeSummit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6CFD0501B45EDA90067A6AD /* MTA Summit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MTA Summit.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6CFD0531B45EDA90067A6AD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C6CFD05A1B45EDA90067A6AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C6CFD05C1B45EDA90067A6AD /* TabBarIcons.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = TabBarIcons.xcassets; sourceTree = "<group>"; };
@@ -560,7 +560,7 @@
 		C6CFD0511B45EDA90067A6AD /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C6CFD0501B45EDA90067A6AD /* MansbridgeSummit.app */,
+				C6CFD0501B45EDA90067A6AD /* MTA Summit.app */,
 				C6CFD0661B45EDA90067A6AD /* MansbridgeSummitTests.xctest */,
 				C6CFD0711B45EDA90067A6AD /* MansbridgeSummitUITests.xctest */,
 			);
@@ -747,9 +747,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		C6CFD04F1B45EDA90067A6AD /* MansbridgeSummit */ = {
+		C6CFD04F1B45EDA90067A6AD /* MTA Summit */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C6CFD07A1B45EDA90067A6AD /* Build configuration list for PBXNativeTarget "MansbridgeSummit" */;
+			buildConfigurationList = C6CFD07A1B45EDA90067A6AD /* Build configuration list for PBXNativeTarget "MTA Summit" */;
 			buildPhases = (
 				C6CFD04C1B45EDA90067A6AD /* Sources */,
 				C6CFD04D1B45EDA90067A6AD /* Frameworks */,
@@ -760,9 +760,9 @@
 			);
 			dependencies = (
 			);
-			name = MansbridgeSummit;
+			name = "MTA Summit";
 			productName = MansbridgeSummit;
-			productReference = C6CFD0501B45EDA90067A6AD /* MansbridgeSummit.app */;
+			productReference = C6CFD0501B45EDA90067A6AD /* MTA Summit.app */;
 			productType = "com.apple.product-type.application";
 		};
 		C6CFD0651B45EDA90067A6AD /* MansbridgeSummitTests */ = {
@@ -846,7 +846,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				C6CFD04F1B45EDA90067A6AD /* MansbridgeSummit */,
+				C6CFD04F1B45EDA90067A6AD /* MTA Summit */,
 				C6CFD0651B45EDA90067A6AD /* MansbridgeSummitTests */,
 				C6CFD0701B45EDA90067A6AD /* MansbridgeSummitUITests */,
 			);
@@ -1092,12 +1092,12 @@
 /* Begin PBXTargetDependency section */
 		C6CFD0681B45EDA90067A6AD /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = C6CFD04F1B45EDA90067A6AD /* MansbridgeSummit */;
+			target = C6CFD04F1B45EDA90067A6AD /* MTA Summit */;
 			targetProxy = C6CFD0671B45EDA90067A6AD /* PBXContainerItemProxy */;
 		};
 		C6CFD0731B45EDA90067A6AD /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = C6CFD04F1B45EDA90067A6AD /* MansbridgeSummit */;
+			target = C6CFD04F1B45EDA90067A6AD /* MTA Summit */;
 			targetProxy = C6CFD0721B45EDA90067A6AD /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -1332,7 +1332,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C6CFD07A1B45EDA90067A6AD /* Build configuration list for PBXNativeTarget "MansbridgeSummit" */ = {
+		C6CFD07A1B45EDA90067A6AD /* Build configuration list for PBXNativeTarget "MTA Summit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C6CFD07B1B45EDA90067A6AD /* Debug */,
