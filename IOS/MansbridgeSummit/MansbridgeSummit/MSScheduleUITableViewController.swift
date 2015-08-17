@@ -13,11 +13,13 @@ class MSScheduleUITableViewController: UITableViewController {
     var schedule_file_name = "test_schedule2"
     var days : [MSDay] = []
     
+    var expandedCells : [NSIndexPath] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // Do any additional setup after loading the view, typically from a nib.
-        tableView.estimatedRowHeight = 44.0
+        tableView.estimatedRowHeight = 50.0
         tableView.rowHeight = UITableViewAutomaticDimension
         
         if let reader = DataLoader(fileName: schedule_file_name, fileType: "json") {
@@ -85,8 +87,7 @@ class MSScheduleUITableViewController: UITableViewController {
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
-        let cellIdentifier = "EventCell"
-        let cell = tableView.dequeueReusableCellWithIdentifier(cellIdentifier, forIndexPath: indexPath) as! MSScheduleUITableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier("EventCell", forIndexPath: indexPath) as! MSScheduleUITableViewCell
         
         // Extract the Section
         let dayIndex = indexPath.section
@@ -100,40 +101,28 @@ class MSScheduleUITableViewController: UITableViewController {
         
         cell.timeLabel.text = event.eventTime
         cell.nameLabel.text = event.eventName
-        cell.descriptionLabel.text = event.eventLocation
+        
+        if (expandedCells.contains(indexPath)) {
+            cell.descriptionLabel.text = event.eventLocation + "\n" + event.eventDescription
+        } else {
+            cell.descriptionLabel.text = event.eventLocation
+        }
+        
         
         return cell
     }
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         
-        let cell = tableView.cellForRowAtIndexPath(indexPath) as! MSScheduleUITableViewCell
-        
-        // Extract the Section
-        let dayIndex = indexPath.section
-        
-        // Extract the Row
-        let eventIndex = indexPath.row
-        
-        // Fetch required data in Data structure
-        let day = days[dayIndex]
-        let event = day.events[eventIndex]
-        
-        if (cell.descriptionLabel.text == event.eventLocation) {
-            cell.descriptionLabel.text = event.eventLocation + "\n" + event.eventDescription
+        if (expandedCells.contains(indexPath)) {
+            self.expandedCells.removeObject(indexPath)
         } else {
-            cell.descriptionLabel.text = event.eventLocation
+            expandedCells.append(indexPath)
         }
-        
-//        let contentOffset = self.tableView.contentOffset;
-//        print("1: \(self.tableView.contentOffset)")
-//        tableView.reloadData()
-        tableView.beginUpdates()
-//        print("2: \(self.tableView.contentOffset)")
-        tableView.endUpdates()
-//        print("3: \(self.tableView.contentOffset)")
-//        self.tableView.setContentOffset(contentOffset, animated: false)
-//        print("4: \(self.tableView.contentOffset)")
+
+        dispatch_async(dispatch_get_main_queue(),{
+            self.tableView.reloadData()
+        });
         
     }
     

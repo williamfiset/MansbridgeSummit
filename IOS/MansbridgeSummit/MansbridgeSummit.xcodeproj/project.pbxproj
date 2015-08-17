@@ -199,6 +199,10 @@
 		F7E33DBF1B8003CA00450A22 /* MSScheduleUITableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E33DBD1B8003CA00450A22 /* MSScheduleUITableViewCell.swift */; };
 		F7E33DC01B8003CA00450A22 /* MSScheduleUITableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E33DBE1B8003CA00450A22 /* MSScheduleUITableViewController.swift */; };
 		F7E33DC21B80F34D00450A22 /* MSTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C00A6A1B45F3B300709992 /* MSTabBarController.swift */; };
+		F7E33DC31B81548400450A22 /* MSScheduleUITableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E33DBD1B8003CA00450A22 /* MSScheduleUITableViewCell.swift */; };
+		F7E33DC41B81548400450A22 /* MSScheduleUITableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E33DBD1B8003CA00450A22 /* MSScheduleUITableViewCell.swift */; };
+		F7E33DC51B81548700450A22 /* MSScheduleUITableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E33DBE1B8003CA00450A22 /* MSScheduleUITableViewController.swift */; };
+		F7E33DC61B81548700450A22 /* MSScheduleUITableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E33DBE1B8003CA00450A22 /* MSScheduleUITableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -1017,6 +1021,7 @@
 				C67F0DC11B69A4640020B18C /* MSHomeController.swift in Sources */,
 				C67F0DC21B69A4640020B18C /* PageViewControllers.swift in Sources */,
 				C6A0D9871B59FE7C00C8172D /* MScheduleTableViewTests.swift in Sources */,
+				F7E33DC51B81548700450A22 /* MSScheduleUITableViewController.swift in Sources */,
 				C6A0D9881B59FE7C00C8172D /* MSEventTests.swift in Sources */,
 				C6A0D9891B59FE7C00C8172D /* ExtensionsTests.swift in Sources */,
 				C6A0D9851B59FD9A00C8172D /* AppDelegate.swift in Sources */,
@@ -1025,6 +1030,7 @@
 				C67F0DB31B6977C20020B18C /* MSHomeModelController.swift in Sources */,
 				C6E1632F1B481AE600942749 /* MSScheduleModels.swift in Sources */,
 				C69808E81B5D05D900164BC6 /* YouTubePlayer.swift in Sources */,
+				F7E33DC31B81548400450A22 /* MSScheduleUITableViewCell.swift in Sources */,
 				C67F0DD01B69B6130020B18C /* DataLoader.swift in Sources */,
 				C65BE8E51B631FE4008C064D /* TwitterController.m in Sources */,
 				C63580E71B7FE8D000BDE559 /* Dots.swift in Sources */,
@@ -1052,11 +1058,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7E33DC61B81548700450A22 /* MSScheduleUITableViewController.swift in Sources */,
 				C67F0DC31B69A46D0020B18C /* MSHomeController.swift in Sources */,
 				C67F0DC41B69A46D0020B18C /* PageViewControllers.swift in Sources */,
 				C6A0D98E1B59FF0400C8172D /* MSScheduleTests.swift in Sources */,
 				C6A0D98F1B59FF0400C8172D /* MansbridgeSummitUITests.swift in Sources */,
 				C65BE8E61B631FE4008C064D /* TwitterController.m in Sources */,
+				F7E33DC41B81548400450A22 /* MSScheduleUITableViewCell.swift in Sources */,
 				C6A0D97C1B59FD9200C8172D /* AppDelegate.swift in Sources */,
 				C67F0DD11B69B6130020B18C /* DataLoader.swift in Sources */,
 				C67F0DD51B69BC240020B18C /* MSSpeakerModel.swift in Sources */,

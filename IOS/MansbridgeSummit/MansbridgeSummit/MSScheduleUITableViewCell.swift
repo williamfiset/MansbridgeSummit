@@ -12,8 +12,8 @@ class MSScheduleUITableViewCell: UITableViewCell {
     
     @IBOutlet var nameLabel:UILabel!
     @IBOutlet var descriptionLabel:UILabel!
-
     @IBOutlet weak var timeLabel: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
