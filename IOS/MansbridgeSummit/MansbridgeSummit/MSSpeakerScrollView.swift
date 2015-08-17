@@ -21,7 +21,9 @@ class MSSpeakerScrollView : UIScrollView { // UIScrollViewDelegate
     var descriptionLabel : UILabel!
     var professionLabel : UILabel!
     
-    init(frame: CGRect, inout withSpeaker speaker : MSSpeaker? ) {
+    var bottomOfVideos : CGFloat!
+    
+    init(frame: CGRect, inout withSpeaker speaker : MSSpeaker?) {
         
         super.init(frame: frame)
         
@@ -35,18 +37,15 @@ class MSSpeakerScrollView : UIScrollView { // UIScrollViewDelegate
             
             createSpeakerNameLabel(&speaker!)
             createSpeakerImage(&speaker!)
-            createSpeakerBio(&speaker!)
             createSpeakerVideos(&speaker!)
+            createSpeakerBio(&speaker!)
             
         }
         
-        // Compute minimum height and set content size
-        self.contentSize = CGSize(width: frame.width, height: frame.height*3)
-
-        
     }
     
-    private func createSpeakerNameLabel( inout speaker : MSSpeaker ) -> Void {
+    // Create a title at the top with the speaker's name
+    private func createSpeakerNameLabel(inout speaker : MSSpeaker) -> Void {
         
         let nameFrame = CGRectMake(0, 0, GC.SCREEN_WIDTH, 75)
         
@@ -54,123 +53,147 @@ class MSSpeakerScrollView : UIScrollView { // UIScrollViewDelegate
         nameLabel.text = speaker.name
         nameLabel.textAlignment = .Center
         nameLabel.font = GC.Font.garamond_30
-        nameLabel.backgroundColor = UIColor.redColor()
+        nameLabel.textColor = GC.Color.white
+        nameLabel.backgroundColor = GC.Color.red
         
         self.addSubview(nameLabel)
         
     }
     
-    private func createSpeakerImage( inout speaker : MSSpeaker ) -> Void {
+    // Create image and short description
+    private func createSpeakerImage(inout speaker : MSSpeaker) -> Void {
         
         let img = UIImage(named: speaker.image_name)
         
         let x = CGFloat(0)
         let y = nameLabel.frame.height
         
-        // Recode to keep aspect ratio
-        let w = GC.SCREEN_WIDTH
-        let h = GC.SCREEN_HEIGHT - GC.TAB_BAR_HEIGHT*2 - y
+        // Caclulate height of image in order to maintain aspect ratio
+        var w = GC.SCREEN_WIDTH
+        var h = ((w/(img?.size.width)!) * (img?.size.height)!)
+        w /= 2
+        h /= 2
         
         let imgFrame = CGRectMake(x, y, w, h)
         let paddedFrame = CGRectInset(imgFrame, PADDING, PADDING)
         
         let imageView = UIImageView(image: img)
         imageView.frame = paddedFrame
-        
+        imageView.layer.borderColor = UIColor.blackColor().CGColor
+        imageView.layer.borderWidth = 1
         self.speakerImage = imageView
         
         self.addSubview(imageView)
         
-    }
-    
-    private func createSpeakerBio ( inout speaker : MSSpeaker ) -> Void {
-        
-            /* Profession Header */
-        
-        let x = CGFloat(0)
-        let w = GC.SCREEN_WIDTH
-        
-        var y = speakerImage.frame.origin.y + speakerImage.frame.height + PADDING
-        var h = CGFloat(35)
-
-        let professionHeader = UILabel(frame: CGRectMake(x, y, w, h))
-        professionHeader.text = "Profession:"
-        professionHeader.textAlignment = .Center
-        professionHeader.font = UIFont(name: "Arial", size: 24.0)
-        professionHeader.backgroundColor = UIColor.purpleColor()
-
-            /* Profession Label */
-
-        y = professionHeader.frame.origin.y + h
-        h = heightForView( speaker.profession, font: GC.Font.myraidpro_16!, width: w)
-        
-        let professionLabelFrame = CGRectMake(x, y, w, h)
+        let professionLabelFrame = CGRectMake(w, y, w, h)
         let professionLabelFrameInset = CGRectInset(professionLabelFrame, PADDING, 0)
         
         professionLabel = UILabel(frame: professionLabelFrameInset)
         professionLabel.text = speaker.profession
         professionLabel.textAlignment = .Center
         professionLabel.font = GC.Font.myraidpro_16
-        professionLabel.backgroundColor = UIColor.greenColor()
         professionLabel.lineBreakMode = NSLineBreakMode.ByClipping
         professionLabel.numberOfLines = 0 // unlimited lines
-      
-            /* Bio Header */
         
-        y = professionLabel.frame.origin.y + professionLabel.frame.height
-        h = 35
-        
-        let bioHeader = UILabel(frame: CGRectMake(x, y, w, h))
-        bioHeader.text = "BIO:"
-        bioHeader.font = UIFont(name: "Arial", size: 24.0)
-        bioHeader.backgroundColor = UIColor.grayColor()
-        bioHeader.textAlignment = .Center
-        
-            /* Bio Description */
-        
-        y = bioHeader.frame.origin.y + h
-        h = heightForView( speaker.short_description, font: GC.Font.myraidpro_16!, width: w)
-        
-        let descriptionLabelFrame = CGRectMake(x, y, w, h)
-        let descriptionLabelFrameInset = CGRectInset(descriptionLabelFrame, PADDING, 0)
-        
-        descriptionLabel = UILabel(frame: descriptionLabelFrameInset)
-        descriptionLabel.text = speaker.short_description
-        descriptionLabel.textAlignment = .Center
-        descriptionLabel.font = GC.Font.myraidpro_16
-        descriptionLabel.backgroundColor = UIColor.greenColor()
-        descriptionLabel.lineBreakMode = NSLineBreakMode.ByClipping
-        descriptionLabel.numberOfLines = 0 // unlimited lines
-        descriptionLabel.backgroundColor = UIColor.magentaColor()
-        
-        self.addSubview(professionHeader)
         self.addSubview(professionLabel)
-        self.addSubview(bioHeader)
-        self.addSubview(descriptionLabel)
         
-
     }
     
-    private func createSpeakerVideos( inout speaker : MSSpeaker ) -> Void {
+    // Add videos
+    private func createSpeakerVideos(inout speaker : MSSpeaker) -> Void {
         
+        // Special case if there are no videos
+        if (speaker.videos.count == 0) {
+            bottomOfVideos = professionLabel.frame.maxY
+            return
+        }
+        
+            /* Video Header */
+        
+        let x = CGFloat(0)
+        let w = CGFloat(GC.SCREEN_WIDTH)
+        var y = professionLabel.frame.maxY
+        let h = CGFloat(35)
+        
+        let bioHeader = UILabel(frame: CGRectMake(x, y, w, h))
+       
+        if (speaker.videos.count > 1) {
+            bioHeader.text = "Videos"
+        } else {
+             bioHeader.text = "Video"
+        }
+        bioHeader.font = GC.Font.myraidpro_24
+        bioHeader.textColor = GC.Color.white
+        bioHeader.backgroundColor = GC.Color.gold
+        bioHeader.textAlignment = .Center
+        
+        self.addSubview(bioHeader)
+
+            /* Videos */
+        
+        y += 35
         let videoWidth = GC.SCREEN_WIDTH - (PADDING * 2)
         let videoHeight = videoWidth / 2
         
-        let x = PADDING
-        let y = descriptionLabel.frame.origin.y + descriptionLabel.frame.height
-        
-        for ( var i : CGFloat = 0; Int(i) < speaker.videos.count; i++) {
+        for (var i : CGFloat = 0; Int(i) < speaker.videos.count; i++) {
             
-            let frame = CGRectMake( x, y + (i+1)*PADDING + i*videoHeight , videoWidth, videoHeight)
+            y += PADDING
+            
+            let frame = CGRectMake(x + PADDING, y, videoWidth, videoHeight)
             let videoPlayer = YouTubePlayerView(frame: frame)
             videoPlayer.loadVideoID( speaker.videos[Int(i)] )
             self.addSubview(videoPlayer)
+            
+            y += videoHeight
+            
+            bottomOfVideos = y + PADDING
             
         }
         
     }
     
-    func heightForView(text:String, font:UIFont, width:CGFloat) -> CGFloat{
+    // Add full bio
+    private func createSpeakerBio (inout speaker : MSSpeaker) -> Void {
+    
+            /* Bio Header */
+        
+        let x = CGFloat(0)
+        let w = CGFloat(GC.SCREEN_WIDTH)
+        var y = bottomOfVideos
+        var h = CGFloat(35)
+        
+        let bioHeader = UILabel(frame: CGRectMake(x, y, w, h))
+        bioHeader.text = "Biography"
+        bioHeader.font = GC.Font.myraidpro_24
+        bioHeader.textColor = GC.Color.white
+        bioHeader.backgroundColor = GC.Color.gold
+        bioHeader.textAlignment = .Center
+        
+            /* Bio Description */
+        
+        y = bioHeader.frame.origin.y + h
+        let font = GC.Font.myraidpro_14!
+        h = heightForView(speaker.short_description, font: font, width: w - (2*PADDING)) + (2*PADDING)
+        
+        let descriptionLabelFrame = CGRectMake(x, y, w, h)
+        let descriptionLabelFrameInset = CGRectInset(descriptionLabelFrame, PADDING, PADDING)
+        
+        descriptionLabel = UILabel(frame: descriptionLabelFrameInset)
+        descriptionLabel.text = speaker.short_description
+        descriptionLabel.textAlignment = .Left
+        descriptionLabel.font = font
+        descriptionLabel.numberOfLines = 0 // unlimited lines
+        
+        self.addSubview(bioHeader)
+        self.addSubview(descriptionLabel)
+        
+        // Compute minimum height and set content size (ensuring that the content isn't stuck under the dots)
+        self.contentSize = CGSize(width: frame.width, height: descriptionLabelFrame.maxY + Dot.DIAMETER)
+        
+    }
+    
+    // Calculate the height needed
+    func heightForView(text : String, font : UIFont, width : CGFloat) -> CGFloat{
         
         let label:UILabel = UILabel(frame: CGRectMake(0, 0, width, CGFloat.max))
         label.numberOfLines = 0
@@ -180,6 +203,7 @@ class MSSpeakerScrollView : UIScrollView { // UIScrollViewDelegate
         
         label.sizeToFit()
         return label.frame.height
+        
     }
     
 
