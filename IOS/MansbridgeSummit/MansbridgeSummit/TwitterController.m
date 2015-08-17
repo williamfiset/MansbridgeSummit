@@ -8,7 +8,7 @@
 
 // This helps when dealing with blocks: http://fuckingblocksyntax.com/
 
-#import <CloudKit/CloudKit.h>
+//#import <CloudKit/CloudKit.h>
 #import "TwitterController.h"
 #import "MansbridgeSummit-Swift.h"
 #import "Connection.h"
@@ -39,20 +39,23 @@
                                                object:NULL];
     [connection startNotifier];
     
-//    self.navigationItem.title = @"title";
-    
 }
 
 -(void) viewWillAppear:(BOOL)animated {
-//    
-//    self.navigationController.title = @"Title";
-//    
-//    [self.navigationController setNavigationBarHidden:NO animated:NO];
-//    [super viewWillAppear:animated];
+    
+    [super viewWillAppear:animated];
+    
+    // Move the content below the navigation bar
+    UIEdgeInsets insets = UIEdgeInsetsMake(44, 0, 0, 0);
+    self.tableView.contentInset = insets;
+    self.tableView.scrollIndicatorInsets = insets;
+    
 }
 
 -(void) viewDidAppear:(BOOL)animated {
    
+    [super viewDidAppear:animated];
+    
     if ([Connection isNetworkAvailable]) {
         [self removeNetworkConnectionErrorView];
         [self loadTweets];
@@ -120,8 +123,11 @@
 
 - (IBAction)composeTweet:(id)sender {
     
-    SEL closure =  @selector(postTweet:);
-    [self getDefaultStatusAndExecFunc: closure];
+    // NOTE: Loading the default status was taking too long.. so I've termporarily removed it. It might not be a bad idea to remove our dependency on iCloud.. it's just one more thing that could go wrong! And we don't seem to need it anymore..
+    [self postTweet:@"#MansbridgeSummit"];
+    
+//    SEL closure =  @selector(postTweet:);
+//    [self getDefaultStatusAndExecFunc: closure];
 }
 
 - (void) postTweet: (NSString*) defaultStatus {
@@ -143,45 +149,41 @@
  * grabbing the first one.
  *
  */
-- (void) getDefaultStatusAndExecFunc: (SEL) closure { // :(void (^)(NSString *))closure
-    
-    // Currently Matches all values in the
-    NSPredicate *queryPredicate = [NSPredicate predicateWithValue: YES];
-    
-    CKDatabase *publicDB = [[CKContainer defaultContainer] publicCloudDatabase];
-    CKQuery *query = [[CKQuery alloc] initWithRecordType: @"MansbridgeData" predicate:queryPredicate];
-    
-    // Query the DB for records (read comment above)
-    [publicDB performQuery: query inZoneWithID:nil completionHandler:
-     ^(NSArray <CKRecord *> *_Nullable records, NSError * _Nullable error) {
-        
-         if (error == NULL && records != NULL) {
-             
-             CKRecord *record = [records objectAtIndex: 0];
-             if (record != NULL) {
-                 NSString *defaultStatus = [record valueForKey: @"Value"];
-                 
-                 dispatch_async(dispatch_get_main_queue(), ^ (void){
-                     [self performSelector:closure withObject:defaultStatus];
-                 });
-                
-             }
-             
-         } else {
-             
-             NSLog(@"%@", [error description]);
-             [self performSelector:closure withObject: @"#MansbridgeSummit"];
-             
-         }
-    }];
-    
-}
+//- (void) getDefaultStatusAndExecFunc: (SEL) closure { // :(void (^)(NSString *))closure
+//    
+//    // Currently Matches all values in the
+//    NSPredicate *queryPredicate = [NSPredicate predicateWithValue: YES];
+//    
+//    CKDatabase *publicDB = [[CKContainer defaultContainer] publicCloudDatabase];
+//    CKQuery *query = [[CKQuery alloc] initWithRecordType: @"MansbridgeData" predicate:queryPredicate];
+//    
+//    // Query the DB for records (read comment above)
+//    [publicDB performQuery: query inZoneWithID:nil completionHandler:
+//     ^(NSArray <CKRecord *> *_Nullable records, NSError * _Nullable error) {
+//        
+//         if (error == NULL && records != NULL) {
+//             
+//             CKRecord *record = [records objectAtIndex: 0];
+//             if (record != NULL) {
+//                 NSString *defaultStatus = [record valueForKey: @"Value"];
+//                 
+//                 dispatch_async(dispatch_get_main_queue(), ^ (void){
+//                     [self performSelector:closure withObject:defaultStatus];
+//                 });
+//                
+//             }
+//             
+//         } else {
+//             
+//             NSLog(@"%@", [error description]);
+//             [self performSelector:closure withObject: @"#MansbridgeSummit"];
+//             
+//         }
+//    }];
+//    
+//}
 
 - (void)displayNetworkConnectionErrorView {
-    
-//    if ( [self tableView] != NULL ) {
-//        [self.tableView removeFromSuperview];
-//    }
     
     if (self.networkErrorView == NULL) {
         UIView * __networkErrorView = [UIView loadFromNibNamed:@"NetworkErrorXIB" bundle: [NSBundle mainBundle] ];

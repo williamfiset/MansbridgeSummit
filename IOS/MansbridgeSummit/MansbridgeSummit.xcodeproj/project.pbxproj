@@ -531,8 +531,8 @@
 		C69E4A6C1B46128900BD981C /* ScheduleTab */ = {
 			isa = PBXGroup;
 			children = (
-				F7E33DBD1B8003CA00450A22 /* MSScheduleUITableViewCell.swift */,
 				F7E33DBE1B8003CA00450A22 /* MSScheduleUITableViewController.swift */,
+				F7E33DBD1B8003CA00450A22 /* MSScheduleUITableViewCell.swift */,
 				C6E1632D1B481AE600942749 /* MSScheduleModels.swift */,
 			);
 			name = ScheduleTab;
