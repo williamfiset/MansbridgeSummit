@@ -42,7 +42,7 @@
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="67"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="Name" textAlignment="right" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g5o-Ax-sZT">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="Name" textAlignment="right" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="g5o-Ax-sZT">
                                             <rect key="frame" x="62" y="7" width="531" height="19"/>
                                             <animations/>
                                             <constraints>
@@ -75,7 +75,6 @@
                                         <constraint firstItem="E9W-Ii-0yZ" firstAttribute="top" secondItem="bpk-Xb-gHY" secondAttribute="top" constant="7" id="LP5-Ip-nb5"/>
                                         <constraint firstItem="g5o-Ax-sZT" firstAttribute="leading" secondItem="E9W-Ii-0yZ" secondAttribute="trailing" constant="7" id="PCX-Cx-seX"/>
                                         <constraint firstAttribute="bottom" secondItem="e8j-aW-Kn5" secondAttribute="bottom" constant="7" id="WhE-Fw-Kpy"/>
-                                        <constraint firstItem="e8j-aW-Kn5" firstAttribute="top" secondItem="g5o-Ax-sZT" secondAttribute="bottom" constant="7" id="e82-mu-CQm"/>
                                         <constraint firstItem="g5o-Ax-sZT" firstAttribute="top" secondItem="bpk-Xb-gHY" secondAttribute="top" constant="7" id="fa6-0T-jez"/>
                                         <constraint firstAttribute="trailing" secondItem="e8j-aW-Kn5" secondAttribute="trailing" constant="7" id="mPt-ar-Cpj"/>
                                         <constraint firstAttribute="trailing" secondItem="g5o-Ax-sZT" secondAttribute="trailing" constant="7" id="ycY-xl-QqW"/>
