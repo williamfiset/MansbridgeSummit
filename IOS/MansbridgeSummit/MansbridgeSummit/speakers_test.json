@@ -4,7 +4,7 @@
                  "name":"Rhonda McEwen",
                  "profession":"social/new media; mobile and tablet communication; cognitive effects of media; networks; sensory information processing; user interaction studies.",
                  "image":"rhonda",
-                 "description":"Rhonda McEwen is an assistant professor at the Institute of Communication, Culture, Information and Technology and at the iSchool, at the University of Toronto. She holds an MBA in IT from City University in London, England, an MSc in Telecommunications from the University of Colorado, and a PhD in Information from University of Toronto. Dr. McEwen has worked and researched digital communications media for 15 years, both in companies providing services and in management consulting to those companies. Her research and teaching centre around information practices involving new media technologies -with an emphasis on mobile and tablet communication, new media, social networks, and sensory information processing. CBS 60 Minutes journalists covered McEwen’s research in 2012 & 2013, and she has recent publications in Information, Communication & Society, Computers and Education, New Media and Society, and Library and Information Science Research journals.",
+                 "description":"\tRhonda McEwen is an assistant professor at the Institute of Communication, Culture, Information and Technology and at the iSchool, at the University of Toronto. She holds an MBA in IT from City University in London, England, an MSc in Telecommunications from the University of Colorado, and a PhD in Information from University of Toronto.\n\n\tDr. McEwen has worked and researched digital communications media for 15 years, both in companies providing services and in management consulting to those companies. Her research and teaching centre around information practices involving new media technologies - with an emphasis on mobile and tablet communication, new media, social networks, and sensory information processing.\n\n\tCBS 60 Minutes journalists covered McEwen’s research in 2012 & 2013, and she has recent publications in Information, Communication & Society, Computers and Education, New Media and Society, and Library and Information Science Research journals.",
                  "videos":[
                            "jrVtmbGDpnE"
                            ]
@@ -35,9 +35,7 @@
                  "profession":"King of the Ancient Greek kingdom of Macedon",
                  "image":"alexander",
                  "description":"During his youth, Alexander was tutored by the philosopher Aristotle until the age of 16. After Philip was assassinated in 336 BC, Alexander succeeded his father to the throne and inherited a strong kingdom and an experienced army. He had been awarded the generalship of Greece and used this authority to launch his father's Panhellenic project to lead the Greeks in the conquest of Persia.[6][7] In 334 BC, he invaded the Achaemenid Empire, ruled Asia Minor, and began a series of campaigns that lasted ten years. Alexander broke the power of Persia in a series of decisive battles, most notably the battles of Issus and Gaugamela. He subsequently overthrew the Persian King Darius III and conquered the Achaemenid Empire in its entirety.i[›] At that point, his empire stretched from the Adriatic Sea to the Indus River.",
-                 "videos":[  
-                           "wN3GHmR9sOo"
-                           ]
+                 "videos":[]
                  }
                  ]
 }

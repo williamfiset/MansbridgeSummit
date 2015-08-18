@@ -13,7 +13,6 @@ class DotController : UICollectionViewController, UICollectionViewDelegateFlowLa
     
     let cell_identifier = "custom_cell_identifier"
     let NUM_DOTS = 5
-    let PADDING = CGFloat(15)
     
     var lastDotIndexPath : NSIndexPath!
     
@@ -23,11 +22,13 @@ class DotController : UICollectionViewController, UICollectionViewDelegateFlowLa
         
         super.init(collectionViewLayout: layout)
         
+        let PADDING = CGFloat(15)
+        
         let x = CGFloat(0)
         let y = GC.SCREEN_HEIGHT - GC.TAB_BAR_HEIGHT - Dot.DIAMETER - PADDING
         let w = GC.SCREEN_WIDTH
         let h = Dot.DIAMETER * 2 + PADDING
-        self.frame = CGRectMake( x, y, w, h)
+        self.frame = CGRectMake(x, y, w, h)
         
         collectionView = UICollectionView(frame: self.frame, collectionViewLayout: layout)
         setCollectionViewProperties()
@@ -45,12 +46,6 @@ class DotController : UICollectionViewController, UICollectionViewDelegateFlowLa
         collectionView!.backgroundColor = UIColor.clearColor()
         collectionView!.backgroundView = UIView(frame: CGRectZero)
         collectionView!.frame = self.frame
-        
-        // DEBUGGING
-//        let bg = UIView(frame: frame)
-//        bg.backgroundColor = UIColor.redColor()
-//        collectionView!.backgroundColor = UIColor.redColor()
-//        collectionView!.backgroundView = bg
         
     }
     
@@ -136,8 +131,8 @@ class DotController : UICollectionViewController, UICollectionViewDelegateFlowLa
 
 class Dot : UICollectionViewCell {
     
-    // Change Radius depending on screen Width?
-    // An IPad could use bigger dots
+    // Change radius depending on screen width?
+    // An iPad could use bigger dots
     static let RADIUS   : CGFloat = 25.0
     static let DIAMETER : CGFloat = RADIUS * 2
     
@@ -191,7 +186,7 @@ class Dot : UICollectionViewCell {
     func glow() -> Void {
         
         self.layer.shadowColor = GC.Color.gold.CGColor
-        self.layer.shadowRadius = 7;
+        self.layer.shadowRadius = 5;
         self.layer.shadowOffset = CGSizeZero;
         self.layer.shadowOpacity = 4.0;
         self.backgroundColor = GC.Color.gold
