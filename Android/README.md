@@ -1,3 +1,7 @@
+**Theme:**
+
+http://jgilfelt.github.io/android-actionbarstylegenerator/#name=mtasummit&compat=appcompat&theme=light_dark&actionbarstyle=solid&texture=0&hairline=0&neutralPressed=0&backColor=872434%2C100&secondaryColor=872434%2C100&tabColor=fff%2C100&tertiaryColor=872434%2C100&accentColor=af8900%2C100&cabBackColor=872434%2C100&cabHighlightColor=872434%2C100
+
 **TabbedActivity:**
   * We have 3 options:
     * Swiping between tabs (with no titles, or any indication of which tab is which). NOTE: This is less than ideal.
