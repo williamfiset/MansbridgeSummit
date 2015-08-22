@@ -1,15 +1,9 @@
 package com.app.micahstairs.mansbridgesummit;
 
 import android.app.Activity;
-
-import org.json.JSONObject;
-
-import java.io.IOException;
-import java.io.InputStream;
-
-import org.json.JSONArray;
-import org.json.JSONException;
-import org.json.JSONObject;
+import android.content.Context;
+import java.io.*;
+import org.json.*;
 
 /**
  * Created by williamfiset on 2015-08-22.
@@ -22,21 +16,21 @@ import org.json.JSONObject;
 public class DataLoader {
 
     private int resourceID;
-    private Activity activity;
+    private Context context;
 
-    /* Need to supply an activity to be able to load application data */
-    public DataLoader(Activity activity, int resourceId) {
-        this.resourceID = resourceID;
-        this.activity = activity;
+    /* Need to supply an Context to be able to load application data */
+    public DataLoader(Context context, int id) {
+        this.resourceID = id;
+        this.context = context;
     }
 
     public JSONObject loadResourceAsJSON() throws JSONException {
 
-        String json = null;
+        String json;
 
         try {
 
-            InputStream is =  activity.getResources().openRawResource(R.raw.schedule_data);
+            InputStream is =  context.getResources().openRawResource(resourceID);
 
             int size = is.available();
             byte[] buffer = new byte[size];
@@ -45,7 +39,6 @@ public class DataLoader {
             is.close();
 
             json = new String(buffer, "UTF-8");
-
 
         } catch (IOException e) {
             return null;

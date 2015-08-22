@@ -1,5 +1,6 @@
 package com.app.micahstairs.mansbridgesummit;
 
+import android.app.Activity;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.util.Log;
@@ -24,6 +25,7 @@ public class ScheduleTab extends Fragment {
      * fragment.
      */
     private static final String ARG_SECTION_NUMBER = "section_number";
+    private DataLoader dataLoader;
 
     private View rootView;
 
@@ -41,8 +43,7 @@ public class ScheduleTab extends Fragment {
 
     public ScheduleTab() { }
 
-    @Override
-    public View onCreateView(final LayoutInflater inflater, final ViewGroup container,
+    @Override public View onCreateView(final LayoutInflater inflater, final ViewGroup container,
                              Bundle savedInstanceState) {
         rootView = inflater.inflate(R.layout.fragment_schedule_tab, container, false);
 
@@ -54,8 +55,7 @@ public class ScheduleTab extends Fragment {
         list.setAdapter(adapter);
 
         list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+            @Override public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Event event = (Event) parent.getItemAtPosition(position);
 
                 if (event.isEvent) {
@@ -65,15 +65,22 @@ public class ScheduleTab extends Fragment {
             }
 
         });
-
         return rootView;
+    }
+
+    @Override public void onAttach(Activity activity) {
+
+        dataLoader = new DataLoader(activity, R.raw.schedule_data);
+        super.onAttach(activity);
+
     }
 
     private Event[] getEventsFromFile() {
 
         try {
 
-            JSONObject jsonObject = loadJSONFromAsset();
+            JSONObject jsonObject = dataLoader.loadResourceAsJSON();
+
             if (jsonObject == null)
                 return new Event[0];
 
@@ -111,28 +118,4 @@ public class ScheduleTab extends Fragment {
 
     }
 
-    public JSONObject loadJSONFromAsset() throws JSONException {
-
-        String json = null;
-
-        try {
-
-            InputStream is =  getResources().openRawResource(R.raw.schedule_data);
-
-            int size = is.available();
-            byte[] buffer = new byte[size];
-
-            is.read(buffer);
-            is.close();
-
-            json = new String(buffer, "UTF-8");
-
-
-        } catch (IOException e) {
-            return null;
-        }
-
-        return new JSONObject(json);
-
-    }
 }
