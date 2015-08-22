@@ -174,6 +174,7 @@
 		F79185051B5A839600EFF287 /* TwitterCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F79184FA1B5A839600EFF287 /* TwitterCore.framework */; };
 		F79185061B5A839600EFF287 /* TwitterCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F79184FA1B5A839600EFF287 /* TwitterCore.framework */; };
 		F7B9F4F41B890E0400D5FBE4 /* mountains.png in Resources */ = {isa = PBXBuildFile; fileRef = F7B9F4F31B890E0400D5FBE4 /* mountains.png */; };
+		F7B9F4F61B89124900D5FBE4 /* Mount_Allison_Logo2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F7B9F4F51B89124900D5FBE4 /* Mount_Allison_Logo2.jpg */; };
 		F7CF77D71B5B2F5900013CF0 /* Calendar-25.png in Resources */ = {isa = PBXBuildFile; fileRef = F7CF77C81B5B2F5900013CF0 /* Calendar-25.png */; };
 		F7CF77D81B5B2F5900013CF0 /* Calendar-50.png in Resources */ = {isa = PBXBuildFile; fileRef = F7CF77C91B5B2F5900013CF0 /* Calendar-50.png */; };
 		F7CF77D91B5B2F5900013CF0 /* Calendar-75.png in Resources */ = {isa = PBXBuildFile; fileRef = F7CF77CA1B5B2F5900013CF0 /* Calendar-75.png */; };
@@ -308,6 +309,7 @@
 		F79184F91B5A839600EFF287 /* TwitterKitResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = TwitterKitResources.bundle; path = TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle; sourceTree = "<group>"; };
 		F79184FA1B5A839600EFF287 /* TwitterCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterCore.framework; sourceTree = "<group>"; };
 		F7B9F4F31B890E0400D5FBE4 /* mountains.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mountains.png; sourceTree = "<group>"; };
+		F7B9F4F51B89124900D5FBE4 /* Mount_Allison_Logo2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Mount_Allison_Logo2.jpg; sourceTree = "<group>"; };
 		F7CF77C81B5B2F5900013CF0 /* Calendar-25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Calendar-25.png"; sourceTree = "<group>"; };
 		F7CF77C91B5B2F5900013CF0 /* Calendar-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Calendar-50.png"; sourceTree = "<group>"; };
 		F7CF77CA1B5B2F5900013CF0 /* Calendar-75.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Calendar-75.png"; sourceTree = "<group>"; };
@@ -621,6 +623,7 @@
 		C6D9E96B1B47747700249DA4 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				F7B9F4F51B89124900D5FBE4 /* Mount_Allison_Logo2.jpg */,
 				C68A13871B5BCE7B003CE324 /* NetworkErrorXIB.xib */,
 				F7D1B85F1B5C8E0900D34341 /* RegistrationSuccessXIB.xib */,
 				F7D1B8651B5C8ED900D34341 /* checkmark.png */,
@@ -894,6 +897,7 @@
 				F79185011B5A839600EFF287 /* TwitterKitResources.bundle in Resources */,
 				C677E7C21B811840001DF097 /* newton.png in Resources */,
 				C68956361B52AFBB006D188F /* Media.xcassets in Resources */,
+				F7B9F4F61B89124900D5FBE4 /* Mount_Allison_Logo2.jpg in Resources */,
 				F7CF77E11B5B2F5900013CF0 /* Twitter-50.png in Resources */,
 				C677E7A71B8102BC001DF097 /* speakers_test.json in Resources */,
 				C677E7A31B80FE27001DF097 /* MTALiveLogo.png in Resources */,

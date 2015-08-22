@@ -3,7 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8135.1"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="  Copyright © 2015/16 Mansbridge Summit. All rights reserved." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="obG-Y5-kRd">
-                                <rect key="frame" x="20" y="559" width="560" height="21"/>
+                                <rect key="frame" x="75" y="564" width="450" height="21"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -31,8 +31,8 @@
                                     <rect key="frame" x="20" y="359" width="760" height="21"/>
                                 </variation>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="#MansbridgeSummit" textAlignment="center" lineBreakMode="middleTruncation" baselineAdjustment="alignBaselines" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="GJd-Yh-RWb">
-                                <rect key="frame" x="20" y="346" width="560" height="43"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="#MansbridgeSummit" textAlignment="center" lineBreakMode="middleTruncation" baselineAdjustment="alignBaselines" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="GJd-Yh-RWb">
+                                <rect key="frame" x="30" y="405" width="540" height="66"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="55"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -50,8 +50,8 @@
                                     <rect key="frame" x="20" y="386" width="760" height="66"/>
                                 </variation>
                             </label>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" misplaced="YES" image="mta_logo" translatesAutoresizingMaskIntoConstraints="NO" id="o7J-4s-49i">
-                                <rect key="frame" x="161" y="74" width="279" height="181"/>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" image="Mount_Allison_Logo2.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="o7J-4s-49i">
+                                <rect key="frame" x="105" y="45" width="390" height="360"/>
                                 <animations/>
                                 <variation key="heightClass=regular" misplaced="YES">
                                     <rect key="frame" x="161" y="141" width="279" height="181"/>
@@ -70,23 +70,24 @@
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="obG-Y5-kRd" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" id="BeS-Sc-Ab5"/>
-                            <constraint firstAttribute="bottom" secondItem="obG-Y5-kRd" secondAttribute="bottom" constant="20" symbolic="YES" id="Gxa-Ef-VyI"/>
-                            <constraint firstItem="o7J-4s-49i" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="54" id="UoU-gN-DiU"/>
-                            <constraint firstItem="o7J-4s-49i" firstAttribute="centerX" secondItem="GJd-Yh-RWb" secondAttribute="centerX" id="Wy2-C3-x50"/>
-                            <constraint firstItem="obG-Y5-kRd" firstAttribute="trailing" secondItem="Ze5-6b-2t3" secondAttribute="trailingMargin" id="Yp6-gJ-sK8"/>
-                            <constraint firstItem="obG-Y5-kRd" firstAttribute="leading" secondItem="GJd-Yh-RWb" secondAttribute="leading" id="nwC-x8-Y8U"/>
-                            <constraint firstItem="GJd-Yh-RWb" firstAttribute="trailing" secondItem="obG-Y5-kRd" secondAttribute="trailing" id="pHK-SO-A1u"/>
-                            <constraint firstItem="GJd-Yh-RWb" firstAttribute="top" secondItem="o7J-4s-49i" secondAttribute="bottom" constant="75" id="pIt-0O-LbH"/>
+                            <constraint firstAttribute="bottom" secondItem="obG-Y5-kRd" secondAttribute="bottom" constant="15" id="6Qr-6p-emI"/>
+                            <constraint firstItem="obG-Y5-kRd" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="907-dI-XBV"/>
+                            <constraint firstItem="GJd-Yh-RWb" firstAttribute="width" secondItem="Ze5-6b-2t3" secondAttribute="width" multiplier="0.9" id="UG6-9H-17c"/>
+                            <constraint firstItem="o7J-4s-49i" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="V5z-kS-H6A"/>
+                            <constraint firstItem="obG-Y5-kRd" firstAttribute="width" secondItem="Ze5-6b-2t3" secondAttribute="width" multiplier="0.75" id="brI-wE-kTf"/>
+                            <constraint firstItem="GJd-Yh-RWb" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="mNQ-a8-OQm"/>
+                            <constraint firstItem="o7J-4s-49i" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" constant="-75" id="qN4-BK-MNz"/>
+                            <constraint firstItem="o7J-4s-49i" firstAttribute="width" secondItem="Ze5-6b-2t3" secondAttribute="width" multiplier="0.65" id="sLv-SW-5er"/>
+                            <constraint firstItem="GJd-Yh-RWb" firstAttribute="top" secondItem="o7J-4s-49i" secondAttribute="bottom" id="yth-D5-QDa"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="51.75" y="375"/>
+            <point key="canvasLocation" x="51" y="375"/>
         </scene>
     </scenes>
     <resources>
-        <image name="mta_logo" width="279" height="181"/>
+        <image name="Mount_Allison_Logo2.jpg" width="556" height="360"/>
     </resources>
 </document>
