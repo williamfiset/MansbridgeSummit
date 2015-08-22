@@ -173,6 +173,7 @@
 		F79185041B5A839600EFF287 /* TwitterCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F79184FA1B5A839600EFF287 /* TwitterCore.framework */; };
 		F79185051B5A839600EFF287 /* TwitterCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F79184FA1B5A839600EFF287 /* TwitterCore.framework */; };
 		F79185061B5A839600EFF287 /* TwitterCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F79184FA1B5A839600EFF287 /* TwitterCore.framework */; };
+		F7B9F4F41B890E0400D5FBE4 /* mountains.png in Resources */ = {isa = PBXBuildFile; fileRef = F7B9F4F31B890E0400D5FBE4 /* mountains.png */; };
 		F7CF77D71B5B2F5900013CF0 /* Calendar-25.png in Resources */ = {isa = PBXBuildFile; fileRef = F7CF77C81B5B2F5900013CF0 /* Calendar-25.png */; };
 		F7CF77D81B5B2F5900013CF0 /* Calendar-50.png in Resources */ = {isa = PBXBuildFile; fileRef = F7CF77C91B5B2F5900013CF0 /* Calendar-50.png */; };
 		F7CF77D91B5B2F5900013CF0 /* Calendar-75.png in Resources */ = {isa = PBXBuildFile; fileRef = F7CF77CA1B5B2F5900013CF0 /* Calendar-75.png */; };
@@ -306,6 +307,7 @@
 		F79184F81B5A839600EFF287 /* TwitterKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterKit.framework; sourceTree = "<group>"; };
 		F79184F91B5A839600EFF287 /* TwitterKitResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = TwitterKitResources.bundle; path = TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle; sourceTree = "<group>"; };
 		F79184FA1B5A839600EFF287 /* TwitterCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterCore.framework; sourceTree = "<group>"; };
+		F7B9F4F31B890E0400D5FBE4 /* mountains.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mountains.png; sourceTree = "<group>"; };
 		F7CF77C81B5B2F5900013CF0 /* Calendar-25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Calendar-25.png"; sourceTree = "<group>"; };
 		F7CF77C91B5B2F5900013CF0 /* Calendar-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Calendar-50.png"; sourceTree = "<group>"; };
 		F7CF77CA1B5B2F5900013CF0 /* Calendar-75.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Calendar-75.png"; sourceTree = "<group>"; };
@@ -502,6 +504,7 @@
 				C67F0DBD1B699D7B0020B18C /* MSSpeakerScrollView.swift */,
 				C69808E51B5D05D900164BC6 /* YouTubePlayer.swift */,
 				C63580E51B7FE8D000BDE559 /* Dots.swift */,
+				F7B9F4F31B890E0400D5FBE4 /* mountains.png */,
 				C69808E61B5D05D900164BC6 /* YTPlayer.html */,
 			);
 			name = HomeTab;
@@ -862,6 +865,7 @@
 				C677E7BF1B811840001DF097 /* rhonda.png in Resources */,
 				F7CF77DF1B5B2F5900013CF0 /* Pencil-75.png in Resources */,
 				C62B04161B7FA85C00613EA9 /* MansbrideSummitpresents.jpg in Resources */,
+				F7B9F4F41B890E0400D5FBE4 /* mountains.png in Resources */,
 				C69808EA1B5D05D900164BC6 /* YTPlayer.html in Resources */,
 				F7D1B8601B5C8E0900D34341 /* RegistrationSuccessXIB.xib in Resources */,
 				C6CFD0601B45EDA90067A6AD /* LaunchScreen.storyboard in Resources */,

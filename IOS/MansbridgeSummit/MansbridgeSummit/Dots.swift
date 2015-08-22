@@ -171,15 +171,27 @@ class Dot : UICollectionViewCell {
     
     private func setDotInitals () {
 
-        let initialLabelText = Dot.initials[Dot.createdDots]
-        let initialLabel = UILabel(frame: CGRectMake(0, 0, Dot.DIAMETER, Dot.DIAMETER))
-        
-        initialLabel.text = initialLabelText
-        initialLabel.textColor = GC.Color.white
-        initialLabel.textAlignment = .Center
-        initialLabel.font = GC.Font.myraidpro_bold_18
-        
-        self.backgroundView = initialLabel
+        // mountains icon
+        if (Dot.createdDots == 0) {
+            
+            let img = UIImage(named: "mountains.png")
+            let imageView = UIImageView(image: img)
+            self.backgroundView = imageView
+            
+        // initials of speaker
+        } else {
+            
+            let initialLabelText = Dot.initials[Dot.createdDots]
+            let initialLabel = UILabel(frame: CGRectMake(0, 0, Dot.DIAMETER, Dot.DIAMETER))
+            
+            initialLabel.text = initialLabelText
+            initialLabel.textColor = GC.Color.white
+            initialLabel.textAlignment = .Center
+            initialLabel.font = GC.Font.myraidpro_bold_18
+            
+            self.backgroundView = initialLabel
+            
+        }
         
     }
     
