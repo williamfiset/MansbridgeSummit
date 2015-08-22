@@ -8,6 +8,7 @@ import com.twitter.sdk.android.tweetui.TweetTimelineListAdapter;
 import io.fabric.sdk.android.Fabric;
 import java.util.Locale;
 
+import android.content.pm.ActivityInfo;
 import android.graphics.drawable.Drawable;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.ActionBar;
@@ -47,6 +48,7 @@ public class MainActivity extends ActionBarActivity implements ActionBar.TabList
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setRequestedOrientation (ActivityInfo.SCREEN_ORIENTATION_NOSENSOR); // prevents rotations by keeping it in the default state (not all devices have portrait mode)
         TwitterAuthConfig authConfig = new TwitterAuthConfig(TWITTER_KEY, TWITTER_SECRET);
         Fabric.with(this, new Twitter(authConfig));
         setContentView(R.layout.activity_main);
@@ -149,7 +151,7 @@ public class MainActivity extends ActionBarActivity implements ActionBar.TabList
                 case 3:
                     return ScheduleTab.newInstance(position + 1);
                 case 4:
-                    return PlaceholderFragment.newInstance(position + 1);
+                    return QRCodesTab.newInstance(position + 1);
             }
 
             return null;

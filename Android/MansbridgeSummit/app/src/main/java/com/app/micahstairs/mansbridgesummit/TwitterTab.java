@@ -11,8 +11,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ListView;
 
-import com.twitter.sdk.android.tweetui.TweetTimelineListAdapter;
-import com.twitter.sdk.android.tweetui.UserTimeline;
+import com.twitter.sdk.android.tweetui.*;
 
 public class TwitterTab extends Fragment {
     /**
@@ -41,13 +40,13 @@ public class TwitterTab extends Fragment {
         View rootView = inflater.inflate(R.layout.fragment_twitter_tab, container, false);
 
         ListView listView = (ListView) rootView.findViewById(R.id.listView);
-//            final CollectionTimeline timeline = new CollectionTimeline.Builder()
-//                    .id(625072681285758976L)
-//                    .build();
-        final UserTimeline timeline = new UserTimeline.Builder()
-                .screenName("fabric")
-                .build();
+//        final CollectionTimeline timeline = new CollectionTimeline.Builder().id(625072681285758976L).build();
+        final UserTimeline timeline = new UserTimeline.Builder().screenName("fabric").build();
+
+        // Collection "Fabric Picks"
+//        final CollectionTimeline timeline = new CollectionTimeline.Builder().id(569961150045896704L).build();
         final TweetTimelineListAdapter adapter = new TweetTimelineListAdapter(listView.getContext(), timeline);
+
         listView.setAdapter(adapter);
 
         return rootView;
