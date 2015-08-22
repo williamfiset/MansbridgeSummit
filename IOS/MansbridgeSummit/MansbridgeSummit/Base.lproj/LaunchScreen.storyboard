@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="  Copyright © 2015/16 Mansbridge Summit. All rights reserved." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="obG-Y5-kRd">
-                                <rect key="frame" x="75" y="564" width="450" height="21"/>
+                                <rect key="frame" x="0.0" y="564" width="600" height="21"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -74,7 +74,7 @@
                             <constraint firstItem="obG-Y5-kRd" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="907-dI-XBV"/>
                             <constraint firstItem="GJd-Yh-RWb" firstAttribute="width" secondItem="Ze5-6b-2t3" secondAttribute="width" multiplier="0.9" id="UG6-9H-17c"/>
                             <constraint firstItem="o7J-4s-49i" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="V5z-kS-H6A"/>
-                            <constraint firstItem="obG-Y5-kRd" firstAttribute="width" secondItem="Ze5-6b-2t3" secondAttribute="width" multiplier="0.75" id="brI-wE-kTf"/>
+                            <constraint firstItem="obG-Y5-kRd" firstAttribute="width" secondItem="Ze5-6b-2t3" secondAttribute="width" id="brI-wE-kTf"/>
                             <constraint firstItem="GJd-Yh-RWb" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="mNQ-a8-OQm"/>
                             <constraint firstItem="o7J-4s-49i" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" constant="-75" id="qN4-BK-MNz"/>
                             <constraint firstItem="o7J-4s-49i" firstAttribute="width" secondItem="Ze5-6b-2t3" secondAttribute="width" multiplier="0.65" id="sLv-SW-5er"/>

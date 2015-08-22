@@ -8,7 +8,6 @@
 
 // This helps when dealing with blocks: http://fuckingblocksyntax.com/
 
-//#import <CloudKit/CloudKit.h>
 #import "TwitterController.h"
 #import "MansbridgeSummit-Swift.h"
 #import "Connection.h"
@@ -123,17 +122,8 @@
 
 - (IBAction)composeTweet:(id)sender {
     
-    // NOTE: Loading the default status was taking too long.. so I've termporarily removed it. It might not be a bad idea to remove our dependency on iCloud.. it's just one more thing that could go wrong! And we don't seem to need it anymore..
-    [self postTweet:@"#MansbridgeSummit"];
-    
-//    SEL closure =  @selector(postTweet:);
-//    [self getDefaultStatusAndExecFunc: closure];
-}
-
-- (void) postTweet: (NSString*) defaultStatus {
-
     TWTRComposer *composer = [[TWTRComposer alloc] init];
-    [composer setText: defaultStatus];
+    [composer setText: @"#MansbridgeSummit"];
     [composer showFromViewController: self completion: ^ (TWTRComposerResult result) {
         
         // closure code
@@ -141,47 +131,6 @@
     }];
     
 }
-
-/*
- *
- * Talking with Micah we agreed that CloudKits Key-Value solution was much
- * more appropriate than pulling out all the records from the DB and simply
- * grabbing the first one.
- *
- */
-//- (void) getDefaultStatusAndExecFunc: (SEL) closure { // :(void (^)(NSString *))closure
-//    
-//    // Currently Matches all values in the
-//    NSPredicate *queryPredicate = [NSPredicate predicateWithValue: YES];
-//    
-//    CKDatabase *publicDB = [[CKContainer defaultContainer] publicCloudDatabase];
-//    CKQuery *query = [[CKQuery alloc] initWithRecordType: @"MansbridgeData" predicate:queryPredicate];
-//    
-//    // Query the DB for records (read comment above)
-//    [publicDB performQuery: query inZoneWithID:nil completionHandler:
-//     ^(NSArray <CKRecord *> *_Nullable records, NSError * _Nullable error) {
-//        
-//         if (error == NULL && records != NULL) {
-//             
-//             CKRecord *record = [records objectAtIndex: 0];
-//             if (record != NULL) {
-//                 NSString *defaultStatus = [record valueForKey: @"Value"];
-//                 
-//                 dispatch_async(dispatch_get_main_queue(), ^ (void){
-//                     [self performSelector:closure withObject:defaultStatus];
-//                 });
-//                
-//             }
-//             
-//         } else {
-//             
-//             NSLog(@"%@", [error description]);
-//             [self performSelector:closure withObject: @"#MansbridgeSummit"];
-//             
-//         }
-//    }];
-//    
-//}
 
 - (void)displayNetworkConnectionErrorView {
     
@@ -208,5 +157,3 @@
 }
 
 @end
-
-
