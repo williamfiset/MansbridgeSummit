@@ -83,7 +83,6 @@ public class MainActivity extends ActionBarActivity implements ActionBar.TabList
             // this tab is selected.
             actionBar.addTab(
                     actionBar.newTab()
-//                            .setIcon(mSectionsPagerAdapter.getIcon(i))
                             .setText(mSectionsPagerAdapter.getPageTitle(i))
                             .setTabListener(this));
         }
@@ -183,22 +182,6 @@ public class MainActivity extends ActionBarActivity implements ActionBar.TabList
             return null;
         }
 
-//        public Drawable getIcon(int position) {
-//
-//            switch (position) {
-//                case 0:
-//                    return getResources().getDrawable(R.drawable.home);
-//                case 1:
-//                    return getResources().getDrawable(R.drawable.home);
-//                case 2:
-//                    return getResources().getDrawable(R.drawable.home);
-//                case 3:
-//                    return getResources().getDrawable(R.drawable.home);
-//                case 4:
-//                    return getResources().getDrawable(R.drawable.home);
-//            }
-//            return null;
-//        }
     }
 
     /**
