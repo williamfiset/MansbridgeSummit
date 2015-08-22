@@ -1,6 +1,6 @@
 //
 //  VideoPlayerView.swift
-//  YouTubePlayer
+//  VideoPlayerView
 //
 //  Created by Giles Van Gruisen on 12/21/14.
 //  Copyright (c) 2014 Giles Van Gruisen. All rights reserved.
@@ -278,6 +278,7 @@ public class YouTubePlayerView: UIView, UIWebViewDelegate {
                     break
 
                 case .StateChange:
+                    
                     if let newState = YouTubePlayerState(rawValue: data!) {
                         playerState = newState
                         delegate?.playerStateChanged(self, playerState: newState)
@@ -306,7 +307,7 @@ public class YouTubePlayerView: UIView, UIWebViewDelegate {
 
         // Check if ytplayer event and, if so, pass to handleJSEvent
         if let url = url where url.scheme == "ytplayer" { handleJSEvent(url) }
-
+        
         return true
     }
 }

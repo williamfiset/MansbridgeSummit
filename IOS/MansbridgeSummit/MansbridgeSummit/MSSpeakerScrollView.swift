@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 
-class MSSpeakerScrollView : UIScrollView { // UIScrollViewDelegate
+class MSSpeakerScrollView : UIScrollView {
     
     let TOP_Y = CGFloat(50)
     let PADDING : CGFloat = 15
@@ -141,7 +141,7 @@ class MSSpeakerScrollView : UIScrollView { // UIScrollViewDelegate
             
             let frame = CGRectMake(x + PADDING, y, videoWidth, videoHeight)
             let videoPlayer = YouTubePlayerView(frame: frame)
-            videoPlayer.loadVideoID( speaker.videos[Int(i)] )
+            videoPlayer.loadVideoID(speaker.videos[Int(i)])
             self.addSubview(videoPlayer)
             
             y += videoHeight

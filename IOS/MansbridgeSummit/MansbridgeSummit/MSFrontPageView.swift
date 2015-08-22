@@ -51,12 +51,12 @@ public class MSFrontPageView : UIView {
         
         let frame = CGRectMake( x, y, w, h)
         videoPlayerView = YouTubePlayerView(frame: frame)
-        videoPlayerView.loadVideoID( homePageVideo )
+        videoPlayerView.loadVideoID(homePageVideo)
         self.addSubview(videoPlayerView)
         
     }
     
-    private func addStreamLink(  ) -> Void {
+    private func addStreamLink() -> Void {
         
         let x = PADDING
         let y = videoPlayerView.frame.origin.y + videoPlayerView.frame.height + PADDING

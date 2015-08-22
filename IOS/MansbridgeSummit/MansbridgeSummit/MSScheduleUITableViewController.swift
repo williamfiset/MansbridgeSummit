@@ -19,7 +19,7 @@ class MSScheduleUITableViewController: UITableViewController {
         super.viewDidLoad()
         
         // Do any additional setup after loading the view, typically from a nib.
-        tableView.estimatedRowHeight = 50.0
+        tableView.estimatedRowHeight = 55.0
         tableView.rowHeight = UITableViewAutomaticDimension
         
         if let reader = DataLoader(fileName: schedule_file_name, fileType: "json") {
@@ -102,12 +102,12 @@ class MSScheduleUITableViewController: UITableViewController {
         cell.timeLabel.text = event.eventTime
         cell.nameLabel.text = event.eventName
         
+        
         if (expandedCells.contains(indexPath)) {
             cell.descriptionLabel.text = event.eventLocation + "\n" + event.eventDescription
         } else {
             cell.descriptionLabel.text = event.eventLocation
         }
-        
         
         return cell
     }
