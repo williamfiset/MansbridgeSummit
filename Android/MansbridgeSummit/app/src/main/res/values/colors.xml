@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
     <color name="garnet">#872434</color>
     <color name="gold">#AF8900</color>
+    <color name="blue">#4099FF</color>
 </resources>

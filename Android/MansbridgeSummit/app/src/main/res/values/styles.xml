@@ -1,12 +1,7 @@
 <resources>
 
-    <!-- Base application theme. -->
-    <!--<style name="AppTheme" parent="Theme.AppCompat.Light">-->
-        <!--&lt;!&ndash; Customize your theme here. &ndash;&gt;-->
-        <!--<item name="android:textColor">@color/garnet</item>-->
-    <!--</style>-->
-
     <style name="Theme.Mtasummit" parent="@style/Theme.AppCompat.Light.DarkActionBar">
+
         <item name="actionBarItemBackground">@drawable/selectable_background_mtasummit</item>
         <item name="popupMenuStyle">@style/PopupMenu.Mtasummit</item>
         <item name="dropDownListViewStyle">@style/DropDownListView.Mtasummit</item>
