@@ -93,7 +93,6 @@
 		C6A0D97C1B59FD9200C8172D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6CFD0531B45EDA90067A6AD /* AppDelegate.swift */; };
 		C6A0D9851B59FD9A00C8172D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6CFD0531B45EDA90067A6AD /* AppDelegate.swift */; };
 		C6A0D9871B59FE7C00C8172D /* MScheduleTableViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67926BB1B4DD2A100EA86B4 /* MScheduleTableViewTests.swift */; };
-		C6A0D9881B59FE7C00C8172D /* MSEventTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67926B51B4DD0F800EA86B4 /* MSEventTests.swift */; };
 		C6A0D9891B59FE7C00C8172D /* ExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6D9E9951B477D6E00249DA4 /* ExtensionsTests.swift */; };
 		C6A0D98E1B59FF0400C8172D /* MSScheduleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67926A91B4DC36900EA86B4 /* MSScheduleTests.swift */; };
 		C6A0D98F1B59FF0400C8172D /* MansbridgeSummitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6CFD0751B45EDA90067A6AD /* MansbridgeSummitUITests.swift */; };
@@ -127,7 +126,7 @@
 		C6D9E9921B4778A400249DA4 /* MyriadPro-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = C6D9E98C1B4778A400249DA4 /* MyriadPro-Regular.otf */; };
 		C6D9E9941B477C3300249DA4 /* ConstantsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6D9E9931B477C3300249DA4 /* ConstantsTests.swift */; };
 		C6E1632A1B48137900942749 /* MSScheduleTableControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6E163291B48137900942749 /* MSScheduleTableControllerTests.swift */; };
-		C6E1632C1B4814EC00942749 /* MSScheduleCellView.Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6E1632B1B4814EC00942749 /* MSScheduleCellView.Tests.swift */; };
+		C6E1632C1B4814EC00942749 /* MSScheduleCellViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6E1632B1B4814EC00942749 /* MSScheduleCellViewTests.swift */; };
 		C6E1632E1B481AE600942749 /* MSScheduleModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6E1632D1B481AE600942749 /* MSScheduleModels.swift */; };
 		C6E1632F1B481AE600942749 /* MSScheduleModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6E1632D1B481AE600942749 /* MSScheduleModels.swift */; };
 		C6E163301B481AE600942749 /* MSScheduleModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6E1632D1B481AE600942749 /* MSScheduleModels.swift */; };
@@ -243,7 +242,6 @@
 		C677E7BD1B811840001DF097 /* feynman.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = feynman.png; sourceTree = "<group>"; };
 		C677E7BE1B811840001DF097 /* alexander.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = alexander.png; sourceTree = "<group>"; };
 		C67926A91B4DC36900EA86B4 /* MSScheduleTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSScheduleTests.swift; sourceTree = "<group>"; };
-		C67926B51B4DD0F800EA86B4 /* MSEventTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSEventTests.swift; sourceTree = "<group>"; };
 		C67926BB1B4DD2A100EA86B4 /* MScheduleTableViewTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MScheduleTableViewTests.swift; sourceTree = "<group>"; };
 		C67BD26C1B5F1597006356C2 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		C67F0DB11B6977C20020B18C /* MSHomeModelController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSHomeModelController.swift; sourceTree = "<group>"; };
@@ -284,7 +282,7 @@
 		C6D9E9931B477C3300249DA4 /* ConstantsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstantsTests.swift; sourceTree = "<group>"; };
 		C6D9E9951B477D6E00249DA4 /* ExtensionsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtensionsTests.swift; sourceTree = "<group>"; };
 		C6E163291B48137900942749 /* MSScheduleTableControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSScheduleTableControllerTests.swift; sourceTree = "<group>"; };
-		C6E1632B1B4814EC00942749 /* MSScheduleCellView.Tests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSScheduleCellView.Tests.swift; sourceTree = "<group>"; };
+		C6E1632B1B4814EC00942749 /* MSScheduleCellViewTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSScheduleCellViewTests.swift; sourceTree = "<group>"; };
 		C6E1632D1B481AE600942749 /* MSScheduleModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSScheduleModels.swift; sourceTree = "<group>"; };
 		C6E163321B481C5000942749 /* test_schedule.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = test_schedule.json; sourceTree = "<group>"; };
 		C6E163381B48296600942749 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
@@ -442,14 +440,6 @@
 				C67926A91B4DC36900EA86B4 /* MSScheduleTests.swift */,
 			);
 			name = MSScheduleUITests;
-			sourceTree = "<group>";
-		};
-		C67926B41B4DD0E300EA86B4 /* MSEvents */ = {
-			isa = PBXGroup;
-			children = (
-				C67926B51B4DD0F800EA86B4 /* MSEventTests.swift */,
-			);
-			name = MSEvents;
 			sourceTree = "<group>";
 		};
 		C679E2101B55FCFE004AEBE9 /* RegisterTab */ = {
@@ -661,10 +651,9 @@
 			isa = PBXGroup;
 			children = (
 				C6E163291B48137900942749 /* MSScheduleTableControllerTests.swift */,
-				C6E1632B1B4814EC00942749 /* MSScheduleCellView.Tests.swift */,
+				C6E1632B1B4814EC00942749 /* MSScheduleCellViewTests.swift */,
 				C6E1633C1B482A7200942749 /* MSScheduleJsonFileTests.swift */,
 				C67926BB1B4DD2A100EA86B4 /* MScheduleTableViewTests.swift */,
-				C67926B41B4DD0E300EA86B4 /* MSEvents */,
 			);
 			name = MSScheduleTests;
 			sourceTree = "<group>";
@@ -1020,7 +1009,6 @@
 				C67F0DC21B69A4640020B18C /* PageViewControllers.swift in Sources */,
 				C6A0D9871B59FE7C00C8172D /* MScheduleTableViewTests.swift in Sources */,
 				F7E33DC51B81548700450A22 /* MSScheduleUITableViewController.swift in Sources */,
-				C6A0D9881B59FE7C00C8172D /* MSEventTests.swift in Sources */,
 				C6A0D9891B59FE7C00C8172D /* ExtensionsTests.swift in Sources */,
 				C6A0D9851B59FD9A00C8172D /* AppDelegate.swift in Sources */,
 				C69BCCD01B6AEE0E0027ACE7 /* MSHomePage.swift in Sources */,
@@ -1044,7 +1032,7 @@
 				C6E1633A1B48296600942749 /* SwiftyJSON.swift in Sources */,
 				C6C00A6C1B45F3B300709992 /* MSTabBarController.swift in Sources */,
 				C68A138B1B5BF1A2003CE324 /* MSProtocols.swift in Sources */,
-				C6E1632C1B4814EC00942749 /* MSScheduleCellView.Tests.swift in Sources */,
+				C6E1632C1B4814EC00942749 /* MSScheduleCellViewTests.swift in Sources */,
 				C6E9E5391B5F06A90037C617 /* RegisterPageGeneralTests.swift in Sources */,
 				C69E4A591B4608C500BD981C /* MSRegisterTabController.swift in Sources */,
 				C6D9E9941B477C3300249DA4 /* ConstantsTests.swift in Sources */,

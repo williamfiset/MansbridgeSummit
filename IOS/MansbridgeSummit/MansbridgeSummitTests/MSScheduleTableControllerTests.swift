@@ -22,8 +22,8 @@ class MSScheduleTableControllerTests: XCTestCase {
 
     func testInit() {
         
-        let controller1 = MSScheduleTableController(style: .Grouped)
-        let controller2 = MSScheduleTableController(style: .Plain)
+        let controller1 = MSScheduleUITableViewController(style: .Grouped)
+        let controller2 = MSScheduleUITableViewController(style: .Plain)
         
         XCTAssertNotNil(controller1)
         XCTAssertNotNil(controller2)
@@ -31,54 +31,50 @@ class MSScheduleTableControllerTests: XCTestCase {
     }
     
     func testViewDidLoad() {
-        let controller1 = MSScheduleTableController(style: .Grouped)
+        let controller1 = MSScheduleUITableViewController(style: .Grouped)
         controller1.viewDidLoad()
     }
     
     func testViewDidAppear() {
-        let controller1 = MSScheduleTableController(style: .Grouped)
+        let controller1 = MSScheduleUITableViewController(style: .Grouped)
         controller1.viewDidAppear(true)
     }
     
     func testTableControllerRequiredMethods() {
         
-        let table = MSScheduleTableView(frame: CGRect(x: 0, y: 0, width: 300, height: 900))
-        
-        let controller1 = MSScheduleTableController(style: .Grouped)
+        let controller1 = MSScheduleUITableViewController(style: .Grouped)
         
         controller1.viewWillAppear(true)
         controller1.viewDidLoad()
         
         let firstCell = NSIndexPath(forRow: 0, inSection: 0)
         
-        controller1.tableView(table, cellForRowAtIndexPath: firstCell)
-        controller1.tableView(table, didSelectRowAtIndexPath: firstCell)
-        controller1.tableView(table, viewForHeaderInSection: 0)
-        controller1.tableView(table, titleForHeaderInSection: 0)
-        controller1.tableView(table, numberOfRowsInSection: 0)
+        controller1.tableView(controller1.tableView, cellForRowAtIndexPath: firstCell)
+        controller1.tableView(controller1.tableView, didSelectRowAtIndexPath: firstCell)
+        controller1.tableView(controller1.tableView, viewForHeaderInSection: 0)
+        controller1.tableView(controller1.tableView, titleForHeaderInSection: 0)
+        controller1.tableView(controller1.tableView, numberOfRowsInSection: 0)
         
     }
     
     func testRowsInSections() {
         
-        let table = MSScheduleTableView(frame: CGRect(x: 0, y: 0, width: 300, height: 900))
-        
-        let controller1 = MSScheduleTableController(style: .Grouped)
+        let controller1 = MSScheduleUITableViewController(style: .Grouped)
         controller1.schedule_file_name = "test_schedule"
         
         controller1.viewWillAppear(true)
         controller1.viewDidLoad()
         
-        var rows = controller1.tableView(table, numberOfRowsInSection: 0)
+        var rows = controller1.tableView(controller1.tableView, numberOfRowsInSection: 0)
         XCTAssertEqual(rows, 3);
         
-        rows = controller1.tableView(table, numberOfRowsInSection: 1)
+        rows = controller1.tableView(controller1.tableView, numberOfRowsInSection: 1)
         XCTAssertEqual(rows, 2);
         
-        rows = controller1.tableView(table, numberOfRowsInSection: 2)
+        rows = controller1.tableView(controller1.tableView, numberOfRowsInSection: 2)
         XCTAssertEqual(rows, 4);
         
-        rows = controller1.tableView(table, numberOfRowsInSection: 3)
+        rows = controller1.tableView(controller1.tableView, numberOfRowsInSection: 3)
         XCTAssertEqual(rows, 4);
         
     }
