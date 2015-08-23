@@ -29,7 +29,9 @@ http://iconhandbook.co.uk/reference/chart/android/
 
 ![](http://i.stack.imgur.com/tcjUx.png)
 
-** Fragment lifecycle **
+**Fragment lifecycle**
+
+http://developer.android.com/guide/components/fragments.html
 
 ![](http://developer.android.com/images/fragment_lifecycle.png)
 
