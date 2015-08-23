@@ -85,51 +85,52 @@
             android:background="#fff" >
 
             <Button
+                android:id="@+id/home_button1"
                 android:layout_width="wrap_content"
                 android:layout_height="fill_parent"
                 android:text="MS"
                 android:textColor="#fff"
-                android:backgroundTint="@color/garnet"
                 android:layout_weight="1.0"
                 />
-
+            <!--android:backgroundTint="@color/gold"-->
             <Button
+                android:id="@+id/home_button2"
                 android:layout_width="wrap_content"
                 android:layout_height="fill_parent"
                 android:text="RM"
                 android:textColor="#fff"
                 android:layout_weight="1.0"
-                android:backgroundTint="@color/gold"
                 />
-
+            <!--android:backgroundTint="@color/gold"-->
             <Button
+                android:id="@+id/home_button3"
                 android:layout_width="wrap_content"
                 android:layout_height="fill_parent"
                 android:text="IN"
                 android:textColor="#fff"
                 android:layout_weight="1.0"
-                android:backgroundTint="@color/gold"
-                />
 
+                />
+            <!--android:backgroundTint="@color/gold"-->
 
             <Button
+                android:id="@+id/home_button4"
                 android:layout_width="wrap_content"
                 android:layout_height="fill_parent"
                 android:text="JC"
                 android:textColor="#fff"
                 android:layout_weight="1.0"
-                android:backgroundTint="@color/gold"
                 />
-
+            <!--android:backgroundTint="@color/gold"-->
             <Button
+                android:id="@+id/home_button5"
                 android:layout_width="wrap_content"
                 android:layout_height="fill_parent"
                 android:text="ATG"
                 android:textColor="#fff"
                 android:layout_weight="1.0"
-                android:backgroundTint="@color/gold"
                 />
-
+            <!--android:backgroundTint="@color/gold"-->
 
         </LinearLayout>
 
