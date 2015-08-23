@@ -28,3 +28,8 @@ http://iconhandbook.co.uk/reference/chart/android/
 **Life cycle of an Android Application:**
 
 ![](http://i.stack.imgur.com/tcjUx.png)
+
+** Fragment lifecycle **
+
+![](http://developer.android.com/images/fragment_lifecycle.png)
+
