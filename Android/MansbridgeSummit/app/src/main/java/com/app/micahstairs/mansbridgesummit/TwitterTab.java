@@ -13,11 +13,14 @@ import android.graphics.drawable.ShapeDrawable;
 import android.graphics.drawable.shapes.RoundRectShape;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.*;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.ListView;
 
+import com.twitter.sdk.android.tweetcomposer.TweetComposer;
 import com.twitter.sdk.android.tweetui.*;
 
 public class TwitterTab extends Fragment {
@@ -44,7 +47,7 @@ public class TwitterTab extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View rootView = inflater.inflate(R.layout.fragment_twitter_tab, container, false);
+        final View rootView = inflater.inflate(R.layout.fragment_twitter_tab, container, false);
 
         ListView listView = (ListView) rootView.findViewById(R.id.listView);
 //        final CollectionTimeline timeline = new CollectionTimeline.Builder().id(625072681285758976L).build();
@@ -56,7 +59,16 @@ public class TwitterTab extends Fragment {
 
         listView.setAdapter(adapter);
 
-//        Button button = (Button) rootView.findViewById(R.id.composeTweet);
+        final ImageButton button = (ImageButton) rootView.findViewById(R.id.composeTweet);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override public void onClick(View v) {
+
+                TweetComposer.Builder builder = new TweetComposer.Builder(rootView.getContext())
+                        .text("#MansbridgeSummit");
+                builder.show();
+
+            }
+        });
 //        button.setBackgroundColor(getResources().getColor(R.color.blue));
 //        RoundRectShape rs = new RoundRectShape(new float[] { 10, 10, 10, 10, 10, 10, 10, 10}, null, null);
 //        ShapeDrawable sd = new ShapeDrawable(rs);

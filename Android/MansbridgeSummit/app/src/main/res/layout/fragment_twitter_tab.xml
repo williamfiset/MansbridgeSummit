@@ -1,7 +1,6 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     tools:context=".MainActivity">
 
     <ListView
@@ -10,23 +9,16 @@
         android:id="@+id/listView"
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true"
-        android:footerDividersEnabled="false"
-        android:layout_marginBottom="48dp" />
+        android:footerDividersEnabled="false"/>
 
-    <Button
-        android:padding="3dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/listView"
-        android:text="Compose Tweet"
+    <ImageButton
+        android:layout_alignRight="@id/listView"
+        android:layout_alignBottom="@id/listView"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@android:drawable/ic_menu_edit"
+        android:background="@drawable/circle"
         android:id="@+id/composeTweet"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="-48dp"
-        android:textColor="@color/white"
-        android:topRightRadius="0dp"
-        android:topLeftRadius="0dp"
-        android:bottomLeftRadius="2dp"
-        android:bottomRightRadius="2dp"
-        android:background="@drawable/twitter_button" />
+        android:layout_gravity="right|bottom" />
 
-</LinearLayout>
+</RelativeLayout>
