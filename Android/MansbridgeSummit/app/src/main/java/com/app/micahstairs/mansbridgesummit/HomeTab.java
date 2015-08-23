@@ -93,8 +93,11 @@ public class HomeTab extends Fragment {
                     // This removes black border of 45 pixels on top and bottom
                     Bitmap croppedBitmap = Bitmap.createBitmap(bitmap, 0, 45, 480, 270);
 
-                    // testing
-                    croppedBitmap = overlay(croppedBitmap, BitmapFactory.decodeResource(rootView.getContext().getResources(), R.drawable.youtube_icon));
+
+                    Bitmap youtubeIcon = BitmapFactory.decodeResource(rootView.getContext().getResources(), R.drawable.youtube_icon);
+                    youtubeIcon = Bitmap.createScaledBitmap(youtubeIcon, 120, 90, false);
+                    croppedBitmap = overlay(croppedBitmap, youtubeIcon);
+
 
                     youtubeThumbnail.setImageBitmap(croppedBitmap);
                     youtubeThumbnail.setScaleType(ImageView.ScaleType.FIT_CENTER);
