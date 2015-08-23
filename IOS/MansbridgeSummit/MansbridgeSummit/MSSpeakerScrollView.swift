@@ -23,6 +23,9 @@ class MSSpeakerScrollView : UIScrollView {
     
     var bottomOfVideos : CGFloat!
     
+    var videoPlayers : [YouTubePlayerView] = []
+    var videoIDs : [String] = []
+    
     init(frame: CGRect, inout withSpeaker speaker : MSSpeaker?) {
         
         super.init(frame: frame)
@@ -42,6 +45,13 @@ class MSSpeakerScrollView : UIScrollView {
             
         }
         
+    }
+    
+    func refreshVideos() -> Void {
+        for (var i = 0; i < videoPlayers.count; i++) {
+            videoPlayers[i].loadVideoID(videoIDs[i])
+            print("re-loaded speaker video at index \(i)")
+        }
     }
     
     // Create a title at the top with the speaker's name
@@ -135,14 +145,18 @@ class MSSpeakerScrollView : UIScrollView {
         let videoWidth = GC.SCREEN_WIDTH - (PADDING * 2)
         let videoHeight = videoWidth / 2
         
+        videoPlayers = []
+        videoIDs = []
         for (var i : CGFloat = 0; Int(i) < speaker.videos.count; i++) {
             
             y += PADDING
             
             let frame = CGRectMake(x + PADDING, y, videoWidth, videoHeight)
-            let videoPlayer = YouTubePlayerView(frame: frame)
-            videoPlayer.loadVideoID(speaker.videos[Int(i)])
-            self.addSubview(videoPlayer)
+            videoPlayers.append(YouTubePlayerView(frame: frame))
+            videoIDs.append(speaker.videos[Int(i)])
+            videoPlayers[Int(i)].loadVideoID(speaker.videos[Int(i)])
+
+            self.addSubview(videoPlayers[Int(i)])
             
             y += videoHeight
             

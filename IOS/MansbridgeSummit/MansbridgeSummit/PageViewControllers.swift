@@ -64,13 +64,22 @@ class MSSpeakerController : UIViewController {
 
     }
    
-    override func viewDidLoad() {
+    override func viewWillAppear(animated : Bool) {
         
-        super.viewDidLoad()
+        super.viewWillAppear(animated)
 
         var speaker = getPageSpeaker()
         self.scrollView = MSSpeakerScrollView(frame: frame, withSpeaker: &speaker)
         self.view.addSubview(scrollView)
+        
+    }
+    
+    override func viewWillDisappear(animated : Bool) {
+        
+        super.viewWillDisappear(animated)
+        
+        self.scrollView.removeFromSuperview()
+        self.scrollView = nil
         
     }
     

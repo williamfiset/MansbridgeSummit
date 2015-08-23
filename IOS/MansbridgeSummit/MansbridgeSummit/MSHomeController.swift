@@ -17,6 +17,9 @@ class MSHomeController: UIViewController, UIPageViewControllerDelegate {
     
     var currentControllerIndex = 0
     
+    var connection = Reachability(hostName: "www.example.com") // The website doesn't matter, we just want to know whether we have internet or not
+    var networkStatusCalled = false
+    
     override func viewDidLoad() {
         
         super.viewDidLoad()
@@ -26,6 +29,39 @@ class MSHomeController: UIViewController, UIPageViewControllerDelegate {
         
         createDotController()
         setDots()
+        
+        // Subscribe to knowing the network status
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: "_networkStatusDidChange", name: kReachabilityChangedNotification, object: nil)
+        connection.startNotifier()
+
+    }
+    
+    func _networkStatusDidChange() -> Void {
+        
+        if !networkStatusCalled {
+            
+            networkStatusCalled = true
+            
+            // Creates a timer which will call networkStatusDidChange in 1/2s.
+            // This is done to avoid a false network status connection
+            NSTimer.scheduledTimerWithTimeInterval(0.5, target: self, selector: Selector("networkStatusDidChange"), userInfo: nil, repeats: false)
+            
+        }
+    }
+    
+    func networkStatusDidChange() -> Void {
+        
+        networkStatusCalled = false
+        
+        if Connection.isNetworkAvailable() {
+            
+            if let frontPage = modelController.pageControllers[0] as? MSFrontPageController {
+                if (frontPage.frontPageView != nil) {
+                    frontPage.frontPageView.refreshVideos()
+                }
+            }
+            
+        }
         
     }
     

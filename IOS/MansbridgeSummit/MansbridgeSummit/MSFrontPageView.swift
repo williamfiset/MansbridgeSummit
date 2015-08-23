@@ -29,7 +29,7 @@ public class MSFrontPageView : UIView {
         addHeaderImage()
         addYoutubeThumbnail()
         addStreamLink()
-        
+    
     }
     
     private func addHeaderImage() -> Void {
@@ -40,7 +40,11 @@ public class MSFrontPageView : UIView {
         addSubview(headerImageView)
         
     }
-
+    
+    func refreshVideos() -> Void {
+        videoPlayerView.loadVideoID(homePageVideo)
+        print("re-loaded front page video")
+    }
     
     private func addYoutubeThumbnail() {
         
