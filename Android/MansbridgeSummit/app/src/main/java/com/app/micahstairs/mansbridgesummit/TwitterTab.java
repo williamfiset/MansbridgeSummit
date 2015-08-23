@@ -4,11 +4,18 @@ package com.app.micahstairs.mansbridgesummit;
  * Created by micahstairs on 2015-08-04.
  */
 
+import android.graphics.Color;
+import android.graphics.ColorFilter;
+import android.graphics.drawable.Drawable;
+import android.graphics.drawable.GradientDrawable;
+import android.graphics.drawable.InsetDrawable;
+import android.graphics.drawable.ShapeDrawable;
+import android.graphics.drawable.shapes.RoundRectShape;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
+import android.view.*;
+import android.widget.Button;
 import android.widget.ListView;
 
 import com.twitter.sdk.android.tweetui.*;
@@ -48,6 +55,13 @@ public class TwitterTab extends Fragment {
         final TweetTimelineListAdapter adapter = new TweetTimelineListAdapter(listView.getContext(), timeline);
 
         listView.setAdapter(adapter);
+
+//        Button button = (Button) rootView.findViewById(R.id.composeTweet);
+//        button.setBackgroundColor(getResources().getColor(R.color.blue));
+//        RoundRectShape rs = new RoundRectShape(new float[] { 10, 10, 10, 10, 10, 10, 10, 10}, null, null);
+//        ShapeDrawable sd = new ShapeDrawable(rs);
+//        sd.getPaint().setColor(8856628); // garnet
+//        button.setBackgroundDrawable(sd);
 
         return rootView;
     }

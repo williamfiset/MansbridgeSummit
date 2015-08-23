@@ -3,6 +3,8 @@
     <color name="black">#000000</color>
     <color name="white">#FFFFFF</color>
     <color name="garnet">#872434</color>
+    <color name="garnet_light">#9F4F5C</color>
+    <color name="garnet_dark">#6C1C29</color>
     <color name="gold">#AF8900</color>
     <color name="blue">#4099FF</color>
 </resources>
