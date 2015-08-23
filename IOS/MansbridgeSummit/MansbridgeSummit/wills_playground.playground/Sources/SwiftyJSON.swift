@@ -724,29 +724,6 @@ extension JSON {
     }
 }
 
-//MARK: - URL
-extension JSON {
-    
-    //Optional URL
-    public var URL: NSURL? {
-        get {
-            switch self.type {
-            case .String:
-                if let encodedString_ = self.object.stringByAddingPercentEscapesUsingEncoding(NSUTF8StringEncoding) {
-                    return NSURL(string: encodedString_)
-                } else {
-                    return nil
-                }
-            default:
-                return nil
-            }
-        }
-        set {
-            self.object = newValue?.absoluteString ?? NSNull()
-        }
-    }
-}
-
 // MARK: - Int, Double, Float, Int8, Int16, Int32, Int64
 
 extension JSON {
