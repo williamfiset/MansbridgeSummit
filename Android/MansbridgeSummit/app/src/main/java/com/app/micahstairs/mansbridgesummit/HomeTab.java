@@ -9,7 +9,7 @@ import android.graphics.*;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.*;
-import android.widget.ImageView;
+import android.widget.*;
 import com.nostra13.universalimageloader.core.*;
 import com.nostra13.universalimageloader.core.assist.FailReason;
 import com.nostra13.universalimageloader.core.listener.ImageLoadingListener;
@@ -22,14 +22,16 @@ import org.json.*;
  */
 public class HomeTab extends Fragment {
 
-    /**
-     * The fragment argument representing the section number for this
-     * fragment.
-     */
     private static final String ARG_SECTION_NUMBER = "section_number";
     private static final String PETER_MANSBRIDGE_VID = "ZhnhnKV56mA";
     private DataLoader dataLoader;
     private Speaker[] speakers;
+
+    private Button button1;
+    private Button button2;
+    private Button button3;
+    private Button button4;
+    private Button button5;
 
     /**
      * Returns a new instance of this fragment for the given section
@@ -57,6 +59,7 @@ public class HomeTab extends Fragment {
 
         // Fragment place holder
         View rootView = inflater.inflate(R.layout.home_main, container, false);
+        setButtonProperties(rootView);
         setSpeakerPage(0, rootView);
         return rootView;
 
@@ -65,6 +68,17 @@ public class HomeTab extends Fragment {
     @Override public void onActivityCreated(Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
     }
+
+
+    // overlay in center
+    public static Bitmap overlay(Bitmap bmp1, Bitmap bmp2) {
+        Bitmap bmOverlay = Bitmap.createBitmap(bmp1.getWidth(), bmp1.getHeight(), bmp1.getConfig());
+        Canvas canvas = new Canvas(bmOverlay);
+        canvas.drawBitmap(bmp1, new Matrix(), null);
+        canvas.drawBitmap(bmp2, (bmp1.getWidth() - bmp2.getWidth()) / 2, (bmp1.getHeight() - bmp2.getHeight()) / 2, null);
+        return bmOverlay;
+    }
+
 
     public void setSpeakerPage( int index, final View rootView) {
 
@@ -116,15 +130,6 @@ public class HomeTab extends Fragment {
         }
     }
 
-    // overlay in center
-    public static Bitmap overlay(Bitmap bmp1, Bitmap bmp2) {
-        Bitmap bmOverlay = Bitmap.createBitmap(bmp1.getWidth(), bmp1.getHeight(), bmp1.getConfig());
-        Canvas canvas = new Canvas(bmOverlay);
-        canvas.drawBitmap(bmp1, new Matrix(), null);
-        canvas.drawBitmap(bmp2, (bmp1.getWidth() - bmp2.getWidth())/2, (bmp1.getHeight() - bmp2.getHeight())/2, null);
-        return bmOverlay;
-    }
-
     private void parseSpeakers() {
 
         try {
@@ -160,9 +165,85 @@ public class HomeTab extends Fragment {
         }
     }
 
-    /*
-    // startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.youtube.com/watch?v=AiplrfFB6h0")));
-    // Get the thumbnail from http://img.youtube.com/vi/YOUTUBE_ID_GOES_HERE/0.jpg
-     */
+    private void setButtonProperties ( View rootView ) {
+
+        button1 = (Button) rootView.findViewById(R.id.home_button1);
+        button2 = (Button) rootView.findViewById(R.id.home_button2);
+        button3 = (Button) rootView.findViewById(R.id.home_button3);
+        button4 = (Button) rootView.findViewById(R.id.home_button4);
+        button5 = (Button) rootView.findViewById(R.id.home_button5);
+
+        button1.setBackgroundColor(getResources().getColor(R.color.garnet));
+        button2.setBackgroundColor(getResources().getColor(R.color.gold));
+        button3.setBackgroundColor(getResources().getColor(R.color.gold));
+        button4.setBackgroundColor(getResources().getColor(R.color.gold));
+        button5.setBackgroundColor(getResources().getColor(R.color.gold));
+
+        button1.setOnClickListener(new View.OnClickListener() {
+            @Override public void onClick(View v) {
+                changeSelectedButton(0);
+            }
+        });
+        button2.setOnClickListener(new View.OnClickListener() {
+            @Override public void onClick(View v) {
+                changeSelectedButton(1);
+            }
+        });
+        button3.setOnClickListener(new View.OnClickListener() {
+            @Override public void onClick(View v) {
+                changeSelectedButton(2);
+            }
+        });
+        button4.setOnClickListener(new View.OnClickListener() {
+            @Override public void onClick(View v) {
+                changeSelectedButton(3);
+            }
+        });
+        button5.setOnClickListener(new View.OnClickListener() {
+            @Override public void onClick(View v) {
+                changeSelectedButton(4);
+            }
+        });
+    }
+
+    private void changeSelectedButton(int index) {
+
+        Button[] btns = { button1, button2, button3, button4, button5 };
+
+        for (int i = 0; i < btns.length; i++) {
+            if (i == index) {
+                btns[i].setBackgroundColor(getResources().getColor(R.color.garnet));
+            } else {
+                btns[i].setBackgroundColor(getResources().getColor(R.color.gold));
+            }
+        }
+
+    }
+
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
