@@ -19,7 +19,7 @@ import com.nostra13.universalimageloader.core.ImageLoaderConfiguration;
 import com.nostra13.universalimageloader.core.assist.FailReason;
 import com.nostra13.universalimageloader.core.assist.ImageSize;
 import com.nostra13.universalimageloader.core.listener.ImageLoadingListener;
-
+import android.net.*;
 import android.content.*;
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -34,7 +34,7 @@ public class HomeTab extends Fragment {
      * fragment.
      */
     private static final String ARG_SECTION_NUMBER = "section_number";
-    private static final String PETER_MANSBRIDGE_THUMBNAIL = "ZhnhnKV56mA";
+    private static final String PETER_MANSBRIDGE_VID = "ZhnhnKV56mA";
     private DataLoader dataLoader;
     private Speaker[] speakers;
 
@@ -80,12 +80,12 @@ public class HomeTab extends Fragment {
             // Using Android-Universal-Image-Loader third party library to do asyc calls for thumbnails:
             // https://github.com/nostra13/Android-Universal-Image-Loader
 
-            String thumbnailURL = "http://img.youtube.com/vi/"+ PETER_MANSBRIDGE_THUMBNAIL +"/0.jpg";
+            String thumbnailURL = "http://img.youtube.com/vi/"+ PETER_MANSBRIDGE_VID +"/0.jpg";
 
             // Housekeeping...
             ImageLoader.getInstance().init(ImageLoaderConfiguration.createDefault(rootView.getContext()));
 
-            // Asyc call to get thumbnail image
+            // Async call to get thumbnail image
             ImageLoader.getInstance().loadImage(thumbnailURL, new ImageLoadingListener() {
 
                 @Override public void onLoadingStarted(String s, View view) { }
@@ -95,8 +95,20 @@ public class HomeTab extends Fragment {
                 @Override public void onLoadingComplete(String s, View view, Bitmap bitmap) {
 
                     ImageView youtubeThumbnail = (ImageView) rootView.findViewById(R.id.youtubeVideo);
-                    youtubeThumbnail.setImageBitmap(bitmap);
 
+                    // Crop image from (0, 0, 480, 360) -> (0, 45, 480, 270).
+                    // This removes black border of 45 pixels on top and bottom
+                    Bitmap croppedBitmap = Bitmap.createBitmap(bitmap, 0, 45, 480, 270);
+
+                    youtubeThumbnail.setImageBitmap(croppedBitmap);
+                    youtubeThumbnail.setScaleType(ImageView.ScaleType.FIT_CENTER);
+
+                    youtubeThumbnail.setOnClickListener(new View.OnClickListener() {
+                        @Override public void onClick(View v) {
+                            Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.youtube.com/watch?v=7ouLkgRHjS8"));
+                            getActivity().startActivity(intent);
+                        }
+                    });
                 }
 
             });
