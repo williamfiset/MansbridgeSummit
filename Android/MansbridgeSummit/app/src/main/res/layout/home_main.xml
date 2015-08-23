@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
 
-    android:layout_width="match_parent" android:layout_height="match_parent"
-                android:background="#fff"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical"
     >
 
 
@@ -11,13 +13,13 @@
     -->
     <ImageView
 
-        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:layout_weight="1"
+
         android:id="@+id/mansbridgeSummitHeader"
         android:layout_centerHorizontal="true"
-        android:focusableInTouchMode="true"
-        android:minHeight="115dp"
-        android:maxHeight="150dp"
+        android:focusableInTouchMode="false"
         android:background="#000"
 
         android:src="@drawable/mansbride_summit_presents"
@@ -29,13 +31,13 @@
 
     <ImageView
 
-        android:layout_below="@+id/mansbridgeSummitHeader"
-        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:layout_weight="1"
+
         android:id="@+id/youtubeVideo"
         android:layout_centerHorizontal="true"
         android:focusableInTouchMode="true"
-        android:minHeight="115dp"
         android:background="#000"
 
         android:layout_marginRight="20dp"
@@ -46,13 +48,16 @@
         />
 
     <ImageView
-        android:layout_width="match_parent"
+
         android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:layout_weight="1"
+
         android:id="@+id/stream_image"
         android:layout_below="@+id/youtubeVideo"
         android:layout_centerHorizontal="true"
         android:focusableInTouchMode="true"
-        android:minHeight="115dp"
+
         android:background="#000"
 
         android:layout_marginTop="20dp"
@@ -61,8 +66,7 @@
 
         android:src="@drawable/mta_live_logo"
         android:adjustViewBounds="true"
-        android:padding="5dp"
         android:clickable="true"
         />
 
-</RelativeLayout>
+</LinearLayout>
