@@ -94,7 +94,7 @@ public class HomeTab extends Fragment {
                     Bitmap croppedBitmap = Bitmap.createBitmap(bitmap, 0, 45, 480, 270);
 
                     // testing
-                    croppedBitmap = overlay(croppedBitmap, BitmapFactory.decodeResource(rootView.getContext().getResources(), R.drawable.youtube_icon_cropped));
+                    croppedBitmap = overlay(croppedBitmap, BitmapFactory.decodeResource(rootView.getContext().getResources(), R.drawable.youtube_icon));
 
                     youtubeThumbnail.setImageBitmap(croppedBitmap);
                     youtubeThumbnail.setScaleType(ImageView.ScaleType.FIT_CENTER);
@@ -113,7 +113,7 @@ public class HomeTab extends Fragment {
         }
     }
 
-        // overlay in center
+    // overlay in center
     public static Bitmap overlay(Bitmap bmp1, Bitmap bmp2) {
         Bitmap bmOverlay = Bitmap.createBitmap(bmp1.getWidth(), bmp1.getHeight(), bmp1.getConfig());
         Canvas canvas = new Canvas(bmOverlay);
