@@ -43,8 +43,8 @@ public class ScheduleTab extends Fragment {
 
     public ScheduleTab() { }
 
-    @Override public View onCreateView(final LayoutInflater inflater, final ViewGroup container,
-                             Bundle savedInstanceState) {
+    @Override public View onCreateView(final LayoutInflater inflater, final ViewGroup container, Bundle savedInstanceState) {
+
         rootView = inflater.inflate(R.layout.fragment_schedule_tab, container, false);
 
         Event[] events = getEventsFromFile();

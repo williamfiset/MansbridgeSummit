@@ -21,6 +21,8 @@ import android.support.v4.view.ViewPager;
 import android.view.*;
 import android.widget.*;
 
+
+
 // App icons created here: http://romannurik.github.io/AndroidAssetStudio/icons-launcher.html
 
 public class MainActivity extends ActionBarActivity implements ActionBar.TabListener {
