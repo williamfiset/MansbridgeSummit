@@ -1,0 +1,486 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "MSHomeModelController"
+provides-nominal:
+- "C16MansbridgeSummit21MSHomeModelController"
+provides-member:
+- ["C16MansbridgeSummit21MSHomeModelController", ""]
+provides-dynamic-lookup:
+- "pageViewController"
+- "pageViewController"
+- "MAX_PAGES"
+- "viewControllerAtIndex"
+- "currentController"
+- "createViewControllers"
+- "indexOfViewController"
+- "pageControllers"
+depends-top-level:
+- !private "+"
+- "UIPageViewController"
+- "Void"
+- !private "=="
+- "NSObject"
+- !private "MSSpeakerController"
+- "MSHomeModelController"
+- !private "-"
+- "Int"
+- !private "<"
+- !private "MSFrontPageController"
+- !private "&&"
+- !private "<="
+- !private "NSNotFound"
+- !private "??"
+- "UIViewController"
+- "UIPageViewControllerDataSource"
+- !private "||"
+depends-member:
+- ["PSs9AnyObject", "MAX_PAGES"]
+- !private ["PSs9AnyObject", "MSFrontPageController"]
+- !private ["PSs9AnyObject", "MSSpeakerController"]
+- !private ["PSs9AnyObject", "NSNotFound"]
+- ["PSs9AnyObject", "createViewControllers"]
+- ["PSs9AnyObject", "currentController"]
+- ["PSs9AnyObject", "indexOfViewController"]
+- ["PSs9AnyObject", "init"]
+- ["PSs9AnyObject", "pageControllers"]
+- ["PSs9AnyObject", "pageViewController"]
+- ["PSs9AnyObject", "presentationCountForPageViewController"]
+- ["PSs9AnyObject", "presentationIndexForPageViewController"]
+- ["PSs9AnyObject", "viewControllerAtIndex"]
+- ["PSs9AnyObject", ""]
+- !private ["Sa", "Generator"]
+- !private ["Sa", "Index"]
+- !private ["Sa", "SubSequence"]
+- !private ["Sa", "_Element"]
+- !private ["Sa", "append"]
+- !private ["Sa", "count"]
+- !private ["Sa", "deinit"]
+- !private ["Sa", "indexOf"]
+- !private ["Sa", "subscript"]
+- !private ["PSs23ArrayLiteralConvertible", "Generator"]
+- !private ["PSs23ArrayLiteralConvertible", "Index"]
+- !private ["PSs23ArrayLiteralConvertible", "SubSequence"]
+- !private ["PSs23ArrayLiteralConvertible", "_Element"]
+- !private ["PSs23ArrayLiteralConvertible", "append"]
+- !private ["PSs23ArrayLiteralConvertible", "count"]
+- !private ["PSs23ArrayLiteralConvertible", "indexOf"]
+- !private ["PSs23ArrayLiteralConvertible", "subscript"]
+- !private ["VSs10ArraySlice", "Generator"]
+- !private ["VSs10ArraySlice", "Index"]
+- !private ["PSs22BidirectionalIndexType", "Distance"]
+- !private ["PSs22BidirectionalIndexType", "IntegerLiteralType"]
+- !private ["PSs21BitwiseOperationsType", "Distance"]
+- !private ["PSs21BitwiseOperationsType", "IntegerLiteralType"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["PSs25BooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["PSs11BooleanType", "_getBuiltinLogicValue"]
+- !private ["PSs11CVarArgType", "Distance"]
+- !private ["PSs11CVarArgType", "IntegerLiteralType"]
+- ["PSs11CVarArgType", "MAX_PAGES"]
+- !private ["PSs11CVarArgType", "MSFrontPageController"]
+- !private ["PSs11CVarArgType", "MSSpeakerController"]
+- !private ["PSs11CVarArgType", "NSNotFound"]
+- ["PSs11CVarArgType", "createViewControllers"]
+- ["PSs11CVarArgType", "currentController"]
+- ["PSs11CVarArgType", "indexOfViewController"]
+- ["PSs11CVarArgType", "init"]
+- ["PSs11CVarArgType", "pageControllers"]
+- ["PSs11CVarArgType", "pageViewController"]
+- ["PSs11CVarArgType", "presentationCountForPageViewController"]
+- ["PSs11CVarArgType", "presentationIndexForPageViewController"]
+- ["PSs11CVarArgType", "viewControllerAtIndex"]
+- ["PSs11CVarArgType", ""]
+- !private ["PSs14CollectionType", "Generator"]
+- !private ["PSs14CollectionType", "Index"]
+- !private ["PSs14CollectionType", "SubSequence"]
+- !private ["PSs14CollectionType", "_Element"]
+- !private ["PSs14CollectionType", "append"]
+- !private ["PSs14CollectionType", "count"]
+- !private ["PSs14CollectionType", "indexOf"]
+- !private ["PSs14CollectionType", "subscript"]
+- !private ["PSs10Comparable", "Distance"]
+- !private ["PSs10Comparable", "IntegerLiteralType"]
+- !private ["PSs28CustomDebugStringConvertible", "Generator"]
+- !private ["PSs28CustomDebugStringConvertible", "Index"]
+- !private ["PSs28CustomDebugStringConvertible", "SubSequence"]
+- !private ["PSs28CustomDebugStringConvertible", "_Element"]
+- !private ["PSs28CustomDebugStringConvertible", "append"]
+- !private ["PSs28CustomDebugStringConvertible", "count"]
+- !private ["PSs28CustomDebugStringConvertible", "indexOf"]
+- !private ["PSs28CustomDebugStringConvertible", "subscript"]
+- !private ["PSs23CustomStringConvertible", "Distance"]
+- !private ["PSs23CustomStringConvertible", "Generator"]
+- !private ["PSs23CustomStringConvertible", "Index"]
+- !private ["PSs23CustomStringConvertible", "IntegerLiteralType"]
+- ["PSs23CustomStringConvertible", "MAX_PAGES"]
+- !private ["PSs23CustomStringConvertible", "MSFrontPageController"]
+- !private ["PSs23CustomStringConvertible", "MSSpeakerController"]
+- !private ["PSs23CustomStringConvertible", "NSNotFound"]
+- !private ["PSs23CustomStringConvertible", "SubSequence"]
+- !private ["PSs23CustomStringConvertible", "_Element"]
+- !private ["PSs23CustomStringConvertible", "_getBuiltinLogicValue"]
+- !private ["PSs23CustomStringConvertible", "append"]
+- !private ["PSs23CustomStringConvertible", "count"]
+- ["PSs23CustomStringConvertible", "createViewControllers"]
+- ["PSs23CustomStringConvertible", "currentController"]
+- !private ["PSs23CustomStringConvertible", "indexOf"]
+- ["PSs23CustomStringConvertible", "indexOfViewController"]
+- ["PSs23CustomStringConvertible", "init"]
+- ["PSs23CustomStringConvertible", "pageControllers"]
+- ["PSs23CustomStringConvertible", "pageViewController"]
+- ["PSs23CustomStringConvertible", "presentationCountForPageViewController"]
+- ["PSs23CustomStringConvertible", "presentationIndexForPageViewController"]
+- !private ["PSs23CustomStringConvertible", "subscript"]
+- ["PSs23CustomStringConvertible", "viewControllerAtIndex"]
+- ["PSs23CustomStringConvertible", ""]
+- !private ["PSs9Equatable", "Distance"]
+- !private ["PSs9Equatable", "IntegerLiteralType"]
+- ["PSs9Equatable", "MAX_PAGES"]
+- !private ["PSs9Equatable", "MSFrontPageController"]
+- !private ["PSs9Equatable", "MSSpeakerController"]
+- !private ["PSs9Equatable", "NSNotFound"]
+- !private ["PSs9Equatable", "_getBuiltinLogicValue"]
+- ["PSs9Equatable", "createViewControllers"]
+- ["PSs9Equatable", "currentController"]
+- ["PSs9Equatable", "indexOfViewController"]
+- ["PSs9Equatable", "init"]
+- ["PSs9Equatable", "pageControllers"]
+- ["PSs9Equatable", "pageViewController"]
+- ["PSs9Equatable", "presentationCountForPageViewController"]
+- ["PSs9Equatable", "presentationIndexForPageViewController"]
+- ["PSs9Equatable", "viewControllerAtIndex"]
+- ["PSs9Equatable", ""]
+- !private ["PSs16ForwardIndexType", "Distance"]
+- !private ["PSs16ForwardIndexType", "IntegerLiteralType"]
+- !private ["PSs13GeneratorType", "Element"]
+- !private ["PSs8Hashable", "Distance"]
+- !private ["PSs8Hashable", "IntegerLiteralType"]
+- ["PSs8Hashable", "MAX_PAGES"]
+- !private ["PSs8Hashable", "MSFrontPageController"]
+- !private ["PSs8Hashable", "MSSpeakerController"]
+- !private ["PSs8Hashable", "NSNotFound"]
+- !private ["PSs8Hashable", "_getBuiltinLogicValue"]
+- ["PSs8Hashable", "createViewControllers"]
+- ["PSs8Hashable", "currentController"]
+- ["PSs8Hashable", "indexOfViewController"]
+- ["PSs8Hashable", "init"]
+- ["PSs8Hashable", "pageControllers"]
+- ["PSs8Hashable", "pageViewController"]
+- ["PSs8Hashable", "presentationCountForPageViewController"]
+- ["PSs8Hashable", "presentationIndexForPageViewController"]
+- ["PSs8Hashable", "viewControllerAtIndex"]
+- ["PSs8Hashable", ""]
+- !private ["PSs9Indexable", "Generator"]
+- !private ["PSs9Indexable", "Index"]
+- !private ["PSs9Indexable", "SubSequence"]
+- !private ["PSs9Indexable", "_Element"]
+- !private ["PSs9Indexable", "append"]
+- !private ["PSs9Indexable", "count"]
+- !private ["PSs9Indexable", "indexOf"]
+- !private ["PSs9Indexable", "subscript"]
+- !private ["VSs17IndexingGenerator", "Element"]
+- !private ["Si", "Distance"]
+- !private ["Si", "IntegerLiteralType"]
+- !private ["PSs21IntegerArithmeticType", "Distance"]
+- !private ["PSs21IntegerArithmeticType", "IntegerLiteralType"]
+- !private ["PSs25IntegerLiteralConvertible", "Distance"]
+- !private ["PSs25IntegerLiteralConvertible", "IntegerLiteralType"]
+- !private ["PSs11IntegerType", "Distance"]
+- !private ["PSs11IntegerType", "IntegerLiteralType"]
+- !private ["C16MansbridgeSummit21MSFrontPageController", "init"]
+- ["C16MansbridgeSummit21MSHomeModelController", "Int"]
+- ["C16MansbridgeSummit21MSHomeModelController", "MAX_PAGES"]
+- !private ["C16MansbridgeSummit21MSHomeModelController", "MSFrontPageController"]
+- !private ["C16MansbridgeSummit21MSHomeModelController", "MSSpeakerController"]
+- !private ["C16MansbridgeSummit21MSHomeModelController", "NSNotFound"]
+- ["C16MansbridgeSummit21MSHomeModelController", "UIPageViewController"]
+- ["C16MansbridgeSummit21MSHomeModelController", "UIViewController"]
+- ["C16MansbridgeSummit21MSHomeModelController", "Void"]
+- ["C16MansbridgeSummit21MSHomeModelController", "createViewControllers"]
+- ["C16MansbridgeSummit21MSHomeModelController", "currentController"]
+- ["C16MansbridgeSummit21MSHomeModelController", "deinit"]
+- ["C16MansbridgeSummit21MSHomeModelController", "indexOfViewController"]
+- ["C16MansbridgeSummit21MSHomeModelController", "init"]
+- ["C16MansbridgeSummit21MSHomeModelController", "pageControllers"]
+- ["C16MansbridgeSummit21MSHomeModelController", "pageViewController"]
+- ["C16MansbridgeSummit21MSHomeModelController", "presentationCountForPageViewController"]
+- ["C16MansbridgeSummit21MSHomeModelController", "presentationIndexForPageViewController"]
+- ["C16MansbridgeSummit21MSHomeModelController", "viewControllerAtIndex"]
+- !private ["C16MansbridgeSummit19MSSpeakerController", "init"]
+- !private ["PSs14MirrorPathType", "Distance"]
+- !private ["PSs14MirrorPathType", "IntegerLiteralType"]
+- !private ["PSs21MutableCollectionType", "Generator"]
+- !private ["PSs21MutableCollectionType", "Index"]
+- !private ["PSs21MutableCollectionType", "SubSequence"]
+- !private ["PSs21MutableCollectionType", "_Element"]
+- !private ["PSs21MutableCollectionType", "append"]
+- !private ["PSs21MutableCollectionType", "count"]
+- !private ["PSs21MutableCollectionType", "indexOf"]
+- !private ["PSs21MutableCollectionType", "subscript"]
+- !private ["PSs16MutableSliceable", "Generator"]
+- !private ["PSs16MutableSliceable", "Index"]
+- !private ["PSs16MutableSliceable", "SubSequence"]
+- !private ["PSs16MutableSliceable", "_Element"]
+- !private ["PSs16MutableSliceable", "append"]
+- !private ["PSs16MutableSliceable", "count"]
+- !private ["PSs16MutableSliceable", "indexOf"]
+- !private ["PSs16MutableSliceable", "subscript"]
+- !private ["PSo8NSCoding", "init"]
+- !private ["PSo26NSExtensionRequestHandling", "init"]
+- ["CSo8NSObject", "Int"]
+- ["CSo8NSObject", "MAX_PAGES"]
+- !private ["CSo8NSObject", "MSFrontPageController"]
+- !private ["CSo8NSObject", "MSSpeakerController"]
+- !private ["CSo8NSObject", "NSNotFound"]
+- ["CSo8NSObject", "UIPageViewController"]
+- ["CSo8NSObject", "UIViewController"]
+- ["CSo8NSObject", "Void"]
+- ["CSo8NSObject", "createViewControllers"]
+- ["CSo8NSObject", "currentController"]
+- ["CSo8NSObject", "indexOfViewController"]
+- ["CSo8NSObject", "init"]
+- ["CSo8NSObject", "pageControllers"]
+- ["CSo8NSObject", "pageViewController"]
+- ["CSo8NSObject", "presentationCountForPageViewController"]
+- ["CSo8NSObject", "presentationIndexForPageViewController"]
+- ["CSo8NSObject", "viewControllerAtIndex"]
+- ["CSo8NSObject", ""]
+- ["PSo16NSObjectProtocol", "MAX_PAGES"]
+- !private ["PSo16NSObjectProtocol", "MSFrontPageController"]
+- !private ["PSo16NSObjectProtocol", "MSSpeakerController"]
+- !private ["PSo16NSObjectProtocol", "NSNotFound"]
+- ["PSo16NSObjectProtocol", "createViewControllers"]
+- ["PSo16NSObjectProtocol", "currentController"]
+- ["PSo16NSObjectProtocol", "indexOfViewController"]
+- ["PSo16NSObjectProtocol", "init"]
+- ["PSo16NSObjectProtocol", "pageControllers"]
+- ["PSo16NSObjectProtocol", "pageViewController"]
+- ["PSo16NSObjectProtocol", "presentationCountForPageViewController"]
+- ["PSo16NSObjectProtocol", "presentationIndexForPageViewController"]
+- ["PSo16NSObjectProtocol", "viewControllerAtIndex"]
+- ["PSo16NSObjectProtocol", ""]
+- !private ["PSs21RandomAccessIndexType", "Distance"]
+- !private ["PSs21RandomAccessIndexType", "IntegerLiteralType"]
+- !private ["PSs30RangeReplaceableCollectionType", "Generator"]
+- !private ["PSs30RangeReplaceableCollectionType", "Index"]
+- !private ["PSs30RangeReplaceableCollectionType", "SubSequence"]
+- !private ["PSs30RangeReplaceableCollectionType", "_Element"]
+- !private ["PSs30RangeReplaceableCollectionType", "append"]
+- !private ["PSs30RangeReplaceableCollectionType", "count"]
+- !private ["PSs30RangeReplaceableCollectionType", "indexOf"]
+- !private ["PSs30RangeReplaceableCollectionType", "subscript"]
+- !private ["PSs12SequenceType", "Element"]
+- !private ["PSs12SequenceType", "Generator"]
+- !private ["PSs12SequenceType", "Index"]
+- !private ["PSs12SequenceType", "SubSequence"]
+- !private ["PSs12SequenceType", "_Element"]
+- !private ["PSs12SequenceType", "append"]
+- !private ["PSs12SequenceType", "count"]
+- !private ["PSs12SequenceType", "indexOf"]
+- !private ["PSs12SequenceType", "subscript"]
+- !private ["PSs17SignedIntegerType", "Distance"]
+- !private ["PSs17SignedIntegerType", "IntegerLiteralType"]
+- !private ["PSs16SignedNumberType", "Distance"]
+- !private ["PSs16SignedNumberType", "IntegerLiteralType"]
+- !private ["VSs5Slice", "Generator"]
+- !private ["VSs5Slice", "Index"]
+- !private ["VSs5Slice", "SubSequence"]
+- !private ["VSs5Slice", "_Element"]
+- !private ["PSs10Strideable", "Distance"]
+- !private ["PSs10Strideable", "IntegerLiteralType"]
+- !private ["P16MansbridgeSummit13SubscriptType", "Distance"]
+- !private ["P16MansbridgeSummit13SubscriptType", "IntegerLiteralType"]
+- !private ["PSo21UIAppearanceContainer", "init"]
+- !private ["PSo18UIContentContainer", "init"]
+- !private ["PSo30UIPageViewControllerDataSource", "MAX_PAGES"]
+- !private ["PSo30UIPageViewControllerDataSource", "MSFrontPageController"]
+- !private ["PSo30UIPageViewControllerDataSource", "MSSpeakerController"]
+- !private ["PSo30UIPageViewControllerDataSource", "NSNotFound"]
+- !private ["PSo30UIPageViewControllerDataSource", "createViewControllers"]
+- !private ["PSo30UIPageViewControllerDataSource", "indexOfViewController"]
+- !private ["PSo30UIPageViewControllerDataSource", "pageControllers"]
+- ["PSo30UIPageViewControllerDataSource", "pageViewController"]
+- ["PSo30UIPageViewControllerDataSource", "presentationCountForPageViewController"]
+- ["PSo30UIPageViewControllerDataSource", "presentationIndexForPageViewController"]
+- !private ["PSo30UIPageViewControllerDataSource", "viewControllerAtIndex"]
+- ["PSo30UIPageViewControllerDataSource", ""]
+- !private ["CSo11UIResponder", "init"]
+- !private ["PSo16UIStateRestoring", "init"]
+- !private ["PSo18UITraitEnvironment", "init"]
+- !private ["CSo16UIViewController", "init"]
+- !private ["PSs10_ArrayType", "Generator"]
+- !private ["PSs10_ArrayType", "Index"]
+- !private ["PSs10_ArrayType", "SubSequence"]
+- !private ["PSs10_ArrayType", "_Element"]
+- !private ["PSs10_ArrayType", "append"]
+- !private ["PSs10_ArrayType", "count"]
+- !private ["PSs10_ArrayType", "indexOf"]
+- !private ["PSs10_ArrayType", "subscript"]
+- !private ["PSs33_BuiltinBooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["PSs33_BuiltinIntegerLiteralConvertible", "Distance"]
+- !private ["PSs33_BuiltinIntegerLiteralConvertible", "IntegerLiteralType"]
+- !private ["PSs24_DestructorSafeContainer", "Generator"]
+- !private ["PSs24_DestructorSafeContainer", "Index"]
+- !private ["PSs24_DestructorSafeContainer", "SubSequence"]
+- !private ["PSs24_DestructorSafeContainer", "_Element"]
+- !private ["PSs24_DestructorSafeContainer", "append"]
+- !private ["PSs24_DestructorSafeContainer", "count"]
+- !private ["PSs24_DestructorSafeContainer", "indexOf"]
+- !private ["PSs24_DestructorSafeContainer", "subscript"]
+- !private ["PSs14_Incrementable", "Distance"]
+- !private ["PSs14_Incrementable", "IntegerLiteralType"]
+- !private ["PSs22_IntegerArithmeticType", "Distance"]
+- !private ["PSs22_IntegerArithmeticType", "IntegerLiteralType"]
+- !private ["PSs12_IntegerType", "Distance"]
+- !private ["PSs12_IntegerType", "IntegerLiteralType"]
+- !private ["PSs21_ObjectiveCBridgeable", "Distance"]
+- !private ["PSs21_ObjectiveCBridgeable", "Generator"]
+- !private ["PSs21_ObjectiveCBridgeable", "Index"]
+- !private ["PSs21_ObjectiveCBridgeable", "IntegerLiteralType"]
+- !private ["PSs21_ObjectiveCBridgeable", "SubSequence"]
+- !private ["PSs21_ObjectiveCBridgeable", "_Element"]
+- !private ["PSs21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
+- !private ["PSs21_ObjectiveCBridgeable", "append"]
+- !private ["PSs21_ObjectiveCBridgeable", "count"]
+- !private ["PSs21_ObjectiveCBridgeable", "indexOf"]
+- !private ["PSs21_ObjectiveCBridgeable", "subscript"]
+- !private ["PSs12_Reflectable", "Distance"]
+- !private ["PSs12_Reflectable", "Generator"]
+- !private ["PSs12_Reflectable", "Index"]
+- !private ["PSs12_Reflectable", "IntegerLiteralType"]
+- !private ["PSs12_Reflectable", "SubSequence"]
+- !private ["PSs12_Reflectable", "_Element"]
+- !private ["PSs12_Reflectable", "_getBuiltinLogicValue"]
+- !private ["PSs12_Reflectable", "append"]
+- !private ["PSs12_Reflectable", "count"]
+- !private ["PSs12_Reflectable", "indexOf"]
+- !private ["PSs12_Reflectable", "subscript"]
+- !private ["PSs18_SignedIntegerType", "Distance"]
+- !private ["PSs18_SignedIntegerType", "IntegerLiteralType"]
+- !private ["PSs11_Strideable", "Distance"]
+- !private ["PSs11_Strideable", "IntegerLiteralType"]
+depends-nominal:
+- "PSs9AnyObject"
+- !private "Sa"
+- !private "PSs23ArrayLiteralConvertible"
+- !private "VSs10ArraySlice"
+- !private "PSs22BidirectionalIndexType"
+- !private "PSs21BitwiseOperationsType"
+- !private "Sb"
+- !private "PSs25BooleanLiteralConvertible"
+- !private "PSs11BooleanType"
+- "PSs11CVarArgType"
+- !private "PSs14CollectionType"
+- !private "PSs10Comparable"
+- !private "PSs28CustomDebugStringConvertible"
+- "PSs23CustomStringConvertible"
+- "PSs9Equatable"
+- !private "PSs16ForwardIndexType"
+- !private "PSs13GeneratorType"
+- "PSs8Hashable"
+- !private "PSs9Indexable"
+- !private "VSs17IndexingGenerator"
+- !private "Si"
+- !private "PSs21IntegerArithmeticType"
+- !private "PSs25IntegerLiteralConvertible"
+- !private "PSs11IntegerType"
+- !private "C16MansbridgeSummit21MSFrontPageController"
+- "C16MansbridgeSummit21MSHomeModelController"
+- !private "C16MansbridgeSummit19MSSpeakerController"
+- !private "PSs14MirrorPathType"
+- !private "PSs21MutableCollectionType"
+- !private "PSs16MutableSliceable"
+- !private "PSo8NSCoding"
+- !private "PSo26NSExtensionRequestHandling"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- !private "PSs21RandomAccessIndexType"
+- !private "PSs30RangeReplaceableCollectionType"
+- !private "PSs12SequenceType"
+- !private "PSs17SignedIntegerType"
+- !private "PSs16SignedNumberType"
+- !private "VSs5Slice"
+- !private "PSs10Strideable"
+- !private "P16MansbridgeSummit13SubscriptType"
+- !private "PSo21UIAppearanceContainer"
+- !private "PSo18UIContentContainer"
+- "PSo30UIPageViewControllerDataSource"
+- !private "CSo11UIResponder"
+- !private "PSo16UIStateRestoring"
+- !private "PSo18UITraitEnvironment"
+- !private "CSo16UIViewController"
+- !private "PSs10_ArrayType"
+- !private "PSs33_BuiltinBooleanLiteralConvertible"
+- !private "PSs33_BuiltinIntegerLiteralConvertible"
+- !private "PSs24_DestructorSafeContainer"
+- !private "PSs14_Incrementable"
+- !private "PSs22_IntegerArithmeticType"
+- !private "PSs12_IntegerType"
+- !private "PSs21_ObjectiveCBridgeable"
+- !private "PSs12_Reflectable"
+- !private "PSs18_SignedIntegerType"
+- !private "PSs11_Strideable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/shims/UnicodeShims.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/shims/RuntimeStubs.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/shims/RuntimeShims.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/shims/RefCount.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/shims/HeapObject.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/shims/GlobalObjects.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/shims/FoundationShims.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/shims/SwiftStddef.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/shims/DarwinShims.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/shims/SwiftStdint.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/shims/CoreFoundationShims.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/shims/module.map"
+- "/Users/williamfiset/Desktop/GitHub/MansbridgeSummit/IOS/MansbridgeSummit/MansbridgeSummit/MansbridgeSummit-Bridging-Header.h"
+- "/Users/williamfiset/Desktop/GitHub/MansbridgeSummit/IOS/MansbridgeSummit/MansbridgeSummit/Reachability.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Users/williamfiset/Desktop/GitHub/MansbridgeSummit/IOS/MansbridgeSummit/MansbridgeSummit/Connection.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "./Fabric.framework/Headers/FABAttributes.h"
+- "./Fabric.framework/Headers/Fabric.h"
+- "./Fabric.framework/Modules/module.modulemap"
+- "./TwitterCore.framework/Headers/TWTRGuestSession.h"
+- "./TwitterCore.framework/Headers/TWTRCoreOAuthSigning.h"
+- "./TwitterCore.framework/Headers/TWTRConstants.h"
+- "./TwitterCore.framework/Headers/TWTRAuthSession.h"
+- "./TwitterCore.framework/Headers/TWTRAuthConfig.h"
+- "./TwitterCore.framework/Headers/TWTRAPIErrorCode.h"
+- "./TwitterCore.framework/Headers/TwitterCore.h"
+- "./TwitterCore.framework/Modules/module.modulemap"
+- "./TwitterKit.framework/Headers/TWTRUserTimelineDataSource.h"
+- "./TwitterKit.framework/Headers/TWTRUser.h"
+- "./TwitterKit.framework/Headers/TWTRTweetViewDelegate.h"
+- "./TwitterKit.framework/Headers/TWTRTweetView.h"
+- "./TwitterKit.framework/Headers/TWTRTweetTableViewCell.h"
+- "./TwitterKit.framework/Headers/TWTRTweet.h"
+- "./TwitterKit.framework/Headers/TWTRTimelineViewController.h"
+- "./TwitterKit.framework/Headers/TWTRShareEmailViewController.h"
+- "./TwitterKit.framework/Headers/TWTRSearchTimelineDataSource.h"
+- "./TwitterKit.framework/Headers/TWTROAuthSigning.h"
+- "./TwitterKit.framework/Headers/TWTRLogInButton.h"
+- "./TwitterKit.framework/Headers/TWTRListTimelineDataSource.h"
+- "./TwitterKit.framework/Headers/TWTRComposer.h"
+- "./TwitterKit.framework/Headers/TWTRTimelineType.h"
+- "./TwitterKit.framework/Headers/TWTRTimelineDataSource.h"
+- "./TwitterKit.framework/Headers/TWTRCollectionTimelineDataSource.h"
+- "./TwitterKit.framework/Headers/TWTRSession.h"
+- "./TwitterKit.framework/Headers/TWTRDefines.h"
+- "./TwitterKit.framework/Headers/TWTRAPIClient.h"
+- "./TwitterKit.framework/Headers/Twitter.h"
+- "/Users/williamfiset/Desktop/GitHub/MansbridgeSummit/IOS/MansbridgeSummit/TwitterCore.framework/Modules/module.modulemap"
+- "./TwitterKit.framework/Headers/TwitterKit.h"
+- "./TwitterKit.framework/Modules/module.modulemap"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreData.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/AVFoundation.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreMedia.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreAudio.swiftmodule"
+interface-hash: "a20b7ed66378229cd71b2fb77b09b1eb"

@@ -27,6 +27,6 @@
         android:topLeftRadius="0dp"
         android:bottomLeftRadius="2dp"
         android:bottomRightRadius="2dp"
-        android:background="@drawable/twitter_button" />
+        android:background="@drawable/unselected_home_button" />
 
 </LinearLayout>

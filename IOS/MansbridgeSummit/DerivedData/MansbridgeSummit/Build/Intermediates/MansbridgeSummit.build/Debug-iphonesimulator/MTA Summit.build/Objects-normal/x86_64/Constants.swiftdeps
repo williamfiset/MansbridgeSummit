@@ -1,0 +1,337 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "GC"
+provides-nominal:
+- "V16MansbridgeSummit2GC"
+- "VV16MansbridgeSummit2GC10DeviceType"
+- "VV16MansbridgeSummit2GC5Color"
+- "VV16MansbridgeSummit2GC4Font"
+provides-member:
+- ["V16MansbridgeSummit2GC", ""]
+- ["VV16MansbridgeSummit2GC10DeviceType", ""]
+- ["VV16MansbridgeSummit2GC5Color", ""]
+- ["VV16MansbridgeSummit2GC4Font", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- "UIScreen"
+- "UIFont"
+- "Bool"
+- "UIDevice"
+- "CGFloat"
+- "/"
+- "GC"
+- "MSTabBarController"
+- "StringLiteralType"
+- "=="
+- "UIColor"
+depends-member:
+- ["PSs9AnyObject", "bounds"]
+- ["PSs9AnyObject", "currentDevice"]
+- ["PSs9AnyObject", "frame"]
+- ["PSs9AnyObject", "init"]
+- ["PSs9AnyObject", "mainScreen"]
+- ["PSs9AnyObject", "tabBar"]
+- ["PSs9AnyObject", "userInterfaceIdiom"]
+- ["PSs9AnyObject", "whiteColor"]
+- ["V12CoreGraphics7CGFloat", "deinit"]
+- ["VSC6CGRect", "height"]
+- ["VSC6CGRect", "size"]
+- ["VSC6CGSize", "height"]
+- ["VSC6CGSize", "width"]
+- ["PSs11CVarArgType", "bounds"]
+- ["PSs11CVarArgType", "currentDevice"]
+- ["PSs11CVarArgType", "frame"]
+- ["PSs11CVarArgType", "init"]
+- ["PSs11CVarArgType", "mainScreen"]
+- ["PSs11CVarArgType", "tabBar"]
+- ["PSs11CVarArgType", "userInterfaceIdiom"]
+- ["PSs11CVarArgType", "whiteColor"]
+- ["VV16MansbridgeSummit2GC5Color", "UIColor"]
+- ["VV16MansbridgeSummit2GC5Color", "gold"]
+- ["VV16MansbridgeSummit2GC5Color", "init"]
+- ["VV16MansbridgeSummit2GC5Color", "red"]
+- ["VV16MansbridgeSummit2GC5Color", "white"]
+- ["PSs23CustomStringConvertible", "bounds"]
+- ["PSs23CustomStringConvertible", "currentDevice"]
+- ["PSs23CustomStringConvertible", "frame"]
+- ["PSs23CustomStringConvertible", "init"]
+- ["PSs23CustomStringConvertible", "mainScreen"]
+- ["PSs23CustomStringConvertible", "tabBar"]
+- ["PSs23CustomStringConvertible", "userInterfaceIdiom"]
+- ["PSs23CustomStringConvertible", "whiteColor"]
+- ["VV16MansbridgeSummit2GC10DeviceType", "Bool"]
+- ["VV16MansbridgeSummit2GC10DeviceType", "UIDevice"]
+- ["VV16MansbridgeSummit2GC10DeviceType", "iPad"]
+- ["VV16MansbridgeSummit2GC10DeviceType", "iPhone"]
+- ["VV16MansbridgeSummit2GC10DeviceType", "init"]
+- ["PSs9Equatable", "Pad"]
+- ["PSs9Equatable", "Phone"]
+- ["PSs9Equatable", "RawValue"]
+- ["PSs9Equatable", "bounds"]
+- ["PSs9Equatable", "currentDevice"]
+- ["PSs9Equatable", "frame"]
+- ["PSs9Equatable", "height"]
+- ["PSs9Equatable", "init"]
+- ["PSs9Equatable", "mainScreen"]
+- ["PSs9Equatable", "size"]
+- ["PSs9Equatable", "tabBar"]
+- ["PSs9Equatable", "userInterfaceIdiom"]
+- ["PSs9Equatable", "whiteColor"]
+- ["PSs9Equatable", "width"]
+- ["VV16MansbridgeSummit2GC4Font", "UIFont"]
+- ["VV16MansbridgeSummit2GC4Font", "garamond_12"]
+- ["VV16MansbridgeSummit2GC4Font", "garamond_14"]
+- ["VV16MansbridgeSummit2GC4Font", "garamond_16"]
+- ["VV16MansbridgeSummit2GC4Font", "garamond_18"]
+- ["VV16MansbridgeSummit2GC4Font", "garamond_20"]
+- ["VV16MansbridgeSummit2GC4Font", "garamond_22"]
+- ["VV16MansbridgeSummit2GC4Font", "garamond_24"]
+- ["VV16MansbridgeSummit2GC4Font", "garamond_26"]
+- ["VV16MansbridgeSummit2GC4Font", "garamond_28"]
+- ["VV16MansbridgeSummit2GC4Font", "garamond_30"]
+- ["VV16MansbridgeSummit2GC4Font", "garamond_32"]
+- ["VV16MansbridgeSummit2GC4Font", "garamond_50"]
+- ["VV16MansbridgeSummit2GC4Font", "garamond_bold_12"]
+- ["VV16MansbridgeSummit2GC4Font", "garamond_bold_14"]
+- ["VV16MansbridgeSummit2GC4Font", "garamond_bold_16"]
+- ["VV16MansbridgeSummit2GC4Font", "garamond_bold_18"]
+- ["VV16MansbridgeSummit2GC4Font", "garamond_bold_20"]
+- ["VV16MansbridgeSummit2GC4Font", "garamond_bold_22"]
+- ["VV16MansbridgeSummit2GC4Font", "garamond_bold_24"]
+- ["VV16MansbridgeSummit2GC4Font", "garamond_bold_26"]
+- ["VV16MansbridgeSummit2GC4Font", "garamond_bold_28"]
+- ["VV16MansbridgeSummit2GC4Font", "garamond_bold_30"]
+- ["VV16MansbridgeSummit2GC4Font", "garamond_bold_32"]
+- ["VV16MansbridgeSummit2GC4Font", "garamond_bold_50"]
+- ["VV16MansbridgeSummit2GC4Font", "init"]
+- ["VV16MansbridgeSummit2GC4Font", "myraidpro_12"]
+- ["VV16MansbridgeSummit2GC4Font", "myraidpro_14"]
+- ["VV16MansbridgeSummit2GC4Font", "myraidpro_16"]
+- ["VV16MansbridgeSummit2GC4Font", "myraidpro_18"]
+- ["VV16MansbridgeSummit2GC4Font", "myraidpro_20"]
+- ["VV16MansbridgeSummit2GC4Font", "myraidpro_22"]
+- ["VV16MansbridgeSummit2GC4Font", "myraidpro_24"]
+- ["VV16MansbridgeSummit2GC4Font", "myraidpro_26"]
+- ["VV16MansbridgeSummit2GC4Font", "myraidpro_28"]
+- ["VV16MansbridgeSummit2GC4Font", "myraidpro_30"]
+- ["VV16MansbridgeSummit2GC4Font", "myraidpro_32"]
+- ["VV16MansbridgeSummit2GC4Font", "myraidpro_50"]
+- ["VV16MansbridgeSummit2GC4Font", "myraidpro_bold_12"]
+- ["VV16MansbridgeSummit2GC4Font", "myraidpro_bold_14"]
+- ["VV16MansbridgeSummit2GC4Font", "myraidpro_bold_16"]
+- ["VV16MansbridgeSummit2GC4Font", "myraidpro_bold_18"]
+- ["VV16MansbridgeSummit2GC4Font", "myraidpro_bold_20"]
+- ["VV16MansbridgeSummit2GC4Font", "myraidpro_bold_22"]
+- ["VV16MansbridgeSummit2GC4Font", "myraidpro_bold_24"]
+- ["VV16MansbridgeSummit2GC4Font", "myraidpro_bold_26"]
+- ["VV16MansbridgeSummit2GC4Font", "myraidpro_bold_28"]
+- ["VV16MansbridgeSummit2GC4Font", "myraidpro_bold_30"]
+- ["VV16MansbridgeSummit2GC4Font", "myraidpro_bold_32"]
+- ["VV16MansbridgeSummit2GC4Font", "myraidpro_bold_50"]
+- ["V16MansbridgeSummit2GC", "Bool"]
+- ["V16MansbridgeSummit2GC", "CGFloat"]
+- ["V16MansbridgeSummit2GC", "Color"]
+- ["V16MansbridgeSummit2GC", "DeviceType"]
+- ["V16MansbridgeSummit2GC", "Font"]
+- ["V16MansbridgeSummit2GC", "MSTabBarController"]
+- ["V16MansbridgeSummit2GC", "SCREEN_HEIGHT"]
+- ["V16MansbridgeSummit2GC", "SCREEN_WIDTH"]
+- ["V16MansbridgeSummit2GC", "TAB_BAR_HEIGHT"]
+- ["V16MansbridgeSummit2GC", "UIColor"]
+- ["V16MansbridgeSummit2GC", "UIDevice"]
+- ["V16MansbridgeSummit2GC", "UIFont"]
+- ["V16MansbridgeSummit2GC", "UIScreen"]
+- ["V16MansbridgeSummit2GC", "init"]
+- ["V16MansbridgeSummit2GC", "screenRect"]
+- ["PSs8Hashable", "Pad"]
+- ["PSs8Hashable", "Phone"]
+- ["PSs8Hashable", "RawValue"]
+- ["PSs8Hashable", "bounds"]
+- ["PSs8Hashable", "currentDevice"]
+- ["PSs8Hashable", "frame"]
+- ["PSs8Hashable", "init"]
+- ["PSs8Hashable", "mainScreen"]
+- ["PSs8Hashable", "tabBar"]
+- ["PSs8Hashable", "userInterfaceIdiom"]
+- ["PSs8Hashable", "whiteColor"]
+- ["C16MansbridgeSummit18MSTabBarController", "init"]
+- ["C16MansbridgeSummit18MSTabBarController", "tabBar"]
+- ["PSo8NSCoding", "frame"]
+- ["PSo8NSCoding", "init"]
+- ["PSo8NSCoding", "tabBar"]
+- ["PSo8NSCoding", "whiteColor"]
+- ["PSo9NSCopying", "init"]
+- ["PSo9NSCopying", "whiteColor"]
+- ["PSo26NSExtensionRequestHandling", "init"]
+- ["PSo26NSExtensionRequestHandling", "tabBar"]
+- ["CSo8NSObject", "bounds"]
+- ["CSo8NSObject", "currentDevice"]
+- ["CSo8NSObject", "frame"]
+- ["CSo8NSObject", "init"]
+- ["CSo8NSObject", "mainScreen"]
+- ["CSo8NSObject", "tabBar"]
+- ["CSo8NSObject", "userInterfaceIdiom"]
+- ["CSo8NSObject", "whiteColor"]
+- ["PSo16NSObjectProtocol", "bounds"]
+- ["PSo16NSObjectProtocol", "currentDevice"]
+- ["PSo16NSObjectProtocol", "frame"]
+- ["PSo16NSObjectProtocol", "init"]
+- ["PSo16NSObjectProtocol", "mainScreen"]
+- ["PSo16NSObjectProtocol", "tabBar"]
+- ["PSo16NSObjectProtocol", "userInterfaceIdiom"]
+- ["PSo16NSObjectProtocol", "whiteColor"]
+- ["PSo14NSSecureCoding", "init"]
+- ["PSo14NSSecureCoding", "whiteColor"]
+- ["PSs16RawRepresentable", "Pad"]
+- ["PSs16RawRepresentable", "Phone"]
+- ["PSs16RawRepresentable", "RawValue"]
+- ["PSo29UIAccessibilityIdentification", "frame"]
+- ["PSo12UIAppearance", "frame"]
+- ["PSo21UIAppearanceContainer", "frame"]
+- ["PSo21UIAppearanceContainer", "init"]
+- ["PSo21UIAppearanceContainer", "tabBar"]
+- ["CSo7UIColor", "init"]
+- ["CSo7UIColor", "whiteColor"]
+- ["PSo18UIContentContainer", "init"]
+- ["PSo18UIContentContainer", "tabBar"]
+- ["PSo17UICoordinateSpace", "frame"]
+- ["CSo8UIDevice", "currentDevice"]
+- ["CSo8UIDevice", "userInterfaceIdiom"]
+- ["PSo13UIDynamicItem", "frame"]
+- ["CSo6UIFont", "init"]
+- ["CSo11UIResponder", "frame"]
+- ["CSo11UIResponder", "init"]
+- ["CSo11UIResponder", "tabBar"]
+- ["CSo8UIScreen", "bounds"]
+- ["CSo8UIScreen", "mainScreen"]
+- ["PSo16UIStateRestoring", "init"]
+- ["PSo16UIStateRestoring", "tabBar"]
+- ["CSo8UITabBar", "frame"]
+- ["CSo18UITabBarController", "init"]
+- ["CSo18UITabBarController", "tabBar"]
+- ["PSo16UITabBarDelegate", "init"]
+- ["PSo16UITabBarDelegate", "tabBar"]
+- ["PSo18UITraitEnvironment", "bounds"]
+- ["PSo18UITraitEnvironment", "frame"]
+- ["PSo18UITraitEnvironment", "init"]
+- ["PSo18UITraitEnvironment", "mainScreen"]
+- ["PSo18UITraitEnvironment", "tabBar"]
+- ["OSC20UIUserInterfaceIdiom", "Pad"]
+- ["OSC20UIUserInterfaceIdiom", "Phone"]
+- ["OSC20UIUserInterfaceIdiom", "RawValue"]
+- ["OSC20UIUserInterfaceIdiom", "deinit"]
+- ["CSo6UIView", "frame"]
+- ["CSo16UIViewController", "init"]
+- ["CSo16UIViewController", "tabBar"]
+- ["PSs24_ColorLiteralConvertible", "init"]
+- ["PSs24_ColorLiteralConvertible", "whiteColor"]
+- ["PSs12_Reflectable", "frame"]
+- ["PSs12_Reflectable", "height"]
+- ["PSs12_Reflectable", "size"]
+- ["PSs12_Reflectable", "width"]
+depends-nominal:
+- "PSs9AnyObject"
+- "V12CoreGraphics7CGFloat"
+- "VSC6CGRect"
+- "VSC6CGSize"
+- "PSs11CVarArgType"
+- "VV16MansbridgeSummit2GC5Color"
+- "PSs23CustomStringConvertible"
+- "VV16MansbridgeSummit2GC10DeviceType"
+- "PSs9Equatable"
+- "VV16MansbridgeSummit2GC4Font"
+- "V16MansbridgeSummit2GC"
+- "PSs8Hashable"
+- "C16MansbridgeSummit18MSTabBarController"
+- "PSo8NSCoding"
+- "PSo9NSCopying"
+- "PSo26NSExtensionRequestHandling"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- "PSo14NSSecureCoding"
+- "PSs16RawRepresentable"
+- "PSo29UIAccessibilityIdentification"
+- "PSo12UIAppearance"
+- "PSo21UIAppearanceContainer"
+- "CSo7UIColor"
+- "PSo18UIContentContainer"
+- "PSo17UICoordinateSpace"
+- "CSo8UIDevice"
+- "PSo13UIDynamicItem"
+- "CSo6UIFont"
+- "CSo11UIResponder"
+- "CSo8UIScreen"
+- "PSo16UIStateRestoring"
+- "CSo8UITabBar"
+- "CSo18UITabBarController"
+- "PSo16UITabBarDelegate"
+- "PSo18UITraitEnvironment"
+- "OSC20UIUserInterfaceIdiom"
+- "CSo6UIView"
+- "CSo16UIViewController"
+- "PSs24_ColorLiteralConvertible"
+- "PSs12_Reflectable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/shims/UnicodeShims.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/shims/RuntimeStubs.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/shims/RuntimeShims.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/shims/RefCount.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/shims/HeapObject.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/shims/GlobalObjects.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/shims/FoundationShims.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/shims/SwiftStddef.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/shims/DarwinShims.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/shims/SwiftStdint.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/shims/CoreFoundationShims.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/shims/module.map"
+- "/Users/williamfiset/Desktop/GitHub/MansbridgeSummit/IOS/MansbridgeSummit/MansbridgeSummit/MansbridgeSummit-Bridging-Header.h"
+- "/Users/williamfiset/Desktop/GitHub/MansbridgeSummit/IOS/MansbridgeSummit/MansbridgeSummit/Reachability.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Users/williamfiset/Desktop/GitHub/MansbridgeSummit/IOS/MansbridgeSummit/MansbridgeSummit/Connection.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "./Fabric.framework/Headers/FABAttributes.h"
+- "./Fabric.framework/Headers/Fabric.h"
+- "./Fabric.framework/Modules/module.modulemap"
+- "./TwitterCore.framework/Headers/TWTRGuestSession.h"
+- "./TwitterCore.framework/Headers/TWTRCoreOAuthSigning.h"
+- "./TwitterCore.framework/Headers/TWTRConstants.h"
+- "./TwitterCore.framework/Headers/TWTRAuthSession.h"
+- "./TwitterCore.framework/Headers/TWTRAuthConfig.h"
+- "./TwitterCore.framework/Headers/TWTRAPIErrorCode.h"
+- "./TwitterCore.framework/Headers/TwitterCore.h"
+- "./TwitterCore.framework/Modules/module.modulemap"
+- "./TwitterKit.framework/Headers/TWTRUserTimelineDataSource.h"
+- "./TwitterKit.framework/Headers/TWTRUser.h"
+- "./TwitterKit.framework/Headers/TWTRTweetViewDelegate.h"
+- "./TwitterKit.framework/Headers/TWTRTweetView.h"
+- "./TwitterKit.framework/Headers/TWTRTweetTableViewCell.h"
+- "./TwitterKit.framework/Headers/TWTRTweet.h"
+- "./TwitterKit.framework/Headers/TWTRTimelineViewController.h"
+- "./TwitterKit.framework/Headers/TWTRShareEmailViewController.h"
+- "./TwitterKit.framework/Headers/TWTRSearchTimelineDataSource.h"
+- "./TwitterKit.framework/Headers/TWTROAuthSigning.h"
+- "./TwitterKit.framework/Headers/TWTRLogInButton.h"
+- "./TwitterKit.framework/Headers/TWTRListTimelineDataSource.h"
+- "./TwitterKit.framework/Headers/TWTRComposer.h"
+- "./TwitterKit.framework/Headers/TWTRTimelineType.h"
+- "./TwitterKit.framework/Headers/TWTRTimelineDataSource.h"
+- "./TwitterKit.framework/Headers/TWTRCollectionTimelineDataSource.h"
+- "./TwitterKit.framework/Headers/TWTRSession.h"
+- "./TwitterKit.framework/Headers/TWTRDefines.h"
+- "./TwitterKit.framework/Headers/TWTRAPIClient.h"
+- "./TwitterKit.framework/Headers/Twitter.h"
+- "/Users/williamfiset/Desktop/GitHub/MansbridgeSummit/IOS/MansbridgeSummit/TwitterCore.framework/Modules/module.modulemap"
+- "./TwitterKit.framework/Headers/TwitterKit.h"
+- "./TwitterKit.framework/Modules/module.modulemap"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreData.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/AVFoundation.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreMedia.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreAudio.swiftmodule"
+interface-hash: "3c59ac3bfb00b715225f843bdeac519e"

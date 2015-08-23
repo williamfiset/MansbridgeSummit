@@ -1,0 +1,251 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "MSScheduleUITableViewCell"
+provides-nominal:
+- "C16MansbridgeSummit25MSScheduleUITableViewCell"
+provides-member:
+- ["C16MansbridgeSummit25MSScheduleUITableViewCell", ""]
+provides-dynamic-lookup:
+- "descriptionLabel"
+- "setSelected"
+- "timeLabel"
+- "nameLabel"
+- "awakeFromNib"
+depends-top-level:
+- "UITableViewCell"
+- "MSScheduleUITableViewCell"
+- "UILabel"
+- "Bool"
+depends-member:
+- ["PSs9AnyObject", "awakeFromNib"]
+- ["PSs9AnyObject", "descriptionLabel"]
+- ["PSs9AnyObject", "init"]
+- ["PSs9AnyObject", "nameLabel"]
+- ["PSs9AnyObject", "setSelected"]
+- ["PSs9AnyObject", "timeLabel"]
+- ["PSs9AnyObject", ""]
+- ["PSs11CVarArgType", "awakeFromNib"]
+- ["PSs11CVarArgType", "descriptionLabel"]
+- ["PSs11CVarArgType", "init"]
+- ["PSs11CVarArgType", "nameLabel"]
+- ["PSs11CVarArgType", "setSelected"]
+- ["PSs11CVarArgType", "timeLabel"]
+- ["PSs11CVarArgType", ""]
+- ["PSs23CustomStringConvertible", "awakeFromNib"]
+- ["PSs23CustomStringConvertible", "descriptionLabel"]
+- ["PSs23CustomStringConvertible", "init"]
+- ["PSs23CustomStringConvertible", "nameLabel"]
+- ["PSs23CustomStringConvertible", "setSelected"]
+- ["PSs23CustomStringConvertible", "timeLabel"]
+- ["PSs23CustomStringConvertible", ""]
+- ["PSs9Equatable", "awakeFromNib"]
+- ["PSs9Equatable", "descriptionLabel"]
+- ["PSs9Equatable", "init"]
+- ["PSs9Equatable", "nameLabel"]
+- ["PSs9Equatable", "setSelected"]
+- ["PSs9Equatable", "timeLabel"]
+- ["PSs9Equatable", ""]
+- ["PSs8Hashable", "awakeFromNib"]
+- ["PSs8Hashable", "descriptionLabel"]
+- ["PSs8Hashable", "init"]
+- ["PSs8Hashable", "nameLabel"]
+- ["PSs8Hashable", "setSelected"]
+- ["PSs8Hashable", "timeLabel"]
+- ["PSs8Hashable", ""]
+- ["C16MansbridgeSummit25MSScheduleUITableViewCell", "Bool"]
+- ["C16MansbridgeSummit25MSScheduleUITableViewCell", "UILabel"]
+- ["C16MansbridgeSummit25MSScheduleUITableViewCell", "awakeFromNib"]
+- ["C16MansbridgeSummit25MSScheduleUITableViewCell", "deinit"]
+- ["C16MansbridgeSummit25MSScheduleUITableViewCell", "descriptionLabel"]
+- ["C16MansbridgeSummit25MSScheduleUITableViewCell", "init"]
+- ["C16MansbridgeSummit25MSScheduleUITableViewCell", "nameLabel"]
+- ["C16MansbridgeSummit25MSScheduleUITableViewCell", "setSelected"]
+- ["C16MansbridgeSummit25MSScheduleUITableViewCell", "timeLabel"]
+- ["PSo8NSCoding", "awakeFromNib"]
+- ["PSo8NSCoding", "descriptionLabel"]
+- ["PSo8NSCoding", "init"]
+- ["PSo8NSCoding", "nameLabel"]
+- ["PSo8NSCoding", "setSelected"]
+- ["PSo8NSCoding", "timeLabel"]
+- ["PSo8NSCoding", ""]
+- ["CSo8NSObject", "Bool"]
+- ["CSo8NSObject", "UILabel"]
+- ["CSo8NSObject", "awakeFromNib"]
+- ["CSo8NSObject", "descriptionLabel"]
+- ["CSo8NSObject", "init"]
+- ["CSo8NSObject", "nameLabel"]
+- ["CSo8NSObject", "setSelected"]
+- ["CSo8NSObject", "timeLabel"]
+- ["PSo16NSObjectProtocol", "awakeFromNib"]
+- ["PSo16NSObjectProtocol", "descriptionLabel"]
+- ["PSo16NSObjectProtocol", "init"]
+- ["PSo16NSObjectProtocol", "nameLabel"]
+- ["PSo16NSObjectProtocol", "setSelected"]
+- ["PSo16NSObjectProtocol", "timeLabel"]
+- ["PSo16NSObjectProtocol", ""]
+- ["PSo29UIAccessibilityIdentification", "awakeFromNib"]
+- ["PSo29UIAccessibilityIdentification", "descriptionLabel"]
+- ["PSo29UIAccessibilityIdentification", "init"]
+- ["PSo29UIAccessibilityIdentification", "nameLabel"]
+- ["PSo29UIAccessibilityIdentification", "setSelected"]
+- ["PSo29UIAccessibilityIdentification", "timeLabel"]
+- ["PSo29UIAccessibilityIdentification", ""]
+- ["PSo12UIAppearance", "awakeFromNib"]
+- ["PSo12UIAppearance", "descriptionLabel"]
+- ["PSo12UIAppearance", "init"]
+- ["PSo12UIAppearance", "nameLabel"]
+- ["PSo12UIAppearance", "setSelected"]
+- ["PSo12UIAppearance", "timeLabel"]
+- ["PSo12UIAppearance", ""]
+- ["PSo21UIAppearanceContainer", "awakeFromNib"]
+- ["PSo21UIAppearanceContainer", "descriptionLabel"]
+- ["PSo21UIAppearanceContainer", "init"]
+- ["PSo21UIAppearanceContainer", "nameLabel"]
+- ["PSo21UIAppearanceContainer", "setSelected"]
+- ["PSo21UIAppearanceContainer", "timeLabel"]
+- ["PSo21UIAppearanceContainer", ""]
+- ["PSo17UICoordinateSpace", "awakeFromNib"]
+- ["PSo17UICoordinateSpace", "descriptionLabel"]
+- ["PSo17UICoordinateSpace", "init"]
+- ["PSo17UICoordinateSpace", "nameLabel"]
+- ["PSo17UICoordinateSpace", "setSelected"]
+- ["PSo17UICoordinateSpace", "timeLabel"]
+- ["PSo17UICoordinateSpace", ""]
+- ["PSo13UIDynamicItem", "awakeFromNib"]
+- ["PSo13UIDynamicItem", "descriptionLabel"]
+- ["PSo13UIDynamicItem", "init"]
+- ["PSo13UIDynamicItem", "nameLabel"]
+- ["PSo13UIDynamicItem", "setSelected"]
+- ["PSo13UIDynamicItem", "timeLabel"]
+- ["PSo13UIDynamicItem", ""]
+- ["PSo27UIGestureRecognizerDelegate", "awakeFromNib"]
+- ["PSo27UIGestureRecognizerDelegate", "descriptionLabel"]
+- ["PSo27UIGestureRecognizerDelegate", "init"]
+- ["PSo27UIGestureRecognizerDelegate", "nameLabel"]
+- ["PSo27UIGestureRecognizerDelegate", "setSelected"]
+- ["PSo27UIGestureRecognizerDelegate", "timeLabel"]
+- ["PSo27UIGestureRecognizerDelegate", ""]
+- ["CSo11UIResponder", "Bool"]
+- ["CSo11UIResponder", "UILabel"]
+- ["CSo11UIResponder", "awakeFromNib"]
+- ["CSo11UIResponder", "descriptionLabel"]
+- ["CSo11UIResponder", "init"]
+- ["CSo11UIResponder", "nameLabel"]
+- ["CSo11UIResponder", "setSelected"]
+- ["CSo11UIResponder", "timeLabel"]
+- ["CSo15UITableViewCell", "Bool"]
+- ["CSo15UITableViewCell", "UILabel"]
+- ["CSo15UITableViewCell", "awakeFromNib"]
+- ["CSo15UITableViewCell", "descriptionLabel"]
+- ["CSo15UITableViewCell", "init"]
+- ["CSo15UITableViewCell", "nameLabel"]
+- ["CSo15UITableViewCell", "setSelected"]
+- ["CSo15UITableViewCell", "timeLabel"]
+- ["CSo15UITableViewCell", ""]
+- ["PSo18UITraitEnvironment", "awakeFromNib"]
+- ["PSo18UITraitEnvironment", "descriptionLabel"]
+- ["PSo18UITraitEnvironment", "init"]
+- ["PSo18UITraitEnvironment", "nameLabel"]
+- ["PSo18UITraitEnvironment", "setSelected"]
+- ["PSo18UITraitEnvironment", "timeLabel"]
+- ["PSo18UITraitEnvironment", ""]
+- ["CSo6UIView", "Bool"]
+- ["CSo6UIView", "UILabel"]
+- ["CSo6UIView", "awakeFromNib"]
+- ["CSo6UIView", "descriptionLabel"]
+- ["CSo6UIView", "init"]
+- ["CSo6UIView", "nameLabel"]
+- ["CSo6UIView", "setSelected"]
+- ["CSo6UIView", "timeLabel"]
+- ["PSs12_Reflectable", "awakeFromNib"]
+- ["PSs12_Reflectable", "descriptionLabel"]
+- ["PSs12_Reflectable", "init"]
+- ["PSs12_Reflectable", "nameLabel"]
+- ["PSs12_Reflectable", "setSelected"]
+- ["PSs12_Reflectable", "timeLabel"]
+- ["PSs12_Reflectable", ""]
+depends-nominal:
+- "PSs9AnyObject"
+- "PSs11CVarArgType"
+- "PSs23CustomStringConvertible"
+- "PSs9Equatable"
+- "PSs8Hashable"
+- "C16MansbridgeSummit25MSScheduleUITableViewCell"
+- "PSo8NSCoding"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- "PSo29UIAccessibilityIdentification"
+- "PSo12UIAppearance"
+- "PSo21UIAppearanceContainer"
+- "PSo17UICoordinateSpace"
+- "PSo13UIDynamicItem"
+- "PSo27UIGestureRecognizerDelegate"
+- "CSo11UIResponder"
+- "CSo15UITableViewCell"
+- "PSo18UITraitEnvironment"
+- "CSo6UIView"
+- "PSs12_Reflectable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/shims/UnicodeShims.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/shims/RuntimeStubs.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/shims/RuntimeShims.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/shims/RefCount.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/shims/HeapObject.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/shims/GlobalObjects.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/shims/FoundationShims.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/shims/SwiftStddef.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/shims/DarwinShims.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/shims/SwiftStdint.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/shims/CoreFoundationShims.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/shims/module.map"
+- "/Users/williamfiset/Desktop/GitHub/MansbridgeSummit/IOS/MansbridgeSummit/MansbridgeSummit/MansbridgeSummit-Bridging-Header.h"
+- "/Users/williamfiset/Desktop/GitHub/MansbridgeSummit/IOS/MansbridgeSummit/MansbridgeSummit/Reachability.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Users/williamfiset/Desktop/GitHub/MansbridgeSummit/IOS/MansbridgeSummit/MansbridgeSummit/Connection.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "./Fabric.framework/Headers/FABAttributes.h"
+- "./Fabric.framework/Headers/Fabric.h"
+- "./Fabric.framework/Modules/module.modulemap"
+- "./TwitterCore.framework/Headers/TWTRGuestSession.h"
+- "./TwitterCore.framework/Headers/TWTRCoreOAuthSigning.h"
+- "./TwitterCore.framework/Headers/TWTRConstants.h"
+- "./TwitterCore.framework/Headers/TWTRAuthSession.h"
+- "./TwitterCore.framework/Headers/TWTRAuthConfig.h"
+- "./TwitterCore.framework/Headers/TWTRAPIErrorCode.h"
+- "./TwitterCore.framework/Headers/TwitterCore.h"
+- "./TwitterCore.framework/Modules/module.modulemap"
+- "./TwitterKit.framework/Headers/TWTRUserTimelineDataSource.h"
+- "./TwitterKit.framework/Headers/TWTRUser.h"
+- "./TwitterKit.framework/Headers/TWTRTweetViewDelegate.h"
+- "./TwitterKit.framework/Headers/TWTRTweetView.h"
+- "./TwitterKit.framework/Headers/TWTRTweetTableViewCell.h"
+- "./TwitterKit.framework/Headers/TWTRTweet.h"
+- "./TwitterKit.framework/Headers/TWTRTimelineViewController.h"
+- "./TwitterKit.framework/Headers/TWTRShareEmailViewController.h"
+- "./TwitterKit.framework/Headers/TWTRSearchTimelineDataSource.h"
+- "./TwitterKit.framework/Headers/TWTROAuthSigning.h"
+- "./TwitterKit.framework/Headers/TWTRLogInButton.h"
+- "./TwitterKit.framework/Headers/TWTRListTimelineDataSource.h"
+- "./TwitterKit.framework/Headers/TWTRComposer.h"
+- "./TwitterKit.framework/Headers/TWTRTimelineType.h"
+- "./TwitterKit.framework/Headers/TWTRTimelineDataSource.h"
+- "./TwitterKit.framework/Headers/TWTRCollectionTimelineDataSource.h"
+- "./TwitterKit.framework/Headers/TWTRSession.h"
+- "./TwitterKit.framework/Headers/TWTRDefines.h"
+- "./TwitterKit.framework/Headers/TWTRAPIClient.h"
+- "./TwitterKit.framework/Headers/Twitter.h"
+- "/Users/williamfiset/Desktop/GitHub/MansbridgeSummit/IOS/MansbridgeSummit/TwitterCore.framework/Modules/module.modulemap"
+- "./TwitterKit.framework/Headers/TwitterKit.h"
+- "./TwitterKit.framework/Modules/module.modulemap"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreData.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/AVFoundation.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreMedia.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreAudio.swiftmodule"
+interface-hash: "6d5d7525879c279ae0bf13ecf0f67ebc"

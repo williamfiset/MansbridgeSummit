@@ -91,8 +91,14 @@
                 android:text="MS"
                 android:textColor="#fff"
                 android:layout_weight="1.0"
+
+                android:background="@drawable/selected_home_button"
+                android:layout_marginLeft="9dp"
+                android:layout_marginRight="3dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="6dp"
                 />
-            <!--android:backgroundTint="@color/gold"-->
+
             <Button
                 android:id="@+id/home_button2"
                 android:layout_width="wrap_content"
@@ -100,8 +106,14 @@
                 android:text="RM"
                 android:textColor="#fff"
                 android:layout_weight="1.0"
+
+                android:background="@drawable/unselected_home_button"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="6dp"
                 />
-            <!--android:backgroundTint="@color/gold"-->
+
             <Button
                 android:id="@+id/home_button3"
                 android:layout_width="wrap_content"
@@ -110,8 +122,11 @@
                 android:textColor="#fff"
                 android:layout_weight="1.0"
 
-                />
-            <!--android:backgroundTint="@color/gold"-->
+                android:background="@drawable/unselected_home_button"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="6dp"                />
 
             <Button
                 android:id="@+id/home_button4"
@@ -120,8 +135,14 @@
                 android:text="JC"
                 android:textColor="#fff"
                 android:layout_weight="1.0"
+
+                android:background="@drawable/unselected_home_button"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="6dp"
                 />
-            <!--android:backgroundTint="@color/gold"-->
+
             <Button
                 android:id="@+id/home_button5"
                 android:layout_width="wrap_content"
@@ -129,8 +150,13 @@
                 android:text="ATG"
                 android:textColor="#fff"
                 android:layout_weight="1.0"
+
+                android:background="@drawable/unselected_home_button"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="9dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="6dp"
                 />
-            <!--android:backgroundTint="@color/gold"-->
 
         </LinearLayout>
 

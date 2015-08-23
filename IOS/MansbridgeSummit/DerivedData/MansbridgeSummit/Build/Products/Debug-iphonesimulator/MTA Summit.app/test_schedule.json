@@ -1,0 +1,115 @@
+{
+    "schedule":[
+                {
+                "date" : "Saturday November 2nd",
+                "events": [
+                           {
+                           "eventTime":"11:00am",
+                           "eventName":"Rat disection",
+                           "eventLocation":"Crabtree 2nd floor room 415c",
+                           "eventDescription":"Students will learn how to disect rats infected with Gastroenteritis disease",
+                           "eventSpeaker":"Isaac Newton"
+                           },
+                           {
+                           "eventTime":"2:30pm",
+                           "eventName":"Moral values with Henry VIII",
+                           "eventLocation":"Dunn first floor in room 108",
+                           "eventDescription":"Henry VIII lecturing on family values and the importance of respecting your wife.",
+                           "eventSpeaker":"Henry VIII"
+                           },
+                           {
+                           "eventTime":"10:00pm",
+                           "eventName":"The Copernican System",
+                           "eventLocation":"Mount Allison Observatory southwest of James Dunn building",
+                           "eventDescription":"Indulge in observing the planets with Copernicus and his new model of the solar system",
+                           "eventSpeaker":"Nicolaus Copernicus"
+                           }
+                           ]
+                },
+                {
+                "date":"Sunday November 3rd",
+                "events": [
+                           {
+                           "eventTime":"8:30am",
+                           "eventName":"A taste of evolution",
+                           "eventLocation":"Hart Hall top floor conference room",
+                           "eventDescription":"Lecture on evolution sponsered by Peter Mansbridge. Topics covered will include: Natural selection, the trip of the Beagle voyage, Speciation and a brief overview of our ansectors",
+                           "eventSpeaker":"Charles Darwin"
+                           },
+                           {
+                           "eventTime":"11:15pm",
+                           "eventName":"Mathemtical modelling",
+                           "eventLocation":"Flemmington building large auditorium",
+                           "eventDescription":"Hands on engineering and mathmetical modeling with geometric shapes",
+                           "eventSpeaker":"Archimedes"
+                           }
+                           ]
+                },
+                {
+                "date" : "Monday November 4th",
+                "events": [
+                           {
+                           "eventTime":"4:30am",
+                           "eventName":"Painting a Starry Night",
+                           "eventLocation":"Spawn pond",
+                           "eventDescription":"Learning how to paint the Starry Night with Oil paints at Dawn",
+                           "eventSpeaker":"Vincent Van Gogh"
+                           },
+                           {
+                           "eventTime":"9:00am",
+                           "eventName":"The meaning of life",
+                           "eventLocation":"Barclay",
+                           "eventDescription":"Video of Plato on the meaning of life and our position within"
+                           },
+                           {
+                           "eventTime":"3:30pm",
+                           "eventName":"Speed cubing",
+                           "eventLocation":"James Dunn the Wu centre",
+                           "eventDescription":"Mastering speed cubing the ulmimate guide",
+                           "eventSpeaker":"Micah Stairs"
+                           },
+                           {
+                           "eventTime":"6:00pm",
+                           "eventName":"Quantum electro-dynamics",
+                           "eventLocation":"Crabtree 1st floor M14",
+                           "eventDescription":"An inner view into Quantum electro-dynamics and the hidden world",
+                           "eventSpeaker":"Richard Feynman"
+                           }
+                           ]
+                },
+                {
+                "date" : "Tuesday November 5th",
+                "events" : [
+                            {
+                            "eventTime":"9:45am",
+                            "eventName":"Walking on water",
+                            "eventLocation":"South of Nazareth",
+                            "eventDescription":"Learn the secret behind walking on water with the son of god in just under half an hour!",
+                            "eventSpeaker":"Jesus"
+                            },
+                            {
+                            "eventTime":"11:00am",
+                            "eventName":"How to create radio waves",
+                            "eventLocation":"James Dunn",
+                            "eventDescription":"Create your very own radio with homebrew materials",
+                            "eventSpeaker":"Nikola Tesla"
+                            },
+                            {
+                            "eventTime":"3:30pm",
+                            "eventName":"Speed cubing",
+                            "eventLocation":"James Dunn the Wu centre",
+                            "eventDescription":"Mastering speed cubing the ulmimate guide",
+                            "eventSpeaker":"Micah Stairs"
+                            },
+                            {
+                            "eventTime":"6:00pm",
+                            "eventName":"Quantum electro-dynamics",
+                            "eventLocation":"Crabtree 1st floor M14",
+                            "eventDescription":"An inner view into Quantum electro-dynamics and the hidden world",
+                            "eventSpeaker":"Richard Feynman"
+                            }
+                            ]
+                }
+                ]
+}
+

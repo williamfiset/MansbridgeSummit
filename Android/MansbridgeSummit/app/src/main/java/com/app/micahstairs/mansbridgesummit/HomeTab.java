@@ -16,6 +16,9 @@ import com.nostra13.universalimageloader.core.listener.ImageLoadingListener;
 import android.net.*;
 import android.content.*;
 import org.json.*;
+import android.graphics.*;
+import android.graphics.drawable.*;
+import android.support.v4.content.*;
 
 /**
  * A placeholder fragment containing a simple view.
@@ -173,11 +176,13 @@ public class HomeTab extends Fragment {
         button4 = (Button) rootView.findViewById(R.id.home_button4);
         button5 = (Button) rootView.findViewById(R.id.home_button5);
 
-        button1.setBackgroundColor(getResources().getColor(R.color.garnet));
-        button2.setBackgroundColor(getResources().getColor(R.color.gold));
-        button3.setBackgroundColor(getResources().getColor(R.color.gold));
-        button4.setBackgroundColor(getResources().getColor(R.color.gold));
-        button5.setBackgroundColor(getResources().getColor(R.color.gold));
+        button1.setPadding(5,0,5,0);
+//
+//        button1.setBackgroundColor(getResources().getColor(R.color.garnet));
+//        button2.setBackgroundColor(getResources().getColor(R.color.gold));
+//        button3.setBackgroundColor(getResources().getColor(R.color.gold));
+//        button4.setBackgroundColor(getResources().getColor(R.color.gold));
+//        button5.setBackgroundColor(getResources().getColor(R.color.gold));
 
         button1.setOnClickListener(new View.OnClickListener() {
             @Override public void onClick(View v) {
@@ -204,6 +209,7 @@ public class HomeTab extends Fragment {
                 changeSelectedButton(4);
             }
         });
+
     }
 
     private void changeSelectedButton(int index) {
@@ -219,7 +225,6 @@ public class HomeTab extends Fragment {
         }
 
     }
-
 
 }
 

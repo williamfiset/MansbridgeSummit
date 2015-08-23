@@ -1,0 +1,469 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "MSDay"
+- "MSEvent"
+- "readSchedule"
+provides-nominal:
+- "V16MansbridgeSummit5MSDay"
+- "V16MansbridgeSummit7MSEvent"
+provides-member:
+- ["V16MansbridgeSummit5MSDay", ""]
+- ["V16MansbridgeSummit7MSEvent", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- "String"
+- "MSEvent"
+- "MSDay"
+- !private "=="
+- !private "StringLiteralType"
+- "CustomStringConvertible"
+- "JSON"
+- "readSchedule"
+- !private "UnicodeScalarType"
+depends-member:
+- !private ["PSs9AnyObject", "init"]
+- !private ["Sa", "Generator"]
+- !private ["Sa", "Index"]
+- !private ["Sa", "SubSequence"]
+- !private ["Sa", "_Element"]
+- !private ["Sa", "append"]
+- !private ["Sa", "deinit"]
+- !private ["PSs23ArrayLiteralConvertible", "Generator"]
+- !private ["PSs23ArrayLiteralConvertible", "Index"]
+- !private ["PSs23ArrayLiteralConvertible", "SubSequence"]
+- !private ["PSs23ArrayLiteralConvertible", "_Element"]
+- !private ["PSs23ArrayLiteralConvertible", "append"]
+- !private ["PSs23ArrayLiteralConvertible", "array"]
+- !private ["PSs23ArrayLiteralConvertible", "arrayValue"]
+- !private ["PSs23ArrayLiteralConvertible", "string"]
+- !private ["PSs23ArrayLiteralConvertible", "stringValue"]
+- !private ["PSs23ArrayLiteralConvertible", "subscript"]
+- !private ["VSs10ArraySlice", "Generator"]
+- !private ["VSs10ArraySlice", "Index"]
+- !private ["PSs22BidirectionalIndexType", "Distance"]
+- !private ["PSs22BidirectionalIndexType", "IntegerLiteralType"]
+- !private ["PSs21BitwiseOperationsType", "Distance"]
+- !private ["PSs21BitwiseOperationsType", "IntegerLiteralType"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["Sb", "deinit"]
+- !private ["PSs25BooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["PSs25BooleanLiteralConvertible", "array"]
+- !private ["PSs25BooleanLiteralConvertible", "arrayValue"]
+- !private ["PSs25BooleanLiteralConvertible", "string"]
+- !private ["PSs25BooleanLiteralConvertible", "stringValue"]
+- !private ["PSs25BooleanLiteralConvertible", "subscript"]
+- !private ["PSs11BooleanType", "_getBuiltinLogicValue"]
+- !private ["PSs11BooleanType", "array"]
+- !private ["PSs11BooleanType", "arrayValue"]
+- !private ["PSs11BooleanType", "string"]
+- !private ["PSs11BooleanType", "stringValue"]
+- !private ["PSs11BooleanType", "subscript"]
+- !private ["PSs11CVarArgType", "Distance"]
+- !private ["PSs11CVarArgType", "IntegerLiteralType"]
+- !private ["PSs11CVarArgType", "init"]
+- !private ["VSs9Character", "deinit"]
+- !private ["PSs14CollectionType", "Generator"]
+- !private ["PSs14CollectionType", "Index"]
+- !private ["PSs14CollectionType", "SubSequence"]
+- !private ["PSs14CollectionType", "_Element"]
+- !private ["PSs14CollectionType", "append"]
+- !private ["PSs10Comparable", "Distance"]
+- !private ["PSs10Comparable", "IntegerLiteralType"]
+- !private ["PSs10Comparable", "array"]
+- !private ["PSs10Comparable", "arrayValue"]
+- !private ["PSs10Comparable", "init"]
+- !private ["PSs10Comparable", "string"]
+- !private ["PSs10Comparable", "stringValue"]
+- !private ["PSs10Comparable", "subscript"]
+- !private ["PSs28CustomDebugStringConvertible", "Generator"]
+- !private ["PSs28CustomDebugStringConvertible", "Index"]
+- ["PSs28CustomDebugStringConvertible", "Some"]
+- !private ["PSs28CustomDebugStringConvertible", "SubSequence"]
+- !private ["PSs28CustomDebugStringConvertible", "_Element"]
+- !private ["PSs28CustomDebugStringConvertible", "append"]
+- !private ["PSs28CustomDebugStringConvertible", "array"]
+- !private ["PSs28CustomDebugStringConvertible", "arrayValue"]
+- !private ["PSs28CustomDebugStringConvertible", "init"]
+- !private ["PSs28CustomDebugStringConvertible", "string"]
+- !private ["PSs28CustomDebugStringConvertible", "stringValue"]
+- !private ["PSs28CustomDebugStringConvertible", "subscript"]
+- !private ["PSs23CustomStringConvertible", "Distance"]
+- !private ["PSs23CustomStringConvertible", "Generator"]
+- !private ["PSs23CustomStringConvertible", "Index"]
+- !private ["PSs23CustomStringConvertible", "IntegerLiteralType"]
+- !private ["PSs23CustomStringConvertible", "SubSequence"]
+- !private ["PSs23CustomStringConvertible", "_Element"]
+- !private ["PSs23CustomStringConvertible", "_getBuiltinLogicValue"]
+- !private ["PSs23CustomStringConvertible", "append"]
+- !private ["PSs23CustomStringConvertible", "array"]
+- !private ["PSs23CustomStringConvertible", "arrayValue"]
+- ["PSs23CustomStringConvertible", "description"]
+- !private ["PSs23CustomStringConvertible", "eventDescription"]
+- !private ["PSs23CustomStringConvertible", "eventLocation"]
+- !private ["PSs23CustomStringConvertible", "eventName"]
+- !private ["PSs23CustomStringConvertible", "eventSpeaker"]
+- !private ["PSs23CustomStringConvertible", "eventTime"]
+- !private ["PSs23CustomStringConvertible", "init"]
+- !private ["PSs23CustomStringConvertible", "string"]
+- !private ["PSs23CustomStringConvertible", "stringValue"]
+- !private ["PSs23CustomStringConvertible", "subscript"]
+- ["PSs23CustomStringConvertible", ""]
+- !private ["PSs28DictionaryLiteralConvertible", "array"]
+- !private ["PSs28DictionaryLiteralConvertible", "arrayValue"]
+- !private ["PSs28DictionaryLiteralConvertible", "string"]
+- !private ["PSs28DictionaryLiteralConvertible", "stringValue"]
+- !private ["PSs28DictionaryLiteralConvertible", "subscript"]
+- !private ["Sd", "deinit"]
+- !private ["PSs9Equatable", "Distance"]
+- !private ["PSs9Equatable", "IntegerLiteralType"]
+- !private ["PSs9Equatable", "_getBuiltinLogicValue"]
+- !private ["PSs9Equatable", "array"]
+- !private ["PSs9Equatable", "arrayValue"]
+- !private ["PSs9Equatable", "init"]
+- !private ["PSs9Equatable", "string"]
+- !private ["PSs9Equatable", "stringValue"]
+- !private ["PSs9Equatable", "subscript"]
+- !private ["PSs41ExtendedGraphemeClusterLiteralConvertible", "array"]
+- !private ["PSs41ExtendedGraphemeClusterLiteralConvertible", "arrayValue"]
+- !private ["PSs41ExtendedGraphemeClusterLiteralConvertible", "init"]
+- !private ["PSs41ExtendedGraphemeClusterLiteralConvertible", "string"]
+- !private ["PSs41ExtendedGraphemeClusterLiteralConvertible", "stringValue"]
+- !private ["PSs41ExtendedGraphemeClusterLiteralConvertible", "subscript"]
+- !private ["Sf", "deinit"]
+- !private ["PSs23FloatLiteralConvertible", "array"]
+- !private ["PSs23FloatLiteralConvertible", "arrayValue"]
+- !private ["PSs23FloatLiteralConvertible", "string"]
+- !private ["PSs23FloatLiteralConvertible", "stringValue"]
+- !private ["PSs23FloatLiteralConvertible", "subscript"]
+- !private ["PSs16ForwardIndexType", "Distance"]
+- !private ["PSs16ForwardIndexType", "IntegerLiteralType"]
+- !private ["PSs13GeneratorType", "Element"]
+- !private ["PSs8Hashable", "Distance"]
+- !private ["PSs8Hashable", "IntegerLiteralType"]
+- !private ["PSs8Hashable", "_getBuiltinLogicValue"]
+- !private ["PSs8Hashable", "init"]
+- !private ["PSs9Indexable", "Generator"]
+- !private ["PSs9Indexable", "Index"]
+- !private ["PSs9Indexable", "SubSequence"]
+- !private ["PSs9Indexable", "_Element"]
+- !private ["PSs9Indexable", "append"]
+- !private ["VSs17IndexingGenerator", "Element"]
+- !private ["Si", "Distance"]
+- !private ["Si", "IntegerLiteralType"]
+- !private ["Si", "deinit"]
+- !private ["VSs5Int16", "deinit"]
+- !private ["VSs5Int32", "deinit"]
+- !private ["VSs5Int64", "deinit"]
+- !private ["VSs4Int8", "deinit"]
+- !private ["PSs21IntegerArithmeticType", "Distance"]
+- !private ["PSs21IntegerArithmeticType", "IntegerLiteralType"]
+- !private ["PSs25IntegerLiteralConvertible", "Distance"]
+- !private ["PSs25IntegerLiteralConvertible", "IntegerLiteralType"]
+- !private ["PSs25IntegerLiteralConvertible", "array"]
+- !private ["PSs25IntegerLiteralConvertible", "arrayValue"]
+- !private ["PSs25IntegerLiteralConvertible", "string"]
+- !private ["PSs25IntegerLiteralConvertible", "stringValue"]
+- !private ["PSs25IntegerLiteralConvertible", "subscript"]
+- !private ["PSs11IntegerType", "Distance"]
+- !private ["PSs11IntegerType", "IntegerLiteralType"]
+- !private ["V16MansbridgeSummit4JSON", "array"]
+- !private ["V16MansbridgeSummit4JSON", "arrayValue"]
+- !private ["V16MansbridgeSummit4JSON", "string"]
+- !private ["V16MansbridgeSummit4JSON", "stringValue"]
+- !private ["V16MansbridgeSummit4JSON", "subscript"]
+- ["V16MansbridgeSummit5MSDay", "MSEvent"]
+- ["V16MansbridgeSummit5MSDay", "String"]
+- ["V16MansbridgeSummit5MSDay", "date"]
+- ["V16MansbridgeSummit5MSDay", "events"]
+- ["V16MansbridgeSummit5MSDay", "init"]
+- ["V16MansbridgeSummit7MSEvent", "String"]
+- ["V16MansbridgeSummit7MSEvent", "deinit"]
+- ["V16MansbridgeSummit7MSEvent", "description"]
+- ["V16MansbridgeSummit7MSEvent", "eventDescription"]
+- ["V16MansbridgeSummit7MSEvent", "eventLocation"]
+- ["V16MansbridgeSummit7MSEvent", "eventName"]
+- ["V16MansbridgeSummit7MSEvent", "eventSpeaker"]
+- ["V16MansbridgeSummit7MSEvent", "eventTime"]
+- ["V16MansbridgeSummit7MSEvent", "init"]
+- !private ["PSs14MirrorPathType", "Distance"]
+- !private ["PSs14MirrorPathType", "IntegerLiteralType"]
+- !private ["PSs14MirrorPathType", "init"]
+- !private ["PSs21MutableCollectionType", "Generator"]
+- !private ["PSs21MutableCollectionType", "Index"]
+- !private ["PSs21MutableCollectionType", "SubSequence"]
+- !private ["PSs21MutableCollectionType", "_Element"]
+- !private ["PSs21MutableCollectionType", "append"]
+- !private ["PSs16MutableSliceable", "Generator"]
+- !private ["PSs16MutableSliceable", "Index"]
+- !private ["PSs16MutableSliceable", "SubSequence"]
+- !private ["PSs16MutableSliceable", "_Element"]
+- !private ["PSs16MutableSliceable", "append"]
+- !private ["PSo8NSCoding", "init"]
+- !private ["PSo9NSCopying", "init"]
+- !private ["PSo16NSMutableCopying", "init"]
+- !private ["CSo8NSObject", "init"]
+- !private ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo14NSSecureCoding", "init"]
+- !private ["CSo8NSString", "init"]
+- ["PSs21NilLiteralConvertible", "Some"]
+- !private ["PSs21NilLiteralConvertible", "array"]
+- !private ["PSs21NilLiteralConvertible", "arrayValue"]
+- !private ["PSs21NilLiteralConvertible", "string"]
+- !private ["PSs21NilLiteralConvertible", "stringValue"]
+- !private ["PSs21NilLiteralConvertible", "subscript"]
+- ["Sq", "Some"]
+- !private ["Sq", "deinit"]
+- !private ["PSs16OutputStreamType", "init"]
+- !private ["PSs21RandomAccessIndexType", "Distance"]
+- !private ["PSs21RandomAccessIndexType", "IntegerLiteralType"]
+- !private ["PSs30RangeReplaceableCollectionType", "Generator"]
+- !private ["PSs30RangeReplaceableCollectionType", "Index"]
+- !private ["PSs30RangeReplaceableCollectionType", "SubSequence"]
+- !private ["PSs30RangeReplaceableCollectionType", "_Element"]
+- !private ["PSs30RangeReplaceableCollectionType", "append"]
+- !private ["PSs16RawRepresentable", "array"]
+- !private ["PSs16RawRepresentable", "arrayValue"]
+- !private ["PSs16RawRepresentable", "string"]
+- !private ["PSs16RawRepresentable", "stringValue"]
+- !private ["PSs16RawRepresentable", "subscript"]
+- !private ["PSs12SequenceType", "Element"]
+- !private ["PSs12SequenceType", "Generator"]
+- !private ["PSs12SequenceType", "Index"]
+- !private ["PSs12SequenceType", "SubSequence"]
+- !private ["PSs12SequenceType", "_Element"]
+- !private ["PSs12SequenceType", "append"]
+- !private ["PSs12SequenceType", "array"]
+- !private ["PSs12SequenceType", "arrayValue"]
+- !private ["PSs12SequenceType", "string"]
+- !private ["PSs12SequenceType", "stringValue"]
+- !private ["PSs12SequenceType", "subscript"]
+- !private ["PSs17SignedIntegerType", "Distance"]
+- !private ["PSs17SignedIntegerType", "IntegerLiteralType"]
+- !private ["PSs16SignedNumberType", "Distance"]
+- !private ["PSs16SignedNumberType", "IntegerLiteralType"]
+- !private ["PSs10Streamable", "init"]
+- !private ["PSs10Strideable", "Distance"]
+- !private ["PSs10Strideable", "IntegerLiteralType"]
+- !private ["SS", "deinit"]
+- !private ["SS", "init"]
+- !private ["PSs30StringInterpolationConvertible", "init"]
+- !private ["PSs24StringLiteralConvertible", "array"]
+- !private ["PSs24StringLiteralConvertible", "arrayValue"]
+- !private ["PSs24StringLiteralConvertible", "init"]
+- !private ["PSs24StringLiteralConvertible", "string"]
+- !private ["PSs24StringLiteralConvertible", "stringValue"]
+- !private ["PSs24StringLiteralConvertible", "subscript"]
+- !private ["P16MansbridgeSummit13SubscriptType", "Distance"]
+- !private ["P16MansbridgeSummit13SubscriptType", "IntegerLiteralType"]
+- !private ["P16MansbridgeSummit13SubscriptType", "init"]
+- !private ["Su", "deinit"]
+- !private ["VSs6UInt16", "deinit"]
+- !private ["VSs6UInt32", "deinit"]
+- !private ["VSs6UInt64", "deinit"]
+- !private ["VSs5UInt8", "deinit"]
+- !private ["Sc", "deinit"]
+- !private ["PSs31UnicodeScalarLiteralConvertible", "array"]
+- !private ["PSs31UnicodeScalarLiteralConvertible", "arrayValue"]
+- !private ["PSs31UnicodeScalarLiteralConvertible", "init"]
+- !private ["PSs31UnicodeScalarLiteralConvertible", "string"]
+- !private ["PSs31UnicodeScalarLiteralConvertible", "stringValue"]
+- !private ["PSs31UnicodeScalarLiteralConvertible", "subscript"]
+- !private ["PSs10_ArrayType", "Generator"]
+- !private ["PSs10_ArrayType", "Index"]
+- !private ["PSs10_ArrayType", "SubSequence"]
+- !private ["PSs10_ArrayType", "_Element"]
+- !private ["PSs10_ArrayType", "append"]
+- !private ["PSs33_BuiltinBooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["PSs49_BuiltinExtendedGraphemeClusterLiteralConvertible", "init"]
+- !private ["PSs33_BuiltinIntegerLiteralConvertible", "Distance"]
+- !private ["PSs33_BuiltinIntegerLiteralConvertible", "IntegerLiteralType"]
+- !private ["PSs32_BuiltinStringLiteralConvertible", "init"]
+- !private ["PSs37_BuiltinUTF16StringLiteralConvertible", "init"]
+- !private ["PSs39_BuiltinUnicodeScalarLiteralConvertible", "init"]
+- !private ["PSs16_CocoaStringType", "init"]
+- !private ["PSs24_DestructorSafeContainer", "Generator"]
+- !private ["PSs24_DestructorSafeContainer", "Index"]
+- !private ["PSs24_DestructorSafeContainer", "SubSequence"]
+- !private ["PSs24_DestructorSafeContainer", "_Element"]
+- !private ["PSs24_DestructorSafeContainer", "append"]
+- !private ["PSs14_Incrementable", "Distance"]
+- !private ["PSs14_Incrementable", "IntegerLiteralType"]
+- !private ["PSs22_IntegerArithmeticType", "Distance"]
+- !private ["PSs22_IntegerArithmeticType", "IntegerLiteralType"]
+- !private ["PSs12_IntegerType", "Distance"]
+- !private ["PSs12_IntegerType", "IntegerLiteralType"]
+- !private ["PSs21_ObjectiveCBridgeable", "Distance"]
+- !private ["PSs21_ObjectiveCBridgeable", "Generator"]
+- !private ["PSs21_ObjectiveCBridgeable", "Index"]
+- !private ["PSs21_ObjectiveCBridgeable", "IntegerLiteralType"]
+- !private ["PSs21_ObjectiveCBridgeable", "SubSequence"]
+- !private ["PSs21_ObjectiveCBridgeable", "_Element"]
+- !private ["PSs21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
+- !private ["PSs21_ObjectiveCBridgeable", "append"]
+- !private ["PSs21_ObjectiveCBridgeable", "init"]
+- !private ["VSs26_OptionalNilComparisonType", "deinit"]
+- !private ["PSs12_Reflectable", "Distance"]
+- !private ["PSs12_Reflectable", "Generator"]
+- !private ["PSs12_Reflectable", "Index"]
+- !private ["PSs12_Reflectable", "IntegerLiteralType"]
+- ["PSs12_Reflectable", "Some"]
+- !private ["PSs12_Reflectable", "SubSequence"]
+- !private ["PSs12_Reflectable", "_Element"]
+- !private ["PSs12_Reflectable", "_getBuiltinLogicValue"]
+- !private ["PSs12_Reflectable", "append"]
+- !private ["PSs12_Reflectable", "init"]
+- !private ["PSs18_SignedIntegerType", "Distance"]
+- !private ["PSs18_SignedIntegerType", "IntegerLiteralType"]
+- !private ["PSs11_Strideable", "Distance"]
+- !private ["PSs11_Strideable", "IntegerLiteralType"]
+depends-nominal:
+- !private "PSs9AnyObject"
+- !private "Sa"
+- !private "PSs23ArrayLiteralConvertible"
+- !private "VSs10ArraySlice"
+- !private "PSs22BidirectionalIndexType"
+- !private "PSs21BitwiseOperationsType"
+- !private "Sb"
+- !private "PSs25BooleanLiteralConvertible"
+- !private "PSs11BooleanType"
+- !private "PSs11CVarArgType"
+- !private "VSs9Character"
+- !private "PSs14CollectionType"
+- !private "PSs10Comparable"
+- "PSs28CustomDebugStringConvertible"
+- "PSs23CustomStringConvertible"
+- !private "PSs28DictionaryLiteralConvertible"
+- !private "Sd"
+- !private "PSs9Equatable"
+- !private "PSs41ExtendedGraphemeClusterLiteralConvertible"
+- !private "Sf"
+- !private "PSs23FloatLiteralConvertible"
+- !private "PSs16ForwardIndexType"
+- !private "PSs13GeneratorType"
+- !private "PSs8Hashable"
+- !private "PSs9Indexable"
+- !private "VSs17IndexingGenerator"
+- !private "Si"
+- !private "VSs5Int16"
+- !private "VSs5Int32"
+- !private "VSs5Int64"
+- !private "VSs4Int8"
+- !private "PSs21IntegerArithmeticType"
+- !private "PSs25IntegerLiteralConvertible"
+- !private "PSs11IntegerType"
+- !private "V16MansbridgeSummit4JSON"
+- "V16MansbridgeSummit5MSDay"
+- "V16MansbridgeSummit7MSEvent"
+- !private "PSs14MirrorPathType"
+- !private "PSs21MutableCollectionType"
+- !private "PSs16MutableSliceable"
+- !private "PSo8NSCoding"
+- !private "PSo9NSCopying"
+- !private "PSo16NSMutableCopying"
+- !private "CSo8NSObject"
+- !private "PSo16NSObjectProtocol"
+- !private "PSo14NSSecureCoding"
+- !private "CSo8NSString"
+- "PSs21NilLiteralConvertible"
+- "Sq"
+- !private "PSs16OutputStreamType"
+- !private "PSs21RandomAccessIndexType"
+- !private "PSs30RangeReplaceableCollectionType"
+- !private "PSs16RawRepresentable"
+- !private "PSs12SequenceType"
+- !private "PSs17SignedIntegerType"
+- !private "PSs16SignedNumberType"
+- !private "PSs10Streamable"
+- !private "PSs10Strideable"
+- !private "SS"
+- !private "PSs30StringInterpolationConvertible"
+- !private "PSs24StringLiteralConvertible"
+- !private "P16MansbridgeSummit13SubscriptType"
+- !private "Su"
+- !private "VSs6UInt16"
+- !private "VSs6UInt32"
+- !private "VSs6UInt64"
+- !private "VSs5UInt8"
+- !private "Sc"
+- !private "PSs31UnicodeScalarLiteralConvertible"
+- !private "PSs10_ArrayType"
+- !private "PSs33_BuiltinBooleanLiteralConvertible"
+- !private "PSs49_BuiltinExtendedGraphemeClusterLiteralConvertible"
+- !private "PSs33_BuiltinIntegerLiteralConvertible"
+- !private "PSs32_BuiltinStringLiteralConvertible"
+- !private "PSs37_BuiltinUTF16StringLiteralConvertible"
+- !private "PSs39_BuiltinUnicodeScalarLiteralConvertible"
+- !private "PSs16_CocoaStringType"
+- !private "PSs24_DestructorSafeContainer"
+- !private "PSs14_Incrementable"
+- !private "PSs22_IntegerArithmeticType"
+- !private "PSs12_IntegerType"
+- !private "PSs21_ObjectiveCBridgeable"
+- !private "VSs26_OptionalNilComparisonType"
+- "PSs12_Reflectable"
+- !private "PSs18_SignedIntegerType"
+- !private "PSs11_Strideable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/shims/UnicodeShims.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/shims/RuntimeStubs.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/shims/RuntimeShims.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/shims/RefCount.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/shims/HeapObject.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/shims/GlobalObjects.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/shims/FoundationShims.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/shims/SwiftStddef.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/shims/DarwinShims.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/shims/SwiftStdint.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/shims/CoreFoundationShims.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/shims/module.map"
+- "/Users/williamfiset/Desktop/GitHub/MansbridgeSummit/IOS/MansbridgeSummit/MansbridgeSummit/MansbridgeSummit-Bridging-Header.h"
+- "/Users/williamfiset/Desktop/GitHub/MansbridgeSummit/IOS/MansbridgeSummit/MansbridgeSummit/Reachability.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Users/williamfiset/Desktop/GitHub/MansbridgeSummit/IOS/MansbridgeSummit/MansbridgeSummit/Connection.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "./Fabric.framework/Headers/FABAttributes.h"
+- "./Fabric.framework/Headers/Fabric.h"
+- "./Fabric.framework/Modules/module.modulemap"
+- "./TwitterCore.framework/Headers/TWTRGuestSession.h"
+- "./TwitterCore.framework/Headers/TWTRCoreOAuthSigning.h"
+- "./TwitterCore.framework/Headers/TWTRConstants.h"
+- "./TwitterCore.framework/Headers/TWTRAuthSession.h"
+- "./TwitterCore.framework/Headers/TWTRAuthConfig.h"
+- "./TwitterCore.framework/Headers/TWTRAPIErrorCode.h"
+- "./TwitterCore.framework/Headers/TwitterCore.h"
+- "./TwitterCore.framework/Modules/module.modulemap"
+- "./TwitterKit.framework/Headers/TWTRUserTimelineDataSource.h"
+- "./TwitterKit.framework/Headers/TWTRUser.h"
+- "./TwitterKit.framework/Headers/TWTRTweetViewDelegate.h"
+- "./TwitterKit.framework/Headers/TWTRTweetView.h"
+- "./TwitterKit.framework/Headers/TWTRTweetTableViewCell.h"
+- "./TwitterKit.framework/Headers/TWTRTweet.h"
+- "./TwitterKit.framework/Headers/TWTRTimelineViewController.h"
+- "./TwitterKit.framework/Headers/TWTRShareEmailViewController.h"
+- "./TwitterKit.framework/Headers/TWTRSearchTimelineDataSource.h"
+- "./TwitterKit.framework/Headers/TWTROAuthSigning.h"
+- "./TwitterKit.framework/Headers/TWTRLogInButton.h"
+- "./TwitterKit.framework/Headers/TWTRListTimelineDataSource.h"
+- "./TwitterKit.framework/Headers/TWTRComposer.h"
+- "./TwitterKit.framework/Headers/TWTRTimelineType.h"
+- "./TwitterKit.framework/Headers/TWTRTimelineDataSource.h"
+- "./TwitterKit.framework/Headers/TWTRCollectionTimelineDataSource.h"
+- "./TwitterKit.framework/Headers/TWTRSession.h"
+- "./TwitterKit.framework/Headers/TWTRDefines.h"
+- "./TwitterKit.framework/Headers/TWTRAPIClient.h"
+- "./TwitterKit.framework/Headers/Twitter.h"
+- "/Users/williamfiset/Desktop/GitHub/MansbridgeSummit/IOS/MansbridgeSummit/TwitterCore.framework/Modules/module.modulemap"
+- "./TwitterKit.framework/Headers/TwitterKit.h"
+- "./TwitterKit.framework/Modules/module.modulemap"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreData.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/AVFoundation.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreMedia.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreAudio.swiftmodule"
+interface-hash: "7d4e9ddd56aa13c935e91a413350b703"

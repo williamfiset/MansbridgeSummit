@@ -1,0 +1,325 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "AppDelegate"
+provides-nominal:
+- "C16MansbridgeSummit11AppDelegate"
+provides-member:
+- ["C16MansbridgeSummit11AppDelegate", ""]
+provides-dynamic-lookup:
+- "applicationWillTerminate"
+- "applicationWillResignActive"
+- "applicationDidEnterBackground"
+- "window"
+- "applicationWillEnterForeground"
+- "application"
+- "applicationDidBecomeActive"
+depends-top-level:
+- "AnyObject"
+- "Bool"
+- "UIApplicationDelegate"
+- "NSObject"
+- "UIWindow"
+- "AppDelegate"
+- !private "Twitter"
+- "UIResponder"
+- !private "Fabric"
+- !private "BooleanLiteralType"
+- "UIApplication"
+- !private "Array"
+depends-member:
+- !private ["PSs9AnyObject", "Fabric"]
+- !private ["PSs9AnyObject", "Twitter"]
+- ["PSs9AnyObject", "application"]
+- ["PSs9AnyObject", "applicationDidBecomeActive"]
+- ["PSs9AnyObject", "applicationDidEnterBackground"]
+- ["PSs9AnyObject", "applicationDidFinishLaunching"]
+- ["PSs9AnyObject", "applicationDidReceiveMemoryWarning"]
+- ["PSs9AnyObject", "applicationProtectedDataDidBecomeAvailable"]
+- ["PSs9AnyObject", "applicationProtectedDataWillBecomeUnavailable"]
+- ["PSs9AnyObject", "applicationShouldRequestHealthAuthorization"]
+- ["PSs9AnyObject", "applicationSignificantTimeChange"]
+- ["PSs9AnyObject", "applicationWillEnterForeground"]
+- ["PSs9AnyObject", "applicationWillResignActive"]
+- ["PSs9AnyObject", "applicationWillTerminate"]
+- ["PSs9AnyObject", "init"]
+- ["PSs9AnyObject", "window"]
+- !private ["PSs9AnyObject", "with"]
+- ["PSs9AnyObject", ""]
+- ["C16MansbridgeSummit11AppDelegate", "AnyObject"]
+- ["C16MansbridgeSummit11AppDelegate", "Bool"]
+- !private ["C16MansbridgeSummit11AppDelegate", "Fabric"]
+- ["C16MansbridgeSummit11AppDelegate", "NSObject"]
+- !private ["C16MansbridgeSummit11AppDelegate", "Twitter"]
+- ["C16MansbridgeSummit11AppDelegate", "UIApplication"]
+- ["C16MansbridgeSummit11AppDelegate", "UIWindow"]
+- ["C16MansbridgeSummit11AppDelegate", "application"]
+- ["C16MansbridgeSummit11AppDelegate", "applicationDidBecomeActive"]
+- ["C16MansbridgeSummit11AppDelegate", "applicationDidEnterBackground"]
+- ["C16MansbridgeSummit11AppDelegate", "applicationDidFinishLaunching"]
+- ["C16MansbridgeSummit11AppDelegate", "applicationDidReceiveMemoryWarning"]
+- ["C16MansbridgeSummit11AppDelegate", "applicationProtectedDataDidBecomeAvailable"]
+- ["C16MansbridgeSummit11AppDelegate", "applicationProtectedDataWillBecomeUnavailable"]
+- ["C16MansbridgeSummit11AppDelegate", "applicationShouldRequestHealthAuthorization"]
+- ["C16MansbridgeSummit11AppDelegate", "applicationSignificantTimeChange"]
+- ["C16MansbridgeSummit11AppDelegate", "applicationWillEnterForeground"]
+- ["C16MansbridgeSummit11AppDelegate", "applicationWillResignActive"]
+- ["C16MansbridgeSummit11AppDelegate", "applicationWillTerminate"]
+- ["C16MansbridgeSummit11AppDelegate", "deinit"]
+- ["C16MansbridgeSummit11AppDelegate", "init"]
+- ["C16MansbridgeSummit11AppDelegate", "window"]
+- !private ["Sa", "Element"]
+- !private ["PSs23ArrayLiteralConvertible", "Element"]
+- !private ["PSs11CVarArgType", "Fabric"]
+- !private ["PSs11CVarArgType", "Twitter"]
+- ["PSs11CVarArgType", "application"]
+- ["PSs11CVarArgType", "applicationDidBecomeActive"]
+- ["PSs11CVarArgType", "applicationDidEnterBackground"]
+- ["PSs11CVarArgType", "applicationDidFinishLaunching"]
+- ["PSs11CVarArgType", "applicationDidReceiveMemoryWarning"]
+- ["PSs11CVarArgType", "applicationProtectedDataDidBecomeAvailable"]
+- ["PSs11CVarArgType", "applicationProtectedDataWillBecomeUnavailable"]
+- ["PSs11CVarArgType", "applicationShouldRequestHealthAuthorization"]
+- ["PSs11CVarArgType", "applicationSignificantTimeChange"]
+- ["PSs11CVarArgType", "applicationWillEnterForeground"]
+- ["PSs11CVarArgType", "applicationWillResignActive"]
+- ["PSs11CVarArgType", "applicationWillTerminate"]
+- ["PSs11CVarArgType", "init"]
+- ["PSs11CVarArgType", "window"]
+- !private ["PSs11CVarArgType", "with"]
+- ["PSs11CVarArgType", ""]
+- !private ["PSs14CollectionType", "Element"]
+- !private ["PSs28CustomDebugStringConvertible", "Element"]
+- !private ["PSs23CustomStringConvertible", "Element"]
+- !private ["PSs23CustomStringConvertible", "Fabric"]
+- !private ["PSs23CustomStringConvertible", "Twitter"]
+- ["PSs23CustomStringConvertible", "application"]
+- ["PSs23CustomStringConvertible", "applicationDidBecomeActive"]
+- ["PSs23CustomStringConvertible", "applicationDidEnterBackground"]
+- ["PSs23CustomStringConvertible", "applicationDidFinishLaunching"]
+- ["PSs23CustomStringConvertible", "applicationDidReceiveMemoryWarning"]
+- ["PSs23CustomStringConvertible", "applicationProtectedDataDidBecomeAvailable"]
+- ["PSs23CustomStringConvertible", "applicationProtectedDataWillBecomeUnavailable"]
+- ["PSs23CustomStringConvertible", "applicationShouldRequestHealthAuthorization"]
+- ["PSs23CustomStringConvertible", "applicationSignificantTimeChange"]
+- ["PSs23CustomStringConvertible", "applicationWillEnterForeground"]
+- ["PSs23CustomStringConvertible", "applicationWillResignActive"]
+- ["PSs23CustomStringConvertible", "applicationWillTerminate"]
+- ["PSs23CustomStringConvertible", "init"]
+- ["PSs23CustomStringConvertible", "window"]
+- !private ["PSs23CustomStringConvertible", "with"]
+- ["PSs23CustomStringConvertible", ""]
+- !private ["PSs9Equatable", "Fabric"]
+- !private ["PSs9Equatable", "Twitter"]
+- ["PSs9Equatable", "application"]
+- ["PSs9Equatable", "applicationDidBecomeActive"]
+- ["PSs9Equatable", "applicationDidEnterBackground"]
+- ["PSs9Equatable", "applicationDidFinishLaunching"]
+- ["PSs9Equatable", "applicationDidReceiveMemoryWarning"]
+- ["PSs9Equatable", "applicationProtectedDataDidBecomeAvailable"]
+- ["PSs9Equatable", "applicationProtectedDataWillBecomeUnavailable"]
+- ["PSs9Equatable", "applicationShouldRequestHealthAuthorization"]
+- ["PSs9Equatable", "applicationSignificantTimeChange"]
+- ["PSs9Equatable", "applicationWillEnterForeground"]
+- ["PSs9Equatable", "applicationWillResignActive"]
+- ["PSs9Equatable", "applicationWillTerminate"]
+- ["PSs9Equatable", "init"]
+- ["PSs9Equatable", "window"]
+- !private ["PSs9Equatable", "with"]
+- ["PSs9Equatable", ""]
+- !private ["CSo6Fabric", "with"]
+- !private ["PSs8Hashable", "Fabric"]
+- !private ["PSs8Hashable", "Twitter"]
+- ["PSs8Hashable", "application"]
+- ["PSs8Hashable", "applicationDidBecomeActive"]
+- ["PSs8Hashable", "applicationDidEnterBackground"]
+- ["PSs8Hashable", "applicationDidFinishLaunching"]
+- ["PSs8Hashable", "applicationDidReceiveMemoryWarning"]
+- ["PSs8Hashable", "applicationProtectedDataDidBecomeAvailable"]
+- ["PSs8Hashable", "applicationProtectedDataWillBecomeUnavailable"]
+- ["PSs8Hashable", "applicationShouldRequestHealthAuthorization"]
+- ["PSs8Hashable", "applicationSignificantTimeChange"]
+- ["PSs8Hashable", "applicationWillEnterForeground"]
+- ["PSs8Hashable", "applicationWillResignActive"]
+- ["PSs8Hashable", "applicationWillTerminate"]
+- ["PSs8Hashable", "init"]
+- ["PSs8Hashable", "window"]
+- !private ["PSs8Hashable", "with"]
+- ["PSs8Hashable", ""]
+- !private ["PSs9Indexable", "Element"]
+- !private ["PSs21MutableCollectionType", "Element"]
+- !private ["PSs16MutableSliceable", "Element"]
+- ["CSo8NSObject", "AnyObject"]
+- ["CSo8NSObject", "Bool"]
+- !private ["CSo8NSObject", "Fabric"]
+- ["CSo8NSObject", "NSObject"]
+- !private ["CSo8NSObject", "Twitter"]
+- ["CSo8NSObject", "UIApplication"]
+- ["CSo8NSObject", "UIWindow"]
+- ["CSo8NSObject", "application"]
+- ["CSo8NSObject", "applicationDidBecomeActive"]
+- ["CSo8NSObject", "applicationDidEnterBackground"]
+- ["CSo8NSObject", "applicationDidFinishLaunching"]
+- ["CSo8NSObject", "applicationDidReceiveMemoryWarning"]
+- ["CSo8NSObject", "applicationProtectedDataDidBecomeAvailable"]
+- ["CSo8NSObject", "applicationProtectedDataWillBecomeUnavailable"]
+- ["CSo8NSObject", "applicationShouldRequestHealthAuthorization"]
+- ["CSo8NSObject", "applicationSignificantTimeChange"]
+- ["CSo8NSObject", "applicationWillEnterForeground"]
+- ["CSo8NSObject", "applicationWillResignActive"]
+- ["CSo8NSObject", "applicationWillTerminate"]
+- ["CSo8NSObject", "init"]
+- ["CSo8NSObject", "window"]
+- !private ["CSo8NSObject", "with"]
+- !private ["PSo16NSObjectProtocol", "Fabric"]
+- !private ["PSo16NSObjectProtocol", "Twitter"]
+- ["PSo16NSObjectProtocol", "application"]
+- ["PSo16NSObjectProtocol", "applicationDidBecomeActive"]
+- ["PSo16NSObjectProtocol", "applicationDidEnterBackground"]
+- ["PSo16NSObjectProtocol", "applicationDidFinishLaunching"]
+- ["PSo16NSObjectProtocol", "applicationDidReceiveMemoryWarning"]
+- ["PSo16NSObjectProtocol", "applicationProtectedDataDidBecomeAvailable"]
+- ["PSo16NSObjectProtocol", "applicationProtectedDataWillBecomeUnavailable"]
+- ["PSo16NSObjectProtocol", "applicationShouldRequestHealthAuthorization"]
+- ["PSo16NSObjectProtocol", "applicationSignificantTimeChange"]
+- ["PSo16NSObjectProtocol", "applicationWillEnterForeground"]
+- ["PSo16NSObjectProtocol", "applicationWillResignActive"]
+- ["PSo16NSObjectProtocol", "applicationWillTerminate"]
+- ["PSo16NSObjectProtocol", "init"]
+- ["PSo16NSObjectProtocol", "window"]
+- !private ["PSo16NSObjectProtocol", "with"]
+- ["PSo16NSObjectProtocol", ""]
+- !private ["PSs30RangeReplaceableCollectionType", "Element"]
+- !private ["PSs12SequenceType", "Element"]
+- !private ["CSo7Twitter", "init"]
+- !private ["PSo21UIApplicationDelegate", "Fabric"]
+- !private ["PSo21UIApplicationDelegate", "Twitter"]
+- ["PSo21UIApplicationDelegate", "application"]
+- ["PSo21UIApplicationDelegate", "applicationDidBecomeActive"]
+- ["PSo21UIApplicationDelegate", "applicationDidEnterBackground"]
+- ["PSo21UIApplicationDelegate", "applicationDidFinishLaunching"]
+- ["PSo21UIApplicationDelegate", "applicationDidReceiveMemoryWarning"]
+- ["PSo21UIApplicationDelegate", "applicationProtectedDataDidBecomeAvailable"]
+- ["PSo21UIApplicationDelegate", "applicationProtectedDataWillBecomeUnavailable"]
+- ["PSo21UIApplicationDelegate", "applicationShouldRequestHealthAuthorization"]
+- ["PSo21UIApplicationDelegate", "applicationSignificantTimeChange"]
+- ["PSo21UIApplicationDelegate", "applicationWillEnterForeground"]
+- ["PSo21UIApplicationDelegate", "applicationWillResignActive"]
+- ["PSo21UIApplicationDelegate", "applicationWillTerminate"]
+- ["PSo21UIApplicationDelegate", "window"]
+- ["PSo21UIApplicationDelegate", ""]
+- ["CSo11UIResponder", "AnyObject"]
+- ["CSo11UIResponder", "Bool"]
+- !private ["CSo11UIResponder", "Fabric"]
+- ["CSo11UIResponder", "NSObject"]
+- !private ["CSo11UIResponder", "Twitter"]
+- ["CSo11UIResponder", "UIApplication"]
+- ["CSo11UIResponder", "UIWindow"]
+- ["CSo11UIResponder", "application"]
+- ["CSo11UIResponder", "applicationDidBecomeActive"]
+- ["CSo11UIResponder", "applicationDidEnterBackground"]
+- ["CSo11UIResponder", "applicationDidFinishLaunching"]
+- ["CSo11UIResponder", "applicationDidReceiveMemoryWarning"]
+- ["CSo11UIResponder", "applicationProtectedDataDidBecomeAvailable"]
+- ["CSo11UIResponder", "applicationProtectedDataWillBecomeUnavailable"]
+- ["CSo11UIResponder", "applicationShouldRequestHealthAuthorization"]
+- ["CSo11UIResponder", "applicationSignificantTimeChange"]
+- ["CSo11UIResponder", "applicationWillEnterForeground"]
+- ["CSo11UIResponder", "applicationWillResignActive"]
+- ["CSo11UIResponder", "applicationWillTerminate"]
+- ["CSo11UIResponder", "init"]
+- ["CSo11UIResponder", "window"]
+- ["CSo11UIResponder", ""]
+- !private ["PSs10_ArrayType", "Element"]
+- !private ["PSs24_DestructorSafeContainer", "Element"]
+- !private ["PSs21_ObjectiveCBridgeable", "Element"]
+- !private ["PSs12_Reflectable", "Element"]
+depends-nominal:
+- "PSs9AnyObject"
+- "C16MansbridgeSummit11AppDelegate"
+- !private "Sa"
+- !private "PSs23ArrayLiteralConvertible"
+- "PSs11CVarArgType"
+- !private "PSs14CollectionType"
+- !private "PSs28CustomDebugStringConvertible"
+- "PSs23CustomStringConvertible"
+- "PSs9Equatable"
+- !private "CSo6Fabric"
+- "PSs8Hashable"
+- !private "PSs9Indexable"
+- !private "PSs21MutableCollectionType"
+- !private "PSs16MutableSliceable"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- !private "PSs30RangeReplaceableCollectionType"
+- !private "PSs12SequenceType"
+- !private "CSo7Twitter"
+- "PSo21UIApplicationDelegate"
+- "CSo11UIResponder"
+- !private "PSs10_ArrayType"
+- !private "PSs24_DestructorSafeContainer"
+- !private "PSs21_ObjectiveCBridgeable"
+- !private "PSs12_Reflectable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/shims/UnicodeShims.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/shims/RuntimeStubs.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/shims/RuntimeShims.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/shims/RefCount.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/shims/HeapObject.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/shims/GlobalObjects.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/shims/FoundationShims.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/shims/SwiftStddef.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/shims/DarwinShims.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/shims/SwiftStdint.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/shims/CoreFoundationShims.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/shims/module.map"
+- "/Users/williamfiset/Desktop/GitHub/MansbridgeSummit/IOS/MansbridgeSummit/MansbridgeSummit/MansbridgeSummit-Bridging-Header.h"
+- "/Users/williamfiset/Desktop/GitHub/MansbridgeSummit/IOS/MansbridgeSummit/MansbridgeSummit/Reachability.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Users/williamfiset/Desktop/GitHub/MansbridgeSummit/IOS/MansbridgeSummit/MansbridgeSummit/Connection.h"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "./Fabric.framework/Headers/FABAttributes.h"
+- "./Fabric.framework/Headers/Fabric.h"
+- "./Fabric.framework/Modules/module.modulemap"
+- "./TwitterCore.framework/Headers/TWTRGuestSession.h"
+- "./TwitterCore.framework/Headers/TWTRCoreOAuthSigning.h"
+- "./TwitterCore.framework/Headers/TWTRConstants.h"
+- "./TwitterCore.framework/Headers/TWTRAuthSession.h"
+- "./TwitterCore.framework/Headers/TWTRAuthConfig.h"
+- "./TwitterCore.framework/Headers/TWTRAPIErrorCode.h"
+- "./TwitterCore.framework/Headers/TwitterCore.h"
+- "./TwitterCore.framework/Modules/module.modulemap"
+- "./TwitterKit.framework/Headers/TWTRUserTimelineDataSource.h"
+- "./TwitterKit.framework/Headers/TWTRUser.h"
+- "./TwitterKit.framework/Headers/TWTRTweetViewDelegate.h"
+- "./TwitterKit.framework/Headers/TWTRTweetView.h"
+- "./TwitterKit.framework/Headers/TWTRTweetTableViewCell.h"
+- "./TwitterKit.framework/Headers/TWTRTweet.h"
+- "./TwitterKit.framework/Headers/TWTRTimelineViewController.h"
+- "./TwitterKit.framework/Headers/TWTRShareEmailViewController.h"
+- "./TwitterKit.framework/Headers/TWTRSearchTimelineDataSource.h"
+- "./TwitterKit.framework/Headers/TWTROAuthSigning.h"
+- "./TwitterKit.framework/Headers/TWTRLogInButton.h"
+- "./TwitterKit.framework/Headers/TWTRListTimelineDataSource.h"
+- "./TwitterKit.framework/Headers/TWTRComposer.h"
+- "./TwitterKit.framework/Headers/TWTRTimelineType.h"
+- "./TwitterKit.framework/Headers/TWTRTimelineDataSource.h"
+- "./TwitterKit.framework/Headers/TWTRCollectionTimelineDataSource.h"
+- "./TwitterKit.framework/Headers/TWTRSession.h"
+- "./TwitterKit.framework/Headers/TWTRDefines.h"
+- "./TwitterKit.framework/Headers/TWTRAPIClient.h"
+- "./TwitterKit.framework/Headers/Twitter.h"
+- "/Users/williamfiset/Desktop/GitHub/MansbridgeSummit/IOS/MansbridgeSummit/TwitterCore.framework/Modules/module.modulemap"
+- "./TwitterKit.framework/Headers/TwitterKit.h"
+- "./TwitterKit.framework/Modules/module.modulemap"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreData.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/AVFoundation.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreMedia.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreAudio.swiftmodule"
+interface-hash: "9d6cff69232bb95b6a536a3b5c2d0e77"
