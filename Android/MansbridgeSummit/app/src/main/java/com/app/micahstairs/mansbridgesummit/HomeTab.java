@@ -77,9 +77,6 @@ public class HomeTab extends Fragment {
 
         if (index == 0) {
 
-            ImageView mansbridgeHeader = (ImageView) rootView.findViewById(R.id.mansbridgeSummitHeader);
-            //mansbridgeHeader.setImageResource( R.drawable.mansbride_summit_presents);
-
             // Using Android-Universal-Image-Loader third party library to do asyc calls for thumbnails:
             // https://github.com/nostra13/Android-Universal-Image-Loader
 
@@ -103,8 +100,6 @@ public class HomeTab extends Fragment {
                 }
 
             });
-
-
         } else if (index < speakers.length) {
 
         }
