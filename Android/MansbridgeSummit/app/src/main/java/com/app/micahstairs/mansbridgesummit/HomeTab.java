@@ -5,30 +5,23 @@ package com.app.micahstairs.mansbridgesummit;
  */
 
 import android.app.Activity;
-import android.graphics.Bitmap;
+import android.graphics.*;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
+import android.view.*;
 import android.widget.ImageView;
-import android.widget.*;
-import com.google.gson.JsonArray;
-import com.nostra13.universalimageloader.core.ImageLoader;
-import com.nostra13.universalimageloader.core.ImageLoaderConfiguration;
+import com.nostra13.universalimageloader.core.*;
 import com.nostra13.universalimageloader.core.assist.FailReason;
-import com.nostra13.universalimageloader.core.assist.ImageSize;
 import com.nostra13.universalimageloader.core.listener.ImageLoadingListener;
 import android.net.*;
 import android.content.*;
-import org.json.JSONArray;
-import org.json.JSONException;
-import org.json.JSONObject;
+import org.json.*;
 
 /**
  * A placeholder fragment containing a simple view.
  */
 public class HomeTab extends Fragment {
+
     /**
      * The fragment argument representing the section number for this
      * fragment.
@@ -100,6 +93,9 @@ public class HomeTab extends Fragment {
                     // This removes black border of 45 pixels on top and bottom
                     Bitmap croppedBitmap = Bitmap.createBitmap(bitmap, 0, 45, 480, 270);
 
+                    // testing
+                    croppedBitmap = overlay(croppedBitmap, BitmapFactory.decodeResource(rootView.getContext().getResources(), R.drawable.youtube_icon_cropped));
+
                     youtubeThumbnail.setImageBitmap(croppedBitmap);
                     youtubeThumbnail.setScaleType(ImageView.ScaleType.FIT_CENTER);
 
@@ -115,6 +111,15 @@ public class HomeTab extends Fragment {
         } else if (index < speakers.length) {
 
         }
+    }
+
+        // overlay in center
+    public static Bitmap overlay(Bitmap bmp1, Bitmap bmp2) {
+        Bitmap bmOverlay = Bitmap.createBitmap(bmp1.getWidth(), bmp1.getHeight(), bmp1.getConfig());
+        Canvas canvas = new Canvas(bmOverlay);
+        canvas.drawBitmap(bmp1, new Matrix(), null);
+        canvas.drawBitmap(bmp2, (bmp1.getWidth() - bmp2.getWidth())/2, (bmp1.getHeight() - bmp2.getHeight())/2, null);
+        return bmOverlay;
     }
 
     private void parseSpeakers() {

@@ -22,8 +22,6 @@
 
         android:focusableInTouchMode="false"
 
-        android:background="#000"
-
         android:src="@drawable/mansbride_summit_presents"
         android:adjustViewBounds="true"
 
@@ -33,21 +31,20 @@
 
     <ImageView
 
-
-        android:layout_below="@+id/mansbridgeSummitHeader"
-
         android:layout_height="wrap_content"
-        android:layout_width="fill_parent"
+        android:layout_width="wrap_content"
         android:layout_weight="1"
 
         android:id="@+id/youtubeVideo"
         android:layout_centerHorizontal="true"
         android:focusableInTouchMode="true"
 
+        android:padding="1dp"
         android:background="#000"
 
         android:src="@drawable/mansbride_summit_presents"
 
+        android:layout_gravity="center"
         android:layout_marginRight="20dp"
         android:layout_marginLeft="20dp"
 
@@ -58,23 +55,34 @@
     <ImageView
 
         android:layout_height="wrap_content"
-        android:layout_width="fill_parent"
+        android:layout_width="wrap_content"
         android:layout_weight="1"
 
+        android:layout_gravity = "center"
+
         android:id="@+id/stream_image"
-        android:layout_below="@+id/youtubeVideo"
         android:layout_centerHorizontal="true"
         android:focusableInTouchMode="true"
 
+        android:padding="1dp"
         android:background="#000"
 
         android:layout_marginTop="20dp"
         android:layout_marginRight="20dp"
         android:layout_marginLeft="20dp"
+        android:layout_marginBottom="20dp"
 
         android:src="@drawable/mta_live_logo"
         android:adjustViewBounds="true"
         android:clickable="true"
+        />
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:id="@+id/imageView"
         />
 
 </LinearLayout>
