@@ -74,9 +74,9 @@ class MSSpeakerController : UIViewController {
         
     }
     
-    override func viewWillDisappear(animated : Bool) {
+    override func viewDidDisappear(animated : Bool) {
         
-        super.viewWillDisappear(animated)
+        super.viewDidDisappear(animated)
         
         self.scrollView.removeFromSuperview()
         self.scrollView = nil
