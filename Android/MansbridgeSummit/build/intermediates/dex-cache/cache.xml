@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/Users/williamfiset/Desktop/GitHub/MansbridgeSummit/Android/MansbridgeSummit/app/build/intermediates/exploded-aar/com.twitter.sdk.android/tweet-composer/0.8.0/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="157015930713d0411b69a76606f306c9a2c11af3">
+        <dex dex="/Users/williamfiset/Desktop/GitHub/MansbridgeSummit/Android/MansbridgeSummit/app/build/intermediates/pre-dexed/debug/classes-3a06ec9f07491ed7fa0c7776320f31a8454d542d.jar" />
+    </item>
+    <item
+        jar="/Users/williamfiset/Desktop/GitHub/MansbridgeSummit/Android/MansbridgeSummit/app/build/intermediates/exploded-aar/io.fabric.sdk.android/fabric/1.3.4/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="f7dc6b43d7c7f3d94e98531aef88269f9ed2a37b">
+        <dex dex="/Users/williamfiset/Desktop/GitHub/MansbridgeSummit/Android/MansbridgeSummit/app/build/intermediates/pre-dexed/debug/classes-8fbe03b2c57e80880285b21860d8ddee82969877.jar" />
+    </item>
+    <item
+        jar="/Users/williamfiset/Desktop/GitHub/MansbridgeSummit/Android/MansbridgeSummit/app/build/intermediates/exploded-aar/com.digits.sdk.android/digits/1.6.2/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="7aa9f1005cfc02016af0c01eab6b71ca4c6c72dd">
+        <dex dex="/Users/williamfiset/Desktop/GitHub/MansbridgeSummit/Android/MansbridgeSummit/app/build/intermediates/pre-dexed/debug/classes-cc6ad4ff7f46a90b672b0f6259e89f49b7f27085.jar" />
+    </item>
+    <item
+        jar="/Users/williamfiset/Desktop/GitHub/MansbridgeSummit/Android/MansbridgeSummit/app/build/intermediates/exploded-aar/com.twitter.sdk.android/twitter/1.6.1/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="a18abee4a31687c45cc673c4a8af0b346c80d2f4">
+        <dex dex="/Users/williamfiset/Desktop/GitHub/MansbridgeSummit/Android/MansbridgeSummit/app/build/intermediates/pre-dexed/debug/classes-d217635b27a67150592a178dac3b6f65cdfbd47e.jar" />
+    </item>
+    <item
+        jar="/Users/williamfiset/Desktop/GitHub/MansbridgeSummit/Android/MansbridgeSummit/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.0/jars/libs/internal_impl-22.2.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="57f2ab85c164ff1676ec64dee787981c046fab79">
+        <dex dex="/Users/williamfiset/Desktop/GitHub/MansbridgeSummit/Android/MansbridgeSummit/app/build/intermediates/pre-dexed/debug/internal_impl-22.2.0-0cd97b7acd3245d02236cc6451359dc9e381737e.jar" />
+    </item>
+    <item
+        jar="/Users/williamfiset/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit/retrofit/1.6.1/efb0a36546aa8857ab8df358b106c1817e03cbee/retrofit-1.6.1.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="efb0a36546aa8857ab8df358b106c1817e03cbee">
+        <dex dex="/Users/williamfiset/Desktop/GitHub/MansbridgeSummit/Android/MansbridgeSummit/app/build/intermediates/pre-dexed/debug/retrofit-1.6.1-76c8c5601b1c0a417fe06270b71b04cdb5d74c0b.jar" />
+    </item>
+    <item
+        jar="/Users/williamfiset/.gradle/caches/modules-2/files-2.1/com.squareup.picasso/picasso/2.5.2/7446d06ec8d4f7ffcc53f1da37c95f200dcb9387/picasso-2.5.2.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="7446d06ec8d4f7ffcc53f1da37c95f200dcb9387">
+        <dex dex="/Users/williamfiset/Desktop/GitHub/MansbridgeSummit/Android/MansbridgeSummit/app/build/intermediates/pre-dexed/debug/picasso-2.5.2-a804c98f8c8741ceaaaf6574692fabc7ae9deb07.jar" />
+    </item>
+    <item
+        jar="/Users/williamfiset/Desktop/GitHub/MansbridgeSummit/Android/MansbridgeSummit/app/build/intermediates/exploded-aar/com.twitter.sdk.android/twitter-core/1.4.1/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="b4cc38e70a45941011607ab4a2c46bacc5395b1c">
+        <dex dex="/Users/williamfiset/Desktop/GitHub/MansbridgeSummit/Android/MansbridgeSummit/app/build/intermediates/pre-dexed/debug/classes-6f4975dd609fe721a8a9ead00d7abcaa6cb8c5b6.jar" />
+    </item>
+    <item
+        jar="/Users/williamfiset/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.2.4/a60a5e993c98c864010053cb901b7eab25306568/gson-2.2.4.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="a60a5e993c98c864010053cb901b7eab25306568">
+        <dex dex="/Users/williamfiset/Desktop/GitHub/MansbridgeSummit/Android/MansbridgeSummit/app/build/intermediates/pre-dexed/debug/gson-2.2.4-35f66f6ecf8389d2eea6eeb9e672252412295f00.jar" />
+    </item>
+    <item
+        jar="/Users/williamfiset/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/22.2.0/support-annotations-22.2.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="66b42a1f3eb7676070b7ef7f14b603483aecbee1">
+        <dex dex="/Users/williamfiset/Desktop/GitHub/MansbridgeSummit/Android/MansbridgeSummit/app/build/intermediates/pre-dexed/debug/support-annotations-22.2.0-88ca79eb43b424f5d51ea8729bd597f6af70f80c.jar" />
+    </item>
+    <item
+        jar="/Users/williamfiset/Desktop/GitHub/MansbridgeSummit/Android/MansbridgeSummit/app/build/intermediates/exploded-aar/com.twitter.sdk.android/tweet-ui/1.3.1/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="85d6153e19093517149158d7d6600c63a3169c76">
+        <dex dex="/Users/williamfiset/Desktop/GitHub/MansbridgeSummit/Android/MansbridgeSummit/app/build/intermediates/pre-dexed/debug/classes-2fac4e3c3881568907248b249298a92c4ac0b138.jar" />
+    </item>
+    <item
+        jar="/Users/williamfiset/Desktop/GitHub/MansbridgeSummit/Android/MansbridgeSummit/app/libs/universal-image-loader-1.9.4.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="dd9eeb557650c4ad7394df23f0f5cf27a7cfc697">
+        <dex dex="/Users/williamfiset/Desktop/GitHub/MansbridgeSummit/Android/MansbridgeSummit/app/build/intermediates/pre-dexed/debug/universal-image-loader-1.9.4-e2bcbd40310f7fb7e991080435f09263e7c6d860.jar" />
+    </item>
+    <item
+        jar="/Users/williamfiset/Desktop/GitHub/MansbridgeSummit/Android/MansbridgeSummit/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="73753982da6bde518f3a4c6b372749981d14d1a0">
+        <dex dex="/Users/williamfiset/Desktop/GitHub/MansbridgeSummit/Android/MansbridgeSummit/app/build/intermediates/pre-dexed/debug/classes-c17c2aad81e4956e95e100fc03a4e2043c141b5e.jar" />
+    </item>
+    <item
+        jar="/Users/williamfiset/Desktop/GitHub/MansbridgeSummit/Android/MansbridgeSummit/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.0/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="1ee588ff2c4daf7b97c1cbf922a6c7f027285c2f">
+        <dex dex="/Users/williamfiset/Desktop/GitHub/MansbridgeSummit/Android/MansbridgeSummit/app/build/intermediates/pre-dexed/debug/classes-8e682bfc95b10b05bfb54c152b2864320994fb3d.jar" />
+    </item>
+
+</items>
