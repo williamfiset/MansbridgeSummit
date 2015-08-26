@@ -50,8 +50,8 @@ public class TwitterTab extends Fragment {
         final View rootView = inflater.inflate(R.layout.fragment_twitter_tab, container, false);
 
         ListView listView = (ListView) rootView.findViewById(R.id.listView);
-//        final CollectionTimeline timeline = new CollectionTimeline.Builder().id(625072681285758976L).build();
-        final UserTimeline timeline = new UserTimeline.Builder().screenName("fabric").build();
+        final CollectionTimeline timeline = new CollectionTimeline.Builder().id(625072681285758976L).build();
+//        final UserTimeline timeline = new UserTimeline.Builder().screenName("fabric").build();
 
         // Collection "Fabric Picks"
 //        final CollectionTimeline timeline = new CollectionTimeline.Builder().id(569961150045896704L).build();
