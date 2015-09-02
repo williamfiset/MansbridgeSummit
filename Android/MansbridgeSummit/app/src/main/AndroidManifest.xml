@@ -16,6 +16,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".SpeakerActivity">
+            
+        </activity>
         <meta-data
             android:name="io.fabric.ApiKey"
             android:value="d2d8bc8db6ee86555a8bd3e55263b2e030493e6d" />
