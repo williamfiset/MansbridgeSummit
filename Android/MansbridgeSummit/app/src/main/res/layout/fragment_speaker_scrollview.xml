@@ -2,11 +2,75 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="#558942">
+            android:background="#fff"
+            android:fillViewport="false"
+            android:id="@+id/scrollView">
 
-    <Button
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Back"
-        android:id="@+id/button2"/>
+        android:orientation="vertical"
+        >
+
+        <!--
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/back_button"/>
+        -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:text="Rhonda McEwen"
+            android:textColor="#000"
+            android:textSize="33dp"
+            android:gravity="center"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Rhonda McEwen is an assistant professor at the Institute of Communication, Culture, Information and Technology and at the iSchool, at the University of Toronto. She holds an MBA in IT from City University in London, England, an MSc in Telecommunications from the University of Colorado, and a PhD in Information from University of Toronto. Dr. McEwen has worked and researched digital"
+            android:textColor="#000"
+            android:textSize="14dp"
+            android:gravity="center"
+            />
+
+        <ImageView
+
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:layout_centerHorizontal="true"
+            android:focusableInTouchMode="false"
+            android:src="@drawable/mansbride_summit_presents"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:text="Biography"
+            android:textColor="#000"
+            android:textSize="35dp"
+            android:gravity="center"
+            />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sir Isaac Newton December 1642 – 20 March 1726 was an English physicist and mathematician (described in his own day as a natural philosopher) who is widely recognised as one of the most influential scientists of all time and as a key figure in the scientific revolution. His book Philosophiæ Naturalis Principia Mathematica (Mathematical Principles of Natural Philosophy), first published in 1687, laid the foundations for classical mechanics. Newton made seminal contributions to optics, and he shares credit with Gottfried Leibniz for the development of calculus."
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textColor="#000"
+            android:textSize="12dp"
+
+            />
+
+    </LinearLayout>
+
+
 </ScrollView>

@@ -17,7 +17,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".SpeakerActivity">
-            
+
         </activity>
         <meta-data
             android:name="io.fabric.ApiKey"
