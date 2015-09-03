@@ -10,8 +10,7 @@ import android.view.*;
  */
 public class SpeakerFragment extends Fragment {
 
-    @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle bundle) {
+    @Override public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle bundle) {
 
         return inflater.inflate(R.layout.fragment_speaker_scrollview, container, false);
 

@@ -73,17 +73,6 @@ public class HomeTab extends Fragment {
         super.onActivityCreated(savedInstanceState);
     }
 
-
-    // overlay in center
-    public static Bitmap overlay(Bitmap bmp1, Bitmap bmp2) {
-        Bitmap bmOverlay = Bitmap.createBitmap(bmp1.getWidth(), bmp1.getHeight(), bmp1.getConfig());
-        Canvas canvas = new Canvas(bmOverlay);
-        canvas.drawBitmap(bmp1, new Matrix(), null);
-        canvas.drawBitmap(bmp2, (bmp1.getWidth() - bmp2.getWidth()) / 2, (bmp1.getHeight() - bmp2.getHeight()) / 2, null);
-        return bmOverlay;
-    }
-
-
     public void setSpeakerPage( int index, final View rootView) {
 
         if (index == 0) {
@@ -114,7 +103,7 @@ public class HomeTab extends Fragment {
 
                     Bitmap youtubeIcon = BitmapFactory.decodeResource(rootView.getContext().getResources(), R.drawable.youtube_icon);
                     youtubeIcon = Bitmap.createScaledBitmap(youtubeIcon, 120, 90, false);
-                    croppedBitmap = overlay(croppedBitmap, youtubeIcon);
+                    croppedBitmap = Tools.bitmapCenterOverlay(croppedBitmap, youtubeIcon);
 
 
                     youtubeThumbnail.setImageBitmap(croppedBitmap);
@@ -126,6 +115,7 @@ public class HomeTab extends Fragment {
                             getActivity().startActivity(intent);
                         }
                     });
+
                 }
 
             });
@@ -188,27 +178,27 @@ public class HomeTab extends Fragment {
 
         button1.setOnClickListener(new View.OnClickListener() {
             @Override public void onClick(View v) {
-                changeSelectedButton(0, v);
+
             }
         });
         button2.setOnClickListener(new View.OnClickListener() {
             @Override public void onClick(View v) {
-                changeSelectedButton(1, v);
+                changeSelectedButton(0, v);
             }
         });
         button3.setOnClickListener(new View.OnClickListener() {
             @Override public void onClick(View v) {
-                changeSelectedButton(2, v);
+                changeSelectedButton(1, v);
             }
         });
         button4.setOnClickListener(new View.OnClickListener() {
             @Override public void onClick(View v) {
-                changeSelectedButton(3, v);
+                changeSelectedButton(2, v);
             }
         });
         button5.setOnClickListener(new View.OnClickListener() {
             @Override public void onClick(View v) {
-                changeSelectedButton(4,v );
+                changeSelectedButton(3,v );
             }
         });
 
@@ -216,19 +206,20 @@ public class HomeTab extends Fragment {
 
     private void changeSelectedButton(int index, View v) {
 
-        Intent intent = new Intent(v.getContext(), SpeakerActivity.class);;
-        startActivity(intent);
+        Intent intent = new Intent(v.getContext(), SpeakerActivity.class);
+        if (index < speakers.length) {
 
-//        Button[] btns = { button1, button2, button3, button4, button5 };
-//
-//        for (int i = 0; i < btns.length; i++) {
-//            if (i == index) {
-//                btns[i].setBackgroundColor(getResources().getColor(R.color.garnet));
-//            } else {
-//                btns[i].setBackgroundColor(getResources().getColor(R.color.gold));
-//            }
-//        }
+            Speaker speaker = speakers[index];
 
+            intent.putExtra("name", speaker.getName());
+            intent.putExtra("profession", speaker.getProfession());
+            intent.putExtra("image", speaker.getImage());
+            intent.putExtra("description", speaker.getDescription());
+            intent.putExtra("videos", speaker.getVideos());
+
+            startActivity(intent);
+
+        }
     }
 
 }
