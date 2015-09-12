@@ -17,19 +17,19 @@ extension String {
         }
     }
     
-    /* Returns a character at a specific index */
-    subscript(integerIndex: Int) -> Character {
-        let index = advance(startIndex, integerIndex)
-        return self[index]
-    }
-    
-    /* Returns a substring in a given range */
-    subscript(integerRange: Range<Int>) -> String {
-        let start = advance(startIndex, integerRange.startIndex)
-        let end = advance(startIndex, integerRange.endIndex)
-        let range = start..<end
-        return self[range]
-    }
+//    /* Returns a character at a specific index */
+//    subscript(integerIndex: Int) -> Character {
+//        let index = startIndex.advanceBy(integerIndex)
+//        return self[index]
+//    }
+//    
+//    /* Returns a substring in a given range */
+//    subscript(integerRange: Range<Int>) -> String {
+//        let start = startIndex.advanceBy(integerRange.startIndex)
+//        let end = startIndex.advanceBy(integerRange.endIndex)
+//        let range = start..<end
+//        return self[range]
+//    }
     
     /* returns an array of string devided a delimiter */
     func split (delimiter : String) -> [String] {

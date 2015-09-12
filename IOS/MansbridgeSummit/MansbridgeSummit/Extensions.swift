@@ -20,14 +20,14 @@ extension String {
     
     /* Returns a character at a specific index */
     subscript(integerIndex: Int) -> Character {
-        let index = advance(startIndex, integerIndex)
+        let index = startIndex.advancedBy(integerIndex)
         return self[index]
     }
     
     /* Returns a substring in a given range */
     subscript(integerRange: Range<Int>) -> String {
-        let start = advance(startIndex, integerRange.startIndex)
-        let end = advance(startIndex, integerRange.endIndex)
+        let start = startIndex.advancedBy(integerRange.startIndex)
+        let end = startIndex.advancedBy(integerRange.endIndex)
         let range = start..<end
         return self[range]
     }
