@@ -1,16 +1,22 @@
 package com.app.micahstairs.mansbridgesummit;
 
+import android.app.ActionBar;
 import android.content.Intent;
 import android.content.res.Resources;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.graphics.Point;
 import android.graphics.drawable.Drawable;
+import android.media.Image;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.PersistableBundle;
 import android.support.v7.app.ActionBarActivity;
 import android.view.ContextMenu;
+import android.view.Display;
 import android.view.View;
+import android.view.ViewGroup;
+import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -19,6 +25,8 @@ import com.nostra13.universalimageloader.core.ImageLoader;
 import com.nostra13.universalimageloader.core.ImageLoaderConfiguration;
 import com.nostra13.universalimageloader.core.assist.FailReason;
 import com.nostra13.universalimageloader.core.listener.ImageLoadingListener;
+
+import java.io.File;
 
 /**
  * Created by williamfiset on 15-09-02.
@@ -75,13 +83,30 @@ public class SpeakerActivity extends ActionBarActivity {
 //            Drawable img = Tools.getAssetImage(this, imageName);
 //            imgView.setImageDrawable(img);
 
+            Display display = getWindowManager().getDefaultDisplay();
+            Point size = new Point();
+            display.getSize(size);
+            int SCREEN_WIDTH = size.x;
+            int SCREEN_HEIGHT= size.y;
+
             // Getting Out of memory here..
             // The issue is that the drawable is being cached and hoggin memory for
             // other tasks it needs to do.
+
             Resources res = getResources();
             int imageID = res.getIdentifier(imageName, "drawable", getPackageName());
             Drawable drawable = res.getDrawable(imageID);
             imgView.setImageDrawable(drawable);
+
+//            String p = "/Users/williamfiset/Desktop/GitHub/MansbridgeSummit/Android/MansbridgeSummit/app/src/main/res/drawable/rhonda.png";
+//            BitmapFactory.Options options = new BitmapFactory.Options();
+//            options.inSampleSize = 8;
+//            options.inPreferQualityOverSpeed = false;
+//            options.inPreferredConfig = Bitmap.Config.RGB_565; // correct?
+//            Bitmap b = BitmapFactory.decodeFile(p, options);
+//            imgView.setImageBitmap(b);
+
+            imgView.setPadding(20,15,20,15);
 
         // I have gotten java.lang.OutOfMemoryError when trying to load some images...
         } catch (Exception ex) {
@@ -96,7 +121,7 @@ public class SpeakerActivity extends ActionBarActivity {
 
             final LinearLayout layout = (LinearLayout) findViewById(R.id.videos);
 
-            for (String videoID : speaker.getVideos()) {
+            for (final String videoID : speaker.getVideos()) {
 
                 ImageView video = new ImageView(this);
 
@@ -126,11 +151,16 @@ public class SpeakerActivity extends ActionBarActivity {
                         thumbnail.setImageBitmap(croppedBitmap);
                         thumbnail.setScaleType(ImageView.ScaleType.FIT_CENTER);
 
+                        thumbnail.setPadding(0,15,0,15);
+
                         layout.addView(thumbnail);
 
                         thumbnail.setOnClickListener(new View.OnClickListener() {
                             @Override public void onClick(View v) {
-                                System.out.println("CLICKED IMAGE");
+
+                                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.youtube.com/watch?v=" + videoID));
+                                startActivity(intent);
+
                             }
                         });
 

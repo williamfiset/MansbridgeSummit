@@ -10,9 +10,7 @@ import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
 
 import java.io.BufferedInputStream;
-import java.io.IOException;
-import java.io.InputStream;
-import java.math.BigInteger;
+import java.io.*;
 
 /**
  * Created by williamfiset on 15-09-02.
@@ -35,7 +33,36 @@ public class Tools {
         InputStream buffer = new BufferedInputStream( assets.open("drawable/" + fileName + ".png") );
         Bitmap b = BitmapFactory.decodeStream(buffer);
         return new BitmapDrawable(context.getResources(), b);
+    }
 
+    public static Bitmap decodeFile(File f, int scaleSize) {
+
+        try {
+
+            // Decode image size
+            BitmapFactory.Options o = new BitmapFactory.Options();
+            o.inJustDecodeBounds = true;
+            BitmapFactory.decodeStream(new FileInputStream(f), null, o);
+
+            // The new size we want to scale to
+            final int REQUIRED_SIZE=scaleSize;
+
+            // Find the correct scale value. It should be the power of 2.
+            int scale = 1;
+            while(o.outWidth / scale / 2 >= REQUIRED_SIZE &&
+                    o.outHeight / scale / 2 >= REQUIRED_SIZE) {
+                scale *= 2;
+            }
+
+            // Decode with inSampleSize
+            BitmapFactory.Options o2 = new BitmapFactory.Options();
+            o2.inSampleSize = scale;
+            return BitmapFactory.decodeStream(new FileInputStream(f), null, o2);
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+
+        return null;
     }
 
 }
