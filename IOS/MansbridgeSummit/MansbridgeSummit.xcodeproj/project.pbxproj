@@ -137,6 +137,8 @@
 		C6E1633B1B48296600942749 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6E163381B48296600942749 /* SwiftyJSON.swift */; };
 		C6E1633D1B482A7200942749 /* MSScheduleJsonFileTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6E1633C1B482A7200942749 /* MSScheduleJsonFileTests.swift */; };
 		C6E9E5391B5F06A90037C617 /* RegisterPageGeneralTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6E9E5381B5F06A90037C617 /* RegisterPageGeneralTests.swift */; };
+		F73870131BA8DAB500A5F241 /* mike_macmillan.png in Resources */ = {isa = PBXBuildFile; fileRef = F73870111BA8DAB500A5F241 /* mike_macmillan.png */; settings = {ASSET_TAGS = (); }; };
+		F73870141BA8DAB500A5F241 /* molly_shoichet.png in Resources */ = {isa = PBXBuildFile; fileRef = F73870121BA8DAB500A5F241 /* molly_shoichet.png */; settings = {ASSET_TAGS = (); }; };
 		F74C1A221B5967C500F09002 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F74C1A211B5967C500F09002 /* Accounts.framework */; };
 		F74C1A241B5967CA00F09002 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F74C1A231B5967CA00F09002 /* Social.framework */; };
 		F74C1A261B5967CF00F09002 /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F74C1A251B5967CF00F09002 /* Twitter.framework */; };
@@ -289,6 +291,8 @@
 		C6E1633C1B482A7200942749 /* MSScheduleJsonFileTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSScheduleJsonFileTests.swift; sourceTree = "<group>"; };
 		C6E1633E1B483E7E00942749 /* wills_playground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = wills_playground.playground; sourceTree = "<group>"; };
 		C6E9E5381B5F06A90037C617 /* RegisterPageGeneralTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterPageGeneralTests.swift; sourceTree = "<group>"; };
+		F73870111BA8DAB500A5F241 /* mike_macmillan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mike_macmillan.png; sourceTree = "<group>"; };
+		F73870121BA8DAB500A5F241 /* molly_shoichet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = molly_shoichet.png; sourceTree = "<group>"; };
 		F74C1A211B5967C500F09002 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 		F74C1A231B5967CA00F09002 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		F74C1A251B5967CF00F09002 /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = System/Library/Frameworks/Twitter.framework; sourceTree = SDKROOT; };
@@ -427,6 +431,8 @@
 			isa = PBXGroup;
 			children = (
 				C677E7BB1B811840001DF097 /* rhonda.png */,
+				F73870111BA8DAB500A5F241 /* mike_macmillan.png */,
+				F73870121BA8DAB500A5F241 /* molly_shoichet.png */,
 				C677E7BC1B811840001DF097 /* newton.png */,
 				C677E7BD1B811840001DF097 /* feynman.png */,
 				C677E7BE1B811840001DF097 /* alexander.png */,
@@ -847,10 +853,12 @@
 				C677E7BF1B811840001DF097 /* rhonda.png in Resources */,
 				F7CF77DF1B5B2F5900013CF0 /* Pencil-75.png in Resources */,
 				C62B04161B7FA85C00613EA9 /* MansbrideSummitpresents.jpg in Resources */,
+				F73870141BA8DAB500A5F241 /* molly_shoichet.png in Resources */,
 				F7B9F4F41B890E0400D5FBE4 /* mountains.png in Resources */,
 				C69808EA1B5D05D900164BC6 /* YTPlayer.html in Resources */,
 				F7D1B8601B5C8E0900D34341 /* RegistrationSuccessXIB.xib in Resources */,
 				C6CFD0601B45EDA90067A6AD /* LaunchScreen.storyboard in Resources */,
+				F73870131BA8DAB500A5F241 /* mike_macmillan.png in Resources */,
 				F7CF77DB1B5B2F5900013CF0 /* Home-50.png in Resources */,
 				C6CFD05D1B45EDA90067A6AD /* TabBarIcons.xcassets in Resources */,
 				C6E163331B481C5000942749 /* test_schedule.json in Resources */,

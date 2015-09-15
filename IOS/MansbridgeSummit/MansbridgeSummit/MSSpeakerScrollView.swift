@@ -79,26 +79,24 @@ class MSSpeakerScrollView : UIScrollView {
         let y = nameLabel.frame.height
         
         // Caclulate height of image in order to maintain aspect ratio
-        var w = GC.SCREEN_WIDTH
-        var h = ((w/(img?.size.width)!) * (img?.size.height)!)
-        w /= 2
-        h /= 2
+        let w = (GC.SCREEN_WIDTH - 3*PADDING)/2
+        let h = ((w/(img?.size.width)!) * (img?.size.height)!)
         
-        let imgFrame = CGRectMake(x, y, w, h)
-        let paddedFrame = CGRectInset(imgFrame, PADDING, PADDING)
+        let imgFrame = CGRectMake(x + PADDING, y + PADDING, w, h)
+//        let paddedFrame = CGRectInset(imgFrame, PADDING, PADDING)
         
         let imageView = UIImageView(image: img)
-        imageView.frame = paddedFrame
+        imageView.frame = imgFrame
         imageView.layer.borderColor = UIColor.blackColor().CGColor
         imageView.layer.borderWidth = 1
         self.speakerImage = imageView
         
         self.addSubview(imageView)
         
-        let professionLabelFrame = CGRectMake(w, y, w, h)
-        let professionLabelFrameInset = CGRectInset(professionLabelFrame, PADDING, 0)
+        let professionLabelFrame = CGRectMake(GC.SCREEN_WIDTH/2 + PADDING/2, y + PADDING, w, h)
+//        let professionLabelFrameInset = CGRectInset(professionLabelFrame, PADDING, 0)
         
-        professionLabel = UILabel(frame: professionLabelFrameInset)
+        professionLabel = UILabel(frame: professionLabelFrame)
         professionLabel.text = speaker.profession
         professionLabel.textAlignment = .Center
         professionLabel.font = GC.Font.myraidpro_16
@@ -114,7 +112,7 @@ class MSSpeakerScrollView : UIScrollView {
         
         // Special case if there are no videos
         if (speaker.videos.count == 0) {
-            bottomOfVideos = professionLabel.frame.maxY
+            bottomOfVideos = professionLabel.frame.maxY + PADDING
             return
         }
         
@@ -122,7 +120,7 @@ class MSSpeakerScrollView : UIScrollView {
         
         let x = CGFloat(0)
         let w = CGFloat(GC.SCREEN_WIDTH)
-        var y = professionLabel.frame.maxY
+        var y = professionLabel.frame.maxY + PADDING
         let h = CGFloat(35)
         
         let bioHeader = UILabel(frame: CGRectMake(x, y, w, h))

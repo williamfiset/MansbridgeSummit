@@ -12,7 +12,7 @@ import UIKit
 class DotController : UICollectionViewController, UICollectionViewDelegateFlowLayout {
     
     let cell_identifier = "custom_cell_identifier"
-    let NUM_DOTS = 5
+    let NUM_DOTS = 4
     
     var lastDotIndexPath : NSIndexPath!
     
@@ -144,7 +144,8 @@ class Dot : UICollectionViewCell {
     static var DEFAULT_OPACITY : Float!
     static var DEFAULT_BG_COLOR = GC.Color.red
 
-    static let initials = [ "MS", "RM", "IN", "RF", "ATG" ]
+//    static let initials = [ "MS", "RM", "MM", "MS", "ATG" ]
+    static let initials = [ "MS", "RM", "MM", "MS"]
     
     override init(frame: CGRect) {
         

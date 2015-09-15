@@ -53,7 +53,7 @@ public class MSFrontPageView : UIView {
         let w = GC.SCREEN_WIDTH - 2*x
         let h = GC.SCREEN_HEIGHT * 0.25
         
-        let frame = CGRectMake( x, y, w, h)
+        let frame = CGRectMake(x, y, w, h)
         videoPlayerView = YouTubePlayerView(frame: frame)
         videoPlayerView.loadVideoID(homePageVideo)
         self.addSubview(videoPlayerView)
@@ -67,7 +67,7 @@ public class MSFrontPageView : UIView {
         let w = GC.SCREEN_WIDTH - x*2
         let h = GC.SCREEN_HEIGHT * 0.2
         
-        let btnFrame = CGRectMake( x, y, w, h)
+        let btnFrame = CGRectMake(x, y, w, h)
         let mtaLiveStreamImg = UIImage(named: "MTALiveLogo")
         
         streamButton = UIButton(frame: btnFrame)
