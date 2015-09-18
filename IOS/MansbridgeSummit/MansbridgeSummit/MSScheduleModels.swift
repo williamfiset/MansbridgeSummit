@@ -23,11 +23,9 @@ public struct MSEvent : CustomStringConvertible {
     let eventTime : String
     let eventLocation : String
     let eventDescription : String
-    let eventSpeaker : String?
     
     public var description : String {
-        let speaker = eventSpeaker == nil ? "nil" : eventSpeaker!
-        return "eventName: \(eventName)\neventTime: \(eventTime)\neventLocation: \(eventLocation)\neventDescription: \(eventDescription)\neventSpeaker: \(speaker)\n"
+        return "eventName: \(eventName)\neventTime: \(eventTime)\neventLocation: \(eventLocation)\neventDescription: \(eventDescription)\n"
     }
     
 }
@@ -51,14 +49,12 @@ public func readSchedule( json : JSON ) -> [MSDay] {
                 let eventTime = event["eventTime"].stringValue
                 let eventLocation = event["eventLocation"].stringValue
                 let eventDescription = event["eventDescription"].stringValue
-                let eventSpeaker = event["eventSpeaker"].string
                 
                 let msevent = MSEvent (
                     eventName: eventName,
                     eventTime: eventTime,
                     eventLocation: eventLocation,
-                    eventDescription: eventDescription,
-                    eventSpeaker: eventSpeaker
+                    eventDescription: eventDescription
                 )
                 
                 msevents.append( msevent )

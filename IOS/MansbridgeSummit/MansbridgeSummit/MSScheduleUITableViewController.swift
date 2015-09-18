@@ -13,7 +13,7 @@ class MSScheduleUITableViewController: UITableViewController {
     var schedule_file_name = "test_schedule2"
     var days : [MSDay] = []
     
-    var expandedCells : [NSIndexPath] = []
+//    var expandedCells : [NSIndexPath] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -103,26 +103,36 @@ class MSScheduleUITableViewController: UITableViewController {
         cell.nameLabel.text = event.eventName
         
         
-        if (expandedCells.contains(indexPath)) {
-            cell.descriptionLabel.text = event.eventLocation + "\n" + event.eventDescription
-        } else {
+//        if (expandedCells.contains(indexPath)) {
+//        cell.descriptionLabel.text = event.eventDescription
+//        } else {
             cell.descriptionLabel.text = event.eventLocation
-        }
+//        }
         
         return cell
     }
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         
-        if (expandedCells.contains(indexPath)) {
-            self.expandedCells.removeObject(indexPath)
-        } else {
-            expandedCells.append(indexPath)
-        }
+        let dayIndex = indexPath.section
+        let eventIndex = indexPath.row
+        let event = days[dayIndex].events[eventIndex]
+        
+        let alertController = UIAlertController(title: event.eventName, message:
+            event.eventDescription, preferredStyle: UIAlertControllerStyle.Alert)
+        alertController.addAction(UIAlertAction(title: "Close", style: UIAlertActionStyle.Default,handler: nil))
+        
+        self.presentViewController(alertController, animated: true, completion: nil)
+        
+//        if (expandedCells.contains(indexPath)) {
+//            self.expandedCells.removeObject(indexPath)
+//        } else {
+//            expandedCells.append(indexPath)
+//        }
 
-        dispatch_async(dispatch_get_main_queue(),{
-            self.tableView.reloadData()
-        });
+//        dispatch_async(dispatch_get_main_queue(),{
+//            self.tableView.reloadData()
+//        });
         
     }
     

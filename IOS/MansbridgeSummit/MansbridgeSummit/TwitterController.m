@@ -6,8 +6,6 @@
 //  Copyright © 2015 Mansbridge Summit Dev Team. All rights reserved.
 //
 
-// This helps when dealing with blocks: http://fuckingblocksyntax.com/
-
 #import "TwitterController.h"
 #import "MansbridgeSummit-Swift.h"
 #import "Connection.h"
@@ -43,6 +41,10 @@
 -(void) viewWillAppear:(BOOL)animated {
     
     [super viewWillAppear:animated];
+     UIBarButtonItem *composeButton = [[UIBarButtonItem alloc]
+                                    initWithBarButtonSystemItem:UIBarButtonSystemItemCompose target:self action:@selector(composeTweetHelper)];
+    
+    self.navigationItem.rightBarButtonItem = composeButton;
     
     // Move the content below the navigation bar
     UIEdgeInsets insets = UIEdgeInsetsMake(44, 0, 0, 0);
@@ -120,7 +122,16 @@
 
 }
 
+
+
+
 - (IBAction)composeTweet:(id)sender {
+    
+    [self composeTweetHelper];
+    
+}
+
+- (void) composeTweetHelper {
     
     TWTRComposer *composer = [[TWTRComposer alloc] init];
     [composer setText: @"#MansbridgeSummit"];
