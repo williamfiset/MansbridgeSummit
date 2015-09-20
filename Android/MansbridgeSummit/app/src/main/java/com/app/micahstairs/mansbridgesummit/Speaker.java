@@ -23,7 +23,7 @@ public class Speaker {
         return description;
     }
 
-    public void setDescription(String description) {
+    private void setDescription(String description) {
         this.description = description;
     }
 
@@ -31,7 +31,7 @@ public class Speaker {
         return image;
     }
 
-    public void setImage(String image) {
+    private void setImage(String image) {
         this.image = image;
     }
 
@@ -39,7 +39,7 @@ public class Speaker {
         return name;
     }
 
-    public void setName(String name) {
+    private void setName(String name) {
         this.name = name;
     }
 
@@ -47,7 +47,7 @@ public class Speaker {
         return profession;
     }
 
-    public void setProfession(String profession) {
+    private void setProfession(String profession) {
         this.profession = profession;
     }
 
@@ -55,7 +55,7 @@ public class Speaker {
         return videos;
     }
 
-    public void setVideos(String[] videos) {
+    private void setVideos(String[] videos) {
         this.videos = videos;
     }
 }
