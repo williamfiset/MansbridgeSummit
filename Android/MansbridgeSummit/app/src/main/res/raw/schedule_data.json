@@ -1,82 +1,54 @@
 {
   "schedule":[
     {
-      "date":"Thursday, January 15th",
+      "date":"Thursday, November 19th",
       "events": [
         {
-          "eventTime":"7:00pm",
-          "eventName":"Registration and orientation",
-          "eventLocation":"Brunton Auditorium",
-          "eventDescription":"Participants meet other group members and panelists.",
-          "eventSpeaker":"N/A"
+          "eventTime":"7:00pm-\n8:00pm",
+          "eventName":"Orientation and Panelist Intros",
+          "eventLocation":"Crabtree M14",
+          "eventDescription":"\nCBC News Senior Producer of Power & Politics, Leslie Stojsic, will orient student participants to their role in the Summit. The panelists will also give an introduction."
         }
       ]
     },
     {
-      "date" : "Friday, Janurary 16th",
+      "date" : "Friday, November 20th",
       "events" : [
         {
-          "eventTime":"8:30am",
+          "eventTime":"8:45am-\n9:45am",
           "eventName":"Breakfast",
           "eventLocation":"Jennings Hall",
-          "eventDescription":"N/A",
-          "eventSpeaker":"N/A"
+          "eventDescription":"N/A"
         },
         {
-          "eventTime":"9:45am",
-          "eventName":"Working sessions with panelists",
-          "eventLocation":"Subgroup #1 — Purdy Crawford Centre for the Arts 103, Subgroup #2 — Centennial Hall 112, Subgroup #3 — Dunn 111",
-          "eventDescription":"Group interactive brainstorming session. ",
-          "eventSpeaker":"N/A"
+          "eventTime":"10:00am-\n11:45am",
+          "eventName":"Group Discussions",
+          "eventLocation":"3 different locations",
+          "eventDescription":"\nGroup A — CENT 112\nGroup B — MCCN 125\nGroup C — HART 208\n\nStudents will have an opportunity to have one-on-one time with panelists to discuss the topic at hand."
         },
         {
-          "eventTime":"12:25pm",
+          "eventTime":"12:00pm-\n1:00pm",
           "eventName":"Lunch",
           "eventLocation":"Jennings Hall",
-          "eventDescription":"N/A",
-          "eventSpeaker":"N/A"
+          "eventDescription":"N/A"
         },
         {
-          "eventTime":"1:30pm",
-          "eventName":"Meetings with Chancellor (Subgroup #1)",
-          "eventLocation":"N/A",
-          "eventDescription":"N/A",
-          "eventSpeaker":"N/A"
+          "eventTime":"12:45pm-\n4:30pm",
+          "eventName":"Panel Preparation Sessions",
+          "eventLocation":"Same rooms as before lunch",
+          "eventDescription":"\nStudents will have an opportunity to debrief with Leslie Stojsic before meeting with Peter Mansbridge. Students will have the responsibility of providing guidance for the evening panel discussion using their knowledge of the panelists."
         },
         {
-          "eventTime":"2:30pm",
-          "eventName":"Meetings with Chancellor (Subgroup #2)",
-          "eventLocation":"N/A",
-          "eventDescription":"N/A",
-          "eventSpeaker":"N/A"
+          "eventTime":"7:00pm-\n8:30pm",
+          "eventName":"Panel Discussion",
+          "eventLocation":"Convocation Hall",
+          "eventDescription":"\nOpen to the University at large, a world-class panel discussion will be moderated by Peter Mansbridge through the voice of students."
         },
         {
-          "eventTime":"3:30pm",
-          "eventName":"Meetings with Chancellor (Subgroup #3)",
-          "eventLocation":"N/A",
-          "eventDescription":"N/A",
-          "eventSpeaker":"N/A"
-        },
-        {
-          "eventTime":"4:30pm",
-          "eventName":"Meetings with Chancellor (Group Leaders)",
-          "eventLocation":"N/A",
-          "eventDescription":"N/A",
-          "eventSpeaker":"N/A"
-        },
-        {
-          "eventTime":"7:00pm",
-          "eventName":"Wrap Up",
-          "eventLocation":"Brunton Auditorium (open to the public)",
-          "eventDescription":"Panel discussion and wrap up of Summit, group photo of all participants and panelists",
-          "eventSpeaker":"N/A"
-        },
-        {
-          "eventTime":"9:00pm",
-          "eventName":"Mansbridge Summit Reception",
-          "eventLocation":"Gracie's Café",
-          "eventDescription":"N/A",
-          "eventSpeaker":"N/A"
+          "eventTime":"8:30pm-\n9:30pm",
+          "eventName":"Reception",
+          "eventLocation":"Convocation Hall Foyer",
+          "eventDescription":"\nOpen to the University at large, students, panelists, Leslie Stojsic, and Peter Mansbridge will attend the reception for a chance to discuss the event."
         }
       ]
     }

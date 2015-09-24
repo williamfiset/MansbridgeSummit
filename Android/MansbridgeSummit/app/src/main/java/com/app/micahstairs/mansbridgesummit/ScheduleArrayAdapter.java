@@ -27,7 +27,7 @@ public class ScheduleArrayAdapter extends ArrayAdapter<Event> {
 
         if (event.isEvent) {
 
-            if (event.isSelected) {
+            if (event.isSelected && !event.description.equals("N/A")) {
                 customView = inflater.inflate(R.layout.schedule_event_selected, parent, false);
 
                 TextView eventTime = (TextView) customView.findViewById(R.id.eventTime);
