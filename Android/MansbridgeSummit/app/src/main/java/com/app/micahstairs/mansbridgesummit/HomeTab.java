@@ -31,11 +31,11 @@ public class HomeTab extends Fragment {
     private DataLoader dataLoader;
     private Speaker[] speakers;
 
-    private Button button1;
+//    private Button button1;
     private Button button2;
     private Button button3;
     private Button button4;
-    private Button button5;
+//    private Button button5;
 
     /**
      * Returns a new instance of this fragment for the given section
@@ -161,13 +161,13 @@ public class HomeTab extends Fragment {
 
     private void setButtonProperties ( final View rootView ) {
 
-        button1 = (Button) rootView.findViewById(R.id.home_button1);
+//        button1 = (Button) rootView.findViewById(R.id.home_button1);
         button2 = (Button) rootView.findViewById(R.id.home_button2);
         button3 = (Button) rootView.findViewById(R.id.home_button3);
         button4 = (Button) rootView.findViewById(R.id.home_button4);
-        button5 = (Button) rootView.findViewById(R.id.home_button5);
+//        button5 = (Button) rootView.findViewById(R.id.home_button5);
 
-        button1.setPadding(5,0,5,0);
+//        button1.setPadding(5,0,5,0);
 
 //
 //        button1.setBackgroundColor(getResources().getColor(R.color.garnet));
@@ -176,11 +176,11 @@ public class HomeTab extends Fragment {
 //        button4.setBackgroundColor(getResources().getColor(R.color.gold));
 //        button5.setBackgroundColor(getResources().getColor(R.color.gold));
 
-        button1.setOnClickListener(new View.OnClickListener() {
-            @Override public void onClick(View v) {
-
-            }
-        });
+//        button1.setOnClickListener(new View.OnClickListener() {
+//            @Override public void onClick(View v) {
+//
+//            }
+//        });
         button2.setOnClickListener(new View.OnClickListener() {
             @Override public void onClick(View v) {
                 changeSelectedButton(0, v);
@@ -196,11 +196,11 @@ public class HomeTab extends Fragment {
                 changeSelectedButton(2, v);
             }
         });
-        button5.setOnClickListener(new View.OnClickListener() {
-            @Override public void onClick(View v) {
-                changeSelectedButton(3,v );
-            }
-        });
+//        button5.setOnClickListener(new View.OnClickListener() {
+//            @Override public void onClick(View v) {
+//                changeSelectedButton(3,v );
+//            }
+//        });
 
     }
 
