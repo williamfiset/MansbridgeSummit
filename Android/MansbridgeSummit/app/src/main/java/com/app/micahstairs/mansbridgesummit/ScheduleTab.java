@@ -3,7 +3,6 @@ package com.app.micahstairs.mansbridgesummit;
 import android.app.Activity;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
-import android.util.Log;
 import android.view.*;
 import android.widget.*;
 
@@ -11,8 +10,6 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import java.io.IOException;
-import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -48,7 +45,6 @@ public class ScheduleTab extends Fragment {
         rootView = inflater.inflate(R.layout.fragment_schedule_tab, container, false);
 
         Event[] events = getEventsFromFile();
-        Log.e("DEBUG", "" + events.length);
 
         final ScheduleArrayAdapter adapter = new ScheduleArrayAdapter(rootView.getContext(), events);
         final ListView list = (ListView) rootView.findViewById(R.id.listView);

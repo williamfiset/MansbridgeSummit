@@ -4,19 +4,10 @@ package com.app.micahstairs.mansbridgesummit;
  * Created by micahstairs on 2015-08-04.
  */
 
-import android.graphics.Color;
-import android.graphics.ColorFilter;
-import android.graphics.drawable.Drawable;
-import android.graphics.drawable.GradientDrawable;
-import android.graphics.drawable.InsetDrawable;
-import android.graphics.drawable.ShapeDrawable;
-import android.graphics.drawable.shapes.RoundRectShape;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.*;
-import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ListView;
 
