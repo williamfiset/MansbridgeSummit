@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item>
+        <shape android:shape="rectangle" >
+            <corners android:radius="3dip" />
+            <stroke android:width="1dip" android:color="@color/gold" />
+            <gradient android:startColor="@color/gold" android:endColor="@color/gold" />
+        </shape>
+    </item>
+    <item android:state_pressed="true" >
+        <shape android:shape="rectangle">
+            <corners android:radius="0dip" />
+            <stroke android:width="1dip" android:color="@color/garnet" />
+            <gradient android:startColor="@color/gold" android:endColor="@color/gold"  />
+        </shape>
+    </item>
+    <item android:state_focused="true">
+        <shape android:shape="rectangle">
+
+            <corners android:radius="0dip" />
+            <stroke android:width="1dip" android:color="@color/garnet" />
+            <solid android:color="@color/garnet"/>
+        </shape>
+    </item>
+</selector><!-- From: file:/Users/williamfiset/Desktop/GitHub/MansbridgeSummit/Android/MansbridgeSummit/app/src/main/res/drawable/unselected_home_button.xml -->

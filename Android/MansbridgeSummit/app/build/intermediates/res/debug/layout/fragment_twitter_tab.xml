@@ -1,0 +1,26 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:id="@+id/listView"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:footerDividersEnabled="false"/>
+
+    <ImageButton
+        android:layout_alignRight="@id/listView"
+        android:layout_alignBottom="@id/listView"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@android:drawable/ic_menu_edit"
+        android:background="@drawable/circle"
+        android:id="@+id/composeTweet">
+        
+    </ImageButton>
+
+</RelativeLayout>
+<!-- From: file:/Users/williamfiset/Desktop/GitHub/MansbridgeSummit/Android/MansbridgeSummit/app/src/main/res/layout/fragment_twitter_tab.xml -->
