@@ -53,12 +53,21 @@ public class MSFrontPageView : UIView {
         let w = GC.SCREEN_WIDTH - 2*x
         let h = GC.SCREEN_HEIGHT * 0.25
         
+
         let frame = CGRectMake(x, y, w, h)
         videoPlayerView = YouTubePlayerView(frame: frame)
-        videoPlayerView.loadVideoID(homePageVideo)
-        self.addSubview(videoPlayerView)
+        //videoPlayerView.loadVideoID(homePageVideo)
+        //self.addSubview(videoPlayerView)
+        
+        // This is the added code for the tanks
+        let img = UIImage(named: "tmp_twitter_tanks")
+        let imgView = UIImageView(image: img)
+        imgView.frame = frame;
+        
+        self.addSubview(imgView)
         
     }
+    
     
     private func addStreamLink() -> Void {
         
