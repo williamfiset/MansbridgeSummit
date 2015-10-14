@@ -32,6 +32,7 @@ class MSHomeModelController : NSObject, UIPageViewControllerDataSource {
         pageControllers.append( MSSpeakerController() )
         pageControllers.append( MSSpeakerController() )
         pageControllers.append( MSSpeakerController() )
+        pageControllers.append( MSSpeakerController() )
         
     }
     

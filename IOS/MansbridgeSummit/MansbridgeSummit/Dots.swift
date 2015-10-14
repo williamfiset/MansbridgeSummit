@@ -12,7 +12,7 @@ import UIKit
 class DotController : UICollectionViewController, UICollectionViewDelegateFlowLayout {
     
     let cell_identifier = "custom_cell_identifier"
-    let NUM_DOTS = 5
+    let NUM_DOTS = 6
     
     var lastDotIndexPath : NSIndexPath!
     
@@ -105,11 +105,8 @@ class DotController : UICollectionViewController, UICollectionViewDelegateFlowLa
     
     
     override func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-        
         let dot = collectionView.dequeueReusableCellWithReuseIdentifier(cell_identifier, forIndexPath: indexPath) as! Dot
-
         return dot
-        
     }
     
     
@@ -117,7 +114,7 @@ class DotController : UICollectionViewController, UICollectionViewDelegateFlowLa
     func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAtIndex section: Int) -> UIEdgeInsets {
         
         let cellPadding = collectionView.layoutMargins.left
-        let leftInset = (GC.SCREEN_WIDTH - ((Dot.DIAMETER + cellPadding) * CGFloat(NUM_DOTS) )) / 2
+        let leftInset = (GC.SCREEN_WIDTH - ((Dot.DIAMETER + cellPadding) * CGFloat(NUM_DOTS))) / 2
         
         return UIEdgeInsetsMake(0, leftInset, 0, 0);
         
@@ -133,7 +130,7 @@ class Dot : UICollectionViewCell {
     
     // Change radius depending on screen width?
     // An iPad could use bigger dots
-    static let RADIUS   : CGFloat = 25.0
+    static let RADIUS   : CGFloat = 20.0 // Make this value 25.0 is there are 5 or less dots
     static let DIAMETER : CGFloat = RADIUS * 2
     
     static var createdDots = 0
@@ -144,7 +141,7 @@ class Dot : UICollectionViewCell {
     static var DEFAULT_OPACITY : Float!
     static var DEFAULT_BG_COLOR = GC.Color.red
 
-    static let initials = [ "MS", "RM", "MM", "MS", "SL" ]
+    static let initials = [ "MS", "RM", "MM", "MS", "SL", "KC"]
     
     override init(frame: CGRect) {
         
@@ -198,7 +195,7 @@ class Dot : UICollectionViewCell {
     func glow() -> Void {
         
         self.layer.shadowColor = GC.Color.gold.CGColor
-        self.layer.shadowRadius = 5;
+        self.layer.shadowRadius = Dot.RADIUS/6.0;
         self.layer.shadowOffset = CGSizeZero;
         self.layer.shadowOpacity = 4.0;
         self.backgroundColor = GC.Color.gold
