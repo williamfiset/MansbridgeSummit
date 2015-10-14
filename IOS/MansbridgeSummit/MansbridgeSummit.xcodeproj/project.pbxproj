@@ -169,6 +169,7 @@
 		F79185041B5A839600EFF287 /* TwitterCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F79184FA1B5A839600EFF287 /* TwitterCore.framework */; };
 		F79185051B5A839600EFF287 /* TwitterCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F79184FA1B5A839600EFF287 /* TwitterCore.framework */; };
 		F79185061B5A839600EFF287 /* TwitterCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F79184FA1B5A839600EFF287 /* TwitterCore.framework */; };
+		F7B36B891BCDD6DD00E41141 /* steveCropped.png in Resources */ = {isa = PBXBuildFile; fileRef = F7B36B881BCDD6DD00E41141 /* steveCropped.png */; settings = {ASSET_TAGS = (); }; };
 		F7B9F4F41B890E0400D5FBE4 /* mountains.png in Resources */ = {isa = PBXBuildFile; fileRef = F7B9F4F31B890E0400D5FBE4 /* mountains.png */; };
 		F7B9F4F61B89124900D5FBE4 /* Mount_Allison_Logo2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F7B9F4F51B89124900D5FBE4 /* Mount_Allison_Logo2.jpg */; };
 		F7CF77D71B5B2F5900013CF0 /* Calendar-25.png in Resources */ = {isa = PBXBuildFile; fileRef = F7CF77C81B5B2F5900013CF0 /* Calendar-25.png */; };
@@ -303,6 +304,7 @@
 		F79184F81B5A839600EFF287 /* TwitterKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterKit.framework; sourceTree = "<group>"; };
 		F79184F91B5A839600EFF287 /* TwitterKitResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = TwitterKitResources.bundle; path = TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle; sourceTree = "<group>"; };
 		F79184FA1B5A839600EFF287 /* TwitterCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterCore.framework; sourceTree = "<group>"; };
+		F7B36B881BCDD6DD00E41141 /* steveCropped.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = steveCropped.png; sourceTree = "<group>"; };
 		F7B9F4F31B890E0400D5FBE4 /* mountains.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mountains.png; sourceTree = "<group>"; };
 		F7B9F4F51B89124900D5FBE4 /* Mount_Allison_Logo2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Mount_Allison_Logo2.jpg; sourceTree = "<group>"; };
 		F7CF77C81B5B2F5900013CF0 /* Calendar-25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Calendar-25.png"; sourceTree = "<group>"; };
@@ -431,6 +433,7 @@
 			isa = PBXGroup;
 			children = (
 				C651A8BC1BCDC0E500B1F72C /* steve.png */,
+				F7B36B881BCDD6DD00E41141 /* steveCropped.png */,
 				C677E7BB1B811840001DF097 /* rhonda.png */,
 				F73870111BA8DAB500A5F241 /* mike_macmillan.png */,
 				F73870121BA8DAB500A5F241 /* molly_shoichet.png */,
@@ -803,7 +806,7 @@
 				TargetAttributes = {
 					C6CFD04F1B45EDA90067A6AD = {
 						CreatedOnToolsVersion = 7.0;
-						DevelopmentTeam = 7KC276AP3U;
+						DevelopmentTeam = R76RY48R76;
 						SystemCapabilities = {
 							com.apple.Keychain = {
 								enabled = 0;
@@ -858,6 +861,7 @@
 				F7D1B8601B5C8E0900D34341 /* RegistrationSuccessXIB.xib in Resources */,
 				C654C7751BCDCD400060D0B3 /* tmp_twitter_tanks.png in Resources */,
 				C651A8BD1BCDC0E500B1F72C /* steve.png in Resources */,
+				F7B36B891BCDD6DD00E41141 /* steveCropped.png in Resources */,
 				C6CFD0601B45EDA90067A6AD /* LaunchScreen.storyboard in Resources */,
 				F73870131BA8DAB500A5F241 /* mike_macmillan.png in Resources */,
 				F7CF77DB1B5B2F5900013CF0 /* Home-50.png in Resources */,
