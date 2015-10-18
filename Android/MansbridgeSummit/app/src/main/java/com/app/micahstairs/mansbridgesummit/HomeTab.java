@@ -35,7 +35,8 @@ public class HomeTab extends Fragment {
     private Button button2;
     private Button button3;
     private Button button4;
-//    private Button button5;
+    private Button button5;
+    private Button button6;
 
     /**
      * Returns a new instance of this fragment for the given section
@@ -165,7 +166,8 @@ public class HomeTab extends Fragment {
         button2 = (Button) rootView.findViewById(R.id.home_button2);
         button3 = (Button) rootView.findViewById(R.id.home_button3);
         button4 = (Button) rootView.findViewById(R.id.home_button4);
-//        button5 = (Button) rootView.findViewById(R.id.home_button5);
+        button5 = (Button) rootView.findViewById(R.id.home_button5);
+        button6 = (Button) rootView.findViewById(R.id.home_button6);
 
 //        button1.setPadding(5,0,5,0);
 
@@ -196,11 +198,16 @@ public class HomeTab extends Fragment {
                 changeSelectedButton(2, v);
             }
         });
-//        button5.setOnClickListener(new View.OnClickListener() {
-//            @Override public void onClick(View v) {
-//                changeSelectedButton(3,v );
-//            }
-//        });
+        button5.setOnClickListener(new View.OnClickListener() {
+            @Override public void onClick(View v) {
+                changeSelectedButton(3,v );
+            }
+        });
+        button6.setOnClickListener(new View.OnClickListener() {
+            @Override public void onClick(View v) {
+                changeSelectedButton(4,v );
+            }
+        });
 
     }
 

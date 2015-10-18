@@ -76,7 +76,7 @@ public class SpeakerActivity extends ActionBarActivity {
 //            imgView.setImageDrawable(img);
 
             // Getting Out of memory here..
-            // The issue is that the drawable is being cached and hoggin memory for
+            // The issue is that the drawable is being cached and hogging memory for
             // other tasks it needs to do.
             Resources res = getResources();
             int imageID = res.getIdentifier(imageName, "drawable", getPackageName());
