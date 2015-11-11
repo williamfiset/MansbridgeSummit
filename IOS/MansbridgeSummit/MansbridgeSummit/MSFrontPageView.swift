@@ -53,8 +53,8 @@ public class MSFrontPageView : UIView {
         let w = GC.SCREEN_WIDTH - 2*x
         let h = GC.SCREEN_HEIGHT * 0.25
         
-
         let frame = CGRectMake(x, y, w, h)
+
         videoPlayerView = YouTubePlayerView(frame: frame)
         //videoPlayerView.loadVideoID(homePageVideo)
         //self.addSubview(videoPlayerView)

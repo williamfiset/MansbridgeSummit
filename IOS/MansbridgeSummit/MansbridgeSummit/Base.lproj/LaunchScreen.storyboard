@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8164.2" systemVersion="15A178w" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A282b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8135.1"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
@@ -66,14 +66,27 @@
                                     <rect key="frame" x="253" y="108" width="295" height="191"/>
                                 </variation>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Social Media: Mobilizing Revolutionary Ideas" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6RJ-4a-3Mw">
+                                <rect key="frame" x="30" y="361" width="540" height="52"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="52" id="prN-nw-vSx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="6RJ-4a-3Mw" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="4z4-AB-SFv"/>
                             <constraint firstAttribute="bottom" secondItem="obG-Y5-kRd" secondAttribute="bottom" constant="15" id="6Qr-6p-emI"/>
                             <constraint firstItem="obG-Y5-kRd" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="907-dI-XBV"/>
+                            <constraint firstItem="6RJ-4a-3Mw" firstAttribute="leading" secondItem="GJd-Yh-RWb" secondAttribute="leading" id="FXU-Ls-tsU"/>
                             <constraint firstItem="GJd-Yh-RWb" firstAttribute="width" secondItem="Ze5-6b-2t3" secondAttribute="width" multiplier="0.9" id="UG6-9H-17c"/>
                             <constraint firstItem="o7J-4s-49i" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="V5z-kS-H6A"/>
+                            <constraint firstItem="6RJ-4a-3Mw" firstAttribute="bottom" secondItem="GJd-Yh-RWb" secondAttribute="top" constant="8" symbolic="YES" id="Y3m-3b-4hP"/>
                             <constraint firstItem="obG-Y5-kRd" firstAttribute="width" secondItem="Ze5-6b-2t3" secondAttribute="width" id="brI-wE-kTf"/>
                             <constraint firstItem="GJd-Yh-RWb" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="mNQ-a8-OQm"/>
                             <constraint firstItem="o7J-4s-49i" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" constant="-75" id="qN4-BK-MNz"/>

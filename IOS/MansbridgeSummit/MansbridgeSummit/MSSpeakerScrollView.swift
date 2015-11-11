@@ -185,7 +185,7 @@ class MSSpeakerScrollView : UIScrollView {
         
         y = bioHeader.frame.origin.y + h
         let font = GC.Font.myraidpro_14!
-        h = heightForView(speaker.short_description, font: font, width: w - (2*PADDING)) + (2*PADDING)
+        h = MSSpeakerScrollView.heightForView(speaker.short_description, font: font, width: w - (2*PADDING)) + (2*PADDING)
         
         let descriptionLabelFrame = CGRectMake(x, y, w, h)
         let descriptionLabelFrameInset = CGRectInset(descriptionLabelFrame, PADDING, PADDING)
@@ -205,7 +205,7 @@ class MSSpeakerScrollView : UIScrollView {
     }
     
     // Calculate the height needed
-    func heightForView(text : String, font : UIFont, width : CGFloat) -> CGFloat{
+    static func heightForView(text : String, font : UIFont, width : CGFloat) -> CGFloat{
         
         let label:UILabel = UILabel(frame: CGRectMake(0, 0, width, CGFloat.max))
         label.numberOfLines = 0
