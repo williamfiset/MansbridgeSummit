@@ -112,7 +112,7 @@ public class HomeTab extends Fragment {
 
                     youtubeThumbnail.setOnClickListener(new View.OnClickListener() {
                         @Override public void onClick(View v) {
-                            Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.youtube.com/watch?v=7ouLkgRHjS8"));
+                            Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.youtube.com/watch?v="+PETER_MANSBRIDGE_VID));
                             getActivity().startActivity(intent);
                         }
                     });
